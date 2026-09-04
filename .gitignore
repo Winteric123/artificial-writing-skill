@@ -1,0 +1,25 @@
+# Source papers and extracted article content
+*.pdf
+*.doc
+*.docx
+corpus/
+source-pdfs/
+full-text/
+extracted-text/
+outputs/
+tmp/
+
+# Local environments and credentials
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
