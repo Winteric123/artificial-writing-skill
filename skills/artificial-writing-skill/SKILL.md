@@ -22,7 +22,7 @@ Produce faithful, concise biomedical prose whose claim strength follows the stud
 - Read [ccr-non-imrad-genres.md](references/ccr-non-imrad-genres.md) for CCR-informed commentaries, narrative reviews, regulatory summaries, response letters, figure legends, or other non-IMRaD writing.
 - Read [ccr-phrase-patterns.md](references/ccr-phrase-patterns.md) only after selecting the CCR profile and identifying the section and evidence tier. Use its patterns functionally; never copy source sentences or treat phrases as quotas.
 - Read [ccr-corpus-provenance.md](references/ccr-corpus-provenance.md) when explaining the CCR profile's evidence base, coverage, quantitative signals, or limitations.
-- Search [ccr-corpus-bibliography.csv](references/ccr-corpus-bibliography.csv) only when the user asks about a paper title, PMID, DOI, publication year, corpus membership, article type, reading status, or the complete source list. Filter to relevant rows before loading content; load or format all 189 rows only when explicitly requested.
+- Search [ccr-corpus-bibliography.csv](references/ccr-corpus-bibliography.csv) only when the user asks about a paper title, PMID, DOI, publication year, corpus membership, article type, reading status, or the complete source list. Filter to relevant rows before loading content; load or format all 204 rows only when explicitly requested.
 
 ## Route the request
 
@@ -101,6 +101,17 @@ Default to:
 3. material edit notes only when claim strength, logic, or structure changed.
 
 Do not list routine grammar edits. Honor requests for clean-only, bilingual, sentence-aligned, tracked-change, table, or reviewer-response output.
+
+## Maintain CCR corpus boundaries
+
+Apply these rules whenever adding source literature to the CCR profile:
+
+- Include a full research article only when it reports original analyzable data relevant to lung cancer. For a basket or pan-tumor study, require an explicitly reported lung-cancer cohort or lung-specific analysis.
+- Exclude commentaries and editorials. Exclude author replies, replies to letters or reviewers, rebuttals, and response-only correspondence. Do not add excluded genres to the bibliography, corpus counts, section statistics, or phrase bank.
+- Do not mistake scientific phrases such as `response to treatment` or `predictors of response` for reply-type correspondence; verify the journal article category, title, and full text.
+- Verify the main-article PDF, title, PMID, DOI, article type, uniqueness, and review status before changing corpus records or counts.
+
+These boundaries govern source-corpus maintenance only. Continue to translate, draft, polish, or audit a commentary or response letter when the user requests that writing task.
 
 ## Extend with another journal profile
 

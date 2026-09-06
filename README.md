@@ -49,14 +49,19 @@ Only the CCR profile is bundled in this release. If another journal is named, th
 
 ## CCR corpus provenance
 
-- Fully reviewed PDFs: 189/189, covering 2,958 pages.
-- Standardized section corpus: 1,095,664 words and 46,895 sentences.
-- Reusable phrase-example bank: 9,411 rows from 181 distinct articles.
-- Eight commentary articles without standard section headings were reviewed through page-level full-text fallback. They inform qualitative genre rules but are absent from the standardized section statistics and phrase-example bank.
+- Fully reviewed PDFs: 204/204, covering 3,329 pages.
+- Legacy standardized section corpus: 1,095,664 words and 46,895 sentences from the original 189-article base.
+- Legacy reusable phrase-example bank: 9,411 rows from 181 distinct articles.
+- September 2026 research-only supplement: 15 articles and 371 pages, reviewed for qualitative profile calibration and kept separate from the legacy quantitative statistics and phrase-example bank.
+- Eight historical commentary articles inform qualitative genre rules but are absent from the standardized section statistics and phrase-example bank. No commentary or reply-type article was added in the September 2026 supplement.
 
 The complete article-level index is [`ccr-corpus-bibliography.csv`](skills/artificial-writing-skill/references/ccr-corpus-bibliography.csv). It records titles, publication years, PMIDs, DOIs, available PMCIDs, corpus article types, reading-history status, and separate coverage flags.
 
 The repository does not distribute source PDFs, abstracts, full-text extracts, or the raw phrase-example bank. Article titles and public bibliographic identifiers are included for traceability. Underlying articles remain subject to their respective copyright and licensing terms.
+
+## Corpus update policy
+
+Future corpus updates include only full research articles with original analyzable data relevant to lung cancer. Basket or pan-tumor studies require an explicitly reported lung-cancer cohort or lung-specific analysis. Commentaries, editorials, author replies, reviewer-response letters, rebuttals, and response-only correspondence are excluded from the bibliography, corpus counts, section statistics, and phrase bank. These restrictions apply to source-corpus maintenance; the skill can still draft, translate, polish, or audit those genres when requested.
 
 ## Repository layout
 

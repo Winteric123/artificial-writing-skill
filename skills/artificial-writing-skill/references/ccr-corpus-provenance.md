@@ -2,30 +2,31 @@
 
 ## Evidence base
 
-This skill is informed by the 2021-2026 lung-cancer-related Clinical Cancer Research corpus prepared in the accompanying workspace.
+This skill is informed by the 2021-2026 lung-cancer-related Clinical Cancer Research corpus prepared in the accompanying workspace and a research-only September 2026 supplement.
 
-- Fully reviewed source PDFs: **189/189**, covering **2,958 pages**.
-- Standardized section-level corpus: **1,095,664 words** and **46,895 sentences**.
-- Reusable phrase-example bank: **9,411 example rows from 181 distinct articles**.
-- Commentaries without standard section headings and with nonstandard article structure, handled through page-level full-text fallback: **8 articles**. Every article has a complete bibliographic title. These articles inform qualitative genre rules but are absent from the standardized section statistics and phrase-example bank.
-- The 2026 contribution to the merged statistics reused previously verified corpus statistics rather than being newly recomputed during the original merge.
+- Fully reviewed source PDFs: **204/204**, covering **3,329 pages**.
+- Legacy standardized section-level corpus: **1,095,664 words** and **46,895 sentences**, derived from the original 189-article base and not recomputed after the supplement.
+- Legacy reusable phrase-example bank: **9,411 example rows from 181 distinct articles**.
+- September 2026 research-only supplement: **15 articles and 371 pages**. All main PDFs were parsed and reviewed for qualitative profile calibration; they were kept separate from the legacy standardized-section statistics and phrase-example bank.
+- Historical commentaries without standard section headings and with nonstandard article structure: **8 articles**. They were handled through page-level full-text fallback in the original corpus, inform qualitative genre rules, and are absent from the standardized section statistics and phrase-example bank. No commentary or reply-type article was added in the September 2026 supplement.
+- The original 2026 contribution to the merged statistics reused previously verified corpus statistics rather than being newly recomputed during the original merge.
 
-Do not describe all 189 articles as represented in the phrase-example bank or standardized section statistics.
+Do not describe all 204 articles as represented in the phrase-example bank or legacy standardized section statistics.
 
 ## Article-level bibliography
 
-The complete, publication-safe article index is [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv). It contains one row for each of the 189 fully reviewed articles, with these fields:
+The complete, publication-safe article index is [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv). It contains one row for each of the 204 fully reviewed articles, with these fields:
 
 - publication year, exact article title, journal, PMID, DOI, and PMCID when available;
 - the corpus article-type classification and reading-history status;
 - explicit flags for full-text review, standardized-section inclusion, and phrase-example-bank inclusion;
 - a coverage note for nonstandard full-text fallback or visually verified image-only pages.
 
-Titles and identifiers come from the verified downloaded manifest and were joined to reading and coverage records by unique PMID. At generation, all 189 rows had a unique, nonempty title, PMID, and DOI; 187 had a PMCID and two did not. The index deliberately excludes local paths, PDF filenames, abstracts, excerpts, download routes, and credentials.
+Titles and identifiers come from the verified downloaded manifest and were joined to reading and coverage records by unique PMID. At generation, all 204 rows had a unique, nonempty title, PMID, and DOI; 190 had a PMCID and 14 did not. The index deliberately excludes local paths, PDF filenames, abstracts, excerpts, download routes, and credentials.
 
 Search or filter the CSV by title, PMID, DOI, year, or article type. Do not load all rows during ordinary translation or drafting. Treat inclusion in the bibliography as proof of corpus membership and review coverage, not as proof that a generated statement is directly supported by that article.
 
-In the `read_status` field, `newly_read` identifies the 167 articles reviewed during the final consolidation pass. `previously_read_skipped` identifies 22 articles that were not reprocessed in that pass because they had already been fully reviewed; it does not mean that those articles were unread.
+In the `read_status` field, `newly_read` identifies 182 articles: 167 reviewed during the original final consolidation pass and 15 reviewed in the September 2026 supplement. `previously_read_skipped` identifies 22 articles that were not reprocessed in the original pass because they had already been fully reviewed; it does not mean that those articles were unread.
 
 ## Phrase-bank coverage
 
@@ -36,14 +37,21 @@ In the `read_status` field, `newly_read` identifies the 167 articles reviewed du
 | 2023 | 42 | 39 |
 | 2024 | 33 | 33 |
 | 2025 | 36 | 35 |
-| 2026 | 22 | 22 |
-| **Total** | **189** | **181** |
+| 2026 | 37 | 22 |
+| **Total** | **204** | **181** |
 
-The eight commentaries without standard section headings that are absent from the phrase-example bank are:
+The eight historical commentaries without standard section headings that are absent from the phrase-example bank are:
 
 - 2022: PMID 36103258, 35512219, 35394532, and 36190329;
 - 2023: PMID 36383142, 37466928, and 37097069;
 - 2025: PMID 39625823.
+
+## Corpus update policy
+
+- Include only full research articles with original analyzable data relevant to lung cancer. Include a basket or pan-tumor article only when it explicitly reports a lung-cancer cohort or lung-specific analysis.
+- Exclude commentaries, editorials, author replies, replies to letters or reviewers, rebuttals, and response-only correspondence from every future corpus update.
+- Verify the journal category and full text so ordinary scientific uses of `response`, such as treatment response, are not misclassified as reply-type literature.
+- Keep newly added qualitative supplements separate from legacy quantitative statistics unless the same standardized extraction and phrase-bank pipeline is rerun over the complete corpus.
 
 ## Counting rules
 

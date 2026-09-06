@@ -58,6 +58,8 @@ Use a paragraph algorithm:
 - Put numbers and comparisons in the sentence backbone.
 - Keep interpretation and mechanism mainly for Discussion.
 - Separate observed difference, adjusted association, prespecified subgroup, exploratory finding, sensitivity analysis, external validation, and null result.
+- For basket or pan-tumor studies, separate the overall population from the lung-cancer cohort and report cohort-specific denominators and endpoints; do not transfer an overall or best-cohort result to the lung subgroup.
+- For post hoc treatment-selection models, distinguish prognostic enrichment from evidence of treatment-effect prediction and keep the analysis and validation status explicit.
 - Do not use `trend` to rescue an inconclusive finding.
 
 ## Discussion
@@ -82,6 +84,8 @@ Use:
 Potential uses include patient selection, risk stratification, monitoring, treatment intensification or de-escalation, rational combinations, assay integration, or next-phase development. Name only the use supported by the evidence.
 
 This unit is not a shortened abstract. For preclinical work, state a rationale for testing; for a diagnostic model, distinguish performance from utility; for an early single-arm trial, distinguish observed activity from comparative benefit. Use 4-6 sentences or about 150 words only when the user supplies no different limit and the content warrants that length.
+
+For a small histology-specific cohort within a basket trial, state that the result is cohort-specific and imprecise when warranted; do not let a favorable result in another tumor cohort drive the lung-cancer implication.
 
 ## Conclusion
 
