@@ -13,7 +13,7 @@ Use:
 - Compare alternatives by evidence type, feasibility, and uncertainty rather than by decorative contrast.
 - End with a concrete research, validation, or trial-design path.
 
-The corpus rules for this genre are qualitative: eight commentary articles without standard section headings were fully reviewed through page-level fallback but are absent from standardized section statistics and the phrase-example bank. Every article has a complete bibliographic title. Do not attach quantitative frequency claims to those eight papers.
+The corpus rules for this genre are qualitative: eight commentary articles without standard section headings had source-text coverage processed through page-level fallback but are absent from standardized section statistics and the phrase-example bank. This processing history does not establish language-focused deep reading. Every article has a complete bibliographic title. Do not attach quantitative frequency claims to those eight papers.
 
 ## Narrative review
 

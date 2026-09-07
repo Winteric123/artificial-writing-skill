@@ -1,4 +1,4 @@
 interface:
-  display_name: "Artificial Writing Skill"
-  short_description: "Translate and write evidence-calibrated biomedical manuscripts"
-  default_prompt: "Use $artificial-writing-skill to translate, draft, or revise this biomedical manuscript. Use the CCR lung-cancer profile unless I name another supported journal profile."
+  display_name: "Biomedical Evidence Communication"
+  short_description: "Translate, report, and present biomedical evidence"
+  default_prompt: "Use $artificial-writing-skill to select the appropriate journal, disease, audience, and communication scenario, then translate, draft, report, present, or audit this biomedical evidence."
