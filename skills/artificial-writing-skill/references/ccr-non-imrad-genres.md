@@ -31,6 +31,14 @@ Use:
 
 Preserve the exact indication, population, line of therapy, approval pathway, dose, and regulatory status. Do not generalize an approval beyond its stated label or turn accelerated approval evidence into mature confirmatory evidence.
 
+For an FDA Approval Summary, distinguish the regulator's synthesis from the underlying trial report. Useful regulatory units include `granted accelerated approval`, `breakthrough therapy designation`, `priority review`, `biologics license application`, `FDA independent analysis`, `benefit-risk profile`, `Boxed Warning`, `enhanced pharmacovigilance`, `postmarketing requirement`, and `continued approval contingent upon verification of clinical benefit`.
+
+Use the following evidence order when response and durability support accelerated approval:
+
+`exact approval date and indication -> single-arm or randomized evidence source -> independently reviewed response estimate and duration -> clinically important toxicity and mitigation -> why benefit outweighed risk -> confirmatory trial obligation`
+
+Do not write that an accelerated approval established survival benefit when approval relied on response and duration. Do not omit a Boxed Warning, step-up dosing requirement, monitoring requirement, or unresolved benefit-risk issue when it materially qualifies the approval.
+
 ## Response to reviewers
 
 Use:

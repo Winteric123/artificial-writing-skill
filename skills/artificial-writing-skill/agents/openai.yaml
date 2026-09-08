@@ -1,4 +1,4 @@
 interface:
   display_name: "Biomedical Evidence Communication"
-  short_description: "Translate, report, and present biomedical evidence"
-  default_prompt: "Use $artificial-writing-skill to select the appropriate journal, disease, audience, and communication scenario, then translate, draft, report, present, or audit this biomedical evidence."
+  short_description: "Section-aware biomedical writing and translation"
+  default_prompt: "Use $artificial-writing-skill to select the journal, disease, manuscript section, audience, and communication scenario, then apply the matching biomedical vocabulary and evidence-calibrated writing patterns."

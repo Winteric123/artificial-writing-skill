@@ -2,6 +2,8 @@
 
 Use these architectures as evidence-ordering defaults. Follow the user's target journal and supplied content when they differ.
 
+Normalize journal-specific headings to `title`, `abstract`, `introduction`, `methods`, `results`, `discussion`, `conclusion`, or `translational-relevance` for language selection, but retain the requested heading in the delivered manuscript. Treat `Patients and Methods`, `Materials and Methods`, `Experimental Procedures`, and equivalent headings as `methods`. Use [ccr-phrase-patterns.md](ccr-phrase-patterns.md) after normalization to select section-specific vocabulary, collocations, phrase frames, sentence frames, and paragraph architectures.
+
 ## Title
 
 Name the central variable, population or model, and design when useful. Avoid causal, predictive, novelty, or superiority language that exceeds the design. Do not label a study randomized, prospective, or validated unless supported.
@@ -18,7 +20,7 @@ Use:
 - Do not introduce new results or mechanisms in the conclusion.
 - Prefer short, information-dense sentences; do not use a fixed sentence-length quota.
 
-For structured abstracts, map the same logic to the journal's required headings rather than inventing new headings.
+For structured abstracts, map the same logic to the journal's required headings rather than inventing new headings. Route each abstract component separately as background, objective, methods, results, or conclusion so that compressed Methods and Results language does not lose its original scientific function.
 
 ## Introduction
 
@@ -91,6 +93,8 @@ For a small histology-specific cohort within a basket trial, state that the resu
 
 Do not create a separate Conclusion unless the journal or user asks for one. When required, state the narrowest supported finding, the relevant population or model, and the next validation boundary. Do not simply repeat the abstract or introduce a new clinical recommendation.
 
+When a journal combines Discussion and Conclusion, treat the interpretive middle as `discussion` and the final bounded synthesis as `conclusion` for language selection. A conclusion may summarize an observed association, activity signal, mechanistic result, or validation need, but it must not introduce a new estimate, method, subgroup, mechanism, or recommendation.
+
 ## Full-manuscript coherence
 
 Check that:
@@ -101,3 +105,5 @@ Check that:
 - the Discussion does not strengthen or reverse the Results;
 - limitations constrain the same claims made in the conclusion;
 - Translational Relevance identifies a use that the presented evidence can plausibly inform.
+- vocabulary remains terminologically consistent across sections while rhetorical strength changes appropriately by section;
+- Abstract background, methods, results, and conclusion clauses agree with their full-text counterparts.

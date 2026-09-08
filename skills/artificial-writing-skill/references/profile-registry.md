@@ -62,7 +62,7 @@ Select one or more without treating them as corpus-backed unless a registered re
 - `targeted-therapy`
 - `drug-response-resistance`
 
-The current five-paper full-text language reference supports tumor biology, transcriptomics, TCR profiling, bioinformatics, basic experiments, statistics, immunotherapy, targeted therapy, and drug activity or resistance. It does not constitute primary single-cell, spatial-omics, or proteomics coverage.
+The current 39-paper full-text deep-read set supports tumor biology, clinical and translational immunotherapy, targeted therapy, bulk and single-cell transcriptomics, spatial transcriptomics, BCR/TCR repertoire profiling, liquid biopsy and MRD, metagenomics, metabolomics, bioinformatics, machine learning, digital pathology, basic experiments, pharmacokinetics, exposure-response modeling, safety, statistics, and regulatory communication. It now includes limited direct proteomics coverage from one 2025 DKK3 study using global-proteome and secretome LC-MS/MS, MHC-I immunopeptidomics, and plasma proximity-extension profiling. Treat this as narrow article-level support rather than a mature proteomics profile; protein imaging, flow cytometry, cytokine assays, or receptor-occupancy measurements must not be relabeled as proteomics.
 
 ## Selection procedure
 

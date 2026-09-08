@@ -55,6 +55,22 @@ Use the lowest defensible claim tier. Orthogonal evidence can strengthen biologi
 
 ## Vocabulary and collocation bank
 
+### Typical-section mapping
+
+Technical terms can appear in several manuscript sections. Use this table as typical-use metadata, then select rhetorical frames from the exact target section in [ccr-phrase-patterns.md](ccr-phrase-patterns.md).
+
+| Vocabulary group | Typical sections |
+|---|---|
+| Oncology and tumor biology | Abstract; Introduction; Methods; Results; Discussion; Conclusion |
+| Immunotherapy and immune mechanisms | Abstract; Introduction; Methods; Results; Discussion; Conclusion |
+| Targeted therapy and drug resistance | Abstract; Introduction; Methods; Results; Discussion; Conclusion |
+| Genomics, transcriptomics, and bioinformatics | Abstract; Introduction; Methods; Results; Discussion |
+| Basic and translational experiments | Introduction; Methods; Results; Discussion; Conclusion |
+| Efficacy, activity, and safety endpoints | Abstract; Methods; Results; Discussion; Conclusion |
+| Statistical reporting | Abstract; Methods; Results; Discussion; Conclusion |
+
+The mapping is nonexclusive. Preserve one term across sections, but select section-specific verbs, uncertainty, and information order.
+
 ### Oncology and tumor biology
 
 - `biomarker-defined molecular subset` - 生物标志物界定的分子亚群
@@ -362,12 +378,16 @@ Use `greater antitumor activity in this model`, not `superior efficacy`, when ev
 - `A significant prognostic association does not establish prediction of treatment benefit.`
 - `Discordant results across statistical tests reduce confidence in the robustness of the finding.`
 
-### Translational Relevance and conclusion
+### Translational Relevance
 
 - `These findings provide a rationale for prospective evaluation of [agent or combination] in [molecularly selected population].`
 - `The biomarker may support risk stratification, but treatment selection requires evidence of a biomarker-by-treatment interaction.`
 - `The preclinical therapeutic window warrants evaluation in a controlled clinical study.`
 - `The mechanistic findings identify a candidate pathway for intervention without establishing clinical utility.`
+
+### Conclusion
+
+- `In [population or model], [bounded primary finding] supports [specific next step] but does not establish [unsupported claim].`
 - `Prospective studies are needed to quantify the event frequency and define clinicopathologic risk factors.`
 - `Further work should integrate complete genomic annotation with standardized clinical endpoints.`
 

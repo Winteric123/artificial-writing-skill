@@ -39,6 +39,25 @@ Historical section names are preserved. Capitalization is normalized, and the pa
 
 The three generic Online First records are PMID 42574065, PMID 42578969, and PMID 42658187. Do not infer a more specific section for them until the CCR article page or assigned issue supplies one.
 
+## Deep-reading coverage by official category
+
+As of 2026-09-08, the 39 completed language-focused deep reads are distributed as follows:
+
+| Official CCR category | Deep reads completed | Indexed articles |
+|---|---:|---:|
+| Novel Biomarkers and Precision Medicine | 10 | 13 |
+| Translational Mechanisms and Therapy | 10 | 12 |
+| Clinical Trials: Immunotherapy | 10 | 24 |
+| Precision Medicine and Imaging | 3 | 38 |
+| Research Briefs: Precision Medicine and Therapeutics | 3 | 6 |
+| CCR Drug Updates | 1 | 8 |
+| Research Article | 1 | 3 |
+| Translational Cancer Mechanisms and Therapy | 1 | 47 |
+| All other official categories | 0 | 53 |
+| **Total** | **39** | **204** |
+
+This table summarizes the article-level records in [ccr-deep-reading-ledger.md](ccr-deep-reading-ledger.md); the ledger remains the sole authority for individual completion status. The `Research Article` entry retains the publisher's generic Online First label and is not reassigned to a more detailed section.
+
 ## Bibliography fields
 
 - `ccr_official_category`: normalized official label displayed in the publisher PDF header or on the AACR article page.

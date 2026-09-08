@@ -1,6 +1,6 @@
 ---
 name: artificial-writing-skill
-description: "Translate, revise, draft, audit, synthesize, report, and present biomedical evidence across manuscripts, scientific reports, results narratives, abstracts, slide or poster text, briefings, response letters, and other research communications. Use for medical or SCI translation, oncology terminology, evidence-calibrated reporting, or communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, or targeted therapy. Resolve journal, disease or tumor type, communication scenario, audience, and modality as independent selections; use a learned profile only when its registered scope supports the task. Do not use for general non-biomedical translation, clinical decision support, or inventing data, methods, citations, or claims."
+description: "Translate, revise, draft, audit, synthesize, report, and present biomedical evidence with section-aware vocabulary, collocations, sentence frames, and paragraph structures for Abstract, Introduction, Materials and Methods, Results, Discussion, Conclusion, and related research genres. Use for medical or SCI translation, oncology terminology, evidence-calibrated reporting, or communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, or targeted therapy. Resolve journal, disease or tumor type, communication scenario, manuscript section, audience, and modality as independent selections; use a learned profile only when its registered scope supports the task. Do not use for general non-biomedical translation, clinical decision support, or inventing data, methods, citations, or claims."
 ---
 
 # Artificial biomedical evidence communication
@@ -15,10 +15,11 @@ Resolve these axes separately before substantive work:
 2. **Communication scenario:** journal manuscript, scientific or technical report, standalone results statement, abstract, slide or oral presentation, poster, response letter, literature synthesis, or another user-defined deliverable.
 3. **Journal profile:** no journal profile, CCR, another registered journal, or an unsupported journal governed only by supplied instructions and core rules.
 4. **Disease profile:** general biomedical, general oncology, lung cancer, another registered disease or tumor type, or source-grounded terminology without a learned disease profile.
-5. **Audience and use:** specialist, multidisciplinary, executive, regulatory, patient-facing, internal research, submission, publication, or presentation.
-6. **Evidence domain:** clinical, translational, multi-omics, bioinformatics, preclinical, statistical, therapeutic, or mixed.
+5. **Manuscript section or genre unit:** title, Abstract component, Introduction, Methods, Results, Discussion, Conclusion, Translational Relevance, a non-IMRaD unit, or a complete document processed section by section.
+6. **Audience and use:** specialist, multidisciplinary, executive, regulatory, patient-facing, internal research, submission, publication, or presentation.
+7. **Evidence domain:** clinical, translational, multi-omics, bioinformatics, preclinical, statistical, therapeutic, or mixed.
 
-Read [profile-registry.md](references/profile-registry.md) to determine which selections are currently corpus-backed, rules-only, source-grounded, or unsupported. Record the selected route internally as `operation | scenario | journal | disease | audience | domain`.
+Read [profile-registry.md](references/profile-registry.md) to determine which profile selections are currently corpus-backed, rules-only, source-grounded, or unsupported. Record the selected route internally as `operation | scenario | journal | disease | section-or-genre | audience | domain`.
 
 Apply this precedence order: explicit user selection, supplied source context, registered profile scope, then conservative core fallback. Do not silently infer a journal or tumor type from vocabulary alone. If no journal is relevant to the deliverable, select `journal=none`. If the tumor type is unspecified or mixed, select `disease=general-oncology` unless the evidence clearly supports a narrower choice.
 
@@ -32,10 +33,13 @@ Keep journal, disease, scenario, and modality corpora, phrase signals, and quant
 - Read [core-translation-integrity.md](references/core-translation-integrity.md) for translation, polishing, rewriting, or bilingual alignment under every journal profile.
 - Read [core-evidence-language.md](references/core-evidence-language.md) for Results, Discussion, Conclusions, abstract conclusions, biomarker claims, subgroup analyses, diagnostic or AI models, and translational claims under every journal profile.
 - Read [communication-scenarios.md](references/communication-scenarios.md) for scientific reports, standalone results statements, slide or oral presentations, posters, technical briefings, executive summaries, or literature syntheses. Use its scenario architecture independently of the journal and tumor selections.
-- Read [ccr-section-patterns.md](references/ccr-section-patterns.md) when drafting or restructuring a manuscript section with the selected CCR profile.
+- Read [ccr-section-patterns.md](references/ccr-section-patterns.md) when drafting, translating, polishing, or restructuring a manuscript section with the selected CCR profile. Normalize the target to its functional section before selecting language.
 - Read [ccr-non-imrad-genres.md](references/ccr-non-imrad-genres.md) for CCR-informed commentaries, narrative reviews, regulatory summaries, response letters, figure legends, or other non-IMRaD writing.
-- Read [ccr-phrase-patterns.md](references/ccr-phrase-patterns.md) only after selecting the CCR profile and identifying the section and evidence tier. Use its patterns functionally; never copy source sentences or treat phrases as quotas.
-- Read [ccr-2026-translational-mechanisms-fulltext-language.md](references/ccr-2026-translational-mechanisms-fulltext-language.md) when the task needs full-manuscript CCR language for tumor biology, transcriptomics, TCR profiling, bioinformatics, basic experiments, statistical results, immunotherapy, targeted therapy, drug activity, resistance, or translational interpretation. Observe its modality-coverage boundary: the five-paper set does not support primary single-cell, spatial-transcriptomic, or proteomic wording.
+- Read [ccr-phrase-patterns.md](references/ccr-phrase-patterns.md) only after selecting the CCR profile and identifying the manuscript section, rhetorical function, evidence domain, expression unit, and evidence tier. Treat it as the runtime authority for section-indexed vocabulary, collocations, phrase frames, sentence frames, and paragraph architectures. Never copy source sentences or treat phrases as quotas.
+- Search [ccr-section-language-catalog.csv](references/ccr-section-language-catalog.csv) when the task benefits from an article-traceable expression learned from the 39-paper deep-read set. Filter first by `primary_section` or `secondary_sections`, then by `function`, `domain`, `unit_type`, and `evidence_tier`; load only the matching rows rather than the complete catalog. Use `source_article_ids` together with `provenance_granularity`: `single-paper-synthesis` is the narrowest assignment, whereas `subsection-synthesis` and `batch-synthesis` identify a contributing source scope and must not be presented as proof that every listed paper contains the expression.
+- Read [ccr-2025-immunotherapy-fulltext-language.md](references/ccr-2025-immunotherapy-fulltext-language.md) for the 17-paper full-text set covering checkpoint-inhibitor resistance and discontinuation, CAR T and CAR NK cells, engineered TCR therapy, gene therapy, bispecific ADCs, PD-L1 PET, ctDNA monitoring, transcriptomics, limited direct proteomics and immunopeptidomics, bioinformatics, exposure-response modeling, efficacy, and safety. Preserve its paper-specific denominator and inference checks.
+- Read [ccr-2026-translational-mechanisms-fulltext-language.md](references/ccr-2026-translational-mechanisms-fulltext-language.md) when the task needs full-manuscript CCR language for tumor biology, bulk transcriptomics, TCR profiling, bioinformatics, basic experiments, statistical results, immunotherapy, targeted therapy, drug activity, resistance, or translational interpretation.
+- Read [ccr-2026-immunotherapy-fulltext-language.md](references/ccr-2026-immunotherapy-fulltext-language.md) for the additional 17-paper full-text set covering clinical immunotherapy, radiation, single-cell and spatial transcriptomics, BCR/TCR repertoires, ctDNA and MRD, metagenomics, metabolomics, machine learning, digital pathology, CAR T-cell experiments, pharmacokinetics, safety, and regulatory language. Keep its FDA Approval Summary patterns separate from original-research prose; that 2026 subset itself contains no primary mass-spectrometry proteomics workflow.
 - Read [ccr-corpus-provenance.md](references/ccr-corpus-provenance.md) when explaining the CCR profile's evidence base, coverage, quantitative signals, or limitations.
 - Read [ccr-category-index.md](references/ccr-category-index.md) whenever the user asks how corpus articles are classified by CCR, how many articles fall in each CCR category, or which category-level genre exclusions apply. Treat `ccr_official_category` in the bibliography as the article-level authority and do not infer a detailed section for an Online First record labeled only `Research Article`.
 - Read [ccr-deep-reading-ledger.md](references/ccr-deep-reading-ledger.md) whenever the user asks which articles have been deeply read, fully read for language, or remain pending. Treat this ledger as the sole authority for deep-reading completion; never infer completion from corpus processing, PDF parsing, source-coverage, section-corpus, or phrase-bank flags.
@@ -55,7 +59,7 @@ Classify each input segment independently:
 - **Present:** Convert evidence into audience-appropriate slide, poster, oral, or briefing language without simplifying away uncertainty or inflating conclusions.
 - **Hybrid:** Apply the appropriate mode separately to each part.
 
-Identify the deliverable unit, scenario, genre, target section, audience, study design, population or model, comparator, endpoint hierarchy, analysis status, evidence maturity, and intended use. Do not force a report, results statement, presentation, commentary, review, regulatory summary, response letter, figure legend, or table note into IMRaD structure.
+Identify the deliverable unit, scenario, genre, target section, audience, study design, population or model, comparator, endpoint hierarchy, analysis status, evidence maturity, and intended use. Normalize manuscript headings to `title`, `abstract`, `introduction`, `methods`, `results`, `discussion`, `conclusion`, or `translational-relevance`; preserve a journal-specific displayed heading in the output. Treat `Patients and Methods`, `Materials and Methods`, `Experimental Procedures`, and equivalent headings as `methods`. Do not force a report, results statement, presentation, commentary, review, regulatory summary, response letter, figure legend, or table note into IMRaD structure.
 
 ## Build an evidence ledger
 
@@ -73,6 +77,22 @@ Before drafting substantive claims, record internally:
 - proposed clinical or experimental use.
 
 Use a lightweight ledger for a single sentence and a complete ledger for a section or manuscript. Mark missing, ambiguous, or contradictory elements. Never fill a gap from plausibility.
+
+## Select section-indexed language
+
+Route learned language in this order:
+
+1. manuscript section or non-IMRaD genre;
+2. rhetorical function within that section;
+3. evidence domain such as oncology, multi-omics, bioinformatics, preclinical, statistics, immunotherapy, targeted therapy, efficacy, safety, or pharmacology;
+4. expression unit: vocabulary, collocation, phrase frame, sentence frame, or paragraph architecture;
+5. evidence and claim tier.
+
+For an Abstract, route each clause separately as background, objective, methods, results, or conclusion; do not treat the entire Abstract as one undifferentiated style pool. For a full manuscript, process sections independently and then run a cross-section coherence audit. If a supplied heading is absent, infer the section from function only when the distinction is clear; otherwise ask a focused question when section choice would materially change tense, claim strength, or information order.
+
+Technical terms are often valid across several sections. Treat their section labels as typical-use metadata rather than exclusivity rules. Rhetorical frames and paragraph architectures are section-bound: do not move procedural Methods wording into Results, direct observations into Discussion-only interpretation, or validation recommendations into the Results backbone.
+
+When using the structured catalog, preserve the selected row's `reuse_status` and provenance granularity. A catalog row is a retrieval and traceability record, not a quotation record. Rebuild the final sentence from the user's evidence and never attribute an abstracted or synthetic expression verbatim to a listed article without reopening that article.
 
 ## Draft by evidence tier
 
@@ -131,6 +151,9 @@ Apply these rules whenever adding source literature to the CCR profile:
 - Preserve the eight legacy `CCR Translations` commentary rows only for traceability and honor their `excluded_commentary_legacy_index_only` status; never use them in future language-learning or quantitative-corpus updates.
 - Do not mistake scientific phrases such as `response to treatment` or `predictors of response` for reply-type correspondence; verify the journal article category, title, and full text.
 - Verify the main-article PDF, title, PMID, DOI, article type, uniqueness, and review status before changing corpus records or counts.
+- Curate each reusable language item with a manuscript section, rhetorical function, evidence domain, expression-unit type, evidence tier, source set, source article identifiers, provenance granularity, source asset, and source line. Assign one primary section and optional secondary sections; use `cross-section-terminology` only for genuinely reusable technical terms.
+- Preserve conventional terms and short collocations, but abstract source wording into synthetic phrase, sentence, or paragraph frames. Never store a source-specific sentence as a reusable model merely because it is well written.
+- After changing any of the three full-text language assets or the central Abstract/Title bank, run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/build_ccr_section_language_catalog.ps1 -SkillPath <skill-folder>`. Accept the update only if every language-bearing subsection is mapped, required fields are nonempty, every PMID is valid, and the expected deep-read PMID set is represented.
 
 These boundaries govern source-corpus maintenance only. Continue to translate, draft, polish, or audit a commentary or response letter when the user requests that writing task.
 
