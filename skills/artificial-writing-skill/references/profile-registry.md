@@ -17,6 +17,7 @@ Use this registry to select independent communication profiles and to avoid clai
 |---|---|---|---|
 | `none` | non-journal, internal | Rules-only | Use core integrity, evidence, and selected scenario rules. |
 | `ccr` | CCR, Clinical Cancer Research | Corpus-backed | Current corpus is lung-cancer-focused. Use CCR section, genre, phrase, provenance, category, and bibliography references only within their documented coverage. |
+| `jto` | JTO, Journal of Thoracic Oncology | Source-grounded | Four deeply read original-research papers (one 2025 and three 2026) are registered only as STK11-priority article-level references. Use [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) within that scope; do not claim a corpus-backed or journal-wide JTO style profile. |
 | `other-journal` | user-specified title | Source-grounded | Follow supplied or verified author instructions plus core rules. Do not claim a learned journal style. |
 
 ### Disease or tumor type
@@ -29,6 +30,12 @@ Use this registry to select independent communication profiles and to avoid clai
 | `other-disease` | user-specified disease or tumor | Source-grounded | Use supplied or authorized disease terminology without claiming a learned profile. |
 
 Do not treat a gene, protein, pathway, assay, drug, or biomarker as a tumor type. Record `STK11`, for example, as a molecular topic within the selected disease profile unless a separate validated molecular profile is later registered.
+
+### Molecular topic
+
+| Selection | Aliases | Support | Scope and fallback |
+|---|---|---|---|
+| `stk11` | LKB1, STK11/LKB1 | Source-grounded with seven user-designated, deeply read framework references | Use the user's study evidence first. For lung-cancer tasks, prioritize the three CCR ATM/SMARCA4 papers and four JTO ERBB2/KRAS/STK11-copy-deletion/MTAP papers in [stk11-priority-references.md](stk11-priority-references.md), then use the NRF2/STK11/KEAP1 paper in [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) when relevant. PMID 42409117 is a structural analogue with no STK11/LKB1 analysis in the supplied main text. This is not a dedicated, validated STK11 molecular profile and does not establish STK11-specific causality or treatment prediction. |
 
 ### Communication scenario
 
@@ -62,7 +69,7 @@ Select one or more without treating them as corpus-backed unless a registered re
 - `targeted-therapy`
 - `drug-response-resistance`
 
-The current 39-paper full-text deep-read set supports tumor biology, clinical and translational immunotherapy, targeted therapy, bulk and single-cell transcriptomics, spatial transcriptomics, BCR/TCR repertoire profiling, liquid biopsy and MRD, metagenomics, metabolomics, bioinformatics, machine learning, digital pathology, basic experiments, pharmacokinetics, exposure-response modeling, safety, statistics, and regulatory communication. It now includes limited direct proteomics coverage from one 2025 DKK3 study using global-proteome and secretome LC-MS/MS, MHC-I immunopeptidomics, and plasma proximity-extension profiling. Treat this as narrow article-level support rather than a mature proteomics profile; protein imaging, flow cytometry, cytokine assays, or receptor-occupancy measurements must not be relabeled as proteomics.
+The current 46-paper CCR full-text deep-read set supports tumor biology, clinical and translational immunotherapy, targeted therapy, bulk and single-cell transcriptomics, spatial transcriptomics, BCR/TCR repertoire profiling, liquid biopsy and MRD, metagenomics, metabolomics, bioinformatics, machine learning, digital pathology, basic experiments, pharmacokinetics, exposure-response modeling, safety, statistics, and regulatory communication. Limited direct proteomics coverage includes the 2025 DKK3 study using global-proteome and secretome LC-MS/MS, MHC-I immunopeptidomics, and plasma proximity-extension profiling, plus the 2026 YL201 study using a targeted 92-protein inflammation panel (75 proteins retained after QC). The latter is antibody-based proximity extension with a PCR/qPCR readout, not proteome sequencing or untargeted mass spectrometry. Treat this as narrow article-level support rather than a mature proteomics profile; protein imaging, flow cytometry, cytokine assays, receptor-occupancy measurements, or reverse-phase protein arrays must not be relabeled as global proteomics. The September 12 CCR addition supports NRF2/STK11/KEAP1 models, post-progression endpoints, and Bayesian clinical estimates. The September 14 CCR priority set adds SMARCA4/ATM/STK11 co-mutation analysis, mutation-class and protein-expression distinctions, bulk-RNA immune deconvolution, reverse-phase-protein-array terminology, retrospective immunotherapy outcomes, and ATM-knockout chemotherapy-response experiments; it adds no primary single-cell or spatial-transcriptomics dataset. The separate four-paper JTO source set adds ERBB2 domain-stratified genomics, TMB/FGA, STK11/KEAP1/SMARCA4 and STK11/CDKN2A co-alteration language, direct STK11 copy-deletion and 19p locus analysis, targeted gene-level TCGA RNA and reverse-phase-protein-array correlations, multiplex immunofluorescence, stage III cCRT plus durvalumab outcomes, competing-risk recurrence and brain-metastasis reporting, MTAP/CDKN2A/B locus disambiguation, NGS-IHC concordance, EGFR/ALK TKI outcomes, and selected paired-progression sampling. It adds no primary single-cell or spatial-omics dataset, no global proteomics workflow, and no new laboratory intervention experiment. See [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md), [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md), and [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md).
 
 ## Selection procedure
 

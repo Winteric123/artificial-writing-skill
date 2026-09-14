@@ -16,13 +16,13 @@ Corpus indexing, PDF parsing, section extraction, phrase-bank inclusion, article
 
 ## Status summary
 
-As of 2026-09-08:
+As of 2026-09-14:
 
-- bibliography records: **204**;
-- completed language-focused deep reads: **39**;
-- pending or incomplete deep reads: **165**.
+- bibliography records: **209**;
+- completed language-focused deep reads: **46**;
+- pending or incomplete deep reads: **163**.
 
-The 39 completed PMIDs are listed below. Every other PMID in `ccr-corpus-bibliography.csv` is `pending_or_incomplete` until it is explicitly added to the completed table after a qualifying full-text pass. This set definition is exhaustive and prevents an absent row from being interpreted as an unknown status.
+The 46 completed PMIDs are listed below. Every other PMID in `ccr-corpus-bibliography.csv` is `pending_or_incomplete` until it is explicitly added to the completed table after a qualifying full-text pass. This set definition is exhaustive and prevents an absent row from being interpreted as an unknown status. The four additions on 2026-09-12 and three additions on 2026-09-14 cover the supplied main PDFs and their main figures/tables; separate supplements were not supplied or independently reviewed. Article-level source maps, numerical checks, and section-indexed expressions are in [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) and [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md).
 
 ## Completed deep reads
 
@@ -67,16 +67,23 @@ The 39 completed PMIDs are listed below. Every other PMID in `ccr-corpus-bibliog
 | 40928991 | 2026-09-08 | Clinical Trials: Immunotherapy | Tarlatamab population PK, exposure-efficacy and exposure-safety models, response plateau, PFS/OS hazards, covariate testing, dose selection, and nonrandomized exposure limits |
 | 41026583 | 2026-09-08 | Translational Mechanisms and Therapy | D3-GPC2 CAR T target validation, antigen density, orthogonal cytotoxicity assays, cytokines and proliferation, normal-cell reactivity, PDX/CDX toxicology, SCLC extension, and human-safety limits |
 | 41065506 | 2026-09-08 | Novel Biomarkers and Precision Medicine | LRP1B alteration, CheckMate-026 post hoc randomized comparison, real-world clinicogenomics, WES/NGS, TMB adjustment, response and PFS, treatment-predictive wording, and prospective-validation limits |
+| 33077574 | 2026-09-12 | Translational Cancer Mechanisms and Therapy | NRF2/KEAP1/STK11/KRAS compound-mutant GEMMs; isogenic rescue; ROS and lipid peroxidation; 96-gene signature; bulk DNA/RNA integration; OAK and IMpower131; prognostic versus predictive language |
+| 42714840 | 2026-09-12 | Official section unverified; manuscript declares Clinical Trials: Molecularly Targeted Therapy | LAURA prespecified TFST/PFS2/TSST; crossover; subsequent-treatment denominators; censoring; immature OS; nominal P values; sparse curve tails |
+| 42714874 | 2026-09-12 | Official section unverified | Ceralasertib/durvalumab; ICB resistance; Bayesian CrI and posterior estimates; KRAS co-mutations; ctDNA; bulk RNA-seq/GSVA; immune deconvolution; micronuclei and STAT1; tissue-compartment limits |
+| 42714875 | 2026-09-12 | Official section unverified | YL201 ADC; NLR efficacy/toxicity; 92-protein targeted Olink PEA; 75 QC-retained proteins; STRING/GO/KEGG; paired IL6; post hoc and multiplicity limits; source inconsistency quarantine |
+| 32709715 | 2026-09-14 | Translational Cancer Mechanisms and Therapy | **STK11 priority reference:** SMARCA4 variant classes and protein loss; SMARCA4/STK11/KEAP1/KRAS co-alterations; FDR-controlled enrichment; adjusted prognosis; retrospective ICI exposure; response-versus-survival discordance; predictive-claim limits |
+| 37097610 | 2026-09-14 | Translational Cancer Mechanisms and Therapy | **STK11 priority reference:** ATM/STK11 co-enrichment; variant classification, putative germline calls, LOH and IHC; treatment-specific ICI cohorts; multiplex immunofluorescence and bulk-RNA deconvolution; overall null and exploratory-subgroup language; source-count discrepancy |
+| 37733794 | 2026-09-14 | Translational Cancer Mechanisms and Therapy | **STK11 priority reference:** KRAS-conditioned ATM/STK11 co-mutation patterns; meta-analysis; TCGA/ICON multi-omic context; retrospective ICI-plus-chemotherapy association; isogenic ATM knockout and STING signaling; drug-specific IC50 effects; published HR/CI inconsistency quarantine |
 
 ## Pending or incomplete deep reads
 
-Status: **165 articles**.
+Status: **163 articles**.
 
 Exact membership is defined as:
 
-`all 204 unique PMIDs in ccr-corpus-bibliography.csv minus {39466024, 39545922, 39576208, 39786430, 39821070, 40208070, 40247431, 40343815, 40499141, 40552922, 40553459, 40788282, 40828417, 40864503, 40928991, 41026583, 41065506, 41537692, 41587109, 41649868, 41671081, 41805895, 41817317, 41837748, 41849236, 41920765, 42008740, 42126592, 42148884, 42149140, 42189883, 42360104, 42405849, 42440365, 42456046, 42485106, 42489696, 42507545, 42574065}`
+`all 209 unique PMIDs in ccr-corpus-bibliography.csv minus the 46 PMIDs in the Completed deep reads table above`
 
-Do not subdivide these 165 articles into `unread` versus `partially read` without article-level evidence. The supported statement is only that their language-focused deep reading has **not been completed**.
+Do not subdivide these 163 articles into `unread` versus `partially read` without article-level evidence. The supported statement is only that their language-focused deep reading has **not been completed**.
 
 ## Update rules
 
@@ -87,3 +94,5 @@ Do not subdivide these 165 articles into `unread` versus `partially read` withou
 - Do not infer deep-reading completion from `corpus_processing_status`, `source_text_coverage_verified`, standardized-section inclusion, or phrase-bank inclusion in the bibliography.
 - Do not add commentaries, editorials, author replies, rebuttals, or response-only correspondence to the research deep-reading queue or corpus.
 - The 2026-09-08 section-indexing refactor and 1,012-entry article-linked catalog backfill changed language organization only. They did not change any article's deep-reading status or the 39/165 completed-to-pending counts.
+- The 2026-09-12 four-paper addition changes the current counts to 43/165. All 39 historical completions and all 165 historical incomplete statuses are preserved. Legacy excluded commentaries remain excluded rather than becoming eligible future research reading tasks.
+- The 2026-09-14 three-paper priority addition changes the current counts to 46/163. The 2020 SMARCA4 paper is an explicit historical qualitative scope exception; the two ATM papers were already indexed but had not completed language-focused deep reading. All previously completed statuses and excluded legacy commentaries remain unchanged.

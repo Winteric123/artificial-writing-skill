@@ -398,6 +398,8 @@ After selecting the section, load only the source asset whose evidence domain ma
 | [ccr-2025-immunotherapy-fulltext-language.md](ccr-2025-immunotherapy-fulltext-language.md) | ICI resistance and discontinuation, CAR T/NK, engineered TCR therapy, ADCs, gene therapy, transcriptomics, narrow proteomics, imaging, ctDNA, PK, efficacy, and safety | Abstract; Introduction; Methods; Results; Discussion; Conclusion |
 | [ccr-2026-translational-mechanisms-fulltext-language.md](ccr-2026-translational-mechanisms-fulltext-language.md) | Tumor biology, bulk transcriptomics, TCR profiling, bioinformatics, preclinical mechanisms, targeted therapy, resistance, drug activity, and statistics | Abstract; Introduction; Methods; Results; Discussion; Conclusion; Translational Relevance |
 | [ccr-2026-immunotherapy-fulltext-language.md](ccr-2026-immunotherapy-fulltext-language.md) | Clinical immunotherapy, radiation, single-cell and spatial transcriptomics, repertoires, liquid biopsy, microbiome, metabolomics, machine learning, digital pathology, CAR T, PK, safety, and regulatory language | Abstract; Introduction; Methods; Results; Discussion; Conclusion; regulatory genre only when explicitly selected |
+| [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) | NRF2/STK11/KEAP1 models and signatures, post-progression endpoints, ATR/PD-L1 therapy, bulk bioinformatics, Bayesian estimates, and targeted plasma-protein biomarker analysis | Abstract; Introduction; Methods; Results; Discussion; Conclusion; Translational Relevance |
+| [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md) | User-priority SMARCA4/ATM references for STK11 co-mutational context, variant-function and protein-expression distinctions, survival and ICI statistics, bulk-RNA immune deconvolution, RPPA, and ATM-knockout chemotherapy experiments | Abstract; Introduction; Methods; Results; Discussion; Conclusion; Translational Relevance |
 
 Use the `Typical-section mapping` table inside each source asset to retrieve domain vocabulary. Then use that asset's section-specific synthetic frames and this file's section rules. Keep FDA Approval Summary language separate from original-research prose.
 
@@ -423,6 +425,8 @@ For precise retrieval, filter [ccr-section-language-catalog.csv](ccr-section-lan
 - `These findings support prospective evaluation of [strategy]; they do not establish comparative efficacy or clinical utility.`
 
 ## Future language-learning schema
+
+The four-paper September 12 addition is indexed section by section in [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md): NRF2/STK11/KEAP1 experimental and clinical language; LAURA subsequent-treatment and immature-survival reporting; ATR/PD-L1 combination, bulk bioinformatics, and Bayesian estimates; and YL201 targeted plasma proteomics with exploratory biomarker calibration. The three-paper September 14 priority set is indexed in [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md): SMARCA4/ATM/STK11 co-mutation language, variant-to-protein interpretation, prognostic and treatment-associated survival reporting, bulk-RNA immune deconvolution, RPPA terminology, and ATM-knockout chemotherapy experiments. Each expression has a single-paper scope and a main-PDF page locator. These additions do not expand the source scope of the historical 39-paper Title/Abstract synthesis.
 
 For every newly learned reusable item, record:
 

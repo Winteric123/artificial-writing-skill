@@ -23,6 +23,7 @@ $all2026Immunotherapy = @(
 )
 $all2026Translational = @("41649868", "41817317", "41837748", "42148884", "42507545")
 $all39 = @($all2025 + $all2026Immunotherapy + $all2026Translational | Sort-Object -Unique)
+$priority20260914 = @("32709715", "37097610", "37733794")
 
 $assets = [ordered]@{
     "ccr-2025-immunotherapy-fulltext-language.md" = [ordered]@{
@@ -40,6 +41,14 @@ $assets = [ordered]@{
     "ccr-phrase-patterns.md" = [ordered]@{
         source_set = "ccr-39-paper-cross-corpus-synthesis"
         all_pmids = $all39
+    }
+    "ccr-2026-09-12-supplement-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-12-four-main-pdfs"
+        all_pmids = @("33077574", "42714840", "42714874", "42714875")
+    }
+    "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-14-stk11-priority-3"
+        all_pmids = $priority20260914
     }
 }
 
@@ -245,6 +254,72 @@ Add-Rule $centralAsset "Abstract" "Results frames" "abstract-results" "" "estima
 Add-Rule $centralAsset "Abstract" "Conclusion frames" "abstract-conclusion" "" "bounded-synthesis-validation" "mixed-biomedical" "sentence-frame" "mixed" $all39 "cross-corpus-synthetic-frame"
 Add-Rule $centralAsset "Abstract" "Abstract architecture" "abstract-background" "abstract-objective;abstract-methods;abstract-results;abstract-conclusion" "abstract-architecture" "mixed-biomedical" "paragraph-architecture" "mixed" $all39 "cross-corpus-synthetic-architecture"
 
+$supplementAsset = "ccr-2026-09-12-supplement-language.md"
+$supplementDomains = [ordered]@{
+    "33077574" = "genomics-transcriptomics-preclinical-immunotherapy"
+    "42714840" = "clinical-trial-targeted-therapy-endpoints"
+    "42714874" = "immunotherapy-bulk-transcriptomics-bioinformatics-preclinical-statistics"
+    "42714875" = "targeted-plasma-proteomics-adc-biomarker-statistics"
+}
+$supplementSections = [ordered]@{
+    "Introduction" = "introduction"
+    "Methods" = "methods"
+    "Results" = "results"
+    "Discussion" = "discussion"
+}
+foreach ($sourcePmid in $supplementDomains.Keys) {
+    $sourceContainer = "PMID $sourcePmid"
+    $sourceDomain = $supplementDomains[$sourcePmid]
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $supplementAsset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        $secondary = if ($normalizedSection -in @("introduction", "methods", "results")) { (@("introduction", "methods", "results", "discussion") | Where-Object { $_ -ne $normalizedSection }) -join ";" } else { "conclusion" }
+        Add-Rule $supplementAsset $sourceContainer "$displaySection vocabulary" $normalizedSection $secondary "terminology" $sourceDomain "vocabulary" "terminology-only" @($sourcePmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } elseif ($sourcePmid -eq "42714875") { "exploratory-associative" } elseif ($sourcePmid -eq "42714840") { "comparative-secondary-descriptive" } else { "preclinical-mechanistic-clinical-associative" }
+        Add-FrameRule $supplementAsset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $sourceDomain $tier @($sourcePmid)
+    }
+    Add-FrameRule $supplementAsset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    Add-FrameRule $supplementAsset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $supplementAsset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) "paragraph-model" "synthetic-model"
+    }
+}
+
+$priorityAsset = "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md"
+$priorityDomains = [ordered]@{
+    "32709715" = "smarca4-stk11-keap1-genomics-ihc-survival-immunotherapy-statistics"
+    "37097610" = "atm-stk11-genomics-ihc-loh-immunophenotyping-bulk-rna-immunotherapy-statistics"
+    "37733794" = "atm-stk11-kras-genomics-multiomics-preclinical-immunotherapy-chemotherapy-statistics"
+}
+$priorityTiers = [ordered]@{
+    "32709715" = "observational-prognostic-treatment-associated"
+    "37097610" = "observational-descriptive-exploratory-associative"
+    "37733794" = "meta-analytic-observational-preclinical-mechanistic"
+}
+foreach ($sourcePmid in $priorityDomains.Keys) {
+    $sourceContainer = "PMID $sourcePmid"
+    $sourceDomain = $priorityDomains[$sourcePmid]
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $priorityAsset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        $secondary = if ($normalizedSection -in @("introduction", "methods", "results")) { (@("introduction", "methods", "results", "discussion") | Where-Object { $_ -ne $normalizedSection }) -join ";" } else { "conclusion" }
+        Add-Rule $priorityAsset $sourceContainer "$displaySection vocabulary" $normalizedSection $secondary "terminology" $sourceDomain "vocabulary" "terminology-only" @($sourcePmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $priorityTiers[$sourcePmid] }
+        Add-FrameRule $priorityAsset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $sourceDomain $tier @($sourcePmid)
+    }
+    Add-FrameRule $priorityAsset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    Add-FrameRule $priorityAsset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $priorityAsset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) "paragraph-model" "synthetic-model"
+    }
+}
+
 $rows = New-Object System.Collections.Generic.List[object]
 $unmapped = New-Object System.Collections.Generic.List[string]
 $seen = New-Object "System.Collections.Generic.HashSet[string]"
@@ -298,7 +373,7 @@ foreach ($assetName in $assets.Keys) {
             }
 
             $rows.Add([pscustomobject][ordered]@{
-                catalog_version = "2026-09-08"
+                catalog_version = "2026-09-14"
                 expression = $expression
                 primary_section = $rule.primary_section
                 secondary_sections = $rule.secondary_sections
@@ -369,11 +444,22 @@ foreach ($row in $catalog) {
     }
 }
 
-$expectedPmids = $all39
+$ledgerPath = Join-Path $referencesPath "ccr-deep-reading-ledger.md"
+$ledgerText = Get-Content -LiteralPath $ledgerPath -Encoding UTF8 -Raw
+$completedBlock = [regex]::Match($ledgerText, '(?s)## Completed deep reads\s*(.*?)## Pending or incomplete deep reads')
+if (-not $completedBlock.Success) {
+    throw "Missing authoritative completed-deep-read table"
+}
+$ledgerPmids = @([regex]::Matches($completedBlock.Groups[1].Value, '(?m)^\| (\d{8}) \|') | ForEach-Object { $_.Groups[1].Value })
+$expectedPmids = @($ledgerPmids | Sort-Object -Unique)
+$bibliographyPmids = @((Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-corpus-bibliography.csv") -Encoding UTF8).pmid)
+if ($ledgerPmids.Count -ne $expectedPmids.Count -or @($expectedPmids | Where-Object { $_ -notin $bibliographyPmids }).Count -gt 0) {
+    throw "Deep-reading ledger contains duplicate or unindexed PMIDs"
+}
 $catalogPmids = @($catalog.source_article_ids -split ';' | Sort-Object -Unique)
 $missingPmids = @($expectedPmids | Where-Object { $_ -notin $catalogPmids })
 $unexpectedPmids = @($catalogPmids | Where-Object { $_ -notin $expectedPmids })
-if ($expectedPmids.Count -ne 39 -or $missingPmids.Count -gt 0 -or $unexpectedPmids.Count -gt 0) {
+if ($expectedPmids.Count -eq 0 -or $missingPmids.Count -gt 0 -or $unexpectedPmids.Count -gt 0) {
     throw "PMID coverage failure. Expected=$($expectedPmids.Count); missing=$($missingPmids -join ';'); unexpected=$($unexpectedPmids -join ';')"
 }
 
