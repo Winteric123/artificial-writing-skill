@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "meaning": "usable means eligible for language retrieval, not scientifically acceptance-passed. Alerts travel with all affected expressions. Entry rules exclude specific risky expressions; absence of a rule is not proof of source correctness.",
+  "article_alerts": [
+    {
+      "id": "atm-truncating-estimate",
+      "article_ids": [
+        "37733794"
+      ],
+      "restriction": "Do not reuse the truncating-ATM HR 0.731 / CI 0.899–1.038 trio. KRAS-conditioned co-mutation and drug-specific experimental effects must remain separate from pooled associations.",
+      "source_reference": "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md#pmid-37733794"
+    },
+    {
+      "id": "smarca4-classes",
+      "article_ids": [
+        "32709715"
+      ],
+      "restriction": "SMARCA4 variant class, protein loss and STK11 co-occurrence are distinct. Retrospective ICI associations do not prove predictive benefit.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "atm-null-context",
+      "article_ids": [
+        "37097610"
+      ],
+      "restriction": "Preserve overall null ICI findings and exploratory subgroup limits; pathogenicity, LOH and protein loss are not interchangeable.",
+      "source_reference": "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md#pmid-37097610"
+    },
+    {
+      "id": "g12v-denominators",
+      "article_ids": [
+        "41417462"
+      ],
+      "restriction": "Separate 636-patient molecular and 151-patient advanced-treatment cohorts; no STK11-specific causal or predictive treatment claim.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "q61-conditioning",
+      "article_ids": [
+        "42268349"
+      ],
+      "restriction": "Do not pool Q61H–STK11 enrichment and Q61L–STK11 exclusivity into one all-Q61 statement.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "ampratio-transfer",
+      "article_ids": [
+        "41870274"
+      ],
+      "restriction": "NSCLC STK11/EGFR amplification context is not STK11 treatment validation; HER2 outcome cohorts are other cancers. Do not transfer amplification cutoffs to STK11 deletion.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "erbb2-adjustment",
+      "article_ids": [
+        "41932614"
+      ],
+      "restriction": "Adjusted ECD-versus-TKD PFS P=0.06 and CI includes 1; do not call it significant. Supplied PDF is pre-proof, not version of record.",
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md#pmid-41932614"
+    },
+    {
+      "id": "durvalumab-figure4",
+      "article_ids": [
+        "41619904"
+      ],
+      "restriction": "Results prose and Figure 4 disagree on STK11/CDKN2A HR assignment. Figure4 is physical PDF p33. Physical p14 line282 says OS but Table2 physical p29 is a PFS model; do not transfer that OS label. Disclose conflicts for exact estimates. No non-durvalumab comparator. Supplied PDF is pre-proof.",
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md#pmid-41619904"
+    },
+    {
+      "id": "stk11-copy-loss",
+      "article_ids": [
+        "39864548"
+      ],
+      "restriction": "Separate monoallelic deletion, biallelic inactivation, TCGA expression and treatment cohorts; preserve 19p co-deletion and ICI-alone heterogeneity.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "mtap-not-stk11",
+      "article_ids": [
+        "42409117"
+      ],
+      "restriction": "Structural analogue only: no STK11/LKB1 analysis in supplied main text. MTAP copy number <0.6 is not an STK11 threshold.",
+      "source_reference": "stk11-priority-references.md"
+    },
+    {
+      "id": "cd2015-figure7",
+      "article_ids": [
+        "26069186"
+      ],
+      "restriction": "Expression clusters differ from mutation groups. p11 prose and Fig7D conflict on knockdown IC50 direction; reopen panel before a directional drug-sensitivity claim.",
+      "source_reference": "cancer-discovery-2026-09-19-stk11-language.md"
+    },
+    {
+      "id": "cd2018-source-conflict",
+      "article_ids": [
+        "29773717"
+      ],
+      "restriction": "Preserve response denominators, LKB1 protein versus mutation, small comparator uncertainty and unresolved source confidence-interval discrepancy. Reopen the article for exact estimates.",
+      "source_reference": "cancer-discovery-2026-09-19-stk11-language.md"
+    },
+    {
+      "id": "nature-union-contrast",
+      "article_ids": [
+        "39385035"
+      ],
+      "restriction": "STK11 and/or KEAP1 is a union, not double mutation. TDCT-versus-CT and TDCT-versus-DCT differ; the latter OS CI includes 1. Human bulk inference differs from mouse scRNA. PD-L1 denominator and other source conflicts remain bounded.",
+      "source_reference": "nature-2026-09-19-stk11-language.md"
+    },
+    {
+      "id": "lpa-proteomics-conflict",
+      "article_ids": [
+        "40853904"
+      ],
+      "restriction": "Methods disagree on label-free versus TMT protein quantification; do not select either as resolved. CellChat/c4 LPA secretion is inferred, not directly measured. Internal split is not external validation.",
+      "source_reference": "ccr-2025-2026-09-19-intake-language.md"
+    },
+    {
+      "id": "genomics2025-39804166",
+      "article_ids": [
+        "39804166"
+      ],
+      "restriction": "Shorter STK11-mutant survival does not imply lower ORR: both groups45%. NRF2/OS in KEAP1WT is nonsignificant. Figure4A drug label differs from caption. Clinical associations are not predictive interactions; combinations are preclinical.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39804166"
+    },
+    {
+      "id": "genomics2025-39932457",
+      "article_ids": [
+        "39932457"
+      ],
+      "restriction": "Patient prevalence and all-call/somatic-call CH proportions have different denominators. Figure1 classification direction and Figure2C mean/median labels conflict with prose. Do not implement the algorithm from this source alone.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39932457"
+    },
+    {
+      "id": "genomics2025-40704901",
+      "article_ids": [
+        "40704901"
+      ],
+      "restriction": "Thoracic NUT carcinoma is not interchangeable with all NSCLC. Assay sensitivity requires modality-specific coverage denominators; no significant survival difference by detection modality. BRD4 exon and calendar labels differ across source locations.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40704901"
+    },
+    {
+      "id": "genomics2025-40388547",
+      "article_ids": [
+        "40388547"
+      ],
+      "restriction": "NCI-MATCH concordance concerns shared genes and actionable entry alterations, not entire profiles. Table2 sarcoma CI does not contain its estimate. Negative plasma does not exclude tissue-defined response.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40388547"
+    },
+    {
+      "id": "genomics2025-39437011",
+      "article_ids": [
+        "39437011"
+      ],
+      "restriction": "Observational treatment interaction is not randomized predictive validation. Low-volume PFS P values and FDR notation conflict within source. Olink targeted proteins are not mass-spectrometry whole-proteome data.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39437011"
+    },
+    {
+      "id": "genomics2025-39887260",
+      "article_ids": [
+        "39887260"
+      ],
+      "restriction": "RET-positive-only sample selection cannot estimate clinical specificity. Abstract QC denominators conflict with Results; rescue analyses are unblinded/post hoc and not primary assay sensitivity.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39887260"
+    },
+    {
+      "id": "genomics2025-40310449",
+      "article_ids": [
+        "40310449"
+      ],
+      "restriction": "VISION tissue/liquid groups overlap. Between-biopsy efficacy comparisons are descriptive without formal P values. Any-variant ctDNA detectability differs from METex14 positivity; tumor burden confounds comparisons.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40310449"
+    },
+    {
+      "id": "genomics2025-39853318",
+      "article_ids": [
+        "39853318"
+      ],
+      "restriction": "Updated same261-patient MRD cohort is not external validation. Negative MRD is not proof of cure or absence of adjuvant benefit. Figure3C HR/CI conflict and invalid prose P value must not be reused.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39853318"
+    },
+    {
+      "id": "genomics2025-40261185",
+      "article_ids": [
+        "40261185"
+      ],
+      "restriction": "ctMoniTR landmark/internal test split is not external validation or trial-level surrogate validation. Preserve persistent-versus-clearance reference direction and endpoint-specific denominators. Table1 totals differ from subgroup sums.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40261185"
+    },
+    {
+      "id": "genomics2025-40465842",
+      "article_ids": [
+        "40465842"
+      ],
+      "restriction": "Lung-MAP Figure6 caption CI lower bound conflicts with plot/Results; Figure2 color labels conflict. High tumor fraction improves some detection while marking poorer prognosis, not treatment prediction. CNA sensitivity remains limited.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40465842"
+    },
+    {
+      "id": "genomics2025-40047548",
+      "article_ids": [
+        "40047548"
+      ],
+      "restriction": "Quantified ADC target abundance is not demonstrated ADC efficacy. Unknown EGFR status is not wild type. Analytical LOD/LOQ is not a clinical response cutoff; protein calibration is targeted, not discovery proteomics.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-40047548"
+    },
+    {
+      "id": "genomics2025-39836411",
+      "article_ids": [
+        "39836411"
+      ],
+      "restriction": "RAS-RAF PLA is pan-RAS proximity, not KRASG12C-specific binding. Small treated-only cohort and optimized cutoff do not validate treatment selection. Table1 sex/year percentages conflict with counts; external co-mutation cohort is not this study.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39836411"
+    },
+    {
+      "id": "genomics2025-39620930",
+      "article_ids": [
+        "39620930"
+      ],
+      "restriction": "DIAMOND all-model methylation validation sensitivity41% at99%specificity differs from combined91% at93%. Cancer-specific experts are not tissue-origin classifiers. Lung validation has8 metastatic cases; no early-lung screening validation.",
+      "source_reference": "ccr-2025-genomics-2026-09-20-language.md#pmid-39620930"
+    }
+  ],
+  "entry_rules": [
+    {
+      "id": "block-atm-invalid-ci",
+      "article_ids": [
+        "37733794"
+      ],
+      "expression_regex": "0[.]731|0[.]899.{0,12}1[.]038",
+      "state": "quarantined",
+      "reason": "Known source point-estimate/CI inconsistency; withhold exact trio, do not repair by inference.",
+      "source_reference": "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md#pmid-37733794"
+    },
+    {
+      "id": "hold-cd2015-direction",
+      "article_ids": [
+        "26069186"
+      ],
+      "expression_regex": "knockdown.{0,90}(increase|decrease).{0,40}IC50|IC50.{0,90}(increase|decrease).{0,40}knockdown",
+      "state": "needs_source_check",
+      "reason": "Reopen Fig7 for a directional knockdown claim; conventional IC50, HSP90 and knockdown terminology alone is not restricted.",
+      "source_reference": "cancer-discovery-2026-09-19-stk11-language.md"
+    },
+    {
+      "id": "hold-jto-hr-assignment",
+      "article_ids": [
+        "41619904"
+      ],
+      "expression_regex": "(STK11|CDKN2A).{0,120}(HR|hazard ratio).{0,25}[0-9]",
+      "state": "needs_source_check",
+      "reason": "Exact STK11/CDKN2A numeric HR mapping needs Figure 4 source check; conventional hazard-ratio vocabulary alone is not restricted.",
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md#pmid-41619904"
+    },
+    {
+      "id": "hold-lpa-platform",
+      "article_ids": [
+        "40853904"
+      ],
+      "expression_regex": "label.free|TMT|tandem.mass.tag",
+      "state": "needs_source_check",
+      "reason": "Protein quantification protocol is unresolved in the supplied article.",
+      "source_reference": "ccr-2025-2026-09-19-intake-language.md"
+    }
+  ]
+}

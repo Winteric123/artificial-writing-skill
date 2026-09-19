@@ -4,9 +4,9 @@
 
 **Highlighted: STK11 core writing-framework references / STK11课题核心写作框架参考文献.**
 
-The user designated all ten papers below as core framework references for future STK11-focused lung-cancer writing. Use them first when planning manuscript structure, section logic, Results sequencing, figure/table narrative, and the connection between genomic observations, clinical outcomes, immune phenotypes, and experiments. Their vocabulary and expression assets remain available for translation, reporting, synthesis, and presentation. This designation records the user's writing preference, not a claim that every listed paper has STK11 as its primary exposure and not a standalone corpus-backed STK11 molecular profile.
+The user designated all thirteen papers below as core framework references for future STK11-focused lung-cancer writing. Use them first when planning manuscript structure, section logic, Results sequencing, figure/table narrative, and the connection between genomic observations, clinical outcomes, immune phenotypes, and experiments. Their vocabulary and expression assets remain available for translation, reporting, synthesis, and presentation. This designation records the user's writing preference, not a claim that every listed paper has STK11 as its primary exposure and not a standalone corpus-backed STK11 molecular profile.
 
-As of 2026-09-19, all ten registered articles have completed the language-focused deep-reading standard for their supplied main PDFs. Main figures, tables, and captions were reviewed. The set contains six CCR papers and four JTO papers; journal-specific assets and counts remain separate. Separate supplementary files were not supplied or independently reviewed.
+As of 2026-09-19, all thirteen registered highlights have recorded main-text deep-reading completion, including their main figures, tables and captions. The set contains six CCR, four JTO, two Cancer Discovery and one Nature papers; journal assets and counts remain separate. The Nature PDF's embedded Extended Data figures/tables and Reporting Summary were also read; external supplementary files remain outside this batch. Completion and user priority do not establish a separate source-recheck pass.
 
 ## Highlighted priority references
 
@@ -22,14 +22,17 @@ As of 2026-09-19, all ten registered articles have completed the language-focuse
 | 1 | JTO | 2026 | 41619904 | KRAS status and STK11/CDKN2A co-alterations after cCRT and durvalumab | Directly identifies a high-risk STK11/CDKN2A-defined subgroup and connects PFS to distant and brain metastatic failure using competing-risk analyses | Use for stage III clinical Results ordering, recurrence-pattern reporting, and STK11 prognostic framing; do not claim STK11-specific durvalumab resistance or treatment benefit without a comparator and interaction test |
 | 1 | JTO | 2025 | 39864548 | STK11/KEAP1/SMARCA4 copy deletion in nonsquamous NSCLC | Directly connects STK11 copy-number and allelic state to clinicopathologic features, STK11 RNA/LKB1 protein expression, chemoimmunotherapy outcomes, ICI-alone heterogeneity, and immune phenotype | Use as the principal copy-deletion framework and for mutation-versus-deletion-versus-double-hit organization; keep 19p co-deletion, cohort separation, and predictive-claim limits explicit |
 | 1 | JTO | 2026 | 42409117 | MTAP loss in driver-positive NSCLC receiving targeted therapy | Provides a rigorous structural analogue for neighboring-locus co-deletion, homozygous loss definition, NGS-IHC concordance, combined-genotype prognosis, and paired progression sampling | Use only for transferable organization and wording; the supplied main text contains no STK11/LKB1 analysis and cannot support an STK11 biological or treatment claim |
+| 1 | Cancer Discovery | 2015 | 26069186 | KRAS co-mutation-associated molecular subtypes | Direct KL/STK11 context links multi-omics, functional state, immunity, recurrence and experimental HSP90 vulnerability | Distinguish expression clusters from mutation labels; cell-line sensitivity is not clinical efficacy |
+| 1 | Cancer Discovery | 2018 | 29773717 | STK11/LKB1 and PD-1 resistance | Direct multi-cohort clinical association plus genotype-controlled mouse experiments | Preserve endpoint denominators, protein/mutation distinctions, small comparator uncertainty and unresolved source CI conflict |
+| 1 | Nature | 2024 | 39385035 | STK11 and/or KEAP1 and dual checkpoint blockade | Links real-world and exploratory randomized biomarker findings with CRISPR, mouse scRNA and immune perturbation | Union is not double mutation; TDCT versus DCT OS CI includes1; corrected PDF and unresolved source discrepancies must be respected |
 
-Publication years follow the journal-specific bibliographies. Full article titles are retained in the writing-framework table below and in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) or [jto-stk11-priority-bibliography.csv](jto-stk11-priority-bibliography.csv); use PMID to join these records. Highlight priority, publication year, official category, and reading-completion date remain separate fields.
+Publication years follow the journal-specific bibliographies. Full article titles are retained in the writing-framework table below and in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) [jto-stk11-priority-bibliography.csv](jto-stk11-priority-bibliography.csv), [cancer-discovery-stk11-priority-bibliography.csv](cancer-discovery-stk11-priority-bibliography.csv), or [nature-stk11-priority-bibliography.csv](nature-stk11-priority-bibliography.csv); use PMID to join these records. Highlight priority, publication year, official category, and reading-completion date remain separate fields.
 
 ## Writing-framework roles
 
-All ten have equal core-reference priority. The content descriptions below support selection within this register; they are not a corpus-wide article-classification schema.
+All thirteen have equal core-reference priority. The content descriptions below support selection within this register; they are not a corpus-wide article-classification schema.
 
-Priority and recorded main-text completion do not establish acceptance review. Check the journal-specific [CCR quality register](ccr-reading-quality-register.csv) or [JTO quality register](jto-reading-quality-register.csv) before claiming a highlighted paper passed source recheck. Follow [deep-reading-acceptance.md](deep-reading-acceptance.md); do not automatically upgrade any of these ten references during a framework or vocabulary update.
+Priority and recorded main-text completion do not establish acceptance review. Check the journal-specific [CCR quality register](ccr-reading-quality-register.csv) [JTO quality register](jto-reading-quality-register.csv), [Cancer Discovery quality register](cancer-discovery-reading-quality-register.csv), or [Nature quality register](nature-reading-quality-register.csv) before claiming a highlighted paper passed source recheck. Follow [deep-reading-acceptance.md](deep-reading-acceptance.md); do not automatically upgrade any of these thirteen references during a framework or vocabulary update.
 
 | PMID and article | Framework role | Structural pattern to adapt |
 |---|---|---|
@@ -43,6 +46,9 @@ Priority and recorded main-text completion do not establish acceptance review. C
 | **41619904 — Impact of KRAS Mutations and Co-Alterations on Outcomes in Stage III Nonsquamous NSCLC Treated With Chemoradiation and Immunotherapy** | Treatment-era clinical-outcome and failure-pattern framework | Cohort/treatment pathway → PFS and OS → locoregional versus distant recurrence → organ-specific metastasis → NGS co-alterations → STK11/CDKN2A-defined high-risk subgroup |
 | **39864548 — Gene Copy Deletion of STK11, KEAP1, and SMARCA4: Clinicopathologic Features and Association With the Outcomes of Immunotherapy With or Without Chemotherapy in Nonsquamous NSCLC** | Direct STK11 copy-number, expression, immune, and clinical-outcome framework | Deletion prevalence/allelic state → 19p co-deletion → clinicopathologic features → corresponding RNA/LKB1 protein → chemoimmunotherapy outcomes → mutation/deletion/double-hit comparison → ICI-alone and immune-phenotype qualification |
 | **42409117 — Genomic Landscape and Clinical Impact of MTAP Loss in Driver-Positive NSCLC: Insights From a Large-Scale Real-World Chinese Cohort** | Indirect neighboring-locus and targeted-therapy prognosis framework | Operational loss definition → MTAP/CDKN2A/B co-deletion → exon-level structure → NGS-IHC concordance → first-line targeted-therapy outcomes → driver-specific subgroups → selected paired progression samples |
+| **26069186 — Co-occurring genomic alterations define major subsets of KRAS-mutant lung adenocarcinoma with distinct biology, immune profiles, and therapeutic vulnerabilities** | Co-mutation multi-omics and experimental-dependency framework | Cohort/platform map → subtype discovery → independent reproduction → genomic and functional-state contrasts → immune/recurrence associations → controlled drug-response experiments |
+| **29773717 — STK11/LKB1 Mutations and PD-1 Inhibitor Resistance in KRAS-Mutant Lung Adenocarcinoma** | Direct STK11 clinical-to-mechanistic immunotherapy framework | Co-mutation groups → response-evaluable denominator → survival → functional LKB1 status → TMB/PD-L1 → separate validation cohort → knockout models → prediction/prognosis limits |
+| **39385035 — CTLA4 blockade abrogates KEAP1/STK11-related resistance to PD-(L)1 inhibitors** | Direct STK11/KEAP1 regimen-specific clinical and immune-mechanism framework | Real-world association → separate gene contexts → exploratory randomized regimen contrasts → resistance screen → genotype-controlled models → immune states → mediator perturbation → prospective hypothesis |
 
 These are abstracted writing architectures informed by the reviewed main articles, not verbatim source headings or a prescribed STK11 study protocol. The three CCR ATM/SMARCA4 PMID sections in [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md), the two CCR KRAS PMID sections in [ccr-2026-09-19-supplement-language.md](ccr-2026-09-19-supplement-language.md), and the four JTO PMID sections in [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) provide their source maps and evidence checks.
 
@@ -58,16 +64,21 @@ Before drafting, identify which reference informs each proposed module and map i
 
 ## Retrieval order
 
+For the recorded bounded source recheck, read [the review record](stk11-highlight-bounded-recheck-2026-09-19.md). It covers selected abstract passages and high-risk findings, not complete six-gate acceptance. Use the current quality register for each article's status; the original main-read dates and supplement boundaries are unchanged.
+
 When the user's task centers on STK11:
 
 1. Load the user's source text, study design, numerical results, and intended section before any learned language.
-2. Read the highlighted framework roles in this register. For an outline or full-manuscript task, prioritize the ten papers and identify the structural modules that match the user's data; for a narrow sentence-level task, retrieve the relevant section directly. For AmpRatio and copy-number context, load PMID 41870274 in [ccr-2026-09-19-batch2-language.md](ccr-2026-09-19-batch2-language.md).
+2. Read the highlighted framework roles in this register. For an outline or full-manuscript task, prioritize the thirteen papers and identify the structural modules that match the user's data; for a narrow sentence-level task, retrieve the relevant section directly. For AmpRatio and copy-number context, load PMID 41870274 in [ccr-2026-09-19-batch2-language.md](ccr-2026-09-19-batch2-language.md).
 3. Read [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md) for the three CCR papers' article-level section maps, numerical checks, reusable language, and claim limits.
 4. Read the PMID 41417462 and PMID 42268349 sections in [ccr-2026-09-19-supplement-language.md](ccr-2026-09-19-supplement-language.md) for the two highlighted KRAS papers' section-indexed language and claim boundaries.
 5. Read [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) for the four JTO papers' section maps, classifications, numerical checks, reusable language, figure/table narratives, and claim limits.
-6. Search [ccr-section-language-catalog.csv](ccr-section-language-catalog.csv) only for CCR-derived expressions. Do not search or count the JTO papers as if they were CCR catalog records.
-7. Use [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) when NRF2/KEAP1/STK11 experimental models or clinical signatures are relevant.
-8. Draft from the user's evidence. The priority papers guide terminology and reasoning but do not replace a citation check against the claim being written.
+6. For PMID 26069186/29773717, load [Cancer Discovery language](cancer-discovery-2026-09-19-stk11-language.md) and [section catalog](cancer-discovery-section-language-catalog.csv); for PMID 39385035, load [Nature language](nature-2026-09-19-stk11-language.md) and [section catalog](nature-section-language-catalog.csv). Their source-conflict restrictions apply before retrieval.
+7. Search [ccr-section-language-catalog.csv](ccr-section-language-catalog.csv) only for CCR-derived expressions. Do not search or count the JTO papers as if they were CCR catalog records.
+8. Use [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) when NRF2/KEAP1/STK11 experimental models or clinical signatures are relevant.
+9. Draft from the user's evidence. The priority papers guide terminology and reasoning but do not replace a citation check against the claim being written.
+
+The [44-record expanded directory](stk11-expanded-reference-directory.md) is for candidate discovery only; it neither replaces this thirteen-paper highlight register nor implies all candidates were acquired/read.
 
 ## Mandatory boundaries
 
@@ -89,4 +100,8 @@ When the user's task centers on STK11:
 - For PMID 42409117, preserve its operational definition of MTAP loss as homozygous deletion with estimated gene copy number below 0.6; do not transfer that definition to STK11 or to PMID 39864548.
 - PMID 42409117 contains no STK11/LKB1 analysis in the supplied main text. Use it only as a structural analogue and never as direct STK11 evidence.
 - Keep all four JTO papers out of CCR bibliography, ledger, language-catalog, and corpus counts.
+- Keep Cancer Discovery and Nature records out of CCR/JTO bibliographies, reading ledgers, language catalogs and corpus counts.
+- PMID 26069186: expression clusters differ from mutation groups; do not turn RFS association into OS benefit or HSP90 cell-line sensitivity into clinical efficacy.
+- PMID 29773717: ORR and survival denominators differ; preserve the unresolved Fig5D/prose OS interval conflict; small randomized biomarker subsets do not settle prediction versus prognosis.
+- PMID 39385035: STK11/KEAP1 union is not double mutation; TDCT-versus-DCT OS HR.64 (95% CI.40–1.04) is not statistically proven superiority. Mouse single-cell and perturbation results are not human single-cell data or universal clinical causality.
 - Do not imply that unprovided supplementary files were reviewed.

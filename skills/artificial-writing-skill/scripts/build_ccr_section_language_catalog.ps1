@@ -67,6 +67,14 @@ $assets = [ordered]@{
         source_set = "ccr-2026-09-19-fifteen-existing-main-pdfs"
         all_pmids = @("42113010", "42658187", "41945491", "41779007", "42446521", "41591979", "42578969", "41790029", "41537704", "42207168", "42440354", "41801128", "42307634", "41543339", "42599160")
     }
+    "ccr-2025-2026-09-19-intake-language.md" = [ordered]@{
+        source_set = "ccr-2025-eight-main-pdfs-read-2026-09-19"
+        all_pmids = @("39470668", "39836372", "39561276", "39670974", "40932352", "39495173", "40299768", "40853904")
+    }
+    "ccr-2025-genomics-2026-09-20-language.md" = [ordered]@{
+        source_set = "ccr-2025-thirteen-genomics-adjacent-main-pdfs-read-2026-09-20"
+        all_pmids = @("39804166", "39932457", "40704901", "40388547", "39437011", "39887260", "40310449", "39853318", "40261185", "40465842", "40047548", "39836411", "39620930")
+    }
 }
 
 $rules = @{}
@@ -487,6 +495,47 @@ foreach ($sourcePmid in $pending15Domains.Keys) {
         $paragraphUnit = if ($isArchitecture) { "paragraph-architecture" } else { "paragraph-model" }
         $paragraphReuse = if ($isArchitecture) { "synthetic-architecture" } else { "synthetic-model" }
         Add-FrameRule $pending15Asset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) $paragraphUnit $paragraphReuse
+    }
+}
+
+$intakeAsset = "ccr-2025-2026-09-19-intake-language.md"
+$intakeManifest = Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2025-2026-09-19-intake-manifest.csv") -Encoding UTF8
+foreach ($article in $intakeManifest) {
+    $sourceContainer = "PMID $($article.pmid)"
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $intakeAsset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        Add-Rule $intakeAsset $sourceContainer "$displaySection vocabulary" $normalizedSection "" "terminology" $article.secondary_domain_tags "vocabulary" "terminology-only" @($article.pmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $article.evidence_tier }
+        Add-FrameRule $intakeAsset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $article.secondary_domain_tags $tier @($article.pmid)
+    }
+    Add-FrameRule $intakeAsset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    Add-FrameRule $intakeAsset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $intakeAsset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid) "paragraph-model" "synthetic-model"
+    }
+}
+
+$genomicsAsset = "ccr-2025-genomics-2026-09-20-language.md"
+$genomicsManifest = Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2025-genomics-2026-09-20-manifest.csv") -Encoding UTF8
+foreach ($article in $genomicsManifest) {
+    $sourceContainer = "PMID $($article.pmid)"
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        Add-FrameRule $genomicsAsset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" "" "abstract-$abstractPart-summary" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    }
+    foreach ($displaySection in @("Introduction", "Methods", "Results", "Discussion")) {
+        $normalizedSection = $displaySection.ToLowerInvariant()
+        Add-Rule $genomicsAsset $sourceContainer "$displaySection vocabulary" $normalizedSection "" "terminology" $article.secondary_domain_tags "vocabulary" "terminology-only" @($article.pmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $article.evidence_tier }
+        Add-FrameRule $genomicsAsset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $article.secondary_domain_tags $tier @($article.pmid)
+    }
+    Add-FrameRule $genomicsAsset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    Add-FrameRule $genomicsAsset $sourceContainer "Translational relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $genomicsAsset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid) "paragraph-model" "synthetic-model"
     }
 }
 

@@ -6,6 +6,8 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
+from library_common import journal_registry
+
 
 GATES = (
     'coverage_check', 'evidence_check', 'results_check',
@@ -17,10 +19,6 @@ FIELDS = (
     'supplement_status', 'reading_evidence', 'review_record',
     'reviewer_id', 'review_method', 'reviewed_on', 'note',
 )
-JOURNALS = {
-    'ccr': ('ccr-corpus-bibliography.csv', 'ccr-deep-reading-ledger.md'),
-    'jto': ('jto-stk11-priority-bibliography.csv', 'jto-stk11-deep-reading-ledger.md'),
-}
 METHODS = {'same_agent_source_recheck', 'independent_agent_source_recheck', 'human_source_recheck'}
 
 
@@ -45,7 +43,8 @@ def check_path(references, value, label):
 def validate(skill_path):
     references = skill_path / 'references'
     summary = {}
-    for journal, (bibliography_name, ledger_name) in JOURNALS.items():
+    for journal, configuration in journal_registry(skill_path).items():
+        bibliography_name, ledger_name = configuration['bibliography'], configuration['ledger']
         bibliography_rows = read_rows(references / bibliography_name)
         bibliography = {row['pmid']: row for row in bibliography_rows}
         require(len(bibliography) == len(bibliography_rows), f'{journal}: duplicate bibliography PMID')
@@ -54,7 +53,7 @@ def validate(skill_path):
         completed = dict(matches)
         require(len(matches) == len(completed), f'{journal}: duplicate completed PMID')
         require(set(completed) <= set(bibliography), f'{journal}: unindexed completed PMID')
-        rows = read_rows(references / f'{journal}-reading-quality-register.csv')
+        rows = read_rows(references / configuration['quality'])
         require(len(rows) == len(bibliography), f'{journal}: register/bibliography count mismatch')
         require({row.get('pmid') for row in rows} == set(bibliography), f'{journal}: register PMID mismatch')
         for row in rows:

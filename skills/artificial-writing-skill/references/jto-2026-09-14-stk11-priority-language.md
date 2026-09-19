@@ -225,6 +225,7 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 **Source cautions:**
 
 - The Results prose labels HR 2.79 (95% CI, 1.35-5.76) for CDKN2A and HR 2.25 (95% CI, 1.20-4.19) for STK11 as univariable estimates. Figure 4 shows CDKN2A HR 2.46 (1.21-5.00) and STK11 HR 2.25 (1.20-4.19) in the univariable panel, and CDKN2A HR 2.79 (1.35-5.76) and STK11 HR 2.31 (1.19-4.49) in the multivariable panel. Attribute estimates by Figure 4 and disclose the prose-panel mismatch when exact values matter.
+- A bounded source recheck also found that physical PDF p14, numbered manuscript p12, line282 labels the multivariable outcome OS, whereas Table2 on physical p29 is explicitly a PFS model. Do not import that prose label as an OS finding; disclose the endpoint-label conflict. Figure4 is on physical p33. Physical PDF page and printed manuscript page are separate locators.
 - Every patient initiated durvalumab after cCRT; no contemporaneous cCRT-without-durvalumab comparator was included. The study cannot isolate a durvalumab treatment effect or prove STK11-mediated durvalumab resistance.
 - STK11 and CDKN2A were combined for the principal three-group Kaplan-Meier analysis. The combined result does not prove equal contribution or biological equivalence of the two genes.
 - STK11 associations were evaluated within KRAS-mutant tumors; the KRAS-wild-type supplementary analysis does not substitute for a formal KRAS-by-STK11 interaction test.
@@ -258,7 +259,7 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 - `co-alteration-defined high-risk subgroup` — 共改变定义的高危亚组；pp6-7.
 - `comparable to the wild-type cohort` — 与野生型队列相当；p6.
 - `Median PFS was [x] versus [y] months for [groups], with an HR of [value] and P=[value].` — 摘要生存结果；p6.
-- `The excess failure risk was driven primarily by distant rather than locoregional recurrence.` — 复发模式解释；pp6,14-15.
+- `Distant metastasis was more frequent in [group], whereas the locoregional comparison was not statistically significant.` — 复发模式的关联性陈述，不推断因果或等效；物理PDF pp6,14-15.
 - `Within KRAS-mutant tumors, adverse PFS was concentrated in cases with STK11 and/or CDKN2A co-alterations.` — STK11 核心结果；pp6,16.
 
 ### Abstract conclusion

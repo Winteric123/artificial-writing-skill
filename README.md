@@ -2,7 +2,7 @@
 
 An evidence-calibrated, section-aware Codex skill for biomedical translation, writing, reporting, synthesis, and presentation.
 
-The skill resolves the operation, communication scenario, journal, disease or tumor type, audience, and evidence domain independently. The current release has one corpus-backed journal selection (Clinical Cancer Research, CCR), one corpus-backed tumor selection (lung cancer), and a narrow source-grounded JTO selection supported by four STK11-priority articles. These are registered options rather than permanent properties of every task.
+The skill resolves the operation, communication scenario, journal, disease or tumor type, audience, and evidence domain independently. The current release has one corpus-backed journal selection (Clinical Cancer Research, CCR), one corpus-backed tumor selection (lung cancer), and article-level STK11-priority sets from JTO, Cancer Discovery and Nature. These are registered options rather than permanent properties of every task; the smaller sets do not establish journal-wide style profiles.
 
 ## What it does
 
@@ -11,11 +11,13 @@ The skill resolves the operation, communication scenario, journal, disease or tu
 - prepares scientific or technical reports, standalone results statements, abstracts, slide text, speaker notes, posters, briefings, response letters, and literature syntheses;
 - supports oncology communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, targeted therapy, and drug response or resistance;
 - retrieves vocabulary, collocations, sentence frames, and paragraph architectures by Title, Abstract component, Introduction, Methods, Results, Discussion, Conclusion, or Translational Relevance;
-- provides a 2,770-entry article-linked language catalog covering all 83 completed CCR main-text deep reads, with PMID scope and provenance granularity for every entry;
-- prioritizes ten deeply read framework papers—six CCR ATM/SMARCA4/KRAS/AmpRatio studies and four JTO ERBB2/KRAS/STK11-copy-deletion/MTAP studies—for future STK11-focused lung-cancer work without presenting them as a dedicated STK11 profile;
+- provides a 3,858-entry cross-journal retrieval view with isolated source catalogs, including 3,268 CCR entries covering 104 completed CCR main-text reads, with article-level provenance and source alerts;
+- prioritizes thirteen framework papers—six CCR, four JTO, two Cancer Discovery and one Nature—for STK11-focused lung-cancer work without presenting them as a validated STK11 molecular profile;
 - tracks main-text completion separately from supplementary-material coverage and documented six-gate source-recheck acceptance;
 - calibrates causal, predictive, subgroup, validation, superiority, and clinical-utility claims to the underlying evidence;
 - checks numbers, terminology, tense, abbreviations, provenance, and unsupported assertions.
+
+Counts are a 2026-09-20 snapshot. The [generated inventory](skills/artificial-writing-skill/references/library-index.md) and [summary](skills/artificial-writing-skill/references/library-summary.json) distinguish all-journal year totals from journal-by-year subsets. Topic or intake-batch counts require an additional explicit filter.
 
 It does not provide clinical decision support and must not invent data, methods, citations, registrations, ethics approvals, or novelty claims.
 
@@ -103,18 +105,43 @@ Use $artificial-writing-skill to prepare evidence-based slide headlines and spea
 
 For an unsupported journal or tumor type, provide the relevant instructions or source material. The skill applies core integrity and evidence rules but does not claim a learned profile until that selection is registered and validated.
 
+## Inventory scope and retrieval
+
+The 2026-09-20 formal-journal inventory has 251 registered records: 243 included and eight excluded legacy commentaries. Main-text reading is complete for 111 included records; 132 remain incomplete. Preprints and candidate references have separate registers and do not enter these denominators.
+
+| Scope | Included | Main-text complete | Included, incomplete |
+|---|---:|---:|---:|
+| 2025, all registered formal journals, no topic filter | 49 | 39 | 10 |
+| 2025, CCR only, no topic filter | 48 | 38 | 10 |
+| All indexed years, CCR only, no topic filter | 236 | 104 | 132 |
+
+The one-paper difference between the two 2025 rows is an already-read JTO article. Neither row is a genomics-only count or evidence that the entire 2025 journal literature has been acquired. In the summary JSON, `years` aggregates journals; `journal_years` preserves journal/year intersections.
+
+Run from `skills/artificial-writing-skill` with Python 3.10 or later:
+
+~~~powershell
+python scripts/search_language.py --journal ccr --year 2025 --section results --query "co-mutation" --limit 5
+python scripts/search_language.py --pmid 39804166 --section discussion --single-paper --limit 5
+python scripts/validate_reading_quality.py
+python -m unittest discover -s tests -v
+~~~
+
+Retrieval preserves stable IDs, section/function/domain tags, usage cards, source warnings and reading/review states. Follow [retrieval-and-maintenance.md](skills/artificial-writing-skill/references/retrieval-and-maintenance.md) for rebuilds and scope rules. The package is stored without Git newline conversion because dependency manifests verify exact file hashes. Preserve these bytes when deploying, or rebuild the indexes after intentional source edits. The 24 regression tests and skill-format validator passed for this update; mechanical checks do not certify scientific acceptance.
+
 ## CCR corpus provenance
 
-- Article-level bibliography: 231 records with recorded main-text coverage checks, totaling 3,957 physical PDF pages. Indexing and coverage checks do not establish deep reading. The 2020 SMARCA4 paper is an explicit user-priority historical qualitative exception to the 2021–2026 base.
-- Language-focused deep reading: 83 articles completed across eight full-text batches; 148 records remain incomplete, including 140 eligible research records and eight excluded legacy commentaries that must not enter a research-reading queue. Main-article completion does not imply review of unsupplied supplementary files or a passed source recheck.
+- Article-level bibliography: 244 registered records, of which 236 are included and eight are excluded legacy commentaries. Indexing and coverage checks do not establish deep reading. The 2020 SMARCA4 paper is an explicit user-priority historical qualitative exception to the 2021–2026 base.
+- Language-focused deep reading: 104 included articles completed; 132 included records remain incomplete. The eight excluded commentaries must not enter a research-reading queue. Main-article completion does not imply review of unsupplied supplementary files or a passed source recheck.
 - Indexed 2026 coverage: 62/62 main articles completed. This is the local indexed subset, not exhaustive coverage of every 2026 CCR publication. EVOKE-02 (PMID 41961582) remains unsupplied, unread, and outside the bibliography denominator.
-- Structured section-language catalog: 2,770 entries covering all 83 completed CCR PMIDs, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
-- Acceptance status: no article is marked source-recheck-passed. The earlier 68 CCR completion records retain not_reaudited gates; the latest 15 have pending recheck gates. JTO review status is recorded separately.
+- Structured section-language catalog: 3,268 entries covering all 104 completed CCR PMIDs, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
+- Acceptance status: no article is marked source-recheck-passed. Consult each journal's quality register for its actual gate and review states; an initial main-text reading is not a separate acceptance recheck.
 - September 12 addition: three 2026 Online First papers and one formally published in 2021; 177 new single-paper, section-indexed expressions with main-PDF locators. Three new official CCR classifications remain unverified; topic tags and the LAURA manuscript-declared category are recorded separately from official classification.
 - September 14 priority addition: one 2020 SMARCA4 and two 2023 ATM studies; 228 new single-paper, section-indexed expressions with main-PDF locators and explicit STK11 reuse boundaries. All three are marked as priority contextual references, not a validated STK11 molecular profile.
 - September 19 first addition: 14 main articles and 511 language entries, including user-highlighted KRAS G12V/Q61 frameworks; clinical, omics, experimental, statistical, and therapeutic expressions remain article-traceable.
 - September 19 second addition: eight main articles and 330 language entries, including the user-highlighted AmpRatio framework, fragmentomics, longitudinal ctDNA, phase I immunotherapy, single-nucleus RNA, and macrophage experiments.
 - September 19 existing-index completion: 15 previously indexed 2026 main articles and 512 language entries (249 vocabulary/collocations, 233 sentence frames, 16 paragraph models, and 14 paragraph architectures). All main figures/tables were included; separate supplements were not supplied. This batch adds no bibliography records or STK11 highlights.
+- September 19 2025 intake: eight additional CCR original articles, with journal/year classification, actual-version provenance and section-aware language. Two Cancer Discovery papers and one Nature paper have separate reading and language assets; the medRxiv PRO preprint does not complete formal CCR PMID 40272273.
+- September 20 genomics-adjacent reading: 13 main articles (eight previously indexed, four newly supplied, one additionally obtained open-access paper), five new bibliography records and 272 section-indexed expressions. Coverage includes co-mutations, expression signatures, tissue/plasma concordance, fusion detection, MRD, methylation classifiers, quantitative protein targets and functional assays. Main figures/tables were included; separate supplements and acceptance rechecks remain outstanding. No new highlights were added in this batch.
 - Legacy standardized section corpus: 1,095,664 words and 46,895 sentences from the original 189-article base.
 - Legacy reusable phrase-example bank: 9,411 rows from 181 distinct articles.
 - September 2026 research-only supplement: 15 articles and 371 pages, screened for corpus inclusion and qualitative profile calibration but not thereby deeply read.
@@ -152,7 +179,12 @@ skills/artificial-writing-skill/
 |-- agents/openai.yaml
 |-- scripts/
 |   |-- build_ccr_section_language_catalog.ps1
+|   |-- build_library_index.py
+|   |-- build_language_index.py
+|   |-- search_language.py
 |   \-- validate_reading_quality.py
+|-- tests/
+|-- assets/stk11-project-workspace.md
 \-- references/
     |-- profile-registry.md
     |-- communication-scenarios.md
@@ -170,6 +202,18 @@ skills/artificial-writing-skill/
     |-- ccr-2026-09-19-batch2-language.md
     |-- ccr-2026-09-19-pending15-language.md
     |-- ccr-2026-09-19-pending15-manifest.csv
+    |-- ccr-2025-2026-09-19-intake-language.md
+    |-- ccr-2025-genomics-2026-09-20-language.md
+    |-- ccr-2025-genomics-2026-09-20-manifest.csv
+    |-- cancer-discovery-2026-09-19-stk11-language.md
+    |-- nature-2026-09-19-stk11-language.md
+    |-- library-index.csv
+    |-- library-index.md
+    |-- library-summary.json
+    |-- language-retrieval-index.json
+    |-- language-index-manifest.json
+    |-- language-controls.json
+    |-- retrieval-and-maintenance.md
     |-- deep-reading-acceptance.md
     |-- ccr-reading-quality-register.csv
     |-- jto-reading-quality-register.csv

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "journals": {
+    "ccr": {"name": "Clinical Cancer Research", "bibliography": "ccr-corpus-bibliography.csv", "ledger": "ccr-deep-reading-ledger.md", "quality": "ccr-reading-quality-register.csv", "language_catalog": "ccr-section-language-catalog.csv"},
+    "jto": {"name": "Journal of Thoracic Oncology", "bibliography": "jto-stk11-priority-bibliography.csv", "ledger": "jto-stk11-deep-reading-ledger.md", "quality": "jto-reading-quality-register.csv", "language_markdown": "jto-2026-09-14-stk11-priority-language.md"},
+    "cancer-discovery": {"name": "Cancer Discovery", "bibliography": "cancer-discovery-stk11-priority-bibliography.csv", "ledger": "cancer-discovery-stk11-deep-reading-ledger.md", "quality": "cancer-discovery-reading-quality-register.csv", "language_catalog": "cancer-discovery-section-language-catalog.csv"},
+    "nature": {"name": "Nature", "bibliography": "nature-stk11-priority-bibliography.csv", "ledger": "nature-stk11-deep-reading-ledger.md", "quality": "nature-reading-quality-register.csv", "language_catalog": "nature-section-language-catalog.csv"}
+  }
+}

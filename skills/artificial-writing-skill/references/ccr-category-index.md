@@ -1,97 +1,47 @@
 # CCR official category index
 
-## Scope and authority
+Generated from the bibliography and quality register, not inferred from article titles. Current overall inventory: [library-index.md](library-index.md). Historical category names remain distinct; topic tags do not rename official CCR sections.
 
-This index records the official Clinical Cancer Research category attached to every article in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv). Use `ccr_official_category`, rather than the broader corpus `article_type`, whenever the user asks how an article is classified by CCR.
+| Official category | Indexed | Included | Main-text complete |
+|---|---:|---:|---:|
+| Artificial Intelligence and Computational Oncology | 1 | 1 | 1 |
+| CCR Drug Updates | 8 | 8 | 1 |
+| CCR Translations | 8 | 0 | 0 |
+| Clinical Trials: Cellular and Gene Therapy | 1 | 1 | 1 |
+| Clinical Trials: Immunotherapy | 32 | 32 | 18 |
+| Clinical Trials: Molecularly Targeted Therapy | 7 | 7 | 6 |
+| Clinical Trials: Novel Mechanisms | 2 | 2 | 1 |
+| Clinical Trials: Targeted Therapy | 23 | 23 | 1 |
+| New Drugs on the Horizon | 2 | 2 | 2 |
+| Novel Biomarkers and Precision Medicine | 19 | 19 | 19 |
+| Official category unverified | 3 | 3 | 3 |
+| Perspectives | 1 | 1 | 0 |
+| Precision Medicine and Imaging | 45 | 45 | 15 |
+| Research Article | 3 | 3 | 3 |
+| Research Briefs: Clinical Trial Brief Reports | 6 | 6 | 1 |
+| Research Briefs: Precision Medicine and Therapeutics | 7 | 7 | 6 |
+| Review | 8 | 8 | 0 |
+| Special Report | 1 | 1 | 0 |
+| Translational Cancer Mechanisms and Therapy | 50 | 50 | 9 |
+| Translational Mechanisms and Therapy | 17 | 17 | 17 |
 
-Status as of 2026-09-19:
+## Verification status
 
-- bibliography records with a verified official category tag: **228/231**;
-- section-specific official labels: **225**;
-- Online First records whose official page currently shows only the generic label `Research Article`: **3**;
-- category evidence from a publisher PDF header: **129**;
-- category evidence from the official AACR article page: **99**.
-- official classifications pending verification: **3**. One supplied manuscript declares a category, but this is kept separate from current website/issue verification.
+- official_generic_online_first: 3
+- official_section: 238
+- pending_official_verification: 3
 
-Historical section names are preserved. Capitalization is normalized, and the page variants `Review` and `Reviews` are represented as `Review`; otherwise, older names are not silently converted to newer CCR section names.
+## Unverified or generic labels
 
-## Category distribution
+- PMID 42658187: Research Article; official_generic_online_first; A Phase 2 Basket Trial of Ado-Trastuzumab Emtansine for Patients with HER2 Amplified Cancers: A Non-Randomized Clinical Trial. Do not infer a more specific official category from content.
+- PMID 42714875: unverified; pending_official_verification; Associations of Baseline Neutrophil-to-Lymphocyte Ratio with Efficacy and Toxicity of the B7H3 ADC YL201, Linked to Interleukin-6: Analysis of the Phase 1/1b Trial. Do not infer a more specific official category from content.
+- PMID 42714874: unverified; pending_official_verification; Ceralasertib plus durvalumab in Ras mutant and Ras wild type advanced non-small cell lung cancer: Two cohorts of the phase II platform National Lung Matrix Trial. Do not infer a more specific official category from content.
+- PMID 42578969: Research Article; official_generic_online_first; ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L. Do not infer a more specific official category from content.
+- PMID 42714840: unverified; pending_official_verification; Osimertinib After Definitive Chemoradiotherapy in Unresectable Stage III EGFR-Mutated NSCLC: Subsequent Treatments and PPO From the Phase III LAURA Study. Do not infer a more specific official category from content.
+- PMID 42574065: Research Article; official_generic_online_first; Rilvegostomig for Metastatic Non-Small-Cell Lung Cancer: A First-In-Human Phase I/II Clinical Study. Do not infer a more specific official category from content.
 
-| Official CCR category | Articles |
-|---|---:|
-| Translational Cancer Mechanisms and Therapy | 49 |
-| Precision Medicine and Imaging | 38 |
-| Clinical Trials: Immunotherapy | 30 |
-| Clinical Trials: Targeted Therapy | 22 |
-| Novel Biomarkers and Precision Medicine | 19 |
-| Translational Mechanisms and Therapy | 15 |
-| CCR Drug Updates | 8 |
-| CCR Translations | 8 |
-| Review | 8 |
-| Research Briefs: Precision Medicine and Therapeutics | 7 |
-| Clinical Trials: Molecularly Targeted Therapy | 7 |
-| Research Briefs: Clinical Trial Brief Reports | 6 |
-| Research Article | 3 |
-| Clinical Trials: Novel Mechanisms | 2 |
-| Artificial Intelligence and Computational Oncology | 1 |
-| Clinical Trials: Cellular and Gene Therapy | 1 |
-| New Drugs on the Horizon | 2 |
-| Perspectives | 1 |
-| Special Report | 1 |
-| Official category unverified (status, not a CCR category) | 3 |
-| **Total** | **231** |
+## Boundaries
 
-The 2020 SMARCA4 lung-cancer paper (PMID 32709715) is an explicit user-priority historical qualitative scope exception. Its publisher-PDF header identifies the official section as `Translational Cancer Mechanisms and Therapy`. It is included in current bibliography, category, deep-reading, and section-language-catalog counts, but not in the legacy 2021–2026 standardized-section or phrase-example-bank statistics.
+The 2020 SMARCA4 article remains an explicit user-priority historical exception. Eight legacy CCR Translations commentaries remain excluded and are not future reading tasks. No replies, editorials or response-only correspondence are newly included. Main-text completion and source-recheck acceptance are separate states; supplements require their own evidence.
 
-The three generic Online First records are PMID 42574065, PMID 42578969, and PMID 42658187. Do not infer a more specific section for them until the CCR article page or assigned issue supplies one.
-
-The three unverified new records are PMID 42714840, 42714874, and 42714875. AACR webpage access was unsuccessful on 2026-09-12. The accepted LAURA manuscript (PMID 42714840, PDF p6) declares Clinical Trials: Molecularly Targeted Therapy; this declaration is recorded in the bibliography coverage note but is not counted as independently verified official classification. Content classification is available in [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md): targeted-therapy follow-up, ATR/PD-L1 immunotherapy-translational research, and ADC inflammatory-biomarker/proteomics research, respectively. Topic tags do not rename CCR sections.
-
-## Deep-reading coverage by official category
-
-As of 2026-09-19, the 68 completed language-focused deep reads are distributed as follows:
-
-| Official CCR category | Deep reads completed | Indexed articles |
-|---|---:|---:|
-| Novel Biomarkers and Precision Medicine | 16 | 19 |
-| Translational Mechanisms and Therapy | 13 | 15 |
-| Clinical Trials: Immunotherapy | 16 | 30 |
-| Precision Medicine and Imaging | 3 | 38 |
-| Research Briefs: Precision Medicine and Therapeutics | 4 | 7 |
-| CCR Drug Updates | 1 | 8 |
-| Research Article | 1 | 3 |
-| Translational Cancer Mechanisms and Therapy | 5 | 49 |
-| Clinical Trials: Molecularly Targeted Therapy | 2 | 7 |
-| Clinical Trials: Cellular and Gene Therapy | 1 | 1 |
-| New Drugs on the Horizon | 2 | 2 |
-| Research Briefs: Clinical Trial Brief Reports | 1 | 6 |
-| Official category unverified | 3 | 3 |
-| All other official categories | 0 | 43 |
-| **Total** | **68** | **231** |
-
-This table summarizes the article-level records in [ccr-deep-reading-ledger.md](ccr-deep-reading-ledger.md); the ledger remains the sole authority for individual completion status. The `Research Article` entry retains the publisher's generic Online First label and is not reassigned to a more detailed section.
-
-## Bibliography fields
-
-- `ccr_official_category`: normalized official label displayed in the publisher PDF header or on the AACR article page.
-- `ccr_category_source`: `publisher_pdf_header` or `aacr_article_page`.
-- `ccr_category_status`: `official_section`, `official_generic_online_first`, or `pending_official_verification`.
-- `ccr_category_verified_on`: date of the latest successful category verification; blank when unverified. Category and source are also blank for pending records.
-- `corpus_genre_status`: whether the record remains usable in the existing research corpus or is retained only as a legacy excluded-genre index row.
-
-CCR category assignment is independent of language-focused deep reading. Consult [ccr-deep-reading-ledger.md](ccr-deep-reading-ledger.md) before describing any paper as deeply read.
-
-## Commentary and reply boundary
-
-The eight historical commentary records resolve to the official category `CCR Translations`. They remain findable in the bibliography for traceability but are marked `excluded_commentary_legacy_index_only`; their standardized-section and phrase-bank flags remain `no`. Do not use them for future vocabulary, phrase, sentence, section-pattern, or quantitative-corpus updates.
-
-No letter, author reply, rebuttal, or response-only correspondence is present in the 231-record index. Continue to exclude those genres from future additions even if a title contains ordinary scientific uses of `response`.
-
-## Identifier corrections
-
-Official AACR citation metadata exposed two incorrect legacy PMID joins, both corrected in the bibliography on 2026-09-07:
-
-- `Targeting Replication Stress and Chemotherapy Resistance with a Combination of Sacituzumab Govitecan and Berzosertib: A Phase I Clinical Trial`: PMID **37154821**, replacing 37227187.
-- `FDA Approval Summary: Selpercatinib for the Treatment of Advanced RET Fusion-Positive Solid Tumors`: PMID **37219515**, replacing 37265412.
-
-Use DOI as the stable join key when refreshing categories or auditing identifiers. Recheck any Online First generic label after issue assignment, and update the verification date without changing deep-reading status.
+Use ccr_official_category, ccr_category_source, ccr_category_status and ccr_category_verified_on in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) for the article-level classification evidence. The latest author-manuscript category for PMID39561276 was verified at the [official article page](https://aacrjournals.org/clincancerres/article/31/2/376/751103/Analysis-of-Shared-Variants-between-Cancer); the other seven latest additions use their publisher PDF headers.

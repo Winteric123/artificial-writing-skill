@@ -19,13 +19,13 @@ Reading completion and review acceptance are separate axes. A documented source 
 
 ## Status summary
 
-As of 2026-09-19:
+As of 2026-09-20:
 
-- bibliography records: **231**;
-- completed language-focused deep reads: **83**;
-- pending or incomplete deep reads: **148** (140 eligible research records plus eight excluded legacy commentaries).
+- bibliography records: **244**;
+- completed language-focused deep reads: **104**;
+- pending or incomplete deep reads: **140** (132 eligible research records plus eight excluded legacy commentaries).
 
-The 83 completed PMIDs are listed below. Every other PMID in `ccr-corpus-bibliography.csv` is `pending_or_incomplete` until explicitly added after a qualifying full-text pass. This set definition is exhaustive. The four additions on 2026-09-12, three on 2026-09-14, and two batches of 14 and eight on 2026-09-19 cover supplied main PDFs and their main figures/tables; separate supplements were not independently reviewed. Article-level maps and language are in [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md), [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md), [ccr-2026-09-19-supplement-language.md](ccr-2026-09-19-supplement-language.md), and [ccr-2026-09-19-batch2-language.md](ccr-2026-09-19-batch2-language.md).
+The 104 completed PMIDs are listed below. Every other PMID in `ccr-corpus-bibliography.csv` is `pending_or_incomplete` until explicitly added after a qualifying full-text pass. This set definition is exhaustive. Current year/journal totals are generated in [library-index.md](library-index.md). The latest 13 main-text readings have article-level evidence and section language in [ccr-2025-genomics-2026-09-20-language.md](ccr-2025-genomics-2026-09-20-language.md); separate supplements were not supplied. Earlier batches retain their original evidence assets and completion dates.
 
 ### Supplied-batch completion scope
 
@@ -129,16 +129,37 @@ Join this ledger to [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) b
 | 42307634 | 2026-09-19 | Clinical Trials: Novel Mechanisms | pef ablation tls germinal centers single cell rna abseq spatial pathology; article-specific numerical conflicts and transfer limits in ccr-2026-09-19-pending15-language.md |
 | 41543339 | 2026-09-19 | Translational Mechanisms and Therapy | rras rras2 functional genomics clonality signaling xenograft pharmacology; article-specific numerical conflicts and transfer limits in ccr-2026-09-19-pending15-language.md |
 | 42599160 | 2026-09-19 | Research Briefs: Precision Medicine and Therapeutics | smarca4 allelic status copy number stk11 coalteration treatment cases; article-specific numerical conflicts and transfer limits in ccr-2026-09-19-pending15-language.md |
+| 39470668 | 2026-09-19 | Clinical Trials: Targeted Therapy | PARP/temozolomide, CNS response and safety; ccr-2025-2026-09-19-intake-language.md#pmid-39470668 |
+| 39836372 | 2026-09-19 | Clinical Trials: Immunotherapy | MAPK genomic grouping, exploratory ICI outcomes and multiplex IF; ccr-2025-2026-09-19-intake-language.md#pmid-39836372 |
+| 39561276 | 2026-09-19 | Precision Medicine and Imaging | Shared-variant diagnostic relatedness; ccr-2025-2026-09-19-intake-language.md#pmid-39561276 |
+| 39670974 | 2026-09-19 | Precision Medicine and Imaging | Longitudinal immune and radiomic resistance phenotypes; ccr-2025-2026-09-19-intake-language.md#pmid-39670974 |
+| 40932352 | 2026-09-19 | Clinical Trials: Immunotherapy | Oncolytic virus, WGS, spatial protein profiling; ccr-2025-2026-09-19-intake-language.md#pmid-40932352 |
+| 39495173 | 2026-09-19 | Translational Cancer Mechanisms and Therapy | YAP/HER3/RET adaptive signaling and perturbation; ccr-2025-2026-09-19-intake-language.md#pmid-39495173 |
+| 40299768 | 2026-09-19 | Translational Mechanisms and Therapy | ecDNA/MYC, bulk RNA and spatial proteomics; ccr-2025-2026-09-19-intake-language.md#pmid-40299768 |
+| 40853904 | 2026-09-19 | Translational Mechanisms and Therapy | LPA metabolomics, bulk RNA/proteomics and scRNA reanalysis; ccr-2025-2026-09-19-intake-language.md#pmid-40853904 |
+| 39804166 | 2026-09-20 | Precision Medicine and Imaging | KRYSTAL-1 STK11/KEAP1, NRF2 expression and functional experiments; ccr-2025-genomics-2026-09-20-language.md#pmid-39804166 |
+| 39932457 | 2026-09-20 | Precision Medicine and Imaging | Paired cfDNA/normal variant attribution and CH denominators; ccr-2025-genomics-2026-09-20-language.md#pmid-39932457 |
+| 40704901 | 2026-09-20 | Precision Medicine and Imaging | NUT registry fusion detection and rare thoracic co-alterations; ccr-2025-genomics-2026-09-20-language.md#pmid-40704901 |
+| 40388547 | 2026-09-20 | Precision Medicine and Imaging | NCI-MATCH actionable tissue/plasma concordance; ccr-2025-genomics-2026-09-20-language.md#pmid-40388547 |
+| 39437011 | 2026-09-20 | Precision Medicine and Imaging | Metabolic volume, immunotherapy interaction and multiomic correlates; ccr-2025-genomics-2026-09-20-language.md#pmid-39437011 |
+| 39887260 | 2026-09-20 | Precision Medicine and Imaging | RET fusion round-robin detection and assay limits; ccr-2025-genomics-2026-09-20-language.md#pmid-39887260 |
+| 40310449 | 2026-09-20 | Precision Medicine and Imaging | VISION METex14, shedding and descriptive clinical outcomes; ccr-2025-genomics-2026-09-20-language.md#pmid-40310449 |
+| 39853318 | 2026-09-20 | Precision Medicine and Imaging | Updated MRD cohort, landmark/longitudinal prediction and false negatives; ccr-2025-genomics-2026-09-20-language.md#pmid-39853318 |
+| 40261185 | 2026-09-20 | Precision Medicine and Imaging | ctMoniTR clearance, pooled TKI outcomes and internal validation; ccr-2025-genomics-2026-09-20-language.md#pmid-40261185 |
+| 40465842 | 2026-09-20 | Translational Cancer Mechanisms and Therapy | Lung-MAP tumor fraction, mutation concordance and prognosis; ccr-2025-genomics-2026-09-20-language.md#pmid-40465842 |
+| 40047548 | 2026-09-20 | Translational Cancer Mechanisms and Therapy | EGFR-stratified ADC-target protein quantification and analytical calibration; ccr-2025-genomics-2026-09-20-language.md#pmid-40047548 |
+| 39836411 | 2026-09-20 | Translational Cancer Mechanisms and Therapy | RAS–RAF PLA, KRASG12C model/patient response and threshold limits; ccr-2025-genomics-2026-09-20-language.md#pmid-39836411 |
+| 39620930 | 2026-09-20 | Precision Medicine and Imaging | LINE-1 hypomethylation, multicancer classifiers and CNA integration; ccr-2025-genomics-2026-09-20-language.md#pmid-39620930 |
 
 ## Pending or incomplete deep reads
 
-Status: **148 articles**: 140 eligible research records and eight excluded legacy commentary records. The excluded records are traceability-only and must not enter a future reading queue.
+Status: **140 articles**: 132 eligible research records and eight excluded legacy commentary records. The excluded records are traceability-only and must not enter a future reading queue.
 
 Exact membership is defined as:
 
-`all 231 unique PMIDs in ccr-corpus-bibliography.csv minus the 83 PMIDs in the Completed deep reads table above`
+`all 244 unique PMIDs in ccr-corpus-bibliography.csv minus the 104 PMIDs in the Completed deep reads table above`
 
-Do not subdivide these 148 articles into `unread` versus `partially read` without article-level evidence. The supported statement is only that their language-focused deep reading has **not been completed**.
+Do not subdivide these 140 articles into `unread` versus `partially read` without article-level evidence. The supported statement is only that their language-focused deep reading has **not been completed**.
 
 ## Update rules
 
@@ -154,3 +175,15 @@ Do not subdivide these 148 articles into `unread` versus `partially read` withou
 - The 2026-09-19 fourteen-paper addition changes the current counts to 60/163. All 14 supplied CCR main PDFs completed section-aware language review; PMID 41417462 and PMID 42268349 were additionally designated as STK11 writing-framework priorities. Separate supplements remain unreviewed.
 - The subsequent 2026-09-19 eight-paper addition changed the counts to 68/163. All eight supplied CCR main PDFs completed section-aware language review; PMID 41870274 is additionally highlighted. EVOKE-02 remains unsupplied and unreviewed, not a completed or indexed addition.
 - The later 2026-09-19 read of 15 previously indexed 2026 papers changes the counts to 83/148, including 62/62 indexed 2026 main texts complete. No bibliography membership, legacy quantitative flags, excluded genre, or STK11 highlight changes. Initial reading does not establish six-gate acceptance; separate supplements remain unreviewed.
+
+## 2025 supplemental intake completed on 2026-09-19
+
+Eight new original articles; supplied main text and main figures/tables read. Supplements not supplied; source-recheck acceptance pending. Three identical Cancer Discovery/Nature duplicate PDFs retain their previous records. The separate medRxiv PRO preprint does not complete CCR PMID40272273.
+
+The eight rows are included in the authoritative completed table. At that historical intake, CCR had239 registered records,91 completed main-text reads and148 incomplete index rows (140 eligible,8 excluded). That intake did not change any pre-existing status or STK11 highlight.
+
+## 2025 genomics-adjacent batch completed on 2026-09-20
+
+Thirteen main-text readings comprise four newly supplied original articles, eight previously indexed topic-relevant papers and one additional lawful open-access LINE-1 paper. All main figures/tables and captions were included; no separate supplements or independent acceptance rechecks were completed. Five records are new bibliography additions. The other desktop files are eleven previously completed formal publications and one previously completed medRxiv preprint, identified by exact file hashes; they retain historical dates and do not count as thirteen additional reads. The preprint still does not complete formal CCR PMID40272273.
+
+Use the [batch manifest](ccr-2025-genomics-2026-09-20-manifest.csv) for journal, issue year, full title, actual PDF version, hash, secondary classifications and main visual page coverage. Existing official categories are preserved rather than inferred from the genomic topic. This closes the selected local 2025 core genomics/clinicogenomics-adjacent queue, not all 2025 eligible literature, all molecularly selected treatment trials or the entire journal. No STK11 highlights changed. Current CCR counts are244 registered,236 included,104 main-text-complete and132 included not yet complete; acceptance-passed remains a separate register state.

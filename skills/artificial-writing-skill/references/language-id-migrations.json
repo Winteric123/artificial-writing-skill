@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "migrations": [
+    {
+      "retired_id": "jto-lang-0122f0b787b402b72d28",
+      "replacement_id": "jto-lang-768643e5c97a9badeee4",
+      "reason": "Replaced driven-by failure-risk wording with observed distant-metastasis and nonsignificant locoregional comparisons; do not silently substitute into an old citation.",
+      "source_article_id": "41619904",
+      "source_asset": "jto-2026-09-14-stk11-priority-language.md",
+      "review_record": "stk11-highlight-bounded-recheck-2026-09-19.md#pmid-41619904",
+      "pre_correction_index_version": "90251509d4dce35a96023743dc426f86c816ef936e631ac29dce395e61d011fd"
+    }
+  ]
+}

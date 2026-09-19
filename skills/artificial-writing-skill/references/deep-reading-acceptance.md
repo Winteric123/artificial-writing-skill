@@ -8,6 +8,9 @@ The journal-specific deep-reading ledger remains authoritative for recorded main
 
 - CCR: [reading ledger](ccr-deep-reading-ledger.md) and [quality register](ccr-reading-quality-register.csv).
 - JTO priority set: [reading ledger](jto-stk11-deep-reading-ledger.md) and [quality register](jto-reading-quality-register.csv).
+- Cancer Discovery priority set: [reading ledger](cancer-discovery-stk11-deep-reading-ledger.md) and [quality register](cancer-discovery-reading-quality-register.csv).
+- Nature priority set: [reading ledger](nature-stk11-deep-reading-ledger.md) and [quality register](nature-reading-quality-register.csv).
+- Candidate-only [STK11 directory](stk11-expanded-reference-directory.md) entries do not count as acquired or completed journal records.
 - New journals need their own bibliography, ledger, and register; never pool completion rates across journals.
 
 ## Reading stage and review status
@@ -50,6 +53,8 @@ No weighted score can compensate for a failed gate. Missing central evidence, an
 3. Recheck all central result rows and compare Abstract, Results, tables, captions, and conclusions. Document numerator/denominator or source inconsistencies and their disposition.
 4. Sample language across every applicable section and the expression-unit types actually present. Include high-risk causal/predictive wording, negation, modality names, statistical language, and article-specific frames. Record actual selections and rationale, not only a sampling percentage. Full sampling of language is not required to claim a bounded review pass.
 5. If a sample is wrong or untraceable, correct it and extend the check to related entries, sections, or source mappings. Quarantine unresolved expressions from retrieval. Report the actual review scope; never call a sample review exhaustive or error-free.
+
+Enforce restrictions through `language-controls.json`, then rebuild the language index. Use stable retrieval IDs and the content-addressed manifest version in new review records; historical sequential IDs require their catalog file hash. Held entries remain excluded from writing retrieval even when visible in audit mode. Record article-level caveats separately from entry-level holds so safe terminology is not mislabeled as a proven scientific claim.
 6. Complete the six gates, reviewer identity, method, date, and source-recheck record. Only then set passed. Main-text completion does not establish supplement review, independent replication, clinical validation, or independent peer review.
 
 Pending review does not erase an existing reading asset or prohibit all source-grounded use. Reopen the source for material article-specific claims; do not describe an unreviewed record as acceptance-verified. If review exposes incomplete original reading, preserve its historical completion date and record the unresolved coverage problem with needs_correction rather than concealing it.

@@ -1,0 +1,174 @@
+{
+  "scope": {
+    "journals": "all_registered_formal_journals",
+    "years": "all_indexed_issue_years",
+    "topic_filter": null,
+    "preprints_included": false
+  },
+  "registered": 251,
+  "included": 243,
+  "excluded_legacy": 8,
+  "main_text_complete": 111,
+  "eligible_incomplete": 132,
+  "source_recheck_passed": 0,
+  "stk11_highlights": 13,
+  "years": {
+    "2015": {
+      "registered": 1,
+      "included": 1,
+      "complete": 1,
+      "incomplete": 0,
+      "excluded": 0
+    },
+    "2018": {
+      "registered": 1,
+      "included": 1,
+      "complete": 1,
+      "incomplete": 0,
+      "excluded": 0
+    },
+    "2020": {
+      "registered": 1,
+      "included": 1,
+      "complete": 1,
+      "incomplete": 0,
+      "excluded": 0
+    },
+    "2021": {
+      "registered": 11,
+      "included": 11,
+      "complete": 1,
+      "incomplete": 10,
+      "excluded": 0
+    },
+    "2022": {
+      "registered": 46,
+      "included": 42,
+      "complete": 0,
+      "incomplete": 42,
+      "excluded": 4
+    },
+    "2023": {
+      "registered": 42,
+      "included": 39,
+      "complete": 2,
+      "incomplete": 37,
+      "excluded": 3
+    },
+    "2024": {
+      "registered": 34,
+      "included": 34,
+      "complete": 1,
+      "incomplete": 33,
+      "excluded": 0
+    },
+    "2025": {
+      "registered": 50,
+      "included": 49,
+      "complete": 39,
+      "incomplete": 10,
+      "excluded": 1
+    },
+    "2026": {
+      "registered": 65,
+      "included": 65,
+      "complete": 65,
+      "incomplete": 0,
+      "excluded": 0
+    }
+  },
+  "journal_years": {
+    "Cancer Discovery": {
+      "2015": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2018": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Clinical Cancer Research": {
+      "2020": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2021": {
+        "registered": 11,
+        "included": 11,
+        "complete": 1,
+        "incomplete": 10,
+        "excluded": 0
+      },
+      "2022": {
+        "registered": 46,
+        "included": 42,
+        "complete": 0,
+        "incomplete": 42,
+        "excluded": 4
+      },
+      "2023": {
+        "registered": 42,
+        "included": 39,
+        "complete": 2,
+        "incomplete": 37,
+        "excluded": 3
+      },
+      "2024": {
+        "registered": 33,
+        "included": 33,
+        "complete": 0,
+        "incomplete": 33,
+        "excluded": 0
+      },
+      "2025": {
+        "registered": 49,
+        "included": 48,
+        "complete": 38,
+        "incomplete": 10,
+        "excluded": 1
+      },
+      "2026": {
+        "registered": 62,
+        "included": 62,
+        "complete": 62,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Journal of Thoracic Oncology": {
+      "2025": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2026": {
+        "registered": 3,
+        "included": 3,
+        "complete": 3,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Nature": {
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    }
+  }
+}
