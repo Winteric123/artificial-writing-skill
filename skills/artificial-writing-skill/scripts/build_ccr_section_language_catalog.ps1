@@ -24,6 +24,11 @@ $all2026Immunotherapy = @(
 $all2026Translational = @("41649868", "41817317", "41837748", "42148884", "42507545")
 $all39 = @($all2025 + $all2026Immunotherapy + $all2026Translational | Sort-Object -Unique)
 $priority20260914 = @("32709715", "37097610", "37733794")
+$supplement20260919 = @(
+    "41417462", "41556942", "41784525", "41894181", "41945500", "42007996", "42013305",
+    "42048384", "42059900", "42207176", "42268349", "42440361", "42507540", "42752799"
+)
+$batch220260919 = @("41252574", "41378983", "41400436", "41701940", "41870274", "41945490", "42001480", "42478960")
 
 $assets = [ordered]@{
     "ccr-2025-immunotherapy-fulltext-language.md" = [ordered]@{
@@ -49,6 +54,18 @@ $assets = [ordered]@{
     "ccr-2026-09-14-atm-smarca4-stk11-priority-language.md" = [ordered]@{
         source_set = "ccr-2026-09-14-stk11-priority-3"
         all_pmids = $priority20260914
+    }
+    "ccr-2026-09-19-supplement-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-19-fourteen-main-pdfs"
+        all_pmids = $supplement20260919
+    }
+    "ccr-2026-09-19-batch2-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-19-eight-main-pdfs"
+        all_pmids = $batch220260919
+    }
+    "ccr-2026-09-19-pending15-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-19-fifteen-existing-main-pdfs"
+        all_pmids = @("42113010", "42658187", "41945491", "41779007", "42446521", "41591979", "42578969", "41790029", "41537704", "42207168", "42440354", "41801128", "42307634", "41543339", "42599160")
     }
 }
 
@@ -320,6 +337,159 @@ foreach ($sourcePmid in $priorityDomains.Keys) {
     }
 }
 
+$supplement20260919Asset = "ccr-2026-09-19-supplement-language.md"
+$supplement20260919Domains = [ordered]@{
+    "42048384" = "kras-sos1-targeted-therapy-phase1-safety-efficacy"
+    "42440361" = "neoadjuvant-immunotherapy-spatial-transcriptomics-tme-statistics"
+    "42752799" = "egfr-met-resistance-biomarker-ihc-fish-cutoff-statistics"
+    "42207176" = "car-gamma-delta-t-cell-leptomeningeal-single-cell-immunology"
+    "42059900" = "ctdna-machine-learning-radiotherapy-survival-validation"
+    "42507540" = "pd1-egfr-combination-phase2-efficacy-safety"
+    "41784525" = "herv-transcriptomics-single-cell-spatial-immunotherapy-biomarker"
+    "42268349" = "kras-q61-stk11-clinicogenomics-immunotherapy-statistics"
+    "41417462" = "kras-g12v-stk11-clinicogenomics-immunotherapy-statistics"
+    "41556942" = "met-basket-trial-targeted-therapy-molecular-classification"
+    "42013305" = "rb-trip13-aurora-preclinical-cell-death-translational"
+    "41945500" = "ret-retreatment-real-world-targeted-therapy-outcomes"
+    "41894181" = "pulmonary-sarcomatoid-immunotherapy-antiangiogenic-phase2"
+    "42007996" = "fralpha-adc-preclinical-pharmacology-toxicology"
+}
+$supplement20260919Tiers = [ordered]@{
+    "42048384" = "phase1-descriptive-preliminary"
+    "42440361" = "single-arm-clinical-associative-spatial"
+    "42752799" = "single-arm-biomarker-enrichment"
+    "42207176" = "three-patient-proof-of-concept"
+    "42059900" = "prospective-prognostic-external-validation"
+    "42507540" = "single-arm-phase2-descriptive"
+    "41784525" = "multi-cohort-associative-treatment-interaction"
+    "42268349" = "retrospective-clinicogenomic-treatment-associated"
+    "41417462" = "retrospective-clinicogenomic-treatment-associated"
+    "41556942" = "phase2-basket-descriptive-exploratory"
+    "42013305" = "preclinical-mechanistic"
+    "41945500" = "retrospective-registry-descriptive"
+    "41894181" = "single-arm-phase2-descriptive"
+    "42007996" = "preclinical-pharmacologic-toxicologic"
+}
+foreach ($sourcePmid in $supplement20260919Domains.Keys) {
+    $sourceContainer = "PMID $sourcePmid"
+    $sourceDomain = $supplement20260919Domains[$sourcePmid]
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $supplement20260919Asset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        $secondary = if ($normalizedSection -in @("introduction", "methods", "results")) { (@("introduction", "methods", "results", "discussion") | Where-Object { $_ -ne $normalizedSection }) -join ";" } else { "conclusion" }
+        Add-Rule $supplement20260919Asset $sourceContainer "$displaySection vocabulary" $normalizedSection $secondary "terminology" $sourceDomain "vocabulary" "terminology-only" @($sourcePmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $supplement20260919Tiers[$sourcePmid] }
+        Add-FrameRule $supplement20260919Asset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $sourceDomain $tier @($sourcePmid)
+    }
+    Add-FrameRule $supplement20260919Asset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    Add-FrameRule $supplement20260919Asset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $supplement20260919Asset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) "paragraph-model" "synthetic-model"
+    }
+}
+
+$batch2Asset = "ccr-2026-09-19-batch2-language.md"
+$batch2Domains = [ordered]@{
+    "41870274" = "copy-number-amplification-ampratio-stk11-genomics-concordance-real-world-survival"
+    "41378983" = "brain-metastases-immunotherapy-basket-trial-intracranial-response-statistics"
+    "41252574" = "cea-il2-pdl1-phase1-immunogenicity-pharmacodynamics-efficacy-safety"
+    "42001480" = "ctdna-fragmentomics-clonal-hematopoiesis-machine-learning-external-validation"
+    "41400436" = "longitudinal-ctdna-wgs-immunotherapy-time-varying-survival-pseudoprogression"
+    "41701940" = "pd1-ctla4-bispecific-phase1-rna-tcr-imaging-pharmacodynamics-safety"
+    "41945490" = "pd1-lag3-bispecific-resistance-bulk-single-nucleus-pseudobulk-immunotherapy"
+    "42478960" = "cd24-macrophage-phagocytosis-preclinical-scrna-adc-combination-toxicology"
+}
+$batch2Tiers = [ordered]@{
+    "41870274" = "retrospective-clinicogenomic-associative"
+    "41378983" = "single-arm-exploratory-subgroup"
+    "41252574" = "phase1-descriptive-pharmacodynamic"
+    "42001480" = "analytical-external-validation-proof-of-principle"
+    "41400436" = "observational-prognostic-validation"
+    "41701940" = "phase1-descriptive-pharmacodynamic"
+    "41945490" = "phase1-exploratory-cross-study-mechanistic"
+    "42478960" = "preclinical-mechanistic-pharmacologic"
+}
+foreach ($sourcePmid in $batch2Domains.Keys) {
+    $sourceContainer = "PMID $sourcePmid"
+    $sourceDomain = $batch2Domains[$sourcePmid]
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $batch2Asset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        Add-Rule $batch2Asset $sourceContainer "$displaySection vocabulary" $normalizedSection "" "terminology" $sourceDomain "vocabulary" "terminology-only" @($sourcePmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $batch2Tiers[$sourcePmid] }
+        Add-FrameRule $batch2Asset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $sourceDomain $tier @($sourcePmid)
+    }
+    Add-FrameRule $batch2Asset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    Add-FrameRule $batch2Asset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        Add-FrameRule $batch2Asset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) "paragraph-model" "synthetic-model"
+    }
+}
+
+$pending15Asset = "ccr-2026-09-19-pending15-language.md"
+$pending15Domains = [ordered]@{
+    "41537704" = "ret-inhibitor-resistance-paired-biopsy-genomics-survival"
+    "41543339" = "rras-rras2-functional-genomics-clonality-signaling-xenograft-pharmacology"
+    "41591979" = "cfdna-methylation-epigenetic-instability-early-detection-machine-learning"
+    "41779007" = "pfas-exposure-lung-cancer-mortality-metabolomics-epidemiology"
+    "41790029" = "osimertinib-resistance-tissue-plasma-genomics-clonality-concordance"
+    "41801128" = "patient-reported-outcomes-osimertinib-chemotherapy-longitudinal-statistics"
+    "41945491" = "computational-pathology-adc-ihc-spatial-immunophenotyping-ici-survival-agreement"
+    "42113010" = "ctdna-methylation-pulmonary-nodule-classifier-machine-learning-diagnostic-statistics"
+    "42207168" = "adaptive-radiotherapy-imaging-immunotherapy-competing-risk-statistics"
+    "42307634" = "pef-ablation-tls-germinal-centers-single-cell-rna-abseq-spatial-pathology"
+    "42440354" = "egfr-c797x-osimertinib-gefitinib-targeted-therapy-efficacy-safety"
+    "42446521" = "egfr-amplification-allele-specific-copy-number-osimertinib-resistance-survival"
+    "42578969" = "erk-inhibitor-braf-basket-trial-null-efficacy-safety"
+    "42599160" = "smarca4-allelic-status-copy-number-stk11-coalteration-treatment-cases"
+    "42658187" = "her2-amplification-tdm1-basket-trial-adc-efficacy-safety"
+}
+$pending15Tiers = [ordered]@{
+    "41537704" = "retrospective-associative-resistance-genomics"
+    "41543339" = "preclinical-mechanistic"
+    "41591979" = "diagnostic-exploratory-validation"
+    "41779007" = "observational-associative"
+    "41790029" = "observational-resistance-genomics"
+    "41801128" = "randomized-trial-exploratory-pro"
+    "41945491" = "analytical-validation-retrospective-associative"
+    "42113010" = "diagnostic-validation-observational"
+    "42207168" = "single-arm-exploratory-prognostic"
+    "42307634" = "nonrandomized-exploratory-translational"
+    "42440354" = "single-arm-phase2-descriptive"
+    "42446521" = "retrospective-clinicogenomic-associative"
+    "42578969" = "single-arm-basket-descriptive"
+    "42599160" = "retrospective-genomics-exploratory-cases"
+    "42658187" = "single-arm-basket-descriptive"
+}
+foreach ($sourcePmid in $pending15Domains.Keys) {
+    $sourceContainer = "PMID $sourcePmid"
+    $sourceDomain = $pending15Domains[$sourcePmid]
+    foreach ($abstractPart in @("background", "methods", "results", "conclusion")) {
+        $secondary = if ($abstractPart -eq "background") { "abstract-objective" } else { "" }
+        Add-FrameRule $pending15Asset $sourceContainer "Abstract $abstractPart" "abstract-$abstractPart" $secondary "abstract-$abstractPart-summary" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    }
+    foreach ($displaySection in $supplementSections.Keys) {
+        $normalizedSection = $supplementSections[$displaySection]
+        Add-Rule $pending15Asset $sourceContainer "$displaySection vocabulary" $normalizedSection "" "terminology" $sourceDomain "vocabulary" "terminology-only" @($sourcePmid) "conventional-term-or-collocation"
+        $tier = if ($normalizedSection -eq "methods") { "descriptive" } else { $pending15Tiers[$sourcePmid] }
+        Add-FrameRule $pending15Asset $sourceContainer "$displaySection frames" $normalizedSection "" "$normalizedSection-evidence-reporting" $sourceDomain $tier @($sourcePmid)
+    }
+    Add-FrameRule $pending15Asset $sourceContainer "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    Add-FrameRule $pending15Asset $sourceContainer "Translational Relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $sourceDomain "evidence-calibrated" @($sourcePmid)
+    foreach ($paragraphSection in @("Results", "Discussion")) {
+        $isArchitecture = $sourcePmid -in @("41591979", "41790029", "41801128", "42113010", "42440354", "42578969", "42658187")
+        $paragraphUnit = if ($isArchitecture) { "paragraph-architecture" } else { "paragraph-model" }
+        $paragraphReuse = if ($isArchitecture) { "synthetic-architecture" } else { "synthetic-model" }
+        Add-FrameRule $pending15Asset $sourceContainer "$paragraphSection paragraph" $paragraphSection.ToLowerInvariant() "" "section-paragraph-synthesis" $sourceDomain "evidence-calibrated" @($sourcePmid) $paragraphUnit $paragraphReuse
+    }
+}
+
 $rows = New-Object System.Collections.Generic.List[object]
 $unmapped = New-Object System.Collections.Generic.List[string]
 $seen = New-Object "System.Collections.Generic.HashSet[string]"
@@ -373,7 +543,7 @@ foreach ($assetName in $assets.Keys) {
             }
 
             $rows.Add([pscustomobject][ordered]@{
-                catalog_version = "2026-09-14"
+                catalog_version = "2026-09-19"
                 expression = $expression
                 primary_section = $rule.primary_section
                 secondary_sections = $rule.secondary_sections

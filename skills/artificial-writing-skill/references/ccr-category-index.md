@@ -4,13 +4,13 @@
 
 This index records the official Clinical Cancer Research category attached to every article in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv). Use `ccr_official_category`, rather than the broader corpus `article_type`, whenever the user asks how an article is classified by CCR.
 
-Status as of 2026-09-14:
+Status as of 2026-09-19:
 
-- bibliography records with a verified official category tag: **206/209**;
-- section-specific official labels: **203**;
+- bibliography records with a verified official category tag: **228/231**;
+- section-specific official labels: **225**;
 - Online First records whose official page currently shows only the generic label `Research Article`: **3**;
-- category evidence from a publisher PDF header: **115**;
-- category evidence from the official AACR article page: **91**.
+- category evidence from a publisher PDF header: **129**;
+- category evidence from the official AACR article page: **99**.
 - official classifications pending verification: **3**. One supplied manuscript declares a category, but this is kept separate from current website/issue verification.
 
 Historical section names are preserved. Capitalization is normalized, and the page variants `Review` and `Reviews` are represented as `Review`; otherwise, older names are not silently converted to newer CCR section names.
@@ -21,23 +21,25 @@ Historical section names are preserved. Capitalization is normalized, and the pa
 |---|---:|
 | Translational Cancer Mechanisms and Therapy | 49 |
 | Precision Medicine and Imaging | 38 |
-| Clinical Trials: Immunotherapy | 24 |
+| Clinical Trials: Immunotherapy | 30 |
 | Clinical Trials: Targeted Therapy | 22 |
-| Novel Biomarkers and Precision Medicine | 13 |
-| Translational Mechanisms and Therapy | 12 |
+| Novel Biomarkers and Precision Medicine | 19 |
+| Translational Mechanisms and Therapy | 15 |
 | CCR Drug Updates | 8 |
 | CCR Translations | 8 |
 | Review | 8 |
-| Research Briefs: Precision Medicine and Therapeutics | 6 |
-| Clinical Trials: Molecularly Targeted Therapy | 5 |
-| Research Briefs: Clinical Trial Brief Reports | 5 |
+| Research Briefs: Precision Medicine and Therapeutics | 7 |
+| Clinical Trials: Molecularly Targeted Therapy | 7 |
+| Research Briefs: Clinical Trial Brief Reports | 6 |
 | Research Article | 3 |
 | Clinical Trials: Novel Mechanisms | 2 |
 | Artificial Intelligence and Computational Oncology | 1 |
+| Clinical Trials: Cellular and Gene Therapy | 1 |
+| New Drugs on the Horizon | 2 |
 | Perspectives | 1 |
 | Special Report | 1 |
 | Official category unverified (status, not a CCR category) | 3 |
-| **Total** | **209** |
+| **Total** | **231** |
 
 The 2020 SMARCA4 lung-cancer paper (PMID 32709715) is an explicit user-priority historical qualitative scope exception. Its publisher-PDF header identifies the official section as `Translational Cancer Mechanisms and Therapy`. It is included in current bibliography, category, deep-reading, and section-language-catalog counts, but not in the legacy 2021–2026 standardized-section or phrase-example-bank statistics.
 
@@ -47,21 +49,25 @@ The three unverified new records are PMID 42714840, 42714874, and 42714875. AACR
 
 ## Deep-reading coverage by official category
 
-As of 2026-09-14, the 46 completed language-focused deep reads are distributed as follows:
+As of 2026-09-19, the 68 completed language-focused deep reads are distributed as follows:
 
 | Official CCR category | Deep reads completed | Indexed articles |
 |---|---:|---:|
-| Novel Biomarkers and Precision Medicine | 10 | 13 |
-| Translational Mechanisms and Therapy | 10 | 12 |
-| Clinical Trials: Immunotherapy | 10 | 24 |
+| Novel Biomarkers and Precision Medicine | 16 | 19 |
+| Translational Mechanisms and Therapy | 13 | 15 |
+| Clinical Trials: Immunotherapy | 16 | 30 |
 | Precision Medicine and Imaging | 3 | 38 |
-| Research Briefs: Precision Medicine and Therapeutics | 3 | 6 |
+| Research Briefs: Precision Medicine and Therapeutics | 4 | 7 |
 | CCR Drug Updates | 1 | 8 |
 | Research Article | 1 | 3 |
 | Translational Cancer Mechanisms and Therapy | 5 | 49 |
+| Clinical Trials: Molecularly Targeted Therapy | 2 | 7 |
+| Clinical Trials: Cellular and Gene Therapy | 1 | 1 |
+| New Drugs on the Horizon | 2 | 2 |
+| Research Briefs: Clinical Trial Brief Reports | 1 | 6 |
 | Official category unverified | 3 | 3 |
-| All other official categories | 0 | 53 |
-| **Total** | **46** | **209** |
+| All other official categories | 0 | 43 |
+| **Total** | **68** | **231** |
 
 This table summarizes the article-level records in [ccr-deep-reading-ledger.md](ccr-deep-reading-ledger.md); the ledger remains the sole authority for individual completion status. The `Research Article` entry retains the publisher's generic Online First label and is not reassigned to a more detailed section.
 
@@ -79,7 +85,7 @@ CCR category assignment is independent of language-focused deep reading. Consult
 
 The eight historical commentary records resolve to the official category `CCR Translations`. They remain findable in the bibliography for traceability but are marked `excluded_commentary_legacy_index_only`; their standardized-section and phrase-bank flags remain `no`. Do not use them for future vocabulary, phrase, sentence, section-pattern, or quantitative-corpus updates.
 
-No letter, author reply, rebuttal, or response-only correspondence is present in the 209-record index. Continue to exclude those genres from future additions even if a title contains ordinary scientific uses of `response`.
+No letter, author reply, rebuttal, or response-only correspondence is present in the 231-record index. Continue to exclude those genres from future additions even if a title contains ordinary scientific uses of `response`.
 
 ## Identifier corrections
 

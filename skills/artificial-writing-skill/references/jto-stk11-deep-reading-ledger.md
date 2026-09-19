@@ -6,6 +6,8 @@ This ledger is the authority only for the user-designated JTO STK11-priority sou
 
 A completed entry requires review of the complete supplied main PDF across Abstract, Introduction, Methods, Results, Discussion, Conclusion, main figures, tables, legends, evidence design, principal numbers, inference limits, and section-indexed language. PDF extraction alone does not qualify.
 
+Apply [deep-reading-acceptance.md](deep-reading-acceptance.md) without inventing a separately headed Conclusion where only a closing synthesis exists. Main-text completion and acceptance recheck are separate: [jto-reading-quality-register.csv](jto-reading-quality-register.csv) records all six gates, source traceability and safe transfer, reviewer/method, and supplement scope. The 2026-09-19 migration preserves these four completed reads but assigns not_reaudited gates and review_status=not_reviewed; no independent review or new source recheck is implied. Only a documented six-gate recheck can establish review_status=passed.
+
 ## Status summary
 
 As of 2026-09-14:

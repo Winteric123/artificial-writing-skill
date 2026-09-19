@@ -11,8 +11,9 @@ The skill resolves the operation, communication scenario, journal, disease or tu
 - prepares scientific or technical reports, standalone results statements, abstracts, slide text, speaker notes, posters, briefings, response letters, and literature syntheses;
 - supports oncology communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, targeted therapy, and drug response or resistance;
 - retrieves vocabulary, collocations, sentence frames, and paragraph architectures by Title, Abstract component, Introduction, Methods, Results, Discussion, Conclusion, or Translational Relevance;
-- provides a 1,417-entry article-linked language catalog covering all 46 completed deep reads, with PMID scope and provenance granularity for every entry;
-- prioritizes seven deeply read framework papers—three CCR ATM/SMARCA4 studies and four JTO ERBB2/KRAS/STK11-copy-deletion/MTAP studies—for future STK11-focused lung-cancer work without presenting them as a dedicated STK11 profile;
+- provides a 2,770-entry article-linked language catalog covering all 83 completed CCR main-text deep reads, with PMID scope and provenance granularity for every entry;
+- prioritizes ten deeply read framework papers—six CCR ATM/SMARCA4/KRAS/AmpRatio studies and four JTO ERBB2/KRAS/STK11-copy-deletion/MTAP studies—for future STK11-focused lung-cancer work without presenting them as a dedicated STK11 profile;
+- tracks main-text completion separately from supplementary-material coverage and documented six-gate source-recheck acceptance;
 - calibrates causal, predictive, subgroup, validation, superiority, and clinical-utility claims to the underlying evidence;
 - checks numbers, terminology, tense, abbreviations, provenance, and unsupported assertions.
 
@@ -42,6 +43,8 @@ The skill uses two linked tracks:
 2. **Biomedical communication:** resolve the operation, scenario, journal, disease, section or genre, audience, and evidence domain; load only matching references; build an evidence ledger; retrieve section- and evidence-calibrated language; produce the requested manuscript, translation, report, results statement, synthesis, or presentation; and audit numbers, terminology, tense, and claim strength before delivery.
 
 Folder names and download locations never determine journal classification. Cross-journal highlight files are retrieval indexes only and do not merge journal corpora or statistics. When one request both adds literature and uses it for writing, the intake track is completed and validated before the new material is used.
+
+Reading states distinguish indexed, screened, main-text deep-read complete, and source-recheck passed. The final state requires a documented return to the source and acceptance across coverage, scientific interpretation, central numerical results, section-language curation, traceability, and safe transfer. Main-text completion, expression counts, or a successful validation script do not establish acceptance or independent review. See [deep-reading-acceptance.md](skills/artificial-writing-skill/references/deep-reading-acceptance.md) and the journal-specific reading-quality registers.
 
 ## Install for Codex
 
@@ -102,17 +105,24 @@ For an unsupported journal or tumor type, provide the relevant instructions or s
 
 ## CCR corpus provenance
 
-- Article-level bibliography: 209 records with verified main-text coverage, totaling 3,463 physical PDF pages. The 2020 SMARCA4 paper is an explicit user-priority historical qualitative exception to the 2021–2026 base.
-- Language-focused deep reading: 46 articles completed across five full-text batches; the other 163 records must not be described as completed deep reads. Main-article completion does not imply independent review of unsupplied supplementary files.
-- Structured section-language catalog: 1,417 entries covering all 46 completed PMIDs, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
+- Article-level bibliography: 231 records with recorded main-text coverage checks, totaling 3,957 physical PDF pages. Indexing and coverage checks do not establish deep reading. The 2020 SMARCA4 paper is an explicit user-priority historical qualitative exception to the 2021–2026 base.
+- Language-focused deep reading: 83 articles completed across eight full-text batches; 148 records remain incomplete, including 140 eligible research records and eight excluded legacy commentaries that must not enter a research-reading queue. Main-article completion does not imply review of unsupplied supplementary files or a passed source recheck.
+- Indexed 2026 coverage: 62/62 main articles completed. This is the local indexed subset, not exhaustive coverage of every 2026 CCR publication. EVOKE-02 (PMID 41961582) remains unsupplied, unread, and outside the bibliography denominator.
+- Structured section-language catalog: 2,770 entries covering all 83 completed CCR PMIDs, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
+- Acceptance status: no article is marked source-recheck-passed. The earlier 68 CCR completion records retain not_reaudited gates; the latest 15 have pending recheck gates. JTO review status is recorded separately.
 - September 12 addition: three 2026 Online First papers and one formally published in 2021; 177 new single-paper, section-indexed expressions with main-PDF locators. Three new official CCR classifications remain unverified; topic tags and the LAURA manuscript-declared category are recorded separately from official classification.
 - September 14 priority addition: one 2020 SMARCA4 and two 2023 ATM studies; 228 new single-paper, section-indexed expressions with main-PDF locators and explicit STK11 reuse boundaries. All three are marked as priority contextual references, not a validated STK11 molecular profile.
+- September 19 first addition: 14 main articles and 511 language entries, including user-highlighted KRAS G12V/Q61 frameworks; clinical, omics, experimental, statistical, and therapeutic expressions remain article-traceable.
+- September 19 second addition: eight main articles and 330 language entries, including the user-highlighted AmpRatio framework, fragmentomics, longitudinal ctDNA, phase I immunotherapy, single-nucleus RNA, and macrophage experiments.
+- September 19 existing-index completion: 15 previously indexed 2026 main articles and 512 language entries (249 vocabulary/collocations, 233 sentence frames, 16 paragraph models, and 14 paragraph architectures). All main figures/tables were included; separate supplements were not supplied. This batch adds no bibliography records or STK11 highlights.
 - Legacy standardized section corpus: 1,095,664 words and 46,895 sentences from the original 189-article base.
 - Legacy reusable phrase-example bank: 9,411 rows from 181 distinct articles.
 - September 2026 research-only supplement: 15 articles and 371 pages, screened for corpus inclusion and qualitative profile calibration but not thereby deeply read.
 - Eight historical CCR Translations commentaries remain traceability-only and are excluded from future language-learning and quantitative-corpus updates.
 
 The complete article index is [ccr-corpus-bibliography.csv](skills/artificial-writing-skill/references/ccr-corpus-bibliography.csv). CCR category definitions and counts are in [ccr-category-index.md](skills/artificial-writing-skill/references/ccr-category-index.md). Deep-reading completion is governed only by [ccr-deep-reading-ledger.md](skills/artificial-writing-skill/references/ccr-deep-reading-ledger.md). Article-linked expression retrieval uses [ccr-section-language-catalog.csv](skills/artificial-writing-skill/references/ccr-section-language-catalog.csv); PMID lists in that catalog identify a single-paper, subsection, batch, or cross-corpus synthesis scope and are not verbatim-quotation claims.
+
+Per-article acceptance and supplement status are recorded in [ccr-reading-quality-register.csv](skills/artificial-writing-skill/references/ccr-reading-quality-register.csv) and [jto-reading-quality-register.csv](skills/artificial-writing-skill/references/jto-reading-quality-register.csv). The [quality-register validator](skills/artificial-writing-skill/scripts/validate_reading_quality.py) checks identities, status consistency, paths, and upgrade guards; it does not certify scientific correctness.
 
 ## JTO STK11 priority provenance
 
@@ -141,7 +151,8 @@ skills/artificial-writing-skill/
 |-- SKILL.md
 |-- agents/openai.yaml
 |-- scripts/
-|   \-- build_ccr_section_language_catalog.ps1
+|   |-- build_ccr_section_language_catalog.ps1
+|   \-- validate_reading_quality.py
 \-- references/
     |-- profile-registry.md
     |-- communication-scenarios.md
@@ -155,6 +166,13 @@ skills/artificial-writing-skill/
     |-- ccr-2026-translational-mechanisms-fulltext-language.md
     |-- ccr-2026-09-12-supplement-language.md
     |-- ccr-2026-09-14-atm-smarca4-stk11-priority-language.md
+    |-- ccr-2026-09-19-supplement-language.md
+    |-- ccr-2026-09-19-batch2-language.md
+    |-- ccr-2026-09-19-pending15-language.md
+    |-- ccr-2026-09-19-pending15-manifest.csv
+    |-- deep-reading-acceptance.md
+    |-- ccr-reading-quality-register.csv
+    |-- jto-reading-quality-register.csv
     |-- jto-2026-09-14-stk11-priority-language.md
     |-- jto-stk11-priority-bibliography.csv
     |-- jto-stk11-deep-reading-ledger.md
