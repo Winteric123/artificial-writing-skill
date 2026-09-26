@@ -4,32 +4,32 @@ Generated from the bibliography and quality register, not inferred from article 
 
 | Official category | Indexed | Included | Main-text complete |
 |---|---:|---:|---:|
-| Artificial Intelligence and Computational Oncology | 1 | 1 | 1 |
-| CCR Drug Updates | 8 | 8 | 1 |
+| Artificial Intelligence and Computational Oncology | 2 | 2 | 2 |
+| CCR Drug Updates | 8 | 8 | 8 |
 | CCR Translations | 8 | 0 | 0 |
 | Clinical Trials: Cellular and Gene Therapy | 1 | 1 | 1 |
-| Clinical Trials: Immunotherapy | 32 | 32 | 18 |
-| Clinical Trials: Molecularly Targeted Therapy | 7 | 7 | 6 |
-| Clinical Trials: Novel Mechanisms | 2 | 2 | 1 |
-| Clinical Trials: Targeted Therapy | 23 | 23 | 1 |
+| Clinical Trials: Immunotherapy | 34 | 34 | 34 |
+| Clinical Trials: Molecularly Targeted Therapy | 11 | 11 | 11 |
+| Clinical Trials: Novel Mechanisms | 2 | 2 | 2 |
+| Clinical Trials: Targeted Therapy | 23 | 23 | 23 |
 | New Drugs on the Horizon | 2 | 2 | 2 |
-| Novel Biomarkers and Precision Medicine | 19 | 19 | 19 |
-| Official category unverified | 3 | 3 | 3 |
-| Perspectives | 1 | 1 | 0 |
-| Precision Medicine and Imaging | 45 | 45 | 15 |
+| Novel Biomarkers and Precision Medicine | 23 | 23 | 23 |
+| Official category unverified | 4 | 4 | 4 |
+| Perspectives | 1 | 0 | 0 |
+| Precision Medicine and Imaging | 48 | 48 | 48 |
 | Research Article | 3 | 3 | 3 |
-| Research Briefs: Clinical Trial Brief Reports | 6 | 6 | 1 |
-| Research Briefs: Precision Medicine and Therapeutics | 7 | 7 | 6 |
-| Review | 8 | 8 | 0 |
-| Special Report | 1 | 1 | 0 |
-| Translational Cancer Mechanisms and Therapy | 50 | 50 | 9 |
-| Translational Mechanisms and Therapy | 17 | 17 | 17 |
+| Research Briefs: Clinical Trial Brief Reports | 6 | 6 | 6 |
+| Research Briefs: Precision Medicine and Therapeutics | 8 | 8 | 8 |
+| Review | 8 | 0 | 0 |
+| Special Report | 1 | 0 | 0 |
+| Translational Cancer Mechanisms and Therapy | 61 | 61 | 61 |
+| Translational Mechanisms and Therapy | 18 | 18 | 18 |
 
 ## Verification status
 
 - official_generic_online_first: 3
-- official_section: 238
-- pending_official_verification: 3
+- official_section: 265
+- pending_official_verification: 4
 
 ## Unverified or generic labels
 
@@ -39,6 +39,7 @@ Generated from the bibliography and quality register, not inferred from article 
 - PMID 42578969: Research Article; official_generic_online_first; ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L. Do not infer a more specific official category from content.
 - PMID 42714840: unverified; pending_official_verification; Osimertinib After Definitive Chemoradiotherapy in Unresectable Stage III EGFR-Mutated NSCLC: Subsequent Treatments and PPO From the Phase III LAURA Study. Do not infer a more specific official category from content.
 - PMID 42574065: Research Article; official_generic_online_first; Rilvegostomig for Metastatic Non-Small-Cell Lung Cancer: A First-In-Human Phase I/II Clinical Study. Do not infer a more specific official category from content.
+- PMID 42765908: unverified; pending_official_verification; Safety and Efficacy of Ceralasertib plus Olaparib for Advanced/Metastatic Triple-Negative Breast Cancer in Three Molecular Strata: The Phase II VIOLETTE Study. Do not infer a more specific official category from content.
 
 ## Boundaries
 

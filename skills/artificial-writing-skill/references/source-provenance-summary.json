@@ -1,0 +1,34 @@
+{
+  "index_version": "4ff60ec93f138c7f92eb19ebf7c06e7f1554ce7075f0d4d84f443f99854029df",
+  "entry_count": 8194,
+  "source_scope_status": {
+    "curated-source-scope": 261
+  },
+  "source_facet_coverage": {
+    "disease_ids": {
+      "identified-not-exhaustive": 261
+    },
+    "tissue_ids": {
+      "identified-not-exhaustive": 209,
+      "not-curated-not-absent": 52
+    },
+    "model_ids": {
+      "identified-not-exhaustive": 261
+    },
+    "use_roles": {
+      "identified-not-exhaustive": 261
+    }
+  },
+  "pdf_locator_states": {
+    "no-literal-match-needs-context-review": 3116,
+    "synthetic-not-a-verbatim-quotation": 4195,
+    "pdf-text-located": 883
+  },
+  "source_pdf_count": 261,
+  "entries_with_recorded_page_hints": 4381,
+  "scope": "Current language-source articles only; all registered journals and indexed years; no new reading or acceptance.",
+  "source_articles": 261,
+  "articles_with_unknown_facets": 52,
+  "entries_needing_literal_context_review": 3116,
+  "boundary": "Synthetic frames are excluded from the missing-literal queue; unknown tissue is not absent tissue."
+}

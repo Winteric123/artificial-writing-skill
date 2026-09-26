@@ -75,6 +75,46 @@ $assets = [ordered]@{
         source_set = "ccr-2025-thirteen-genomics-adjacent-main-pdfs-read-2026-09-20"
         all_pmids = @("39804166", "39932457", "40704901", "40388547", "39437011", "39887260", "40310449", "39853318", "40261185", "40465842", "40047548", "39836411", "39620930")
     }
+    "ccr-2026-09-23-intake-language.md" = [ordered]@{
+        source_set = "ccr-2026-09-23-intake-language"
+        all_pmids = @("41961582", "40378060")
+    }
+    "ccr-2025-clinical-2026-09-23-language.md" = [ordered]@{
+        source_set = "ccr-2025-clinical-2026-09-23-language"
+        all_pmids = @("40260627", "40162917", "40880183", "39651955")
+    }
+    "ccr-2025-omics-methods-2026-09-23-language.md" = [ordered]@{
+        source_set = "ccr-2025-omics-methods-2026-09-23-language"
+        all_pmids = @("39540841", "39841860", "39704655", "40465424", "39879384")
+    }
+}
+
+$reading2024Intake = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2024-and-intake-2026-09-23-reading-manifest.csv") -Encoding UTF8)
+$readingLatestIntake = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-09-24-reading-manifest.csv") -Encoding UTF8)
+$readingKeapnessStk11 = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-keapness-stk11-2026-09-24-reading-manifest.csv") -Encoding UTF8)
+$reading20260926 = @(
+    Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-09-26-reading-manifest.csv") -Encoding UTF8 |
+        Where-Object { $_.main_read_completed_on -eq "2026-09-26" }
+)
+$reading2023Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2023-completion-2026-09-26-manifest.csv") -Encoding UTF8)
+$reading2021To2022Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2021-2022-completion-2026-09-26-manifest.csv") -Encoding UTF8)
+$sectionIndexedReadings = @($reading2024Intake) + @($readingLatestIntake) + @($readingKeapnessStk11) + @($reading20260926) + @($reading2023Completion) + @($reading2021To2022Completion)
+foreach ($article in $sectionIndexedReadings) {
+    if ($article.reading_stage -ne "main_text_deep_read_complete") { continue }
+    $assets[$article.source_asset] = [ordered]@{
+        source_set = if ($article.pmid -in $reading2021To2022Completion.pmid) {
+            "ccr-2021-2022-completion-20260926-$($article.pmid)"
+        } elseif ($article.pmid -in $reading2023Completion.pmid) {
+            "ccr-2023-completion-20260926-$($article.pmid)"
+        } elseif ($article.main_read_completed_on -eq "2026-09-26") {
+            "ccr-intake-20260926-$($article.pmid)"
+        } elseif ($article.main_read_completed_on -eq "2026-09-24") {
+            "ccr-intake-20260924-$($article.pmid)"
+        } else {
+            "ccr-2024-intake-20260923-$($article.pmid)"
+        }
+        all_pmids = @($article.pmid)
+    }
 }
 
 $rules = @{}
@@ -539,6 +579,46 @@ foreach ($article in $genomicsManifest) {
     }
 }
 
+$reading20260923 = Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-09-23-reading-manifest.csv") -Encoding UTF8
+foreach ($article in $reading20260923) {
+    if ($article.source_role -eq "background-review-only") { continue }
+    $asset = $article.source_asset
+    $container = "PMID $($article.pmid)"
+    foreach ($part in @("background", "methods", "results", "conclusion")) {
+        Add-FrameRule $asset $container "Abstract $part" "abstract-$part" "" "abstract-$part-summary" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    }
+    foreach ($section in @("Introduction", "Methods", "Results", "Discussion")) {
+        $normalized = $section.ToLowerInvariant()
+        Add-Rule $asset $container "$section vocabulary" $normalized "" "terminology" $article.secondary_domain_tags "vocabulary" "terminology-only" @($article.pmid) "conventional-term-or-collocation"
+        Add-FrameRule $asset $container "$section frames" $normalized "" "$normalized-evidence-reporting" $article.secondary_domain_tags $article.evidence_tier @($article.pmid)
+    }
+    Add-FrameRule $asset $container "Conclusion frames" "conclusion" "abstract-conclusion" "bounded-synthesis-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    Add-FrameRule $asset $container "Translational relevance frames" "translational-relevance" "conclusion" "intended-use-validation" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    foreach ($section in @("Results", "Discussion")) {
+        Add-FrameRule $asset $container "$section paragraph" $section.ToLowerInvariant() "" "section-paragraph-synthesis" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid) "paragraph-model" "synthetic-model"
+    }
+}
+
+foreach ($article in $sectionIndexedReadings) {
+    if ($article.reading_stage -ne "main_text_deep_read_complete") { continue }
+    $asset = $article.source_asset
+    $container = "PMID $($article.pmid)"
+    foreach ($part in @("background", "methods", "results", "conclusion")) {
+        Add-FrameRule $asset $container "Abstract $part" "abstract-$part" "" "abstract-$part-summary" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    }
+    Add-FrameRule $asset $container "Abstract frames" "abstract" "" "abstract-synthesis" $article.secondary_domain_tags $article.evidence_tier @($article.pmid)
+    foreach ($section in @("Introduction", "Methods", "Results", "Discussion")) {
+        $normalized = $section.ToLowerInvariant()
+        Add-Rule $asset $container "$section vocabulary" $normalized "" "terminology" $article.secondary_domain_tags "vocabulary" "terminology-only" @($article.pmid) "conventional-term-or-collocation"
+        Add-FrameRule $asset $container "$section frames" $normalized "" "$normalized-evidence-reporting" $article.secondary_domain_tags $article.evidence_tier @($article.pmid)
+    }
+    Add-FrameRule $asset $container "Conclusion frames" "conclusion" "" "bounded-synthesis" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    Add-FrameRule $asset $container "Translational relevance frames" "translational-relevance" "" "translation-boundary" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid)
+    foreach ($section in @("Results", "Discussion")) {
+        Add-FrameRule $asset $container "$section paragraph" $section.ToLowerInvariant() "" "section-paragraph-synthesis" $article.secondary_domain_tags "evidence-calibrated" @($article.pmid) "paragraph-model" "synthetic-model"
+    }
+}
+
 $rows = New-Object System.Collections.Generic.List[object]
 $unmapped = New-Object System.Collections.Generic.List[string]
 $seen = New-Object "System.Collections.Generic.HashSet[string]"
@@ -592,7 +672,7 @@ foreach ($assetName in $assets.Keys) {
             }
 
             $rows.Add([pscustomobject][ordered]@{
-                catalog_version = "2026-09-19"
+                catalog_version = "2026-09-26"
                 expression = $expression
                 primary_section = $rule.primary_section
                 secondary_sections = $rule.secondary_sections

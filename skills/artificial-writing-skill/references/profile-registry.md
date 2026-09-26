@@ -16,7 +16,7 @@ Use this registry to select independent communication profiles and to avoid clai
 | Selection | Aliases | Support | Scope and fallback |
 |---|---|---|---|
 | `none` | non-journal, internal | Rules-only | Use core integrity, evidence, and selected scenario rules. |
-| `ccr` | CCR, Clinical Cancer Research | Corpus-backed | Current corpus is lung-cancer-focused. Use CCR section, genre, phrase, provenance, category, and bibliography references only within their documented coverage. |
+| `ccr` | CCR, Clinical Cancer Research | Corpus-backed | Current corpus is lung-cancer-focused with explicitly labelled user-supplied cross-tumor methods/language references. Those sources retain their actual disease and article-level source role; they do not establish a disease-wide learned profile. Use CCR section, genre, phrase, provenance, category, and bibliography references only within their documented coverage. |
 | `jto` | JTO, Journal of Thoracic Oncology | Source-grounded | Four deeply read original-research papers (one 2025 and three 2026) are registered only as STK11-priority article-level references. Use [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) within that scope; do not claim a corpus-backed or journal-wide JTO style profile. |
 | `cancer-discovery` | Cancer Discovery, CD | Source-grounded | Two original studies (2015/2018), not a journal-wide style corpus. Use the [article language](cancer-discovery-2026-09-19-stk11-language.md), [section catalog](cancer-discovery-section-language-catalog.csv), [bibliography](cancer-discovery-stk11-priority-bibliography.csv), [ledger](cancer-discovery-stk11-deep-reading-ledger.md), and [quality register](cancer-discovery-reading-quality-register.csv). Main-text complete; separate acceptance recheck pending. |
 | `nature` | Nature | Source-grounded | One 2024 STK11/KEAP1 original study in its supplied corrected version, not a Nature-wide style corpus. Use the [article language](nature-2026-09-19-stk11-language.md), [section catalog](nature-section-language-catalog.csv), [bibliography](nature-stk11-priority-bibliography.csv), [ledger](nature-stk11-deep-reading-ledger.md), and [quality register](nature-reading-quality-register.csv). Main text and embedded Extended Data read; external supplements and acceptance recheck not complete. |
@@ -76,9 +76,9 @@ In the pre-intake snapshot, the 83-paper CCR full-text deep-read set supported t
 
 The separate Cancer Discovery set adds bulk/microRNA/copy-number/RPPA subtyping, independent classifier evaluation, cell-line drug response and rescue/knockdown, multi-cohort immunotherapy outcomes, and CRISPR syngeneic models. The Nature article adds direct mouse single-cell RNA profiling, pooled in-vivo CRISPR/Tuba-seq, exploratory POSEIDON biomarker contrasts, human bulk immune deconvolution, multiplex imaging, and model-specific immune/iNOS perturbation. These do not create a global-proteomics or human single-cell corpus. The [expanded reference directory](stk11-expanded-reference-directory.md) adds discovery options only, not learned language or completed reading. New routes were registered 2026-09-19; retain journal isolation and use core fallback for unsupported formats.
 
-## Latest intake extension
+## Historical intake extension (2026-09-19)
 
-The [eight-paper 2025 intake](ccr-2025-2026-09-19-intake-language.md) brings the CCR main-text set to91 articles. It adds CNS response-confirmation language, MAPK pathway/ICI biomarker interpretation, empirical shared-variant diagnostics, longitudinal immune/radiomic resistance profiling, oncolytic-virus spatial protein analysis, YAP/HER3/RET perturbation and xenografts, ecMYC genomic/spatial immune context, and LPA resistance multiomics. Actual global protein-abundance profiling in PMID40853904 must retain the unresolved label-free-versus-TMT Methods discrepancy; it does not establish a mature general proteomics profile. MIBI/IMC are spatial protein assays, not spatial RNA sequencing. c4 LPA secretion and CellChat signaling are inferred, not directly measured. None of these additions automatically becomes an STK11 highlight. The earlier83-paper description is the pre-intake snapshot; use [library-index.md](library-index.md) for current totals.
+The [eight-paper 2025 intake](ccr-2025-2026-09-19-intake-language.md) is a historical batch, not the current corpus total. It adds CNS response-confirmation language, MAPK pathway/ICI biomarker interpretation, empirical shared-variant diagnostics, longitudinal immune/radiomic resistance profiling, oncolytic-virus spatial protein analysis, YAP/HER3/RET perturbation and xenografts, ecMYC genomic/spatial immune context, and LPA resistance multiomics. Actual global protein-abundance profiling in PMID40853904 must retain the unresolved label-free-versus-TMT Methods discrepancy; it does not establish a mature general proteomics profile. MIBI/IMC are spatial protein assays, not spatial RNA sequencing. c4 LPA secretion and CellChat signaling are inferred, not directly measured. None of these additions automatically becomes an STK11 highlight. Use [library-index.md](library-index.md) for current totals.
 
 ## Selection procedure
 
@@ -103,3 +103,11 @@ Before adding a reusable selection, record:
 - validation cases and current validation status.
 
 Do not label a selection corpus-backed until its sources, boundaries, and validation are documented.
+
+## Source-grounded cross-tumor methods — 2026-09-23
+
+The [five-paper methods set](ccr-2025-omics-methods-2026-09-23-language.md) adds article-specific methodology, not new disease-wide profiles. PMID39540841 isosteosarcoma lungmetastasis; PMID39879384 isprostate bone/lungmetastasis; PMID39841860 ismainlypancreaticimaging withaCalu6lungnegativecontrol. Retain actualdisease labels anddo notpool theirclinicalclaims withprimaryNSCLC. CCR remainslung-focused with explicitadjacent-method exceptions. The SEZ6review isbackground-only anddoesnotestablish anoriginalresearch corpus.
+
+## 2024 completion and later2026intake
+
+See [ccr-2024-and-intake-2026-09-23.md](ccr-2024-and-intake-2026-09-23.md) for37article-specific reading records.33eligible sources enter the section catalog;4background sources are excluded from original-study language. New domains include variant-origin prediction, spatial pathology, LCNEC single-cell profiling, proteomics, cfDNA epigenomics and inherited-risk surveillance. These expand article-level terminology, not disease-wide or journal-wide style claims.

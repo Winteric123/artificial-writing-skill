@@ -13,6 +13,8 @@ Imported 2026-09-19 from the authorized STK11 mutation/co-mutation search: **44 
 
 ## Local state at import
 
+Later status update,2026-09-24: PMID33323404 is now registered under CCR and main-text-complete in its supplied author-manuscript version. Its separate supplement and acceptance-review statuses remain not_supplied/not_reviewed. The CSV preserves the2026-09-19 snapshot_date but updates this row's checked_on/local state. Its P1 search priority remains distinct from highlight status, which is still no. See [the source map](ccr-keapness-stk11-2026-09-24.md). The following import-era counts are historical.
+
 After this three-PDF batch, 10 of the 44 candidates match registered records: 9 main-text-complete and 1 indexed-only (PMID 39804166, adagrasib/KRYSTAL-1, 2025). The other 34 are reference candidates, not established as acquired or read. These counts concern this directory only; they do not describe the entire skill or all 13 highlights. Seven of these 44 candidates are highlighted; six other existing highlights lie outside this candidate list.
 
 New main-text-complete records:
@@ -43,4 +45,3 @@ The previously pending EVOKE-02 (PMID 41961582) remains outside the acquired CCR
 - Nature: [bibliography](nature-stk11-priority-bibliography.csv), [ledger](nature-stk11-deep-reading-ledger.md), [language](nature-2026-09-19-stk11-language.md), [section catalog](nature-section-language-catalog.csv), [quality](nature-reading-quality-register.csv).
 
 Source-grounded sets do not establish learned journal-wide styles. Reference-directory membership is not permission to reuse unverified numerical claims or full source sentences.
-

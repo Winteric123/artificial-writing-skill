@@ -97,7 +97,8 @@ def validate(skill_path):
             'main_text_complete': len(completed),
             'reading_stages': dict(Counter(row['reading_stage'] for row in rows)),
             'review_statuses': dict(Counter(row['review_status'] for row in rows)),
-            'excluded_legacy_records': sum(row['eligibility'] == 'excluded' for row in rows),
+            'excluded_records': sum(row['eligibility'] == 'excluded' for row in rows),
+            'excluded_legacy_records': sum(source.get('corpus_genre_status', '').startswith('excluded_commentary_legacy') for source in bibliography_rows),
         }
     return {'validation': 'mechanical_checks_passed', 'scientific_acceptance_certified_by_script': False, 'journals': summary}
 

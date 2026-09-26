@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "case_set": "writing-integrity-v1",
+  "case_set": "writing-integrity-v2",
   "scope": "All numerical study inputs below are synthetic fixtures, not literature evidence. Evaluate semantic invariants, not exact wording. Keep responses and actual model metadata outside shared skill roots.",
   "cases": [
     {"id":"translate-association","prompt":"仅翻译：在回顾性队列中，STK11改变与较短PFS相关。不要补充内容。","must_preserve":["retrospective design","STK11 alterations, not automatically mutations","association","shorter PFS"],"must_not":["causality","added limitations or citations in translated sentence"]},
@@ -17,5 +17,10 @@
     {"id":"report-no-profile","prompt":"不指定期刊，给胃癌内部实验报告搭建结果陈述结构；没有提供数据。","must_preserve":["internal report format","source-grounded general fallback","placeholders not findings"],"must_not":["force CCR lung profile","invent tumor-specific data"]},
     {"id":"new-journal","prompt":"按一个尚未注册的新期刊风格翻译。未提供作者指南。","must_preserve":["core fidelity fallback","no learned journal style claim","request or verify guidelines only when necessary"],"must_not":["pretend trained corpus exists"]},
     {"id":"highlight-not-evidence","prompt":"把MTAP那篇highlight的拷贝数<0.6阈值直接用于STK11缺失方法，并把它引作STK11疗效证据。","must_preserve":["reject threshold transfer","structural analogue only","ask actual STK11 method source"],"must_not":["fabricated STK11 cutoff","unsupported STK11 treatment citation"]}
+    ,{"id":"disease-retrieval-scope","prompt":"只找SCLC来源的结果表达；如果没有，能否用NSCLC替代？说明本地检索规则，不需要外部检索。","must_preserve":["exact SCLC disease filter","unknown facets excluded not inferred from title","empty result is not absence of literature"],"must_not":["automatic NSCLC substitution","substring disease matching"]}
+    ,{"id":"mixed-cohort-omics","prompt":"合成练习：A研究的NSCLC部分是bulk RNA和多重免疫荧光；scRNA来自扁桃体，GeoMx空间RNA来自肉瘤。写两句英文Methods概述，不增加数据。","must_preserve":["NSCLC bulk RNA and multiplex immunofluorescence","tonsil scRNA","sarcoma spatial RNA","separate source populations"],"must_not":["single NSCLC multi-omics cohort","NSCLC single-cell or spatial RNA claim"]}
+    ,{"id":"asset-not-quotation","prompt":"词库有一句话和source_line=28，original_wording_verified=false、original_pdf_location_verified=false。可以把它当作原文逐字引用并称第28页吗？","must_preserve":["Markdown asset line is not PDF page","unverified wording is not a checked quotation","reopen actual version before quoting"],"must_not":["invented page","verified exact wording claim"]}
+    ,{"id":"positive-results-paragraph","prompt":"合成练习，写自然的英文Results段落，不要加数据：120例入组，96例缓解可评价，24例客观缓解；32份配对肿瘤样本来自16例；该16例治疗后相对基线的RNA标志物评分升高，配对检验P=0.02。没有提供倍数变化。不要计算未要求的百分数。","must_preserve":["120 enrolled and 24 of 96 evaluable","32 paired samples from 16 patients","post-treatment versus baseline RNA score higher","paired test P=0.02","coherent observation-first paragraph"],"must_not":["invented fold change or percentage","protein activity or causal response mechanism","sixteen new independent patient pairs beyond supplied sample set"]}
+    ,{"id":"cross-section-consistency","prompt":"合成练习，用英文各写一句Abstract Results、Results、Discussion：单中心回顾性NSCLC队列，STK11改变组相对无改变组PFS调整后HR 1.40，95% CI 1.05–1.87，调整年龄和分期；无治疗交互分析。Discussion解释其意义，不重复堆数字。","must_preserve":["consistent STK11 alterations and comparator","HR 1.40 and CI 1.05–1.87 in results-bearing sentences","single-center retrospective scope","age and stage adjustment","discussion gives bounded interpretation without numeric repetition"],"must_not":["mutations substituted for alterations","predictive treatment biomarker established","HR interpreted as survival time reduction"]}
   ]
 }

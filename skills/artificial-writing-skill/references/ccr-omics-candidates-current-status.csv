@@ -1,0 +1,20 @@
+pmid,year,title,status_as_of,acquired_this_batch,current_indexed,current_reading_stage,source_asset,stk11_highlight
+40833744,2026,The Impact of Concordance between Liquid and Tissue Biopsy for Actionable Mutations: Insights from the ROME Trial.,2026-09-23,yes,yes,main_text_deep_read_complete,ccr-2026-40833744-language.md,no
+41403154,2026,Germline Pathogenic Variant Prediction Model for Tumor-Only Sequencing Based on Japanese Clinicogenomic Database.,2026-09-23,yes,yes,main_text_deep_read_complete,ccr-2026-41403154-language.md,no
+42148883,2026,Comprehensive Genomic and Transcriptomic Characterization of MTAP Loss across Advanced Solid Tumors.,2026-09-23,yes,yes,main_text_deep_read_complete,ccr-2026-42148883-language.md,no
+42340371,2026,"The Genomic Landscape of MYC-, MYCL-, and MYCN-Amplified Solid Tumors.",2026-09-24,yes,yes,main_text_deep_read_complete,ccr-2026-42340371-language.md,no
+42440358,2026,Application of a Translational Research Platform to Unveil Efficacy Signals and Mechanisms of Resistance of FGFR Inhibitors in Multiple FGFR-Altered Solid Tumors.,2026-09-24,yes,yes,main_text_deep_read_complete,ccr-2026-42440358-language.md,no
+42611962,2026,Longitudinal Phenotyping of Circulating Tumor Cells using a Scalable Deep Learning Framework.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+42484497,2026,Network-Integrated Platform for Clinical Trial Navigation from the New South Wales Early Phase Clinical Trials Alliance.,2026-09-23,yes,yes,main_text_deep_read_complete,ccr-2026-42484497-language.md,no
+41032014,2025,Checkpoint Blockade Combinations in Tumor Mutational Burden/Load-High Tumors: Insights from the Atezolizumab + Bevacizumab and Nivolumab + Ipilimumab Cohorts in the Drug Rediscovery Protocol.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+41837744,2026,Integrated Single-Cell and Spatial Analysis Reveals Context-Dependent Myeloid-T Cell Interactions in Response to Immune Checkpoint Blockade in Head and Neck Cancer.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+41995725,2026,Predictors of Immune Checkpoint Blockade Response in dMMR Colorectal Cancer Using an Integrated Immune-Enhanced Multiomics Platform.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+42599153,2026,"Clinical, genomic, and spatial transcriptomic features of pancreatic adenosquamous carcinoma support subtype-specific therapeutic strategies.",2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+42611968,2026,Proteogenomic profiling identifies FGFR2b as a prevalent cell-surface target in intrahepatic cholangiocarcinoma.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+42531431,2026,Microsatellite Instability Identifies a Rare but Clinically Relevant Subset of Sarcomas: Insights from the Largest Clinically Sequenced Cohort with Therapeutic Implications.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+39513940,2025,"Genomic, Epigenomic, and Transcriptomic Inter- and Intratumor Heterogeneity in Desmoid Tumors.",2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+39969975,2025,"Spatially Resolved, Multiregion Proteomics for Prediction of Immunotherapy Outcome in Deficient Mismatch Repair Metastatic Colorectal Cancer.",2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+40145935,2025,A Proteogenomic View of Synchronous Endometrioid Endometrial and Ovarian Cancer.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+40184234,2025,Integrated Metabolomics and Spatial Transcriptomics of Cystic Pancreatic Cancer Precursors Reveals Dysregulated Polyamine Metabolism as a Biomarker of Progression.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+40828413,2025,Genomic and Immune Landscape of Pancreatic Ductal Adenocarcinoma Associated with Germline Pathogenic Variants in ATM.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no
+40553453,2025,Artificial Intelligence Algorithm Predicts Response to Immune Checkpoint Inhibitors.,2026-09-23,no,no,abstract_screened_not_fulltext_read,,no

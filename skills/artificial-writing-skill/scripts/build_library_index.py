@@ -10,7 +10,9 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 
 from validate_reading_quality import read_rows, validate
-from library_common import atomic_text, journal_registry
+from library_common import atomic_text, journal_registry, read_json
+from retrieval_metadata import article_scope
+from source_provenance import FACETS, load_scope_annotations
 
 
 def write_csv(path, rows):
@@ -53,12 +55,16 @@ def journal_year_counts(rows):
 def build(skill):
     validate(skill)
     references = skill / 'references'
+    vocabulary = read_json(references / 'retrieval-vocabulary.json')
+    scope_annotations = load_scope_annotations(skill, vocabulary)
     highlight_text = (references / 'stk11-priority-references.md').read_text(encoding='utf-8-sig')
     highlight_ids = set(re.findall(r'^\| 1 \| [^|]+ \| \d{4} \| (\d{8}) \|', highlight_text, re.M))
     if not highlight_ids:
         raise ValueError('Highlight table changed; verify its parser before proceeding')
     version_path = references / 'source-version-register.csv'
     versions = {row['pmid']: row for row in read_rows(version_path)} if version_path.exists() else {}
+    batch_path = references / 'ccr-2026-09-23-reading-manifest.csv'
+    batch_scope = {item['pmid']: item for item in read_rows(batch_path)} if batch_path.exists() else {}
     rows = []
     for prefix, configuration in journal_registry(skill).items():
         bibliography_name, ledger_name = configuration['bibliography'], configuration['ledger']
@@ -77,9 +83,10 @@ def build(skill):
                 year=article['year'], journal=article['journal'], title=article['title'], pmid=pmid,
                 doi=article['doi'], publication_status=article.get('publication_status', 'see source bibliography and intake manifest'),
                 supplied_pdf_version=versions.get(pmid, {}).get('supplied_pdf_version', 'not_recorded'),
-                eligibility=status['eligibility'], official_category=article.get('ccr_official_category', ''),
+                eligibility=status['eligibility'], disease_scope=article.get('disease_scope', '') or batch_scope.get(pmid, {}).get('disease_scope', ''),
+                source_role=article.get('source_role', '') or batch_scope.get(pmid, {}).get('source_role', ''), official_category=article.get('ccr_official_category', ''),
                 official_category_status=article.get('ccr_category_status', 'not_recorded_for_this_journal'),
-                primary_content_class=article.get('primary_classification', article.get('article_type', '')),
+                primary_content_class=article.get('primary_classification', '') or article.get('article_type', ''),
                 secondary_content_tags=article.get('secondary_classifications', '') or '; '.join(sorted(domains[pmid])),
                 tag_basis='bibliography content classification' if article.get('secondary_classifications') else ('single-paper curated language domains' if domains[pmid] else 'no secondary topic verification recorded'),
                 reading_stage=status['reading_stage'], main_read_completed_on=status['main_read_completed_on'],
@@ -93,19 +100,27 @@ def build(skill):
         raise ValueError('Duplicate PMID across journal bibliographies')
     if not highlight_ids.issubset(identifiers):
         raise ValueError('Highlight PMID absent from journal bibliographies')
+    if set(scope_annotations) - set(identifiers):
+        raise ValueError('Source-scope PMID absent from journal bibliographies')
+    for row in rows:
+        scope = article_scope(row, vocabulary, scope_annotations.get(row['pmid']))
+        row.update({f'source_{field}': ';'.join(scope[field]) for field in FACETS})
+        row.update(scope_curation_status=scope['annotation_status'], scope_reference=scope['source_reference'],
+                   scope_reference_line=scope.get('source_reference_line', ''), scope_boundary=scope['boundary'],
+                   scope_facet_status=json.dumps(scope['facet_status'], ensure_ascii=False, sort_keys=True))
     included = [row for row in rows if row['eligibility'] == 'included']
     excluded = [row for row in rows if row['eligibility'] == 'excluded']
     complete = [row for row in included if row['reading_stage'] == 'main_text_deep_read_complete']
     years = sorted({row['year'] for row in rows})
     summary = dict(scope=dict(journals='all_registered_formal_journals', years='all_indexed_issue_years',
                              topic_filter=None, preprints_included=False),
-                   registered=len(rows), included=len(included), excluded_legacy=len(excluded),
+                   registered=len(rows), included=len(included), excluded=len(excluded), excluded_legacy=sum('excluded_commentary_legacy' in item.get('corpus_genre_status', '') for item in read_rows(references / 'ccr-corpus-bibliography.csv')),
                    main_text_complete=len(complete), eligible_incomplete=len(included) - len(complete),
                    source_recheck_passed=sum(row['review_status'] == 'passed' for row in rows),
                    stk11_highlights=len(highlight_ids), years={}, journal_years=journal_year_counts(rows))
     text = ['# 文献总目录：按期刊、年份与阅读状态', '',
             '本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。', '',
-            f'正式期刊登记{len(rows)}篇；当前纳入{len(included)}篇；历史排除评论{len(excluded)}篇。已完成正文精读{len(complete)}篇，合格但尚未完成精读{len(included)-len(complete)}篇。来源复核验收通过{summary["source_recheck_passed"]}篇；STK11 highlight {len(highlight_ids)}篇。', '',
+            f'正式期刊登记{len(rows)}篇；当前纳入{len(included)}篇；排除记录{len(excluded)}篇（含评论及单列背景综述）。已完成正文精读{len(complete)}篇，合格但尚未完成精读{len(included)-len(complete)}篇。来源复核验收通过{summary["source_recheck_passed"]}篇；STK11 highlight {len(highlight_ids)}篇。', '',
             '“已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。', '',
             '完整机器可筛选清单：[library-index.csv](library-index.csv)。预印本另见[preprint-source-register.csv](preprint-source-register.csv)，不进入下方正式期刊分母。候选参考目录亦不算已纳入或已读。', '',
             '统计口径：下方年份汇总涵盖全部已登记正式期刊，不等于CCR单刊；期刊汇总涵盖所有已登记年份。两者均不限定专题。指定期刊和年份请查交叉汇总，指定专题或批次须另按PMID集合筛选。', '',
@@ -137,7 +152,7 @@ def build(skill):
                 status = '已完成' if row['reading_stage'] == 'main_text_deep_read_complete' else '尚未完成'
                 category = row['official_category'] or row['primary_content_class']
                 text.append(f'| {row["pmid"]} | {escape(row["title"])} | {row["doi"]} | {escape(category)} | {status} | {row["stk11_highlight"]} |')
-    text.extend(['', '## 历史排除记录（不作为阅读队列）', '', '| 年份 | PMID | 完整题名 |', '|---|---|---|'])
+    text.extend(['', '## 排除记录（不作为原始研究阅读队列；背景综述阅读另记）', '', '| 年份 | PMID | 完整题名 |', '|---|---|---|'])
     text.extend(f'| {row["year"]} | {row["pmid"]} | {escape(row["title"])} |' for row in excluded)
     preprints = read_rows(references / 'preprint-source-register.csv')
     text.extend(['', '## 单独登记的预印本', '', '这些版本不计入正式期刊纳入/阅读数量；不能替代对应正式论文。'])

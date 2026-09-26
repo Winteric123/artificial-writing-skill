@@ -1,0 +1,28 @@
+# Expanding Therapeutic Opportunities for Extrapulmonary Neuroendocrine Carcinoma
+
+Journal: Clinical Cancer Research; issue year: 2022; PMID: 35091446; DOI: 10.1158/1078-0432.ccr-21-3058.
+
+Source version: author_manuscript; physical supplied-PDF pages: 42; SHA-256: fb80d1450a4c1a5361500ad00c9f45df9022dc4a98534474d0aac3381d6b8062.
+
+Disease: extrapulmonary poorly differentiated neuroendocrine carcinoma with SCLC analogies. Source role: background narrative review of lineage plasticity and therapeutic opportunities. Evidence tier: secondary-narrative-review.
+
+# PMID 35091446 — background review, not original-study corpus
+
+Expanding Therapeutic Opportunities for Extra-Pulmonary Neuroendocrine Carcinoma. CCR2022;28:1999–2019, DOI10.1158/1078-0432.CCR-21-3058. Author manuscript42physicalpages read in full; abstract1–2,introduction2–4, thematic synthesis4–11, conclusions12–13,references13–22. Figures1–4pp23–28 and Tables1–4pp29–42 visually reviewed alongside extracted text. This is explicitly a narrative review and is moved to background-only/excluded from primary research-language learning. No invented original methods/results or new original-study omics evidence. No independent acceptance claim.
+
+## Conceptual and source map
+The review distinguishes poorly differentiated NEC from well-differentiated NET, includingG3NET, and mixedNE/nonNE neoplasms. Figure1uses2018consensus/2019digestive classification and different lung morphology-based versus digestiveKi67-based schemes; it must not be described as the latest classification. Most attention is to extrapulmonaryNEC ofGEP,prostate,bladder,cervix,head/neck/unknownorigin. SCLCprovides an analogy, not proof of biological interchangeability. Merkelcell carcinoma is excluded from review scope although some summarized source cohorts contain mixedentities.
+
+SCLC-like vulnerabilities includeTP53/RB1pathway disruption, cellcycle/DDR dependencies, MYC-family programs, epigenetic regulators, DLL3 andBCL2. Same-organ nonNE-like vulnerabilities includeKRAS/BRAF,PI3K/AKT/mTORandMSI. Tumoragnostic immunebiomarkers are considered with major assay/compartment/threshold limitations. Section5weighs distinctcellorigins versus convergentNEphenotypes, de-novoversus treatment-emergent disease, clonalprecursor versus transdifferentiation; hypotheses are explicitly not mutually exclusive or conclusively established. Genomic similarity does not alone prove cell-of-origin. CDXhere means circulating-tumor-cell-derived explant, not the generic cell-line-derived xenograft acronym used by other papers.
+
+## Figures and tables: what may and may not be reused
+Figure2p25summarizes medians/IQRs of alteration frequencies across selected studies with≥10patients, not pooled patient-level prevalence, a formal meta-analysis or a single newly sequenced cohort. Table1pp29–32includes targetedpanels,WES,WGS,FISH,ctDNA and variable per-gene samples. Pointmutation, amplification, copygain, deletion, loss and compoundevents are color-distinguished; do not add overlapping categories blindly. n/a=notassessed andn/r=notreported are distinct from0%. Somecohorts mixPDNEC/G3NET/MiNEN and treatmentemergent/denovo subgroups. Family-level frequency depends on whichgenes wereassayed. Cells explicitlyretain uncertainty such as 'not sure if in different patients'; do not turn into precise unique-patient counts.
+
+Figure3p26mapsmechanisms/drugs and citedpreclinical/clinical work; Figure4p28lists emerging strategies rather than recommendations or provenefficacy. The negative rovalpituzumabtesirine phaseIIIdevelopment and disappointing unselectedalisertib trial are important counterweights to mechanistic promise. Selectedexceptionalresponders withMYCN/AURKAchanges donot validate a universalpredictivebiomarker. DLL3bispecifics/CART are historicaldevelopmentcontext, not currentregulatory status.
+
+Table2pp33–36is explicitly a July2021ClinicalTrials.gov snapshot including recruiting, active-not-recruiting and completed studies. 'Ongoing' must not be reported as current or uniformly recruiting. Sparse conference results, mixedtumor cohorts and different response definitions cannot be compared head-to-head. DART44%ORR/6mPFS pertains18highgradeNENpatients includinglung, not pureextrapulmonaryNEC. DS3078a17.6%stable≥6months is17totalpatients withonly3NEcases, not17.6%of anNE-onlycohort. TrialIDsare leads forlaterverification, not proofthissessionreadtheirprimaryreports.
+
+Table3pp37–40makes MSI/PDL1/TMB heterogeneity explicit: varyingIHC/PCR/NGS, stainingclones,TPS/CPS/Hscore, tumorversusimmune cells, TMBthreshold10/17/20mut/Mb andmeanversusmedian. ExtremeMSI69.2%in39cases should not definegeneralNECprevalence withoutprimaryverification. AninternalPDL1row listsn11but denominators39; a stage split12.1%+89.9%doesnotsum100. Anotherrowreports10/37as27.2%ratherthanapproximately27.0. Preserve uncertainty. Table4pp41–42is a gene glossary but contains nomenclature issues (e.g.CREBBP shortenedtoCREBprotein;MEK1/2symbolaliases); useauthoritativegene identifiers before protocol/manuscriptreuse. TexttyposincludeMYCfamilylistingMYCtwiceinsteadMYCN,DDL3andPI3KCA; donotlearntheseaspreferredterminology.
+
+## STK11 and evidence boundary
+The directSTK11mentionp4summarizes anexternalLCNECstudy distinguishingTP53/RB1co-inactivation versusTP53/STK11-or-KEAP1co-alteration and differingNEgeneexpression. It is secondarybackground, not newSTK11NSCLCcohort data or immunotherapy-outcome evidence. Comparativefrequency, dependency, and lineageplasticity claims require reopening the citedprimarysources beforefactualreuse. Thisreviewhasbeenread, but contributes no original-study sectionvocabularyframes and is not automaticallyhighlighted. Existinguser-selectedhighlightlist staysunchanged.

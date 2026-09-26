@@ -1,5 +1,11 @@
 # Resource map: load only relevant assets
 
+- For the 2021–2022 remaining queue, use [ccr-2021-2022-completion-2026-09-26](ccr-2021-2022-completion-2026-09-26.md), which distinguishes completed main reads, background reviews and pending articles; article-specific evidence/section-language files retain source constraints.
+
+- For the2023 completion batch, open [ccr-2023-completion-2026-09-26.md](ccr-2023-completion-2026-09-26.md):34 article-level full-section language/evidence assets and2 background-only records. Preserve tissue/cell/assay provenance, negative findings, source numerical conflicts and the separate main-figure version caveat for PMID37125965.
+
+- For KEAPness and STK11/radiotherapy, use [the two-paper source map](ccr-keapness-stk11-2026-09-24.md): individual full-section assets, verified official categories, source-version evidence and numerical/inference restrictions. These main-text reads do not create new STK11 highlights or acceptance passes.
+
 - Read [ccr-2025-genomics-2026-09-20-language.md](ccr-2025-genomics-2026-09-20-language.md) for the 13-paper 2025 genomics/clinicogenomics-adjacent batch: STK11/KEAP1 and expression signatures, variant origin, fusion detection, tissue/plasma concordance, MRD, ctDNA dynamics, methylation classifiers, genotype-stratified protein targets and functional pathway assays. Its [manifest](ccr-2025-genomics-2026-09-20-manifest.csv) records the actual PDF version, hash, official category, secondary topics and visually checked main-figure/table pages. Preserve numerical conflicts and model/clinical boundaries in its article alerts. Initial main-text completion is not acceptance-passed or complete 2025 journal coverage; no highlights were added.
 
 Start with [library-index.md](library-index.md) or filter [library-index.csv](library-index.csv) to inspect journal, year, title, eligibility, official category, content tags, main-read state, review state and STK11 priority. Derived totals must be regenerated with `scripts/build_library_index.py`, not manually copied into entry-point prose.
@@ -10,6 +16,8 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 
 ## Latest intake and version boundaries
 
+- [Sixteen-PDF 2026-09-26 intake](ccr-2026-09-26-intake.md): 14 newly registered and completed original studies plus exact duplicates of PMID33323404 and PMID38980931. Use the [version manifest](ccr-2026-09-26-reading-manifest.csv) and article-specific assets for plasma/tissue NGS concordance, DLL3 CAR T cells, ATR/gemcitabine and TMB-high basket trials, EGFR/KRAS/ROS1 clinicogenomics, CAF single-cell/bulk bioinformatics, invasive mucinous adenocarcinoma, ES-SCLC spatial transcriptomics, transcriptional subtypes and EGFR-to-SCLC lineage plasticity. Cross-tumor studies do not establish lung-specific efficacy; preclinical activity does not establish patient benefit. No new STK11 highlight or acceptance pass was added.
+- [Seven-paper 2026-09-24 intake](ccr-2026-09-24-intake.md): six new2026 original studies and one previously indexed2023 phase-I study. All seven supplied main articles/figures/tables are read; supplements and acceptance rechecks remain separate. Use the article-specific evidence/language files and [version manifest](ccr-2026-09-24-reading-manifest.csv) for FGFR functional assays, negative randomized endpoints, ADC/ATR safety, co-alteration/resistance cohorts, ctDNA assay comparisons, AI spatial pathology and MYC copy-number/bulk-RNA integration. VIOLETTE's official-web category remains unverified. No STK11 highlights are added.
 - [Eight CCR 2025 articles](ccr-2025-2026-09-19-intake-language.md) add CNS efficacy, MAPK/ICI biomarker interpretation, shared-variant diagnostics, immune/radiomics resistance, oncolytic-virus spatial proteomics, YAP/HER3/RET experiments, ecMYC spatial biology and LPA metabolomics/bulk RNA/proteomics/scRNA reanalysis. Use [the manifest](ccr-2025-2026-09-19-intake-manifest.csv) for category, version, hash and reading scope. No new STK11 highlight was inferred.
 - [medRxiv PRO trajectories](medrxiv-2025-pro-trajectories-language.md) is a separately read v1 preprint, not the CCR version PMID40272273. Check [the preprint register](preprint-source-register.csv); do not merge its reading status or wording into the CCR catalog.
 
@@ -43,3 +51,19 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 - Read [jto-stk11-deep-reading-ledger.md](jto-stk11-deep-reading-ledger.md) when the user asks whether a highlighted JTO article has been deeply read. Its scope is only the registered four-paper JTO STK11-priority set; it is not a journal-wide JTO inventory.
 - Search [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) only when the user asks about a paper title, PMID, DOI, publication year, corpus membership, CCR official category, category-verification source, genre status, article type, corpus-processing history, or the complete source list. Filter to relevant rows before loading content; load or format the complete bibliography only when requested. Derive registered and included counts separately from the current inventory. A blank official category with `pending_official_verification` means unverified, not a new CCR category; manuscript-declared labels and content tags are not substitutes for verified publisher classification.
 - Search [jto-stk11-priority-bibliography.csv](jto-stk11-priority-bibliography.csv) for the four highlighted JTO papers' title, PMID, DOI, publication details, article-level classifications, STK11 role, source PDF, and supplement status. Never merge these rows into CCR counts or imply that they represent the complete JTO literature.
+
+## 2026-09-23 completed batch
+
+- [Intake trials](ccr-2026-09-23-intake-language.md): EVOKE-02 and tifcemalimab, with exact analysis-set and safety restrictions.
+- [Remaining 2025 clinical studies](ccr-2025-clinical-2026-09-23-language.md): four trials; negative primary endpoint, dose finding, biomarker and time-origin language.
+- [Omics and methodological studies](ccr-2025-omics-methods-2026-09-23-language.md): single-cell/spatial inference, phosphoproteomics, chemoproteomics, species-aware RNA, imaging and matched experimental controls.
+- [Manifest](ccr-2026-09-23-reading-manifest.csv): publication year, journal, full title, official category, disease role, source version, hashes and visually inspected pages.
+- [Background review](ccr-2025-sez6-review-background.md): secondary synthesis only, not original-study Methods/Results.
+- [Omics supplement candidates](ccr-omics-supplement-candidates-2026-09-23.md) and [structured directory](ccr-omics-supplement-candidates-2026-09-23.csv): 19 abstract-screened acquisition candidates, separate from formal reading counts and reusable language. These extend discovery to pan-cancer and explicitly labeled cross-tumor methods, not the learned lung-cancer profile.
+
+## 2024 completion and later2026intake
+
+See [ccr-2024-and-intake-2026-09-23.md](ccr-2024-and-intake-2026-09-23.md) for37article-specific reading records.33eligible sources enter the section catalog;4background sources are excluded from original-study language. New domains include variant-origin prediction, spatial pathology, LCNEC single-cell profiling, proteomics, cfDNA epigenomics and inherited-risk surveillance. These expand article-level terminology, not disease-wide or journal-wide style claims.
+## Source identity corrections
+
+- [PMID correction map](source-identity-corrections.csv): read whenever a PDF filename, NIHMS identifier, PMCID, DOI or PMID conflicts. The DOI/title-verified PMID is authoritative; the legacy value remains only as an audit alias.

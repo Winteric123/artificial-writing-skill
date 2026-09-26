@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "meaning": "Explicit aliases only; exact tag matching. Disease hierarchy is separate from synonyms. Lexical expression-topic detection is a candidate annotation, not scientific verification.",
+  "diseases": {
+    "nsclc": [
+      "non-small cell lung cancer",
+      "non-small-cell lung cancer",
+      "非小细胞肺癌"
+    ],
+    "sclc": [
+      "small cell lung cancer",
+      "small-cell lung cancer",
+      "小细胞肺癌"
+    ],
+    "lung-cancer": [
+      "lung cancer",
+      "lung carcinoma",
+      "肺癌"
+    ],
+    "lung-adenocarcinoma": [
+      "LUAD",
+      "lung adenocarcinoma",
+      "肺腺癌"
+    ],
+    "lung-squamous": [
+      "LUSC",
+      "squamous NSCLC",
+      "肺鳞癌"
+    ],
+    "lcnec": [
+      "large cell neuroendocrine carcinoma",
+      "大细胞神经内分泌癌"
+    ],
+    "mesothelioma": [
+      "pleural mesothelioma",
+      "MPM",
+      "胸膜间皮瘤"
+    ],
+    "pulmonary-carcinoid": [
+      "lung carcinoid",
+      "pulmonary carcinoid",
+      "肺类癌"
+    ],
+    "neuroendocrine-neoplasm": [
+      "neuroendocrine neoplasm",
+      "NEN",
+      "神经内分泌肿瘤"
+    ],
+    "prostate-cancer": [
+      "prostate cancer",
+      "前列腺癌"
+    ],
+    "nepc": [
+      "neuroendocrine prostate cancer",
+      "神经内分泌前列腺癌"
+    ],
+    "neuroblastoma": [
+      "神经母细胞瘤"
+    ],
+    "mpn": [
+      "myeloproliferative neoplasm",
+      "myeloproliferative neoplasms",
+      "骨髓增殖性肿瘤"
+    ],
+    "hnscc": [
+      "head and neck squamous cell carcinoma",
+      "头颈鳞癌"
+    ],
+    "sarcoma": [
+      "肉瘤"
+    ],
+    "osteosarcoma": [
+      "骨肉瘤"
+    ],
+    "melanoma": [
+      "黑色素瘤"
+    ],
+    "renal-cell-carcinoma": [
+      "RCC",
+      "renal cell carcinoma",
+      "肾细胞癌"
+    ],
+    "breast-cancer": [
+      "breast cancer",
+      "乳腺癌"
+    ],
+    "pancreatic-cancer": [
+      "pancreatic cancer",
+      "PDAC",
+      "胰腺癌"
+    ],
+    "gastric-cancer": [
+      "gastric cancer",
+      "胃癌"
+    ],
+    "colorectal-cancer": [
+      "colorectal cancer",
+      "结直肠癌"
+    ],
+    "biliary-tract-cancer": [
+      "biliary tract cancer",
+      "BTC",
+      "胆道癌"
+    ],
+    "mixed-solid-tumors": [
+      "mixed solid tumors",
+      "pan-cancer",
+      "泛癌",
+      "多瘤种"
+    ],
+    "thyroid-cancer": [
+      "thyroid carcinoma",
+      "thyroid cancer",
+      "甲状腺癌"
+    ],
+    "nut-carcinoma": [
+      "NUT carcinoma",
+      "NUT癌"
+    ],
+    "smarca4-deficient-thoracic": [
+      "SMARCA4-deficient thoracic malignancies",
+      "SMARCA4缺失性胸部恶性肿瘤"
+    ],
+    "dicer1-predisposition": [
+      "DICER1 tumor predisposition",
+      "DICER1肿瘤易感"
+    ],
+    "non-tumor-infection-model": [
+      "LCMV infection model",
+      "非肿瘤感染模型"
+    ],
+    "pulmonary-sarcomatoid": [
+      "pulmonary sarcomatoid carcinoma",
+      "肺肉瘤样癌"
+    ],
+    "cll": [
+      "chronic lymphocytic leukemia",
+      "慢性淋巴细胞白血病"
+    ],
+    "b-cell-malignancy": [
+      "B-cell malignancy",
+      "B细胞恶性肿瘤"
+    ],
+    "esophageal-cancer": [
+      "esophageal carcinoma",
+      "食管癌"
+    ],
+    "ovarian-cancer": [
+      "ovarian carcinoma",
+      "卵巢癌"
+    ],
+    "glioblastoma": [
+      "GBM",
+      "胶质母细胞瘤"
+    ],
+    "head-and-neck-cancer": [
+      "head and neck cancer",
+      "头颈癌"
+    ],
+    "endometrial-cancer": [
+      "endometrial cancer",
+      "子宫内膜癌"
+    ],
+    "hepatocellular-carcinoma": [
+      "HCC",
+      "hepatocellular carcinoma",
+      "肝细胞癌"
+    ]
+  },
+  "disease_children": {
+    "lung-cancer": [
+      "nsclc",
+      "sclc",
+      "lung-adenocarcinoma",
+      "lung-squamous",
+      "lcnec",
+      "pulmonary-carcinoid"
+    ],
+    "nsclc": [
+      "lung-adenocarcinoma",
+      "lung-squamous",
+      "pulmonary-sarcomatoid"
+    ],
+    "prostate-cancer": [
+      "nepc"
+    ]
+  },
+  "domains": {
+    "nsclc": [
+      "non-small cell lung cancer",
+      "非小细胞肺癌"
+    ],
+    "sclc": [
+      "small cell lung cancer",
+      "小细胞肺癌"
+    ],
+    "genomics": [
+      "genomic",
+      "co-mutation",
+      "co-mutational",
+      "mutation",
+      "mutational",
+      "mutations",
+      "copy number",
+      "genomic alteration",
+      "基因组学"
+    ],
+    "transcriptomics": [
+      "transcriptomic",
+      "transcriptome",
+      "bulk RNA",
+      "bulk RNA-seq",
+      "RNA-seq",
+      "RNA sequencing",
+      "转录组"
+    ],
+    "single-cell": [
+      "scRNA",
+      "scRNA-seq",
+      "scRNAseq",
+      "single cell",
+      "single-nucleus",
+      "pseudobulk",
+      "单细胞"
+    ],
+    "spatial-transcriptomics": [
+      "GeoMx",
+      "spatial transcriptomics",
+      "spatial transcriptomic",
+      "spatial RNA",
+      "空间转录组"
+    ],
+    "spatial-protein": [
+      "IMC",
+      "MIBI",
+      "mIF",
+      "multiplex immunofluorescence",
+      "spatial protein",
+      "imaging mass cytometry",
+      "空间蛋白"
+    ],
+    "proteomics": [
+      "proteomic",
+      "proteome",
+      "protein abundance",
+      "LC-MS/MS",
+      "蛋白组"
+    ],
+    "targeted-protein-assay": [
+      "RPPA",
+      "reverse-phase protein array",
+      "proximity extension",
+      "靶向蛋白检测"
+    ],
+    "bioinformatics": [
+      "deconvolution",
+      "GSEA",
+      "ssGSEA",
+      "WGCNA",
+      "enrichment analysis",
+      "classifier",
+      "clustering",
+      "生物信息学",
+      "生信"
+    ],
+    "statistics": [
+      "hazard ratio",
+      "confidence interval",
+      "P value",
+      "adjusted",
+      "matching",
+      "landmark",
+      "statistically significant",
+      "统计学"
+    ],
+    "immunotherapy": [
+      "immune checkpoint",
+      "ICI",
+      "PD-1 blockade",
+      "checkpoint inhibition",
+      "immunotherapy response",
+      "免疫治疗"
+    ],
+    "targeted-therapy": [
+      "kinase inhibition",
+      "kinase inhibitor",
+      "TKI",
+      "targeted therapy",
+      "靶向治疗"
+    ],
+    "preclinical": [
+      "preclinical experiments",
+      "xenograft",
+      "knockdown",
+      "knockout",
+      "isogenic",
+      "overexpression",
+      "rescue",
+      "基础实验"
+    ],
+    "liquid-biopsy": [
+      "ctDNA",
+      "cfDNA",
+      "CSF",
+      "liquid biopsy",
+      "液体活检"
+    ],
+    "safety": [
+      "toxicity",
+      "adverse event",
+      "adverse events",
+      "tolerability",
+      "安全性"
+    ],
+    "clinical-oncology": [
+      "clinical oncology",
+      "临床肿瘤学"
+    ]
+  },
+  "tissues": {
+    "tumor": [
+      "tumor tissue",
+      "肿瘤组织"
+    ],
+    "plasma": [
+      "血浆"
+    ],
+    "blood": [
+      "whole blood",
+      "血液"
+    ],
+    "csf": [
+      "cerebrospinal fluid",
+      "脑脊液"
+    ],
+    "tonsil": [
+      "tonsillar",
+      "扁桃体"
+    ],
+    "bone-marrow": [
+      "bone marrow",
+      "骨髓"
+    ],
+    "serum": [
+      "血清"
+    ],
+    "stool": [
+      "feces",
+      "粪便"
+    ],
+    "urine": [
+      "尿液"
+    ],
+    "bone": [
+      "骨组织"
+    ],
+    "spleen": [
+      "脾脏"
+    ],
+    "lymph-node": [
+      "lymph node",
+      "淋巴结"
+    ],
+    "liver": [
+      "肝组织"
+    ],
+    "lung": [
+      "肺组织"
+    ],
+    "brain": [
+      "脑组织"
+    ],
+    "peritoneal-fluid": [
+      "peritoneal lavage",
+      "腹腔液",
+      "腹腔灌洗液"
+    ],
+    "pleural-fluid": [
+      "胸腔液"
+    ]
+  },
+  "models": {
+    "human-clinical": [
+      "clinical cohort",
+      "患者队列"
+    ],
+    "human-tissue": [
+      "human tissue",
+      "人组织"
+    ],
+    "human-cell-line": [
+      "cell line",
+      "细胞系"
+    ],
+    "mouse": [
+      "小鼠"
+    ],
+    "pdx": [
+      "patient-derived xenograft",
+      "患者来源移植瘤"
+    ],
+    "cdx": [
+      "cell-line-derived xenograft",
+      "细胞来源移植瘤"
+    ],
+    "gemm": [
+      "genetically engineered mouse",
+      "基因工程小鼠"
+    ],
+    "ex-vivo": [
+      "ex vivo",
+      "离体"
+    ],
+    "computational": [
+      "计算模型"
+    ],
+    "mouse-cell-line": [
+      "murine cell line",
+      "小鼠细胞系"
+    ],
+    "nonhuman-primate": [
+      "nonhuman primate",
+      "非人灵长类"
+    ],
+    "organoid": [
+      "organoids",
+      "类器官"
+    ],
+    "canine": [
+      "dog",
+      "canine spontaneous tumor",
+      "犬自发性肿瘤"
+    ],
+    "rat": [
+      "大鼠"
+    ]
+  },
+  "roles": {
+    "lung-primary": [
+      "肺癌研究"
+    ],
+    "cross-tumor-methods": [
+      "跨瘤种方法参考"
+    ],
+    "regulatory-analysis": [
+      "监管分析",
+      "FDA approval summary"
+    ],
+    "clinical-correlative": [
+      "临床关联"
+    ],
+    "preclinical-mechanism": [
+      "基础机制"
+    ],
+    "computational-methods": [
+      "计算方法"
+    ],
+    "structural-analogue": [
+      "结构参考"
+    ],
+    "clinical-trial": [
+      "clinical trial",
+      "临床试验"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "clonal-hematopoiesis",
+      "terms": [
+        "克隆性造血",
+        "clonal hematopoiesis",
+        "clonal haematopoiesis"
+      ]
+    },
+    {
+      "id": "dose-dependence",
+      "terms": [
+        "剂量依赖",
+        "剂量依赖性",
+        "dose-dependent",
+        "dose dependent",
+        "dose dependence"
+      ]
+    },
+    {
+      "id": "pfs",
+      "terms": [
+        "PFS",
+        "progression-free survival",
+        "无进展生存",
+        "无进展生存期"
+      ]
+    },
+    {
+      "id": "os",
+      "terms": [
+        "OS",
+        "overall survival",
+        "总生存",
+        "总生存期"
+      ]
+    },
+    {
+      "id": "comutation",
+      "terms": [
+        "共突变",
+        "co-mutation",
+        "co-mutations",
+        "comutation",
+        "co-mutational"
+      ]
+    },
+    {
+      "id": "coaltera",
+      "terms": [
+        "共改变",
+        "co-alteration",
+        "co-alterations",
+        "co-occurring alterations"
+      ]
+    },
+    {
+      "id": "enrichment",
+      "terms": [
+        "富集",
+        "enrichment",
+        "enriched"
+      ]
+    },
+    {
+      "id": "differential-expression",
+      "terms": [
+        "差异表达",
+        "differential expression",
+        "differentially expressed"
+      ]
+    },
+    {
+      "id": "cell-state",
+      "terms": [
+        "细胞状态",
+        "cell state",
+        "cell states"
+      ]
+    },
+    {
+      "id": "spatial-proximity",
+      "terms": [
+        "空间邻近",
+        "spatial proximity",
+        "nearest-neighbor distance"
+      ]
+    },
+    {
+      "id": "protein-abundance",
+      "terms": [
+        "蛋白丰度",
+        "protein abundance"
+      ]
+    },
+    {
+      "id": "knockdown",
+      "terms": [
+        "敲低",
+        "knockdown"
+      ]
+    },
+    {
+      "id": "knockout",
+      "terms": [
+        "敲除",
+        "knockout"
+      ]
+    },
+    {
+      "id": "rescue",
+      "terms": [
+        "救援实验",
+        "rescue experiment",
+        "rescue assay",
+        "rescue"
+      ]
+    },
+    {
+      "id": "hr",
+      "terms": [
+        "HR",
+        "hazard ratio",
+        "风险比"
+      ]
+    },
+    {
+      "id": "ci",
+      "terms": [
+        "CI",
+        "confidence interval",
+        "置信区间"
+      ]
+    },
+    {
+      "id": "fdr",
+      "terms": [
+        "FDR",
+        "false discovery rate",
+        "错误发现率"
+      ]
+    },
+    {
+      "id": "dose-response",
+      "terms": [
+        "剂量反应",
+        "dose-response",
+        "dose response"
+      ]
+    },
+    {
+      "id": "target-engagement",
+      "terms": [
+        "靶点作用验证",
+        "target engagement"
+      ]
+    },
+    {
+      "id": "target-occupancy",
+      "terms": [
+        "靶点占有",
+        "受体占有率",
+        "target occupancy",
+        "receptor occupancy"
+      ]
+    },
+    {
+      "id": "objective-response",
+      "terms": [
+        "客观缓解率",
+        "objective response rate",
+        "ORR"
+      ]
+    },
+    {
+      "id": "single-cell",
+      "terms": [
+        "单细胞",
+        "single-cell",
+        "scRNA-seq",
+        "scRNAseq"
+      ]
+    },
+    {
+      "id": "spatial-transcriptomics",
+      "terms": [
+        "空间转录组",
+        "spatial transcriptomics",
+        "spatial transcriptomic"
+      ]
+    },
+    {
+      "id": "deconvolution",
+      "terms": [
+        "反卷积",
+        "deconvolution"
+      ]
+    },
+    {
+      "id": "colocalization",
+      "terms": [
+        "共定位",
+        "colocalization",
+        "co-localization",
+        "co-localisation"
+      ]
+    }
+  ]
+}

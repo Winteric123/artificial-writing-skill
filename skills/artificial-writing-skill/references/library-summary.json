@@ -5,11 +5,12 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 251,
-  "included": 243,
+  "registered": 279,
+  "included": 261,
+  "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 111,
-  "eligible_incomplete": 132,
+  "main_text_complete": 261,
+  "eligible_incomplete": 0,
   "source_recheck_passed": 0,
   "stk11_highlights": 13,
   "years": {
@@ -35,44 +36,44 @@
       "excluded": 0
     },
     "2021": {
-      "registered": 11,
-      "included": 11,
-      "complete": 1,
-      "incomplete": 10,
+      "registered": 19,
+      "included": 19,
+      "complete": 19,
+      "incomplete": 0,
       "excluded": 0
     },
     "2022": {
-      "registered": 46,
-      "included": 42,
-      "complete": 0,
-      "incomplete": 42,
-      "excluded": 4
+      "registered": 47,
+      "included": 40,
+      "complete": 40,
+      "incomplete": 0,
+      "excluded": 7
     },
     "2023": {
-      "registered": 42,
+      "registered": 44,
       "included": 39,
-      "complete": 2,
-      "incomplete": 37,
-      "excluded": 3
+      "complete": 39,
+      "incomplete": 0,
+      "excluded": 5
     },
     "2024": {
-      "registered": 34,
-      "included": 34,
-      "complete": 1,
-      "incomplete": 33,
-      "excluded": 0
+      "registered": 37,
+      "included": 33,
+      "complete": 33,
+      "incomplete": 0,
+      "excluded": 4
     },
     "2025": {
-      "registered": 50,
+      "registered": 51,
       "included": 49,
-      "complete": 39,
-      "incomplete": 10,
-      "excluded": 1
+      "complete": 49,
+      "incomplete": 0,
+      "excluded": 2
     },
     "2026": {
-      "registered": 65,
-      "included": 65,
-      "complete": 65,
+      "registered": 78,
+      "included": 78,
+      "complete": 78,
       "incomplete": 0,
       "excluded": 0
     }
@@ -103,44 +104,44 @@
         "excluded": 0
       },
       "2021": {
-        "registered": 11,
-        "included": 11,
-        "complete": 1,
-        "incomplete": 10,
+        "registered": 19,
+        "included": 19,
+        "complete": 19,
+        "incomplete": 0,
         "excluded": 0
       },
       "2022": {
-        "registered": 46,
-        "included": 42,
-        "complete": 0,
-        "incomplete": 42,
-        "excluded": 4
+        "registered": 47,
+        "included": 40,
+        "complete": 40,
+        "incomplete": 0,
+        "excluded": 7
       },
       "2023": {
-        "registered": 42,
+        "registered": 44,
         "included": 39,
-        "complete": 2,
-        "incomplete": 37,
-        "excluded": 3
+        "complete": 39,
+        "incomplete": 0,
+        "excluded": 5
       },
       "2024": {
-        "registered": 33,
-        "included": 33,
-        "complete": 0,
-        "incomplete": 33,
-        "excluded": 0
+        "registered": 36,
+        "included": 32,
+        "complete": 32,
+        "incomplete": 0,
+        "excluded": 4
       },
       "2025": {
-        "registered": 49,
+        "registered": 50,
         "included": 48,
-        "complete": 38,
-        "incomplete": 10,
-        "excluded": 1
+        "complete": 48,
+        "incomplete": 0,
+        "excluded": 2
       },
       "2026": {
-        "registered": 62,
-        "included": 62,
-        "complete": 62,
+        "registered": 75,
+        "included": 75,
+        "complete": 75,
         "incomplete": 0,
         "excluded": 0
       }

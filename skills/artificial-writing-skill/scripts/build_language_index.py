@@ -8,6 +8,8 @@ sys.dont_write_bytecode = True
 
 from library_common import atomic_json, content_hash, file_hash, journal_registry, read_csv, read_json, reference_path
 from validate_reading_quality import validate
+from retrieval_metadata import article_scope, expression_metadata
+from source_provenance import FACETS, attach_pdf_locator, load_pdf_locators, load_scope_annotations
 
 
 def normalize(value):
@@ -70,7 +72,29 @@ def apply_controls(entry, controls):
 def build(skill):
     validate(skill)
     references = skill / 'references'
-    dependencies = {'journal-registry.json', 'language-controls.json', 'language-usage-cards.json', 'language-id-migrations.json', 'stk11-priority-references.md', 'source-version-register.csv'}
+    dependencies = {'journal-registry.json', 'language-controls.json', 'language-usage-cards.json', 'language-id-migrations.json', 'stk11-priority-references.md', 'source-version-register.csv', 'library-index.csv', 'retrieval-vocabulary.json', 'retrieval-annotations.json'}
+    vocabulary = read_json(references / 'retrieval-vocabulary.json')
+    annotations = read_json(references / 'retrieval-annotations.json')
+    annotations['articles'] = load_scope_annotations(skill, vocabulary)
+    pdf_locators = load_pdf_locators(skill)
+    dependencies.update({'source-scope-backfill.json', 'source-pdf-locators.json'})
+    dependencies.update(pdf_locators['source_asset_hashes'])
+    library = {row['pmid']: row for row in read_csv(references / 'library-index.csv')}
+    expression_annotations = {}
+    for annotation in annotations['expressions']:
+        selector = (annotation['pmid'], annotation['expression'])
+        if selector in expression_annotations:
+            raise ValueError(f'Duplicate expression annotation: {selector}')
+        expression_annotations[selector] = annotation
+    annotation_hits = Counter()
+    for annotation in [*annotations['articles'].values(), *annotations['expressions']]:
+        relative = annotation['source_reference']
+        reference_path(skill, relative)
+        dependencies.add(relative)
+        for field, group in [('disease_ids', 'diseases'), ('tissue_ids', 'tissues'), ('model_ids', 'models'), ('use_roles', 'roles'), ('expression_domains', 'domains')]:
+            if not set(annotation.get(field, [])).issubset(vocabulary[group]):
+                raise ValueError(f'Unknown annotation tag: {relative}/{field}')
+    asset_lines = {}
     controls = read_json(reference_path(skill, 'language-controls.json'))
     cards = read_json(reference_path(skill, 'language-usage-cards.json'))['cards']
     if len({card['id'] for card in cards}) != len(cards):
@@ -107,6 +131,7 @@ def build(skill):
             continue
         source_path = reference_path(skill, source_name)
         dependencies.add(source_name)
+        catalog_hash = file_hash(source_path)
         raw_rows = read_csv(source_path) if configuration.get('language_catalog') else list(markdown_entries(source_path))
         for row in raw_rows:
             source_ids = row['source_article_ids'].split(';')
@@ -116,13 +141,15 @@ def build(skill):
                 raise ValueError(f'Language source is excluded or incomplete: {source_name}/{row["entry_id"]}')
             asset = reference_path(skill, row['source_asset'])
             dependencies.add(row['source_asset'])
-            lines = asset.read_text(encoding='utf-8-sig').splitlines()
+            if row['source_asset'] not in asset_lines:
+                asset_lines[row['source_asset']] = asset.read_text(encoding='utf-8-sig').splitlines()
+            lines = asset_lines[row['source_asset']]
             line_number = int(row['source_line'])
             if not 1 <= line_number <= len(lines) or row['expression'] not in lines[line_number - 1]:
                 raise ValueError(f'Stale language locator: {source_name}/{row["entry_id"]}')
             entry = dict(row)
             entry.update(stable_id=stable_id(journal_id, row), journal_id=journal_id, journal=configuration['name'],
-                         source_catalog=source_name, source_catalog_sha256=file_hash(source_path),
+                         source_catalog=source_name, source_catalog_sha256=catalog_hash,
                          primary_section=normalize(row['primary_section']),
                          secondary_sections=';'.join(normalize(section) for section in row.get('secondary_sections', '').split(';') if section),
                          domain=row.get('domain', '').replace('_', '-'),
@@ -133,19 +160,40 @@ def build(skill):
                                                source_sha256=versions.get(identifier, {}).get('sha256', ''),
                                                highlight=identifier in highlights) for identifier in source_ids],
                          usage_cards=[card for card in cards if any(term.casefold() in row['expression'].casefold() for term in card['match_terms'])])
+            selected = [(identifier, row['expression']) for identifier in source_ids if (identifier, row['expression']) in expression_annotations]
+            if len(selected) > 1:
+                raise ValueError(f'Ambiguous multi-source expression annotation: {selected}')
+            annotation = expression_annotations[selected[0]] if selected else None
+            metadata = expression_metadata(row, lines, vocabulary)
+            metadata['usage_constraint'] = ' '.join(filter(None, [row.get('usage_constraint', ''), metadata['usage_constraint']]))
+            if annotation:
+                annotation_hits[selected[0]] += 1
+                metadata.update({key: value for key, value in annotation.items() if key not in {'pmid', 'expression'}})
+                metadata['expression_annotation_status'] = 'curated-expression-topic'
+            entry.update(metadata)
+            attach_pdf_locator(entry, pdf_locators)
             apply_controls(entry, controls)
             if any(quality[identifier]['review_status'] == 'needs_correction' for identifier in source_ids) and entry['retrieval_state'] != 'quarantined':
                 entry['retrieval_state'] = 'needs_source_check'
                 entry['control_reasons'].append({'id': 'article-needs-correction', 'reason': 'At least one source article requires correction; reopen the source.'})
             for article in entry.pop('source_articles'):
                 article['review_record'] = quality[article['pmid']]['review_record']
+                scope_row = {**library.get(article['pmid'], {}), 'scope_reference': 'library-index.csv'}
+                article['source_scope'] = article_scope(scope_row, vocabulary, annotations['articles'].get(article['pmid']))
+                article['source_pdf'] = pdf_locators['sources'].get(article['pmid'], {'identity_check': 'not-yet-located'})
                 articles[article['pmid']] = article
             entry['usage_card_ids'] = [card['id'] for card in entry.pop('usage_cards')]
             entry['source_alert_ids'] = [alert['id'] for alert in entry.pop('source_alerts')]
             entries.append(entry)
+    if set(annotations['articles']) - set(articles):
+        raise ValueError('Article scope annotation has no eligible language source')
+    if any(annotation_hits[selector] != 1 for selector in expression_annotations):
+        raise ValueError(f'Stale or ambiguous expression annotation: {[selector for selector in expression_annotations if annotation_hits[selector] != 1]}')
     identifiers = [entry['stable_id'] for entry in entries]
     if len(identifiers) != len(set(identifiers)):
         raise ValueError('Duplicate stable language ID; reconcile identical source records')
+    if set(pdf_locators['entries']) - set(identifiers):
+        raise ValueError('PDF locators reference retired entries; regenerate PDF locators')
     for rule in controls['entry_rules']:
         if not set(rule.get('stable_ids', [])).issubset(identifiers):
             raise ValueError(f'Entry control references an absent stable ID: {rule["id"]}')
@@ -155,13 +203,19 @@ def build(skill):
             raise ValueError('Inconsistent language-ID migration')
     entries.sort(key=lambda entry: entry['stable_id'])
     dependency_hashes = {name: file_hash(reference_path(skill, name)) for name in sorted(dependencies)}
-    payload = dict(schema_version=1, entries=entries, articles=articles,
+    payload = dict(schema_version=2, entries=entries, articles=articles, vocabulary=vocabulary,
                    usage_cards={card['id']: card for card in cards},
                    article_alerts={alert['id']: alert for alert in controls['article_alerts']})
-    manifest = dict(schema_version=1, index_version=content_hash(payload), entry_count=len(entries),
+    manifest = dict(schema_version=2, index_version=content_hash(payload), entry_count=len(entries),
                     journals=dict(Counter(entry['journal_id'] for entry in entries)),
                     retrieval_states=dict(Counter(entry['retrieval_state'] for entry in entries)),
                     usage_card_count=len(cards), dependencies=dependency_hashes,
+                    source_scope_status=dict(Counter(article['source_scope']['annotation_status'] for article in articles.values())),
+                    source_facet_coverage={field: dict(Counter(article['source_scope']['facet_status'][field] for article in articles.values())) for field in FACETS},
+                    pdf_locator_states=dict(Counter(entry['source_locator']['state'] for entry in entries)),
+                    source_pdf_count=sum(article['source_pdf']['identity_check'] == 'registered-sha256-match' for article in articles.values()),
+                    entries_with_recorded_page_hints=sum(bool(entry['source_locator']['recorded_page_hints']) for entry in entries),
+                    expression_annotation_status=dict(Counter(entry['expression_annotation_status'] for entry in entries)),
                     scope='Cross-journal retrieval view only; source corpora, counts and reading statuses remain separate.')
     atomic_json(references / 'language-retrieval-index.json', payload)
     manifest['index_file_sha256'] = file_hash(references / 'language-retrieval-index.json')
