@@ -10,6 +10,9 @@ Language in backticks consists of conventional short terms/collocations or synth
 
 ## PMID 41870274
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-41870274.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 ### Identity and classification
 
 The Pan-Tumor Landscape of Gene Amplifications and Copy Number Amplification Ratio for Established and Emerging Clinical Targets. Clinical Cancer Research, 2026. DOI 10.1158/1078-0432.CCR-25-4018; PMCID PMC13320176. Main PDF: 14 pages. Official category: Novel Biomarkers and Precision Medicine. User highlight: STK11 writing-framework priority 1, equal to the existing nine references.

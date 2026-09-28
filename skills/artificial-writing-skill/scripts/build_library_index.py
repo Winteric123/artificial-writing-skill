@@ -13,6 +13,7 @@ from validate_reading_quality import read_rows, validate
 from library_common import atomic_text, journal_registry, read_json
 from retrieval_metadata import article_scope
 from source_provenance import FACETS, load_scope_annotations
+from coalteration_topics import article_topics, load_annotations, topic_columns, topic_markdown, topic_summary
 
 
 def write_csv(path, rows):
@@ -102,12 +103,14 @@ def build(skill):
         raise ValueError('Highlight PMID absent from journal bibliographies')
     if set(scope_annotations) - set(identifiers):
         raise ValueError('Source-scope PMID absent from journal bibliographies')
+    co_annotations = load_annotations(skill, rows)
     for row in rows:
         scope = article_scope(row, vocabulary, scope_annotations.get(row['pmid']))
         row.update({f'source_{field}': ';'.join(scope[field]) for field in FACETS})
         row.update(scope_curation_status=scope['annotation_status'], scope_reference=scope['source_reference'],
                    scope_reference_line=scope.get('source_reference_line', ''), scope_boundary=scope['boundary'],
                    scope_facet_status=json.dumps(scope['facet_status'], ensure_ascii=False, sort_keys=True))
+        row.update(topic_columns(article_topics(row, co_annotations)))
     included = [row for row in rows if row['eligibility'] == 'included']
     excluded = [row for row in rows if row['eligibility'] == 'excluded']
     complete = [row for row in included if row['reading_stage'] == 'main_text_deep_read_complete']
@@ -118,6 +121,7 @@ def build(skill):
                    main_text_complete=len(complete), eligible_incomplete=len(included) - len(complete),
                    source_recheck_passed=sum(row['review_status'] == 'passed' for row in rows),
                    stk11_highlights=len(highlight_ids), years={}, journal_years=journal_year_counts(rows))
+    summary['co_alteration_topics'] = topic_summary(rows)
     text = ['# 文献总目录：按期刊、年份与阅读状态', '',
             '本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。', '',
             f'正式期刊登记{len(rows)}篇；当前纳入{len(included)}篇；排除记录{len(excluded)}篇（含评论及单列背景综述）。已完成正文精读{len(complete)}篇，合格但尚未完成精读{len(included)-len(complete)}篇。来源复核验收通过{summary["source_recheck_passed"]}篇；STK11 highlight {len(highlight_ids)}篇。', '',
@@ -179,10 +183,14 @@ def build(skill):
     category_text.extend(['', '## Boundaries', '',
                          'The 2020 SMARCA4 article remains an explicit user-priority historical exception. Eight legacy CCR Translations commentaries remain excluded and are not future reading tasks. No replies, editorials or response-only correspondence are newly included. Main-text completion and source-recheck acceptance are separate states; supplements require their own evidence.', '',
                          'Use ccr_official_category, ccr_category_source, ccr_category_status and ccr_category_verified_on in [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) for the article-level classification evidence. The latest author-manuscript category for PMID39561276 was verified at the [official article page](https://aacrjournals.org/clincancerres/article/31/2/376/751103/Analysis-of-Shared-Variants-between-Cancer); the other seven latest additions use their publisher PDF headers.'])
+    topic_text = topic_markdown(rows, co_annotations)
+    text.extend(['', '## 共突变/共改变标签', '',
+                 '全部逐篇专题状态、基因上下文和用途见[共改变目录](coalteration-index.md)。这是独立文章级标签，不取代官方栏目、阅读状态或STK11重点标记。'])
     write_csv(references / 'library-index.csv', rows)
     atomic_text(references / 'library-index.md', '\n'.join(text) + '\n')
     atomic_text(references / 'library-summary.json', json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
     atomic_text(references / 'ccr-category-index.md', '\n'.join(category_text) + '\n')
+    atomic_text(references / 'coalteration-index.md', topic_text)
     return summary
 
 

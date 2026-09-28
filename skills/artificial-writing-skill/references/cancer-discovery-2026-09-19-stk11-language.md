@@ -1,8 +1,11 @@
 # Cancer Discovery: STK11 core-framework reading and language
 
-Reading date: 2026-09-19. Two supplied original-research main PDFs were read, including every main figure/caption and the 2018 main table. This is first-pass main-text reading and evidence/language curation, **not a separate acceptance source recheck**. Both quality records remain not_reviewed. External supplements were not supplied. Physical PDF page numbers below are 1-based.
+Reading date: 2026-09-19. Two supplied original-research main PDFs were read, including every main figure/caption and the 2018 main table. This is first-pass main-text reading and evidence/language curation, **not a separate acceptance source recheck**. Historical first-pass status is retained; the dated source-recheck records below supersede the old review-status snapshot. External supplements were not supplied. Physical PDF page numbers below are 1-based.
 
 ## PMID 26069186 — 2015
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-26069186.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 **Co-occurring genomic alterations define major subsets of KRAS-mutant lung adenocarcinoma with distinct biology, immune profiles, and therapeutic vulnerabilities.** Cancer Discovery 5(8):860–877. DOI: 10.1158/2159-8290.CD-14-1236. [Identity](https://pubmed.ncbi.nlm.nih.gov/26069186/).
 
@@ -26,9 +29,9 @@ Evidence ceiling: reproducible subtype associations and perturbation-supported c
 | Methods | 16–18 | Cohorts/platforms, statistics and experimental assays; supplementary detail remains outside supplied scope |
 | Significance | 22 | Functional translational summary, not a clinical indication |
 | Figure 1 | 23–24 | NMF/consensus subtypes and validation; figure and caption inspected |
-| Figure 2 | 25–26 | Co-alterations, triple-mutant context and clonality; figure and caption inspected |
-| Figure 3 | 27–28 | LKB1 genetic/protein/pathway status; figure and caption inspected |
-| Figure 4 | 29–30 | KEAP1/NRF2 and proteostasis programs; figure and caption inspected |
+| Figure 2 | 25–26 | Co-alterations and mutation burden/smoking; clonality is a main-text report of external Supplement S5 |
+| Figure 3 | 27–28 | KC low TTF1, lineage, targeted protein and miRNA patterns; figure and caption inspected |
+| Figure 4 | 29–30 | LKB1 functional state, KEAP1/NRF2 and proteostasis programs; figure and caption inspected |
 | Figure 5 | 31–32 | Immune expression/protein findings; figure and caption inspected |
 | Figure 6 | 33 | Recurrence and overall survival; figure and caption inspected |
 | Figure 7 | 34–35 | Drug screen, isogenic perturbation and NQO1 context; figure and caption inspected |
@@ -44,8 +47,8 @@ No separate numbered main table. Figure-embedded numerical displays were include
 | Cluster sizes | TCGA KL 23, KP 30, KC 15 | Fig1–2 | Expression clusters, not mutually exclusive mutation-only groups |
 | Co-alterations | TP53 P=3.8e-06; STK11 P=1.03e-05; ATM P=.002; KEAP1 P=.006 | pp4–6; Fig2 | Enrichment, not proof of functional cooperation; KRAS-allele distribution alone did not define clusters |
 | Triple mutation | Permutation P=.0018 in training 68; .01692 in independent 77; .0693 in merged 176 | pp5–6; Fig2 | Preserve nonsignificance in merged cohort; do not claim universal mutual exclusivity or longitudinal acquisition |
-| Functional LKB1 | Mutation-negative KL: RNA P=7.57e-06; protein trend P=.056; pAMPK P=.017; copy loss P=.006 | pp6–7; Fig3 | Mutation, RNA, protein, copy loss and pathway state are different measurements |
-| Immune phenotype | PD-L1 RNA P=.000147; IHC comparison P=.039 | pp8–9; Fig5 | RNA/protein cohorts and assays are not identical |
+| Functional LKB1 | Mutation-negative KL: RNA P=7.57e-06; protein trend P=.056; pAMPK P=.017; copy loss P=.006 | p8; Fig4 (physical pp29–30) | Mutation, RNA, protein, copy loss and pathway state are different measurements |
+| Immune phenotype | PD-L1 RNA P=.000147; IHC comparison P=.039 | pp9–10; Fig5 (physical pp31–32) | RNA/protein cohorts and assays are not identical |
 | Recurrence versus OS | PROSPECT RFS n=40, one stage-IV case excluded; KP versus KL+KC P=.029; adjusted for adjuvant treatment/nodal status P=.03; merged-cohort OS P=.3 | pp9–10; Fig6 | RFS association does not establish OS benefit; no ICI-treated efficacy cohort here |
 | HSP90 screen | Initial 19 lines (9 vs10); expanded 22 (10 vs12); 72-h viability | pp10–12; Fig7 | Cell lines are experimental units, not patients |
 | Drug-specific findings | Ganetespib P=.0044; 17-AAG P=.0237; AUY922 P=.0523 | Fig7B | AUY922 difference did not meet .05; do not claim all three were significant |
@@ -67,6 +70,9 @@ Reusable section entries below are synthetic abstractions, not source quotations
 
 ## PMID 29773717 — 2018
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-29773717.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 **STK11/LKB1 Mutations and PD-1 Inhibitor Resistance in KRAS-Mutant Lung Adenocarcinoma.** Cancer Discovery 8(7):822–835. DOI: 10.1158/2159-8290.CD-18-0099. [Identity](https://pubmed.ncbi.nlm.nih.gov/29773717/).
 
 Source: nihms967902.pdf, 26 physical pages, author manuscript. Publication year is 2018, not 2019 PMC availability. SHA-256: 0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f.
@@ -86,7 +92,7 @@ Clinical association is supported across several analysis contexts, with model p
 | Discussion; closing synthesis | 6–8; 8 | Clinical/mechanistic integration, limitations; no separate Conclusion heading |
 | Methods | 8–11 | Patient selection, mutation/assay definitions, endpoints, censoring and models |
 | Figures 1–3 | 20–22 | Response denominators, survival curves and LKB1 composite; all panels/captions inspected |
-| Figures 4–6 | 23–25 | PD-L1/TMB, PD-L1-positive cohort, knockout model response and immune cells; all panels/captions inspected |
+| Figures 4–6 | 23–25 | PD-L1/TMB, PD-L1-positive cohort and knockout model growth; immune-cell results are reported from external Supplement S15; all panels/captions inspected |
 | Table 1 | 26 | Cohort characteristics and assay/evaluable populations inspected |
 
 ### Numerical and negative-result checks
@@ -306,4 +312,3 @@ Source: p8 closing Discussion. Use constraint: 原文无独立Conclusion；不�
 | CD-STK11-062 | collocation | identify a candidate contributor to [resistance]; support further evaluation in [defined setting] |
 | CD-STK11-063 | sentence_frame | These results identify [factor] as a candidate contributor to [phenotype] and support validation under clearly specified treatment and genomic contexts. |
 | CD-STK11-064 | paragraph_architecture | Principal association → bounded model support → unresolved clinical prediction and prospective testing. |
-

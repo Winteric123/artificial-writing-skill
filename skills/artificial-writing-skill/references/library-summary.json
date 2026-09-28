@@ -5,13 +5,13 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 279,
-  "included": 261,
+  "registered": 307,
+  "included": 289,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 261,
+  "main_text_complete": 289,
   "eligible_incomplete": 0,
-  "source_recheck_passed": 0,
+  "source_recheck_passed": 13,
   "stk11_highlights": 13,
   "years": {
     "2015": {
@@ -36,44 +36,44 @@
       "excluded": 0
     },
     "2021": {
-      "registered": 19,
-      "included": 19,
-      "complete": 19,
+      "registered": 22,
+      "included": 22,
+      "complete": 22,
       "incomplete": 0,
       "excluded": 0
     },
     "2022": {
-      "registered": 47,
-      "included": 40,
-      "complete": 40,
+      "registered": 50,
+      "included": 43,
+      "complete": 43,
       "incomplete": 0,
       "excluded": 7
     },
     "2023": {
-      "registered": 44,
-      "included": 39,
-      "complete": 39,
+      "registered": 50,
+      "included": 45,
+      "complete": 45,
       "incomplete": 0,
       "excluded": 5
     },
     "2024": {
-      "registered": 37,
-      "included": 33,
-      "complete": 33,
+      "registered": 46,
+      "included": 42,
+      "complete": 42,
       "incomplete": 0,
       "excluded": 4
     },
     "2025": {
-      "registered": 51,
-      "included": 49,
-      "complete": 49,
+      "registered": 54,
+      "included": 52,
+      "complete": 52,
       "incomplete": 0,
       "excluded": 2
     },
     "2026": {
-      "registered": 78,
-      "included": 78,
-      "complete": 78,
+      "registered": 82,
+      "included": 82,
+      "complete": 82,
       "incomplete": 0,
       "excluded": 0
     }
@@ -104,16 +104,16 @@
         "excluded": 0
       },
       "2021": {
-        "registered": 19,
-        "included": 19,
-        "complete": 19,
+        "registered": 22,
+        "included": 22,
+        "complete": 22,
         "incomplete": 0,
         "excluded": 0
       },
       "2022": {
-        "registered": 47,
-        "included": 40,
-        "complete": 40,
+        "registered": 50,
+        "included": 43,
+        "complete": 43,
         "incomplete": 0,
         "excluded": 7
       },
@@ -125,9 +125,9 @@
         "excluded": 5
       },
       "2024": {
-        "registered": 36,
-        "included": 32,
-        "complete": 32,
+        "registered": 39,
+        "included": 35,
+        "complete": 35,
         "incomplete": 0,
         "excluded": 4
       },
@@ -147,17 +147,31 @@
       }
     },
     "Journal of Thoracic Oncology": {
+      "2023": {
+        "registered": 6,
+        "included": 6,
+        "complete": 6,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2024": {
+        "registered": 6,
+        "included": 6,
+        "complete": 6,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2025": {
-        "registered": 1,
-        "included": 1,
-        "complete": 1,
+        "registered": 4,
+        "included": 4,
+        "complete": 4,
         "incomplete": 0,
         "excluded": 0
       },
       "2026": {
-        "registered": 3,
-        "included": 3,
-        "complete": 3,
+        "registered": 7,
+        "included": 7,
+        "complete": 7,
         "incomplete": 0,
         "excluded": 0
       }
@@ -171,5 +185,20 @@
         "excluded": 0
       }
     }
+  },
+  "co_alteration_topics": {
+    "scope": "included formal articles only; current registry; not all journal publications",
+    "included": 289,
+    "co_mutation": {
+      "analyzed": 82,
+      "not_identified": 186,
+      "context_only": 21
+    },
+    "co_alteration": {
+      "analyzed": 104,
+      "not_identified": 161,
+      "context_only": 24
+    },
+    "coverage_complete": true
   }
 }

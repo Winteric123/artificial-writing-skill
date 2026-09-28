@@ -30,7 +30,8 @@ def literal_pattern(expression):
     needle = normalized_text(expression)
     if not needle or '[' in needle or ']' in needle:
         return None
-    return re.compile(r'(?<!\w)' + re.escape(needle) + r'(?!\w)')
+    tokens = re.split(r'[ -]+', needle)
+    return re.compile(r'(?<!\w)' + r'[\s-]+'.join(re.escape(token) for token in tokens) + r'(?!\w)')
 
 
 def page_hints(text):

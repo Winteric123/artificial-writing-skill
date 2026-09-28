@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记279篇；当前纳入261篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读261篇，合格但尚未完成精读0篇。来源复核验收通过0篇；STK11 highlight 13篇。
+正式期刊登记307篇；当前纳入289篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读289篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -17,20 +17,20 @@
 | 2015 | 1 | 1 | 1 | 0 | 0 |
 | 2018 | 1 | 1 | 1 | 0 | 0 |
 | 2020 | 1 | 1 | 1 | 0 | 0 |
-| 2021 | 19 | 19 | 19 | 0 | 0 |
-| 2022 | 47 | 40 | 40 | 0 | 7 |
-| 2023 | 44 | 39 | 39 | 0 | 5 |
-| 2024 | 37 | 33 | 33 | 0 | 4 |
-| 2025 | 51 | 49 | 49 | 0 | 2 |
-| 2026 | 78 | 78 | 78 | 0 | 0 |
+| 2021 | 22 | 22 | 22 | 0 | 0 |
+| 2022 | 50 | 43 | 43 | 0 | 7 |
+| 2023 | 50 | 45 | 45 | 0 | 5 |
+| 2024 | 46 | 42 | 42 | 0 | 4 |
+| 2025 | 54 | 52 | 52 | 0 | 2 |
+| 2026 | 82 | 82 | 82 | 0 | 0 |
 
 ## 期刊汇总（全部登记年份）
 
 | 期刊 | 登记 | 纳入 | 已精读 |
 |---|---:|---:|---:|
 | Cancer Discovery | 2 | 2 | 2 |
-| Clinical Cancer Research | 272 | 254 | 254 |
-| Journal of Thoracic Oncology | 4 | 4 | 4 |
+| Clinical Cancer Research | 281 | 263 | 263 |
+| Journal of Thoracic Oncology | 23 | 23 | 23 |
 | Nature | 1 | 1 | 1 |
 
 ## 期刊与年份交叉汇总（不限定专题）
@@ -40,14 +40,16 @@
 | Cancer Discovery | 2015 | 1 | 1 | 1 | 0 | 0 |
 | Cancer Discovery | 2018 | 1 | 1 | 1 | 0 | 0 |
 | Clinical Cancer Research | 2020 | 1 | 1 | 1 | 0 | 0 |
-| Clinical Cancer Research | 2021 | 19 | 19 | 19 | 0 | 0 |
-| Clinical Cancer Research | 2022 | 47 | 40 | 40 | 0 | 7 |
+| Clinical Cancer Research | 2021 | 22 | 22 | 22 | 0 | 0 |
+| Clinical Cancer Research | 2022 | 50 | 43 | 43 | 0 | 7 |
 | Clinical Cancer Research | 2023 | 44 | 39 | 39 | 0 | 5 |
-| Clinical Cancer Research | 2024 | 36 | 32 | 32 | 0 | 4 |
+| Clinical Cancer Research | 2024 | 39 | 35 | 35 | 0 | 4 |
 | Clinical Cancer Research | 2025 | 50 | 48 | 48 | 0 | 2 |
 | Clinical Cancer Research | 2026 | 75 | 75 | 75 | 0 | 0 |
-| Journal of Thoracic Oncology | 2025 | 1 | 1 | 1 | 0 | 0 |
-| Journal of Thoracic Oncology | 2026 | 3 | 3 | 3 | 0 | 0 |
+| Journal of Thoracic Oncology | 2023 | 6 | 6 | 6 | 0 | 0 |
+| Journal of Thoracic Oncology | 2024 | 6 | 6 | 6 | 0 | 0 |
+| Journal of Thoracic Oncology | 2025 | 4 | 4 | 4 | 0 | 0 |
+| Journal of Thoracic Oncology | 2026 | 7 | 7 | 7 | 0 | 0 |
 | Nature | 2024 | 1 | 1 | 1 | 0 | 0 |
 
 ## 全部纳入名单
@@ -76,13 +78,15 @@
 |---|---|---|---|---|---|
 | 32709715 | The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer | 10.1158/1078-0432.ccr-20-1825 | Translational Cancer Mechanisms and Therapy | 已完成 | yes |
 
-#### 2021（19篇）
+#### 2021（22篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 34140403 | A Phase I Study of APX005M and Cabiralizumab with or without Nivolumab in Patients with Melanoma, Kidney Cancer, or Non-Small Cell Lung Cancer Resistant to Anti-PD-1/PD-L1 | 10.1158/1078-0432.ccr-21-0903 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 33947695 | Comprehensive Molecular and Clinicopathologic Analysis of 200 Pulmonary Invasive Mucinous Adenocarcinomas Identifies Distinct Characteristics of Molecular Subtypes | 10.1158/1078-0432.CCR-21-0423 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33323402 | Cross-Site Concordance Evaluation of Tumor DNA and RNA Sequencing Platforms for the CIMAC-CIDC Network | 10.1158/1078-0432.ccr-20-3251 | Precision Medicine and Imaging | 已完成 | no |
+| 33020056 | Genome and Transcriptome Biomarkers of Response to Immune Checkpoint Inhibitors in Advanced Solid Tumors | 10.1158/1078-0432.CCR-20-1163 | Precision Medicine and Imaging | 已完成 | no |
+| 34446541 | Genomic Landscape and Tumor Mutational Burden Determination of Circulating Tumor DNA in Over 5,000 Chinese Patients with Lung Cancer | 10.1158/1078-0432.CCR-21-1537 | Precision Medicine and Imaging | 已完成 | no |
 | 34244291 | Immunotherapy-Mediated Thyroid Dysfunction: Genetic Risk and Impact on Outcomes with PD-1 Blockade in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-0921 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33622705 | Implication of Cancer-Associated Fibroblast Subtypes on Cancer Pathogenesis, Prognosis, and Immunotherapy Resistance | 10.1158/1078-0432.CCR-20-4226 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34261696 | Integrative Profiling of T790M-Negative EGFR-Mutated NSCLC Reveals Pervasive Lineage Transition and Therapeutic Opportunities | 10.1158/1078-0432.ccr-20-4607 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
@@ -93,6 +97,7 @@
 | 34376534 | Pretreatment Tissue TCR Repertoire Evenness Is Associated with Complete Pathologic Response in Patients with NSCLC Receiving Neoadjuvant Chemoimmunotherapy | 10.1158/1078-0432.ccr-21-1200 | Precision Medicine and Imaging | 已完成 | no |
 | 34301751 | RELAY Subgroup Analyses by EGFR Ex19del and Ex21L858R Mutations for Ramucirumab Plus Erlotinib in Metastatic Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-0273 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 33685865 | Response to Standard Therapies and Comprehensive Genomic Analysis for Patients with Lung Adenocarcinoma with EGFR Exon 20 Insertions | 10.1158/1078-0432.CCR-20-4650 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 34016641 | Sex-Based Dimorphism of Anticancer Immune Response and Molecular Mechanisms of Immune Evasion | 10.1158/1078-0432.CCR-21-0136 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34518312 | Spatial Mapping and Immunomodulatory Role of the OX40/OX40L Pathway in Human Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-0987 | Precision Medicine and Imaging | 已完成 | no |
 | 33685866 | Spectrum of Mechanisms of Resistance to Crizotinib and Lorlatinib in ROS1 Fusion-Positive Lung Cancer | 10.1158/1078-0432.CCR-21-0032 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33323404 | STK11/LKB1 Mutations in NSCLC Are Associated with KEAP1/NRF2-Dependent Radiotherapy Resistance Targetable by Glutaminase Inhibition | 10.1158/1078-0432.CCR-20-2859 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
@@ -100,7 +105,7 @@
 | 33558425 | Treatment Outcomes and Clinical Characteristics of Patients with KRAS-G12C Mutant Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-20-4023 | Precision Medicine and Imaging | 已完成 | no |
 | 34407972 | Upregulation of C/EBPα Inhibits Suppressive Activity of Myeloid Cells and Potentiates Antitumor Response in Mice and Patients with Cancer | 10.1158/1078-0432.ccr-21-0986 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 
-#### 2022（40篇）
+#### 2022（43篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
@@ -114,6 +119,7 @@
 | 35404402 | Activity of Adagrasib (MRTX849) in Brain Metastases: Preclinical Models and Clinical Data from Patients with KRASG12C-Mutant Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-22-0383 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34740922 | Adding Base-Excision Repair Inhibitor TRC102 to Standard Pemetrexed-Platinum-Radiation in Patients with Advanced Nonsquamous Non-Small Cell Lung Cancer: Results of a Phase I Trial | 10.1158/1078-0432.ccr-21-2025 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 34686497 | Association of PD-1/PD-L1 Co-location with Immunotherapy Outcomes in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-2649 | Precision Medicine and Imaging | 已完成 | no |
+| 35140122 | Bias Reduction through Analysis of Competing Events (BRACE) Correction to Address Cancer Treatment Selection Bias in Observational Data | 10.1158/1078-0432.CCR-21-2468 | Precision Medicine and Imaging | 已完成 | no |
 | 35275991 | Circulating Cell-free DNA as a Prognostic Biomarker in Patients with Advanced ALK+ Non-small Cell Lung Cancer in the Global Phase III ALEX Trial | 10.1158/1078-0432.ccr-21-2840 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 35713632 | Circulating Tumor DNA Kinetics Predict Progression-Free and Overall Survival in EGFR TKI-Treated Patients with EGFR-Mutant NSCLC (SWOG S1403) | 10.1158/1078-0432.ccr-22-0741 | Precision Medicine and Imaging | 已完成 | no |
 | 35838647 | Clinical, Pathologic, and Molecular Prognostic Factors in Patients with Early-Stage EGFR-Mutant NSCLC | 10.1158/1078-0432.CCR-22-0879 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
@@ -126,7 +132,9 @@
 | 35511938 | First-in-Human Phase I/II ICONIC Trial of the ICOS Agonist Vopratelimab Alone and with Nivolumab: ICOS-High CD4 T-Cell Populations and Predictors of Response | 10.1158/1078-0432.ccr-21-4256 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 35012927 | Health-Related Quality of Life Outcomes in Patients with Resected Epidermal Growth Factor Receptor-Mutated Non-Small Cell Lung Cancer Who Received Adjuvant Osimertinib in the Phase III ADAURA Trial | 10.1158/1078-0432.ccr-21-3530 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 35363308 | Identification and Management of Pathogenic Variants in BRCA1, BRCA2, and PALB2 in a Tumor-Only Genomic Testing Program | 10.1158/1078-0432.ccr-21-2861 | Precision Medicine and Imaging | 已完成 | no |
+| 34667030 | Inactivation of AMPK Leads to Attenuation of Antigen Presentation and Immune Evasion in Lung Adenocarcinoma | 10.1158/1078-0432.CCR-21-2049 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 35920742 | Inhibition of LSD1 with Bomedemstat Sensitizes Small Cell Lung Cancer to Immune Checkpoint Blockade and T-Cell Killing | 10.1158/1078-0432.ccr-22-1128 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 34759042 | Longitudinal Copy-Number Alteration Analysis in Plasma Cell-Free DNA of Neuroendocrine Neoplasms is a Novel Specific Biomarker for Diagnosis, Prognosis, and Follow-up | 10.1158/1078-0432.CCR-21-2291 | Precision Medicine and Imaging | 已完成 | no |
 | 36166003 | Mass Cytometry Reveals Classical Monocytes, NK Cells, and ICOS+ CD4+ T Cells Associated with Pembrolizumab Efficacy in Patients with Lung Cancer | 10.1158/1078-0432.ccr-22-1386 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 35972732 | Monitoring Therapeutic Response to Anti-FAP CAR T Cells Using [18F]AlF-FAPI-74 | 10.1158/1078-0432.ccr-22-1379 | Precision Medicine and Imaging | 已完成 | no |
 | 35762926 | Nivolumab Retreatment in Non-Small Cell Lung Cancer Patients Who Responded to Prior Immune Checkpoint Inhibitors and Had ICI-Free Intervals (WJOG9616L) | 10.1158/1078-0432.ccr-22-0602 | Research Briefs: Clinical Trial Brief Reports | 已完成 | no |
@@ -189,7 +197,7 @@
 | 37125965 | Type 2 Diabetes Mellitus and Efficacy Outcomes from Immune Checkpoint Blockade in Patients with Cancer | 10.1158/1078-0432.ccr-22-3116 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 37756581 | Upregulation of Indoleamine 2,3-Dioxygenase 1 in Tumor Cells and Tertiary Lymphoid Structures is a Hallmark of Inflamed Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-23-1928 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 
-#### 2024（32篇）
+#### 2024（35篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
@@ -204,14 +212,17 @@
 | 38277241 | Development of a [89Zr]Zr-labeled Human Antibody using a Novel Phage-displayed Human scFv Library | 10.1158/1078-0432.ccr-23-3647 | Precision Medicine and Imaging | 已完成 | no |
 | 39400264 | DICER1-Related Tumor Predisposition: Identification of At-risk Individuals and Recommended Surveillance Strategies | 10.1158/1078-0432.ccr-24-1532 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38630790 | Diffuse Pleural Mesotheliomas with Genomic Near-Haploidization: A Newly Recognized Subset with Distinct Clinical, Histologic, and Molecular Features | 10.1158/1078-0432.ccr-24-0085 | Precision Medicine and Imaging | 已完成 | no |
+| 38330145 | Discovery of a Novel Potent EGFR Inhibitor Against EGFR Activating Mutations and On-Target Resistance in NSCLC | 10.1158/1078-0432.CCR-23-2951 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 37801329 | Durvalumab ± Tremelimumab + Platinum-Etoposide in Extensive-Stage Small Cell Lung Cancer (CASPIAN): Outcomes by PD-L1 Expression and Tissue Tumor Mutational Burden | 10.1158/1078-0432.ccr-23-1689 | Precision Medicine and Imaging | 已完成 | no |
 | 37939140 | Elucidating the Heterogeneity of Immunotherapy Response and Immune-Related Toxicities by Longitudinal ctDNA and Immune Cell Compartment Tracking in Lung Cancer | 10.1158/1078-0432.ccr-23-1469 | Precision Medicine and Imaging | 已完成 | no |
 | 38875108 | FDA Approval Summary: Repotrectinib for Locally Advanced or Metastatic ROS1-Positive Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-24-0949 | CCR Drug Updates | 已完成 | no |
+| 38261467 | Germline USP36 Mutation Confers Resistance to EGFR-TKIs by Upregulating MLLT3 Expression in Patients with Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-23-2357 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38526394 | Measurement of ctDNA Tumor Fraction Identifies Informative Negative Liquid Biopsy Results and Informs Value of Tissue Confirmation | 10.1158/1078-0432.ccr-23-3321 | Precision Medicine and Imaging | 已完成 | no |
 | 38180245 | Molecular and Pathologic Characterization of YAP1-Expressing Small Cell Lung Cancer Cell Lines Leads to Reclassification as SMARCA4-Deficient Malignancies | 10.1158/1078-0432.ccr-23-2360 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38277235 | Multi-omics Analysis Reveals Immune Features Associated with Immunotherapy Benefit in Patients with Squamous Cell Lung Cancer from Phase III Lung-MAP S1400I Trial | 10.1158/1078-0432.ccr-23-0251 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 39017667 | Novel Combinations of Immunotherapies or DNA Damage Repair Inhibitors in Platinum-Refractory Extensive-Stage Small Cell Lung Cancer: The Phase II BALTIC Study | 10.1158/1078-0432.ccr-24-0013 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 38127300 | Objective Analysis and Clinical Significance of the Spatial Tumor-Infiltrating Lymphocyte Patterns in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-23-2457 | Precision Medicine and Imaging | 已完成 | no |
+| 38630555 | Overcoming Osimertinib Resistance with AKT Inhibition in EGFRm-Driven Non-Small Cell Lung Cancer with PIK3CA/PTEN Alterations | 10.1158/1078-0432.CCR-23-2540 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 39078310 | Pharmacologic Inhibition of EIF4A Blocks NRF2 Synthesis to Prevent Osteosarcoma Metastasis | 10.1158/1078-0432.ccr-24-1317 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38456660 | Phase I/II Study of Combined BCL-xL and MEK Inhibition with Navitoclax and Trametinib in KRAS or NRAS Mutant Advanced Solid Tumors | 10.1158/1078-0432.ccr-23-3135 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 38165684 | Phase II Study of Durvalumab Immediately after Completion of Chemoradiotherapy in Unresectable Stage III Non-small Cell Lung Cancer: TORG1937 (DATE Study) | 10.1158/1078-0432.ccr-23-2568 | Research Briefs: Clinical Trial Brief Reports | 已完成 | no |
@@ -361,19 +372,48 @@
 
 ### Journal of Thoracic Oncology
 
-#### 2025（1篇）
+#### 2023（6篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
+| 37543207 | Clinicogenomic Features and Targetable Mutations in NSCLCs Harboring BRAF Non-V600E Mutations: A Multi-Institutional Genomic Screening Study (LC-SCRUM-Asia). | 10.1016/j.jtho.2023.07.024 | BRAF functional classes and outcomes | 已完成 | no |
+| 36775193 | Clinicopathologic and Genomic Factors Impacting Efficacy of First-Line Chemoimmunotherapy in Advanced NSCLC. | 10.1016/j.jtho.2023.01.091 | clinical genomics and immunotherapy outcomes | 已完成 | no |
+| 37182602 | Combination Therapy With MDM2 and MEK Inhibitors Is Effective in Patient-Derived Models of Lung Adenocarcinoma With Concurrent Oncogenic Drivers and MDM2 Amplification. | 10.1016/j.jtho.2023.05.007 | MDM2 amplification and combination vulnerability | 已完成 | no |
+| 36958689 | Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC. | 10.1016/j.jtho.2023.03.014 | STK11-linked metabolic mechanism | 已完成 | no |
+| 36494075 | Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers. | 10.1016/j.jtho.2022.11.022 | clinical genomics and resistance | 已完成 | no |
+| 36240971 | Targeting NFE2L2/KEAP1 Mutations in Advanced NSCLC With the TORC1/2 Inhibitor TAK-228. | 10.1016/j.jtho.2022.09.225 | genotype-directed clinical trial | 已完成 | no |
+
+#### 2024（6篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 37806385 | Co-Occurring Alterations in Multiple Tumor Suppressor Genes Are Associated With Worse Outcomes in Patients With EGFR-Mutant Lung Cancer. | 10.1016/j.jtho.2023.10.001 | TP53 plus tumor-suppressor co-alterations | 已完成 | no |
+| 37572870 | Impact of Concurrent Genomic Alterations on Clinical Outcomes in Patients With ALK-Rearranged NSCLC. | 10.1016/j.jtho.2023.08.007 | CDKN2A/B co-deletion and ALK treatment outcomes | 已完成 | no |
+| 39111731 | Lung-MAP Next-Generation Sequencing Analysis of Advanced Squamous Cell Lung Cancers (SWOG S1400). | 10.1016/j.jtho.2024.07.024 | squamous lung cancer genomic landscape | 已完成 | no |
+| 37838086 | Microsatellite Instability and Mismatch Repair Deficiency Define a Distinct Subset of Lung Cancers Characterized by Smoking Exposure, High Tumor Mutational Burden, and Recurrent Somatic MLH1 Inactivation. | 10.1016/j.jtho.2023.10.004 | MSI/MMR and immune outcomes | 已完成 | no |
+| 38096950 | Outcome of First-Line Treatment With Pembrolizumab According to KRAS/TP53 Mutational Status for Nonsquamous Programmed Death-Ligand 1-High (≥50%) NSCLC in the German National Network Genomic Medicine Lung Cancer. | 10.1016/j.jtho.2023.12.015 | KRAS/TP53 and immunotherapy outcomes | 已完成 | no |
+| 38154514 | Prevalence and Therapeutic Targeting of High-Level ERBB2 Amplification in NSCLC. | 10.1016/j.jtho.2023.12.019 | ERBB2 amplification and ADC vulnerability | 已完成 | no |
+
+#### 2025（4篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 39694414 | Decoding the Clinical and Molecular Signatures of EGFR Common, Compound, and Uncommon Mutations in NSCLC: A Brief Report. | 10.1016/j.jtho.2024.12.012 | EGFR variant-class molecular signatures | 已完成 | no |
 | 39864548 | Gene Copy Deletion of STK11, KEAP1, and SMARCA4: Clinicopathologic Features and Association With the Outcomes of Immunotherapy With or Without Chemotherapy in Nonsquamous NSCLC | 10.1016/j.jtho.2025.01.016 | copy-number genomic and treatment-outcome analysis | 已完成 | yes |
+| 40320171 | Overall Survival in EGFR-Mutant Advanced NSCLC Treated With First-Line Osimertinib: A Cohort Study Integrating Clinical and Biomarker Data in the United States. | 10.1016/j.jtho.2025.04.010 | EGFR real-world survival and TP53 co-mutation | 已完成 | no |
+| 40518016 | Targeting WEE1 to Overcome ARID1A Mutation-Driven Osimertinib Resistance in EGFR-Mutant Lung Cancer. | 10.1016/j.jtho.2025.06.007 | ARID1A and WEE1 therapeutic vulnerability | 已完成 | no |
 
-#### 2026（3篇）
+#### 2026（7篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
+| 41260457 | Clinical Significance of MTAP Deletions and Their Overlap With Concurrent Oncogenic Driver Alterations Including EGFR in NSCLC. | 10.1016/j.jtho.2025.11.010 | MTAP co-deletion and targeted-therapy outcomes | 已完成 | no |
 | 41932614 | ERBB2-Activating Mutations and Co-Occurring Genomic Alterations Contribute to Disease Heterogeneity in Patients With ERBB2-Mutant Lung Cancer | 10.1016/j.jtho.2026.103708 | genomic and clinicogenomic landscape | 已完成 | yes |
 | 42409117 | Genomic Landscape and Clinical Impact of MTAP Loss in Driver-Positive NSCLC: Insights From a Large-Scale Real-World Chinese Cohort | 10.1016/j.jtho.2026.104077 | genomic landscape and targeted-therapy outcome analysis | 已完成 | yes |
 | 41619904 | Impact of KRAS Mutations and Co-Alterations on Outcomes in Stage III Nonsquamous NSCLC Treated With Chemoradiation and Immunotherapy | 10.1016/j.jtho.2026.103565 | clinical outcome and co-alteration analysis | 已完成 | yes |
+| 42749051 | Integrated multi-omic profiling enables recurrence risk stratification beyond pathological stage in resected EGFR-mutant lung adenocarcinoma. | 10.1016/j.jtho.2026.104204 | integrated genomics/transcriptomics and recurrence risk | 已完成 | no |
+| 41903702 | Molecular Profiling Across 80,000 Patients With Lung Cancer. | 10.1016/j.jtho.2026.103695 | lung cancer genomic landscape | 已完成 | no |
+| 41161592 | Neoadjuvant Immunochemotherapy in Resectable NSCLC With SMARCA4 Alterations. | 10.1016/j.jtho.2025.10.013 | SMARCA4 neoadjuvant immunochemotherapy outcomes | 已完成 | no |
 
 ### Nature
 
@@ -411,3 +451,7 @@
 这些版本不计入正式期刊纳入/阅读数量；不能替代对应正式论文。
 
 - 2025 | medRxiv v1 (2025-01-28) | Leveraging Longitudinal Patient-Reported Outcomes Trajectories to Predict Survival in Non-Small-Cell Lung Cancer | DOI 10.1101/2025.01.27.25321050 | 本版本：main_text_deep_read_complete；对应正式版 PMID40272273：not_indexed。两者阅读状态独立。
+
+## 共突变/共改变标签
+
+全部逐篇专题状态、基因上下文和用途见[共改变目录](coalteration-index.md)。这是独立文章级标签，不取代官方栏目、阅读状态或STK11重点标记。

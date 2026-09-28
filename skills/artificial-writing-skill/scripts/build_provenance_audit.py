@@ -30,19 +30,25 @@ def build(skill):
             pending_scope.append(dict(pmid=pmid, year=article['year'], title=article['title'], missing_facets=';'.join(missing),
                                       source_reference=scope['source_reference'], state='not-curated-not-absent'))
     pending_language = []
+    context_checked_without_literal_match = 0
     for entry in entries:
         locator = entry['source_locator']
         if locator['state'] not in {'no-literal-match-needs-context-review', 'not-yet-located'}:
+            continue
+        if entry.get('source_context_rechecks'):
+            context_checked_without_literal_match += 1
             continue
         pending_language.append(dict(stable_id=entry['stable_id'], expression=entry['expression'],
                                      source_article_ids=entry['source_article_ids'], source_asset=entry['source_asset'],
                                      source_line=entry['source_line'], state=locator['state']))
     summary = {key: manifest[key] for key in ['index_version', 'entry_count', 'source_scope_status', 'source_facet_coverage',
-                                            'pdf_locator_states', 'source_pdf_count', 'entries_with_recorded_page_hints']}
+                                            'pdf_locator_states', 'source_pdf_count', 'entries_with_recorded_page_hints',
+                                            'context_rechecked_entries']}
     summary.update(scope='Current language-source articles only; all registered journals and indexed years; no new reading or acceptance.',
                    source_articles=len(articles), articles_with_unknown_facets=len(pending_scope),
                    entries_needing_literal_context_review=len(pending_language),
-                   boundary='Synthetic frames are excluded from the missing-literal queue; unknown tissue is not absent tissue.')
+                   context_checked_without_literal_match=context_checked_without_literal_match,
+                   boundary='Synthetic frames and entries with recorded context rechecks are excluded from the pending-context queue; context review is not literal matching or quotation verification; unknown tissue is not absent tissue.')
     references = skill / 'references'
     write_queue(references / 'source-scope-pending.csv', pending_scope,
                 ['pmid', 'year', 'title', 'missing_facets', 'source_reference', 'state'])

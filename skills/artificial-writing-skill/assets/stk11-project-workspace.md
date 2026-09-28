@@ -17,7 +17,16 @@ Copy this template into the user's project, outside installed/shared skill roots
 
 Record design, sites, cohort periods, inclusion/exclusion, actual STK11 variant definitions, pathogenicity rules, copy-number thresholds, allelic state, RNA/protein assays, ethics and registration only when supplied. Preserve specimen versus patient and germline versus somatic distinctions. Never fill these from a highlighted reference.
 
-## Cohorts and endpoints
+## Question and method contract
+
+Select applicable modules from the installed skill's `references/stk11-analysis-framework.md` and `references/stk11-study-logic-map.md`; do not copy source-study methods into this project's completed Methods. Preserve journal/source identity and distinguish core highlights from topic support.
+
+| Question ID | Primary/secondary/exploratory | Descriptive/co-occurrence/outcome/incremental value/treatment interaction/mechanism | Exposure and partner definitions | Analysis unit/timepoint/coverage | Comparison and estimand/scale | Proposed versus actually executed method | Assumptions/missing evidence | Reference PMID + direct/contextual/structural role |
+|---|---|---|---|---|---|---|---|---|
+
+Record gene-specific and jointly covered denominators, union versus double mutation, reference groups, events, missingness and the distinction between sequence mutation, copy loss, protein loss and inferred allelic inactivation. A STK11-only or KRAS-only cohort cannot supply the absent wild-type comparison. For omics, preserve patient-level replication and actual cross-assay pairing. Separate genomic association, gene interaction, treatment interaction and functional cooperation.
+
+## Cohort analysis sets
 
 | Analysis ID | Population and N | Subgroups and reference | Endpoint/time origin | Events or n/N | Follow-up | Missingness/exclusions | Source |
 |---|---|---|---|---|---|---|---|

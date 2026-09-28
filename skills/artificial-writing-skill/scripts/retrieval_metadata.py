@@ -1,7 +1,26 @@
 import re
 import unicodedata
+from functools import lru_cache
 
 
+SECTION_ALIASES = {
+    'title': ['标题', '题名'],
+    'abstract': ['摘要'],
+    'abstract-background': ['摘要背景'],
+    'abstract-methods': ['摘要方法'],
+    'abstract-results': ['摘要结果'],
+    'abstract-conclusion': ['abstract conclusions', '摘要结论'],
+    'introduction': ['引言', '前言'],
+    'methods': ['method', 'materials and methods', 'patients and methods', 'experimental procedures', '方法', '材料与方法', '研究方法'],
+    'results': ['result', '结果', '研究结果'],
+    'discussion': ['discussions', 'disscussion', '讨论'],
+    'conclusion': ['conclusions', '结论'],
+    'translational-relevance': ['转化意义', '临床转化意义'],
+    'figure': ['figure legend', 'figure legends', '图注'],
+}
+
+
+@lru_cache(maxsize=4096)
 def text_key(value):
     value = unicodedata.normalize('NFKC', value).casefold()
     value = value.translate(str.maketrans({'–': '-', '—': '-', '−': '-', '‑': '-', '_': ' '}))
@@ -13,8 +32,13 @@ def phrase_pattern(value):
     return r'(?<![a-z0-9-])' + r'[\s-]+'.join(re.escape(piece) for piece in pieces) + r'(?![a-z0-9])'
 
 
+@lru_cache(maxsize=2048)
+def compiled_phrase(phrase):
+    return re.compile(phrase_pattern(phrase))
+
+
 def contains_phrase(text, phrase):
-    return bool(re.search(phrase_pattern(phrase), text_key(text)))
+    return bool(compiled_phrase(phrase).search(text_key(text)))
 
 
 def canonical(value, groups):
@@ -23,6 +47,10 @@ def canonical(value, groups):
         if key in {text_key(identifier), *(text_key(alias) for alias in aliases)}:
             return identifier
     return key.replace(' ', '-')
+
+
+def normalize_section(value):
+    return canonical(value, SECTION_ALIASES)
 
 
 def exact_tag_match(wanted, values, groups):
@@ -34,7 +62,7 @@ def exact_tag_match(wanted, values, groups):
 
 def detected_terms(text, groups):
     matches = [(identifier, match.start(), match.end()) for identifier, aliases in groups.items()
-               for term in [identifier, *aliases] for match in re.finditer(phrase_pattern(term), text_key(text))]
+               for term in [identifier, *aliases] for match in compiled_phrase(term).finditer(text_key(text))]
     return sorted({identifier for identifier, start, end in matches
                    if not any(other != identifier and left <= start and right >= end and right-left > end-start
                               for other, left, right in matches)})

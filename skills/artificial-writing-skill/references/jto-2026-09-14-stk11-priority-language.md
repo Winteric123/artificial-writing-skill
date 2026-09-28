@@ -10,6 +10,9 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 
 ## PMID 41932614
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-41932614.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 **Article:** ERBB2-Activating Mutations and Co-Occurring Genomic Alterations Contribute to Disease Heterogeneity in Patients With ERBB2-Mutant Lung Cancer. DOI: 10.1016/j.jtho.2026.103708. *J Thorac Oncol.* 2026;21(8):103708. Uploaded source: `resource_2026_04_09_1775716680969.pdf`.
 
 **Article classification:** genomic landscape; clinicogenomic heterogeneity; oncogenic-driver subclassification; co-mutation analysis; real-world treatment-outcome analysis; immunotherapy and targeted-therapy context. STK11 is a co-alteration and genomic-context variable, not the principal exposure.
@@ -212,6 +215,9 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 
 ## PMID 41619904
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-41619904.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 **Article:** Impact of KRAS Mutations and Co-Alterations on Outcomes in Stage III Nonsquamous NSCLC Treated With Chemoradiation and Immunotherapy. DOI: 10.1016/j.jtho.2026.103565. *J Thorac Oncol.* 2026;21(6):103565. Uploaded source: `resource_2026_02_02_1770019745991.pdf`.
 
 **Article classification:** retrospective multicenter clinical analysis; stage III unresectable NSCLC; concurrent chemoradiation; consolidative durvalumab; KRAS genomics; STK11/CDKN2A co-alteration; PFS/OS; competing-risk relapse-pattern analysis; immunotherapy-era outcome stratification.
@@ -410,13 +416,16 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 
 ### Synthetic Results paragraph
 
-`Among [N] patients treated with cCRT followed by durvalumab, KRAS-mutant disease was associated with shorter PFS but not OS. Competing-risk analyses localized the excess failure to distant metastasis, particularly the brain, rather than locoregional recurrence. In the sequenced subset, the adverse PFS pattern was concentrated in KRAS tumors with STK11 and/or CDKN2A co-alterations; KRAS-mutant tumors without these events had PFS comparable to KRAS wild type. Because the analysis was retrospective and lacked a non-durvalumab comparator, the findings are prognostic within the observed treatment pathway rather than proof of durvalumab resistance.`
+`Among [N] patients treated with cCRT followed by durvalumab, KRAS-mutant disease was associated with shorter PFS but not OS. Distant metastasis, particularly brain metastasis, was more frequent, whereas no statistically significant difference in locoregional recurrence was detected. In the sequenced subset, adverse PFS was observed in the combined KRAS plus STK11 and/or CDKN2A group; KRAS-mutant tumors without these events did not show a statistically significant PFS difference from KRAS wild type. Because the analysis was retrospective and lacked a non-durvalumab comparator, the findings are prognostic within the observed treatment pathway rather than proof of durvalumab resistance.`
 
 ### Synthetic Discussion paragraph
 
 `This study supplies a direct clinical framework for positioning STK11 within KRAS-mutant stage III NSCLC. Its Results sequence moves from overall outcome to failure pattern and then to genomic refinement, making the role of the co-alteration transparent. The combined STK11/CDKN2A group, small gene-specific samples, clinically indicated brain imaging, and absence of a treatment comparator limit gene-specific and predictive conclusions. Future work should prespecify STK11 strata, retain separate gene-level estimates, and test treatment interactions prospectively.`
 
 ## PMID 39864548
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-39864548.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 **Article:** Gene Copy Deletion of STK11, KEAP1, and SMARCA4: Clinicopathologic Features and Association With the Outcomes of Immunotherapy With or Without Chemotherapy in Nonsquamous NSCLC. DOI: 10.1016/j.jtho.2025.01.016. *J Thorac Oncol.* 2025;20(6):725-738. Supplied source: `PIIS1556086425000498.pdf`.
 
@@ -426,7 +435,7 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 
 **Evidence map:** title and structured Abstract p1; Abstract conclusion, Introduction, Methods, and Results start p2; Figure 1 and deletion prevalence p3; Table 1, clinicopathologic correlates, TCGA mRNA, and LKB1 analyses p4; Figure 2 and chemoimmunotherapy cohort start p5; Figure 3 p6; Figure 4 and KRAS-stratified results p7; Figure 5, stringent co-mutation exclusion, and aneuploidy analysis start p8; aneuploidy, deletion enrichment, gene-disentangling, 19p locus, and ICI-alone analyses p9; ICI-alone, non-immunotherapy control, immunophenotype, and Discussion start p10; Discussion p11; Discussion, limitations, and Conclusion p12; supplementary-material link, disclosures, and references p13; references p14.
 
-**Numerical and inference checks:** the all-stage DFCI cohort included 3,194 nonsquamous NSCLCs. Deletion frequencies in the full cohort were 14.7% for STK11 (471/3,194; 15 bi-allelic), 13.5% for KEAP1 (374/2,777; one bi-allelic), and 13.7% for SMARCA4 (437/3,194; four bi-allelic). Among 2,777 tumors assessable for all three genes, 73% of the 457 tumors with at least one deletion also had deletions in the other two genes. Primary gene-specific comparisons excluded a concurrent coding mutation in the same gene, leaving 2,616 tumors for STK11, 2,277 for KEAP1, and 2,842 for SMARCA4. TCGA analyses used 507 tumors with paired genomic/transcriptomic data and 359 with paired STK11 genomic/LKB1 protein data. The combined chemoimmunotherapy cohort included 767 patients; gene-specific analysis denominators differed after mutation exclusion. For STK11, ORR was 31% versus 45% (P=0.005), median PFS was 4.7 versus 7.1 months (HR, 1.5; 95% CI, 1.2-1.8; P=0.0001), and median OS was 11.5 versus 20.0 months (HR, 1.7; 95% CI, 1.3-2.1; P<0.0001). The ICI-alone cohort included 1,267 patients, but the combined and MSKCC analyses were null; adverse signals were generally confined to the DFCI KRAS-mutant subgroup. The non-immunotherapy DFCI control cohort included 973 patients and showed no OS association with the three deletions. The separate ImmunoProfile cohort included 456 patients.
+**Numerical and inference checks:** the all-stage DFCI cohort included 3,194 nonsquamous NSCLCs. Deletion frequencies in the full cohort were 14.7% for STK11 (471/3,194; 15 bi-allelic), 13.5% for KEAP1 (374/2,777; one bi-allelic), and 13.7% for SMARCA4 (437/3,194; four bi-allelic). Among 2,777 tumors assessable for all three genes, 73% of the 457 tumors with at least one deletion also had deletions in the other two genes. Primary gene-specific comparisons excluded a concurrent coding mutation in the same gene, leaving 2,616 tumors for STK11 and 2,842 for SMARCA4; KEAP1 is 2,277 in prose but Table 1 sums to 2,275 (2,033+242), an unresolved source discrepancy. TCGA analyses used 507 tumors with paired genomic/transcriptomic data and 359 with paired STK11 genomic/LKB1 protein data. The combined chemoimmunotherapy cohort included 767 patients; gene-specific analysis denominators differed after mutation exclusion. For STK11, ORR was 31% versus 45% (P=0.005), median PFS was 4.7 versus 7.1 months (HR, 1.5; 95% CI, 1.2-1.8; P=0.0001), and median OS was 11.5 versus 20.0 months (HR, 1.7; 95% CI, 1.3-2.1; P<0.0001). The ICI-alone cohort included 1,267 patients, but the combined and MSKCC analyses were null; adverse signals were generally confined to the DFCI KRAS-mutant subgroup. The non-immunotherapy DFCI control cohort included 973 patients and showed no OS association with the three deletions. The separate ImmunoProfile cohort included 456 patients.
 
 **Source cautions:**
 
@@ -601,6 +610,9 @@ This is a source-grounded, four-paper JTO asset, not a corpus-backed JTO journal
 `This study provides a direct framework for expanding an STK11 manuscript beyond sequence mutations. Its principal strength is the ordered evaluation of copy-number prevalence, allelic state, downstream expression, treatment outcomes, and immune phenotype. However, the tight linkage of STK11, KEAP1, and SMARCA4 on chromosome 19p, platform-specific deletion calling, retrospective treatment exposure, and unsupplied supplementary models prevent a causal or validated predictive conclusion. The framework should guide explicit genotype definitions and analysis-set transitions while keeping mono-allelic loss, biallelic inactivation, RNA abundance, and LKB1 protein expression distinct.`
 
 ## PMID 42409117
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-42409117.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 **Article:** Genomic Landscape and Clinical Impact of MTAP Loss in Driver-Positive NSCLC: Insights From a Large-Scale Real-World Chinese Cohort. DOI: 10.1016/j.jtho.2026.104077. *J Thorac Oncol.* 2026; article 104077, corrected proof as supplied. Supplied source: `PIIS1556086426005307.pdf`.
 

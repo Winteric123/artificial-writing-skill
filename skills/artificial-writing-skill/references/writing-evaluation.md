@@ -12,6 +12,8 @@ Use [writing-evaluation-cases.json](writing-evaluation-cases.json) after a meani
 
 Automated tests in `tests/` verify actual retrieval, version, integrity and state invariants. They do not evaluate scientific prose or certify that any paper passed its six acceptance gates. Keep test execution, behavioral evaluation and original-PDF review as three separate reports.
 
+The current case set also covers STK11 four-group comparisons without an interaction test, a cohort lacking STK11-wild-type comparators, union versus double mutation, proposed versus performed methods, main-text completion versus review, and project support versus core highlights. Run the prompts, not merely a search for matching rule text in the skill. Retain actual responses and assess every preservation/prohibition criterion; do not label a rule walkthrough or a list of expected answers as a behavioral run. A same-agent response run followed by self-assessment remains non-independent and does not establish a measured improvement over an earlier model.
+
 ## Highlight recheck
 
 The priority queue is generated from the current highlight register, not a fixed count. Reopen the archived PDF, verify its identity/hash, and select high-risk claims and language examples. Record exact physical pages and inspected figure/table panels. A limited sample can start `in_progress`, but cannot pass the entire six-gate protocol. If all gates are eventually satisfied under a documented bounded review, promote only that article with its actual reviewer/method/date and evidence record. Model upgrades do not change reading status.

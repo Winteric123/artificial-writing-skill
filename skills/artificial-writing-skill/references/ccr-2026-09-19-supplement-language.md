@@ -589,6 +589,9 @@ Discovery and validation included IMpower133 and institutional cohorts, locus-sp
 
 ## PMID 42268349
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-42268349.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 ### Identity and classification
 
 Molecular and Clinical Characteristics of Patients with Non–Small Cell Lung Cancer Harboring KRAS Q61 Mutations to Assess Therapeutic Responses. CCR official category: Translational Mechanisms and Therapy. Retrospective clinicogenomic cohort with treatment-outcome analyses; 24-page accepted main manuscript. User-designated STK11 writing-framework highlight.
@@ -671,6 +674,9 @@ Among 8,862 analyzed samples, 487 KRAS Q61 cases were identified and 365 patient
 - `Interpret Q61H–STK11 enrichment and Q61L mutual exclusivity as genomic-context observations, relate these patterns to treatment associations, and explicitly address retrospective confounding.`
 
 ## PMID 41417462
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-41417462.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 ### Identity and classification
 

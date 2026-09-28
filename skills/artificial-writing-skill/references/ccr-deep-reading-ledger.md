@@ -1,5 +1,7 @@
 # CCR language deep-reading ledger
 
+2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
+
 ## Authoritative definition
 
 This file is the sole authority for recorded main-text completion under the user's language-focused deep-reading standard. It is not proof of a separate acceptance recheck or independent review. Use [deep-reading-acceptance.md](deep-reading-acceptance.md) for the six-gate protocol and [ccr-reading-quality-register.csv](ccr-reading-quality-register.csv) for per-article review status.
@@ -19,11 +21,11 @@ Reading completion and review acceptance are separate axes. A documented source 
 
 ## Status summary
 
-As of 2026-09-26, all registered CCR years2020–2026, without a topic filter:
+As of 2026-09-28, all registered CCR years2020–2026, without a topic filter:
 
-- bibliography records: **272**;
-- eligible corpus sources: **254**;
-- completed language-focused main-text reads: **254**;
+- bibliography records: **281**;
+- eligible corpus sources: **263**;
+- completed language-focused main-text reads: **263**;
 - eligible incomplete: **0**;
 - excluded: **18** (eight legacy commentaries and 10 separately read background sources).
 
@@ -34,6 +36,8 @@ The [2026-09-26 intake](ccr-2026-09-26-intake.md) contains 16 supplied PDFs (264
 The [2023 completion batch](ccr-2023-completion-2026-09-26.md) reads the36 previously pending sources:34 new main-text completions and2 background reclassifications. Indexed2023 eligible coverage is now39/39; at that historical snapshot, all-year CCR remaining52 belonged to2021 and2022. Main figures/tables are covered, including a separately acquired3-page main-figure companion with documented version conflicts. Supplements and acceptance rechecks remain incomplete.
 
 The [ccr-2021-2022-completion-2026-09-26](ccr-2021-2022-completion-2026-09-26.md) currently records49 new main-text completions and3 separately read background sources;0 of the original52 remain unfinished. Only recorded completions enter the language catalog.
+
+The [2026-09-28 intake](ccr-2026-09-28-intake.md) adds nine original-study main-text reads: three each from2021/2022/2024, with main figures/tables and section-indexed language. All nine are new formal records, not new2026 publications. Supplements remain not_supplied, review_status not_reviewed; no STK11 highlight is added. The Conforti publisher companion resolves main-figure visibility only. Archive/hash and cleanup records remain in the private local batch report.
 
 ### Supplied-batch completion scope
 
@@ -312,6 +316,16 @@ Join this ledger to [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) b
 | 38630755 | 2026-09-26 | Translational Cancer Mechanisms and Therapy | ccr-2024-38630755-language.md: ES-SCLC spatial multi-region transcriptomics; subtype heterogeneity; IFN-gamma/antigen presentation; chemoimmunotherapy associations; exploratory limits; main figures/tables included; supplements not supplied; not acceptance-reviewed |
 | 33023953 | 2026-09-26 | Translational Cancer Mechanisms and Therapy | ccr-2021-33023953-language.md: lung adenocarcinoma transcriptional subtypes; STK11/KEAP1 functional context; drug screen; MEK inhibition; cell-line/PDX/clinical boundaries; main figures/tables included; supplements not supplied; not acceptance-reviewed |
 | 39150541 | 2026-09-26 | Translational Cancer Mechanisms and Therapy | ccr-2024-39150541-language.md: EGFR-mutant NSCLC-to-SCLC evolution; spatial transcriptomics; lineage plasticity; PI3K/HDAC inhibition; organoid/xenograft limits; main figures/tables included; supplements not supplied; not acceptance-reviewed |
+
+| 34759042 | 2026-09-28 | Precision Medicine and Imaging | ccr-2022-34759042-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 35140122 | 2026-09-28 | Precision Medicine and Imaging | ccr-2022-35140122-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 38330145 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2024-38330145-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 34016641 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2021-34016641-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 33020056 | 2026-09-28 | Precision Medicine and Imaging | ccr-2021-33020056-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 34446541 | 2026-09-28 | Precision Medicine and Imaging | ccr-2021-34446541-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 38261467 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2024-38261467-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 34667030 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2022-34667030-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 38630555 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2024-38630555-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
 
 ## Pending or incomplete deep reads
 

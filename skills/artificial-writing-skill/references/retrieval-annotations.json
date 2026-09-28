@@ -2,58 +2,2842 @@
   "schema_version": 1,
   "scope": "Source scopes below are curated from existing reading evidence, not a new PDF read or acceptance pass. Unlisted sources retain explicit recorded disease text when safely normalizable; unknown tissue/model facets remain empty. Expression topics never establish patient-level treatment evidence.",
   "articles": {
-    "37265412":{"disease_ids":["mixed-solid-tumors","nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["regulatory-analysis"],"source_reference":"ccr-2023-37265412-evidence.md"},
-    "37022784":{"disease_ids":["nsclc"],"tissue_ids":[],"model_ids":["human-clinical"],"use_roles":["regulatory-analysis"],"source_reference":"ccr-2023-37022784-evidence.md"},
-    "36951523":{"disease_ids":["nsclc"],"tissue_ids":[],"model_ids":["human-clinical"],"use_roles":["regulatory-analysis"],"source_reference":"ccr-2023-36951523-evidence.md"},
-    "36112541":{"disease_ids":["nsclc"],"tissue_ids":[],"model_ids":["human-clinical"],"use_roles":["regulatory-analysis"],"source_reference":"ccr-2023-36112541-evidence.md"},
-    "36794455":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary"],"source_reference":"ccr-2023-36794455-evidence.md"},
-    "36729110":{"disease_ids":["nsclc"],"tissue_ids":["tumor","plasma"],"model_ids":["human-clinical"],"use_roles":["lung-primary"],"source_reference":"ccr-2023-36729110-evidence.md"},
-    "37223888":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37223888-evidence.md"},
-    "36971777":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary"],"source_reference":"ccr-2023-36971777-evidence.md"},
-    "37233986":{"disease_ids":["nsclc"],"tissue_ids":[],"model_ids":["human-clinical","computational"],"use_roles":["lung-primary","computational-methods"],"source_reference":"ccr-2023-37233986-evidence.md"},
-    "37279096":{"disease_ids":["nsclc"],"tissue_ids":["plasma"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37279096-evidence.md"},
-    "37432985":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37432985-evidence.md"},
-    "36378548":{"disease_ids":["mixed-solid-tumors","sclc"],"tissue_ids":[],"model_ids":["human-clinical"],"use_roles":["cross-tumor-methods"],"source_reference":"ccr-2023-36378548-evidence.md"},
-    "36255391":{"disease_ids":["neuroendocrine-neoplasm","pulmonary-carcinoid"],"tissue_ids":["blood"],"model_ids":["human-clinical"],"use_roles":["cross-tumor-methods"],"source_reference":"ccr-2023-36255391-evidence.md"},
-    "37233991":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical","computational"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37233991-evidence.md"},
-    "37249619":{"disease_ids":["nsclc"],"tissue_ids":["tumor","plasma"],"model_ids":["human-clinical","human-cell-line","pdx"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-37249619-evidence.md"},
-    "37702716":{"disease_ids":["lung-squamous"],"tissue_ids":["plasma"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37702716-evidence.md"},
-    "36806911":{"disease_ids":["hnscc"],"tissue_ids":["tumor","plasma"],"model_ids":["human-clinical"],"use_roles":["cross-tumor-methods"],"source_reference":"ccr-2023-36806911-evidence.md"},
-    "36469573":{"disease_ids":["mesothelioma"],"tissue_ids":["tumor","blood","bone-marrow"],"model_ids":["human-clinical","human-tissue"],"use_roles":["cross-tumor-methods"],"source_reference":"ccr-2023-36469573-evidence.md"},
-    "36595566":{"disease_ids":["nsclc"],"tissue_ids":[],"model_ids":["computational"],"use_roles":["computational-methods"],"source_reference":"ccr-2023-36595566-evidence.md"},
-    "37233987":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37233987-evidence.md"},
-    "36996322":{"disease_ids":["nsclc"],"tissue_ids":["tumor","plasma"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-36996322-evidence.md"},
-    "37071497":{"disease_ids":["sclc"],"tissue_ids":["plasma","blood"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-37071497-evidence.md"},
-    "36449664":{"disease_ids":["mixed-solid-tumors","nsclc"],"tissue_ids":["csf","plasma"],"model_ids":["human-clinical"],"use_roles":["cross-tumor-methods","clinical-correlative"],"source_reference":"ccr-2023-36449664-evidence.md"},
-    "36602782":{"disease_ids":["neuroblastoma"],"tissue_ids":["tumor"],"model_ids":["ex-vivo","pdx","gemm"],"use_roles":["cross-tumor-methods","preclinical-mechanism"],"source_reference":"ccr-2023-36602782-evidence.md"},
-    "36537918":{"disease_ids":["mpn"],"tissue_ids":["blood","bone-marrow"],"model_ids":["ex-vivo","mouse"],"use_roles":["cross-tumor-methods","preclinical-mechanism"],"source_reference":"ccr-2023-36537918-evidence.md","boundary":"The index patient's lung cancer is context, not lung-cancer efficacy. Stk/RON is not STK11."},
-    "37382635":{"disease_ids":["sclc"],"tissue_ids":["tumor"],"model_ids":["human-cell-line","pdx"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-37382635-evidence.md"},
-    "36913537":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"ccr-2023-36913537-evidence.md"},
-    "37725585":{"disease_ids":["sclc"],"tissue_ids":["tumor"],"model_ids":["human-cell-line","cdx"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-37725585-evidence.md"},
-    "36595561":{"disease_ids":["nsclc"],"tissue_ids":["tumor","blood"],"model_ids":["human-cell-line","mouse","human-clinical"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-36595561-evidence.md"},
-    "37223924":{"disease_ids":["nepc","sclc"],"tissue_ids":["tumor"],"model_ids":["human-tissue","computational"],"use_roles":["cross-tumor-methods"],"source_reference":"ccr-2023-37223924-evidence.md","boundary":"Primary disease is NEPC; SCLC is a comparison dataset, not an SCLC treatment-response study."},
-    "36165915":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-cell-line","mouse"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-36165915-evidence.md"},
-    "37289191":{"disease_ids":["sclc"],"tissue_ids":["tumor"],"model_ids":["human-cell-line","pdx","cdx"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"ccr-2023-37289191-evidence.md"},
-    "37125965":{"disease_ids":["mixed-solid-tumors","nsclc","melanoma","renal-cell-carcinoma"],"tissue_ids":["tumor","blood"],"model_ids":["human-clinical"],"use_roles":["cross-tumor-methods","clinical-correlative"],"source_reference":"ccr-2023-37125965-evidence.md"},
-    "37756581":{"disease_ids":["nsclc","sarcoma"],"tissue_ids":["tumor","tonsil"],"model_ids":["human-clinical","human-tissue","human-cell-line","ex-vivo"],"use_roles":["lung-primary","clinical-correlative","cross-tumor-methods"],"source_reference":"ccr-2023-37756581-evidence.md","boundary":"NSCLC: bulk RNA and spatial protein. Tonsil: scRNA and Tfh/B experiments. Sarcoma: reused spatial RNA. These are not one NSCLC multi-omics cohort."},
-    "41932614":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","structural-analogue"],"source_reference":"jto-2026-09-14-stk11-priority-language.md"},
-    "41619904":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"jto-2026-09-14-stk11-priority-language.md"},
-    "39864548":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","clinical-correlative"],"source_reference":"jto-2026-09-14-stk11-priority-language.md"},
-    "42409117":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical"],"use_roles":["lung-primary","structural-analogue"],"source_reference":"jto-2026-09-14-stk11-priority-language.md","boundary":"MTAP structural analogue; no STK11 analysis in supplied main text."},
-    "39385035":{"disease_ids":["nsclc"],"tissue_ids":["tumor"],"model_ids":["human-clinical","mouse"],"use_roles":["lung-primary","preclinical-mechanism"],"source_reference":"nature-2026-09-19-stk11-language.md"}
+    "37265412": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "regulatory-analysis"
+      ],
+      "source_reference": "ccr-2023-37265412-evidence.md"
+    },
+    "37022784": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "regulatory-analysis"
+      ],
+      "source_reference": "ccr-2023-37022784-evidence.md"
+    },
+    "36951523": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "regulatory-analysis"
+      ],
+      "source_reference": "ccr-2023-36951523-evidence.md"
+    },
+    "36112541": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "regulatory-analysis"
+      ],
+      "source_reference": "ccr-2023-36112541-evidence.md"
+    },
+    "36794455": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary"
+      ],
+      "source_reference": "ccr-2023-36794455-evidence.md"
+    },
+    "36729110": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary"
+      ],
+      "source_reference": "ccr-2023-36729110-evidence.md"
+    },
+    "37223888": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37223888-evidence.md"
+    },
+    "36971777": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary"
+      ],
+      "source_reference": "ccr-2023-36971777-evidence.md"
+    },
+    "37233986": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2023-37233986-evidence.md"
+    },
+    "37279096": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37279096-evidence.md"
+    },
+    "37432985": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37432985-evidence.md"
+    },
+    "36378548": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "sclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-36378548-evidence.md"
+    },
+    "36255391": {
+      "disease_ids": [
+        "neuroendocrine-neoplasm",
+        "pulmonary-carcinoid"
+      ],
+      "tissue_ids": [
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-36255391-evidence.md"
+    },
+    "37233991": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37233991-evidence.md"
+    },
+    "37249619": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "pdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-37249619-evidence.md"
+    },
+    "37702716": {
+      "disease_ids": [
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37702716-evidence.md"
+    },
+    "36806911": {
+      "disease_ids": [
+        "hnscc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-36806911-evidence.md"
+    },
+    "36469573": {
+      "disease_ids": [
+        "mesothelioma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "bone-marrow"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-36469573-evidence.md"
+    },
+    "36595566": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "computational"
+      ],
+      "use_roles": [
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2023-36595566-evidence.md"
+    },
+    "37233987": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37233987-evidence.md"
+    },
+    "36996322": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-36996322-evidence.md"
+    },
+    "37071497": {
+      "disease_ids": [
+        "sclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37071497-evidence.md"
+    },
+    "36449664": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "csf",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-36449664-evidence.md"
+    },
+    "36602782": {
+      "disease_ids": [
+        "neuroblastoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "ex-vivo",
+        "pdx",
+        "gemm"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-36602782-evidence.md"
+    },
+    "36537918": {
+      "disease_ids": [
+        "mpn"
+      ],
+      "tissue_ids": [
+        "blood",
+        "bone-marrow"
+      ],
+      "model_ids": [
+        "ex-vivo",
+        "mouse"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-36537918-evidence.md",
+      "boundary": "The index patient's lung cancer is context, not lung-cancer efficacy. Stk/RON is not STK11."
+    },
+    "37382635": {
+      "disease_ids": [
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "pdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-37382635-evidence.md"
+    },
+    "36913537": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-36913537-evidence.md"
+    },
+    "37725585": {
+      "disease_ids": [
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-37725585-evidence.md"
+    },
+    "36595561": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-36595561-evidence.md"
+    },
+    "37223924": {
+      "disease_ids": [
+        "nepc",
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-37223924-evidence.md",
+      "boundary": "Primary disease is NEPC; SCLC is a comparison dataset, not an SCLC treatment-response study."
+    },
+    "36165915": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-36165915-evidence.md"
+    },
+    "37289191": {
+      "disease_ids": [
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "pdx",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2023-37289191-evidence.md"
+    },
+    "37125965": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc",
+        "melanoma",
+        "renal-cell-carcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2023-37125965-evidence.md"
+    },
+    "37756581": {
+      "disease_ids": [
+        "nsclc",
+        "sarcoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "tonsil"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "human-cell-line",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "cross-tumor-methods"
+      ],
+      "source_reference": "ccr-2023-37756581-evidence.md",
+      "boundary": "NSCLC: bulk RNA and spatial protein. Tonsil: scRNA and Tfh/B experiments. Sarcoma: reused spatial RNA. These are not one NSCLC multi-omics cohort."
+    },
+    "41932614": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "structural-analogue"
+      ],
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md"
+    },
+    "41619904": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md"
+    },
+    "39864548": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md"
+    },
+    "42409117": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "structural-analogue"
+      ],
+      "source_reference": "jto-2026-09-14-stk11-priority-language.md",
+      "boundary": "MTAP structural analogue; no STK11 analysis in supplied main text."
+    },
+    "39385035": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "mouse"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "nature-2026-09-19-stk11-language.md"
+    },
+    "34759042": {
+      "disease_ids": [
+        "neuroendocrine-neoplasm",
+        "pulmonary-carcinoid",
+        "pancreatic-cancer"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2022-34759042-language.md",
+      "boundary": "43 NEN patients/194 evaluable samples, only three lung cases; detection and CNA classifier are not validated NSCLC tests. Repeated samples, ctDNA-positive classifier selection and time-dependent survival classification limit transfer."
+    },
+    "35140122": {
+      "disease_ids": [
+        "lung-cancer",
+        "prostate-cancer",
+        "head-and-neck-cancer"
+      ],
+      "tissue_ids": [],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2022-35140122-language.md",
+      "boundary": "BRACE relies on treatment/noncancer-mortality assumptions and does not remove all confounding or generate P values. Lung adjusted noncancer-mortality P=.43 is nonsignificant despite abstract wording; subgroup endpoints and reference groups remain separate."
+    },
+    "38330145": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "brain"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "mouse",
+        "rat",
+        "organoid",
+        "cdx",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2024-38330145-language.md",
+      "boundary": "BI-4732 evidence is preclinical; genotype-specific potency and WT cellular versus biochemical inhibition differ. No formal synergy analysis. Source panel/whole-exome, organoid timing and dose/formula inconsistencies require resolution before protocol reuse."
+    },
+    "34016641": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2021-34016641-language.md",
+      "boundary": "Borrowed single-cell signatures do not constitute new single-cell experiments. Entropy/clonality interpretation and borderline HLA/APM statistics require care; no treatment-by-sex interaction. Main AM Figure3 corruption was clarified on publisher PDF physical8; publisher physical5 also inspected."
+    },
+    "33020056": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc",
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "lymph-node",
+        "liver"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2021-33020056-language.md",
+      "boundary": "98 mixed-tumor patients;82 treatment-naive biopsies; immune models65 after lymphoid exclusions. DCB is not response rate and TTP is not PFS. Bulk deconvolution is not single-cell. Different endpoints and negative external validation must be preserved; JAK1/HLA case has temporal/site confounding."
+    },
+    "34446541": {
+      "disease_ids": [
+        "lung-cancer",
+        "nsclc",
+        "sclc",
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "blood",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2021-34446541-language.md",
+      "boundary": "Primary4892patients/5671samples; mutation frequencies use4107SNV-positive samples. Conflicting PFS HR/P values between prose and Figures3/4 remain unresolved. Adjusted bTMB correlations belong to selected low-ctDNA subsets; no ICI outcome validation. STK112.63% is a selected-sample landscape frequency, not a dedicated STK11 analysis."
+    },
+    "38261467": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "cdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2024-38261467-language.md",
+      "boundary": "192/90 is an internal split, not external validation; erlotinib CA carriers7. No patient AA genotype or clinical osimertinib validation. Figure3H m6A direction conflicts with prose; Figure4I P=.097 and Figure2 #P<.1 are nonsignificant. Fractionation shows nucleus, not direct nucleolar localization; m6A-qPCR is not base-resolution mapping."
+    },
+    "34667030": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "gemm",
+        "mouse",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2022-34667030-language.md",
+      "boundary": "Direct STK11/AMPK pathway context, not patient ICI efficacy.39/51mutants are low-pAMPK, not76%of low-pAMPK group mutated. RPPA is targeted protein profiling and deconvolution is not single-cell. Tumor dots nested in mice, overlapping TCGA cohorts, negative genes and proposed mediation retain caveats."
+    },
+    "38630555": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "cdx",
+        "pdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2024-38630555-language.md",
+      "boundary": "13%/16% use selected85/76ctDNA-evaluable progression samples, not whole trial arms. Pre-existing versus acquired events differ. Combination benefit is preclinical and mainly cytostatic; HSA is not Bliss. Model-dependent significance, MET co-alteration, TGI/regression distinctions, LC-F12 provenance and S347/S473 label conflicts remain explicit."
+    },
+    "36240971": {
+      "disease_ids": [
+        "nsclc",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2023-36240971-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "7e72b519a8553658fcd79a1ec730d98140fe047de536ae303d0b98a0013cee6a",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Separate treated 34 from response-assessable 24 and subgroup denominators. Single-arm activity is not comparative benefit; clinical TAK-228 monotherapy and preclinical combination evidence are distinct. CPTAC is background, not generated omics. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "36494075": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2023-36494075-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "e73bce75e0bce8d13dd49a461131334535e9e3fcab9b36426c21cec6a09529d8",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Preserve cohort, paired-resistance, RNA and APOBEC denominators and source caption conflicts. Treatment-conditioned associations do not prove predictive benefit; resistance mechanism detection depends on sampling. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "36775193": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2023-36775193-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "bf807ebc10ee26e9c5615fc2287c5c02f9b8fb1af2d4775678f0865860b6bfd3",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Overall adjusted STK11 association is not significant; KRAS-conditioned subgroup associations are not a validated treatment interaction. Do not present the SMARCA4/KRAS-WT OS estimate whose CI crosses 1 as significant. Preserve TMB platform harmonization and missingness. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "36958689": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "mouse",
+        "mouse-cell-line",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2023-36958689-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "f339bfcd0b44ea5b41bb989d0ff722317711f5a0e6769f9016399f6eb2c75627",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "KRAS/LKB1 models support a preclinical mechanism, not clinical combination efficacy. Distinguish generated bulk RNA/metabolomics from external CPTAC protein data and non-isogenic comparisons. No single-cell or spatial sequencing was performed. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "37182602": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "pdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2023-37182602-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "c3904af5cf55ae95ae3d04c1725e6b6fb57d70b48e163444ea5fbfdd84d5ef4a",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "MDM2 amplification, TP53 state and model response are separate. HSA synergy is model/dose-specific; LUAD12c combination versus milademetan P=.196 is not significant. Phospho-RTK arrays are targeted protein assays, not global proteomics. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "37543207": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2023-37543207-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "cc3f2ab6f5eb92ce22409470e3f64d8aa0925059ebc980392724b6a9349ae9e0",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Separate 380 genomic from 201 outcome patients and the ICI-only subset of 85. Class-specific co-alteration/outcome associations and a K601E case do not establish comparative benefit or a universal BRAF response rule. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "37572870": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-37572870-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "2b99bd5bc9bde42e474cf8a3cc774c23c67ef012c2f492b2b588ed04f37769a5",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Retain source count/percentage and HR/CI inconsistencies in the article note; do not silently repair or reuse disputed numbers. A prospective observational ALK cohort does not establish causal effects of CDKN2A/B loss. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "37806385": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-37806385-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "d77d4de8fb117434af35201d5c32afad35a623c9b4e6b82795560b77ccf8677f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Final five-gene tumor-suppressor set excludes STK11. Preserve TP53 plus TSG versus TP53-alone contrast and separate Yale/GENIE analysis populations; no randomized treatment interaction. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "37838086": {
+      "disease_ids": [
+        "nsclc",
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-37838086-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "4eb4162db0892459962b3dde3c34a1184eb6fa8a84fda9cf449ef9ae0f52b5e6",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "MSI-H/MMR-deficient NSCLC and SCLC denominators differ. Small selected immune-treated subgroups cannot validate an STK11 response classifier. Selected WES/methylation and external expression cohorts are not one paired multiomic cohort. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "38096950": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-38096950-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "248379ea76d471707e9fd6f5cde6d736773c81cac845230df48c143341e9a759",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "All 696 patients have high PD-L1 and pembrolizumab exposure; STK11 was measured only in 284. Selected pathology/mIF and external TCGA RNA are distinct datasets. KRAS G12C/TP53 PFS association does not imply significant OS or predictive treatment benefit. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "38154514": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "mixed-solid-tumors"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "pdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2024-38154514-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "2de830bbb15e5dcf6f8ad3f4019ce6894d7720464565280eead79e9b2b5289d0",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "ERBB2 amplification threshold >=6 and protein expression are not interchangeable; GCN5 model is not in that amplification class. Two response cases do not establish clinical efficacy. Source Methods and Figure dosing intervals conflict; do not reuse an unverified regimen. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "39111731": {
+      "disease_ids": [
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2024-39111731-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "ffecd0035b09ec759151af6e120c10cb59b708df8312ae4192ff3e4eddf9f755",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "SV means short variant in this paper, not structural variant. SELECT/MEGSA co-occurrence or exclusivity and structural predictions are not functional validation, causal gene interaction or original RNA/single-cell experiments. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "39694414": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "computational",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2025-39694414-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "cd0e3b03d6b6df0ea929fac56221edec0a665df3a6a3ac11cfb6d4e7728a354e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Public-cohort reanalysis and deconvolution are not new patient recruitment or single-cell data. Time on treatment is not PFS. EGFR class-specific findings should not be transferred to other alterations without validation. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "40320171": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2025-40320171-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "7664d80dd323588e58dd74dd1fc297846c55cea84c74262d66c9e733b7e8cb66",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Weighted comparison remains nonrandomized. Distinguish overall N1323, TP53-tested denominator905 and weighted comparator N697. The 28.6-month median OS has an inconsistent CI in the prose; do not reproduce the disputed CI. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "40518016": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "csf"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2025-40518016-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "563253bc65b1e9794f779f0f69c70c759436032b970060bd37834402dfaa635e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Reported HR confidence intervals cross 1 despite significant log-rank P values: do not present them as one internally consistent Cox result. Dose30 versus60mg and source-caption discrepancies remain unresolved. STK11 is a screen hit, not patient co-mutation evidence; expression platform is unverified without supplement. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "41161592": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-41161592-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "4646c98d563828f705279e4e0df6629acd527fe10881552161133ea3cdc28e25",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Small neoadjuvant cohort N29 and external TCGA expression N494 are distinct. Do not call these paired clinical multiomics or validated SMARCA4-specific comparative treatment benefit. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "41260457": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-41260457-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "29ff48f1129b4b850246762d0d739414be3609f41ee97962d8330cbfcc8f57d5",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Time to osimertinib discontinuation is not PFS; OS was not significant. Separate baseline landscape, paired acquired deletion N69 and one PRMT5 case. Do not transfer deletion definitions or causal claims to STK11. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "41903702": {
+      "disease_ids": [
+        "lung-cancer",
+        "nsclc",
+        "sclc",
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-41903702-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "5bf50107ba99641871f57f5e6a3cbdf1ee9339195495c3cda5d4cca3464a5f4d",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Major internal TMB percentage/count/label inconsistencies affect main and embedded supplementary tables. Do not quote precise TMB prevalence without resolving them. N82328 is a profiling landscape, not treatment-outcome or original STK11 co-mutation evidence. Embedded S1-S3 tables/S1-S2 figures were reviewed; outside files were not. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "42749051": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2026-42749051-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent complete main-text reading and visual figure/table checks, not independent acceptance",
+      "source_sha256": "2d579bb3ccb94d964b1cc7da70c3e9a9440986103860860a0b4ce4e78878e951",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "C-index .754 is not accuracy. N400 profiled differs from model N295 (221 training/74 internal), with three external cohorts, not four external cohorts. RBM10 adjusted DFS is nonsignificant. Observational adjuvant-TKI comparison has no validated treatment interaction; deconvolution is not single-cell/spatial data. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    }
   },
   "expressions": [
-    {"pmid":"37756581","expression":"maximally selected rank statistic","expression_domains":["statistics","bioinformatics"],"evidence_context":"Methods statistical threshold selection; not a validated clinical cutoff.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37756581","expression":"region-of-interest segmentation","expression_domains":["spatial-transcriptomics","spatial-protein"],"evidence_context":"GeoMx TLS AOIs and image segmentation are distinct workflows; GeoMx source is sarcoma.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37756581","expression":"deconvolution-estimated abundance","expression_domains":["bioinformatics"],"evidence_context":"Computational cell-abundance estimate, not directly counted cells.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37756581","expression":"compartment-specific expression","expression_domains":["spatial-protein"],"evidence_context":"NSCLC tumor and TLS protein-expression context; does not establish NSCLC spatial RNA.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37756581","expression":"nearest-neighbor distance","expression_domains":["spatial-protein"],"evidence_context":"NSCLC PanCK/CD8 cell proximity from protein imaging, not ligand-receptor signaling.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37756581","expression":"proliferating regulatory T cells","expression_domains":["spatial-protein"],"evidence_context":"CD4/Foxp3/Ki67 phenotype; TLS-level observations are nested within patients.","source_reference":"ccr-2023-37756581-evidence.md"},
-    {"pmid":"37289191","expression":"reverse-phase protein array","expression_domains":["targeted-protein-assay"],"evidence_context":"RPPA measures selected proteins and is not untargeted whole-proteome mass spectrometry.","source_reference":"ccr-2023-37289191-evidence.md"},
-    {"pmid":"37289191","expression":"isogenic overexpression","expression_domains":["preclinical"],"evidence_context":"Controlled BCL2 perturbation in SCLC cell models.","source_reference":"ccr-2023-37289191-evidence.md"},
-    {"pmid":"37289191","expression":"Bliss delta-area analysis","expression_domains":["statistics","preclinical"],"evidence_context":"Negative delta-AUC is enhanced activity under this study's convention; do not reverse the sign.","source_reference":"ccr-2023-37289191-evidence.md"},
-    {"pmid":"37125965","expression":"targeted immune transcriptomics","expression_domains":["transcriptomics"],"evidence_context":"NanoString targeted bulk panel; not single-cell or whole-transcriptome sequencing.","source_reference":"ccr-2023-37125965-evidence.md"},
-    {"pmid":"36537918","expression":"co-immunoprecipitation","expression_domains":["preclinical"],"evidence_context":"Complex association assay, not direct binding; MPN biology and MST1R, not STK11.","source_reference":"ccr-2023-36537918-evidence.md"},
-    {"pmid":"37725585","expression":"repair-incision comet assay","expression_domains":["preclinical"],"evidence_context":"Greater incision signal can indicate more repair activity; distinguish ordinary damage comet assays.","source_reference":"ccr-2023-37725585-evidence.md"}
+    {
+      "pmid": "37756581",
+      "expression": "maximally selected rank statistic",
+      "expression_domains": [
+        "statistics",
+        "bioinformatics"
+      ],
+      "evidence_context": "Methods statistical threshold selection; not a validated clinical cutoff.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37756581",
+      "expression": "region-of-interest segmentation",
+      "expression_domains": [
+        "spatial-transcriptomics",
+        "spatial-protein"
+      ],
+      "evidence_context": "GeoMx TLS AOIs and image segmentation are distinct workflows; GeoMx source is sarcoma.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37756581",
+      "expression": "deconvolution-estimated abundance",
+      "expression_domains": [
+        "bioinformatics"
+      ],
+      "evidence_context": "Computational cell-abundance estimate, not directly counted cells.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37756581",
+      "expression": "compartment-specific expression",
+      "expression_domains": [
+        "spatial-protein"
+      ],
+      "evidence_context": "NSCLC tumor and TLS protein-expression context; does not establish NSCLC spatial RNA.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37756581",
+      "expression": "nearest-neighbor distance",
+      "expression_domains": [
+        "spatial-protein"
+      ],
+      "evidence_context": "NSCLC PanCK/CD8 cell proximity from protein imaging, not ligand-receptor signaling.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37756581",
+      "expression": "proliferating regulatory T cells",
+      "expression_domains": [
+        "spatial-protein"
+      ],
+      "evidence_context": "CD4/Foxp3/Ki67 phenotype; TLS-level observations are nested within patients.",
+      "source_reference": "ccr-2023-37756581-evidence.md"
+    },
+    {
+      "pmid": "37289191",
+      "expression": "reverse-phase protein array",
+      "expression_domains": [
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "RPPA measures selected proteins and is not untargeted whole-proteome mass spectrometry.",
+      "source_reference": "ccr-2023-37289191-evidence.md"
+    },
+    {
+      "pmid": "37289191",
+      "expression": "isogenic overexpression",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "Controlled BCL2 perturbation in SCLC cell models.",
+      "source_reference": "ccr-2023-37289191-evidence.md"
+    },
+    {
+      "pmid": "37289191",
+      "expression": "Bliss delta-area analysis",
+      "expression_domains": [
+        "statistics",
+        "preclinical"
+      ],
+      "evidence_context": "Negative delta-AUC is enhanced activity under this study's convention; do not reverse the sign.",
+      "source_reference": "ccr-2023-37289191-evidence.md"
+    },
+    {
+      "pmid": "37125965",
+      "expression": "targeted immune transcriptomics",
+      "expression_domains": [
+        "transcriptomics"
+      ],
+      "evidence_context": "NanoString targeted bulk panel; not single-cell or whole-transcriptome sequencing.",
+      "source_reference": "ccr-2023-37125965-evidence.md"
+    },
+    {
+      "pmid": "36537918",
+      "expression": "co-immunoprecipitation",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "Complex association assay, not direct binding; MPN biology and MST1R, not STK11.",
+      "source_reference": "ccr-2023-36537918-evidence.md"
+    },
+    {
+      "pmid": "37725585",
+      "expression": "repair-incision comet assay",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "Greater incision signal can indicate more repair activity; distinguish ordinary damage comet assays.",
+      "source_reference": "ccr-2023-37725585-evidence.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "molecular heterogeneity 分子异质性; integrative profiling 整合分子谱分析; subtype-associated vulnerability 亚型相关脆弱性",
+      "expression_domains": [
+        "genomics",
+        "transcriptomics",
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "Abstractvocabulary:integratedmeasuredmodalitiesonly.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "We integrated [data modalities] across [cohorts] to delineate [subtypes] and assess their [biological/clinical] correlates.",
+      "expression_domains": [
+        "genomics",
+        "transcriptomics"
+      ],
+      "evidence_context": "Abstractsyntheticobjectivekeepscohorts/modalitiesexplicit.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "Although [driver] defines a clinically relevant group, variation in [co-alterations] may distinguish biologically different subsets.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionco-alterationhypothesisnotcausality.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "consensus clustering 一致性聚类; non-negative matrix factorization 非负矩阵分解; cophenetic correlation 共表型相关系数; external validation 外部验证",
+      "expression_domains": [
+        "bioinformatics",
+        "statistics"
+      ],
+      "evidence_context": "MethodsconsensusNMFandfixedclassifier;cophenetictranslationneedsdisciplinaryclarity.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "restore [protein] expression; compare matched perturbation and control; quantify viability after [duration]",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "MethodsperturbationcollocationsnotblanketIC50direction.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "[Subtype] was enriched for [alteration], whereas its [immune/program] profile differed from that of [comparator].",
+      "expression_domains": [
+        "genomics",
+        "transcriptomics",
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "Resultsgenomicandorthogonalphenotypiccomparisonswithassayboundaries.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "The association was evident for [endpoint A], but not for [endpoint B]; sensitivity to [compound] was evaluated separately in [experimental system].",
+      "expression_domains": [
+        "statistics",
+        "preclinical"
+      ],
+      "evidence_context": "ResultsretainsRFS/OSanddrug-specificnullfindings.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "Integrate convergent modalities → distinguish mutation from function → discuss discordant findings → consider regional loss/selection → propose bounded validation.",
+      "expression_domains": [
+        "genomics",
+        "transcriptomics",
+        "statistics"
+      ],
+      "evidence_context": "Discussionparagrapharchitecture,synthesisnotquotedparagraph.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "26069186",
+      "expression": "Together, these analyses support a subtype-informed framework for [question] and nominate [experimental dependency] for further investigation.",
+      "expression_domains": [
+        "genomics",
+        "preclinical"
+      ],
+      "evidence_context": "Conclusion/Significanceframeworknotclinicalrecommendation.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "[Alteration] was associated with [clinical outcome] in [population], and matched model experiments supported a contribution to [phenotype].",
+      "expression_domains": [
+        "immunotherapy",
+        "preclinical",
+        "statistics"
+      ],
+      "evidence_context": "Abstractseparatesclinicalassociationfrommodelperturbation.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "The contribution of [co-alteration] to treatment-response heterogeneity remains incompletely defined, particularly within [molecular context].",
+      "expression_domains": [
+        "genomics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Introductionco-mutationrationale.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "response-evaluable population 反应可评价人群; nonsynonymous variant 非同义变异; H-score 组织化学评分; assay-specific cutoff 检测特异阈值",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "Methodsvocabulary:responseevaluable,variant,Hscoreandassaycutoffaredifferentconcepts.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "assign overlapping genotypes using [hierarchy]; retain assay-specific thresholds; distinguish mutation from protein loss",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Methodscollocationshierarchy/assaythresholds.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "Associations were summarized as hazard ratios with [confidence level] intervals, using prespecified comparators and endpoint-specific censoring rules.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Methodsendpoint-specificorigin/censoringandmultiplicity.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "Responses occurred in [numerator]/[denominator] patients in [group A] and [numerator]/[denominator] in [group B]; the survival analysis included [separate n].",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Resultsresponse/survivalandsubgroupuncertainty.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "Under matched experimental conditions, loss of [gene] reduced [treatment response] and was accompanied by [measured immune change].",
+      "expression_domains": [
+        "preclinical",
+        "immunotherapy"
+      ],
+      "evidence_context": "ModelResultsperturbation,notclinicalcausality.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "Reconcile human/model findings → retain assay/genotype heterogeneity → discuss small comparator subset → delimit prediction → validation need.",
+      "expression_domains": [
+        "immunotherapy",
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Discussionparagrapharchitecturepreservesnonuniversality.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "29773717",
+      "expression": "These results identify [factor] as a candidate contributor to [phenotype] and support validation under clearly specified treatment and genomic contexts.",
+      "expression_domains": [
+        "immunotherapy",
+        "genomics"
+      ],
+      "evidence_context": "Closing/Significanceprospectivevalidationboundary.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "Although [gene] is recurrently altered in [disease], its relationship to protein expression and patient outcome is uncertain.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract background synthesis, not a quotation.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "We integrated tumor genomic profiling, protein-expression assessment, and clinical outcomes to characterize [alteration] in [population].",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstract Methods; separate denominators for assay and outcome sets.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "Receipt of [therapy] was associated with [outcome] in the retrospective cohort; this comparison was not randomized.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Abstract results with preserved design boundary.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "The findings distinguish clinically relevant [variant classes] and support prospective evaluation of their prognostic and treatment-associated implications.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract conclusion does not establish predictive utility.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "co-mutational genomic context",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Conventional phrase, distinct from mechanistic cooperation.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "left-truncated survival analysis",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Delayed cohort entry; not left censoring or missing baseline data.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "The response rate differed by mutation class, whereas PFS and OS did not show statistically significant class-specific differences.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Endpoint-specific synthetic Results frame; nonsignificance is not equivalence.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "A response-rate difference without corresponding PFS or OS separation should not be presented as a validated predictive effect.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Discussion guardrail is synthesis, not author quotation.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "The retrospective immunotherapy signal supports further evaluation but does not establish treatment-selection utility.",
+      "expression_domains": [
+        "immunotherapy"
+      ],
+      "evidence_context": "Closing synthesis preserves retrospective limitation.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "Accounting for SMARCA4, STK11, KEAP1, and KRAS together may improve interpretation of outcomes in molecularly defined NSCLC cohorts.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Translational synthesis, conditional not causal.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "32709715",
+      "expression": "SMARCA4 alterations occur within an STK11/KEAP1-rich genomic context and therefore provide an important covariate framework for STK11-focused work. The study separates mutation class from protein phenotype and adjusts survival models for major co-alterations. However, retrospective treatment exposure, incomplete tissue availability, and the absence of randomized interaction testing preclude a definitive predictive claim.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Synthetic Discussion paragraph; transferable sequence is context, separate evidence layers, limitations.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "The clinicogenomic and immune correlates of [DDR-gene] alterations in NSCLC remain incompletely characterized.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract background and research gap.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "Treatment outcomes were evaluated separately for [therapy A] and [therapy B], with molecular subgroups defined a priori or exploratorily as specified.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Abstract methods synthesis; do not label exploratory subgroups prespecified.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "ATM status alone was not associated with response or survival after [therapy], whereas the [ATM/TP53] subgroup showed an exploratory signal.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Abstract Results, therapy and endpoint specific, not a causal interaction.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "ATM alterations define a heterogeneous molecular subgroup whose therapeutic implications depend on variant function and co-mutational context.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract conclusion synthesis, therapeutic implication remains hypothesis.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "variant-level functional heterogeneity",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introduction concept; predicted effect is not functional validation.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "putative loss of heterozygosity",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Deleterious mutation withcopydeletion, conditional definition not direct phasing.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "bulk-RNA immune-cell deconvolution",
+      "expression_domains": [
+        "transcriptomics",
+        "bioinformatics"
+      ],
+      "evidence_context": "TIMER/CIBERSORT/XCell estimates, not single-cellRNAsequencing.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "Neither ATM/STK11 nor ATM/KEAP1 subgroup comparisons reached statistical significance; limited subgroup size precludes a no-effect conclusion.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Main-text-supported synthesis; supplementary subgroup panels unreviewed.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "Nonsignificant subgroup comparisons do not demonstrate equivalence or absence of biological interaction.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Discussion guardrail, not source quotation.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "ATM-mutant NSCLC comprises functionally and genomically distinct subsets rather than a uniform biomarker group.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Closing synthesis, keep analytic ATMmutdefinition.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "Variant class, allelic status, and co-mutations should be integrated when evaluating ATM as a biomarker in NSCLC.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Translational synthesis not validated clinical decision rule.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37097610",
+      "expression": "This study shows why ATM and STK11 should be interpreted within a co-mutational framework. Genomic enrichment, predicted variant effect, allelic loss, and IHC loss describe different layers of biology, while treatment associations arise from retrospective cohorts. The data therefore support covariate-aware hypothesis generation but not a standalone ATM- or STK11-directed immunotherapy rule.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Synthetic paragraph: separate assay layers and treatment hypotheses.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "The molecular correlates and therapeutic implications of ATM alteration in NSCLC have not been fully resolved.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract background gap.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "Co-mutation patterns were assessed across cohorts, whereas treatment outcomes were evaluated in a separately curated functional-variant subset.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Abstract methods distinguishes analysisdefinitions.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "Chemotherapy induced greater relative STING-pathway signaling after ATM loss without uniformly increasing direct drug sensitivity.",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "Abstractresults preservesreadoutvsviabilitydistinction; sensitivityunderlyingSupplementnotreviewed.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "The findings identify context-dependent molecular and treatment-associated hypotheses that require prospective and mechanistic validation.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractconclusion,notclinicalvalidation.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "context-dependent co-mutation pattern",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionconcept withKRASstrata.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "reverse-phase protein array",
+      "expression_domains": [
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "Targetedproteinprofiling,notglobalmassspectrometryproteomics.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "Within KRAS-wild-type tumors, ATM co-occurred with STK11, KEAP1, and selected chromatin-remodeling alterations.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "ConditionalResultsframe;notgeneralizedtoKRASmut.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "Greater pathway induction after chemotherapy does not imply greater direct cytotoxic sensitivity, which was not observed uniformly.",
+      "expression_domains": [
+        "preclinical"
+      ],
+      "evidence_context": "Discussionguardrail distinguishesrelativechangeandabsoluteeffect.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "The combined clinical and preclinical observations warrant validation but do not establish generalized chemotherapy sensitivity or predictive utility.",
+      "expression_domains": [
+        "preclinical",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Closingsynthesisboundedbydesign.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "KRAS status should be incorporated when interpreting ATM/STK11 co-mutation patterns and designing biomarker-stratified studies.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Translationalframe preservesconditioning.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "37733794",
+      "expression": "The study triangulates genomic, clinical, and perturbational evidence but does not make those evidence layers interchangeable. KRAS stratification exposes context-specific ATM/STK11 relationships; retrospective cohorts generate a combination-therapy hypothesis; and isogenic experiments support pathway modulation rather than broad drug sensitivity. Future STK11-focused analyses should preserve these distinctions and test treatment interactions prospectively.",
+      "expression_domains": [
+        "genomics",
+        "preclinical",
+        "statistics"
+      ],
+      "evidence_context": "Syntheticparagraph integratesdistinctevidencelayerswithoutclaimingclinicalcausality.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "We combined [clinical analyses] with [experimental systems] to evaluate whether [intervention] addresses [genotype-associated phenotype].",
+      "expression_domains": [
+        "genomics",
+        "immunotherapy",
+        "preclinical"
+      ],
+      "evidence_context": "Abstractmultileveldesignseparatesclinicalandexperimentalwork.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "Whether [additional intervention] alters the adverse outcome pattern associated with [genomic context] remains an important question.",
+      "expression_domains": [
+        "immunotherapy"
+      ],
+      "evidence_context": "Introductionregimen-specificquestionnotuniversallyresistantgenotype.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "mutation-evaluable subset 突变可评价亚集; unstratified Cox model 非分层Cox模型; multivariable adjustment 多变量调整; duration of response 缓解持续时间",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Methods:trialunstratifiedvsretrospectiveadjustedmodels;DoRconditional.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "define [either-gene union] separately from [double-mutant subset]; retain endpoint-specific cutoffs; analyze responders for [DoR]",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Collocationunionnotintersection,endpointcutoffs.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "[Mouse] single-cell profiles were analyzed using [workflow], whereas immune composition in [human cohort] was inferred from bulk expression data.",
+      "expression_domains": [
+        "single-cell",
+        "transcriptomics",
+        "bioinformatics"
+      ],
+      "evidence_context": "Methods:mouseSCvshumanbulkinference.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "quantify guide enrichment relative to [control]; account for tumors nested within mice; verify depletion before interpreting efficacy",
+      "expression_domains": [
+        "preclinical",
+        "statistics"
+      ],
+      "evidence_context": "Methodsnestedunitsandperturbationconfirmation.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "[Regimen A] had a numerically favorable [endpoint] estimate versus [regimen B] (HR [value], 95% CI [lower–upper]), but the interval included 1.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "ResultsdirectTDCT/DCTCIincludes1;notstatisticallydemonstratedsuperiority.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "[Intervention] altered [measured immune state]; depletion of [cell population] attenuated efficacy in [model], supporting a context-specific contribution.",
+      "expression_domains": [
+        "preclinical",
+        "immunotherapy"
+      ],
+      "evidence_context": "Resultsmodel-specificnecessity,notuniversalimmune-cellrule.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "Principal clinical signal → experimentally tested mechanism → gene/model heterogeneity → source/selection limitations → prospective comparison.",
+      "expression_domains": [
+        "genomics",
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Discussionparagrapharchitecture:convergencewithlimitations.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39385035",
+      "expression": "These findings provide a rationale for testing [strategy] in [defined molecular context], while prospective evidence is needed to establish its clinical utility.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Conclusionprospectivecomparisonneeded,notclinicaldecisioninstruction.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "The clinical relevance of copy-number loss remains uncertain despite extensive evidence for coding mutations in the same genes.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractgapframe.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "Clinicopathologic, expression, treatment, and immune analyses were performed in distinct cohorts and retained separate denominators.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Abstractmethodscriticalanalysis-setboundary.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "ICI-alone results were cohort dependent, with no PFS or OS association in the combined or MSKCC cohorts.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Abstractresultsnegativefinding;Supplementdetailsnotreviewed.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "The findings support evaluation of copy-number state alongside sequence variants, while prospective evidence is required before treatment selection.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractconclusionnotvalidatedpredictivebiomarker.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "mono-allelic deletion",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionalterationclassnotfunctionalnull.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "same-gene mutation exclusion",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Methodsexclusionforeachgene,notallthreeunlessspecified.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "lower LKB1 protein expression",
+      "expression_domains": [
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "ResultsRPPAzscoremodestshift,notIHCcompleteloss.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "The close genomic proximity of STK11, KEAP1, and SMARCA4 limits attribution of the observed association to any one gene.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Discussioncollinearity/genomiclinkageboundary.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "Comprehensive genomic reporting should preserve both sequence-variant and copy-number information.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Conclusionreportingprinciple,notprescribingrecommendation.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "Figure 3 reports ORR, PFS, and OS under chemoimmunotherapy with separate denominators for each endpoint.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Figurenarrativedistinguishesresponseevaluablefromsurvivalsets.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "39864548",
+      "expression": "This study provides a direct framework for expanding an STK11 manuscript beyond sequence mutations. Its principal strength is the ordered evaluation of copy-number prevalence, allelic state, downstream expression, treatment outcomes, and immune phenotype. However, the tight linkage of STK11, KEAP1, and SMARCA4 on chromosome 19p, platform-specific deletion calling, retrospective treatment exposure, and unsupplied supplementary models prevent a causal or validated predictive conclusion. The framework should guide explicit genotype definitions and analysis-set transitions while keeping mono-allelic loss, biallelic inactivation, RNA abundance, and LKB1 protein expression distinct.",
+      "expression_domains": [
+        "genomics",
+        "transcriptomics",
+        "statistics",
+        "targeted-protein-assay"
+      ],
+      "evidence_context": "SyntheticDiscussionparagraphkeepsassay/evidencelevelsseparate.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "The clinical behavior of KRAS G12V NSCLC may be shaped by smoking exposure, co-mutations, and immune context.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractbackgroundconditionalnotmechanism.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "Co-mutations, tobacco exposure, PD-L1 expression, CD8 infiltration, and treatment outcomes were evaluated in nested analysis sets.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractmethodswithdistinctdenominators.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "STK11 and KEAP1 co-mutations were common, while immune-checkpoint-blockade-containing therapy was associated with favorable real-world outcomes.",
+      "expression_domains": [
+        "genomics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Abstractresults,notSTK11-specifictreatmentbenefit.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "The findings support molecularly contextualized treatment evaluation rather than interpreting KRAS G12V in isolation.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractconclusionsynthesis.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "co-mutational context",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionphrasewithoutmechanisticclaim.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "real-world overall survival",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Definedfromdiagnosis;notinterchangeablewithPFSorigin.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "TP53, STK11, and KEAP1 were the most frequent co-alterations in KRAS G12V tumors.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Resultswithgene-specifictesteddenominators.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "Favorable outcomes under ICB-containing therapy are hypothesis-generating because treatment allocation was not randomized and co-mutations may modify prognosis.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Discussionguardrail,notrandomizedcomparison.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "KRAS G12V NSCLC is strongly associated with tobacco exposure, frequent STK11/KEAP1 co-mutation, and favorable observed outcomes under ICB-based treatment.",
+      "expression_domains": [
+        "genomics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Closingframe STK11/KEAP1meansindividualco-alterationswithKRAS,notverifiedjointtriplemutationrate.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "For STK11-focused writing, this study provides a direct allele-specific framework linking cohort definition, co-mutation landscape, immune phenotype, and treatment outcomes.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Synthetictranslationalwritingstructure,notSTK11clinicalvalidation.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41417462",
+      "expression": "Connect smoking, co-mutations, and immune phenotype without assigning causality; compare ICB-containing and chemotherapy outcomes as retrospective associations and identify interaction testing as the next step.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Paragrapharchitectureinstructionnotarticlequotation.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "The prognostic relevance of [driver] under the current stage III treatment paradigm remains underexplored.",
+      "expression_domains": [
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractgap,stage/pathwayspecific.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "We compared PFS and competing-risk recurrence outcomes by [driver] status and then evaluated co-alterations in the sequenced subset.",
+      "expression_domains": [
+        "statistics",
+        "genomics"
+      ],
+      "evidence_context": "Abstractmethodsdistinctanalysissubsets.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "Within KRAS-mutant tumors, adverse PFS was concentrated in cases with STK11 and/or CDKN2A co-alterations.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "AbstractresultscombinednotSTK11-only.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "The co-alteration-defined subgroup warrants prospective evaluation in biomarker-stratified trials.",
+      "expression_domains": [
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractconclusionnotintensificationefficacy.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "oncogenic driver",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionterm;curateddriverdefinition.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "Locoregional and distant recurrence were treated as competing first-failure events.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Methodsdoesnotuse1-KMforcumulativeincidence.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "The combined STK11/CDKN2A group should be described as co-alteration-defined rather than as an STK11-only subgroup.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Resultsgroupattributionguardrail.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "Because all patients initiated durvalumab, reduced effectiveness relative to a non-durvalumab strategy cannot be estimated.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Discussionabsenceofcomparator.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "The results provide a rationale for biomarker-stratified trials rather than evidence for immediate treatment intensification.",
+      "expression_domains": [
+        "clinical-oncology"
+      ],
+      "evidence_context": "Conclusiontransferceiling.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "Table 2 reports the complete-case adjusted model and makes the analysis denominator visible.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Table-narrativestructuren177not208.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41619904",
+      "expression": "Among [N] patients treated with cCRT followed by durvalumab, KRAS-mutant disease was associated with shorter PFS but not OS. Distant metastasis, particularly brain metastasis, was more frequent, whereas no statistically significant difference in locoregional recurrence was detected. In the sequenced subset, adverse PFS was observed in the combined KRAS plus STK11 and/or CDKN2A group; KRAS-mutant tumors without these events did not show a statistically significant PFS difference from KRAS wild type. Because the analysis was retrospective and lacked a non-durvalumab comparator, the findings are prognostic within the observed treatment pathway rather than proof of durvalumab resistance.",
+      "expression_domains": [
+        "statistics",
+        "genomics",
+        "immunotherapy"
+      ],
+      "evidence_context": "SyntheticResultsparagraph;comparablemeansnosignificantdifference,notformalequivalence;localizedassociationnotcausation.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "We first described [alteration] across [assayed specimens] and then examined its distribution within [lineage]. [Co-alteration] was associated with [direction] in [normalized metric]. In separate clinical cohorts, [metric] was associated with [specified outcome], although not all endpoint or subgroup contrasts were significant. Assay concordance also varied with [sample characteristic]. These analyses use distinct denominators and should not be combined into a single efficacy claim.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Synthetic Results paragraph preserves specimen, lineage, clinical cohort and concordance denominators rather than implying one efficacy population.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "Absolute copy number may not distinguish focal amplification from broader changes in tumor ploidy.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Conceptual synthetic background, not a verbatim source sentence.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "We characterized [alteration] across [sample set] and evaluated a ploidy-normalized measure in separate assay-concordance and treatment-outcome cohorts.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstract Methods synthesis preserving independent analysis sets.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "[Metric] varied by tumor lineage and genomic context and was associated with [outcome] in selected treatment cohorts.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstract Results frame; placeholders require the user's own data and an association claim.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "These observations support further evaluation of context-aware copy-number measurements without establishing a universal treatment-selection threshold.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstract conclusion synthetic boundary consistent with exploratory thresholds.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "gene amplification",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Conventional introduction terminology; amplification and overexpression remain distinct.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "left-truncated risk interval",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Context-supported methodological paraphrase; entry occurs at the later specified visit/report date, not an arbitrary time origin.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "Within [tumor lineage], [co-alteration] was associated with lower [continuous metric].",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Synthetic reporting of a conditional association, not cause, exclusivity or therapeutic prediction.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "The therapeutic analyses in [cancer types] cannot be generalized to [unrepresented cancer] without additional validation.",
+      "expression_domains": [
+        "clinical-oncology"
+      ],
+      "evidence_context": "Safe Discussion transfer keeps HER2 clinical cohorts separate from NSCLC genomic context.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "The findings motivate prospective assessment of [metric] within a clearly defined assay and treatment setting.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Closing synthesis, not evidence of prospective clinical validation already performed.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41870274",
+      "expression": "A context-adjusted molecular measure may refine biomarker interpretation, provided its clinical use is validated for the intended population.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Synthetic Translational Relevance; conditional potential use, not prescribing guidance.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "The clinical and genomic features of [driver] alterations outside [canonical domain] remain incompletely characterized.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractgapframe.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "Genomic associations were assessed in [discovery cohort], whereas treatment outcomes were evaluated in an independent clinical cohort.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractmethodsseparatesdatasets.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "The unadjusted PFS estimate favored [class], whereas the adjusted confidence interval included the null.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "AbstractresultsusesnumericResultsratherthanoverstatedabstract.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "The findings support domain-aware biomarker development and prospective treatment evaluation rather than immediate treatment selection.",
+      "expression_domains": [
+        "genomics",
+        "clinical-oncology"
+      ],
+      "evidence_context": "Abstractconclusionguardrail.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "variant of unknown significance",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Introductionterminology;VUSnotprovenbenignorpathogenic.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "risk-set adjustment for delayed entry",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Methodsterm;lefttruncationnotcensoring.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "STK11 was enriched in [ERBB2 class], but this co-occurrence analysis did not test an STK11-specific treatment effect.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "ResultsboundarydirectlyrelevanttoSTK11writing.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "Co-occurrence does not establish clonal order, biological cooperation, or a shared resistance mechanism.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Discussioncontextlackspairedresistancesamples.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "Observed treatment-outcome differences warrant prospective validation before use in treatment selection.",
+      "expression_domains": [
+        "clinical-oncology"
+      ],
+      "evidence_context": "Closingsynthesis,notprescribing.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "Figure 2 maps class-specific co-alterations, positioning STK11 within the broader genomic context rather than as an isolated event.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Figure-narrativearchitecture.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "41932614",
+      "expression": "Among [N] tumors with oncogenic [driver] alterations, molecular classes differed in clinicopathologic features, genomic burden, and co-mutation patterns. [Class A] was enriched for STK11, KEAP1, and SMARCA4, whereas [class B] showed a comparatively sparse co-alteration profile. In the independent outcome cohort, the unadjusted PFS estimate favored [class A], but the adjusted confidence interval included the null. These findings support molecular heterogeneity while remaining insufficient to establish a predictive treatment effect.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "SyntheticResultsparagraphseparatesgenomicsandmixed-exposureoutcomes.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "The prognostic and therapeutic implications of individual codon 61 substitutions remain uncertain.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractbackgroundresearchgap.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "Molecular features were correlated with treatment exposure and time-to-event outcomes in subtype-defined analysis sets.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Abstractmethodsgenericframe;clarifygenomicsbysubtypebuttreatmentsubgroupsnotcomparedQ61HvsQ61L.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "subtype-specific co-mutational landscape",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractresultsterminologywithtestedgenedenominators.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "Immunotherapy-based regimens were associated with favorable outcomes, particularly in PD-L1-high disease, but causal treatment benefit cannot be inferred.",
+      "expression_domains": [
+        "immunotherapy",
+        "statistics"
+      ],
+      "evidence_context": "Abstractconclusionqualifiedobservationalassociation.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "allelic heterogeneity",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "IntroductionKRASamino-acidsubstitutionheterogeneity,notzygosity.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "panel-specific gene coverage",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Methodsassayavailabilitydefinesdenominator.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "Q61H tumors were frequently co-altered in STK11, TP53, and KEAP1, whereas Q61L showed a distinct and less STK11-enriched genomic context.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Resultscohort-specific,zerocasesnotproofexclusivity.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "The observed immunotherapy association may reflect PD-L1 distribution, STK11/KEAP1 context, and selection factors; a predictive effect requires comparative interaction evidence.",
+      "expression_domains": [
+        "statistics",
+        "immunotherapy"
+      ],
+      "evidence_context": "Discussionalternativeexplanations,notprovenmechanism.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "KRAS Q61 subtypes show distinct STK11/KEAP1 landscapes and treatment-associated outcomes that support allele-specific clinical annotation.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Closingframe mustnotimplysignificantQ61H/Ltreatmentinteraction;genomicandtherapycohortresultsareseparate.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "For STK11-focused studies, the paper provides a direct model for conditioning co-mutation analyses on KRAS allele rather than pooling all KRAS alterations.",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Translationalwritingframeworknotclinicaldecisionrule.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42268349",
+      "expression": "Interpret Q61H–STK11 enrichment and Q61L mutual exclusivity as genomic-context observations, relate these patterns to treatment associations, and explicitly address retrospective confounding.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Paragrapharchitecture;here mutualexclusivitymeansnoobservedco-occurrenceinassayedsubset,notformalmechanisticproof.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "oncogene-driven disease",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractbackground,driverdefinitionrequiresassaycriteria.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "Associations with clinicopathologic features and co-alterations were characterized in the genomic cohort, whereas treatment outcomes were assessed in an independent clinical cohort.",
+      "expression_domains": [
+        "genomics",
+        "statistics"
+      ],
+      "evidence_context": "Abstractmethodscohortseparation.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "complete versus partial gene loss",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Abstractresults:wholegenevsexonextent,bothhomozygous.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "risk-stratification candidate",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Abstractconclusioncandidate notvalidatedclinicalutility.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "clinical and therapeutic implications remain incompletely understood",
+      "expression_domains": [
+        "genomics"
+      ],
+      "evidence_context": "Gaplanguage,notallbiologicalknowledgeabsent.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "NGS-IHC concordance",
+      "expression_domains": [
+        "genomics",
+        "targeted-protein-assay",
+        "statistics"
+      ],
+      "evidence_context": "Analyticalagreementinselected38tumors,notgeneralinterchangeability.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "The dual-loss subgroup had the poorest observed response and survival, but discordant genotype groups were sparse.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "targeted-therapy"
+      ],
+      "evidence_context": "Resultsretainsanalysissetandprecisionboundary.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "Because all patients received targeted therapy, the association is prognostic within that treatment setting and does not demonstrate treatment-effect prediction.",
+      "expression_domains": [
+        "statistics",
+        "targeted-therapy"
+      ],
+      "evidence_context": "Discussiondesign-basedinferenceceiling.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "The data motivate biomarker-guided trials of synthetic-lethal combinations but do not establish their clinical benefit.",
+      "expression_domains": [
+        "targeted-therapy"
+      ],
+      "evidence_context": "Conclusion,trialhypothesisnotobserveddrugresponse.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "Table 2 defines the smaller treatment cohort and identifies baseline brain-metastasis imbalance before survival analysis.",
+      "expression_domains": [
+        "statistics"
+      ],
+      "evidence_context": "Tablenarrativebeforeadjustment.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "pmid": "42409117",
+      "expression": "For STK11-focused writing, this article offers a transferable structure rather than direct STK11 evidence. The reusable sequence is to define loss operationally, map neighboring-locus co-deletion, test orthogonal assay concordance, report outcomes in a separate clinical cohort, and examine paired progression samples. Its MTAP-specific metabolic biology and PRMT5/MAT2A hypotheses must not be imported into STK11 claims. The sparse discordant genotypes also illustrate why combined-locus risk groups should not be used to assign a gene-specific mechanism.",
+      "expression_domains": [
+        "genomics",
+        "statistics",
+        "targeted-therapy"
+      ],
+      "evidence_context": "SyntheticDiscussionparagraph,indirectarchitectureonly.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    }
   ]
 }

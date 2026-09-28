@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-28",
+  "scope": "STK11 writing-framework selection; membership is not reading acceptance or a merged journal corpus",
+  "core_authority": "stk11-priority-references.md",
+  "identity_and_reading_authority": "library-index.csv",
+  "guide": "stk11-analysis-framework.md",
+  "study_map": "stk11-study-logic-map.md",
+  "records": [
+    {"pmid": "26069186", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "functional_state", "immune_mechanism"], "source_refs": ["source-rechecks/2026-09-28-26069186.md"]},
+    {"pmid": "29773717", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes", "immune_mechanism"], "source_refs": ["source-rechecks/2026-09-28-29773717.md"]},
+    {"pmid": "32709715", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "functional_state", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-32709715.md"]},
+    {"pmid": "37733794", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "functional_state", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-37733794.md"]},
+    {"pmid": "37097610", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "functional_state", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-37097610.md"]},
+    {"pmid": "36775193", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes"], "source_refs": ["jto-2023-36775193-language.md"]},
+    {"pmid": "36494075", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "structural_analogue", "modules": ["sequence_context", "clinical_outcomes", "longitudinal"], "source_refs": ["jto-2023-36494075-language.md"]},
+    {"pmid": "39385035", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes", "immune_mechanism"], "source_refs": ["source-rechecks/2026-09-28-39385035.md"]},
+    {"pmid": "37806385", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "structural_analogue", "modules": ["sequence_context", "clinical_outcomes", "longitudinal"], "source_refs": ["jto-2024-37806385-language.md"]},
+    {"pmid": "39804166", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes", "functional_state"], "source_refs": ["ccr-2025-genomics-2026-09-20-language.md"]},
+    {"pmid": "39545922", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes", "immune_mechanism"], "source_refs": ["ccr-2025-immunotherapy-fulltext-language.md"]},
+    {"pmid": "41417462", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-41417462.md"]},
+    {"pmid": "42268349", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-42268349.md"]},
+    {"pmid": "41932614", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["sequence_context", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-41932614.md"]},
+    {"pmid": "41619904", "tier": "core_highlight", "in_cross_gene_16": true, "stk11_relation": "direct_analysis", "modules": ["sequence_context", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-41619904.md"]},
+    {"pmid": "42507545", "tier": "topic_support", "in_cross_gene_16": true, "stk11_relation": "contextual_analysis", "modules": ["copy_number", "sequence_context", "functional_state", "clinical_outcomes"], "source_refs": ["coalteration-recheck-2026-09-28.md", "ccr-2026-translational-mechanisms-fulltext-language.md"]},
+    {"pmid": "39864548", "tier": "core_highlight", "in_cross_gene_16": false, "stk11_relation": "direct_analysis", "modules": ["copy_number", "functional_state", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-39864548.md"]},
+    {"pmid": "41870274", "tier": "core_highlight", "in_cross_gene_16": false, "stk11_relation": "contextual_analysis", "modules": ["copy_number", "clinical_outcomes"], "source_refs": ["source-rechecks/2026-09-28-41870274.md"]},
+    {"pmid": "42409117", "tier": "core_highlight", "in_cross_gene_16": false, "stk11_relation": "structural_analogue", "modules": ["copy_number", "clinical_outcomes", "longitudinal"], "source_refs": ["source-rechecks/2026-09-28-42409117.md"]}
+  ]
+}

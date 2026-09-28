@@ -1,8 +1,11 @@
 # Nature: STK11/KEAP1 dual-checkpoint framework and language
 
-Reading date: 2026-09-19. First-pass main-text reading, figure/table inspection, numerical/evidence checks and section-language curation complete. A separate acceptance source recheck has **not** been performed: review_status=not_reviewed.
+Reading date: 2026-09-19. First-pass main-text reading, figure/table inspection, numerical/evidence checks and section-language curation complete. That first-pass status is historical. A same-agent source recheck was performed on 2026-09-28; use the linked record and current register for its bounded verdict.
 
 ## PMID 39385035 — 2024
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-39385035.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 **CTLA4 blockade abrogates KEAP1/STK11-related resistance to PD-(L)1 inhibitors.** Nature 635:462–471. DOI: 10.1038/s41586-024-07943-7. [Article](https://www.nature.com/articles/s41586-024-07943-7), [identity](https://pubmed.ncbi.nlm.nih.gov/39385035/).
 
@@ -51,7 +54,7 @@ All embedded ED figures/tables and their captions were read. Separate external s
 |---|---|---|---|
 | PCP STK11 PFS | HR1.60 (95% CI1.24–2.07), log-rank P=.002; medians4.8/7.0 months | p2 Fig1a | Retrospective adverse association |
 | PCP STK11 OS | HR1.55 (1.18–2.05), P=.014; medians11.1/16.7 months | p2 Fig1a | Not a randomized STK11-specific treatment effect |
-| PCP STK11 ORR | 30.5% mutant versus40.9% WT; labeled NS | Fig1a | Do not upgrade to significant because survival differs |
+| PCP STK11 ORR | 33.0% mutant versus40.9% WT; labeled NS | Fig1a | Do not upgrade to significant because survival differs |
 | PCP KEAP1 | PFS HR2.07 (1.35–3.17); OS2.24 (1.42–3.54); ORR14.3%/43.0%, P<.0001 | Fig1a | Preserve gene/assay subset rather than pooling with STK11 |
 | Joint-genotype ORR | WT48.6%, STK11-only29.6%, KEAP1-only28.6%, double7.1%; n72/27/14/28 | ED1b | Response-evaluable141, not all PCP439 |
 | Mutation/TMB context | STK11/KEAP1 union25.2% overall and32.4% KRAS-mutant; median TMB WT5.22, STK11-only7.83, KEAP1-only13.05, double7.83 | Fig1b–d | STK11/KEAP1 alteration does not imply low TMB; KEAP1-only PD-L1 pattern differs |
@@ -59,7 +62,7 @@ All embedded ED figures/tables and their captions were read. Separate external s
 | Union TDCT versus CT | PFS HR.52 (.28–.95); OS.50 (.29–.87) | Fig2a–b | Exploratory randomized-trial biomarker subgroup, not an independently validated predictive rule |
 | Union TDCT versus DCT | OS HR.64 (.40–1.04), medians15.8/7.3 months; PFS.71 (.43–1.17) | Fig2a–b | Both CIs cross1; do not say statistically proven superiority over DCT |
 | Response and duration | ORR42.9%/30.2%/28.0%; median DoR13.6/12.7/3.3 months for TDCT/DCT/CT | Fig2a; ED2b | DoR is responder-conditional; spider plots show38/38/25, not the full42/43/25 |
-| STK11-only exploratory outcome | TDCT vs CT OS.56 (.30–1.03); vs DCT.63 (.35–1.08) | ED3b | Individual STK11 subgroup uncertainty remains even when union CI excludes1 |
+| STK11-mutant exploratory outcome (not excluding KEAP1 co-mutation) | TDCT vs CT OS.56 (.30–1.03); vs DCT.63 (.35–1.08) | ED3b | Individual STK11 subgroup uncertainty remains even when union CI excludes1 |
 | Pooled CRISPR | 1813 sgRNAs/162 genes; Stk11/Keap1 among strongest enriched resistance hits | Methods; Fig3a–c | Experimental selection, not clinical mutation prevalence |
 | Tuba-seq | 22 tumor suppressors+6 inert vectors;16–19 analyzed mice/group | Fig3d–e; ED5 | Multiple tumors nested within mice; tumors are not independent animal replicates |
 | iNOS inhibition | KLK no-outgrowth7/7 with dual ICB versus2/7 with L-NIL plus dual ICB | Fig4e | Model-specific outgrowth endpoint, not seven clinical cures |
@@ -196,4 +199,3 @@ Source: p8 closing discussion. Use constraint: 无单独Conclusion标题；这�
 | NAT-STK11-034 | collocation | provide a rationale for testing [combination]; prioritize validation in [defined setting]; preserve regimen-specific uncertainty |
 | NAT-STK11-035 | sentence_frame | These findings provide a rationale for testing [strategy] in [defined molecular context], while prospective evidence is needed to establish its clinical utility. |
 | NAT-STK11-036 | paragraph_architecture | Bounded cross-level synthesis → defined population/regimen → next validation requirement. |
-

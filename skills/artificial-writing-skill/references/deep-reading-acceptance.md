@@ -7,7 +7,7 @@ For this writing skill, deep reading means understanding the evidence, curating 
 The journal-specific deep-reading ledger remains authoritative for recorded main-text reading completion. The journal-specific quality register is authoritative for the separate source-recheck status. Keep the two synchronized without treating either a historical completion label or a highlight designation as proof of a new review.
 
 - CCR: [reading ledger](ccr-deep-reading-ledger.md) and [quality register](ccr-reading-quality-register.csv).
-- JTO priority set: [reading ledger](jto-stk11-deep-reading-ledger.md) and [quality register](jto-reading-quality-register.csv).
+- JTO registered sources: [reading ledger](jto-deep-reading-ledger.md) and [quality register](jto-reading-quality-register.csv); [the historical priority ledger](jto-stk11-deep-reading-ledger.md) is only the four-highlight subset. The [maintenance queue](jto-maintenance-queue.md) is not a completion ledger.
 - Cancer Discovery priority set: [reading ledger](cancer-discovery-stk11-deep-reading-ledger.md) and [quality register](cancer-discovery-reading-quality-register.csv).
 - Nature priority set: [reading ledger](nature-stk11-deep-reading-ledger.md) and [quality register](nature-reading-quality-register.csv).
 - Candidate-only [STK11 directory](stk11-expanded-reference-directory.md) entries do not count as acquired or completed journal records.

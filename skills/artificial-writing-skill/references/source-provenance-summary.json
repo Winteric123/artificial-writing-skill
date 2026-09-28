@@ -1,34 +1,36 @@
 {
-  "index_version": "4ff60ec93f138c7f92eb19ebf7c06e7f1554ce7075f0d4d84f443f99854029df",
-  "entry_count": 8194,
+  "index_version": "a80603be98439365519cb482eec5ebf94177e84199b82fe61e2b9b309a380433",
+  "entry_count": 9013,
   "source_scope_status": {
-    "curated-source-scope": 261
+    "curated-source-scope": 289
   },
   "source_facet_coverage": {
     "disease_ids": {
-      "identified-not-exhaustive": 261
+      "identified-not-exhaustive": 289
     },
     "tissue_ids": {
-      "identified-not-exhaustive": 209,
-      "not-curated-not-absent": 52
+      "identified-not-exhaustive": 236,
+      "not-curated-not-absent": 53
     },
     "model_ids": {
-      "identified-not-exhaustive": 261
+      "identified-not-exhaustive": 289
     },
     "use_roles": {
-      "identified-not-exhaustive": 261
+      "identified-not-exhaustive": 289
     }
   },
   "pdf_locator_states": {
-    "no-literal-match-needs-context-review": 3116,
-    "synthetic-not-a-verbatim-quotation": 4195,
-    "pdf-text-located": 883
+    "no-literal-match-needs-context-review": 3472,
+    "synthetic-not-a-verbatim-quotation": 4397,
+    "pdf-text-located": 1144
   },
-  "source_pdf_count": 261,
-  "entries_with_recorded_page_hints": 4381,
+  "source_pdf_count": 289,
+  "entries_with_recorded_page_hints": 4735,
+  "context_rechecked_entries": 139,
   "scope": "Current language-source articles only; all registered journals and indexed years; no new reading or acceptance.",
-  "source_articles": 261,
-  "articles_with_unknown_facets": 52,
-  "entries_needing_literal_context_review": 3116,
-  "boundary": "Synthetic frames are excluded from the missing-literal queue; unknown tissue is not absent tissue."
+  "source_articles": 289,
+  "articles_with_unknown_facets": 53,
+  "entries_needing_literal_context_review": 3448,
+  "context_checked_without_literal_match": 24,
+  "boundary": "Synthetic frames and entries with recorded context rechecks are excluded from the pending-context queue; context review is not literal matching or quotation verification; unknown tissue is not absent tissue."
 }

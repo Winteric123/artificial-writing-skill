@@ -39,7 +39,7 @@
       "article_ids": [
         "42268349"
       ],
-      "restriction": "Do not pool Q61H–STK11 enrichment and Q61L–STK11 exclusivity into one all-Q61 statement.",
+      "restriction": "Q61H/Q61L assay coverage differs; STK11 was assayed in only31 patients. Zero observed STK11 in assayed Q61L is not universal mutual exclusivity. No reliable direct H-versus-L treatment-effect comparison.",
       "source_reference": "stk11-priority-references.md"
     },
     {
@@ -1417,6 +1417,334 @@
       ],
       "restriction": "Efficacy121adultbasket versus22NSCLC; safety193NTRKadults versus626allpatients. MeasurableCNS7/11 andlung14/22both63.6% butdistinct. NoCNSscreeningfollowupinallpatients; noCNSpreventionproof orrandomizedcross-drugsuperiority. Preserve5potentiallyrelateddeaths andappendixunavailability. Reopen ccr-2022-35144967-evidence.md before factual reuse.",
       "source_reference": "ccr-2022-35144967-evidence.md"
+    },
+    {
+      "id": "intake-20260928-34759042",
+      "article_ids": [
+        "34759042"
+      ],
+      "restriction": "43 NEN patients/194 evaluable samples, only three lung cases; detection and CNA classifier are not validated NSCLC tests. Repeated samples, ctDNA-positive classifier selection and time-dependent survival classification limit transfer.",
+      "source_reference": "ccr-2022-34759042-language.md"
+    },
+    {
+      "id": "intake-20260928-35140122",
+      "article_ids": [
+        "35140122"
+      ],
+      "restriction": "BRACE relies on treatment/noncancer-mortality assumptions and does not remove all confounding or generate P values. Lung adjusted noncancer-mortality P=.43 is nonsignificant despite abstract wording; subgroup endpoints and reference groups remain separate.",
+      "source_reference": "ccr-2022-35140122-language.md"
+    },
+    {
+      "id": "intake-20260928-38330145",
+      "article_ids": [
+        "38330145"
+      ],
+      "restriction": "BI-4732 evidence is preclinical; genotype-specific potency and WT cellular versus biochemical inhibition differ. No formal synergy analysis. Source panel/whole-exome, organoid timing and dose/formula inconsistencies require resolution before protocol reuse.",
+      "source_reference": "ccr-2024-38330145-language.md"
+    },
+    {
+      "id": "intake-20260928-34016641",
+      "article_ids": [
+        "34016641"
+      ],
+      "restriction": "Borrowed single-cell signatures do not constitute new single-cell experiments. Entropy/clonality interpretation and borderline HLA/APM statistics require care; no treatment-by-sex interaction. Main AM Figure3 corruption was clarified on publisher PDF physical8; publisher physical5 also inspected.",
+      "source_reference": "ccr-2021-34016641-language.md"
+    },
+    {
+      "id": "intake-20260928-33020056",
+      "article_ids": [
+        "33020056"
+      ],
+      "restriction": "98 mixed-tumor patients;82 treatment-naive biopsies; immune models65 after lymphoid exclusions. DCB is not response rate and TTP is not PFS. Bulk deconvolution is not single-cell. Different endpoints and negative external validation must be preserved; JAK1/HLA case has temporal/site confounding.",
+      "source_reference": "ccr-2021-33020056-language.md"
+    },
+    {
+      "id": "intake-20260928-34446541",
+      "article_ids": [
+        "34446541"
+      ],
+      "restriction": "Primary4892patients/5671samples; mutation frequencies use4107SNV-positive samples. Conflicting PFS HR/P values between prose and Figures3/4 remain unresolved. Adjusted bTMB correlations belong to selected low-ctDNA subsets; no ICI outcome validation. STK112.63% is a selected-sample landscape frequency, not a dedicated STK11 analysis.",
+      "source_reference": "ccr-2021-34446541-language.md"
+    },
+    {
+      "id": "intake-20260928-38261467",
+      "article_ids": [
+        "38261467"
+      ],
+      "restriction": "192/90 is an internal split, not external validation; erlotinib CA carriers7. No patient AA genotype or clinical osimertinib validation. Figure3H m6A direction conflicts with prose; Figure4I P=.097 and Figure2 #P<.1 are nonsignificant. Fractionation shows nucleus, not direct nucleolar localization; m6A-qPCR is not base-resolution mapping.",
+      "source_reference": "ccr-2024-38261467-language.md"
+    },
+    {
+      "id": "intake-20260928-34667030",
+      "article_ids": [
+        "34667030"
+      ],
+      "restriction": "Direct STK11/AMPK pathway context, not patient ICI efficacy.39/51mutants are low-pAMPK, not76%of low-pAMPK group mutated. RPPA is targeted protein profiling and deconvolution is not single-cell. Tumor dots nested in mice, overlapping TCGA cohorts, negative genes and proposed mediation retain caveats.",
+      "source_reference": "ccr-2022-34667030-language.md"
+    },
+    {
+      "id": "intake-20260928-38630555",
+      "article_ids": [
+        "38630555"
+      ],
+      "restriction": "13%/16% use selected85/76ctDNA-evaluable progression samples, not whole trial arms. Pre-existing versus acquired events differ. Combination benefit is preclinical and mainly cytostatic; HSA is not Bliss. Model-dependent significance, MET co-alteration, TGI/regression distinctions, LC-F12 provenance and S347/S473 label conflicts remain explicit.",
+      "source_reference": "ccr-2024-38630555-language.md"
+    },
+    {
+      "id": "jto-36240971-intake-boundaries",
+      "article_ids": [
+        "36240971"
+      ],
+      "restriction": "Separate treated 34 from response-assessable 24 and subgroup denominators. Single-arm activity is not comparative benefit; clinical TAK-228 monotherapy and preclinical combination evidence are distinct. CPTAC is background, not generated omics.",
+      "source_reference": "jto-2023-36240971-language.md#pmid-36240971"
+    },
+    {
+      "id": "jto-36494075-intake-boundaries",
+      "article_ids": [
+        "36494075"
+      ],
+      "restriction": "Preserve cohort, paired-resistance, RNA and APOBEC denominators and source caption conflicts. Treatment-conditioned associations do not prove predictive benefit; resistance mechanism detection depends on sampling.",
+      "source_reference": "jto-2023-36494075-language.md#pmid-36494075"
+    },
+    {
+      "id": "jto-36775193-intake-boundaries",
+      "article_ids": [
+        "36775193"
+      ],
+      "restriction": "Overall adjusted STK11 association is not significant; KRAS-conditioned subgroup associations are not a validated treatment interaction. Do not present the SMARCA4/KRAS-WT OS estimate whose CI crosses 1 as significant. Preserve TMB platform harmonization and missingness.",
+      "source_reference": "jto-2023-36775193-language.md#pmid-36775193"
+    },
+    {
+      "id": "jto-36958689-intake-boundaries",
+      "article_ids": [
+        "36958689"
+      ],
+      "restriction": "KRAS/LKB1 models support a preclinical mechanism, not clinical combination efficacy. Distinguish generated bulk RNA/metabolomics from external CPTAC protein data and non-isogenic comparisons. No single-cell or spatial sequencing was performed.",
+      "source_reference": "jto-2023-36958689-language.md#pmid-36958689"
+    },
+    {
+      "id": "jto-37182602-intake-boundaries",
+      "article_ids": [
+        "37182602"
+      ],
+      "restriction": "MDM2 amplification, TP53 state and model response are separate. HSA synergy is model/dose-specific; LUAD12c combination versus milademetan P=.196 is not significant. Phospho-RTK arrays are targeted protein assays, not global proteomics.",
+      "source_reference": "jto-2023-37182602-language.md#pmid-37182602"
+    },
+    {
+      "id": "jto-37543207-intake-boundaries",
+      "article_ids": [
+        "37543207"
+      ],
+      "restriction": "Separate 380 genomic from 201 outcome patients and the ICI-only subset of 85. Class-specific co-alteration/outcome associations and a K601E case do not establish comparative benefit or a universal BRAF response rule.",
+      "source_reference": "jto-2023-37543207-language.md#pmid-37543207"
+    },
+    {
+      "id": "jto-37572870-intake-boundaries",
+      "article_ids": [
+        "37572870"
+      ],
+      "restriction": "Retain source count/percentage and HR/CI inconsistencies in the article note; do not silently repair or reuse disputed numbers. A prospective observational ALK cohort does not establish causal effects of CDKN2A/B loss.",
+      "source_reference": "jto-2024-37572870-language.md#pmid-37572870"
+    },
+    {
+      "id": "jto-37806385-intake-boundaries",
+      "article_ids": [
+        "37806385"
+      ],
+      "restriction": "Final five-gene tumor-suppressor set excludes STK11. Preserve TP53 plus TSG versus TP53-alone contrast and separate Yale/GENIE analysis populations; no randomized treatment interaction.",
+      "source_reference": "jto-2024-37806385-language.md#pmid-37806385"
+    },
+    {
+      "id": "jto-37838086-intake-boundaries",
+      "article_ids": [
+        "37838086"
+      ],
+      "restriction": "MSI-H/MMR-deficient NSCLC and SCLC denominators differ. Small selected immune-treated subgroups cannot validate an STK11 response classifier. Selected WES/methylation and external expression cohorts are not one paired multiomic cohort.",
+      "source_reference": "jto-2024-37838086-language.md#pmid-37838086"
+    },
+    {
+      "id": "jto-38096950-intake-boundaries",
+      "article_ids": [
+        "38096950"
+      ],
+      "restriction": "All 696 patients have high PD-L1 and pembrolizumab exposure; STK11 was measured only in 284. Selected pathology/mIF and external TCGA RNA are distinct datasets. KRAS G12C/TP53 PFS association does not imply significant OS or predictive treatment benefit.",
+      "source_reference": "jto-2024-38096950-language.md#pmid-38096950"
+    },
+    {
+      "id": "jto-38154514-intake-boundaries",
+      "article_ids": [
+        "38154514"
+      ],
+      "restriction": "ERBB2 amplification threshold >=6 and protein expression are not interchangeable; GCN5 model is not in that amplification class. Two response cases do not establish clinical efficacy. Source Methods and Figure dosing intervals conflict; do not reuse an unverified regimen.",
+      "source_reference": "jto-2024-38154514-language.md#pmid-38154514"
+    },
+    {
+      "id": "jto-39111731-intake-boundaries",
+      "article_ids": [
+        "39111731"
+      ],
+      "restriction": "SV means short variant in this paper, not structural variant. SELECT/MEGSA co-occurrence or exclusivity and structural predictions are not functional validation, causal gene interaction or original RNA/single-cell experiments.",
+      "source_reference": "jto-2024-39111731-language.md#pmid-39111731"
+    },
+    {
+      "id": "jto-39694414-intake-boundaries",
+      "article_ids": [
+        "39694414"
+      ],
+      "restriction": "Public-cohort reanalysis and deconvolution are not new patient recruitment or single-cell data. Time on treatment is not PFS. EGFR class-specific findings should not be transferred to other alterations without validation.",
+      "source_reference": "jto-2025-39694414-language.md#pmid-39694414"
+    },
+    {
+      "id": "jto-40320171-intake-boundaries",
+      "article_ids": [
+        "40320171"
+      ],
+      "restriction": "Weighted comparison remains nonrandomized. Distinguish overall N1323, TP53-tested denominator905 and weighted comparator N697. The 28.6-month median OS has an inconsistent CI in the prose; do not reproduce the disputed CI.",
+      "source_reference": "jto-2025-40320171-language.md#pmid-40320171"
+    },
+    {
+      "id": "jto-40518016-intake-boundaries",
+      "article_ids": [
+        "40518016"
+      ],
+      "restriction": "Reported HR confidence intervals cross 1 despite significant log-rank P values: do not present them as one internally consistent Cox result. Dose30 versus60mg and source-caption discrepancies remain unresolved. STK11 is a screen hit, not patient co-mutation evidence; expression platform is unverified without supplement.",
+      "source_reference": "jto-2025-40518016-language.md#pmid-40518016"
+    },
+    {
+      "id": "jto-41161592-intake-boundaries",
+      "article_ids": [
+        "41161592"
+      ],
+      "restriction": "Small neoadjuvant cohort N29 and external TCGA expression N494 are distinct. Do not call these paired clinical multiomics or validated SMARCA4-specific comparative treatment benefit.",
+      "source_reference": "jto-2026-41161592-language.md#pmid-41161592"
+    },
+    {
+      "id": "jto-41260457-intake-boundaries",
+      "article_ids": [
+        "41260457"
+      ],
+      "restriction": "Time to osimertinib discontinuation is not PFS; OS was not significant. Separate baseline landscape, paired acquired deletion N69 and one PRMT5 case. Do not transfer deletion definitions or causal claims to STK11.",
+      "source_reference": "jto-2026-41260457-language.md#pmid-41260457"
+    },
+    {
+      "id": "jto-41903702-intake-boundaries",
+      "article_ids": [
+        "41903702"
+      ],
+      "restriction": "Major internal TMB percentage/count/label inconsistencies affect main and embedded supplementary tables. Do not quote precise TMB prevalence without resolving them. N82328 is a profiling landscape, not treatment-outcome or original STK11 co-mutation evidence. Embedded S1-S3 tables/S1-S2 figures were reviewed; outside files were not.",
+      "source_reference": "jto-2026-41903702-language.md#pmid-41903702"
+    },
+    {
+      "id": "jto-42749051-intake-boundaries",
+      "article_ids": [
+        "42749051"
+      ],
+      "restriction": "C-index .754 is not accuracy. N400 profiled differs from model N295 (221 training/74 internal), with three external cohorts, not four external cohorts. RBM10 adjusted DFS is nonsignificant. Observational adjuvant-TKI comparison has no validated treatment interaction; deconvolution is not single-cell/spatial data.",
+      "source_reference": "jto-2026-42749051-language.md#pmid-42749051"
+    },
+    {
+      "id": "recheck-20260928-26069186",
+      "article_ids": [
+        "26069186"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. CorrectFigure3/4descriptionsandfunctionalLKB1/immunephysicalpagelocationsinoldasset. Retainknockdowndirection,AUY922null,regionalco-lossandhistoricaltherapystatuscautions. Geneexpressionenrichmentdoesnotproveallcomponentsactivatedorquantifycellfractions.",
+      "source_reference": "source-rechecks/2026-09-28-26069186.md"
+    },
+    {
+      "id": "recheck-20260928-29773717",
+      "article_ids": [
+        "29773717"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. RetainOSupperCIconflictandcohort/assaydefinitions. CorrectoldFigure6coverage:Figure6isgrowth;immune-cellresultsareSupplement15reportedinthetext,notFigure6measurements. AddPDL1positivecohorttwoinvestigationalcombinationexposuresfromTable1.",
+      "source_reference": "source-rechecks/2026-09-28-29773717.md"
+    },
+    {
+      "id": "recheck-20260928-32709715",
+      "article_ids": [
+        "32709715"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Three source caption/model-label inconsistencies retained and affected class-specific estimates withheld. Existing language notes mislocate the null-spanning KEAP1 interval to physical16; correct the two related locators to physical14. The Methods frame saying protein scored independently can mean separate phenotyping, not verified blinded assessment. Clarify this usage rather than imply blinding.",
+      "source_reference": "source-rechecks/2026-09-28-32709715.md"
+    },
+    {
+      "id": "recheck-20260928-37097610",
+      "article_ids": [
+        "37097610"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Correct historical physical-page locators, which were systematically early for many ATM entries. Quarantine TP53/EGFR mutual depletion (wrong conditioning) and RECIST-defined objective response / real-world progression-free survival (specific definition not verified in this main PDF). Record Figure3 denominator reversal, Figure1 variant-count conflict and PD-L1 prose/figure direction conflict. Withhold affected unqualified numbers; do not repair source silently.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "id": "recheck-20260928-37733794",
+      "article_ids": [
+        "37733794"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Correct related historical locators: co-mutation5/8,signature5/9,treatment10/11,baseline10/12; not7/8/9 merely because prior notes said so. Keep source807vs809cohort discrepancy; quarantine impossibleHR/CI and distinguish statistical underrepresentation from absolute exclusivity. No cross-paper pooling of ATM definitions or treatment conclusions with PMID37097610.",
+      "source_reference": "source-rechecks/2026-09-28-37733794.md"
+    },
+    {
+      "id": "recheck-20260928-39385035",
+      "article_ids": [
+        "39385035"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. CorrectSTK11PCPORR30.5to33.0andSTK11-onlysubgrouplabeltoSTK11-mutantregardlessofKEAP1. RetainFMI,Tubaseqduration,alternativemodelandexclusionconflicts;addCRISPRIgGdenominatorcaution. PreservetrialdirectcomparisonCI-crossing1andmodel/species/assayboundaries.",
+      "source_reference": "source-rechecks/2026-09-28-39385035.md"
+    },
+    {
+      "id": "recheck-20260928-39864548",
+      "article_ids": [
+        "39864548"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. AddTable1KEAP1denominatorandFigure3Cendpointlabelconflicts. Hold syntheticResultsparagraphthatblurredDFCIclinicalandTCGAexpressioncohorts;replacewithusagecardthatnamesseparatedatasets. Retainexistingmonoallelic/locus/ICIheterogeneitycautions;maintextonlySupplementclaimsarenotindependentverification.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "id": "recheck-20260928-41417462",
+      "article_ids": [
+        "41417462"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Hold misattributed multiplex immunofluorescence term for this PMID; source uses single-marker CD8IHC withQuPath. Clarify smokingdenominator and gene-specificassaydenominators in evidence summary. Record sourcecount/arithmetic/HRreference conflicts; withhold questionableexactestimates while retaining qualified association and mainfiguremedians.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "id": "recheck-20260928-41619904",
+      "article_ids": [
+        "41619904"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. ExistingFigure4andPFS-vsOScautionsconfirmed;retainandlinkphysicalpages. Hold misattributed median PFS was not reached; source reports medianOSnotreachedandPFSupperCIunreached,notPFSmedian. Hold Discussionframe using unchangedlocoregionalrecurrence andflag comparablephrases as nonsignificance not equivalence;futurewordingmustsaynosignificantdifference.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "id": "recheck-20260928-41870274",
+      "article_ids": [
+        "41870274"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Methods3 defines ERBB2 and liquid thresholds using median CN, whereas Figure5 caption10 uses sample ploidy. Preserve the Methods wording and disclose the caption wording if reproducing thresholds; do not silently equate median copy number with average ploidy. Do not transfer amplification thresholds to STK11 deletion. The article's response/predictive/benefit rhetoric exceeds what these observational survival associations alone prove. Reusable wording is association/stratification, not a validated predictive clinical decision rule. No new discrepancy in the recorded main cohort sizes or principal outcomes was found. Supplement-dependent findings are rechecked only against their main-text report, not independent underlying data. This is a bounded same-agent source recheck, not independent peer review or zero-error certification.",
+      "source_reference": "source-rechecks/2026-09-28-41870274.md"
+    },
+    {
+      "id": "recheck-20260928-41932614",
+      "article_ids": [
+        "41932614"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Keepmixedexposurelabelwarning visibleinretrieval; do notrepeatFigure4captionaspurechemoICI. Abstractadjustedsignificanceclaimdowngradedto same directionbutNS. Graphicalabstractpoolsdomains73/21/6andlabelsmeanagesmedians;donotreplacecohort-specificTablecountsormeanageswithgraphicalsummary. TinyEGFRdoublemutantHR/testdiscordanceandroundingconflictretainedwithestimatewithheldfornumerictemplates.",
+      "source_reference": "source-rechecks/2026-09-28-41932614.md"
+    },
+    {
+      "id": "recheck-20260928-42268349",
+      "article_ids": [
+        "42268349"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Correctscopeof8862andexplicitnonsignificantQ61H/LsurvivalP.133inlanguageevidencesummary. Hold two treatment-by-subtype frames that imply comparisons actuallyperformed; sourceexplicitlysayssmallgroupspreventedcomparison. Flag observedzeroSTK11inQ61L as assay-conditioned absence,notuniversalmutualexclusivity. Do notclaimallpatientsfullyprofiled. Sourceversions/layout,tablecounts,CI,textandfigureconflicts retained; affectednumbers/adjustmentclaims withheldratherthanrepaired.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "id": "recheck-20260928-42409117",
+      "article_ids": [
+        "42409117"
+      ],
+      "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Retainexistingq=.057ERBB2cautionandindirectSTK11role. Qualifycomplete/partialasdeletionextentwithhomozygousdefinition;do notreuseasallelicstate. Keepmaintextreportsofsupplementaryadjustmentdistinctfromindependentlycheckedmodels.",
+      "source_reference": "source-rechecks/2026-09-28-42409117.md"
     }
   ],
   "entry_rules": [
@@ -1459,6 +1787,87 @@
       "state": "needs_source_check",
       "reason": "Protein quantification protocol is unresolved in the supplied article.",
       "source_reference": "ccr-2025-2026-09-19-intake-language.md"
+    },
+    {
+      "id": "hold-recheck-37097610-1",
+      "stable_ids": [
+        "ccr-lang-2032656f2ca328f46280"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "id": "hold-recheck-37097610-2",
+      "stable_ids": [
+        "ccr-lang-b2e46d66f4e2998acd2b"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "id": "hold-recheck-37097610-3",
+      "stable_ids": [
+        "ccr-lang-c0890d48544d44205025"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-37097610.md"
+    },
+    {
+      "id": "hold-recheck-41417462-1",
+      "stable_ids": [
+        "ccr-lang-4912060b912283e8b211"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-41417462.md"
+    },
+    {
+      "id": "hold-recheck-42268349-1",
+      "stable_ids": [
+        "ccr-lang-322fa7539c25b536cd3d"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "id": "hold-recheck-42268349-2",
+      "stable_ids": [
+        "ccr-lang-4766f4c2040684488ee9"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-42268349.md"
+    },
+    {
+      "id": "hold-recheck-41619904-1",
+      "stable_ids": [
+        "jto-lang-b930d91045f16ecdce94"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "id": "hold-recheck-41619904-2",
+      "stable_ids": [
+        "jto-lang-295b4fa82d777d44424c"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-41619904.md"
+    },
+    {
+      "id": "hold-recheck-39864548-1",
+      "stable_ids": [
+        "jto-lang-9fad4401644df59e9f73"
+      ],
+      "state": "quarantined",
+      "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
+      "source_reference": "source-rechecks/2026-09-28-39864548.md"
     }
   ]
 }

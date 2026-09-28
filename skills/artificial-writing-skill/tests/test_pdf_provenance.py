@@ -26,6 +26,13 @@ class PdfProvenance(unittest.TestCase):
         self.assertFalse(literal_occurrence('SCLC', 'NSCLC'))
         self.assertFalse(literal_occurrence('[group] had [outcome]', '[group] had [outcome]'))
 
+    def test_hyphen_and_space_variants_preserve_tokens(self):
+        self.assertTrue(literal_occurrence('whole-exome sequencing', 'whole exome sequencing'))
+        self.assertTrue(literal_occurrence('copy number alteration', 'copy-number alteration'))
+        self.assertFalse(literal_occurrence('whole-exome sequencing', 'whole genome sequencing'))
+        self.assertFalse(literal_occurrence('PD-1', 'PD-L1'))
+        self.assertFalse(literal_occurrence('STK11', 'STK11IP'))
+
     def test_reference_only_matches_are_excluded(self):
         pages = main_text_pages(['Main study\nReferences\nwrong phrase', 'more references', 'Figure 1. figure wording'])
         self.assertEqual(pages, ['Main study\n', '', 'Figure 1. figure wording'])

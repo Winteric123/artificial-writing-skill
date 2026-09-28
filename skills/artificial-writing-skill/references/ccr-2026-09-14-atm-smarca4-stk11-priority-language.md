@@ -8,6 +8,9 @@ The three main PDFs contain 53 physical pages and 26,295 whitespace-delimited ex
 
 ## PMID 32709715
 
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-32709715.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
+
 The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer. DOI: 10.1158/1078-0432.CCR-20-1825. Formal year 2020. Official section: Translational Cancer Mechanisms and Therapy, verified from the publisher-PDF header on 2026-09-14. Sixteen physical pages in the supplied NIH author manuscript.
 
 Evidence map: title and administrative material p1; Abstract p2; Introduction pp2–3; Methods pp3–4; Results pp5–6; Discussion pp6–8; references pp8–10; Translational Relevance p11; main figures pp12–15; Table 1 p16. The study integrates targeted tumor sequencing, SMARCA4 immunohistochemistry, clinicopathologic annotation, survival models, and retrospective immune-checkpoint-inhibitor outcomes. It does not report a primary transcriptomic, single-cell, spatial-omics, or proteomic workflow.
@@ -72,14 +75,14 @@ Numerical and inference checks: SMARCA4 alterations were detected in 407 of 4,81
 - `treatment-exposure association` — 治疗暴露关联，不等于治疗效应；p6.
 - `objective response rate` — 客观缓解率；p6.
 - `class-specific progression-free survival` — 类别特异PFS；p6.
-- `confidence interval spanning the null` — 置信区间跨无效值；p16.
+- `confidence interval spanning the null` — 置信区间跨无效值；physical PDF p14 (Figure 3).
 ### Results frames
 - `Among [N] tumors, [n] ([percentage]) harbored [alteration], including [n1] class 1 and [n2] class 2 events.` — 分母、总频率、分层；p5.
 - `Complete protein-expression loss occurred in [n/N] class 1 tumors and in [n/N] class 2 tumors (P=[value]).` — IHC分母与对比；p5.
 - `[Gene A] and [gene B] showed the strongest co-enrichment with [index alteration] after false-discovery-rate correction.` — q值限定；p5.
 - `Although [gene] differed nominally between variant classes, the q value exceeded the prespecified threshold.` — 名义显著与FDR区分；p5.
 - `In the multivariable model, [alteration] remained associated with shorter overall survival after adjustment for [covariates].` — 调整后预后；pp5–6.
-- `Within the [molecularly defined] subgroup, the estimate for [co-alteration] was [direction], but the interval included 1.` — 亚组阴性或不确定；p16.
+- `Within the [molecularly defined] subgroup, the estimate for [co-alteration] was [direction], but the interval included 1.` — 亚组阴性或不确定；physical PDF p14 (Figure 3).
 - `Receipt of [therapy] was associated with longer survival (HR, [value]; 95% CI, [interval]) in this retrospective exposure analysis.` — 观察性疗效陈述；p6.
 - `The response rate differed by mutation class, whereas PFS and OS did not show statistically significant class-specific differences.` — 终点不一致；p6.
 
@@ -111,6 +114,9 @@ Numerical and inference checks: SMARCA4 alterations were detected in 407 of 4,81
 - `SMARCA4 alterations occur within an STK11/KEAP1-rich genomic context and therefore provide an important covariate framework for STK11-focused work. The study separates mutation class from protein phenotype and adjusts survival models for major co-alterations. However, retrospective treatment exposure, incomplete tissue availability, and the absence of randomized interaction testing preclude a definitive predictive claim.` — 合成段落：STK11用途→证据贡献→限制；pp6–8.
 
 ## PMID 37097610
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-37097610.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 Clinicopathologic, Genomic, and Immunophenotypic Landscape of ATM Mutations in Non–Small Cell Lung Cancer. DOI: 10.1158/1078-0432.CCR-22-3413. Formal year 2023. Official section: Translational Cancer Mechanisms and Therapy. Twenty-two physical pages.
 
@@ -217,6 +223,9 @@ Numerical and inference checks: 648 of 5,172 patients (12.5%) carried 714 ATM mu
 - `This study shows why ATM and STK11 should be interpreted within a co-mutational framework. Genomic enrichment, predicted variant effect, allelic loss, and IHC loss describe different layers of biology, while treatment associations arise from retrospective cohorts. The data therefore support covariate-aware hypothesis generation but not a standalone ATM- or STK11-directed immunotherapy rule.` — 合成段落：证据层级→STK11用途→临床边界；pp11–14.
 
 ## PMID 37733794
+
+> 2026-09-28 原文复核：见[逐篇复核与更正记录](source-rechecks/2026-09-28-37733794.md)。已核对主文、主要图表及选定表达；这是同一助手的源文复核，不是独立审稿。以下旧页码只作阅读提示；检索返回的 source_context_rechecks 才是本轮逐项核对的语境页码，不能作为逐字引文认证。源文冲突保留；被隔离的旧表达不进入写作检索。
+
 
 ATM Mutations Associate with Distinct Co-Mutational Patterns and Therapeutic Vulnerabilities in NSCLC. DOI: 10.1158/1078-0432.CCR-23-1122. Formal year 2023. Official section: Translational Cancer Mechanisms and Therapy, verified from the publisher-PDF header. Fifteen physical pages.
 

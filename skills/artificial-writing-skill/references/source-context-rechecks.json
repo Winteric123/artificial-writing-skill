@@ -1,0 +1,2523 @@
+{
+  "schema_version": 1,
+  "scope": "Human-readable same-agent source-context checks for selected entries; neither literal matching nor quotation verification. Unlisted expressions remain unsampled.",
+  "entries": [
+    {
+      "stable_id": "cancer-discovery-lang-ee1890d3adca6d138959",
+      "expression": "molecular heterogeneity 分子异质性; integrative profiling 整合分子谱分析; subtype-associated vulnerability 亚型相关脆弱性",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractvocabulary:integratedmeasuredmodalitiesonly.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-02e17da7f14f4c40e681",
+      "expression": "We integrated [data modalities] across [cohorts] to delineate [subtypes] and assess their [biological/clinical] correlates.",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        2,
+        3,
+        4
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractsyntheticobjectivekeepscohorts/modalitiesexplicit.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-a9498d2bebe7c1442251",
+      "expression": "Although [driver] defines a clinically relevant group, variation in [co-alterations] may distinguish biologically different subsets.",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionco-alterationhypothesisnotcausality.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-82e45b514988145c2cb3",
+      "expression": "consensus clustering 一致性聚类; non-negative matrix factorization 非负矩阵分解; cophenetic correlation 共表型相关系数; external validation 外部验证",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        3,
+        4,
+        16,
+        23
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "MethodsconsensusNMFandfixedclassifier;cophenetictranslationneedsdisciplinaryclarity.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-a5af5c0d8d9edb1b22d0",
+      "expression": "restore [protein] expression; compare matched perturbation and control; quantify viability after [duration]",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        11,
+        17,
+        18,
+        34,
+        35
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "MethodsperturbationcollocationsnotblanketIC50direction.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-8bff4189688cb2666c11",
+      "expression": "[Subtype] was enriched for [alteration], whereas its [immune/program] profile differed from that of [comparator].",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        25,
+        27,
+        29,
+        31
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultsgenomicandorthogonalphenotypiccomparisonswithassayboundaries.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-f21d5da9823eabed7489",
+      "expression": "The association was evident for [endpoint A], but not for [endpoint B]; sensitivity to [compound] was evaluated separately in [experimental system].",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        10,
+        11,
+        33,
+        34
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ResultsretainsRFS/OSanddrug-specificnullfindings.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-3ac81a4d232221946b63",
+      "expression": "Integrate convergent modalities → distinguish mutation from function → discuss discordant findings → consider regional loss/selection → propose bounded validation.",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionparagrapharchitecture,synthesisnotquotedparagraph.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-6bd5d249e6b05e578c84",
+      "expression": "Together, these analyses support a subtype-informed framework for [question] and nominate [experimental dependency] for further investigation.",
+      "pmid": "26069186",
+      "sha256": "2337083294ccd5fd43e3c26b26afc031c090d9e826ef8f5fd390bf7b790a4722",
+      "physical_pages": [
+        15,
+        16,
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conclusion/Significanceframeworknotclinicalrecommendation.",
+      "review_record": "source-rechecks/2026-09-28-26069186.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-93d016ae91d06e7de896",
+      "expression": "[Alteration] was associated with [clinical outcome] in [population], and matched model experiments supported a contribution to [phenotype].",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractseparatesclinicalassociationfrommodelperturbation.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-1ef53003bbbc39feb59b",
+      "expression": "The contribution of [co-alteration] to treatment-response heterogeneity remains incompletely defined, particularly within [molecular context].",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionco-mutationrationale.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-8fe49f41fb08f0288831",
+      "expression": "response-evaluable population 反应可评价人群; nonsynonymous variant 非同义变异; H-score 组织化学评分; assay-specific cutoff 检测特异阈值",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        9,
+        10,
+        20,
+        22,
+        26
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsvocabulary:responseevaluable,variant,Hscoreandassaycutoffaredifferentconcepts.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-a075668ee28f47a126e5",
+      "expression": "assign overlapping genotypes using [hierarchy]; retain assay-specific thresholds; distinguish mutation from protein loss",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        9,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodscollocationshierarchy/assaythresholds.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-fea5758e2e92726f157c",
+      "expression": "Associations were summarized as hazard ratios with [confidence level] intervals, using prespecified comparators and endpoint-specific censoring rules.",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        9,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsendpoint-specificorigin/censoringandmultiplicity.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-6d96859e75fc604a9049",
+      "expression": "Responses occurred in [numerator]/[denominator] patients in [group A] and [numerator]/[denominator] in [group B]; the survival analysis included [separate n].",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        2,
+        3,
+        5,
+        20,
+        21,
+        24
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultsresponse/survivalandsubgroupuncertainty.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-9af9b96f2c24524d8780",
+      "expression": "Under matched experimental conditions, loss of [gene] reduced [treatment response] and was accompanied by [measured immune change].",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        6,
+        10,
+        11,
+        25
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ModelResultsperturbation,notclinicalcausality.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-465eff83b28679b3282d",
+      "expression": "Reconcile human/model findings → retain assay/genotype heterogeneity → discuss small comparator subset → delimit prediction → validation need.",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        6,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionparagrapharchitecturepreservesnonuniversality.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "cancer-discovery-lang-9c3a7d1deef1c42ec8f4",
+      "expression": "These results identify [factor] as a candidate contributor to [phenotype] and support validation under clearly specified treatment and genomic contexts.",
+      "pmid": "29773717",
+      "sha256": "0e632e402ade9ee9f42d3baccd2408c323f507333f533ef391c892b8c0ffbf0f",
+      "physical_pages": [
+        8,
+        19
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closing/Significanceprospectivevalidationboundary.",
+      "review_record": "source-rechecks/2026-09-28-29773717.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-bd2088215838f7ad7e59",
+      "expression": "Although [gene] is recurrently altered in [disease], its relationship to protein expression and patient outcome is uncertain.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract background synthesis, not a quotation.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-b90ef7d2dcc045448539",
+      "expression": "We integrated tumor genomic profiling, protein-expression assessment, and clinical outcomes to characterize [alteration] in [population].",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        2,
+        3,
+        4
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract Methods; separate denominators for assay and outcome sets.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-91532903e7c630f46d64",
+      "expression": "Receipt of [therapy] was associated with [outcome] in the retrospective cohort; this comparison was not randomized.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        6,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract results with preserved design boundary.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-585b70ffa8ca19d6e747",
+      "expression": "The findings distinguish clinically relevant [variant classes] and support prospective evaluation of their prognostic and treatment-associated implications.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract conclusion does not establish predictive utility.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-512dfe2e5c11c18c0580",
+      "expression": "co-mutational genomic context",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        3,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conventional phrase, distinct from mechanistic cooperation.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-f65599ee7e5a3bf874f1",
+      "expression": "left-truncated survival analysis",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        4
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Delayed cohort entry; not left censoring or missing baseline data.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-67485f92bcf0f554aec6",
+      "expression": "The response rate differed by mutation class, whereas PFS and OS did not show statistically significant class-specific differences.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        6,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Endpoint-specific synthetic Results frame; nonsignificance is not equivalence.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-ebc96a5c2385be10dbd3",
+      "expression": "A response-rate difference without corresponding PFS or OS separation should not be presented as a validated predictive effect.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        6,
+        7,
+        8,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussion guardrail is synthesis, not author quotation.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-45764b1ffe0110bb9650",
+      "expression": "The retrospective immunotherapy signal supports further evaluation but does not establish treatment-selection utility.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closing synthesis preserves retrospective limitation.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-a4a4105af9ec1ff2701a",
+      "expression": "Accounting for SMARCA4, STK11, KEAP1, and KRAS together may improve interpretation of outcomes in molecularly defined NSCLC cohorts.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        7,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Translational synthesis, conditional not causal.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-710d4a6f41943b1f478a",
+      "expression": "SMARCA4 alterations occur within an STK11/KEAP1-rich genomic context and therefore provide an important covariate framework for STK11-focused work. The study separates mutation class from protein phenotype and adjusts survival models for major co-alterations. However, retrospective treatment exposure, incomplete tissue availability, and the absence of randomized interaction testing preclude a definitive predictive claim.",
+      "pmid": "32709715",
+      "sha256": "123cd6740a620ed3c818b3411b3cc2aa38262f4b51d5b9486a10b886e983843a",
+      "physical_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetic Discussion paragraph; transferable sequence is context, separate evidence layers, limitations.",
+      "review_record": "source-rechecks/2026-09-28-32709715.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-c00b286ad48f7ef30bd3",
+      "expression": "The clinicogenomic and immune correlates of [DDR-gene] alterations in NSCLC remain incompletely characterized.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        2,
+        3,
+        4
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract background and research gap.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-b435b8afbb0dbef8aa07",
+      "expression": "Treatment outcomes were evaluated separately for [therapy A] and [therapy B], with molecular subgroups defined a priori or exploratorily as specified.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        6,
+        10,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract methods synthesis; do not label exploratory subgroups prespecified.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-0a4fa24b70f57b59068e",
+      "expression": "ATM status alone was not associated with response or survival after [therapy], whereas the [ATM/TP53] subgroup showed an exploratory signal.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        10,
+        11,
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract Results, therapy and endpoint specific, not a causal interaction.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-40e0d1747a8e17d2cb76",
+      "expression": "ATM alterations define a heterogeneous molecular subgroup whose therapeutic implications depend on variant function and co-mutational context.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        12,
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract conclusion synthesis, therapeutic implication remains hypothesis.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-18be3fcb77912592e6dd",
+      "expression": "variant-level functional heterogeneity",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        4,
+        12,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introduction concept; predicted effect is not functional validation.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-ad922ea5b1ddb2f6827b",
+      "expression": "putative loss of heterozygosity",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        5,
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Deleterious mutation withcopydeletion, conditional definition not direct phasing.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-df78d6a35a7f793de78f",
+      "expression": "bulk-RNA immune-cell deconvolution",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        6,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "TIMER/CIBERSORT/XCell estimates, not single-cellRNAsequencing.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-eba7e443b831c982ada4",
+      "expression": "Neither ATM/STK11 nor ATM/KEAP1 subgroup comparisons reached statistical significance; limited subgroup size precludes a no-effect conclusion.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        11,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Main-text-supported synthesis; supplementary subgroup panels unreviewed.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-9a54d49b177323476008",
+      "expression": "Nonsignificant subgroup comparisons do not demonstrate equivalence or absence of biological interaction.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        11,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussion guardrail, not source quotation.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-9dc896cde79beace0ba2",
+      "expression": "ATM-mutant NSCLC comprises functionally and genomically distinct subsets rather than a uniform biomarker group.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        12,
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closing synthesis, keep analytic ATMmutdefinition.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-5f8a35110c04d7a46fcd",
+      "expression": "Variant class, allelic status, and co-mutations should be integrated when evaluating ATM as a biomarker in NSCLC.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        13,
+        17
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Translational synthesis not validated clinical decision rule.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-db0f24f1d247c1d08218",
+      "expression": "This study shows why ATM and STK11 should be interpreted within a co-mutational framework. Genomic enrichment, predicted variant effect, allelic loss, and IHC loss describe different layers of biology, while treatment associations arise from retrospective cohorts. The data therefore support covariate-aware hypothesis generation but not a standalone ATM- or STK11-directed immunotherapy rule.",
+      "pmid": "37097610",
+      "sha256": "4bbdf5563fd45f7d42ec88f21ebbaf6f70411e05e133e8754ed40141717ddecd",
+      "physical_pages": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetic paragraph: separate assay layers and treatment hypotheses.",
+      "review_record": "source-rechecks/2026-09-28-37097610.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-8e5dc4f7a86baa0cc50c",
+      "expression": "The molecular correlates and therapeutic implications of ATM alteration in NSCLC have not been fully resolved.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract background gap.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-f9b9f8f2a40123ee180c",
+      "expression": "Co-mutation patterns were assessed across cohorts, whereas treatment outcomes were evaluated in a separately curated functional-variant subset.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        3,
+        5,
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract methods distinguishes analysisdefinitions.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-f88144824d785e350bd5",
+      "expression": "Chemotherapy induced greater relative STING-pathway signaling after ATM loss without uniformly increasing direct drug sensitivity.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        10,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractresults preservesreadoutvsviabilitydistinction; sensitivityunderlyingSupplementnotreviewed.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-3d47da0ab9c74091912d",
+      "expression": "The findings identify context-dependent molecular and treatment-associated hypotheses that require prospective and mechanistic validation.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusion,notclinicalvalidation.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-bea8da0072c86dfa16a2",
+      "expression": "context-dependent co-mutation pattern",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        2,
+        5,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionconcept withKRASstrata.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-5830b2260d2e4966eb1c",
+      "expression": "reverse-phase protein array",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        2,
+        3,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Targetedproteinprofiling,notglobalmassspectrometryproteomics.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-8a1defc8fc06ad99a9f6",
+      "expression": "Within KRAS-wild-type tumors, ATM co-occurred with STK11, KEAP1, and selected chromatin-remodeling alterations.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        5,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ConditionalResultsframe;notgeneralizedtoKRASmut.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-5c3a9f1c04b8283aae74",
+      "expression": "Greater pathway induction after chemotherapy does not imply greater direct cytotoxic sensitivity, which was not observed uniformly.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        10,
+        12,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionguardrail distinguishesrelativechangeandabsoluteeffect.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-7333f72bf13752e9e658",
+      "expression": "The combined clinical and preclinical observations warrant validation but do not establish generalized chemotherapy sensitivity or predictive utility.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closingsynthesisboundedbydesign.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-4c22ea109fb2625275fd",
+      "expression": "KRAS status should be incorporated when interpreting ATM/STK11 co-mutation patterns and designing biomarker-stratified studies.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        2,
+        5,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Translationalframe preservesconditioning.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-fbd5dec7d89a66b8c6c9",
+      "expression": "The study triangulates genomic, clinical, and perturbational evidence but does not make those evidence layers interchangeable. KRAS stratification exposes context-specific ATM/STK11 relationships; retrospective cohorts generate a combination-therapy hypothesis; and isogenic experiments support pathway modulation rather than broad drug sensitivity. Future STK11-focused analyses should preserve these distinctions and test treatment interactions prospectively.",
+      "pmid": "37733794",
+      "sha256": "c233223884b13f02f9ec63568d9d1520d2b9303b0fdf4e74bb575bc6010d5c6b",
+      "physical_pages": [
+        5,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Syntheticparagraph integratesdistinctevidencelayerswithoutclaimingclinicalcausality.",
+      "review_record": "source-rechecks/2026-09-28-37733794.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-03b556a230d441e62264",
+      "expression": "We combined [clinical analyses] with [experimental systems] to evaluate whether [intervention] addresses [genotype-associated phenotype].",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        1
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmultileveldesignseparatesclinicalandexperimentalwork.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-57c6c9ddb73b73e480c7",
+      "expression": "Whether [additional intervention] alters the adverse outcome pattern associated with [genomic context] remains an important question.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        1,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionregimen-specificquestionnotuniversallyresistantgenotype.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-52e07e93898a2ba9e57f",
+      "expression": "mutation-evaluable subset 突变可评价亚集; unstratified Cox model 非分层Cox模型; multivariable adjustment 多变量调整; duration of response 缓解持续时间",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        11,
+        12,
+        35
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methods:trialunstratifiedvsretrospectiveadjustedmodels;DoRconditional.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-487f18eade79495817bd",
+      "expression": "define [either-gene union] separately from [double-mutant subset]; retain endpoint-specific cutoffs; analyze responders for [DoR]",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        3,
+        4,
+        12,
+        35
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Collocationunionnotintersection,endpointcutoffs.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-72a6fefe3c1c0ac2e526",
+      "expression": "[Mouse] single-cell profiles were analyzed using [workflow], whereas immune composition in [human cohort] was inferred from bulk expression data.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        12,
+        17,
+        28,
+        29,
+        30
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methods:mouseSCvshumanbulkinference.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-84e3daf25ae241e1615f",
+      "expression": "quantify guide enrichment relative to [control]; account for tumors nested within mice; verify depletion before interpreting efficacy",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        13,
+        14,
+        15,
+        16,
+        34
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsnestedunitsandperturbationconfirmation.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-afd9f4f89e9c370f87b3",
+      "expression": "[Regimen A] had a numerically favorable [endpoint] estimate versus [regimen B] (HR [value], 95% CI [lower–upper]), but the interval included 1.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        3,
+        4,
+        24
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ResultsdirectTDCT/DCTCIincludes1;notstatisticallydemonstratedsuperiority.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-8e5b8d732799aa9d4d03",
+      "expression": "[Intervention] altered [measured immune state]; depletion of [cell population] attenuated efficacy in [model], supporting a context-specific contribution.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        7,
+        8,
+        34
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultsmodel-specificnecessity,notuniversalimmune-cellrule.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-103abc9c9be50c38f49e",
+      "expression": "Principal clinical signal → experimentally tested mechanism → gene/model heterogeneity → source/selection limitations → prospective comparison.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionparagrapharchitecture:convergencewithlimitations.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "nature-lang-8fa2ce2a7a1b8563022b",
+      "expression": "These findings provide a rationale for testing [strategy] in [defined molecular context], while prospective evidence is needed to establish its clinical utility.",
+      "pmid": "39385035",
+      "sha256": "43eb81bea1e19a6b5060c6216c1ea74f1d3250e8c984529fa1157ac36a073a5c",
+      "physical_pages": [
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conclusionprospectivecomparisonneeded,notclinicaldecisioninstruction.",
+      "review_record": "source-rechecks/2026-09-28-39385035.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-41f008125d30485e4be2",
+      "expression": "The clinical relevance of copy-number loss remains uncertain despite extensive evidence for coding mutations in the same genes.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractgapframe.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-78a552c6f1d968757e48",
+      "expression": "Clinicopathologic, expression, treatment, and immune analyses were performed in distinct cohorts and retained separate denominators.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        2,
+        4,
+        5,
+        9,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodscriticalanalysis-setboundary.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-7388d8a580e3836deb56",
+      "expression": "ICI-alone results were cohort dependent, with no PFS or OS association in the combined or MSKCC cohorts.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        9,
+        10,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractresultsnegativefinding;Supplementdetailsnotreviewed.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-42539ea913ef122eae77",
+      "expression": "The findings support evaluation of copy-number state alongside sequence variants, while prospective evidence is required before treatment selection.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusionnotvalidatedpredictivebiomarker.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-ac422a9a5dde1b3a8690",
+      "expression": "mono-allelic deletion",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionalterationclassnotfunctionalnull.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-7bbc739a22cbe8f7212d",
+      "expression": "same-gene mutation exclusion",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        2,
+        4,
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsexclusionforeachgene,notallthreeunlessspecified.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-fc9004c1277c00e23e4e",
+      "expression": "lower LKB1 protein expression",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ResultsRPPAzscoremodestshift,notIHCcompleteloss.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-9c436d448bc7d0256520",
+      "expression": "The close genomic proximity of STK11, KEAP1, and SMARCA4 limits attribution of the observed association to any one gene.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        9,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussioncollinearity/genomiclinkageboundary.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-03b843d234ff576b2d55",
+      "expression": "Comprehensive genomic reporting should preserve both sequence-variant and copy-number information.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conclusionreportingprinciple,notprescribingrecommendation.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-01e19fedb1462c6be611",
+      "expression": "Figure 3 reports ORR, PFS, and OS under chemoimmunotherapy with separate denominators for each endpoint.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Figurenarrativedistinguishesresponseevaluablefromsurvivalsets.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-20f6a5cdbb8ad12b6d16",
+      "expression": "This study provides a direct framework for expanding an STK11 manuscript beyond sequence mutations. Its principal strength is the ordered evaluation of copy-number prevalence, allelic state, downstream expression, treatment outcomes, and immune phenotype. However, the tight linkage of STK11, KEAP1, and SMARCA4 on chromosome 19p, platform-specific deletion calling, retrospective treatment exposure, and unsupplied supplementary models prevent a causal or validated predictive conclusion. The framework should guide explicit genotype definitions and analysis-set transitions while keeping mono-allelic loss, biallelic inactivation, RNA abundance, and LKB1 protein expression distinct.",
+      "pmid": "39864548",
+      "sha256": "8338f6e348cdf1d3891b71acc163fe4b92630f688d6647fd9e5c944c875cc51c",
+      "physical_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "SyntheticDiscussionparagraphkeepsassay/evidencelevelsseparate.",
+      "review_record": "source-rechecks/2026-09-28-39864548.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-ff63d5d96800f35ccfe9",
+      "expression": "The clinical behavior of KRAS G12V NSCLC may be shaped by smoking exposure, co-mutations, and immune context.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractbackgroundconditionalnotmechanism.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-891298670a5faa6253ab",
+      "expression": "Co-mutations, tobacco exposure, PD-L1 expression, CD8 infiltration, and treatment outcomes were evaluated in nested analysis sets.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodswithdistinctdenominators.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-e876c95c95b794da44a1",
+      "expression": "STK11 and KEAP1 co-mutations were common, while immune-checkpoint-blockade-containing therapy was associated with favorable real-world outcomes.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractresults,notSTK11-specifictreatmentbenefit.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-07dc4f5cfdbd7676e7ef",
+      "expression": "The findings support molecularly contextualized treatment evaluation rather than interpreting KRAS G12V in isolation.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusionsynthesis.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-68850d9eac4f3734b654",
+      "expression": "co-mutational context",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionphrasewithoutmechanisticclaim.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-5103953f81efe1cdf239",
+      "expression": "real-world overall survival",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Definedfromdiagnosis;notinterchangeablewithPFSorigin.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-39457be83fa164d844d8",
+      "expression": "TP53, STK11, and KEAP1 were the most frequent co-alterations in KRAS G12V tumors.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultswithgene-specifictesteddenominators.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-21ee0afae543cc65aae3",
+      "expression": "Favorable outcomes under ICB-containing therapy are hypothesis-generating because treatment allocation was not randomized and co-mutations may modify prognosis.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionguardrail,notrandomizedcomparison.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-aa0a140a1dc7b0fc268c",
+      "expression": "KRAS G12V NSCLC is strongly associated with tobacco exposure, frequent STK11/KEAP1 co-mutation, and favorable observed outcomes under ICB-based treatment.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closingframe STK11/KEAP1meansindividualco-alterationswithKRAS,notverifiedjointtriplemutationrate.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-4dbf41f31c17d84657f0",
+      "expression": "For STK11-focused writing, this study provides a direct allele-specific framework linking cohort definition, co-mutation landscape, immune phenotype, and treatment outcomes.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetictranslationalwritingstructure,notSTK11clinicalvalidation.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-55ecb11042f5fb2bb3a1",
+      "expression": "Connect smoking, co-mutations, and immune phenotype without assigning causality; compare ICB-containing and chemotherapy outcomes as retrospective associations and identify interaction testing as the next step.",
+      "pmid": "41417462",
+      "sha256": "3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556",
+      "physical_pages": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Paragrapharchitectureinstructionnotarticlequotation.",
+      "review_record": "source-rechecks/2026-09-28-41417462.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-b804d3ea5a3273cbb169",
+      "expression": "The prognostic relevance of [driver] under the current stage III treatment paradigm remains underexplored.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        6,
+        8,
+        9
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractgap,stage/pathwayspecific.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-5c05f15c16b22cd60c3c",
+      "expression": "We compared PFS and competing-risk recurrence outcomes by [driver] status and then evaluated co-alterations in the sequenced subset.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodsdistinctanalysissubsets.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0ce4d3ec6fb2b3a402ed",
+      "expression": "Within KRAS-mutant tumors, adverse PFS was concentrated in cases with STK11 and/or CDKN2A co-alterations.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        16,
+        33
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "AbstractresultscombinednotSTK11-only.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0d6fc36eb537c4bb4351",
+      "expression": "The co-alteration-defined subgroup warrants prospective evaluation in biomarker-stratified trials.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        7,
+        21,
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusionnotintensificationefficacy.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0d47a5498d62793c668e",
+      "expression": "oncogenic driver",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        8,
+        9,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionterm;curateddriverdefinition.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-2f4ffccf142e22a24c32",
+      "expression": "Locoregional and distant recurrence were treated as competing first-failure events.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsdoesnotuse1-KMforcumulativeincidence.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-2059fbb74bed89532d8e",
+      "expression": "The combined STK11/CDKN2A group should be described as co-alteration-defined rather than as an STK11-only subgroup.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        16,
+        33
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultsgroupattributionguardrail.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0417e7f1c513f9987792",
+      "expression": "Because all patients initiated durvalumab, reduced effectiveness relative to a non-durvalumab strategy cannot be estimated.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        9,
+        21
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionabsenceofcomparator.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-8fcb3ec047b2af208752",
+      "expression": "The results provide a rationale for biomarker-stratified trials rather than evidence for immediate treatment intensification.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        21,
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conclusiontransferceiling.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-c52a77004434778f0e23",
+      "expression": "Table 2 reports the complete-case adjusted model and makes the analysis denominator visible.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        29
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Table-narrativestructuren177not208.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-aca7b18f6139b42673e2",
+      "expression": "Among [N] patients treated with cCRT followed by durvalumab, KRAS-mutant disease was associated with shorter PFS but not OS. Distant metastasis, particularly brain metastasis, was more frequent, whereas no statistically significant difference in locoregional recurrence was detected. In the sequenced subset, adverse PFS was observed in the combined KRAS plus STK11 and/or CDKN2A group; KRAS-mutant tumors without these events did not show a statistically significant PFS difference from KRAS wild type. Because the analysis was retrospective and lacked a non-durvalumab comparator, the findings are prognostic within the observed treatment pathway rather than proof of durvalumab resistance.",
+      "pmid": "41619904",
+      "sha256": "703afa02a0dc2172c405143d86ab11f7b4fcd06f9036207daf1a955245dac0e8",
+      "physical_pages": [
+        13,
+        14,
+        15,
+        16,
+        21,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "SyntheticResultsparagraph;comparablemeansnosignificantdifference,notformalequivalence;localizedassociationnotcausation.",
+      "review_record": "source-rechecks/2026-09-28-41619904.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-7259eb78da9e06732136",
+      "expression": "We first described [alteration] across [assayed specimens] and then examined its distribution within [lineage]. [Co-alteration] was associated with [direction] in [normalized metric]. In separate clinical cohorts, [metric] was associated with [specified outcome], although not all endpoint or subgroup contrasts were significant. Assay concordance also varied with [sample characteristic]. These analyses use distinct denominators and should not be combined into a single efficacy claim.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetic Results paragraph preserves specimen, lineage, clinical cohort and concordance denominators rather than implying one efficacy population.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-19a85671359c1a2f38ff",
+      "expression": "Absolute copy number may not distinguish focal amplification from broader changes in tumor ploidy.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        1,
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conceptual synthetic background, not a verbatim source sentence.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-46c92266b0d17c7525cd",
+      "expression": "We characterized [alteration] across [sample set] and evaluated a ploidy-normalized measure in separate assay-concordance and treatment-outcome cohorts.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        1,
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract Methods synthesis preserving independent analysis sets.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-aedba1842396e566ff5f",
+      "expression": "[Metric] varied by tumor lineage and genomic context and was associated with [outcome] in selected treatment cohorts.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract Results frame; placeholders require the user's own data and an association claim.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-68db9214d92ae12ba21a",
+      "expression": "These observations support further evaluation of context-aware copy-number measurements without establishing a universal treatment-selection threshold.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstract conclusion synthetic boundary consistent with exploratory thresholds.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-279a7a5ec46c056eae28",
+      "expression": "gene amplification",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conventional introduction terminology; amplification and overexpression remain distinct.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-36f64d026f53acfc837f",
+      "expression": "left-truncated risk interval",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Context-supported methodological paraphrase; entry occurs at the later specified visit/report date, not an arbitrary time origin.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-dfde1c352299def26e14",
+      "expression": "Within [tumor lineage], [co-alteration] was associated with lower [continuous metric].",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetic reporting of a conditional association, not cause, exclusivity or therapeutic prediction.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-9c8b81300a2c7ccd3930",
+      "expression": "The therapeutic analyses in [cancer types] cannot be generalized to [unrepresented cancer] without additional validation.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        7,
+        8,
+        11,
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Safe Discussion transfer keeps HER2 clinical cohorts separate from NSCLC genomic context.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-14ea530cd00bfad103e4",
+      "expression": "The findings motivate prospective assessment of [metric] within a clearly defined assay and treatment setting.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closing synthesis, not evidence of prospective clinical validation already performed.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-5ae64b96900078b3d286",
+      "expression": "A context-adjusted molecular measure may refine biomarker interpretation, provided its clinical use is validated for the intended population.",
+      "pmid": "41870274",
+      "sha256": "926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a",
+      "physical_pages": [
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Synthetic Translational Relevance; conditional potential use, not prescribing guidance.",
+      "review_record": "source-rechecks/2026-09-28-41870274.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-7caa4b3f81b1e0fe5b7b",
+      "expression": "The clinical and genomic features of [driver] alterations outside [canonical domain] remain incompletely characterized.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractgapframe.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-5c5d02dbde6c88c801aa",
+      "expression": "Genomic associations were assessed in [discovery cohort], whereas treatment outcomes were evaluated in an independent clinical cohort.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        4,
+        5,
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodsseparatesdatasets.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-e289059c5aa9376ee732",
+      "expression": "The unadjusted PFS estimate favored [class], whereas the adjusted confidence interval included the null.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "AbstractresultsusesnumericResultsratherthanoverstatedabstract.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0800f94dfdea08c80a35",
+      "expression": "The findings support domain-aware biomarker development and prospective treatment evaluation rather than immediate treatment selection.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusionguardrail.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-c6af1c582ea982f5f4c1",
+      "expression": "variant of unknown significance",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        5,
+        6,
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Introductionterminology;VUSnotprovenbenignorpathogenic.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-4bfd96b253a59eb5443a",
+      "expression": "risk-set adjustment for delayed entry",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsterm;lefttruncationnotcensoring.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-e3b14f71975d342563bb",
+      "expression": "STK11 was enriched in [ERBB2 class], but this co-occurrence analysis did not test an STK11-specific treatment effect.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        8,
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "ResultsboundarydirectlyrelevanttoSTK11writing.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-18088eccb4146c496036",
+      "expression": "Co-occurrence does not establish clonal order, biological cooperation, or a shared resistance mechanism.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        12
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussioncontextlackspairedresistancesamples.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-3bd8985c633a3ae6db64",
+      "expression": "Observed treatment-outcome differences warrant prospective validation before use in treatment selection.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closingsynthesis,notprescribing.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-b5171c61f5a031fe75fb",
+      "expression": "Figure 2 maps class-specific co-alterations, positioning STK11 within the broader genomic context rather than as an isolated event.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        22
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Figure-narrativearchitecture.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-4ece8f22d251b68b1aab",
+      "expression": "Among [N] tumors with oncogenic [driver] alterations, molecular classes differed in clinicopathologic features, genomic burden, and co-mutation patterns. [Class A] was enriched for STK11, KEAP1, and SMARCA4, whereas [class B] showed a comparatively sparse co-alteration profile. In the independent outcome cohort, the unadjusted PFS estimate favored [class A], but the adjusted confidence interval included the null. These findings support molecular heterogeneity while remaining insufficient to establish a predictive treatment effect.",
+      "pmid": "41932614",
+      "sha256": "aee848e880e40d6e2304535aa0cf7e8fa2d2421d8898388b114d42ef9e6c5c7d",
+      "physical_pages": [
+        7,
+        8,
+        9,
+        10,
+        19,
+        21,
+        22,
+        24
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "SyntheticResultsparagraphseparatesgenomicsandmixed-exposureoutcomes.",
+      "review_record": "source-rechecks/2026-09-28-41932614.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-c9c1372aeb010b17d69d",
+      "expression": "The prognostic and therapeutic implications of individual codon 61 substitutions remain uncertain.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractbackgroundresearchgap.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-135b47963ef7af337e4b",
+      "expression": "Molecular features were correlated with treatment exposure and time-to-event outcomes in subtype-defined analysis sets.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodsgenericframe;clarifygenomicsbysubtypebuttreatmentsubgroupsnotcomparedQ61HvsQ61L.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-6f3368f4a3f106377c5c",
+      "expression": "subtype-specific co-mutational landscape",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        9,
+        20
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractresultsterminologywithtestedgenedenominators.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-96ef137a37df591c9390",
+      "expression": "Immunotherapy-based regimens were associated with favorable outcomes, particularly in PD-L1-high disease, but causal treatment benefit cannot be inferred.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        10,
+        13,
+        14,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusionqualifiedobservationalassociation.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-bddf43c0438185025da0",
+      "expression": "allelic heterogeneity",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        3,
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "IntroductionKRASamino-acidsubstitutionheterogeneity,notzygosity.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-e01f0fc34febfe7630e2",
+      "expression": "panel-specific gene coverage",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        6,
+        9,
+        15,
+        19
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Methodsassayavailabilitydefinesdenominator.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-1fab6199221fe22bcf5f",
+      "expression": "Q61H tumors were frequently co-altered in STK11, TP53, and KEAP1, whereas Q61L showed a distinct and less STK11-enriched genomic context.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        9,
+        20
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultscohort-specific,zerocasesnotproofexclusivity.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-ce9b904518f56382654c",
+      "expression": "The observed immunotherapy association may reflect PD-L1 distribution, STK11/KEAP1 context, and selection factors; a predictive effect requires comparative interaction evidence.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussionalternativeexplanations,notprovenmechanism.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-6ba31f0cb146d34d38e9",
+      "expression": "KRAS Q61 subtypes show distinct STK11/KEAP1 landscapes and treatment-associated outcomes that support allele-specific clinical annotation.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        9,
+        10,
+        12,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Closingframe mustnotimplysignificantQ61H/Ltreatmentinteraction;genomicandtherapycohortresultsareseparate.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-d2bddc7bbae9191fc5a1",
+      "expression": "For STK11-focused studies, the paper provides a direct model for conditioning co-mutation analyses on KRAS allele rather than pooling all KRAS alterations.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        2,
+        9,
+        20
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Translationalwritingframeworknotclinicaldecisionrule.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "ccr-lang-1b5ec19957aea6ac2432",
+      "expression": "Interpret Q61H–STK11 enrichment and Q61L mutual exclusivity as genomic-context observations, relate these patterns to treatment associations, and explicitly address retrospective confounding.",
+      "pmid": "42268349",
+      "sha256": "13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766",
+      "physical_pages": [
+        9,
+        12,
+        13,
+        14,
+        15,
+        20
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Paragrapharchitecture;here mutualexclusivitymeansnoobservedco-occurrenceinassayedsubset,notformalmechanisticproof.",
+      "review_record": "source-rechecks/2026-09-28-42268349.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-7b72ea527637f84019cd",
+      "expression": "oncogene-driven disease",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractbackground,driverdefinitionrequiresassaycriteria.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-eb13d248796b6cd576aa",
+      "expression": "Associations with clinicopathologic features and co-alterations were characterized in the genomic cohort, whereas treatment outcomes were assessed in an independent clinical cohort.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractmethodscohortseparation.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-fa0894765b33506ee398",
+      "expression": "complete versus partial gene loss",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        5,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractresults:wholegenevsexonextent,bothhomozygous.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0e21ee4365ef118fed03",
+      "expression": "risk-stratification candidate",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        2,
+        13,
+        14,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Abstractconclusioncandidate notvalidatedclinicalutility.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-4a5e5fa917dd20b55e7c",
+      "expression": "clinical and therapeutic implications remain incompletely understood",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Gaplanguage,notallbiologicalknowledgeabsent.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-c612febbe9d7dac87943",
+      "expression": "NGS-IHC concordance",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Analyticalagreementinselected38tumors,notgeneralinterchangeability.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-22730d313bec1778c767",
+      "expression": "The dual-loss subgroup had the poorest observed response and survival, but discordant genotype groups were sparse.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Resultsretainsanalysissetandprecisionboundary.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-45c1c607a9cbf2fe5ac6",
+      "expression": "Because all patients received targeted therapy, the association is prognostic within that treatment setting and does not demonstrate treatment-effect prediction.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        3,
+        5,
+        13,
+        14
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Discussiondesign-basedinferenceceiling.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-4052272198f2a977087e",
+      "expression": "The data motivate biomarker-guided trials of synthetic-lethal combinations but do not establish their clinical benefit.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        14,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Conclusion,trialhypothesisnotobserveddrugresponse.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-b75f4770c60e9f53f3e3",
+      "expression": "Table 2 defines the smaller treatment cohort and identifies baseline brain-metastasis imbalance before survival analysis.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "Tablenarrativebeforeadjustment.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-d4b249f0fca91d62e494",
+      "expression": "For STK11-focused writing, this article offers a transferable structure rather than direct STK11 evidence. The reusable sequence is to define loss operationally, map neighboring-locus co-deletion, test orthogonal assay concordance, report outcomes in a separate clinical cohort, and examine paired progression samples. Its MTAP-specific metabolic biology and PRMT5/MAT2A hypotheses must not be imported into STK11 claims. The sparse discordant genotypes also illustrate why combined-locus risk groups should not be used to assign a gene-specific mechanism.",
+      "pmid": "42409117",
+      "sha256": "c7944045c108c89f589b81272b5d0b997bda46bc9b6065d48e12941f7cba8729",
+      "physical_pages": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "SyntheticDiscussionparagraph,indirectarchitectureonly.",
+      "review_record": "source-rechecks/2026-09-28-42409117.md",
+      "reviewed_on": "2026-09-28",
+      "reviewer_id": "codex-main-agent-2026-09-28",
+      "review_method": "same_agent_source_recheck"
+    }
+  ]
+}

@@ -8,8 +8,10 @@ sys.dont_write_bytecode = True
 
 from library_common import atomic_json, content_hash, file_hash, journal_registry, read_csv, read_json, reference_path
 from validate_reading_quality import validate
-from retrieval_metadata import article_scope, expression_metadata
+from retrieval_metadata import article_scope, contains_phrase, expression_metadata
 from source_provenance import FACETS, attach_pdf_locator, load_pdf_locators, load_scope_annotations
+from source_context_rechecks import attach_context_recheck, load_context_rechecks
+from coalteration_topics import article_topics, load_annotations
 
 
 def normalize(value):
@@ -32,7 +34,7 @@ def markdown_entries(path):
             pmid, heading = '', ''
         elif line.startswith('### '):
             heading = line[4:].strip()
-        elif pmid and heading and line.startswith('- `'):
+        elif pmid and heading and (line.startswith('- `') or ('paragraph' in heading.casefold() and line.startswith('`'))):
             section_match = re.search(r'abstract (background|methods|results|conclusion)|introduction|methods|results|discussion|conclusion|figure', heading, re.I)
             if not section_match:
                 raise ValueError(f'Unmapped language heading: {path.name}:{number}: {heading}')
@@ -77,9 +79,16 @@ def build(skill):
     annotations = read_json(references / 'retrieval-annotations.json')
     annotations['articles'] = load_scope_annotations(skill, vocabulary)
     pdf_locators = load_pdf_locators(skill)
+    context_rechecks = load_context_rechecks(skill, pdf_locators['sources'])
+    dependencies.add('source-context-rechecks.json')
+    dependencies.update(record['review_record'] for record in context_rechecks.values())
     dependencies.update({'source-scope-backfill.json', 'source-pdf-locators.json'})
     dependencies.update(pdf_locators['source_asset_hashes'])
     library = {row['pmid']: row for row in read_csv(references / 'library-index.csv')}
+    co_annotations = load_annotations(skill, list(library.values()))
+    dependencies.update({'coalteration-annotations.json', 'coalteration-topics.md', 'preprint-source-register.csv'})
+    for record in [*co_annotations['articles'].values(), *co_annotations.get('preprints', {}).values()]:
+        dependencies.update(evidence['source'] for evidence in record.get('evidence', []))
     expression_annotations = {}
     for annotation in annotations['expressions']:
         selector = (annotation['pmid'], annotation['expression'])
@@ -97,6 +106,8 @@ def build(skill):
     asset_lines = {}
     controls = read_json(reference_path(skill, 'language-controls.json'))
     cards = read_json(reference_path(skill, 'language-usage-cards.json'))['cards']
+    cards.extend(read_json(reference_path(skill, 'language-usage-cards-rechecks.json'))['cards'])
+    dependencies.add('language-usage-cards-rechecks.json')
     if len({card['id'] for card in cards}) != len(cards):
         raise ValueError('Duplicate usage-card ID')
     for card in cards:
@@ -159,7 +170,7 @@ def build(skill):
                                                supplied_pdf_version=versions.get(identifier, {}).get('supplied_pdf_version', 'not_recorded'),
                                                source_sha256=versions.get(identifier, {}).get('sha256', ''),
                                                highlight=identifier in highlights) for identifier in source_ids],
-                         usage_cards=[card for card in cards if any(term.casefold() in row['expression'].casefold() for term in card['match_terms'])])
+                         usage_cards=[card for card in cards if any(contains_phrase(row['expression'], term) for term in card['match_terms'])])
             selected = [(identifier, row['expression']) for identifier in source_ids if (identifier, row['expression']) in expression_annotations]
             if len(selected) > 1:
                 raise ValueError(f'Ambiguous multi-source expression annotation: {selected}')
@@ -172,6 +183,7 @@ def build(skill):
                 metadata['expression_annotation_status'] = 'curated-expression-topic'
             entry.update(metadata)
             attach_pdf_locator(entry, pdf_locators)
+            attach_context_recheck(entry, context_rechecks)
             apply_controls(entry, controls)
             if any(quality[identifier]['review_status'] == 'needs_correction' for identifier in source_ids) and entry['retrieval_state'] != 'quarantined':
                 entry['retrieval_state'] = 'needs_source_check'
@@ -181,6 +193,7 @@ def build(skill):
                 scope_row = {**library.get(article['pmid'], {}), 'scope_reference': 'library-index.csv'}
                 article['source_scope'] = article_scope(scope_row, vocabulary, annotations['articles'].get(article['pmid']))
                 article['source_pdf'] = pdf_locators['sources'].get(article['pmid'], {'identity_check': 'not-yet-located'})
+                article['co_alteration_topics'] = article_topics(article, co_annotations)
                 articles[article['pmid']] = article
             entry['usage_card_ids'] = [card['id'] for card in entry.pop('usage_cards')]
             entry['source_alert_ids'] = [alert['id'] for alert in entry.pop('source_alerts')]
@@ -194,6 +207,8 @@ def build(skill):
         raise ValueError('Duplicate stable language ID; reconcile identical source records')
     if set(pdf_locators['entries']) - set(identifiers):
         raise ValueError('PDF locators reference retired entries; regenerate PDF locators')
+    if set(context_rechecks) - set(identifiers):
+        raise ValueError('Source-context rechecks reference retired entries')
     for rule in controls['entry_rules']:
         if not set(rule.get('stable_ids', [])).issubset(identifiers):
             raise ValueError(f'Entry control references an absent stable ID: {rule["id"]}')
@@ -210,6 +225,7 @@ def build(skill):
                     journals=dict(Counter(entry['journal_id'] for entry in entries)),
                     retrieval_states=dict(Counter(entry['retrieval_state'] for entry in entries)),
                     usage_card_count=len(cards), dependencies=dependency_hashes,
+                    context_rechecked_entries=len(context_rechecks),
                     source_scope_status=dict(Counter(article['source_scope']['annotation_status'] for article in articles.values())),
                     source_facet_coverage={field: dict(Counter(article['source_scope']['facet_status'][field] for article in articles.values())) for field in FACETS},
                     pdf_locator_states=dict(Counter(entry['source_locator']['state'] for entry in entries)),

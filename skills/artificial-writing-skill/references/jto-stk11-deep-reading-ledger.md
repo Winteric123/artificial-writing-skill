@@ -1,5 +1,9 @@
 # JTO STK11-priority deep-reading ledger
 
+2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
+
+Historical four-highlight subset. Since2026-09-28, [jto-deep-reading-ledger.md](jto-deep-reading-ledger.md) is the current authority for all registered JTO sources; this file preserves the original priority reads and dates. The current quality register covers both this subset and later non-highlight additions.
+
 ## Authority and scope
 
 This ledger is the authority only for the user-designated JTO STK11-priority source set. It is not an inventory of all JTO articles and must not be used to infer a journal-wide completion rate.

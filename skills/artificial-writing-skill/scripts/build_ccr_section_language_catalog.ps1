@@ -98,11 +98,14 @@ $reading20260926 = @(
 )
 $reading2023Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2023-completion-2026-09-26-manifest.csv") -Encoding UTF8)
 $reading2021To2022Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2021-2022-completion-2026-09-26-manifest.csv") -Encoding UTF8)
-$sectionIndexedReadings = @($reading2024Intake) + @($readingLatestIntake) + @($readingKeapnessStk11) + @($reading20260926) + @($reading2023Completion) + @($reading2021To2022Completion)
+$reading20260928 = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-09-28-reading-manifest.csv") -Encoding UTF8)
+$sectionIndexedReadings = @($reading2024Intake) + @($readingLatestIntake) + @($readingKeapnessStk11) + @($reading20260926) + @($reading2023Completion) + @($reading2021To2022Completion) + @($reading20260928)
 foreach ($article in $sectionIndexedReadings) {
     if ($article.reading_stage -ne "main_text_deep_read_complete") { continue }
     $assets[$article.source_asset] = [ordered]@{
-        source_set = if ($article.pmid -in $reading2021To2022Completion.pmid) {
+        source_set = if ($article.pmid -in $reading20260928.pmid) {
+            "ccr-intake-20260928-$($article.pmid)"
+        } elseif ($article.pmid -in $reading2021To2022Completion.pmid) {
             "ccr-2021-2022-completion-20260926-$($article.pmid)"
         } elseif ($article.pmid -in $reading2023Completion.pmid) {
             "ccr-2023-completion-20260926-$($article.pmid)"
@@ -671,15 +674,28 @@ foreach ($assetName in $assets.Keys) {
                 continue
             }
 
+            $unitType = $rule.unit_type
+            $function = $rule.function
+            $evidenceTier = $rule.evidence_tier
+            $reuseStatus = $rule.reuse_status
+            $hasClauseVerb = $expression -match '\b(am|is|are|was|were|has|have|had|do|does|did|will|would|can|could|may|might|must|should|shall|poses|remains|shows|provides|demonstrates|indicates|supports|confers|predicts|correlates)\b'
+            $isGlossedTerm = $line -match '^\s*-\s+`[^`]+`\s+[^\x00-\x7F]' -and $line -match '[\p{IsCJKUnifiedIdeographs}]' -and $expression -notmatch '[\[\]]|[.!?]$' -and -not $hasClauseVerb
+            if ($unitType -eq 'sentence-frame' -and $isGlossedTerm) {
+                $unitType = 'vocabulary'
+                $function = 'terminology'
+                $evidenceTier = 'terminology-only'
+                $reuseStatus = 'conventional-term-or-collocation'
+            }
+
             $rows.Add([pscustomobject][ordered]@{
                 catalog_version = "2026-09-26"
                 expression = $expression
                 primary_section = $rule.primary_section
                 secondary_sections = $rule.secondary_sections
-                function = $rule.function
+                function = $function
                 domain = $rule.domain
-                unit_type = $rule.unit_type
-                evidence_tier = $rule.evidence_tier
+                unit_type = $unitType
+                evidence_tier = $evidenceTier
                 source_set = $assets[$assetName].source_set
                 source_article_ids = $rule.source_article_ids
                 provenance_granularity = $rule.provenance_granularity
@@ -687,7 +703,7 @@ foreach ($assetName in $assets.Keys) {
                 source_container = $container
                 source_heading = $heading
                 source_line = $index + 1
-                reuse_status = $rule.reuse_status
+                reuse_status = $reuseStatus
             })
         }
     }
