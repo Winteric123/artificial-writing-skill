@@ -28,6 +28,62 @@
       "ledger": "nature-stk11-deep-reading-ledger.md",
       "quality": "nature-reading-quality-register.csv",
       "language_catalog": "nature-section-language-catalog.csv"
+    },
+    "sttt": {
+      "name": "Signal Transduction and Targeted Therapy",
+      "bibliography": "sttt-corpus-bibliography.csv",
+      "ledger": "sttt-deep-reading-ledger.md",
+      "quality": "sttt-reading-quality-register.csv",
+      "language_catalog": "sttt-section-language-catalog.csv"
+    },
+    "cell-research": {
+      "name": "Cell Research",
+      "bibliography": "cell-research-corpus-bibliography.csv",
+      "ledger": "cell-research-deep-reading-ledger.md",
+      "quality": "cell-research-reading-quality-register.csv",
+      "language_catalog": "cell-research-section-language-catalog.csv"
+    },
+    "nature-medicine": {
+      "name": "Nature Medicine",
+      "bibliography": "nature-medicine-corpus-bibliography.csv",
+      "ledger": "nature-medicine-deep-reading-ledger.md",
+      "quality": "nature-medicine-reading-quality-register.csv",
+      "language_catalog": "nature-medicine-section-language-catalog.csv"
+    },
+    "jitc": {
+      "name": "Journal for ImmunoTherapy of Cancer",
+      "bibliography": "jitc-corpus-bibliography.csv",
+      "ledger": "jitc-deep-reading-ledger.md",
+      "quality": "jitc-reading-quality-register.csv",
+      "language_catalog": "jitc-section-language-catalog.csv"
+    },
+    "cancer-cell": {
+      "name": "Cancer Cell",
+      "bibliography": "cancer-cell-corpus-bibliography.csv",
+      "ledger": "cancer-cell-deep-reading-ledger.md",
+      "quality": "cancer-cell-reading-quality-register.csv",
+      "language_catalog": "cancer-cell-section-language-catalog.csv"
+    },
+    "annals-of-oncology": {
+      "name": "Annals of Oncology",
+      "bibliography": "annals-of-oncology-corpus-bibliography.csv",
+      "ledger": "annals-of-oncology-deep-reading-ledger.md",
+      "quality": "annals-of-oncology-reading-quality-register.csv",
+      "language_catalog": "annals-of-oncology-section-language-catalog.csv"
+    },
+    "jco": {
+      "name": "Journal of Clinical Oncology",
+      "bibliography": "jco-corpus-bibliography.csv",
+      "ledger": "jco-deep-reading-ledger.md",
+      "quality": "jco-reading-quality-register.csv",
+      "language_catalog": "jco-section-language-catalog.csv"
+    },
+    "nature-genetics": {
+      "name": "Nature Genetics",
+      "bibliography": "nature-genetics-corpus-bibliography.csv",
+      "ledger": "nature-genetics-deep-reading-ledger.md",
+      "quality": "nature-genetics-reading-quality-register.csv",
+      "language_catalog": "nature-genetics-section-language-catalog.csv"
     }
   }
 }

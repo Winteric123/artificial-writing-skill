@@ -73,10 +73,16 @@ class JtoSeptember28Intake(unittest.TestCase):
 
     def test_queue_is_not_a_completed_corpus(self):
         self.assertEqual(len(self.queue), len({row['pmid'] for row in self.queue}))
-        self.assertEqual(len(self.queue), 137)
-        self.assertEqual(sum(bool(row['local_pdf_sha256']) for row in self.queue), 24)
-        self.assertEqual(sum(bool(row['main_read_completed_on']) for row in self.queue), 23)
-        self.assertEqual(sum(row['group'] == 'R' for row in self.queue), 20)
+        expansion = json.loads((REFERENCES / 'jto-maintenance-expansion-2026-09-29.json').read_text(encoding='utf-8'))
+        historical_ids = set(expansion['existing_pmids'])
+        historical_queue = [row for row in self.queue if row['pmid'] in historical_ids]
+        self.assertEqual({row['pmid'] for row in historical_queue}, historical_ids)
+        self.assertEqual(len(historical_queue), 137)
+        self.assertGreaterEqual(sum(bool(row['local_pdf_sha256']) for row in historical_queue), 24)
+        expected_read = {pmid for pmid in historical_ids if pmid in self.library and self.library[pmid]['reading_stage'] == 'main_text_deep_read_complete'}
+        self.assertEqual({row['pmid'] for row in historical_queue if row['main_read_completed_on']}, expected_read)
+        self.assertEqual(sum(bool(row['main_read_completed_on']) and row['main_read_completed_on'] <= '2026-09-28' for row in historical_queue), 23)
+        self.assertEqual(sum(row['group'] == 'R' for row in historical_queue), 20)
         pending = {row['pmid'] for row in self.queue if row['local_pdf_sha256'] and not row['main_read_completed_on']}
         self.assertEqual(pending, {'37495171'})
         for row in self.queue:

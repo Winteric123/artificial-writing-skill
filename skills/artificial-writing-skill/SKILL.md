@@ -53,6 +53,8 @@ The [membership map](references/stk11-writing-reference-map.json) connects origi
 
 Discuss sequence co-mutation, copy-number/neighboring-locus context, clinical association, functional state, longitudinal evolution and mechanism separately where their evidence differs. Keep direct STK11 evidence distinct from contextual analysis and structural analogues. Highlight status neither proves STK11 causality nor promotes source acceptance.
 
+For assay-, treatment- or design-specific STK11 preparation, use [the detailed classification guide](references/stk11-assay-treatment-guide.md) and `python scripts/search_stk11_references.py`. Stable paper IDs are `STK11-PMID-<PMID>`. Distinguish original versus reanalyzed assays and their actual sample/model context; an unknown assay is not an absent assay. Candidate-directory membership and detailed main-text tags do not create a new core highlight or completed reading.
+
 ## Inventory and intake safeguards
 
 Actual journal identity governs archiving and corpus assets; project names and intake folders do not. Retain issue/online dates, full title, PMID/DOI, actual PDF version and hash. Preprint, author manuscript, pre-proof and formal versions retain independent evidence histories.

@@ -1,0 +1,1152 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-29",
+  "scope": "19 supplied-PDF main-text reads on 2026-09-29; non-exhaustive article facets, not all assays in every tissue",
+  "records": [
+    {
+      "stable_id": "STK11-PMID-38177135",
+      "pmid": "38177135",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "year": "2024",
+      "title": "Josephin domain containing 2 (JOSD2) promotes lung cancer by inhibiting LKB1 (Liver kinase B1) activity.",
+      "doi": "10.1038/s41392-023-01706-y",
+      "primary_classification": "LKB1功能状态与JOSD2去泛素化机制",
+      "stk11_relation": "direct_function",
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "HY041004"
+      ],
+      "assays": [
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "perturbed_cells",
+          "evidence": "sttt-2024-38177135-language.md#pmid-38177135"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "sttt-2024-38177135-language.md#pmid-38177135"
+        },
+        {
+          "assay": "interactome_ptm_ms",
+          "origin": "original",
+          "sample_context": "cell_protein",
+          "evidence": "sttt-2024-38177135-language.md#pmid-38177135"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "cells_and_tissue",
+          "evidence": "sttt-2024-38177135-language.md#pmid-38177135"
+        }
+      ],
+      "alteration_types": [
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "JOSD2+STK11"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "sttt-2024-38177135-language.md",
+      "evidence_sha256": "9fbbc44aec8ae9d2f800a23927ad05c0e38e73c771e13902c7d927d5a9a8dad7",
+      "pdf_sha256": "877e035371ff8504be0b228f199f7bec0dc0ed600a22d15c42c1fc6bc7883c19",
+      "boundary": "LKB1功能状态与JOSD2去泛素化机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-41345544",
+      "pmid": "41345544",
+      "journal": "Cell Research",
+      "year": "2025",
+      "title": "Genomic and transcriptomic dynamics in the stepwise progression of lung adenocarcinoma.",
+      "doi": "10.1038/s41422-025-01200-w",
+      "primary_classification": "肺腺癌阶段进展基因组与转录组",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "SM1-71"
+      ],
+      "assays": [
+        {
+          "assay": "wgs",
+          "origin": "original",
+          "sample_context": "human_tumor",
+          "evidence": "cell-research-2025-41345544-language.md#pmid-41345544"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "human_tumor",
+          "evidence": "cell-research-2025-41345544-language.md#pmid-41345544"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "cell-research-2025-41345544-language.md#pmid-41345544"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "organoid_mouse",
+          "evidence": "cell-research-2025-41345544-language.md#pmid-41345544"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain",
+        "fusion_rearrangement",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "STK11+EGFR",
+        "STK11+KRAS",
+        "MAP2K1+TP53"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cell-research-2025-41345544-language.md",
+      "evidence_sha256": "d45765a210dae6161ad5b95066bf6ffadf984dea99ecc7004bcf2b52e51f825f",
+      "pdf_sha256": "ac9bf90237ad54f900d9d973be786aa52cd4c0f1ee7d5da923fee58835217e53",
+      "boundary": "肺腺癌阶段进展基因组与转录组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-38351187",
+      "pmid": "38351187",
+      "journal": "Nature Medicine",
+      "year": "2024",
+      "title": "Biomarker-directed targeted therapy plus durvalumab in advanced non-small-cell lung cancer: a phase 2 umbrella trial.",
+      "doi": "10.1038/s41591-024-02808-y",
+      "primary_classification": "HUDSON免疫耐药伞式试验",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_combination",
+        "atr_inhibitor",
+        "parp_inhibitor",
+        "stat3_aso",
+        "anti_cd73"
+      ],
+      "drugs": [
+        "durvalumab",
+        "ceralasertib",
+        "olaparib",
+        "danvatirsen",
+        "oleclumab"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "tumor_plasma",
+          "evidence": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "49_tumors_not_ceralasertib",
+          "evidence": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+        },
+        {
+          "assay": "targeted_rna",
+          "origin": "original",
+          "sample_context": "48_blood",
+          "evidence": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "tumor_IHC",
+          "evidence": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+        },
+        {
+          "assay": "tcr_sequencing",
+          "origin": "original",
+          "sample_context": "blood",
+          "evidence": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "ATM"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-medicine-2024-38351187-language.md",
+      "evidence_sha256": "f7a75657682fd9ada115f8f98219117cf5ddc6e9f03c24843f13228445afd805",
+      "pdf_sha256": "1c4aaf5efab5191cf8f0590521e10c21909158e748aa430b37f9c5a14d45158f",
+      "boundary": "HUDSON免疫耐药伞式试验. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-35190375",
+      "pmid": "35190375",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2022",
+      "title": "Clinical efficacy of atezolizumab plus bevacizumab and chemotherapy in KRAS-mutated non-small cell lung cancer with STK11, KEAP1, or TP53 comutations: subgroup results from the phase III IMpower150 trial.",
+      "doi": "10.1136/jitc-2021-003027",
+      "primary_classification": "IMpower150免疫抗血管化疗及共突变",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_combination",
+        "antiangiogenic",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "atezolizumab",
+        "bevacizumab",
+        "carboplatin",
+        "paclitaxel"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "plasma_ctDNA",
+          "evidence": "jitc-2022-35190375-language.md#pmid-35190375"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "tumor_PDL1_IHC",
+          "evidence": "jitc-2022-35190375-language.md#pmid-35190375"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1",
+        "KRAS+TP53"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jitc-2022-35190375-language.md",
+      "evidence_sha256": "4027a591345d0773dac4340c480e1a9512b989c603dff671fa6b313b08d6947c",
+      "pdf_sha256": "362ded0b800f8d28e1a0d14ff34b7b55e57853c469cebfcc05452a5e1ecd69ca",
+      "boundary": "IMpower150免疫抗血管化疗及共突变. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-38402609",
+      "pmid": "38402609",
+      "journal": "Cancer Cell",
+      "year": "2024",
+      "title": "Adeno-to-squamous transition drives resistance to KRAS inhibition in LKB1 mutant lung cancer.",
+      "doi": "10.1016/j.ccell.2024.01.012",
+      "primary_classification": "KRAS抑制剂耐药与腺鳞转分化",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "kras_inhibitor",
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "adagrasib",
+        "MRTX1133"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_rna",
+          "origin": "original",
+          "sample_context": "clinical_HTG_EdgeSeq",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "mouse_tumor",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "original",
+          "sample_context": "mouse_tumor",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "atac_seq",
+          "origin": "original",
+          "sample_context": "mouse_tumor",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "cut_and_tag",
+          "origin": "original",
+          "sample_context": "mouse_H3K27ac",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "single_cell_atac",
+          "origin": "reanalysis",
+          "sample_context": "mouse",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "chip_seq",
+          "origin": "reanalysis",
+          "sample_context": "mouse",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "reanalysis",
+          "sample_context": "one_EGFR_human",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "human_mouse_IHC",
+          "evidence": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+TP53",
+        "STK11+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-cell-2024-38402609-language.md",
+      "evidence_sha256": "2ff3c91eab7fc91c769c6b4b3a16d8633446378ab56b7fa8e3bc99480cff50fd",
+      "pdf_sha256": "0a7287cdaad97eab2579f96659e4439b6bceaf5727519ebebeeaa6586af5a0c9",
+      "boundary": "KRAS抑制剂耐药与腺鳞转分化. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-37121400",
+      "pmid": "37121400",
+      "journal": "Annals of Oncology",
+      "year": "2023",
+      "title": "Molecular markers of metastatic disease in KRAS-mutant lung adenocarcinoma.",
+      "doi": "10.1016/j.annonc.2023.04.514",
+      "primary_classification": "转移性KRAS肺腺癌临床基因组",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "no_treatment_efficacy_analysis"
+      ],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "DFCI_MSK",
+          "evidence": "annals-of-oncology-2023-37121400-language.md#pmid-37121400"
+        },
+        {
+          "assay": "wes",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "annals-of-oncology-2023-37121400-language.md#pmid-37121400"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "annals-of-oncology-2023-37121400-language.md#pmid-37121400"
+        },
+        {
+          "assay": "crispr_screen",
+          "origin": "reanalysis",
+          "sample_context": "DepMap",
+          "evidence": "annals-of-oncology-2023-37121400-language.md#pmid-37121400"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1",
+        "KRAS+SMARCA4"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "annals-of-oncology-2023-37121400-language.md",
+      "evidence_sha256": "bb163f716d4a6a402b5b0655fab131db576a660206d22232b3a5b805a48ae488",
+      "pdf_sha256": "4cf4fbc68847da8359b3b3b15118cfbe5a7f932fbcf46b74855ba313cded8b07",
+      "boundary": "转移性KRAS肺腺癌临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-36526124",
+      "pmid": "36526124",
+      "journal": "Annals of Oncology",
+      "year": "2023",
+      "title": "Clonal KEAP1 mutations with loss of heterozygosity share reduced immunotherapy efficacy and low immune cell infiltration in lung adenocarcinoma.",
+      "doi": "10.1016/j.annonc.2022.12.002",
+      "primary_classification": "KEAP1克隆性LOH与免疫结局",
+      "stk11_relation": "contextual_analysis",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "ici_combination"
+      ],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "human_tumor",
+          "evidence": "annals-of-oncology-2023-36526124-language.md#pmid-36526124"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "public_cohorts",
+          "evidence": "annals-of-oncology-2023-36526124-language.md#pmid-36526124"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "tissue_mIF",
+          "evidence": "annals-of-oncology-2023-36526124-language.md#pmid-36526124"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        "KEAP1+STK11"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "annals-of-oncology-2023-36526124-language.md",
+      "evidence_sha256": "8bc93cf01d8917a58b107992e73fc2be80fea16b095b83ecfd4f3e77fa617951",
+      "pdf_sha256": "52b72568bd0d28d78356b3ce72a4ce64d5fcf52e4f5eb24daab278a396dd4e00",
+      "boundary": "KEAP1克隆性LOH与免疫结局. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-36709038",
+      "pmid": "36709038",
+      "journal": "Annals of Oncology",
+      "year": "2023",
+      "title": "Associations of tissue tumor mutational burden and mutational status with clinical outcomes in KEYNOTE-042: pembrolizumab versus chemotherapy for advanced PD-L1-positive NSCLC.",
+      "doi": "10.1016/j.annonc.2023.01.011",
+      "primary_classification": "KEYNOTE042基因突变TMB与疗效",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "pembrolizumab"
+      ],
+      "assays": [
+        {
+          "assay": "wes",
+          "origin": "original",
+          "sample_context": "tumor_matched_normal",
+          "evidence": "annals-of-oncology-2023-36709038-language.md#pmid-36709038"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "PDL1_IHC",
+          "evidence": "annals-of-oncology-2023-36709038-language.md#pmid-36709038"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "KRAS+STK11",
+        "KRAS+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "annals-of-oncology-2023-36709038-language.md",
+      "evidence_sha256": "8da39f35c7d2b89032f785331ab7fc80f8bbb092f9175274dc7cce93d82ffe76",
+      "pdf_sha256": "ebb2b3c3351f21fd5c033a14b1b334a5050f16bc5052329fe43a62fe2a8b0755",
+      "boundary": "KEYNOTE042基因突变TMB与疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-34450259",
+      "pmid": "34450259",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2021",
+      "title": "KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy.",
+      "doi": "10.1016/j.jtho.2021.08.010",
+      "primary_classification": "KEAP1与TP53共突变进化免疫分型",
+      "stk11_relation": "contextual_analysis",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "ici_mono"
+      ],
+      "drugs": [
+        "atezolizumab"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "reanalysis",
+          "sample_context": "GENIE_immune_cohorts",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        },
+        {
+          "assay": "wes",
+          "origin": "reanalysis",
+          "sample_context": "public_cohorts",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        },
+        {
+          "assay": "chip_seq",
+          "origin": "reanalysis",
+          "sample_context": "ENCODE",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        },
+        {
+          "assay": "chromatin_accessibility",
+          "origin": "reanalysis",
+          "sample_context": "ENCODE_DNase",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        },
+        {
+          "assay": "chromatin_contacts",
+          "origin": "reanalysis",
+          "sample_context": "K562_not_lung",
+          "evidence": "jto-2021-34450259-language.md#pmid-34450259"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "KEAP1+TP53",
+        "KEAP1+STK11"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2021-34450259-language.md",
+      "evidence_sha256": "c6882c0fa489a7eedb47c0abf7fadad331cf730fe9b5aeb20440fba46421f3db",
+      "pdf_sha256": "70a6c24b0f55a9e4bff9867e3f304369d2948bbeb176b4f48e9eb687f4fe696a",
+      "boundary": "KEAP1与TP53共突变进化免疫分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-36535627",
+      "pmid": "36535627",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2023",
+      "title": "Single-Cell Analysis Reveals Transcriptomic Features of Drug-Tolerant Persisters and Stromal Adaptation in a Patient-Derived EGFR-Mutated Lung Adenocarcinoma Xenograft Model.",
+      "doi": "10.1016/j.jtho.2022.12.003",
+      "primary_classification": "EGFR抑制剂耐受细胞及CAF单细胞",
+      "stk11_relation": "structural_analogue",
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "egfr_tki"
+      ],
+      "drugs": [
+        "erlotinib",
+        "osimertinib"
+      ],
+      "assays": [
+        {
+          "assay": "wes",
+          "origin": "original",
+          "sample_context": "PDX",
+          "evidence": "jto-2023-36535627-language.md#pmid-36535627"
+        },
+        {
+          "assay": "microarray",
+          "origin": "original",
+          "sample_context": "PDX_bulk_expression",
+          "evidence": "jto-2023-36535627-language.md#pmid-36535627"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "original",
+          "sample_context": "human_tumor_mouse_stroma_PDX",
+          "evidence": "jto-2023-36535627-language.md#pmid-36535627"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "IHC_cytokine_assay",
+          "evidence": "jto-2023-36535627-language.md#pmid-36535627"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound"
+      ],
+      "gene_contexts": [
+        "EGFR"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2023-36535627-language.md",
+      "evidence_sha256": "d64874d4c53fce74417a8af4d46aac40c96c03dfa4765ef3da5f67410c73061c",
+      "pdf_sha256": "4dcc98c7cb4b2cd6f1e0a5a4f18d720c4bc0c0a458f4340d55968010eaa52a5f",
+      "boundary": "EGFR抑制剂耐受细胞及CAF单细胞. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-36948245",
+      "pmid": "36948245",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2023",
+      "title": "Classification of Tumor Immune Microenvironment According to Programmed Death-Ligand 1 Expression and Immune Infiltration Predicts Response to Immunotherapy Plus Chemotherapy in Advanced Patients With NSCLC.",
+      "doi": "10.1016/j.jtho.2023.03.012",
+      "primary_classification": "ORIENT11肿瘤免疫微环境RNA分型",
+      "stk11_relation": "structural_analogue",
+      "methods": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "ici_combination",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "sintilimab"
+      ],
+      "assays": [
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "169_tumors",
+          "evidence": "jto-2023-36948245-language.md#pmid-36948245"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "PDL1_IHC",
+          "evidence": "jto-2023-36948245-language.md#pmid-36948245"
+        }
+      ],
+      "alteration_types": [
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2023-36948245-language.md",
+      "evidence_sha256": "c94e130fac1942166b9e231b99539b055ac97b4193af2f0d560a23db0ab44ee1",
+      "pdf_sha256": "98f88c8965d54876e358ff6d09117a3b9e61d571e839213f829ca254998cbdd6",
+      "boundary": "ORIENT11肿瘤免疫微环境RNA分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-37806383",
+      "pmid": "37806383",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2024",
+      "title": "Real-World Genomic Profile of EGFR Second-Site Mutations and Other Osimertinib Resistance Mechanisms and Clinical Landscape of NSCLC Post-Osimertinib.",
+      "doi": "10.1016/j.jtho.2023.09.1453",
+      "primary_classification": "EGFR二次位点及耐药临床基因组",
+      "stk11_relation": "structural_analogue",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "egfr_tki",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "osimertinib"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "tissue_plasma_CGP",
+          "evidence": "jto-2024-37806383-language.md#pmid-37806383"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound",
+        "copy_number_gain",
+        "copy_number_loss",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        "EGFR",
+        "EGFR+TP53",
+        "EGFR+RB1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2024-37806383-language.md",
+      "evidence_sha256": "a19d32734c7f6683b2689e5b13433cf5572d8eac3f73430419c32854963ccec5",
+      "pdf_sha256": "21e8d9120d523664679204d448fb53970c74556ac9fa1c7e145fd4934346bf1d",
+      "boundary": "EGFR二次位点及耐药临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-37981218",
+      "pmid": "37981218",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2024",
+      "title": "Allelic Context of EGFR C797X-Mutant Lung Cancer Defines Four Subtypes With Heterogeneous Genomic Landscape and Distinct Clinical Outcomes.",
+      "doi": "10.1016/j.jtho.2023.11.016",
+      "primary_classification": "EGFR_C797X等位背景四分型",
+      "stk11_relation": "structural_analogue",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "egfr_tki",
+        "chemotherapy",
+        "targeted_combination"
+      ],
+      "drugs": [
+        "brigatinib",
+        "cetuximab",
+        "osimertinib"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "168_or_520_gene_panels",
+          "evidence": "jto-2024-37981218-language.md#pmid-37981218"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        "EGFR",
+        "EGFR+TP53"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2024-37981218-language.md",
+      "evidence_sha256": "f85fa1d5a9c06f92c12cfaab91b7b3c975af9ce276cd3a92a69064451028b8f6",
+      "pdf_sha256": "380412f2c9ef029751ab3c6113ca21e729dd185f807754762f263dc5734415d1",
+      "boundary": "EGFR_C797X等位背景四分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-42749049",
+      "pmid": "42749049",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2026",
+      "title": "Genomic and transcriptomic features of relapsed small cell lung cancer.",
+      "doi": "10.1016/j.jtho.2026.104201",
+      "primary_classification": "复发SCLC基因组转录组与剪接",
+      "stk11_relation": "structural_analogue",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "chemotherapy",
+        "ici_exposure_only"
+      ],
+      "drugs": [
+        "platinum_chemotherapy"
+      ],
+      "assays": [
+        {
+          "assay": "wgs",
+          "origin": "original",
+          "sample_context": "human_tumor",
+          "evidence": "jto-2026-42749049-language.md#pmid-42749049"
+        },
+        {
+          "assay": "wes",
+          "origin": "mixed_new_and_previous",
+          "sample_context": "human_tumor",
+          "evidence": "jto-2026-42749049-language.md#pmid-42749049"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "mixed_new_and_previous",
+          "sample_context": "human_tumor",
+          "evidence": "jto-2026-42749049-language.md#pmid-42749049"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "IHC",
+          "evidence": "jto-2026-42749049-language.md#pmid-42749049"
+        },
+        {
+          "assay": "in_situ_hybridization",
+          "origin": "original",
+          "sample_context": "tissue_PDX",
+          "evidence": "jto-2026-42749049-language.md#pmid-42749049"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain",
+        "copy_number_loss",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        "MYC+MYCL",
+        "MYC+MYCN",
+        "TP53+RB1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2026-42749049-language.md",
+      "evidence_sha256": "999b68fb23ba73e33abffd7b269a8a4e33066095db0345f9a7603c18f0f0af5b",
+      "pdf_sha256": "f9404a4de8e08f426d0335c37c01aa1d6551ea2b141d877340db084a74ae9840",
+      "boundary": "复发SCLC基因组转录组与剪接. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-41690367",
+      "pmid": "41690367",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2026",
+      "title": "TTF-1 Expression in Lung Adenocarcinoma: Clinicopathologic, Genomic, and Immunophenotypic Correlates and Outcomes to Immunotherapy-Based Treatments and KRASG12C Inhibitors.",
+      "doi": "10.1016/j.jtho.2026.103610",
+      "primary_classification": "TTF1临床基因组免疫表型及疗效",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "ici_combination",
+        "chemotherapy",
+        "targeted_therapy"
+      ],
+      "drugs": [
+        "pembrolizumab"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "clinical_tumor",
+          "evidence": "jto-2026-41690367-language.md#pmid-41690367"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "external_cohort",
+          "evidence": "jto-2026-41690367-language.md#pmid-41690367"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "mIF",
+          "evidence": "jto-2026-41690367-language.md#pmid-41690367"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "TTF1_IHC",
+          "evidence": "jto-2026-41690367-language.md#pmid-41690367"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "STK11+KRAS"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2026-41690367-language.md",
+      "evidence_sha256": "6d55f9e6aa7b99b36297ded15fbb441c525fd843675c7c5cd7ab87f3ec3327cc",
+      "pdf_sha256": "e70affcd744783f58c0f37566334d32e92bfa015ba900a33a9fc0780005542b4",
+      "boundary": "TTF1临床基因组免疫表型及疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-34230008",
+      "pmid": "34230008",
+      "journal": "Cancer Discovery",
+      "year": "2021",
+      "title": "Resistance to Durvalumab and Durvalumab plus Tremelimumab Is Associated with Functional STK11 Mutations in Patients with Non-Small Cell Lung Cancer and Is Reversed by STAT3 Knockdown.",
+      "doi": "10.1158/2159-8290.CD-20-1543",
+      "primary_classification": "STK11免疫耐药与STAT3机制",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "ici_combination",
+        "stat3_aso"
+      ],
+      "drugs": [
+        "durvalumab",
+        "tremelimumab",
+        "STAT3_ASO"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "human_tumor",
+          "evidence": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "human_mouse",
+          "evidence": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "original",
+          "sample_context": "mouse_CT26_colon_model",
+          "evidence": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "serum_panel_flow_IHC",
+          "evidence": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "reanalysis",
+          "sample_context": "RPPA",
+          "evidence": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "STK11+KRAS",
+        "STK11+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-discovery-2021-34230008-language.md",
+      "evidence_sha256": "b782ba2964792d35f526496a8ec7e94041558638e33a3c16ee0ef32708008a78",
+      "pdf_sha256": "090c19b9fc7a4445f7b07bc5b9e031d0ed94ae79cda87f176f2b368b44dbd4bd",
+      "boundary": "STK11免疫耐药与STAT3机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-38207230",
+      "pmid": "38207230",
+      "journal": "Journal of Clinical Oncology",
+      "year": "2024",
+      "title": "Genomic and Immunophenotypic Landscape of Acquired Resistance to PD-(L)1 Blockade in Non-Small-Cell Lung Cancer.",
+      "doi": "10.1200/JCO.23.00580",
+      "primary_classification": "免疫获得性耐药配对基因组免疫表型",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "ici_combination",
+        "chemotherapy",
+        "targeted_therapy_controls"
+      ],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "paired_OncoPanel",
+          "evidence": "jco-2024-38207230-language.md#pmid-38207230"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "6_paired_mIF",
+          "evidence": "jco-2024-38207230-language.md#pmid-38207230"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "IHC",
+          "evidence": "jco-2024-38207230-language.md#pmid-38207230"
+        },
+        {
+          "assay": "digital_pathology",
+          "origin": "original",
+          "sample_context": "H_and_E_PathML",
+          "evidence": "jco-2024-38207230-language.md#pmid-38207230"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "B2M",
+        "JAK1",
+        "JAK2"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jco-2024-38207230-language.md",
+      "evidence_sha256": "0e051efacb04d7e1ce0265befd5705cc927bd277feb06538d45d7e73e6d0abbe",
+      "pdf_sha256": "eb949e25b1ae28869c53ec660cee95f4811c599aafec775f78682886acccacf4",
+      "boundary": "免疫获得性耐药配对基因组免疫表型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-42587156",
+      "pmid": "42587156",
+      "journal": "Nature",
+      "year": "2026",
+      "title": "Biomarkers of nivolumab benefit in resectable non-small cell lung cancer.",
+      "doi": "10.1038/s41586-026-10925-6",
+      "primary_classification": "CheckMate77T围手术期免疫与ctDNA基因标志物",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "perioperative_ici",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "nivolumab"
+      ],
+      "assays": [
+        {
+          "assay": "wes",
+          "origin": "original",
+          "sample_context": "190_tumor_blood",
+          "evidence": "nature-2026-42587156-language.md#pmid-42587156"
+        },
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "personalized_plasma_ctDNA",
+          "evidence": "nature-2026-42587156-language.md#pmid-42587156"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "PDL1_IHC",
+          "evidence": "nature-2026-42587156-language.md#pmid-42587156"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        "STK11+KRAS",
+        "STK11+KEAP1",
+        "TP53+STK11",
+        "TP53+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-2026-42587156-language.md",
+      "evidence_sha256": "a4e2a059168e185dfad5276a4ac96fdaddcc9552dccbf7cc279dfc305c155bc2",
+      "pdf_sha256": "009a93b1c16fa740d3eeb1b6dd1f71abe418181a6d220f603c3cc1c50e22d436",
+      "boundary": "CheckMate77T围手术期免疫与ctDNA基因标志物. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-42432246",
+      "pmid": "42432246",
+      "journal": "Nature Genetics",
+      "year": "2026",
+      "title": "Evolving patterns of co-mutations from tumor initiation to metastatic progression.",
+      "doi": "10.1038/s41588-026-02661-4",
+      "primary_classification": "SelectSim共突变零模型及转移风险",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "treatment_covariates_not_efficacy"
+      ],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "reanalysis",
+          "sample_context": "GENIE_normal_microbiopsy",
+          "evidence": "nature-genetics-2026-42432246-language.md#pmid-42432246"
+        },
+        {
+          "assay": "wes",
+          "origin": "reanalysis",
+          "sample_context": "TCGA",
+          "evidence": "nature-genetics-2026-42432246-language.md#pmid-42432246"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA_colorectal_ED3",
+          "evidence": "nature-genetics-2026-42432246-language.md#pmid-42432246"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1",
+        "EGFR+STK11",
+        "EGFR+RBM10"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-genetics-2026-42432246-language.md",
+      "evidence_sha256": "49b106dd6703c1bd4a458a2df8ff30fec5836f416e57ea2040bc17ecd0410cd2",
+      "pdf_sha256": "432aadcff80ad2ec1d89a4c56fb3cebfdd2fcb091447d4449431095fb3e17515",
+      "boundary": "SelectSim共突变零模型及转移风险. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    }
+  ]
+}

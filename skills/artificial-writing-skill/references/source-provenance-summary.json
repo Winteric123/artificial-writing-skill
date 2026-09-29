@@ -1,36 +1,36 @@
 {
-  "index_version": "a80603be98439365519cb482eec5ebf94177e84199b82fe61e2b9b309a380433",
-  "entry_count": 9013,
+  "index_version": "31714adf1c90195499c7cb5cfa0730744de7702dd7a2ca4d85997663091b6bd0",
+  "entry_count": 9499,
   "source_scope_status": {
-    "curated-source-scope": 289
+    "curated-source-scope": 310
   },
   "source_facet_coverage": {
     "disease_ids": {
-      "identified-not-exhaustive": 289
+      "identified-not-exhaustive": 310
     },
     "tissue_ids": {
-      "identified-not-exhaustive": 236,
+      "identified-not-exhaustive": 257,
       "not-curated-not-absent": 53
     },
     "model_ids": {
-      "identified-not-exhaustive": 289
+      "identified-not-exhaustive": 310
     },
     "use_roles": {
-      "identified-not-exhaustive": 289
+      "identified-not-exhaustive": 310
     }
   },
   "pdf_locator_states": {
-    "no-literal-match-needs-context-review": 3472,
-    "synthetic-not-a-verbatim-quotation": 4397,
-    "pdf-text-located": 1144
+    "synthetic-not-a-verbatim-quotation": 4693,
+    "no-literal-match-needs-context-review": 3632,
+    "pdf-text-located": 1174
   },
-  "source_pdf_count": 289,
-  "entries_with_recorded_page_hints": 4735,
+  "source_pdf_count": 310,
+  "entries_with_recorded_page_hints": 5054,
   "context_rechecked_entries": 139,
   "scope": "Current language-source articles only; all registered journals and indexed years; no new reading or acceptance.",
-  "source_articles": 289,
+  "source_articles": 310,
   "articles_with_unknown_facets": 53,
-  "entries_needing_literal_context_review": 3448,
+  "entries_needing_literal_context_review": 3608,
   "context_checked_without_literal_match": 24,
   "boundary": "Synthetic frames and entries with recorded context rechecks are excluded from the pending-context queue; context review is not literal matching or quotation verification; unknown tissue is not absent tissue."
 }

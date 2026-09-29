@@ -12,3 +12,4 @@ Journal-specific source-grounded article set, not a journal-wide style corpus. R
 Evidence, physical-page coverage, hashes, numerical checks, source conflicts, and section language: [cancer-discovery-2026-09-19-stk11-language.md](cancer-discovery-2026-09-19-stk11-language.md).
 
 Acceptance status: [cancer-discovery-reading-quality-register.csv](cancer-discovery-reading-quality-register.csv). New records remain not_reviewed with pending recheck gates. Source-grounded use requires reopening material claims and respecting quarantined discrepancies.
+| 34230008 | 2026-09-29 | Cancer Discovery | 18 | STK11免疫耐药与STAT3机制 | [cancer-discovery-2021-34230008-language.md](cancer-discovery-2021-34230008-language.md) | Separate supplementary files not supplied or reviewed |

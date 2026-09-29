@@ -2,7 +2,7 @@
 
 ## Scope and disposition
 
-- Supplied folder: `C:\Users\Whending\Desktop\补充CCR`
+- Source: user-supplied intake folder; absolute local paths are retained only in private file-handling manifests.
 - Supplied files: **16 main PDFs, 264 physical pages**.
 - Newly registered and completed: **14 original studies**.
 - Exact-byte duplicates: **2**. PMID33323404 and PMID38980931 match the archived copies by SHA-256 and retain their original 2026-09-24 reading-completion dates and existing language assets.

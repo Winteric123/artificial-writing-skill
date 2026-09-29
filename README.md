@@ -11,14 +11,14 @@ The skill resolves the operation, communication scenario, journal, disease or tu
 - prepares scientific or technical reports, standalone results statements, abstracts, slide text, speaker notes, posters, briefings, response letters, and literature syntheses;
 - supports oncology communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, targeted therapy, and drug response or resistance;
 - retrieves vocabulary, collocations, sentence frames, and paragraph architectures by Title, Abstract component, Introduction, Methods, Results, Discussion, Conclusion, or Translational Relevance;
-- provides a 9,013-entry cross-journal retrieval view with isolated source catalogs, including 7,902 CCR entries covering 263 completed CCR main-text reads, with article-level provenance and source alerts;
+- provides a 9,499-entry cross-journal retrieval view across twelve registered journals, with isolated source catalogs, including 7,902 CCR entries covering 263 completed CCR main-text reads, with article-level provenance and source alerts;
 - prioritizes thirteen framework papers—six CCR, four JTO, two Cancer Discovery and one Nature—for STK11-focused lung-cancer work without presenting them as a validated STK11 molecular profile;
 - connects those thirteen core highlights with six separately labelled topic-support papers, using an analysis guide and article-level reasoning map without promoting support papers to core highlights;
 - tracks main-text completion separately from supplementary-material coverage and documented six-gate source-recheck acceptance;
 - calibrates causal, predictive, subgroup, validation, superiority, and clinical-utility claims to the underlying evidence;
 - checks numbers, terminology, tense, abbreviations, provenance, and unsupported assertions.
 
-Counts are a 2026-09-28 generated snapshot. The [generated inventory](skills/artificial-writing-skill/references/library-index.md) and [summary](skills/artificial-writing-skill/references/library-summary.json) distinguish all-journal year totals from journal-by-year subsets. Topic or intake-batch counts require an additional explicit filter. Of the 9,013 language entries, 9,004 are retrieval-eligible and nine are quarantined; eligibility is not scientific acceptance.
+Counts are a 2026-09-29 generated snapshot. The [generated inventory](skills/artificial-writing-skill/references/library-index.md) and [summary](skills/artificial-writing-skill/references/library-summary.json) distinguish all-journal year totals from journal-by-year subsets. Topic or intake-batch counts require an additional explicit filter. Of the 9,499 language entries, 9,490 are retrieval-eligible and nine are quarantined; eligibility is not scientific acceptance.
 
 It does not provide clinical decision support and must not invent data, methods, citations, registrations, ethics approvals, or novelty claims.
 
@@ -110,15 +110,15 @@ For an unsupported journal or tumor type, provide the relevant instructions or s
 
 ## Inventory scope and retrieval
 
-The 2026-09-28 formal-journal inventory has 307 registered records: 289 included and 18 excluded or background-only. Main-text reading is marked complete for all 289 included records; no eligible indexed record remains incomplete. The included set comprises 263 CCR, 23 JTO, two Cancer Discovery and one Nature article. Preprints and candidate references have separate registers and do not enter these denominators. These are registry states, not proof of exhaustive journal coverage or independent review.
+The 2026-09-29 formal-journal inventory has 328 registered records: 310 included and 18 excluded or background-only. Main-text reading is marked complete for all 310 included records; no eligible indexed record remains incomplete. The included set comprises 263 CCR, 32 JTO and 15 articles across ten other journals. Preprints and candidate references have separate registers and do not enter these denominators. These are supplied-version main-reading states, not proof of exhaustive journal coverage, complete supplementary-material review or independent acceptance.
 
 | Scope | Included | Main-text complete | Included, incomplete |
 |---|---:|---:|---:|
-| 2025, all registered formal journals, no topic filter | 52 | 52 | 0 |
+| 2025, all registered formal journals, no topic filter | 53 | 53 | 0 |
 | 2025, CCR only, no topic filter | 48 | 48 | 0 |
 | All indexed years, CCR only, no topic filter | 263 | 263 | 0 |
 
-The four-paper difference between the two 2025 rows consists of JTO articles marked main-text complete. Neither row is a genomics-only count or evidence that the entire 2025 journal literature has been acquired. In the summary JSON, `years` aggregates journals; `journal_years` preserves journal/year intersections.
+The five-paper difference between the two 2025 rows consists of four JTO articles and one Cell Research article marked main-text complete. Neither row is a genomics-only count or evidence that the entire 2025 journal literature has been acquired. In the summary JSON, `years` aggregates journals; `journal_years` preserves journal/year intersections.
 
 Run from `skills/artificial-writing-skill` with Python 3.10 or later:
 
@@ -157,7 +157,9 @@ Per-article acceptance and supplement status are recorded in [ccr-reading-qualit
 
 ## JTO STK11 priority provenance
 
-The full JTO corpus now has 23 included articles marked main-text complete. Its [bibliography](skills/artificial-writing-skill/references/jto-corpus-bibliography.csv), [reading ledger](skills/artificial-writing-skill/references/jto-deep-reading-ledger.md) and [maintenance queue](skills/artificial-writing-skill/references/jto-maintenance-queue.md) distinguish completed records from screened candidates. The following four-paper provenance describes the original core highlights, not the full JTO inventory.
+The local registered JTO corpus now has 32 included articles marked main-text complete. Its [bibliography](skills/artificial-writing-skill/references/jto-corpus-bibliography.csv), [reading ledger](skills/artificial-writing-skill/references/jto-deep-reading-ledger.md) and [maintenance queue](skills/artificial-writing-skill/references/jto-maintenance-queue.md) distinguish completed records from screened candidates. The following four-paper provenance describes the original core highlights, not the full JTO inventory.
+
+The latest two-paper intake adds 80 section-indexed language units from [EGFR DNA/RNA allele fractions](skills/artificial-writing-skill/references/jto-2026-42674257-language.md) and [lorlatinib biomarker analyses](skills/artificial-writing-skill/references/jto-2026-42749050-language.md). Both supplied main texts and main figures/tables are read. The EGFR supplement was not supplied; the lorlatinib embedded scientific tables/figures were read, but administrative TableS1 was only inventoried. Both remain initial reads with acceptance gates pending, and neither is automatically added to the thirteen core highlights.
 
 - Four JTO original-research papers (one 2025 and three 2026) were deeply read from supplied PDFs: PMID 41932614, PMID 41619904, PMID 39864548, and PMID 42409117.
 - The 90 reviewed physical pages cover all four complete main articles, main tables, figures, captions, and contributor material. Cited supplementary files were not supplied or independently reviewed.

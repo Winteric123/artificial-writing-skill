@@ -1745,6 +1745,174 @@
       ],
       "restriction": "Source rechecked 2026-09-28; reopen the linked central-result record before exact factual reuse. Retainexistingq=.057ERBB2cautionandindirectSTK11role. Qualifycomplete/partialasdeletionextentwithhomozygousdefinition;do notreuseasallelicstate. Keepmaintextreportsofsupplementaryadjustmentdistinctfromindependentlycheckedmodels.",
       "source_reference": "source-rechecks/2026-09-28-42409117.md"
+    },
+    {
+      "id": "sttt-38177135-20260929-boundaries",
+      "article_ids": [
+        "38177135"
+      ],
+      "restriction": "LKB1功能状态与JOSD2去泛素化机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "sttt-2024-38177135-language.md#pmid-38177135"
+    },
+    {
+      "id": "cell-research-41345544-20260929-boundaries",
+      "article_ids": [
+        "41345544"
+      ],
+      "restriction": "肺腺癌阶段进展基因组与转录组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "cell-research-2025-41345544-language.md#pmid-41345544"
+    },
+    {
+      "id": "nature-medicine-38351187-20260929-boundaries",
+      "article_ids": [
+        "38351187"
+      ],
+      "restriction": "HUDSON免疫耐药伞式试验. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "nature-medicine-2024-38351187-language.md#pmid-38351187"
+    },
+    {
+      "id": "jitc-35190375-20260929-boundaries",
+      "article_ids": [
+        "35190375"
+      ],
+      "restriction": "IMpower150免疫抗血管化疗及共突变. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jitc-2022-35190375-language.md#pmid-35190375"
+    },
+    {
+      "id": "cancer-cell-38402609-20260929-boundaries",
+      "article_ids": [
+        "38402609"
+      ],
+      "restriction": "KRAS抑制剂耐药与腺鳞转分化. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "cancer-cell-2024-38402609-language.md#pmid-38402609"
+    },
+    {
+      "id": "annals-of-oncology-37121400-20260929-boundaries",
+      "article_ids": [
+        "37121400"
+      ],
+      "restriction": "转移性KRAS肺腺癌临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "annals-of-oncology-2023-37121400-language.md#pmid-37121400"
+    },
+    {
+      "id": "annals-of-oncology-36526124-20260929-boundaries",
+      "article_ids": [
+        "36526124"
+      ],
+      "restriction": "KEAP1克隆性LOH与免疫结局. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "annals-of-oncology-2023-36526124-language.md#pmid-36526124"
+    },
+    {
+      "id": "annals-of-oncology-36709038-20260929-boundaries",
+      "article_ids": [
+        "36709038"
+      ],
+      "restriction": "KEYNOTE042基因突变TMB与疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "annals-of-oncology-2023-36709038-language.md#pmid-36709038"
+    },
+    {
+      "id": "jto-34450259-20260929-boundaries",
+      "article_ids": [
+        "34450259"
+      ],
+      "restriction": "KEAP1与TP53共突变进化免疫分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2021-34450259-language.md#pmid-34450259"
+    },
+    {
+      "id": "jto-36535627-20260929-boundaries",
+      "article_ids": [
+        "36535627"
+      ],
+      "restriction": "EGFR抑制剂耐受细胞及CAF单细胞. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2023-36535627-language.md#pmid-36535627"
+    },
+    {
+      "id": "jto-36948245-20260929-boundaries",
+      "article_ids": [
+        "36948245"
+      ],
+      "restriction": "ORIENT11肿瘤免疫微环境RNA分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2023-36948245-language.md#pmid-36948245"
+    },
+    {
+      "id": "jto-37806383-20260929-boundaries",
+      "article_ids": [
+        "37806383"
+      ],
+      "restriction": "EGFR二次位点及耐药临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2024-37806383-language.md#pmid-37806383"
+    },
+    {
+      "id": "jto-37981218-20260929-boundaries",
+      "article_ids": [
+        "37981218"
+      ],
+      "restriction": "EGFR_C797X等位背景四分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2024-37981218-language.md#pmid-37981218"
+    },
+    {
+      "id": "jto-42749049-20260929-boundaries",
+      "article_ids": [
+        "42749049"
+      ],
+      "restriction": "复发SCLC基因组转录组与剪接. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2026-42749049-language.md#pmid-42749049"
+    },
+    {
+      "id": "jto-41690367-20260929-boundaries",
+      "article_ids": [
+        "41690367"
+      ],
+      "restriction": "TTF1临床基因组免疫表型及疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jto-2026-41690367-language.md#pmid-41690367"
+    },
+    {
+      "id": "cancer-discovery-34230008-20260929-boundaries",
+      "article_ids": [
+        "34230008"
+      ],
+      "restriction": "STK11免疫耐药与STAT3机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "cancer-discovery-2021-34230008-language.md#pmid-34230008"
+    },
+    {
+      "id": "jco-38207230-20260929-boundaries",
+      "article_ids": [
+        "38207230"
+      ],
+      "restriction": "免疫获得性耐药配对基因组免疫表型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "jco-2024-38207230-language.md#pmid-38207230"
+    },
+    {
+      "id": "nature-42587156-20260929-boundaries",
+      "article_ids": [
+        "42587156"
+      ],
+      "restriction": "CheckMate77T围手术期免疫与ctDNA基因标志物. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "nature-2026-42587156-language.md#pmid-42587156"
+    },
+    {
+      "id": "nature-genetics-42432246-20260929-boundaries",
+      "article_ids": [
+        "42432246"
+      ],
+      "restriction": "SelectSim共突变零模型及转移风险. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance.",
+      "source_reference": "nature-genetics-2026-42432246-language.md#pmid-42432246"
+    },
+    {
+      "id": "jto-42674257-20260929-boundaries",
+      "article_ids": [
+        "42674257"
+      ],
+      "restriction": "EGFR/TP53 sequence and RNA-VAF associations, not STK11 outcome evidence. External thresholds required recalibration, not successful locked validation. Raw relapse counts and reported percentages differ; preserve provenance. Small TKI sets do not establish treatment prediction; KM tail is not an all-patient event count. Separate supplements not supplied; no independent acceptance.",
+      "source_reference": "jto-2026-42674257-language.md#pmid-42674257"
+    },
+    {
+      "id": "jto-42749050-20260929-boundaries",
+      "article_ids": [
+        "42749050"
+      ],
+      "restriction": "Single-arm descriptive subgroups, not a treatment-by-biomarker interaction. ALK fusion plus TP53 sequence change is mixed co-alteration; compound ALK is same-gene and not phased. Sequence co-mutation label also covers descriptive broad heatmaps, not an adjudicated positive cross-gene pair. STK11 is supplementary genomic context only, not an efficacy subgroup. Preserve analysis-set denominators and source-label conflicts. Nondetection is not clearance or biological absence; no independent acceptance.",
+      "source_reference": "jto-2026-42749050-language.md#pmid-42749050"
     }
   ],
   "entry_rules": [

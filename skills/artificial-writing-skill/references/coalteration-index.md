@@ -4,9 +4,23 @@
 
 标签依据及用法：[coalteration-topics.md](coalteration-topics.md)。权威逐篇记录：[coalteration-annotations.json](coalteration-annotations.json)。机器表：[library-index.csv](library-index.csv)。
 
-纳入正式论文 289 篇；序列共突变实际分析/描述 82 篇；广义共改变实际分析/描述 104 篇。前者是后者子集，不能相加。
+纳入正式论文 310 篇；序列共突变实际分析/描述 99 篇；广义共改变实际分析/描述 121 篇。前者是后者子集，不能相加。
 
 “实际分析/描述”包括描述性oncoplot/少数病例，并非全是共突变主题主文或阳性机制结果。“本轮未识别”不是全文绝无相关内容。列示基因上下文非穷尽，包含互斥检验和模型，不表示每一组合均正共现。
+
+## Annals of Oncology
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2023 | [36709038 — Associations of tissue tumor mutational burden and mutational status with clinical outcomes in KEYNOTE-042: pembrolizumab versus chemotherapy for advanced PD-L1-positive NSCLC.](https://pubmed.ncbi.nlm.nih.gov/36709038/) | 实际分析/描述 | 实际分析/描述 | STK11+KEAP1;KRAS+STK11;KRAS+KEAP1 | genomic_landscape;treatment_outcomes | no |
+| 2023 | [36526124 — Clonal KEAP1 mutations with loss of heterozygosity share reduced immunotherapy efficacy and low immune cell infiltration in lung adenocarcinoma.](https://pubmed.ncbi.nlm.nih.gov/36526124/) | 实际分析/描述 | 实际分析/描述 | KEAP1+STK11 | genomic_landscape;immune_context;treatment_outcomes | no |
+| 2023 | [37121400 — Molecular markers of metastatic disease in KRAS-mutant lung adenocarcinoma.](https://pubmed.ncbi.nlm.nih.gov/37121400/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;KRAS+SMARCA4 | genomic_landscape;prognosis | no |
+
+## Cancer Cell
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2024 | [38402609 — Adeno-to-squamous transition drives resistance to KRAS inhibition in LKB1 mutant lung cancer.](https://pubmed.ncbi.nlm.nih.gov/38402609/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+TP53;STK11+KEAP1 | resistance;preclinical_mechanism;treatment_outcomes | no |
 
 ## Cancer Discovery
 
@@ -14,6 +28,13 @@
 |---|---|---|---|---|---|---|
 | 2015 | [26069186 — Co-occurring genomic alterations define major subsets of KRAS-mutant lung adenocarcinoma with distinct biology, immune profiles, and therapeutic vulnerabilities](https://pubmed.ncbi.nlm.nih.gov/26069186/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+TP53;KRAS+STK11+TP53;KRAS+CDKN2A | genomic_landscape;immune_context;prognosis;preclinical_mechanism | yes |
 | 2018 | [29773717 — STK11/LKB1 Mutations and PD-1 Inhibitor Resistance in KRAS-Mutant Lung Adenocarcinoma](https://pubmed.ncbi.nlm.nih.gov/29773717/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+TP53 | immune_context;treatment_outcomes;preclinical_mechanism | yes |
+| 2021 | [34230008 — Resistance to Durvalumab and Durvalumab plus Tremelimumab Is Associated with Functional STK11 Mutations in Patients with Non-Small Cell Lung Cancer and Is Reversed by STAT3 Knockdown.](https://pubmed.ncbi.nlm.nih.gov/34230008/) | 实际分析/描述 | 实际分析/描述 | STK11+KRAS;STK11+KEAP1 | immune_context;treatment_outcomes;preclinical_mechanism | no |
+
+## Cell Research
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2025 | [41345544 — Genomic and transcriptomic dynamics in the stepwise progression of lung adenocarcinoma.](https://pubmed.ncbi.nlm.nih.gov/41345544/) | 实际分析/描述 | 实际分析/描述 | STK11+EGFR;STK11+KRAS;MAP2K1+TP53 | genomic_landscape;prognosis;preclinical_mechanism | no |
 
 ## Clinical Cancer Research
 
@@ -283,39 +304,79 @@
 | 2026 | [42485106 — Utilizing machine learning to identify multimodal signatures for patients who would benefit from the addition of tremelimumab to durvalumab and chemotherapy (TRIDENT)](https://pubmed.ncbi.nlm.nih.gov/42485106/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | KRAS+STK11;KRAS+KEAP1 | background_or_eligibility | no |
 | 2026 | [42007996 — ZW191 an FRalpha-Targeted Topoisomerase 1 Inhibitor ADC with a Differentiated Antitumor Efficacy and Tolerability Profile](https://pubmed.ncbi.nlm.nih.gov/42007996/) | 本轮未识别 | 本轮未识别 | — | — | no |
 
+## Journal for ImmunoTherapy of Cancer
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2022 | [35190375 — Clinical efficacy of atezolizumab plus bevacizumab and chemotherapy in KRAS-mutated non-small cell lung cancer with STK11, KEAP1, or TP53 comutations: subgroup results from the phase III IMpower150 trial.](https://pubmed.ncbi.nlm.nih.gov/35190375/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;KRAS+TP53 | treatment_outcomes;genomic_landscape | no |
+
+## Journal of Clinical Oncology
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2024 | [38207230 — Genomic and Immunophenotypic Landscape of Acquired Resistance to PD-(L)1 Blockade in Non-Small-Cell Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/38207230/) | 实际分析/描述 | 实际分析/描述 | STK11+KEAP1;B2M;JAK1;JAK2 | resistance;immune_context;genomic_landscape | no |
+
 ## Journal of Thoracic Oncology
 
 | 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
 |---|---|---|---|---|---|---|
+| 2021 | [34450259 — KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy.](https://pubmed.ncbi.nlm.nih.gov/34450259/) | 实际分析/描述 | 实际分析/描述 | KEAP1+TP53;KEAP1+STK11 | genomic_landscape;immune_context;treatment_outcomes | no |
+| 2023 | [36948245 — Classification of Tumor Immune Microenvironment According to Programmed Death-Ligand 1 Expression and Immune Infiltration Predicts Response to Immunotherapy Plus Chemotherapy in Advanced Patients With NSCLC.](https://pubmed.ncbi.nlm.nih.gov/36948245/) | 本轮未识别 | 本轮未识别 | — | immune_context;treatment_outcomes;assay_or_method | no |
 | 2023 | [37543207 — Clinicogenomic Features and Targetable Mutations in NSCLCs Harboring BRAF Non-V600E Mutations: A Multi-Institutional Genomic Screening Study (LC-SCRUM-Asia).](https://pubmed.ncbi.nlm.nih.gov/37543207/) | 实际分析/描述 | 实际分析/描述 | BRAF+TP53;BRAF+ARID1A;BRAF+PIK3CA;BRAF+NF1 | genomic_landscape;treatment_outcomes | no |
 | 2023 | [36775193 — Clinicopathologic and Genomic Factors Impacting Efficacy of First-Line Chemoimmunotherapy in Advanced NSCLC.](https://pubmed.ncbi.nlm.nih.gov/36775193/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;KRAS+SMARCA4;STK11+KEAP1 | treatment_outcomes;prognosis | no |
 | 2023 | [37182602 — Combination Therapy With MDM2 and MEK Inhibitors Is Effective in Patient-Derived Models of Lung Adenocarcinoma With Concurrent Oncogenic Drivers and MDM2 Amplification.](https://pubmed.ncbi.nlm.nih.gov/37182602/) | 本轮未识别 | 实际分析/描述 | MDM2+MET;MDM2+EGFR;MDM2+ALK;MDM2+RET;MDM2+TP53 | genomic_landscape;preclinical_mechanism;resistance | no |
 | 2023 | [36958689 — Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC.](https://pubmed.ncbi.nlm.nih.gov/36958689/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+TP53 | preclinical_mechanism;model_genotype | no |
 | 2023 | [36494075 — Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers.](https://pubmed.ncbi.nlm.nih.gov/36494075/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53;EGFR+TP53+RB1;EGFR+MET | prognosis;resistance;treatment_outcomes | no |
+| 2023 | [36535627 — Single-Cell Analysis Reveals Transcriptomic Features of Drug-Tolerant Persisters and Stromal Adaptation in a Patient-Derived EGFR-Mutated Lung Adenocarcinoma Xenograft Model.](https://pubmed.ncbi.nlm.nih.gov/36535627/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | EGFR | resistance;preclinical_mechanism;model_genotype | no |
 | 2023 | [36240971 — Targeting NFE2L2/KEAP1 Mutations in Advanced NSCLC With the TORC1/2 Inhibitor TAK-228.](https://pubmed.ncbi.nlm.nih.gov/36240971/) | 实际分析/描述 | 实际分析/描述 | KRAS+KEAP1;KRAS+NFE2L2;KEAP1+PIK3CA;NFE2L2+PIK3CA | treatment_outcomes;preclinical_mechanism | no |
+| 2024 | [37981218 — Allelic Context of EGFR C797X-Mutant Lung Cancer Defines Four Subtypes With Heterogeneous Genomic Landscape and Distinct Clinical Outcomes.](https://pubmed.ncbi.nlm.nih.gov/37981218/) | 实际分析/描述 | 实际分析/描述 | EGFR;EGFR+TP53 | resistance;treatment_outcomes;genomic_landscape | no |
 | 2024 | [37806385 — Co-Occurring Alterations in Multiple Tumor Suppressor Genes Are Associated With Worse Outcomes in Patients With EGFR-Mutant Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/37806385/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53;EGFR+TP53+RB1 | prognosis;treatment_outcomes | no |
 | 2024 | [37572870 — Impact of Concurrent Genomic Alterations on Clinical Outcomes in Patients With ALK-Rearranged NSCLC.](https://pubmed.ncbi.nlm.nih.gov/37572870/) | 本轮未识别 | 实际分析/描述 | ALK+TP53;ALK+CDKN2A;ALK+CDKN2A+TP53 | prognosis;treatment_outcomes | no |
 | 2024 | [39111731 — Lung-MAP Next-Generation Sequencing Analysis of Advanced Squamous Cell Lung Cancers (SWOG S1400).](https://pubmed.ncbi.nlm.nih.gov/39111731/) | 实际分析/描述 | 实际分析/描述 | NFE2L2+KEAP1;CDKN2A+RB1 | genomic_landscape | no |
 | 2024 | [37838086 — Microsatellite Instability and Mismatch Repair Deficiency Define a Distinct Subset of Lung Cancers Characterized by Smoking Exposure, High Tumor Mutational Burden, and Recurrent Somatic MLH1 Inactivation.](https://pubmed.ncbi.nlm.nih.gov/37838086/) | 仅背景/模型/方法上下文 | 实际分析/描述 | MLH1;MSH2 | genomic_landscape;variant_origin;treatment_outcomes | no |
 | 2024 | [38096950 — Outcome of First-Line Treatment With Pembrolizumab According to KRAS/TP53 Mutational Status for Nonsquamous Programmed Death-Ligand 1-High (≥50%) NSCLC in the German National Network Genomic Medicine Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/38096950/) | 实际分析/描述 | 实际分析/描述 | KRAS+TP53 | treatment_outcomes;immune_context | no |
 | 2024 | [38154514 — Prevalence and Therapeutic Targeting of High-Level ERBB2 Amplification in NSCLC.](https://pubmed.ncbi.nlm.nih.gov/38154514/) | 本轮未识别 | 实际分析/描述 | ERBB2;ERBB2+TP53;ERBB2+EGFR;ERBB2+KRAS | genomic_landscape;preclinical_mechanism | no |
+| 2024 | [37806383 — Real-World Genomic Profile of EGFR Second-Site Mutations and Other Osimertinib Resistance Mechanisms and Clinical Landscape of NSCLC Post-Osimertinib.](https://pubmed.ncbi.nlm.nih.gov/37806383/) | 实际分析/描述 | 实际分析/描述 | EGFR;EGFR+TP53;EGFR+RB1 | resistance;treatment_outcomes;genomic_landscape | no |
 | 2025 | [39694414 — Decoding the Clinical and Molecular Signatures of EGFR Common, Compound, and Uncommon Mutations in NSCLC: A Brief Report.](https://pubmed.ncbi.nlm.nih.gov/39694414/) | 实际分析/描述 | 实际分析/描述 | EGFR;EGFR+TP53;EGFR+KRAS | genomic_landscape;treatment_outcomes | no |
 | 2025 | [39864548 — Gene Copy Deletion of STK11, KEAP1, and SMARCA4: Clinicopathologic Features and Association With the Outcomes of Immunotherapy With or Without Chemotherapy in Nonsquamous NSCLC](https://pubmed.ncbi.nlm.nih.gov/39864548/) | 仅背景/模型/方法上下文 | 实际分析/描述 | STK11+KEAP1;STK11+SMARCA4;KEAP1+SMARCA4;STK11+KEAP1+SMARCA4 | genomic_landscape;immune_context;treatment_outcomes | yes |
 | 2025 | [40320171 — Overall Survival in EGFR-Mutant Advanced NSCLC Treated With First-Line Osimertinib: A Cohort Study Integrating Clinical and Biomarker Data in the United States.](https://pubmed.ncbi.nlm.nih.gov/40320171/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53 | prognosis;treatment_outcomes | no |
 | 2025 | [40518016 — Targeting WEE1 to Overcome ARID1A Mutation-Driven Osimertinib Resistance in EGFR-Mutant Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/40518016/) | 实际分析/描述 | 实际分析/描述 | EGFR+ARID1A | resistance;preclinical_mechanism | no |
 | 2026 | [41260457 — Clinical Significance of MTAP Deletions and Their Overlap With Concurrent Oncogenic Driver Alterations Including EGFR in NSCLC.](https://pubmed.ncbi.nlm.nih.gov/41260457/) | 实际分析/描述 | 实际分析/描述 | MTAP+CDKN2A;MTAP+EGFR;MTAP+TERT;MTAP+KRAS;MTAP+RB1;EGFR;MTAP+MET;MTAP+ERBB2;MTAP+MDM2;MTAP+CDK4 | genomic_landscape;resistance;treatment_outcomes | no |
+| 2026 | [42674257 — DNA and RNA EGFR Variant Allele Fractions and Clinical Outcomes in Lung Adenocarcinoma.](https://pubmed.ncbi.nlm.nih.gov/42674257/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53 | genomic_landscape;prognosis;treatment_outcomes;assay_or_method | no |
 | 2026 | [41932614 — ERBB2-Activating Mutations and Co-Occurring Genomic Alterations Contribute to Disease Heterogeneity in Patients With ERBB2-Mutant Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/41932614/) | 实际分析/描述 | 实际分析/描述 | ERBB2+EGFR;ERBB2+KRAS;ERBB2+STK11;ERBB2+KEAP1;ERBB2+SMARCA4;ERBB2+PIK3CA;ERBB2+RBM10 | genomic_landscape;treatment_outcomes | yes |
+| 2026 | [42749050 — Final Biomarker and Efficacy Analyses of Lorlatinib in Patients With ALK-Positive Advanced Non-Small Cell Lung Cancer in a Phase 2 Study.](https://pubmed.ncbi.nlm.nih.gov/42749050/) | 实际分析/描述 | 实际分析/描述 | EML4+ALK+TP53;ALK;STK11 | genomic_landscape;prognosis;treatment_outcomes;resistance;assay_or_method | no |
+| 2026 | [42749049 — Genomic and transcriptomic features of relapsed small cell lung cancer.](https://pubmed.ncbi.nlm.nih.gov/42749049/) | 实际分析/描述 | 实际分析/描述 | MYC+MYCL;MYC+MYCN;TP53+RB1 | genomic_landscape;resistance;assay_or_method | no |
 | 2026 | [42409117 — Genomic Landscape and Clinical Impact of MTAP Loss in Driver-Positive NSCLC: Insights From a Large-Scale Real-World Chinese Cohort](https://pubmed.ncbi.nlm.nih.gov/42409117/) | 本轮未识别 | 实际分析/描述 | MTAP+CDKN2A;MTAP+CDKN2B;MTAP+EGFR;MTAP+ALK;MTAP+MET;MTAP+ERBB2 | genomic_landscape;treatment_outcomes;resistance | yes |
 | 2026 | [41619904 — Impact of KRAS Mutations and Co-Alterations on Outcomes in Stage III Nonsquamous NSCLC Treated With Chemoradiation and Immunotherapy](https://pubmed.ncbi.nlm.nih.gov/41619904/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+CDKN2A | treatment_outcomes;prognosis | yes |
 | 2026 | [42749051 — Integrated multi-omic profiling enables recurrence risk stratification beyond pathological stage in resected EGFR-mutant lung adenocarcinoma.](https://pubmed.ncbi.nlm.nih.gov/42749051/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53;EGFR+RBM10 | genomic_landscape;prognosis | no |
 | 2026 | [41903702 — Molecular Profiling Across 80,000 Patients With Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/41903702/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | STK11;KEAP1 | background_or_eligibility | no |
 | 2026 | [41161592 — Neoadjuvant Immunochemotherapy in Resectable NSCLC With SMARCA4 Alterations.](https://pubmed.ncbi.nlm.nih.gov/41161592/) | 实际分析/描述 | 实际分析/描述 | SMARCA4+KRAS;KRAS+STK11;KRAS+KEAP1 | genomic_landscape;treatment_outcomes;immune_context | no |
+| 2026 | [41690367 — TTF-1 Expression in Lung Adenocarcinoma: Clinicopathologic, Genomic, and Immunophenotypic Correlates and Outcomes to Immunotherapy-Based Treatments and KRASG12C Inhibitors.](https://pubmed.ncbi.nlm.nih.gov/41690367/) | 实际分析/描述 | 实际分析/描述 | STK11+KEAP1;STK11+KRAS | genomic_landscape;immune_context;treatment_outcomes | no |
 
 ## Nature
 
 | 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
 |---|---|---|---|---|---|---|
 | 2024 | [39385035 — CTLA4 blockade abrogates KEAP1/STK11-related resistance to PD-(L)1 inhibitors](https://pubmed.ncbi.nlm.nih.gov/39385035/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;STK11+KEAP1;KRAS+STK11+KEAP1 | treatment_outcomes;immune_context;preclinical_mechanism | yes |
+| 2026 | [42587156 — Biomarkers of nivolumab benefit in resectable non-small cell lung cancer.](https://pubmed.ncbi.nlm.nih.gov/42587156/) | 实际分析/描述 | 实际分析/描述 | STK11+KRAS;STK11+KEAP1;TP53+STK11;TP53+KEAP1 | genomic_landscape;treatment_outcomes;assay_or_method | no |
+
+## Nature Genetics
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2026 | [42432246 — Evolving patterns of co-mutations from tumor initiation to metastatic progression.](https://pubmed.ncbi.nlm.nih.gov/42432246/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;EGFR+STK11;EGFR+RBM10 | genomic_landscape;prognosis;assay_or_method | no |
+
+## Nature Medicine
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2024 | [38351187 — Biomarker-directed targeted therapy plus durvalumab in advanced non-small-cell lung cancer: a phase 2 umbrella trial.](https://pubmed.ncbi.nlm.nih.gov/38351187/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | STK11+KEAP1;ATM | treatment_outcomes;immune_context;resistance | no |
+
+## Signal Transduction and Targeted Therapy
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2024 | [38177135 — Josephin domain containing 2 (JOSD2) promotes lung cancer by inhibiting LKB1 (Liver kinase B1) activity.](https://pubmed.ncbi.nlm.nih.gov/38177135/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | JOSD2+STK11 | preclinical_mechanism;model_genotype | no |
 
 ## 排除与预印本
 

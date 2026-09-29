@@ -1384,6 +1384,635 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "C-index .754 is not accuracy. N400 profiled differs from model N295 (221 training/74 internal), with three external cohorts, not four external cohorts. RBM10 adjusted DFS is nonsignificant. Observational adjuvant-TKI comparison has no validated treatment interaction; deconvolution is not single-cell/spatial data. Article-level facets are not exhaustive or evidence that every expression applies to every listed model; independent cohorts must not be merged."
+    },
+    "38177135": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-cell-line",
+        "mouse",
+        "pdx",
+        "cdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "sttt-2024-38177135-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "877e035371ff8504be0b228f199f7bec0dc0ed600a22d15c42c1fc6bc7883c19",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "LKB1功能状态与JOSD2去泛素化机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "41345544": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "mouse",
+        "mouse-cell-line",
+        "organoid",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism",
+        "computational-methods"
+      ],
+      "source_reference": "cell-research-2025-41345544-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "ac9bf90237ad54f900d9d973be786aa52cd4c0f1ee7d5da923fee58835217e53",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "肺腺癌阶段进展基因组与转录组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "38351187": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "nature-medicine-2024-38351187-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "1c4aaf5efab5191cf8f0590521e10c21909158e748aa430b37f9c5a14d45158f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "HUDSON免疫耐药伞式试验. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "35190375": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "jitc-2022-35190375-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "362ded0b800f8d28e1a0d14ff34b7b55e57853c469cebfcc05452a5e1ecd69ca",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "IMpower150免疫抗血管化疗及共突变. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "38402609": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "mouse",
+        "gemm",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-cell-2024-38402609-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "0a7287cdaad97eab2579f96659e4439b6bceaf5727519ebebeeaa6586af5a0c9",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "KRAS抑制剂耐药与腺鳞转分化. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "37121400": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "annals-of-oncology-2023-37121400-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "4cf4fbc68847da8359b3b3b15118cfbe5a7f932fbcf46b74855ba313cded8b07",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "转移性KRAS肺腺癌临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "36526124": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "annals-of-oncology-2023-36526124-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "52b72568bd0d28d78356b3ce72a4ce64d5fcf52e4f5eb24daab278a396dd4e00",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "KEAP1克隆性LOH与免疫结局. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "36709038": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "annals-of-oncology-2023-36709038-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "ebb2b3c3351f21fd5c033a14b1b334a5050f16bc5052329fe43a62fe2a8b0755",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "KEYNOTE042基因突变TMB与疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "34450259": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2021-34450259-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "70a6c24b0f55a9e4bff9867e3f304369d2948bbeb176b4f48e9eb687f4fe696a",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "KEAP1与TP53共突变进化免疫分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "36535627": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "pdx",
+        "mouse",
+        "human-cell-line",
+        "ex-vivo",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-2023-36535627-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "4dcc98c7cb4b2cd6f1e0a5a4f18d720c4bc0c0a458f4340d55968010eaa52a5f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "EGFR抑制剂耐受细胞及CAF单细胞. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "36948245": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2023-36948245-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "98f88c8965d54876e358ff6d09117a3b9e61d571e839213f829ca254998cbdd6",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "ORIENT11肿瘤免疫微环境RNA分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "37806383": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-37806383-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "21e8d9120d523664679204d448fb53970c74556ac9fa1c7e145fd4934346bf1d",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "EGFR二次位点及耐药临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "37981218": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2024-37981218-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "380412f2c9ef029751ab3c6113ca21e729dd185f807754762f263dc5734415d1",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "EGFR_C797X等位背景四分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "42749049": {
+      "disease_ids": [
+        "sclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "pdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2026-42749049-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "f9404a4de8e08f426d0335c37c01aa1d6551ea2b141d877340db084a74ae9840",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "复发SCLC基因组转录组与剪接. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "41690367": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2026-41690367-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "e70affcd744783f58c0f37566334d32e92bfa015ba900a33a9fc0780005542b4",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "TTF1临床基因组免疫表型及疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "34230008": {
+      "disease_ids": [
+        "nsclc",
+        "colorectal-cancer",
+        "breast-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "serum"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "mouse",
+        "mouse-cell-line",
+        "pdx",
+        "ex-vivo",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-discovery-2021-34230008-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "090c19b9fc7a4445f7b07bc5b9e031d0ed94ae79cda87f176f2b368b44dbd4bd",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "STK11免疫耐药与STAT3机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "38207230": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jco-2024-38207230-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "eb949e25b1ae28869c53ec660cee95f4811c599aafec775f78682886acccacf4",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "免疫获得性耐药配对基因组免疫表型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "42587156": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "nature-2026-42587156-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "009a93b1c16fa740d3eeb1b6dd1f71abe418181a6d220f603c3cc1c50e22d436",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "CheckMate77T围手术期免疫与ctDNA基因标志物. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "42432246": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "mixed-solid-tumors",
+        "colorectal-cancer"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "nature-genetics-2026-42432246-language.md",
+      "source_reference_line": 7,
+      "curation_method": "same-agent supplied-main-text reading and visual checks; not independent acceptance",
+      "source_sha256": "432aadcff80ad2ec1d89a4c56fb3cebfdd2fcb091447d4449431095fb3e17515",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "SelectSim共突变零模型及转移风险. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    "42674257": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2026-42674257-language.md",
+      "source_reference_line": 11,
+      "curation_method": "same-agent supplied-main-text and scientific visual reading; not independent acceptance",
+      "source_sha256": "bc4aaf42392a7b3bf7fee817b3928cb1dfd040291d5e1b34860ee06331866090",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "EGFR/TP53 sequence and RNA-VAF associations, not STK11 outcome evidence. External thresholds required recalibration, not successful locked validation. Raw relapse counts and reported percentages differ; preserve provenance. Small TKI sets do not establish treatment prediction; KM tail is not an all-patient event count. Separate supplements not supplied; no independent acceptance."
+    },
+    "42749050": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "clinical-trial"
+      ],
+      "source_reference": "jto-2026-42749050-language.md",
+      "source_reference_line": 11,
+      "curation_method": "same-agent supplied-main-text and scientific visual reading; not independent acceptance",
+      "source_sha256": "bf58cb67f644c9e5f59df82f95c410b92bd229ee8fce31c9538ceecb91ec4ebc",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Single-arm descriptive subgroups, not a treatment-by-biomarker interaction. ALK fusion plus TP53 sequence change is mixed co-alteration; compound ALK is same-gene and not phased. Sequence co-mutation label also covers descriptive broad heatmaps, not an adjudicated positive cross-gene pair. STK11 is supplementary genomic context only, not an efficacy subgroup. Preserve analysis-set denominators and source-label conflicts. Nondetection is not clearance or biological absence; no independent acceptance."
     }
   },
   "expressions": [

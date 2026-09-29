@@ -2,7 +2,7 @@
 
 2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
 
-Authority for registered JTO main-text completion. The 137-record maintenance queue is separate and is not a completed or exhaustive journal corpus. The four original STK11 highlights remain highlighted; the 19 new reads are not automatically highlighted.
+Authority for registered JTO main-text completion. The maintenance queue is separate and is not a completed or exhaustive journal corpus. The four original STK11 highlights remain highlighted; later additions are not automatically highlighted.
 
 Completion requires full supplied main text and all main figures/tables, section-specific language and evidence limitations. Independent six-gate acceptance and supplement review are separate states. See jto-reading-quality-register.csv. Historical priority reading evidence remains in jto-stk11-deep-reading-ledger.md.
 
@@ -31,3 +31,12 @@ Completion requires full supplied main text and all main figures/tables, section
 | 41260457 | 2026-09-28 | Journal of Thoracic Oncology | 12 | MTAP co-deletion and targeted-therapy outcomes | [jto-2026-41260457-language.md](jto-2026-41260457-language.md) | Separately cited supplementary files not supplied or reviewed |
 | 41903702 | 2026-09-28 | Journal of Thoracic Oncology | 22 | lung cancer genomic landscape | [jto-2026-41903702-language.md](jto-2026-41903702-language.md) | Embedded Tables S1-S3 and Figures S1-S2 reviewed in this supplied PDF only; external files not reviewed |
 | 42749051 | 2026-09-28 | Journal of Thoracic Oncology | 28 | integrated genomics/transcriptomics and recurrence risk | [jto-2026-42749051-language.md](jto-2026-42749051-language.md) | Separately cited supplementary files not supplied or reviewed |
+| 34450259 | 2026-09-29 | Journal of Thoracic Oncology | 13 | KEAP1与TP53共突变进化免疫分型 | [jto-2021-34450259-language.md](jto-2021-34450259-language.md) | Separate supplementary files not supplied or reviewed |
+| 36535627 | 2026-09-29 | Journal of Thoracic Oncology | 19 | EGFR抑制剂耐受细胞及CAF单细胞 | [jto-2023-36535627-language.md](jto-2023-36535627-language.md) | Separate supplementary files not supplied or reviewed; supplied PDF includes checked erratum 10.1016/j.jtho.2023.06.001 |
+| 36948245 | 2026-09-29 | Journal of Thoracic Oncology | 13 | ORIENT11肿瘤免疫微环境RNA分型 | [jto-2023-36948245-language.md](jto-2023-36948245-language.md) | Separate supplementary files not supplied or reviewed |
+| 37806383 | 2026-09-29 | Journal of Thoracic Oncology | 13 | EGFR二次位点及耐药临床基因组 | [jto-2024-37806383-language.md](jto-2024-37806383-language.md) | Separate supplementary files not supplied or reviewed |
+| 37981218 | 2026-09-29 | Journal of Thoracic Oncology | 12 | EGFR_C797X等位背景四分型 | [jto-2024-37981218-language.md](jto-2024-37981218-language.md) | Separate supplementary files not supplied or reviewed |
+| 42749049 | 2026-09-29 | Journal of Thoracic Oncology | 35 | 复发SCLC基因组转录组与剪接 | [jto-2026-42749049-language.md](jto-2026-42749049-language.md) | Separate supplementary files not supplied or reviewed |
+| 41690367 | 2026-09-29 | Journal of Thoracic Oncology | 15 | TTF1临床基因组免疫表型及疗效 | [jto-2026-41690367-language.md](jto-2026-41690367-language.md) | Separate supplementary files not supplied or reviewed |
+| 42674257 | 2026-09-29 | Journal of Thoracic Oncology | 28 | EGFR DNA/RNA等位基因表达与复发风险 | [jto-2026-42674257-language.md](jto-2026-42674257-language.md) | not_supplied; exact coverage in article note |
+| 42749050 | 2026-09-29 | Journal of Thoracic Oncology | 81 | ALK靶向治疗生物标志物及纵向ctDNA耐药分析 | [jto-2026-42749050-language.md](jto-2026-42749050-language.md) | partially_reviewed; exact coverage in article note |

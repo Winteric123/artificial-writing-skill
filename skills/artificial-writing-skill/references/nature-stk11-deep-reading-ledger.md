@@ -11,3 +11,4 @@ Journal-specific source-grounded article set, not a journal-wide style corpus. R
 Evidence, physical-page coverage, hashes, numerical checks, source conflicts, and section language: [nature-2026-09-19-stk11-language.md](nature-2026-09-19-stk11-language.md).
 
 Acceptance status: [nature-reading-quality-register.csv](nature-reading-quality-register.csv). New records remain not_reviewed with pending recheck gates. Source-grounded use requires reopening material claims and respecting quarantined discrepancies.
+| 42587156 | 2026-09-29 | Nature | 29 | CheckMate77T围手术期免疫与ctDNA基因标志物 | [nature-2026-42587156-language.md](nature-2026-42587156-language.md) | Embedded extended/supplementary materials read as itemized in article note; external supplementary files not supplied |

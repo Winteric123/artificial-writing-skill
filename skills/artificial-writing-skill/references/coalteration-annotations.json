@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "curated_on": "2026-09-28",
+  "curated_on": "2026-09-29",
   "scope": "All current formal registry records; eligible article-level topic annotations. Preprints separate; candidate queues not promoted.",
   "boundary": "Topic-screening labels, not new full reads, acceptance, quotations, exhaustive gene pairs, or proof that a negative-screened source contains no co-alteration. Gene contexts include comparisons and negative associations, not only positive co-occurrence. All filters are article-level, not expression-level validation.",
   "articles": {
@@ -10356,6 +10356,957 @@
         ],
         "scope": "text-triage-plus-existing-reading-notes; not complete visual recheck"
       }
+    },
+    "38177135": {
+      "pdf": {
+        "sha256": "877e035371ff8504be0b228f199f7bec0dc0ed600a22d15c42c1fc6bc7883c19",
+        "physical_pages": 16,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1038/s41392-023-01706-y",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "context_only",
+      "alteration_types": [
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "JOSD2",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "sttt-2024-38177135-language.md",
+          "source_sha256": "9fbbc44aec8ae9d2f800a23927ad05c0e38e73c771e13902c7d927d5a9a8dad7",
+          "first_line": 1,
+          "last_line": 44
+        }
+      ],
+      "boundary": "LKB1功能状态与JOSD2去泛素化机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "41345544": {
+      "pdf": {
+        "sha256": "ac9bf90237ad54f900d9d973be786aa52cd4c0f1ee7d5da923fee58835217e53",
+        "physical_pages": 19,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1038/s41422-025-01200-w",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain",
+        "fusion_rearrangement",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "EGFR"
+        ],
+        [
+          "STK11",
+          "KRAS"
+        ],
+        [
+          "MAP2K1",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis",
+        "preclinical_mechanism"
+      ],
+      "evidence": [
+        {
+          "source": "cell-research-2025-41345544-language.md",
+          "source_sha256": "d45765a210dae6161ad5b95066bf6ffadf984dea99ecc7004bcf2b52e51f825f",
+          "first_line": 1,
+          "last_line": 52
+        }
+      ],
+      "boundary": "肺腺癌阶段进展基因组与转录组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "38351187": {
+      "pdf": {
+        "sha256": "1c4aaf5efab5191cf8f0590521e10c21909158e748aa430b37f9c5a14d45158f",
+        "physical_pages": 32,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1038/s41591-024-02808-y",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "context_only",
+      "alteration_types": [
+        "sequence_mutation",
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "ATM"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes",
+        "immune_context",
+        "resistance"
+      ],
+      "evidence": [
+        {
+          "source": "nature-medicine-2024-38351187-language.md",
+          "source_sha256": "f7a75657682fd9ada115f8f98219117cf5ddc6e9f03c24843f13228445afd805",
+          "first_line": 1,
+          "last_line": 52
+        }
+      ],
+      "boundary": "HUDSON免疫耐药伞式试验. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "35190375": {
+      "pdf": {
+        "sha256": "362ded0b800f8d28e1a0d14ff34b7b55e57853c469cebfcc05452a5e1ecd69ca",
+        "physical_pages": 12,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1136/jitc-2021-003027",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes",
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "jitc-2022-35190375-language.md",
+          "source_sha256": "4027a591345d0773dac4340c480e1a9512b989c603dff671fa6b313b08d6947c",
+          "first_line": 1,
+          "last_line": 73
+        }
+      ],
+      "boundary": "IMpower150免疫抗血管化疗及共突变. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "38402609": {
+      "pdf": {
+        "sha256": "0a7287cdaad97eab2579f96659e4439b6bceaf5727519ebebeeaa6586af5a0c9",
+        "physical_pages": 41,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.ccell.2024.01.012",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53"
+        ],
+        [
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "resistance",
+        "preclinical_mechanism",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "cancer-cell-2024-38402609-language.md",
+          "source_sha256": "2ff3c91eab7fc91c769c6b4b3a16d8633446378ab56b7fa8e3bc99480cff50fd",
+          "first_line": 1,
+          "last_line": 54
+        }
+      ],
+      "boundary": "KRAS抑制剂耐药与腺鳞转分化. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "37121400": {
+      "pdf": {
+        "sha256": "4cf4fbc68847da8359b3b3b15118cfbe5a7f932fbcf46b74855ba313cded8b07",
+        "physical_pages": 29,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.annonc.2023.04.514",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "SMARCA4"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis"
+      ],
+      "evidence": [
+        {
+          "source": "annals-of-oncology-2023-37121400-language.md",
+          "source_sha256": "bb163f716d4a6a402b5b0655fab131db576a660206d22232b3a5b805a48ae488",
+          "first_line": 1,
+          "last_line": 46
+        }
+      ],
+      "boundary": "转移性KRAS肺腺癌临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "36526124": {
+      "pdf": {
+        "sha256": "52b72568bd0d28d78356b3ce72a4ce64d5fcf52e4f5eb24daab278a396dd4e00",
+        "physical_pages": 14,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.annonc.2022.12.002",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "KEAP1",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "annals-of-oncology-2023-36526124-language.md",
+          "source_sha256": "8bc93cf01d8917a58b107992e73fc2be80fea16b095b83ecfd4f3e77fa617951",
+          "first_line": 1,
+          "last_line": 45
+        }
+      ],
+      "boundary": "KEAP1克隆性LOH与免疫结局. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "36709038": {
+      "pdf": {
+        "sha256": "ebb2b3c3351f21fd5c033a14b1b334a5050f16bc5052329fe43a62fe2a8b0755",
+        "physical_pages": 12,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.annonc.2023.01.011",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "annals-of-oncology-2023-36709038-language.md",
+          "source_sha256": "8da39f35c7d2b89032f785331ab7fc80f8bbb092f9175274dc7cce93d82ffe76",
+          "first_line": 1,
+          "last_line": 71
+        }
+      ],
+      "boundary": "KEYNOTE042基因突变TMB与疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "34450259": {
+      "pdf": {
+        "sha256": "70a6c24b0f55a9e4bff9867e3f304369d2948bbeb176b4f48e9eb687f4fe696a",
+        "physical_pages": 13,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2021.08.010",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KEAP1",
+          "TP53"
+        ],
+        [
+          "KEAP1",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2021-34450259-language.md",
+          "source_sha256": "c6882c0fa489a7eedb47c0abf7fadad331cf730fe9b5aeb20440fba46421f3db",
+          "first_line": 1,
+          "last_line": 47
+        }
+      ],
+      "boundary": "KEAP1与TP53共突变进化免疫分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "36535627": {
+      "pdf": {
+        "sha256": "4dcc98c7cb4b2cd6f1e0a5a4f18d720c4bc0c0a458f4340d55968010eaa52a5f",
+        "physical_pages": 19,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2022.12.003",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "context_only",
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ]
+      ],
+      "analysis_uses": [
+        "resistance",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2023-36535627-language.md",
+          "source_sha256": "d64874d4c53fce74417a8af4d46aac40c96c03dfa4765ef3da5f67410c73061c",
+          "first_line": 1,
+          "last_line": 44
+        }
+      ],
+      "boundary": "EGFR抑制剂耐受细胞及CAF单细胞. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "36948245": {
+      "pdf": {
+        "sha256": "98f88c8965d54876e358ff6d09117a3b9e61d571e839213f829ca254998cbdd6",
+        "physical_pages": 13,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2023.03.012",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "not_identified",
+      "alteration_types": [
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [],
+      "analysis_uses": [
+        "immune_context",
+        "treatment_outcomes",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2023-36948245-language.md",
+          "source_sha256": "c94e130fac1942166b9e231b99539b055ac97b4193af2f0d560a23db0ab44ee1",
+          "first_line": 1,
+          "last_line": 44
+        }
+      ],
+      "boundary": "ORIENT11肿瘤免疫微环境RNA分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "37806383": {
+      "pdf": {
+        "sha256": "21e8d9120d523664679204d448fb53970c74556ac9fa1c7e145fd4934346bf1d",
+        "physical_pages": 13,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2023.09.1453",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound",
+        "copy_number_gain",
+        "copy_number_loss",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ],
+        [
+          "EGFR",
+          "TP53"
+        ],
+        [
+          "EGFR",
+          "RB1"
+        ]
+      ],
+      "analysis_uses": [
+        "resistance",
+        "treatment_outcomes",
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2024-37806383-language.md",
+          "source_sha256": "a19d32734c7f6683b2689e5b13433cf5572d8eac3f73430419c32854963ccec5",
+          "first_line": 1,
+          "last_line": 58
+        }
+      ],
+      "boundary": "EGFR二次位点及耐药临床基因组. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "37981218": {
+      "pdf": {
+        "sha256": "380412f2c9ef029751ab3c6113ca21e729dd185f807754762f263dc5734415d1",
+        "physical_pages": 12,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2023.11.016",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ],
+        [
+          "EGFR",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "resistance",
+        "treatment_outcomes",
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2024-37981218-language.md",
+          "source_sha256": "f85fa1d5a9c06f92c12cfaab91b7b3c975af9ce276cd3a92a69064451028b8f6",
+          "first_line": 1,
+          "last_line": 55
+        }
+      ],
+      "boundary": "EGFR_C797X等位背景四分型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "42749049": {
+      "pdf": {
+        "sha256": "f9404a4de8e08f426d0335c37c01aa1d6551ea2b141d877340db084a74ae9840",
+        "physical_pages": 35,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2026.104201",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain",
+        "copy_number_loss",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        [
+          "MYC",
+          "MYCL"
+        ],
+        [
+          "MYC",
+          "MYCN"
+        ],
+        [
+          "TP53",
+          "RB1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "resistance",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2026-42749049-language.md",
+          "source_sha256": "999b68fb23ba73e33abffd7b269a8a4e33066095db0345f9a7603c18f0f0af5b",
+          "first_line": 1,
+          "last_line": 53
+        }
+      ],
+      "boundary": "复发SCLC基因组转录组与剪接. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "41690367": {
+      "pdf": {
+        "sha256": "e70affcd744783f58c0f37566334d32e92bfa015ba900a33a9fc0780005542b4",
+        "physical_pages": 15,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2026.103610",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "STK11",
+          "KRAS"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2026-41690367-language.md",
+          "source_sha256": "6d55f9e6aa7b99b36297ded15fbb441c525fd843675c7c5cd7ab87f3ec3327cc",
+          "first_line": 1,
+          "last_line": 76
+        }
+      ],
+      "boundary": "TTF1临床基因组免疫表型及疗效. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "34230008": {
+      "pdf": {
+        "sha256": "090c19b9fc7a4445f7b07bc5b9e031d0ed94ae79cda87f176f2b368b44dbd4bd",
+        "physical_pages": 18,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1158/2159-8290.CD-20-1543",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KRAS"
+        ],
+        [
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "immune_context",
+        "treatment_outcomes",
+        "preclinical_mechanism"
+      ],
+      "evidence": [
+        {
+          "source": "cancer-discovery-2021-34230008-language.md",
+          "source_sha256": "b782ba2964792d35f526496a8ec7e94041558638e33a3c16ee0ef32708008a78",
+          "first_line": 1,
+          "last_line": 50
+        }
+      ],
+      "boundary": "STK11免疫耐药与STAT3机制. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "38207230": {
+      "pdf": {
+        "sha256": "eb949e25b1ae28869c53ec660cee95f4811c599aafec775f78682886acccacf4",
+        "physical_pages": 13,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1200/JCO.23.00580",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "B2M"
+        ],
+        [
+          "JAK1"
+        ],
+        [
+          "JAK2"
+        ]
+      ],
+      "analysis_uses": [
+        "resistance",
+        "immune_context",
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "jco-2024-38207230-language.md",
+          "source_sha256": "0e051efacb04d7e1ce0265befd5705cc927bd277feb06538d45d7e73e6d0abbe",
+          "first_line": 1,
+          "last_line": 47
+        }
+      ],
+      "boundary": "免疫获得性耐药配对基因组免疫表型. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "42587156": {
+      "pdf": {
+        "sha256": "009a93b1c16fa740d3eeb1b6dd1f71abe418181a6d220f603c3cc1c50e22d436",
+        "physical_pages": 29,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1038/s41586-026-10925-6",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KRAS"
+        ],
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "TP53",
+          "STK11"
+        ],
+        [
+          "TP53",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "nature-2026-42587156-language.md",
+          "source_sha256": "a4e2a059168e185dfad5276a4ac96fdaddcc9552dccbf7cc279dfc305c155bc2",
+          "first_line": 1,
+          "last_line": 53
+        }
+      ],
+      "boundary": "CheckMate77T围手术期免疫与ctDNA基因标志物. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "42432246": {
+      "pdf": {
+        "sha256": "432aadcff80ad2ec1d89a4c56fb3cebfdd2fcb091447d4449431095fb3e17515",
+        "physical_pages": 27,
+        "checked_context_pages": [],
+        "scope": "Supplied main text and visuals read; see article note for actual physical pages and supplement boundaries; not independent acceptance"
+      },
+      "doi": "10.1038/s41588-026-02661-4",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "EGFR",
+          "STK11"
+        ],
+        [
+          "EGFR",
+          "RBM10"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "nature-genetics-2026-42432246-language.md",
+          "source_sha256": "49b106dd6703c1bd4a458a2df8ff30fec5836f416e57ea2040bc17ecd0410cd2",
+          "first_line": 1,
+          "last_line": 55
+        }
+      ],
+      "boundary": "SelectSim共突变零模型及转移风险. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance. Gene contexts are not exhaustive positive pair claims; may include mutually exclusive or model contexts. Same-gene compound variants are not cross-gene co-mutations."
+    },
+    "42674257": {
+      "pdf": {
+        "sha256": "bc4aaf42392a7b3bf7fee817b3928cb1dfd040291d5e1b34860ee06331866090",
+        "physical_pages": 28,
+        "checked_context_pages": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18,
+          19,
+          20,
+          26,
+          27,
+          28
+        ],
+        "scope": "Bounded main and supplied scientific-visual reading; article note gives section and supplement coverage; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2026.104176",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis",
+        "treatment_outcomes",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2026-42674257-language.md",
+          "source_sha256": "f03551c69978748771572f6e09262b5b8e724c819b576b97b91f3f7dcd567c61",
+          "first_line": 1,
+          "last_line": 82
+        }
+      ],
+      "boundary": "EGFR/TP53 sequence and RNA-VAF associations, not STK11 outcome evidence. External thresholds required recalibration, not successful locked validation. Raw relapse counts and reported percentages differ; preserve provenance. Small TKI sets do not establish treatment prediction; KM tail is not an all-patient event count. Separate supplements not supplied; no independent acceptance."
+    },
+    "42749050": {
+      "pdf": {
+        "sha256": "bf58cb67f644c9e5f59df82f95c410b92bd229ee8fce31c9538ceecb91ec4ebc",
+        "physical_pages": 81,
+        "checked_context_pages": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          32,
+          33,
+          51,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          65,
+          68,
+          71,
+          78,
+          79,
+          80
+        ],
+        "scope": "Bounded main and supplied scientific-visual reading; article note gives section and supplement coverage; not independent acceptance"
+      },
+      "doi": "10.1016/j.jtho.2026.104202",
+      "eligibility": "included",
+      "curated_on": "2026-09-29",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "fusion_rearrangement",
+        "same_gene_compound",
+        "copy_number_gain",
+        "origin_unresolved"
+      ],
+      "gene_contexts": [
+        [
+          "EML4",
+          "ALK",
+          "TP53"
+        ],
+        [
+          "ALK"
+        ],
+        [
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis",
+        "treatment_outcomes",
+        "resistance",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2026-42749050-language.md",
+          "source_sha256": "18fd2202fffa4fff61fc144c63b43a06c75464acb1b1df6ebccac091890f6716",
+          "first_line": 1,
+          "last_line": 86
+        }
+      ],
+      "boundary": "Single-arm descriptive subgroups, not a treatment-by-biomarker interaction. ALK fusion plus TP53 sequence change is mixed co-alteration; compound ALK is same-gene and not phased. Sequence co-mutation label also covers descriptive broad heatmaps, not an adjudicated positive cross-gene pair. STK11 is supplementary genomic context only, not an efficacy subgroup. Preserve analysis-set denominators and source-label conflicts. Nondetection is not clearance or biological absence; no independent acceptance."
     }
   },
   "preprints": {
