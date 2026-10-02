@@ -53,6 +53,8 @@ Use the sequence:
 
 Prefer a quantified result over an evaluative adjective. Include the correct denominator and follow-up before interpreting maturity. Preserve the effect direction: confirm which group is the numerator, reference, and hazard-risk direction.
 
+When drafting or interpreting a result for which the supplied material gives only a direction, explicitly distinguish the observed direction from the unavailable magnitude (and uncertainty, if absent). For example, a decrease in a mouse endpoint can be reported without inventing its percentage, but the absence of a quantified effect should remain visible in the interpretation. Do not add such commentary inside a translation-only output; preserve the user's operation and keep any permitted audit note separate.
+
 For a nonsignificant result, report the point estimate and CI. Avoid `trend` when it merely substitutes for a failed significance test; use `numerically higher/lower` only when the direction itself is worth reporting and the uncertainty is clear.
 
 ## Limitation logic

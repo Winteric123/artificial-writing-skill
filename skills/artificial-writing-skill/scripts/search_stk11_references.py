@@ -77,7 +77,7 @@ def matches(row, *, assays=(), origin='', treatments=(), methods=(), relation=''
 
 
 def markdown(rows):
-    lines = ['# STK11写作参考：分层分类目录', '', '主文精读、独立验收、核心highlight与候选资格分别显示。组学细标签目前覆盖2026-09-29本批19篇；其他条目缺标签是待补，不是缺少该技术。依据见逐篇笔记与stk11-assay-treatment-guide.md。', '', '| 稳定编号 / PMID | 年份·期刊·题名 | 内容及STK11关系 | 技术（来源/样本） | 治疗 / 药物 | 研究方式 | 状态 / 核心highlight |', '|---|---|---|---|---|---|---|']
+    lines = ['# STK11写作参考：分层分类目录', '', '主文精读、独立验收、核心highlight与候选资格分别显示。组学细标签按已提供主文逐篇更新（范围见分类指南）；其他条目缺标签是待补，不是缺少该技术。依据见逐篇笔记与stk11-assay-treatment-guide.md。', '', '| 稳定编号 / PMID | 年份·期刊·题名 | 内容及STK11关系 | 技术（来源/样本） | 治疗 / 药物 | 研究方式 | 状态 / 核心highlight |', '|---|---|---|---|---|---|---|']
     for row in rows:
         assay_text = '; '.join(f'{item["assay"]} ({item["origin"]}/{item["sample_context"]})' for item in row['assays']) or '待精细标注；不代表未开展'
         values = [f'[{row["stable_id"]}]({row["pubmed_url"]})', f'{row["year"]} · {row["journal"]} · {row["title"]} [DOI]({row["doi_url"]})', row['primary_classification'] + ' / ' + row['stk11_relation'], assay_text, '; '.join(row['treatment_types'] + row['drugs']) or '待标注', '; '.join(row['methods']) or '见历史筛选', row['reading_stage'] + '; review=' + row['review_status'] + '; core=' + str(row['core_highlight'])]

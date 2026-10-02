@@ -11,14 +11,16 @@ The skill resolves the operation, communication scenario, journal, disease or tu
 - prepares scientific or technical reports, standalone results statements, abstracts, slide text, speaker notes, posters, briefings, response letters, and literature syntheses;
 - supports oncology communication involving multi-omics, bioinformatics, preclinical experiments, statistics, immunotherapy, targeted therapy, and drug response or resistance;
 - retrieves vocabulary, collocations, sentence frames, and paragraph architectures by Title, Abstract component, Introduction, Methods, Results, Discussion, Conclusion, or Translational Relevance;
-- provides a 9,499-entry cross-journal retrieval view across twelve registered journals, with isolated source catalogs, including 7,902 CCR entries covering 263 completed CCR main-text reads, with article-level provenance and source alerts;
+- provides a 9,640-entry cross-journal retrieval view across twelve registered journals, with isolated source catalogs, including 7,981 CCR entries covering 263 completed CCR main-text reads, with article-level provenance and source alerts;
 - prioritizes thirteen framework papers—six CCR, four JTO, two Cancer Discovery and one Nature—for STK11-focused lung-cancer work without presenting them as a validated STK11 molecular profile;
-- connects those thirteen core highlights with six separately labelled topic-support papers, using an analysis guide and article-level reasoning map without promoting support papers to core highlights;
+- connects those thirteen core highlights with eighteen separately labelled topic-support papers, using an analysis guide and article-level reasoning map without promoting support papers to core highlights;
 - tracks main-text completion separately from supplementary-material coverage and documented six-gate source-recheck acceptance;
 - calibrates causal, predictive, subgroup, validation, superiority, and clinical-utility claims to the underlying evidence;
 - checks numbers, terminology, tense, abbreviations, provenance, and unsupported assertions.
 
-Counts are a 2026-09-29 generated snapshot. The [generated inventory](skills/artificial-writing-skill/references/library-index.md) and [summary](skills/artificial-writing-skill/references/library-summary.json) distinguish all-journal year totals from journal-by-year subsets. Topic or intake-batch counts require an additional explicit filter. Of the 9,499 language entries, 9,490 are retrieval-eligible and nine are quarantined; eligibility is not scientific acceptance.
+Counts are a 2026-10-02 generated snapshot. The [generated inventory](skills/artificial-writing-skill/references/library-index.md) and [summary](skills/artificial-writing-skill/references/library-summary.json) distinguish all-journal year totals from journal-by-year subsets. Topic or intake-batch counts require an additional explicit filter. Of the 9,640 language entries, 9,631 are retrieval-eligible and nine are quarantined; eligibility is not scientific acceptance.
+
+The October 2 local intake adds [PMID 37495171](skills/artificial-writing-skill/references/jto-2023-37495171-reading.md) as a completed supplied-main-text read, with 62 section-language units and an independent bounded review still in progress (two pending gates; separate supplements not supplied). Eleven existing reads retain their original dates and review states. Two CCR single-paper provenance addenda contribute 79 further units. The project collection is now 31 unique papers: 13 unchanged core highlights plus 18 topic-support papers; assay-level curation covers a distinct 20-paper subset. Source PDFs, extracted full text, private paths and raw behavioral responses are not distributed in this repository.
 
 It does not provide clinical decision support and must not invent data, methods, citations, registrations, ethics approvals, or novelty claims.
 
@@ -110,7 +112,7 @@ For an unsupported journal or tumor type, provide the relevant instructions or s
 
 ## Inventory scope and retrieval
 
-The 2026-09-29 formal-journal inventory has 328 registered records: 310 included and 18 excluded or background-only. Main-text reading is marked complete for all 310 included records; no eligible indexed record remains incomplete. The included set comprises 263 CCR, 32 JTO and 15 articles across ten other journals. Preprints and candidate references have separate registers and do not enter these denominators. These are supplied-version main-reading states, not proof of exhaustive journal coverage, complete supplementary-material review or independent acceptance.
+The 2026-10-02 formal-journal inventory has 329 registered records: 311 included and 18 excluded or background-only. Main-text reading is marked complete for all 311 included records; no eligible indexed record remains incomplete. The included set comprises 263 CCR, 33 JTO and 15 articles across ten other journals. Preprints and candidate references have separate registers and do not enter these denominators. These are supplied-version main-reading states, not proof of exhaustive journal coverage, complete supplementary-material review or independent acceptance.
 
 | Scope | Included | Main-text complete | Included, incomplete |
 |---|---:|---:|---:|
@@ -142,7 +144,7 @@ For STK11 work, use the [analysis guide](skills/artificial-writing-skill/referen
 - Article-level bibliography: 281 registered CCR records, of which 263 are included and 18 are excluded or retained as background-only. Indexing and coverage checks do not establish journal-wide completeness. The 2020 SMARCA4 paper is an explicit user-priority historical qualitative exception to the 2021–2026 base.
 - Language-focused deep reading: all 263 included CCR articles are marked main-text complete; no eligible indexed CCR record remains incomplete. Main-article completion does not imply review of unsupplied supplementary files or a passed source recheck.
 - Indexed 2026 coverage: 75/75 included CCR main articles are complete, including EVOKE-02 (PMID 41961582) from the supplied publisher-manuscript version. This is the local indexed subset, not proof of exhaustive coverage of every 2026 CCR publication.
-- Structured section-language catalog: 7,902 entries covering the 263 completed CCR records, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
+- Structured section-language catalog: 7,981 entries covering the 263 completed CCR records, including vocabulary, collocations, phrase and sentence frames, sentence models, paragraph architectures, and paragraph models.
 - Acceptance status: six CCR core highlights are marked source-recheck-passed, within a cross-journal set of thirteen. These are documented same-agent source rechecks, not independent reviews or exhaustive certification of every expression. Consult the [recheck summary](skills/artificial-writing-skill/references/source-rechecks/2026-09-28-summary.md) and each journal's quality register for actual gates and boundaries.
 - Remaining-queue completion: the indexed 2021–2022 queue resolved 49 original-research reads plus three background-only reviews; the indexed 2023 queue resolved 34 research, regulatory, or methods reads plus two background sources. The dated completion maps preserve paper-level scope and caveats.
 - STK11 priorities: thirteen framework papers remain highlighted across CCR, JTO, Cancer Discovery, and Nature. They are contextual writing frameworks, not a validated STK11 molecular profile.

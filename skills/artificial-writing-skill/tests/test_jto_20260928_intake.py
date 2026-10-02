@@ -84,7 +84,11 @@ class JtoSeptember28Intake(unittest.TestCase):
         self.assertEqual(sum(bool(row['main_read_completed_on']) and row['main_read_completed_on'] <= '2026-09-28' for row in historical_queue), 23)
         self.assertEqual(sum(row['group'] == 'R' for row in historical_queue), 20)
         pending = {row['pmid'] for row in self.queue if row['local_pdf_sha256'] and not row['main_read_completed_on']}
-        self.assertEqual(pending, {'37495171'})
+        expected_pending = {row['pmid'] for row in self.queue if row['local_pdf_sha256']
+                            and self.library.get(row['pmid'], {}).get('reading_stage') != 'main_text_deep_read_complete'}
+        self.assertEqual(pending, expected_pending)
+        self.assertNotIn('37495171', pending)  # Subsequently read on 2026-10-02.
+        self.assertTrue(any(not row['main_read_completed_on'] for row in self.queue))
         for row in self.queue:
             self.assertNotIn('\\', row['local_pdf_filename'])
             self.assertNotIn('/', row['local_pdf_filename'])

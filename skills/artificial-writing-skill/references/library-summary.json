@@ -5,11 +5,11 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 328,
-  "included": 310,
+  "registered": 329,
+  "included": 311,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 310,
+  "main_text_complete": 311,
   "eligible_incomplete": 0,
   "source_recheck_passed": 13,
   "stk11_highlights": 13,
@@ -50,9 +50,9 @@
       "excluded": 7
     },
     "2023": {
-      "registered": 55,
-      "included": 50,
-      "complete": 50,
+      "registered": 56,
+      "included": 51,
+      "complete": 51,
       "incomplete": 0,
       "excluded": 5
     },
@@ -207,9 +207,9 @@
         "excluded": 0
       },
       "2023": {
-        "registered": 8,
-        "included": 8,
-        "complete": 8,
+        "registered": 9,
+        "included": 9,
+        "complete": 9,
         "incomplete": 0,
         "excluded": 0
       },
@@ -281,14 +281,14 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 310,
+    "included": 311,
     "co_mutation": {
-      "analyzed": 99,
+      "analyzed": 100,
       "not_identified": 187,
       "context_only": 24
     },
     "co_alteration": {
-      "analyzed": 121,
+      "analyzed": 122,
       "not_identified": 162,
       "context_only": 27
     },

@@ -27,6 +27,13 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 - [Eight CCR 2025 articles](ccr-2025-2026-09-19-intake-language.md) add CNS efficacy, MAPK/ICI biomarker interpretation, shared-variant diagnostics, immune/radiomics resistance, oncolytic-virus spatial proteomics, YAP/HER3/RET experiments, ecMYC spatial biology and LPA metabolomics/bulk RNA/proteomics/scRNA reanalysis. Use [the manifest](ccr-2025-2026-09-19-intake-manifest.csv) for category, version, hash and reading scope. No new STK11 highlight was inferred.
 - [medRxiv PRO trajectories](medrxiv-2025-pro-trajectories-language.md) is a separately read v1 preprint, not the CCR version PMID40272273. Check [the preprint register](preprint-source-register.csv); do not merge its reading status or wording into the CCR catalog.
 
+## 2026-10-02 local STK11 intake
+
+- [PMID37495171 scientific reading](jto-2023-37495171-reading.md), [62 section-language units](jto-2023-37495171-language.md), and [independent bounded review](source-rechecks/2026-10-02-37495171.md): all17 supplied main-text pages and six main figures; supplements not supplied, review in progress.
+- [Six CCR support checks](ccr-2026-10-02-stk11-support-notes.md) and [five JTO support checks](jto-2026-10-02-stk11-support-notes.md) preserve previous reading dates and separate direct evidence, contextual evidence and structural analogues.
+- Single-paper language supplements for [PMID42456046](ccr-2026-42456046-language-addendum.md) and [PMID42485106](ccr-2026-42485106-language-addendum.md) repair article-level provenance, not reading or acceptance counts. [Their manifest](ccr-2026-10-02-language-addenda.csv) routes the CCR catalog build. Synthesized frames are not original quotations.
+- Current STK11 membership is31=13 core+18 support; fine assay tagging covers20 supplied-text-curated papers. These distinct sets must not be conflated.
+
 ## Existing source routes
 
 - Read [deep-reading-acceptance.md](deep-reading-acceptance.md) when performing literature intake, judging reading depth, or reviewing completion claims. Use the journal-specific quality register: [CCR](ccr-reading-quality-register.csv), [JTO](jto-reading-quality-register.csv), [Cancer Discovery](cancer-discovery-reading-quality-register.csv), or [Nature](nature-reading-quality-register.csv); load only relevant rows. A pending review does not erase prior reading, and a script pass does not prove scientific understanding.

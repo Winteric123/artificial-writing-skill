@@ -32,14 +32,14 @@ class Stk11WritingFramework(unittest.TestCase):
         support = {record['pmid'] for record in self.records if record['tier'] == 'topic_support'}
         self.assertEqual(mapped_core, highlighted)
         self.assertFalse(highlighted & support)
-        self.assertEqual(support, {'36775193', '36494075', '37806385', '39804166', '39545922', '42507545'})
+        self.assertEqual(support, {'36775193', '36494075', '37806385', '39804166', '39545922', '42507545'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'})
 
     def test_cross_gene_set_preserves_copy_context_additions(self):
         cross_gene = {record['pmid'] for record in self.records if record['in_cross_gene_16']}
         self.assertEqual(len(cross_gene), 16)
         extra = {record['pmid'] for record in self.records} - cross_gene
-        self.assertEqual(extra, {'39864548', '41870274', '42409117'})
-        self.assertEqual(len(self.records), 19)
+        self.assertEqual(extra, {'39864548', '41870274', '42409117'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'})
+        self.assertEqual(len(self.records), 31)
 
     def test_scoped_source_evidence_resolves_without_private_paths(self):
         for record in self.records:

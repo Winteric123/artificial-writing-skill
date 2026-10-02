@@ -53,7 +53,7 @@ class Completion2023Tests(unittest.TestCase):
         self.assertIn('tonsillar',bibliography['37756581']['disease_scope'])
         self.assertIn('not SCLC',bibliography['36255391']['disease_scope'])
         self.assertIn('MST1R',bibliography['36537918']['secondary_classifications'])
-        companion = json.loads((REFERENCES / 'ccr-2023-main-figure-companion.json').read_text())
+        companion = json.loads((REFERENCES / 'ccr-2023-main-figure-companion.json').read_text(encoding='utf-8'))
         self.assertEqual(companion['physical_pages'],3)
         self.assertEqual(len(companion['sha256']),64)
         self.assertIn('conflict',companion['scope'])

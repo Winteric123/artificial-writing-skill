@@ -2013,6 +2013,35 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "Single-arm descriptive subgroups, not a treatment-by-biomarker interaction. ALK fusion plus TP53 sequence change is mixed co-alteration; compound ALK is same-gene and not phased. Sequence co-mutation label also covers descriptive broad heatmaps, not an adjudicated positive cross-gene pair. STK11 is supplementary genomic context only, not an efficacy subgroup. Preserve analysis-set denominators and source-label conflicts. Nondetection is not clearance or biological absence; no independent acceptance."
+    },
+    "37495171": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-2023-37495171-language.md",
+      "source_reference_line": 8,
+      "curation_method": "supplied main text and all main figures read; not automatic acceptance",
+      "source_sha256": "5cd96af8d8dfcf0312bf2a6f0c6b0d8498f0018e2ee107268edcc1687d4e6b7f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Exploratory trial biomarker subsets, not a prospectively validated treatment-selection assay. Only OAK has tissue STK11 data; RAS84 is a transcriptomic surrogate, not measured KRAS genotype. Treatment interactions differ by trial/endpoint (OAK OS P=.27; ORIENT-11 OS/PFS P=.15). Def-group CD8 OS trends are nonsignificant; bulk inference does not prove T-cell dysfunction or STING causality. Figure1 says eight common genes but lists seven; cohort-specific feature availability and quartile thresholds limit deployment. Separate supplements not supplied."
     }
   },
   "expressions": [

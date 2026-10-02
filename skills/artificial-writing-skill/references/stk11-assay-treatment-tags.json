@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated": "2026-09-29",
-  "scope": "19 supplied-PDF main-text reads on 2026-09-29; non-exhaustive article facets, not all assays in every tissue",
+  "updated": "2026-10-02",
+  "scope": "Historical 19 supplied-PDF reads on 2026-09-29 plus PMID37495171 on 2026-10-02; non-exhaustive article facets, not all assays in every tissue",
   "records": [
     {
       "stable_id": "STK11-PMID-38177135",
@@ -1147,6 +1147,68 @@
       "evidence_sha256": "49b106dd6703c1bd4a458a2df8ff30fec5836f416e57ea2040bc17ecd0410cd2",
       "pdf_sha256": "432aadcff80ad2ec1d89a4c56fb3cebfdd2fcb091447d4449431095fb3e17515",
       "boundary": "SelectSim共突变零模型及转移风险. Preserve assay, cohort, alteration and treatment boundaries in the article evidence map; disputed source numbers require original-source resolution. No independent acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-37495171",
+      "pmid": "37495171",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2023",
+      "title": "STK11/LKB1-Deficient Phenotype Rather Than Mutation Diminishes Immunotherapy Efficacy and Represents STING/Type I Interferon/CD8+ T-Cell Dysfunction in NSCLC.",
+      "doi": "10.1016/j.jtho.2023.07.020",
+      "primary_classification": "STK11功能表型与免疫治疗分层",
+      "stk11_relation": "direct_function",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [
+        "ici_mono",
+        "chemoimmunotherapy",
+        "chemotherapy"
+      ],
+      "drugs": [
+        "atezolizumab",
+        "docetaxel",
+        "sintilimab",
+        "pemetrexed",
+        "platinum"
+      ],
+      "assays": [
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "ORIENT-11 human tumor",
+          "evidence": "jto-2023-37495171-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "OAK POPLAR TCGA human tumor",
+          "evidence": "jto-2023-37495171-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "reanalysis",
+          "sample_context": "TCGA RPPA",
+          "evidence": "jto-2023-37495171-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        "STK11+KRAS",
+        "STK11+KEAP1",
+        "STK11+KRAS+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jto-2023-37495171-reading.md",
+      "evidence_sha256": "3e38bc8a4f89451abe0366746a273f8b51276a709cfb1d8f40efcafa8b3928fe",
+      "pdf_sha256": "5cd96af8d8dfcf0312bf2a6f0c6b0d8498f0018e2ee107268edcc1687d4e6b7f",
+      "boundary": "Exploratory trial biomarker subsets, not a prospectively validated treatment-selection assay. Only OAK has tissue STK11 data; RAS84 is a transcriptomic surrogate, not measured KRAS genotype. Treatment interactions differ by trial/endpoint (OAK OS P=.27; ORIENT-11 OS/PFS P=.15). Def-group CD8 OS trends are nonsignificant; bulk inference does not prove T-cell dysfunction or STING causality. Figure1 says eight common genes but lists seven; cohort-specific feature availability and quartile thresholds limit deployment. Separate supplements not supplied. OAK tissue genomic labels are available, but their sequencing-platform resolution is not verified from the supplied main text; no targeted-DNA assay tag is assigned."
     }
   ]
 }

@@ -40,3 +40,4 @@ Completion requires full supplied main text and all main figures/tables, section
 | 41690367 | 2026-09-29 | Journal of Thoracic Oncology | 15 | TTF1临床基因组免疫表型及疗效 | [jto-2026-41690367-language.md](jto-2026-41690367-language.md) | Separate supplementary files not supplied or reviewed |
 | 42674257 | 2026-09-29 | Journal of Thoracic Oncology | 28 | EGFR DNA/RNA等位基因表达与复发风险 | [jto-2026-42674257-language.md](jto-2026-42674257-language.md) | not_supplied; exact coverage in article note |
 | 42749050 | 2026-09-29 | Journal of Thoracic Oncology | 81 | ALK靶向治疗生物标志物及纵向ctDNA耐药分析 | [jto-2026-42749050-language.md](jto-2026-42749050-language.md) | partially_reviewed; exact coverage in article note |
+| 37495171 | 2026-10-02 | Journal of Thoracic Oncology | 17 | STK11功能表型与免疫治疗分层 | [jto-2023-37495171-reading.md](jto-2023-37495171-reading.md); [jto-2023-37495171-language.md](jto-2023-37495171-language.md) | Separate supplements not supplied; Figures1-6 visually read; no main tables |

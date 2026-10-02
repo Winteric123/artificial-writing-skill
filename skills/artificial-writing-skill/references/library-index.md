@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记328篇；当前纳入310篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读310篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
+正式期刊登记329篇；当前纳入311篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读311篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -19,7 +19,7 @@
 | 2020 | 1 | 1 | 1 | 0 | 0 |
 | 2021 | 24 | 24 | 24 | 0 | 0 |
 | 2022 | 51 | 44 | 44 | 0 | 7 |
-| 2023 | 55 | 50 | 50 | 0 | 5 |
+| 2023 | 56 | 51 | 51 | 0 | 5 |
 | 2024 | 52 | 48 | 48 | 0 | 4 |
 | 2025 | 55 | 53 | 53 | 0 | 2 |
 | 2026 | 88 | 88 | 88 | 0 | 0 |
@@ -35,7 +35,7 @@
 | Clinical Cancer Research | 281 | 263 | 263 |
 | Journal for ImmunoTherapy of Cancer | 1 | 1 | 1 |
 | Journal of Clinical Oncology | 1 | 1 | 1 |
-| Journal of Thoracic Oncology | 32 | 32 | 32 |
+| Journal of Thoracic Oncology | 33 | 33 | 33 |
 | Nature | 2 | 2 | 2 |
 | Nature Genetics | 1 | 1 | 1 |
 | Nature Medicine | 1 | 1 | 1 |
@@ -61,7 +61,7 @@
 | Journal for ImmunoTherapy of Cancer | 2022 | 1 | 1 | 1 | 0 | 0 |
 | Journal of Clinical Oncology | 2024 | 1 | 1 | 1 | 0 | 0 |
 | Journal of Thoracic Oncology | 2021 | 1 | 1 | 1 | 0 | 0 |
-| Journal of Thoracic Oncology | 2023 | 8 | 8 | 8 | 0 | 0 |
+| Journal of Thoracic Oncology | 2023 | 9 | 9 | 9 | 0 | 0 |
 | Journal of Thoracic Oncology | 2024 | 8 | 8 | 8 | 0 | 0 |
 | Journal of Thoracic Oncology | 2025 | 4 | 4 | 4 | 0 | 0 |
 | Journal of Thoracic Oncology | 2026 | 11 | 11 | 11 | 0 | 0 |
@@ -445,7 +445,7 @@
 |---|---|---|---|---|---|
 | 34450259 | KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy. | 10.1016/j.jtho.2021.08.010 | KEAP1与TP53共突变进化免疫分型 | 已完成 | no |
 
-#### 2023（8篇）
+#### 2023（9篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
@@ -456,6 +456,7 @@
 | 36958689 | Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC. | 10.1016/j.jtho.2023.03.014 | STK11-linked metabolic mechanism | 已完成 | no |
 | 36494075 | Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers. | 10.1016/j.jtho.2022.11.022 | clinical genomics and resistance | 已完成 | no |
 | 36535627 | Single-Cell Analysis Reveals Transcriptomic Features of Drug-Tolerant Persisters and Stromal Adaptation in a Patient-Derived EGFR-Mutated Lung Adenocarcinoma Xenograft Model. | 10.1016/j.jtho.2022.12.003 | EGFR抑制剂耐受细胞及CAF单细胞 | 已完成 | no |
+| 37495171 | STK11/LKB1-Deficient Phenotype Rather Than Mutation Diminishes Immunotherapy Efficacy and Represents STING/Type I Interferon/CD8+ T-Cell Dysfunction in NSCLC. | 10.1016/j.jtho.2023.07.020 | STK11功能表型与免疫治疗分层 | 已完成 | no |
 | 36240971 | Targeting NFE2L2/KEAP1 Mutations in Advanced NSCLC With the TORC1/2 Inhibitor TAK-228. | 10.1016/j.jtho.2022.09.225 | genotype-directed clinical trial | 已完成 | no |
 
 #### 2024（8篇）

@@ -11307,6 +11307,67 @@
         }
       ],
       "boundary": "Single-arm descriptive subgroups, not a treatment-by-biomarker interaction. ALK fusion plus TP53 sequence change is mixed co-alteration; compound ALK is same-gene and not phased. Sequence co-mutation label also covers descriptive broad heatmaps, not an adjudicated positive cross-gene pair. STK11 is supplementary genomic context only, not an efficacy subgroup. Preserve analysis-set denominators and source-label conflicts. Nondetection is not clearance or biological absence; no independent acceptance."
+    },
+    "37495171": {
+      "pdf": {
+        "sha256": "5cd96af8d8dfcf0312bf2a6f0c6b0d8498f0018e2ee107268edcc1687d4e6b7f",
+        "physical_pages": 17,
+        "checked_context_pages": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "scope": "Main text and main figures; separate supplements not supplied"
+      },
+      "doi": "10.1016/j.jtho.2023.07.020",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "main-text-and-visuals-reading-not-independent-review",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KRAS"
+        ],
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "STK11",
+          "KRAS",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-2023-37495171-reading.md",
+          "source_sha256": "3e38bc8a4f89451abe0366746a273f8b51276a709cfb1d8f40efcafa8b3928fe",
+          "first_line": 1,
+          "last_line": 115
+        }
+      ],
+      "boundary": "Exploratory trial biomarker subsets, not a prospectively validated treatment-selection assay. Only OAK has tissue STK11 data; RAS84 is a transcriptomic surrogate, not measured KRAS genotype. Treatment interactions differ by trial/endpoint (OAK OS P=.27; ORIENT-11 OS/PFS P=.15). Def-group CD8 OS trends are nonsignificant; bulk inference does not prove T-cell dysfunction or STING causality. Figure1 says eight common genes but lists seven; cohort-specific feature availability and quartile thresholds limit deployment. Separate supplements not supplied."
     }
   },
   "preprints": {

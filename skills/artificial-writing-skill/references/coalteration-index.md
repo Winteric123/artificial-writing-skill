@@ -4,7 +4,7 @@
 
 标签依据及用法：[coalteration-topics.md](coalteration-topics.md)。权威逐篇记录：[coalteration-annotations.json](coalteration-annotations.json)。机器表：[library-index.csv](library-index.csv)。
 
-纳入正式论文 310 篇；序列共突变实际分析/描述 99 篇；广义共改变实际分析/描述 121 篇。前者是后者子集，不能相加。
+纳入正式论文 311 篇；序列共突变实际分析/描述 100 篇；广义共改变实际分析/描述 122 篇。前者是后者子集，不能相加。
 
 “实际分析/描述”包括描述性oncoplot/少数病例，并非全是共突变主题主文或阳性机制结果。“本轮未识别”不是全文绝无相关内容。列示基因上下文非穷尽，包含互斥检验和模型，不表示每一组合均正共现。
 
@@ -328,6 +328,7 @@
 | 2023 | [36958689 — Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC.](https://pubmed.ncbi.nlm.nih.gov/36958689/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+TP53 | preclinical_mechanism;model_genotype | no |
 | 2023 | [36494075 — Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers.](https://pubmed.ncbi.nlm.nih.gov/36494075/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53;EGFR+TP53+RB1;EGFR+MET | prognosis;resistance;treatment_outcomes | no |
 | 2023 | [36535627 — Single-Cell Analysis Reveals Transcriptomic Features of Drug-Tolerant Persisters and Stromal Adaptation in a Patient-Derived EGFR-Mutated Lung Adenocarcinoma Xenograft Model.](https://pubmed.ncbi.nlm.nih.gov/36535627/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | EGFR | resistance;preclinical_mechanism;model_genotype | no |
+| 2023 | [37495171 — STK11/LKB1-Deficient Phenotype Rather Than Mutation Diminishes Immunotherapy Efficacy and Represents STING/Type I Interferon/CD8+ T-Cell Dysfunction in NSCLC.](https://pubmed.ncbi.nlm.nih.gov/37495171/) | 实际分析/描述 | 实际分析/描述 | STK11+KRAS;STK11+KEAP1;STK11+KRAS+KEAP1 | genomic_landscape;treatment_outcomes;assay_or_method | no |
 | 2023 | [36240971 — Targeting NFE2L2/KEAP1 Mutations in Advanced NSCLC With the TORC1/2 Inhibitor TAK-228.](https://pubmed.ncbi.nlm.nih.gov/36240971/) | 实际分析/描述 | 实际分析/描述 | KRAS+KEAP1;KRAS+NFE2L2;KEAP1+PIK3CA;NFE2L2+PIK3CA | treatment_outcomes;preclinical_mechanism | no |
 | 2024 | [37981218 — Allelic Context of EGFR C797X-Mutant Lung Cancer Defines Four Subtypes With Heterogeneous Genomic Landscape and Distinct Clinical Outcomes.](https://pubmed.ncbi.nlm.nih.gov/37981218/) | 实际分析/描述 | 实际分析/描述 | EGFR;EGFR+TP53 | resistance;treatment_outcomes;genomic_landscape | no |
 | 2024 | [37806385 — Co-Occurring Alterations in Multiple Tumor Suppressor Genes Are Associated With Worse Outcomes in Patients With EGFR-Mutant Lung Cancer.](https://pubmed.ncbi.nlm.nih.gov/37806385/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53;EGFR+TP53+RB1 | prognosis;treatment_outcomes | no |

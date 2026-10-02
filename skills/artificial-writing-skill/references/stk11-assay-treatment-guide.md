@@ -1,5 +1,9 @@
 # STK11文献：组学、治疗与设计分层
 
+## 2026-10-02 增量
+
+细标签当前覆盖20篇：原2026-09-29的19篇，加PMID37495171。新文按原始ORIENT-11 bulk RNA、复用OAK/POPLAR/TCGA bulk RNA及TCGA RPPA分别标注；OAK基因组标签存在，但主文未核实具体测序平台，故不标为targeted DNA。项目成员地图另有31篇（13核心+18专题支持），不是20篇细标签的同一个集合；缺标签不代表未测量。
+
 ## 入口与状态
 
 - [本批19篇阅读清单](stk11-2026-09-29-reading-manifest.csv)记录2026-09-29提供PDF的主文阅读、版本、补充材料范围和词句数。
@@ -43,6 +47,6 @@ python scripts/search_stk11_references.py --pmid 42432246 --json
 python scripts/search_stk11_references.py --all-candidates --markdown
 ```
 
-`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。现阶段细标签覆盖本批19篇，其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
+`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。截至2026-10-02细标签覆盖20篇，其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
 
 段落/语句在原期刊section catalog，使用search_language按Abstract/Introduction/Methods/Results/Discussion/Conclusion检索；该目录不复制语言条目，也不额外累加词句数。合成句架不是原文引文，PDF页码是支撑概念的阅读定位，不是所有词句逐字出现的证明。

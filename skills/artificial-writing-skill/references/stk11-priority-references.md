@@ -2,7 +2,11 @@
 
 2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
 
-## STK11 writing collection: core and topic modules
+## 2026-10-02 local intake update
+
+The current membership map contains **31 unique articles: 13 unchanged core highlights and 18 topic-support articles**. This update adds 12 locally available papers to topic support: PMID37495171, 38300729, 38980931, 42456046, 42485106, 33077574, 33323404, 36958689, 41690367, 34450259, 41161592 and 42749050. Only PMID37495171 is a new main-text read; the other 11 retain their historical completion dates and acceptance status. Its independent bounded review remains in progress, with unsupplied supplements and two pending gates. See the [new scientific note](jto-2023-37495171-reading.md), [new section-language asset](jto-2023-37495171-language.md), [CCR support checks](ccr-2026-10-02-stk11-support-notes.md) and [JTO support checks](jto-2026-10-02-stk11-support-notes.md). Structural analogues remain labelled and cannot support direct STK11 treatment claims. The historical cross-gene 16-paper set is unchanged.
+
+## STK11 writing collection: core and topic modules (2026-09-28 snapshot)
 
 2026-09-28 framework update: use [the analysis-method guide](stk11-analysis-framework.md) for concrete comparison/estimand selection, co-occurrence testing, gene versus treatment interactions, omics replication, longitudinal bias, and section-specific writing. Use [the article logic map](stk11-study-logic-map.md) to connect each proposed module to the source's actual methods and limits. The [membership map](stk11-writing-reference-map.json) is a project-level selection register, not a new journal corpus or reading ledger.
 
@@ -10,7 +14,7 @@ The original 13 core highlights below remain unchanged in membership. Six existi
 
 Select sections according to the question: sequence co-mutation and driver background; variant/function concordance; treatment-context-specific outcomes; immune/experimental mechanisms; copy-number/neighboring-locus context; longitudinal evolution. Direct STK11 evidence, contextual analysis and structural analogues can inform the same manuscript but should be discussed separately when their inference differs. The three core articles outside the cross-gene 16-paper set (PMID39864548, PMID41870274, PMID42409117) remain available for copy-number and structural-context modules.
 
-For topic-support language, retrieve by the selected PMID rather than `--highlight`, which intentionally still selects the original core set. For a one-sentence translation, do not load the full analysis framework or all 19 sources. Do not invent missing analyses or make a proposed statistical model appear in past-tense Methods as an executed analysis.
+For topic-support language, retrieve by the selected PMID rather than `--highlight`, which intentionally still selects the original core set. For a one-sentence translation, do not load the full analysis framework or the entire collection. Do not invent missing analyses or make a proposed statistical model appear in past-tense Methods as an executed analysis.
 
 ## Status
 
