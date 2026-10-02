@@ -13,3 +13,4 @@ Evidence, physical-page coverage, hashes, numerical checks, source conflicts, an
 
 Acceptance status: [cancer-discovery-reading-quality-register.csv](cancer-discovery-reading-quality-register.csv). New records remain not_reviewed with pending recheck gates. Source-grounded use requires reopening material claims and respecting quarantined discrepancies.
 | 34230008 | 2026-09-29 | Cancer Discovery | 18 | STK11免疫耐药与STAT3机制 | [cancer-discovery-2021-34230008-language.md](cancer-discovery-2021-34230008-language.md) | Separate supplementary files not supplied or reviewed |
+| 30297358 | 2026-10-02 | 2019 | Suppression of STING Associated with LKB1 Loss in KRAS-Driven Lung Cancer | all supplied main-text pages and main visuals | not_supplied; see [cancer-discovery-2019-30297358-reading.md](cancer-discovery-2019-30297358-reading.md) |

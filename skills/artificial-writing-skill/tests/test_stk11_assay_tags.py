@@ -35,7 +35,7 @@ class AssayTagTests(unittest.TestCase):
 
     def test_scope_and_stable_identity(self):
         detailed = [row for row in self.rows if row['classification_level'] == 'supplied_main_text_curated']
-        self.assertEqual(len(detailed), 20)
+        self.assertEqual(len(detailed), 38)
         self.assertEqual(len({row['stable_id'] for row in self.rows}), len(self.rows))
         self.assertTrue(all(row['stable_id'] == 'STK11-PMID-' + row['pmid'] for row in self.rows))
         self.assertEqual(self.by_id['42749049']['stk11_relation'], 'structural_analogue')

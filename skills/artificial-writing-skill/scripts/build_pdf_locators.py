@@ -65,9 +65,12 @@ def main_text_pages(pages):
 def locate_entry(entry, sources, texts, lines, texts_normalized=False):
     hints = []
     if len(entry['source_article_ids'].split(';')) == 1:
-        hints = page_hints(lines[int(entry['source_line']) - 1])
-        if not hints:
-            hints = page_hints(entry.get('source_locator', {}).get('context', ''))
+        hint_sources = [
+            lines[int(entry['source_line']) - 1],
+            entry.get('catalog_source_locator', ''),
+            entry.get('source_locator', {}).get('context', ''),
+        ]
+        hints = sorted({page for text in hint_sources for page in page_hints(str(text or ''))})
     unit = entry['unit_type'].replace('_', '-')
     conventional = unit in {'vocabulary', 'collocation'}
     pattern = literal_pattern(entry['expression']) if conventional else None
@@ -112,7 +115,12 @@ def build(skill, inventory_path):
             number = int(row['source_line'])
             if not 1 <= number <= len(assets[asset]) or row['expression'] not in assets[asset][number - 1]:
                 raise ValueError(f'Stale source expression line: {asset}/{number}')
-            raw_entries.append({**row, **expression_metadata(row, assets[asset], vocabulary), 'stable_id': stable_id(journal, row)})
+            metadata = expression_metadata(row, assets[asset], vocabulary)
+            # expression_metadata supplies a structured note-context locator;
+            # retain the catalog's explicit source/page locator separately so
+            # it can also contribute recorded (not visually verified) hints.
+            metadata['catalog_source_locator'] = row.get('source_locator', '')
+            raw_entries.append({**row, **metadata, 'stable_id': stable_id(journal, row)})
     inventory = {row['pmid']: row for row in read_json(inventory_path)}
     versions = {row['pmid']: row for row in read_csv(references / 'source-version-register.csv')}
     sources, texts = {}, {}

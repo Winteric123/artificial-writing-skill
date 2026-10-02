@@ -12,3 +12,4 @@ Evidence, physical-page coverage, hashes, numerical checks, source conflicts, an
 
 Acceptance status: [nature-reading-quality-register.csv](nature-reading-quality-register.csv). New records remain not_reviewed with pending recheck gates. Source-grounded use requires reopening material claims and respecting quarantined discrepancies.
 | 42587156 | 2026-09-29 | Nature | 29 | CheckMate77T围手术期免疫与ctDNA基因标志物 | [nature-2026-42587156-language.md](nature-2026-42587156-language.md) | Embedded extended/supplementary materials read as itemized in article note; external supplementary files not supplied |
+| 28538732 | 2026-10-02 | 2017 | CPS1 maintains pyrimidine pools and DNA synthesis in KRAS/LKB1-mutant lung cancer cells | all supplied main-text pages and main visuals | partially_reviewed; see [nature-2017-28538732-reading.md](nature-2017-28538732-reading.md) |

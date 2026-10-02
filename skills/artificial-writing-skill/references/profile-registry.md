@@ -32,6 +32,13 @@ This registry describes reusable support and fallback, not live completion count
 | `sttt` | Signal Transduction and Targeted Therapy | Source-grounded | JOSD2/LKB1 article-level mechanism language; functional suppression is not a patient co-mutation result. See journal registry. |
 | `jitc` | Journal for ImmunoTherapy of Cancer, JITC | Source-grounded | Selected IMpower150 exploratory biomarker paper; no universal ICI response rule. See journal registry. |
 | `jco` | Journal of Clinical Oncology, JCO | Source-grounded | Selected acquired-ICI-resistance article; paired genomic and spatial protein subsets retain their denominators. See journal registry. |
+| `cancer-research` | Cancer Research | Source-grounded | Four article-specific STK11/LKB1 immune, metabolic and therapeutic-vulnerability sources; not a journal-wide learned style. See journal registry and the 2026-10-02 local-PDF intake. |
+| `nature-communications` | Nature Communications | Source-grounded | Two article-specific metabolic or LCNEC molecular-characterization sources; preserve tumor type and model boundaries. No journal-wide learned style. |
+| `esmo-open` | ESMO Open | Source-grounded | One real-world STK11/KEAP1 prognostic study; observational prognosis is not treatment prediction. |
+| `nature-metabolism` | Nature Metabolism | Source-grounded | One LKB1/KEAP1 metabolic-mechanism study; model vulnerability is not clinical efficacy. |
+| `cell` | Cell | Source-grounded | One lung-adenocarcinoma proteogenomic study; retain assay, cohort and validation layers. |
+| `jco-precision-oncology` | JCO Precision Oncology | Source-grounded | One STK11/TP53 immunotherapy cohort; retrospective subgroup association is not a prospective selection rule. |
+| `jto-crr` | JTO Clinical and Research Reports | Source-grounded | One randomized-trial exploratory biomarker analysis; this journal is separate from JTO and is not assigned JTO's profile or impact factor. |
 | `medrxiv-preprint` | medRxiv, supplied preprint version | Source-grounded | One version-specific PRO trajectory paper in [preprint-source-register.csv](preprint-source-register.csv). Use [its language and restrictions](medrxiv-2025-pro-trajectories-language.md) only as preprint evidence, not a journal style corpus or proof that the corresponding CCR version has been read. |
 | `other-journal` | user-specified title | Source-grounded | Follow supplied or verified author instructions plus core rules. Do not claim a learned journal style. |
 

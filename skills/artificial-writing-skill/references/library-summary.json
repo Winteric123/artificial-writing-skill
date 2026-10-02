@@ -5,16 +5,30 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 329,
-  "included": 311,
+  "registered": 347,
+  "included": 329,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 311,
+  "main_text_complete": 329,
   "eligible_incomplete": 0,
   "source_recheck_passed": 13,
   "stk11_highlights": 13,
   "years": {
     "2015": {
+      "registered": 1,
+      "included": 1,
+      "complete": 1,
+      "incomplete": 0,
+      "excluded": 0
+    },
+    "2016": {
+      "registered": 1,
+      "included": 1,
+      "complete": 1,
+      "incomplete": 0,
+      "excluded": 0
+    },
+    "2017": {
       "registered": 1,
       "included": 1,
       "complete": 1,
@@ -28,10 +42,17 @@
       "incomplete": 0,
       "excluded": 0
     },
+    "2019": {
+      "registered": 2,
+      "included": 2,
+      "complete": 2,
+      "incomplete": 0,
+      "excluded": 0
+    },
     "2020": {
-      "registered": 1,
-      "included": 1,
-      "complete": 1,
+      "registered": 3,
+      "included": 3,
+      "complete": 3,
       "incomplete": 0,
       "excluded": 0
     },
@@ -43,30 +64,30 @@
       "excluded": 0
     },
     "2022": {
-      "registered": 51,
-      "included": 44,
-      "complete": 44,
+      "registered": 53,
+      "included": 46,
+      "complete": 46,
       "incomplete": 0,
       "excluded": 7
     },
     "2023": {
-      "registered": 56,
-      "included": 51,
-      "complete": 51,
+      "registered": 57,
+      "included": 52,
+      "complete": 52,
       "incomplete": 0,
       "excluded": 5
     },
     "2024": {
-      "registered": 52,
-      "included": 48,
-      "complete": 48,
+      "registered": 56,
+      "included": 52,
+      "complete": 52,
       "incomplete": 0,
       "excluded": 4
     },
     "2025": {
-      "registered": 55,
-      "included": 53,
-      "complete": 53,
+      "registered": 60,
+      "included": 58,
+      "complete": 58,
       "incomplete": 0,
       "excluded": 2
     },
@@ -86,13 +107,34 @@
         "complete": 3,
         "incomplete": 0,
         "excluded": 0
+      },
+      "2025": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
       }
     },
     "Cancer Cell": {
+      "2022": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2024": {
         "registered": 1,
         "included": 1,
         "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2025": {
+        "registered": 2,
+        "included": 2,
+        "complete": 2,
         "incomplete": 0,
         "excluded": 0
       }
@@ -112,7 +154,53 @@
         "incomplete": 0,
         "excluded": 0
       },
+      "2019": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2021": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Cancer Research": {
+      "2016": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2019": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2025": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Cell": {
+      "2020": {
         "registered": 1,
         "included": 1,
         "complete": 1,
@@ -180,6 +268,33 @@
         "excluded": 0
       }
     },
+    "ESMO Open": {
+      "2020": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "JCO Precision Oncology": {
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "JTO Clinical and Research Reports": {
+      "2023": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
     "Journal for ImmunoTherapy of Cancer": {
       "2022": {
         "registered": 1,
@@ -200,6 +315,13 @@
     },
     "Journal of Thoracic Oncology": {
       "2021": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2022": {
         "registered": 1,
         "included": 1,
         "complete": 1,
@@ -236,6 +358,13 @@
       }
     },
     "Nature": {
+      "2017": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2024": {
         "registered": 1,
         "included": 1,
@@ -244,6 +373,22 @@
         "excluded": 0
       },
       "2026": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Nature Communications": {
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2025": {
         "registered": 1,
         "included": 1,
         "complete": 1,
@@ -269,6 +414,15 @@
         "excluded": 0
       }
     },
+    "Nature Metabolism": {
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
     "Signal Transduction and Targeted Therapy": {
       "2024": {
         "registered": 1,
@@ -281,16 +435,16 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 311,
+    "included": 329,
     "co_mutation": {
-      "analyzed": 100,
+      "analyzed": 115,
       "not_identified": 187,
-      "context_only": 24
+      "context_only": 27
     },
     "co_alteration": {
-      "analyzed": 122,
+      "analyzed": 138,
       "not_identified": 162,
-      "context_only": 27
+      "context_only": 29
     },
     "coverage_complete": true
   }

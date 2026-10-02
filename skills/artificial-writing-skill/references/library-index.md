@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记329篇；当前纳入311篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读311篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
+正式期刊登记347篇；当前纳入329篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读329篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -15,30 +15,40 @@
 | 年份 | 登记 | 纳入 | 已精读 | 合格待完成 | 历史排除 |
 |---|---:|---:|---:|---:|---:|
 | 2015 | 1 | 1 | 1 | 0 | 0 |
+| 2016 | 1 | 1 | 1 | 0 | 0 |
+| 2017 | 1 | 1 | 1 | 0 | 0 |
 | 2018 | 1 | 1 | 1 | 0 | 0 |
-| 2020 | 1 | 1 | 1 | 0 | 0 |
+| 2019 | 2 | 2 | 2 | 0 | 0 |
+| 2020 | 3 | 3 | 3 | 0 | 0 |
 | 2021 | 24 | 24 | 24 | 0 | 0 |
-| 2022 | 51 | 44 | 44 | 0 | 7 |
-| 2023 | 56 | 51 | 51 | 0 | 5 |
-| 2024 | 52 | 48 | 48 | 0 | 4 |
-| 2025 | 55 | 53 | 53 | 0 | 2 |
+| 2022 | 53 | 46 | 46 | 0 | 7 |
+| 2023 | 57 | 52 | 52 | 0 | 5 |
+| 2024 | 56 | 52 | 52 | 0 | 4 |
+| 2025 | 60 | 58 | 58 | 0 | 2 |
 | 2026 | 88 | 88 | 88 | 0 | 0 |
 
 ## 期刊汇总（全部登记年份）
 
 | 期刊 | 登记 | 纳入 | 已精读 |
 |---|---:|---:|---:|
-| Annals of Oncology | 3 | 3 | 3 |
-| Cancer Cell | 1 | 1 | 1 |
-| Cancer Discovery | 3 | 3 | 3 |
+| Annals of Oncology | 4 | 4 | 4 |
+| Cancer Cell | 4 | 4 | 4 |
+| Cancer Discovery | 4 | 4 | 4 |
+| Cancer Research | 4 | 4 | 4 |
+| Cell | 1 | 1 | 1 |
 | Cell Research | 1 | 1 | 1 |
 | Clinical Cancer Research | 281 | 263 | 263 |
+| ESMO Open | 1 | 1 | 1 |
+| JCO Precision Oncology | 1 | 1 | 1 |
+| JTO Clinical and Research Reports | 1 | 1 | 1 |
 | Journal for ImmunoTherapy of Cancer | 1 | 1 | 1 |
 | Journal of Clinical Oncology | 1 | 1 | 1 |
-| Journal of Thoracic Oncology | 33 | 33 | 33 |
-| Nature | 2 | 2 | 2 |
+| Journal of Thoracic Oncology | 34 | 34 | 34 |
+| Nature | 3 | 3 | 3 |
+| Nature Communications | 2 | 2 | 2 |
 | Nature Genetics | 1 | 1 | 1 |
 | Nature Medicine | 1 | 1 | 1 |
+| Nature Metabolism | 1 | 1 | 1 |
 | Signal Transduction and Targeted Therapy | 1 | 1 | 1 |
 
 ## 期刊与年份交叉汇总（不限定专题）
@@ -46,10 +56,19 @@
 | 期刊 | 年份 | 登记 | 纳入 | 已精读 | 合格待完成 | 历史排除 |
 |---|---|---:|---:|---:|---:|---:|
 | Annals of Oncology | 2023 | 3 | 3 | 3 | 0 | 0 |
+| Annals of Oncology | 2025 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Cell | 2022 | 1 | 1 | 1 | 0 | 0 |
 | Cancer Cell | 2024 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Cell | 2025 | 2 | 2 | 2 | 0 | 0 |
 | Cancer Discovery | 2015 | 1 | 1 | 1 | 0 | 0 |
 | Cancer Discovery | 2018 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Discovery | 2019 | 1 | 1 | 1 | 0 | 0 |
 | Cancer Discovery | 2021 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Research | 2016 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Research | 2019 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Research | 2024 | 1 | 1 | 1 | 0 | 0 |
+| Cancer Research | 2025 | 1 | 1 | 1 | 0 | 0 |
+| Cell | 2020 | 1 | 1 | 1 | 0 | 0 |
 | Cell Research | 2025 | 1 | 1 | 1 | 0 | 0 |
 | Clinical Cancer Research | 2020 | 1 | 1 | 1 | 0 | 0 |
 | Clinical Cancer Research | 2021 | 22 | 22 | 22 | 0 | 0 |
@@ -58,17 +77,25 @@
 | Clinical Cancer Research | 2024 | 39 | 35 | 35 | 0 | 4 |
 | Clinical Cancer Research | 2025 | 50 | 48 | 48 | 0 | 2 |
 | Clinical Cancer Research | 2026 | 75 | 75 | 75 | 0 | 0 |
+| ESMO Open | 2020 | 1 | 1 | 1 | 0 | 0 |
+| JCO Precision Oncology | 2024 | 1 | 1 | 1 | 0 | 0 |
+| JTO Clinical and Research Reports | 2023 | 1 | 1 | 1 | 0 | 0 |
 | Journal for ImmunoTherapy of Cancer | 2022 | 1 | 1 | 1 | 0 | 0 |
 | Journal of Clinical Oncology | 2024 | 1 | 1 | 1 | 0 | 0 |
 | Journal of Thoracic Oncology | 2021 | 1 | 1 | 1 | 0 | 0 |
+| Journal of Thoracic Oncology | 2022 | 1 | 1 | 1 | 0 | 0 |
 | Journal of Thoracic Oncology | 2023 | 9 | 9 | 9 | 0 | 0 |
 | Journal of Thoracic Oncology | 2024 | 8 | 8 | 8 | 0 | 0 |
 | Journal of Thoracic Oncology | 2025 | 4 | 4 | 4 | 0 | 0 |
 | Journal of Thoracic Oncology | 2026 | 11 | 11 | 11 | 0 | 0 |
+| Nature | 2017 | 1 | 1 | 1 | 0 | 0 |
 | Nature | 2024 | 1 | 1 | 1 | 0 | 0 |
 | Nature | 2026 | 1 | 1 | 1 | 0 | 0 |
+| Nature Communications | 2024 | 1 | 1 | 1 | 0 | 0 |
+| Nature Communications | 2025 | 1 | 1 | 1 | 0 | 0 |
 | Nature Genetics | 2026 | 1 | 1 | 1 | 0 | 0 |
 | Nature Medicine | 2024 | 1 | 1 | 1 | 0 | 0 |
+| Nature Metabolism | 2024 | 1 | 1 | 1 | 0 | 0 |
 | Signal Transduction and Targeted Therapy | 2024 | 1 | 1 | 1 | 0 | 0 |
 
 ## 全部纳入名单
@@ -85,13 +112,32 @@
 | 36526124 | Clonal KEAP1 mutations with loss of heterozygosity share reduced immunotherapy efficacy and low immune cell infiltration in lung adenocarcinoma. | 10.1016/j.annonc.2022.12.002 | KEAP1克隆性LOH与免疫结局 | 已完成 | no |
 | 37121400 | Molecular markers of metastatic disease in KRAS-mutant lung adenocarcinoma. | 10.1016/j.annonc.2023.04.514 | 转移性KRAS肺腺癌临床基因组 | 已完成 | no |
 
+#### 2025（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 39637943 | Lung adenocarcinomas with mucinous histology: clinical, genomic, and immune microenvironment characterization and outcomes to immunotherapy-based treatments and KRASG12C inhibitors | 10.1016/j.annonc.2024.11.014 | article-specific STK11 evidence | 已完成 | no |
+
 ### Cancer Cell
+
+#### 2022（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 36150391 | MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer | 10.1016/j.ccell.2022.08.015 | article-specific STK11 evidence | 已完成 | no |
 
 #### 2024（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 38402609 | Adeno-to-squamous transition drives resistance to KRAS inhibition in LKB1 mutant lung cancer. | 10.1016/j.ccell.2024.01.012 | KRAS抑制剂耐药与腺鳞转分化 | 已完成 | no |
+
+#### 2025（2篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 40749670 | Integrative analysis of lung adenocarcinoma across diverse ethnicities and exposures | 10.1016/j.ccell.2025.07.011 | article-specific STK11 evidence | 已完成 | no |
+| 40645185 | KEAP1 and STK11/LKB1 alterations enhance vulnerability to ATR inhibition in KRAS mutant non-small cell lung cancer | 10.1016/j.ccell.2025.06.011 | article-specific STK11 evidence | 已完成 | no |
 
 ### Cancer Discovery
 
@@ -107,11 +153,51 @@
 |---|---|---|---|---|---|
 | 29773717 | STK11/LKB1 Mutations and PD-1 Inhibitor Resistance in KRAS-Mutant Lung Adenocarcinoma | 10.1158/2159-8290.CD-18-0099 | immunotherapy outcome and resistance mechanism | 已完成 | yes |
 
+#### 2019（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 30297358 | Suppression of STING Associated with LKB1 Loss in KRAS-Driven Lung Cancer | 10.1158/2159-8290.CD-18-0689 | preclinical_mechanistic | 已完成 | no |
+
 #### 2021（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 34230008 | Resistance to Durvalumab and Durvalumab plus Tremelimumab Is Associated with Functional STK11 Mutations in Patients with Non-Small Cell Lung Cancer and Is Reversed by STAT3 Knockdown. | 10.1158/2159-8290.CD-20-1543 | STK11免疫耐药与STAT3机制 | 已完成 | no |
+
+### Cancer Research
+
+#### 2016（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 26833127 | STK11/LKB1 deficiency promotes neutrophil recruitment and proinflammatory cytokine production to suppress T cell activity in the lung tumor microenvironment | 10.1158/0008-5472.CAN-15-1439 | article-specific STK11 evidence | 已完成 | no |
+
+#### 2019（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 31040157 | LKB1 and KEAP1/NRF2 Pathways Cooperatively Promote Metabolic Reprogramming with Enhanced Glutamine Dependence in KRAS-Mutant Lung Adenocarcinoma | 10.1158/0008-5472.CAN-18-3527 | article-specific STK11 evidence | 已完成 | no |
+
+#### 2024（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 39207369 | Live-Cell Invasive Phenotyping Uncovers ALK2 as a Therapeutic Target in LKB1-Mutant Lung Cancer | 10.1158/0008-5472.CAN-23-2631 | article-specific STK11 evidence | 已完成 | no |
+
+#### 2025（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 40198901 | SCD1 Inhibition Blocks the AKT-NRF2-SLC7A11 Pathway to Induce Lipid Metabolism Remodeling and Ferroptosis Priming in Lung Adenocarcinoma | 10.1158/0008-5472.CAN-24-2745 | article-specific STK11 evidence | 已完成 | no |
+
+### Cell
+
+#### 2020（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 32649874 | Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma | 10.1016/j.cell.2020.06.013 | article-specific STK11 evidence | 已完成 | no |
 
 ### Cell Research
 
@@ -421,6 +507,30 @@
 | 42485106 | Utilizing machine learning to identify multimodal signatures for patients who would benefit from the addition of tremelimumab to durvalumab and chemotherapy (TRIDENT) | 10.1158/1078-0432.ccr-25-3729 | Novel Biomarkers and Precision Medicine | 已完成 | no |
 | 42007996 | ZW191 an FRalpha-Targeted Topoisomerase 1 Inhibitor ADC with a Differentiated Antitumor Efficacy and Tolerability Profile | 10.1158/1078-0432.ccr-25-4691 | New Drugs on the Horizon | 已完成 | no |
 
+### ESMO Open
+
+#### 2020（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 32312757 | STK11 and KEAP1 mutations as prognostic biomarkers in an observational real-world lung adenocarcinoma cohort | 10.1136/esmoopen-2020-000706 | article-specific STK11 evidence | 已完成 | no |
+
+### JCO Precision Oncology
+
+#### 2024（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 38330261 | Influence of TP53 Comutation on the Tumor Immune Microenvironment and Clinical Outcomes With Immune Checkpoint Inhibitors in STK11-Mutant Non-Small-Cell Lung Cancer | 10.1200/PO.23.00371 | article-specific STK11 evidence | 已完成 | no |
+
+### JTO Clinical and Research Reports
+
+#### 2023（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 36793385 | Associations of Tissue Tumor Mutational Burden and Mutational Status With Clinical Outcomes With Pembrolizumab Plus Chemotherapy Versus Chemotherapy for Metastatic NSCLC | 10.1016/j.jtocrr.2022.100431 | article-specific STK11 evidence | 已完成 | no |
+
 ### Journal for ImmunoTherapy of Cancer
 
 #### 2022（1篇）
@@ -444,6 +554,12 @@
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 34450259 | KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy. | 10.1016/j.jtho.2021.08.010 | KEAP1与TP53共突变进化免疫分型 | 已完成 | no |
+
+#### 2022（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 34740862 | Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status | 10.1016/j.jtho.2021.10.013 | article-specific STK11 evidence | 已完成 | no |
 
 #### 2023（9篇）
 
@@ -499,6 +615,12 @@
 
 ### Nature
 
+#### 2017（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 28538732 | CPS1 maintains pyrimidine pools and DNA synthesis in KRAS/LKB1-mutant lung cancer cells | 10.1038/nature22359 | preclinical_mechanistic | 已完成 | no |
+
 #### 2024（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
@@ -510,6 +632,20 @@
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 42587156 | Biomarkers of nivolumab benefit in resectable non-small cell lung cancer. | 10.1038/s41586-026-10925-6 | CheckMate77T围手术期免疫与ctDNA基因标志物 | 已完成 | no |
+
+### Nature Communications
+
+#### 2024（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 38997257 | Glucose-6-phosphate dehydrogenase maintains redox homeostasis and biosynthesis in LKB1-deficient KRAS-driven lung cancer | 10.1038/s41467-024-50157-8 | preclinical_mechanistic | 已完成 | no |
+
+#### 2025（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 40830141 | Integrated molecular and clinical characterization of pulmonary large cell neuroendocrine carcinoma | 10.1038/s41467-025-63091-0 | article-specific STK11 evidence | 已完成 | no |
 
 ### Nature Genetics
 
@@ -526,6 +662,14 @@
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 38351187 | Biomarker-directed targeted therapy plus durvalumab in advanced non-small-cell lung cancer: a phase 2 umbrella trial. | 10.1038/s41591-024-02808-y | HUDSON免疫耐药伞式试验 | 已完成 | no |
+
+### Nature Metabolism
+
+#### 2024（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 38877143 | Concurrent loss of LKB1 and KEAP1 enhances SHMT-mediated antioxidant defence in KRAS-mutant lung cancer | 10.1038/s42255-024-01066-z | article-specific STK11 evidence | 已完成 | no |
 
 ### Signal Transduction and Targeted Therapy
 

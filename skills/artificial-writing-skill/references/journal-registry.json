@@ -84,6 +84,55 @@
       "ledger": "nature-genetics-deep-reading-ledger.md",
       "quality": "nature-genetics-reading-quality-register.csv",
       "language_catalog": "nature-genetics-section-language-catalog.csv"
+    },
+    "cancer-research": {
+      "name": "Cancer Research",
+      "bibliography": "cancer-research-corpus-bibliography.csv",
+      "ledger": "cancer-research-deep-reading-ledger.md",
+      "quality": "cancer-research-reading-quality-register.csv",
+      "language_catalog": "cancer-research-section-language-catalog.csv"
+    },
+    "nature-communications": {
+      "name": "Nature Communications",
+      "bibliography": "nature-communications-corpus-bibliography.csv",
+      "ledger": "nature-communications-deep-reading-ledger.md",
+      "quality": "nature-communications-reading-quality-register.csv",
+      "language_catalog": "nature-communications-section-language-catalog.csv"
+    },
+    "esmo-open": {
+      "name": "ESMO Open",
+      "bibliography": "esmo-open-corpus-bibliography.csv",
+      "ledger": "esmo-open-deep-reading-ledger.md",
+      "quality": "esmo-open-reading-quality-register.csv",
+      "language_catalog": "esmo-open-section-language-catalog.csv"
+    },
+    "nature-metabolism": {
+      "name": "Nature Metabolism",
+      "bibliography": "nature-metabolism-corpus-bibliography.csv",
+      "ledger": "nature-metabolism-deep-reading-ledger.md",
+      "quality": "nature-metabolism-reading-quality-register.csv",
+      "language_catalog": "nature-metabolism-section-language-catalog.csv"
+    },
+    "cell": {
+      "name": "Cell",
+      "bibliography": "cell-corpus-bibliography.csv",
+      "ledger": "cell-deep-reading-ledger.md",
+      "quality": "cell-reading-quality-register.csv",
+      "language_catalog": "cell-section-language-catalog.csv"
+    },
+    "jco-precision-oncology": {
+      "name": "JCO Precision Oncology",
+      "bibliography": "jco-precision-oncology-corpus-bibliography.csv",
+      "ledger": "jco-precision-oncology-deep-reading-ledger.md",
+      "quality": "jco-precision-oncology-reading-quality-register.csv",
+      "language_catalog": "jco-precision-oncology-section-language-catalog.csv"
+    },
+    "jto-crr": {
+      "name": "JTO Clinical and Research Reports",
+      "bibliography": "jto-crr-corpus-bibliography.csv",
+      "ledger": "jto-crr-deep-reading-ledger.md",
+      "quality": "jto-crr-reading-quality-register.csv",
+      "language_catalog": "jto-crr-section-language-catalog.csv"
     }
   }
 }

@@ -29,6 +29,7 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 
 ## 2026-10-02 local STK11 intake
 
+- [Eighteen-paper local-PDF reconciliation](stk11-2026-10-02-local-unread-intake.md): 16 papers from the locally recorded 2025-JIF >10 candidate table and two below-threshold appendix papers now have complete first-pass main-text/main-visual reads, article-level structured notes and language units. All remain independently not reviewed; new journal routes are separate source-grounded article sets, not learned journal-wide profiles.
 - [PMID37495171 scientific reading](jto-2023-37495171-reading.md), [62 section-language units](jto-2023-37495171-language.md), and [independent bounded review](source-rechecks/2026-10-02-37495171.md): all17 supplied main-text pages and six main figures; supplements not supplied, review in progress.
 - [Six CCR support checks](ccr-2026-10-02-stk11-support-notes.md) and [five JTO support checks](jto-2026-10-02-stk11-support-notes.md) preserve previous reading dates and separate direct evidence, contextual evidence and structural analogues.
 - Single-paper language supplements for [PMID42456046](ccr-2026-42456046-language-addendum.md) and [PMID42485106](ccr-2026-42485106-language-addendum.md) repair article-level provenance, not reading or acceptance counts. [Their manifest](ccr-2026-10-02-language-addenda.csv) routes the CCR catalog build. Synthesized frames are not original quotations.

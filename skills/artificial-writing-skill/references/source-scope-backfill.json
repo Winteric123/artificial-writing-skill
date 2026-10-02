@@ -5796,6 +5796,572 @@
       "curation_method": "same-agent full main-PDF text and main-visual reading; initial classification, not independent acceptance",
       "source_sha256": "be304fdf0f86ee07d16b67d221cde1d6073914151ef9d4b4b2b73b960d391a64",
       "boundary": "26 drug-profiled and24 expression-profiled lines; two PDX patient lineages with three states. Correlative gene sets are not validated clinical predictors; animal volumetric endpoint is not OS, primary null comparisons and endpoint changes must be retained."
+    },
+    "26833127": {
+      "disease_ids": [
+        "lung-cancer"
+      ],
+      "tissue_ids": [
+        "lung",
+        "tumor"
+      ],
+      "model_ids": [
+        "gemm",
+        "mouse",
+        "mouse-cell-line",
+        "human-cell-line",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "cancer-research-2016-26833127-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "31c3737e143d255b1ff62237a992c4b07fa90279e61a901a657f94782849ef35",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "28538732": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "nature-2017-28538732-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "bafc1ec0f06ba2a9612a5ef33efb7479247af9cc84a7726ba9613d4a5b143bbf",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "30297358": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse",
+        "cdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "cancer-discovery-2019-30297358-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "9ba434211d6a6ffba3073ee21ba4d702cc618fb9e7deb2b27820963cd2f3916c",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "31040157": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse",
+        "mouse-cell-line",
+        "pdx",
+        "cdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "cancer-research-2019-31040157-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "a704985e0bdf3872c79f50ad2b9a35eab146054db4773d41f960f1c236b7ed36",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "32312757": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "esmo-open-2020-32312757-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "770c1ab2ad06176f4f542f77744a23336e61c8139c11e0c259254ac9d3ad7bfe",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "32649874": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "cell-2020-32649874-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "e9ae7ed13ea2fa7c1a30f90a40fa1a0b7a2d31eca83f1c34bfdeb17388b8caa4",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "34740862": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-2022-34740862-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "36150391": {
+      "disease_ids": [
+        "nsclc",
+        "lung-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "mouse",
+        "pdx",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-cell-2022-36150391-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "af110d8b7dd12ac9297abbd1ef37c7f8e58ffd73564806ebd179853c55c2fba5",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "36793385": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-crr-2023-36793385-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "06c4390f4e034c1939a0697fa57c0db477b953a4371ebda12a701c38640dcc6e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "38330261": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jco-precision-oncology-2024-38330261-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "a857dc76c6e48264ede67f3db00de32212c31706b9030c906ef321cc065da2fc",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "38877143": {
+      "disease_ids": [
+        "nsclc",
+        "lung-cancer"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse",
+        "mouse-cell-line",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "nature-metabolism-2024-38877143-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "0fa6af31aba05532754f07d76c377be185736216180c29d3bbcba52a96ffab67",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "38997257": {
+      "disease_ids": [
+        "lung-cancer"
+      ],
+      "tissue_ids": [
+        "lung",
+        "tumor"
+      ],
+      "model_ids": [
+        "gemm",
+        "mouse",
+        "mouse-cell-line",
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "nature-communications-2024-38997257-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "c9494ca9d5a7df98586f12a7716144997699c9a789ea0aa85cb773334c5d3457",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "39207369": {
+      "disease_ids": [
+        "lung-cancer",
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse-cell-line",
+        "mouse",
+        "cdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-research-2024-39207369-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "9cae781bbcd99d4cf78825af5a56679af062cc6ba213707c89616343ad276673",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "39637943": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "annals-of-oncology-2025-39637943-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "4cb7a2caaed55c7197e899810cf5c03cdf032d71e0f6852ae37a285a49771092",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "40198901": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "mouse",
+        "cdx",
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "cancer-research-2025-40198901-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "ce4a7e9558e46aeb9cc54e777e9f08159b7e6ebf295b27abcea4ff7cc6721e1b",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "40645185": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "human-clinical",
+        "mouse",
+        "mouse-cell-line",
+        "gemm",
+        "pdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative",
+        "clinical-trial"
+      ],
+      "source_reference": "cancer-cell-2025-40645185-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "a1651a96a16821ba5cc5da97b4c9659c1f6b1708f05a1147a50b45d853994207",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "40749670": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "human-cell-line",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "cancer-cell-2025-40749670-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "de58caa8636829bc3a3fe8c394d61c062ca360bf007440cfe19b9d1208e1265e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "40830141": {
+      "disease_ids": [
+        "lcnec",
+        "neuroendocrine-neoplasm"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "nature-communications-2025-40830141-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "source_sha256": "8458f02c4a8021b063fab27458f8105c9e290c2fa4e8223a064b258323254f38",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
     }
   }
 }

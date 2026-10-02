@@ -2,11 +2,12 @@
 
 ## 2026-10-02 增量
 
-细标签当前覆盖20篇：原2026-09-29的19篇，加PMID37495171。新文按原始ORIENT-11 bulk RNA、复用OAK/POPLAR/TCGA bulk RNA及TCGA RPPA分别标注；OAK基因组标签存在，但主文未核实具体测序平台，故不标为targeted DNA。项目成员地图另有31篇（13核心+18专题支持），不是20篇细标签的同一个集合；缺标签不代表未测量。
+细标签当前覆盖38篇：此前20篇，加本次从本地PDF补齐精读的18篇。项目成员地图现有49篇（13核心+36专题支持）；核心highlight保持不变。首次完整精读只登记为`main_text_deep_read_complete`，不会自动变成独立复核通过；缺标签也不代表未测量。
 
 ## 入口与状态
 
 - [本批19篇阅读清单](stk11-2026-09-29-reading-manifest.csv)记录2026-09-29提供PDF的主文阅读、版本、补充材料范围和词句数。
+- [本地漏读补齐清单](stk11-2026-10-02-local-unread-intake.md)记录18篇新完成的主文/主图精读、版本哈希、补充材料边界、结构化笔记和逐篇语言资产；其中16篇属于本地2025-JIF >10候选主表，2篇属于低于阈值附录。
 - [逐篇细标签](stk11-assay-treatment-tags.json)记录稳定编号、真实期刊/年份/题名、STK11关系、研究方式、具体药物、检测技术、数据来源及样本上下文。依据链接进入逐篇阅读笔记，笔记含物理页码与高风险结果限制。
 - [检索候选目录](stk11-reference-candidates.json)保存此前高影响文献检索的候选范围；候选不是全部已读。其旧摘要/题名筛选标签不能替代本批全文标签。
 - 权威阅读状态从当前期刊quality/ledger和library-index读取；13篇用户核心highlight保持不变。新论文作为有依据的补充参考，不因影响因子或入库自动升级核心名单。
@@ -47,6 +48,6 @@ python scripts/search_stk11_references.py --pmid 42432246 --json
 python scripts/search_stk11_references.py --all-candidates --markdown
 ```
 
-`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。截至2026-10-02细标签覆盖20篇，其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
+`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。截至2026-10-02细标签覆盖38篇，其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
 
 段落/语句在原期刊section catalog，使用search_language按Abstract/Introduction/Methods/Results/Discussion/Conclusion检索；该目录不复制语言条目，也不额外累加词句数。合成句架不是原文引文，PDF页码是支撑概念的阅读定位，不是所有词句逐字出现的证明。
