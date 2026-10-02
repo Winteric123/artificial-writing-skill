@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记347篇；当前纳入329篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读329篇，合格但尚未完成精读0篇。来源复核验收通过13篇；STK11 highlight 13篇。
+正式期刊登记347篇；当前纳入329篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读329篇，合格但尚未完成精读0篇。来源复核验收通过14篇；STK11 highlight 13篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -559,7 +559,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 34740862 | Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status | 10.1016/j.jtho.2021.10.013 | article-specific STK11 evidence | 已完成 | no |
+| 34740862 | Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status | 10.1016/j.jtho.2021.10.013 | KRAS-stratified STK11/KEAP1 clinical associations | 已完成 | no |
 
 #### 2023（9篇）
 

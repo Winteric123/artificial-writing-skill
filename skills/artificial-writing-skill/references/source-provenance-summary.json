@@ -1,5 +1,5 @@
 {
-  "index_version": "0337e44e1af7d67ff0b6679663167545a26796f6c39ba35ee7fdefd6f4df7ea3",
+  "index_version": "d3d2ede175df3e9f4153f36836a1f56421995d49665c65c8a528488a8bceb813",
   "entry_count": 9852,
   "source_scope_status": {
     "curated-source-scope": 329
@@ -26,11 +26,11 @@
   },
   "source_pdf_count": 329,
   "entries_with_recorded_page_hints": 5404,
-  "context_rechecked_entries": 139,
+  "context_rechecked_entries": 149,
   "scope": "Current language-source articles only; all registered journals and indexed years; no new reading or acceptance.",
   "source_articles": 329,
   "articles_with_unknown_facets": 53,
-  "entries_needing_literal_context_review": 3771,
-  "context_checked_without_literal_match": 24,
+  "entries_needing_literal_context_review": 3765,
+  "context_checked_without_literal_match": 30,
   "boundary": "Synthetic frames and entries with recorded context rechecks are excluded from the pending-context queue; context review is not literal matching or quotation verification; unknown tissue is not absent tissue."
 }

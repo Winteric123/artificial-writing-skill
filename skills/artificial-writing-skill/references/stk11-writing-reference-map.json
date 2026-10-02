@@ -549,7 +549,8 @@
         "immune_mechanism"
       ],
       "source_refs": [
-        "jto-2022-34740862-reading.md"
+        "jto-2022-34740862-reading.md",
+        "source-rechecks/2026-10-02-34740862.md"
       ],
       "added_on": "2026-10-02"
     },

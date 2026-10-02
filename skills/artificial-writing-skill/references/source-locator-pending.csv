@@ -3232,7 +3232,6 @@ jto-lang-0b12e7c55e7f14bd225d,predictive versus prognostic biomarker,36948245,jt
 jto-lang-0b3e65c1c9262112900f,the ratio of on-treatment to baseline mean variant allele fraction,42749050,jto-2026-42749050-language.md,53,no-literal-match-needs-context-review
 jto-lang-0bbd0baa055954502f86,screening-to-analysis flow,41932614,jto-2026-09-14-stk11-priority-language.md,131,no-literal-match-needs-context-review
 jto-lang-0be937eee5884bcd2abb,prospective validation,37495171,jto-2023-37495171-language.md,90,no-literal-match-needs-context-review
-jto-lang-0c2f229231e4c7f6c9c8,KRAS-stratified association,34740862,jto-2022-34740862-language.md,10,no-literal-match-needs-context-review
 jto-lang-0d30cbe4da25a2a7f7bd,no significantly enriched cell population,39694414,jto-2025-39694414-language.md,60,no-literal-match-needs-context-review
 jto-lang-0e446c7b655d82b7f0fb,index-date ascertainment,40320171,jto-2025-40320171-language.md,45,no-literal-match-needs-context-review
 jto-lang-0e73aeb08e304fba2e50,resectable alteration-defined NSCLC,41161592,jto-2026-41161592-language.md,32,no-literal-match-needs-context-review
@@ -3270,7 +3269,6 @@ jto-lang-1fe6a740e6413f345bcf,exon-level deletion pattern,42409117,jto-2026-09-1
 jto-lang-202749f8e6de89697218,selective ERBB2 tyrosine kinase inhibitor,41932614,jto-2026-09-14-stk11-priority-language.md,76,no-literal-match-needs-context-review
 jto-lang-20973e027e58af3992e6,beyond mutation status,37495171,jto-2023-37495171-language.md,30,no-literal-match-needs-context-review
 jto-lang-20f00a3aa2288021e37f,standardized protein-expression z score,39864548,jto-2026-09-14-stk11-priority-language.md,539,no-literal-match-needs-context-review
-jto-lang-212437d17df5823be429,context-dependent adverse association,34740862,jto-2022-34740862-language.md,11,no-literal-match-needs-context-review
 jto-lang-215fd05024e778f6d217,haploinsufficiency hypothesis,39864548,jto-2026-09-14-stk11-priority-language.md,568,no-literal-match-needs-context-review
 jto-lang-2259966aec857ec71a48,sporadic case reports,37981218,jto-2024-37981218-language.md,35,no-literal-match-needs-context-review
 jto-lang-22ccadf9a472d21cf993,assay-specific mutation fractions,37543207,jto-2023-37543207-language.md,45,no-literal-match-needs-context-review
@@ -3307,7 +3305,6 @@ jto-lang-32093f079d80504acb6e,heterogeneous treatment exposure,37543207,jto-2023
 jto-lang-3245007c1b4030bbeff3,raw-data reanalysis with a unified algorithm,42409117,jto-2026-09-14-stk11-priority-language.md,705,no-literal-match-needs-context-review
 jto-lang-32593924edee5ccc8c49,successful molecular profiling,39111731,jto-2024-39111731-language.md,56,no-literal-match-needs-context-review
 jto-lang-329e6dcf693a25036ea9,longitudinal clinico-genomic data,40320171,jto-2025-40320171-language.md,41,no-literal-match-needs-context-review
-jto-lang-32e1ca4f3d53d9dd071b,additive rather than synergistic pattern,34740862,jto-2022-34740862-language.md,13,no-literal-match-needs-context-review
 jto-lang-333f0430ba0346c0b15b,allelic-state comparison,39864548,jto-2026-09-14-stk11-priority-language.md,542,no-literal-match-needs-context-review
 jto-lang-34e0f247d0dfaf759266,high-level gene amplification,38154514,jto-2024-38154514-language.md,26,no-literal-match-needs-context-review
 jto-lang-353f8f2af1d5d08853b0,predictive-versus-prognostic distinction,39864548,jto-2026-09-14-stk11-priority-language.md,573,no-literal-match-needs-context-review
@@ -3326,7 +3323,6 @@ jto-lang-3aa81dd08ed2d0382e51,enrichment for tumor-suppressor co-alterations,419
 jto-lang-3c4bc5c58a740bbbafe1,cross-cohort biological context,41161592,jto-2026-41161592-language.md,70,no-literal-match-needs-context-review
 jto-lang-3c603a772586e5498b4d,time-dependent induction of apoptosis markers,38154514,jto-2024-38154514-language.md,50,no-literal-match-needs-context-review
 jto-lang-3c63db6bf4e26707702e,histology-dependent treatment associations,41161592,jto-2026-41161592-language.md,44,no-literal-match-needs-context-review
-jto-lang-3c79d3fe00e2b5a8c482,bulk-transcriptomic deconvolution,34740862,jto-2022-34740862-language.md,14,no-literal-match-needs-context-review
 jto-lang-3cb5e033eb5597078f39,noncanonical activating mutation,41932614,jto-2026-09-14-stk11-priority-language.md,79,no-literal-match-needs-context-review
 jto-lang-3cef5a2efdf9d5645401,clinicopathologic and genomic correlates,36775193,jto-2023-36775193-language.md,28,no-literal-match-needs-context-review
 jto-lang-3d002e647e9791b3f8f5,consecutive multicenter cohort,41619904,jto-2026-09-14-stk11-priority-language.md,303,no-literal-match-needs-context-review
@@ -3528,7 +3524,6 @@ jto-lang-9dfbda4c513a7f8508d3,targeted 520-gene panel,42409117,jto-2026-09-14-st
 jto-lang-9eb43a8e61d8c998c44a,downstream expression consequence,39864548,jto-2026-09-14-stk11-priority-language.md,498,no-literal-match-needs-context-review
 jto-lang-9ecd54b2f9911e4a4dfa,central histopathologic review,41903702,jto-2026-41903702-language.md,43,no-literal-match-needs-context-review
 jto-lang-9ecdcc067868293f93fd,independently associated with inferior outcomes,37806385,jto-2024-37806385-language.md,58,no-literal-match-needs-context-review
-jto-lang-9ef2f23f4c96c69ee658,inverse-probability weighting for missingness,34740862,jto-2022-34740862-language.md,12,no-literal-match-needs-context-review
 jto-lang-9f2d2ea8a354a7869f5a,structural-domain heterogeneity,41932614,jto-2026-09-14-stk11-priority-language.md,37,no-literal-match-needs-context-review
 jto-lang-9ffe574940c7564cec68,tolerance for additional genetic aberrations,37806385,jto-2024-37806385-language.md,66,no-literal-match-needs-context-review
 jto-lang-a01cd39da496fcd593b3,dual-loss subgroup,42409117,jto-2026-09-14-stk11-priority-language.md,737,no-literal-match-needs-context-review
@@ -3690,7 +3685,6 @@ jto-lang-f36075002f46738e8764,selected functional events,37495171,jto-2023-37495
 jto-lang-f3dafd4ce215a2a11725,biological underpinnings of clinical heterogeneity,41161592,jto-2026-41161592-language.md,45,no-literal-match-needs-context-review
 jto-lang-f3dfa325cbd08347b12c,pathway-enrichment analysis,42409117,jto-2026-09-14-stk11-priority-language.md,743,no-literal-match-needs-context-review
 jto-lang-f4231ba29479853581bb,tested-patient prevalence,40320171,jto-2025-40320171-language.md,55,no-literal-match-needs-context-review
-jto-lang-f434e4422a730c892b00,independent discovery and validation cohorts,34740862,jto-2022-34740862-language.md,9,no-literal-match-needs-context-review
 jto-lang-f481dfa4b13384134b49,functional deficiency,37495171,jto-2023-37495171-language.md,13,no-literal-match-needs-context-review
 jto-lang-f57995ffb78402bbcf75,overlapping score distributions,37495171,jto-2023-37495171-language.md,65,no-literal-match-needs-context-review
 jto-lang-f59212b0fe63a8e79d3e,clinically indicated brain imaging,41619904,jto-2026-09-14-stk11-priority-language.md,313,no-literal-match-needs-context-review

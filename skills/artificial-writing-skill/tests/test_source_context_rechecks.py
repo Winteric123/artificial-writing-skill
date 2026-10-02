@@ -22,8 +22,12 @@ class SourceContextRechecks(unittest.TestCase):
         cls.records = load_context_rechecks(ROOT, cls.sources)
 
     def test_selected_contexts_have_current_sources_and_no_quotation_promotion(self):
-        self.assertEqual(len(self.records), 139)
-        self.assertEqual(len({record['pmid'] for record in self.records.values()}), 13)
+        historical = [record for record in self.records.values() if record['reviewed_on'] == '2026-09-28']
+        self.assertEqual(len(historical), 139)
+        self.assertEqual(len({record['pmid'] for record in historical}), 13)
+        added = [record for record in self.records.values() if record['pmid'] == '34740862']
+        self.assertEqual(len(added), 10)
+        self.assertEqual(len(self.records), 149)
         by_id = {entry['stable_id']: entry for entry in self.entries}
         for identifier, record in self.records.items():
             with self.subTest(identifier=identifier):
@@ -31,7 +35,8 @@ class SourceContextRechecks(unittest.TestCase):
                 self.assertEqual(entry['source_context_rechecks'], [record])
                 self.assertFalse(record['quotation_verified'])
                 self.assertFalse(entry['original_wording_verified'])
-                self.assertEqual(record['review_method'], 'same_agent_source_recheck')
+                self.assertEqual(record['review_method'], 'independent_agent_source_recheck'
+                                 if record['pmid'] == '34740862' else 'same_agent_source_recheck')
                 self.assertEqual(record['sha256'], self.sources[record['pmid']]['sha256'])
 
     def test_article_acceptance_does_not_imply_each_entry_was_context_checked(self):
@@ -70,7 +75,8 @@ class SourceContextRechecks(unittest.TestCase):
             attach_context_recheck(entry, self.records)
 
     def test_only_highlights_are_accepted_by_this_recheck(self):
-        expected = {record['pmid'] for record in self.records.values()}
+        expected = {record['pmid'] for record in self.records.values()
+                    if record['reviewed_on'] == '2026-09-28'}
         quality = [row for configuration in journal_registry(ROOT).values()
                    for row in read_csv(ROOT / 'references' / configuration['quality'])]
         this_recheck = {row['pmid'] for row in quality if row['review_status'] == 'passed'

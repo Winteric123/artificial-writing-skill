@@ -57,16 +57,23 @@ class LocalUnreadReconciliation(unittest.TestCase):
                 row = self.library[pmid]
                 self.assertEqual(row['reading_stage'], 'main_text_deep_read_complete')
                 self.assertEqual(row['main_read_completed_on'], '2026-10-02')
-                self.assertEqual(row['review_status'], 'not_reviewed')
+                expected_review = 'passed' if pmid == '34740862' else 'not_reviewed'
+                self.assertEqual(row['review_status'], expected_review)
                 self.assertEqual(row['stk11_highlight'], 'no')
                 manifest = self.intake[pmid]
+                # This manifest records intake, not a later independent source recheck.
+                self.assertEqual(manifest['review_status'], 'not_reviewed')
                 self.assertGreaterEqual(int(manifest['language_units']), 6)
                 self.assertTrue((REFS / manifest['reading_note']).is_file())
                 self.assertTrue((REFS / manifest['language_note']).is_file())
                 quality = self.quality[pmid]
-                self.assertEqual(quality['review_status'], 'not_reviewed')
+                self.assertEqual(quality['review_status'], expected_review)
                 for gate in ('coverage_check', 'evidence_check', 'results_check', 'language_check', 'traceability_check', 'transfer_check'):
-                    self.assertEqual(quality[gate], 'pending')
+                    self.assertEqual(quality[gate], 'pass' if pmid == '34740862' else 'pending')
+                if pmid == '34740862':
+                    self.assertEqual(quality['review_method'], 'independent_agent_source_recheck')
+                    self.assertEqual(quality['reviewed_on'], '2026-10-02')
+                    self.assertTrue((REFS / quality['review_record']).is_file())
 
     def test_new_journals_have_isolated_assets(self):
         expected = {'cancer-research', 'nature-communications', 'esmo-open', 'nature-metabolism',
@@ -147,7 +154,8 @@ class LocalUnreadReconciliation(unittest.TestCase):
                     self.assertEqual((record['co_mutation_status'], record['co_alteration_status']), expected[pmid])
                 else:
                     self.assertEqual((record['co_mutation_status'], record['co_alteration_status']), ('analyzed', 'analyzed'))
-                self.assertEqual(record['pdf']['checked_context_pages'], [])
+                self.assertEqual(record['pdf']['checked_context_pages'],
+                                 [3, 4, 5, 6, 7, 8, 9, 10] if pmid == '34740862' else [])
                 self.assertEqual(record['pdf']['sha256'], self.intake[pmid]['sha256'])
                 self.assertTrue(record['evidence'])
                 for evidence in record['evidence']:

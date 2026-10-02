@@ -1546,31 +1546,46 @@
       "year": "2022",
       "title": "Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status",
       "doi": "10.1016/j.jtho.2021.10.013",
-      "primary_classification": "article-specific STK11 evidence",
+      "primary_classification": "KRAS-stratified STK11/KEAP1 outcomes and TCGA immune inference",
       "stk11_relation": "direct_analysis",
       "methods": [
         "lung-primary",
         "clinical-correlative",
-        "real-world-cohort"
+        "real-world-cohort",
+        "computational-reanalysis"
       ],
       "treatment_types": [
-        "ici_mono"
+        "ici",
+        "chemotherapy"
       ],
       "drugs": [
-        "PD-(L)1 inhibitor"
+        "PD-(L)1 inhibitor",
+        "platinum doublet"
       ],
       "assays": [
         {
           "assay": "targeted_dna",
           "origin": "original",
-          "sample_context": "human_tumor",
-          "evidence": "jto-2022-34740862-language.md"
+          "sample_context": "clinical tumor OncoPanel/MSK-IMPACT",
+          "evidence": "jto-2022-34740862-reading.md"
         },
         {
           "assay": "clinical_outcomes",
           "origin": "original",
-          "sample_context": "patients",
-          "evidence": "jto-2022-34740862-language.md"
+          "sample_context": "ICI patients and separate platinum-doublet cohort",
+          "evidence": "jto-2022-34740862-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA LUAD; pathway analysis and xCell inference",
+          "evidence": "jto-2022-34740862-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "available-case clinical PD-L1 TPS; missingness retained",
+          "evidence": "jto-2022-34740862-reading.md"
         }
       ],
       "alteration_types": [
@@ -1582,10 +1597,10 @@
         "STK11+KEAP1"
       ],
       "classification_level": "supplied_main_text_curated",
-      "evidence": "jto-2022-34740862-language.md",
-      "evidence_sha256": "15bb512d7d355869f4f27200b43e5051728651fd5e4259c80d2a27cf96d12530",
+      "evidence": "jto-2022-34740862-reading.md",
+      "evidence_sha256": "14a3e946abcaa05868696aad48370749a786e46a9e94c7c7d4370c5dccad904e",
       "pdf_sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
-      "boundary": "Article-specific source-grounded STK11 evidence. Initial complete reading is not independent acceptance; preserve assay, cohort, model and treatment boundaries."
+      "boundary": "Independent-agent bounded main-source recheck; source-conflict restrictions apply. PD-(L)1 treatment is not assumed uniformly monotherapy. Platinum reference cohort is not randomized against ICI. TCGA bulk RNA/xCell is separate reanalysis, not paired clinical single-cell data. Supplements not supplied."
     },
     {
       "stable_id": "STK11-PMID-36150391",

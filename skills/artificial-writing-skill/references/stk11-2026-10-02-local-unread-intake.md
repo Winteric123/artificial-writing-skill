@@ -1,6 +1,8 @@
 # STK11 local-PDF unread intake — 2026-10-02
 
-Eighteen locally available PDFs that were absent from the reading ledgers were identity/hash checked and given complete first-pass main-text and main-visual readings. Sixteen belong to the locally recorded 2025-JIF >10 candidate table; two are below-threshold appendix papers. Completion does not imply independent review: every new record remains `not_reviewed` with all acceptance gates pending.
+Eighteen locally available PDFs that were absent from the reading ledgers were identity/hash checked and given complete first-pass main-text and main-visual readings. Sixteen belong to the locally recorded 2025-JIF >10 candidate table; two are below-threshold appendix papers. At intake, every new record was `not_reviewed` with all acceptance gates pending. The table and companion CSV retain that historical intake state; current review status comes from the journal quality registers and library index.
+
+Subsequent same-day maintenance: [PMID 34740862 independent source recheck](source-rechecks/2026-10-02-34740862.md) compared the publisher version with a newly supplied author manuscript, corrected reading errors and restricted disputed source claims. This does not add a new article or change the original main-read date.
 
 The PDF scan also produced one bibliographic false positive (PMID17676035 appeared only in reference lists); it was not registered as a local full-text match.
 

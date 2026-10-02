@@ -1937,6 +1937,14 @@
       ],
       "restriction": "TRIDENT is post hoc nested-cross-validated HTE modeling of T+D+CT versus D+CT. STK11 feature importance is not a single-gene treatment interaction. Top-50% estimates and full analysis-set estimates have different selected populations; modalities have different denominators. No independent external validation; preserve negative squamous and radiomics findings.",
       "source_reference": "ccr-2026-42485106-language-addendum.md"
+    },
+    {
+      "id": "recheck-20261002-34740862",
+      "article_ids": [
+        "34740862"
+      ],
+      "restriction": "Independent-agent dual-version source recheck: withhold exact TMB subgroup claims (Fig1 text/graph conflict), the disputed Fig3D STK11/KRAS-WT OS HR/CI/P tuple, exact Fig6 pathway/cell counts and conflicting xCell significance values. Preserve KRAS-mutant backgrounds in the STK11/KEAP1 four groups. A null gene-by-gene interaction does not prove additivity or exclude synergy. TCGA deconvolution is not direct cell measurement; retrospective associations do not establish ICI-specific treatment prediction. External supplements not reviewed.",
+      "source_reference": "source-rechecks/2026-10-02-34740862.md"
     }
   ],
   "entry_rules": [

@@ -6005,7 +6005,7 @@
       ],
       "source_reference": "jto-2022-34740862-reading.md",
       "source_reference_line": 1,
-      "curation_method": "article-specific classification from the complete supplied main-text and main-visual first reading; independent acceptance review remains pending",
+      "curation_method": "Article-specific facets rechecked against both complete main-text versions by an independent agent; see source-rechecks/2026-10-02-34740862.md",
       "source_sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
       "facet_status": {
         "disease_ids": "identified-not-exhaustive",
@@ -6013,7 +6013,7 @@
         "model_ids": "identified-not-exhaustive",
         "use_roles": "identified-not-exhaustive"
       },
-      "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+      "boundary": "Human retrospective clinical cohorts and separate TCGA computational reanalysis; identified facets are non-exhaustive. No new single-cell, spatial or perturbation experiment. Main-source acceptance excludes unsupplied supplements."
     },
     "36150391": {
       "disease_ids": [

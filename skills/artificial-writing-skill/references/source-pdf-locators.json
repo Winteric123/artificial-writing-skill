@@ -266,7 +266,7 @@
       "filename": "PMID34740862_jto_2022.pdf",
       "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
       "physical_pages": 12,
-      "supplied_pdf_version": "author_manuscript",
+      "supplied_pdf_version": "version_of_record",
       "identity_check": "registered-sha256-match"
     },
     "34740922": {
@@ -187672,7 +187672,6 @@
           "pmid": "34740862",
           "state": "reading-note-page-hint-not-rechecked",
           "recorded_pages": [
-            3,
             4,
             5,
             6,
@@ -187720,7 +187719,8 @@
           "state": "reading-note-page-hint-not-rechecked",
           "recorded_pages": [
             2,
-            3
+            3,
+            10
           ],
           "page_numbering": "unverified-reading-note-numbering"
         }
@@ -187786,8 +187786,7 @@
           "recorded_pages": [
             4,
             5,
-            6,
-            7
+            6
           ],
           "page_numbering": "unverified-reading-note-numbering"
         }
@@ -187808,7 +187807,8 @@
           "pmid": "34740862",
           "state": "reading-note-page-hint-not-rechecked",
           "recorded_pages": [
-            9,
+            6,
+            7,
             10
           ],
           "page_numbering": "unverified-reading-note-numbering"
@@ -187834,8 +187834,6 @@
             5,
             6,
             7,
-            8,
-            9,
             10
           ],
           "page_numbering": "unverified-reading-note-numbering"
@@ -199886,7 +199884,7 @@
     "jco-precision-oncology-2024-38330261-language.md": "25c907aab421547f4b6dfddca27d1e059716cbeaf25727080b14c2b63249dba4",
     "jitc-2022-35190375-language.md": "4027a591345d0773dac4340c480e1a9512b989c603dff671fa6b313b08d6947c",
     "jto-2021-34450259-language.md": "c6882c0fa489a7eedb47c0abf7fadad331cf730fe9b5aeb20440fba46421f3db",
-    "jto-2022-34740862-language.md": "15bb512d7d355869f4f27200b43e5051728651fd5e4259c80d2a27cf96d12530",
+    "jto-2022-34740862-language.md": "88e1062f339fde27d3f7d70590928f397bd7ac6eefcff1cab9d20a3f9bf6594a",
     "jto-2023-36240971-language.md": "52a15b0d259c76a956e4f4bc52ef5d035bef393728a272b08e08e672f223a7c1",
     "jto-2023-36494075-language.md": "2189d726d51c55228e3a473f5d62d1c9a821e5cbacf821455afb47ad3b044000",
     "jto-2023-36535627-language.md": "d64874d4c53fce74417a8af4d46aac40c96c03dfa4765ef3da5f67410c73061c",

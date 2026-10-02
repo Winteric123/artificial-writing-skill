@@ -11622,13 +11622,22 @@
       "pdf": {
         "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
         "physical_pages": 12,
-        "checked_context_pages": [],
-        "scope": "No separate page-level co-topic recheck was claimed; classification relies on the hash-bound complete-reading note and its exact evidence line spans"
+        "checked_context_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "scope": "Independent-agent main-source recheck of VOR physical pages 3-10 and all six main figures; alternate author manuscript mapped separately in the review record."
       },
       "doi": "10.1016/j.jtho.2021.10.013",
       "eligibility": "included",
       "curated_on": "2026-10-02",
-      "method": "main-text-and-visuals-reading-not-independent-review",
+      "method": "independent-agent-source-recheck",
       "co_mutation_status": "analyzed",
       "co_alteration_status": "analyzed",
       "alteration_types": [
@@ -11656,18 +11665,18 @@
       "evidence": [
         {
           "source": "jto-2022-34740862-reading.md",
-          "source_sha256": "3423c6aa8c7b153d016aa61fc230b98e4dca089e1f96d78bac8145800e8d7d0a",
-          "first_line": 41,
-          "last_line": 45
+          "source_sha256": "14a3e946abcaa05868696aad48370749a786e46a9e94c7c7d4370c5dccad904e",
+          "first_line": 43,
+          "last_line": 44
         },
         {
           "source": "jto-2022-34740862-reading.md",
-          "source_sha256": "3423c6aa8c7b153d016aa61fc230b98e4dca089e1f96d78bac8145800e8d7d0a",
-          "first_line": 69,
-          "last_line": 75
+          "source_sha256": "14a3e946abcaa05868696aad48370749a786e46a9e94c7c7d4370c5dccad904e",
+          "first_line": 64,
+          "last_line": 78
         }
       ],
-      "boundary": "Article-specific co-mutation/co-alteration classification from exact line spans in the complete first-reading note. Preserve human versus engineered evidence, assay denominators, prognostic-versus-predictive distinctions, and the pending independent-review status."
+      "boundary": "Separate STK11, KEAP1 and their double-mutant groups within KRAS-mutant disease; retain observational treatment associations and no detected STK11-by-KEAP1 interaction. Disputed source claims restricted by the dated review; supplements not supplied."
     },
     "36150391": {
       "pdf": {

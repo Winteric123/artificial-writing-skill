@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-02",
+  "intake_label": "补充CCR",
+  "supplied_file_count": 14,
+  "unique_pdf_versions": 13,
+  "unique_articles": 12,
+  "newly_registered_articles": 0,
+  "new_main_text_completions": 0,
+  "new_alternate_versions": 1,
+  "scope": "Identity/archive reconciliation, not twelve new reads. All twelve previously main-text complete. Only PMID34740862 received a new dual-version independent-agent recheck. Folder label is not journal identity. No source PDFs or private paths distributed.",
+  "rechecked_pmids": [
+    "34740862"
+  ],
+  "review_record": "source-rechecks/2026-10-02-34740862.md",
+  "records": [
+    {
+      "pmid": "31040157",
+      "doi": "10.1158/0008-5472.CAN-18-3527",
+      "title": "LKB1 and KEAP1/NRF2 Pathways Cooperatively Promote Metabolic Reprogramming with Enhanced Glutamine Dependence in KRAS-Mutant Lung Adenocarcinoma",
+      "journal": "Cancer Research",
+      "year": "2019",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "3251.pdf"
+          ],
+          "sha256": "a704985e0bdf3872c79f50ad2b9a35eab146054db4773d41f960f1c236b7ed36",
+          "physical_pages": 17,
+          "version": "publisher_typeset_pdf",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "38997257",
+      "doi": "10.1038/s41467-024-50157-8",
+      "title": "Glucose-6-phosphate dehydrogenase maintains redox homeostasis and biosynthesis in LKB1-deficient KRAS-driven lung cancer",
+      "journal": "Nature Communications",
+      "year": "2024",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "41467_2024_Article_50157.pdf"
+          ],
+          "sha256": "c9494ca9d5a7df98586f12a7716144997699c9a789ea0aa85cb773334c5d3457",
+          "physical_pages": 18,
+          "version": "publisher_typeset_pdf",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "40830141",
+      "doi": "10.1038/s41467-025-63091-0",
+      "title": "Integrated molecular and clinical characterization of pulmonary large cell neuroendocrine carcinoma",
+      "journal": "Nature Communications",
+      "year": "2025",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "41467_2025_Article_63091.pdf"
+          ],
+          "sha256": "8458f02c4a8021b063fab27458f8105c9e290c2fa4e8223a064b258323254f38",
+          "physical_pages": 15,
+          "version": "publisher_typeset_pdf",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "39207369",
+      "doi": "10.1158/0008-5472.CAN-23-2631",
+      "title": "Live-Cell Invasive Phenotyping Uncovers ALK2 as a Therapeutic Target in LKB1-Mutant Lung Cancer",
+      "journal": "Cancer Research",
+      "year": "2024",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "can-23-2631.pdf"
+          ],
+          "sha256": "9cae781bbcd99d4cf78825af5a56679af062cc6ba213707c89616343ad276673",
+          "physical_pages": 11,
+          "version": "publisher_typeset_pdf",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "42674257",
+      "doi": "10.1016/j.jtho.2026.104176",
+      "title": "DNA and RNA EGFR Variant Allele Fractions and Clinical Outcomes in Lung Adenocarcinoma.",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2026",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "DNA and RNA EGFR Variant Allele Fractions and Clinical Outcomes in Lung Adenocarcinoma.pdf"
+          ],
+          "sha256": "bc4aaf42392a7b3bf7fee817b3928cb1dfd040291d5e1b34860ee06331866090",
+          "physical_pages": 28,
+          "version": "journal_preproof",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "32312757",
+      "doi": "10.1136/esmoopen-2020-000706",
+      "title": "STK11 and KEAP1 mutations as prognostic biomarkers in an observational real-world lung adenocarcinoma cohort",
+      "journal": "ESMO Open",
+      "year": "2020",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "esmoopen-2020-000706.pdf"
+          ],
+          "sha256": "770c1ab2ad06176f4f542f77744a23336e61c8139c11e0c259254ac9d3ad7bfe",
+          "physical_pages": 6,
+          "version": "publisher_typeset_pdf",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "42749050",
+      "doi": "10.1016/j.jtho.2026.104202",
+      "title": "Final Biomarker and Efficacy Analyses of Lorlatinib in Patients With ALK-Positive Advanced Non-Small Cell Lung Cancer in a Phase 2 Study.",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2026",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "Final Biomarker and Efficacy Analyses of Lorlatinib in Patients With ALK-Positive Advanced Non-Small Cell Lung Cancer in a Phase 2 Study.pdf"
+          ],
+          "sha256": "bf58cb67f644c9e5f59df82f95c410b92bd229ee8fce31c9538ceecb91ec4ebc",
+          "physical_pages": 81,
+          "version": "journal_preproof",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "34740862",
+      "doi": "10.1016/j.jtho.2021.10.013",
+      "title": "Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2022",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "nihms-1977099.pdf"
+          ],
+          "sha256": "b614e011b1e0ef0709602c6f5c93f57f04552c3fa213d13da15dfce015bbe426",
+          "physical_pages": 19,
+          "version": "author_manuscript",
+          "selected_for_language_locators": false
+        },
+        {
+          "supplied_filenames": [
+            "PIIS1556086421032846.pdf"
+          ],
+          "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+          "physical_pages": 12,
+          "version": "version_of_record",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "38877143",
+      "doi": "10.1038/s42255-024-01066-z",
+      "title": "Concurrent loss of LKB1 and KEAP1 enhances SHMT-mediated antioxidant defence in KRAS-mutant lung cancer",
+      "journal": "Nature Metabolism",
+      "year": "2024",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "nihms-2045194.pdf"
+          ],
+          "sha256": "0fa6af31aba05532754f07d76c377be185736216180c29d3bbcba52a96ffab67",
+          "physical_pages": 55,
+          "version": "author_manuscript",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "39637943",
+      "doi": "10.1016/j.annonc.2024.11.014",
+      "title": "Lung adenocarcinomas with mucinous histology: clinical, genomic, and immune microenvironment characterization and outcomes to immunotherapy-based treatments and KRASG12C inhibitors",
+      "journal": "Annals of Oncology",
+      "year": "2025",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "nihms-2051455.pdf"
+          ],
+          "sha256": "4cb7a2caaed55c7197e899810cf5c03cdf032d71e0f6852ae37a285a49771092",
+          "physical_pages": 22,
+          "version": "author_manuscript",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "40198901",
+      "doi": "10.1158/0008-5472.CAN-24-2745",
+      "title": "SCD1 Inhibition Blocks the AKT-NRF2-SLC7A11 Pathway to Induce Lipid Metabolism Remodeling and Ferroptosis Priming in Lung Adenocarcinoma",
+      "journal": "Cancer Research",
+      "year": "2025",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "nihms-2074727 (1).pdf",
+            "nihms-2074727.pdf"
+          ],
+          "sha256": "ce4a7e9558e46aeb9cc54e777e9f08159b7e6ebf295b27abcea4ff7cc6721e1b",
+          "physical_pages": 39,
+          "version": "author_manuscript",
+          "selected_for_language_locators": true
+        }
+      ]
+    },
+    {
+      "pmid": "28538732",
+      "doi": "10.1038/nature22359",
+      "title": "CPS1 maintains pyrimidine pools and DNA synthesis in KRAS/LKB1-mutant lung cancer cells",
+      "journal": "Nature",
+      "year": "2017",
+      "supplied_versions": [
+        {
+          "supplied_filenames": [
+            "nihms867391.pdf"
+          ],
+          "sha256": "bafc1ec0f06ba2a9612a5ef33efb7479247af9cc84a7726ba9613d4a5b143bbf",
+          "physical_pages": 32,
+          "version": "author_manuscript",
+          "selected_for_language_locators": true
+        }
+      ]
+    }
+  ]
+}

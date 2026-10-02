@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "Human-readable same-agent source-context checks for selected entries; neither literal matching nor quotation verification. Unlisted expressions remain unsampled.",
+  "scope": "Documented agent source-context checks for selected entries; individual records preserve same-agent versus independent-agent method. Neither literal matching nor quotation verification. Unlisted expressions remain unsampled.",
   "entries": [
     {
       "stable_id": "cancer-discovery-lang-ee1890d3adca6d138959",
@@ -2518,6 +2518,184 @@
       "reviewed_on": "2026-09-28",
       "reviewer_id": "codex-main-agent-2026-09-28",
       "review_method": "same_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-f434e4422a730c892b00",
+      "expression": "independent discovery and validation cohorts",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained; cohort independence is author-described; no patient-level deduplication was independently repeated",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-0c2f229231e4c7f6c9c8",
+      "expression": "KRAS-stratified association",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained; clinical association only; omit Figure 1 TMB because of source inconsistency",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-212437d17df5823be429",
+      "expression": "context-dependent adverse association",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        9,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained; observational summary, no proof of molecular effect modification",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-9ef2f23f4c96c69ee658",
+      "expression": "inverse-probability weighting for missingness",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "corrected locator from physical pages 2-3 to physical page 10; paper reports IPW here, detailed model is in unavailable supplement",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-32e1ca4f3d53d9dd071b",
+      "expression": "additive rather than synergistic pattern",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "expression retained; strengthen usage boundary; no causal or equivalence claim",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-3c79d3fe00e2b5a8c482",
+      "expression": "bulk-transcriptomic deconvolution",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        8,
+        9
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained; computational inference from TCGA bulk RNA-seq, not observed cell counts; disputed exact xCell P values withheld",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-20f89fea7f84c9fe85b3",
+      "expression": "The adverse association of [gene] was concentrated in the [molecular-context] stratum and was not apparent in the comparator stratum.",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        4,
+        5,
+        6
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained as synthetic frame; non-apparent association is not equivalence and not a demonstrated interaction",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-b97a1a18c179c9f22f15",
+      "expression": "A similar adverse association under platinum chemotherapy argues against an exclusively checkpoint-inhibitor-specific explanation.",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        6,
+        7,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained as synthetic frame; chemotherapy is a separate retrospective cohort; no comparative treatment-effect estimate",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-6d7123011c0c4156bdca",
+      "expression": "Stratum-specific significance should not be taken as proof of interaction unless the cross-stratum contrast is tested directly.",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        4,
+        5,
+        6,
+        7,
+        10
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained synthetic caution; explicitly not an author result or quotation",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
+    },
+    {
+      "stable_id": "jto-lang-d668b63eb77d96a6a9b4",
+      "expression": "mutation frequency → KRAS-stratified clinical estimates → multivariable adjustment → independent-cohort consistency → four-category disaggregation → interaction ceiling",
+      "pmid": "34740862",
+      "sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
+      "physical_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "page_numbering": "one-based physical PDF page",
+      "quotation_verified": false,
+      "support": "retained synthetic paragraph architecture; mutation frequency and each clinical denominator remain separately identified",
+      "review_record": "source-rechecks/2026-10-02-34740862.md",
+      "reviewed_on": "2026-10-02",
+      "reviewer_id": "codex-agent-reread_jto_34740862",
+      "review_method": "independent_agent_source_recheck"
     }
   ]
 }
