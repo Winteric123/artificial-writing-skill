@@ -4,6 +4,8 @@ Eighteen locally available PDFs that were absent from the reading ledgers were i
 
 Subsequent same-day maintenance: [PMID 34740862 independent source recheck](source-rechecks/2026-10-02-34740862.md) compared the publisher version with a newly supplied author manuscript, corrected reading errors and restricted disputed source claims. This does not add a new article or change the original main-read date.
 
+2026-10-05 reconciliation: [PMID 36150391 bounded source recheck](source-rechecks/2026-10-05-36150391.md) established that author-manuscript pages 41-44 are the main Key Resources Table rather than embedded supplemental evidence, so its supplement status is normalized to `not_supplied`. The intake table below remains a historical first-pass review snapshot; live acceptance status is authoritative only in the journal quality register and rebuilt library index.
+
 The PDF scan also produced one bibliographic false positive (PMID17676035 appeared only in reference lists); it was not registered as a local full-text match.
 
 | PMID | Year | Journal | Title | 2025-JIF >10 snapshot | Main read | Review | Notes |

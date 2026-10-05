@@ -50,7 +50,13 @@ def canonical(value, groups):
 
 
 def normalize_section(value):
-    return canonical(value, SECTION_ALIASES)
+    normalized = canonical(value, SECTION_ALIASES)
+    if normalized in SECTION_ALIASES:
+        return normalized
+    # The index serializes multiword section labels with hyphens. Resolve
+    # those spellings through the same aliases without flattening canonical
+    # subheadings such as abstract-results into their parent section.
+    return canonical(text_key(value).replace('-', ' '), SECTION_ALIASES)
 
 
 def exact_tag_match(wanted, values, groups):

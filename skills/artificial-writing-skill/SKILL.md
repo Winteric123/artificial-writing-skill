@@ -65,6 +65,8 @@ Report scope for every count: journal(s), issue-year range, topic/batch filter a
 
 Only clear an authorized intake file after confirming the exact archived version has a matching hash and completed reading evidence. Preserve unread files, non-PDF files and unrelated/managed copies. Never update reading or review status merely because parsing, indexing, testing or drafting succeeded.
 
+When the user defers a paper, carry that exception through reading counts, language catalogs, archive manifests and cleanup lists. Completing the rest of a batch must not silently complete or delete the deferred source.
+
 ## Audit and deliver
 
 Check numbers/units/denominators, consistent terminology, tense/analysis status and claim strength against the source. Do not calculate unstated values unless requested; label permitted calculations as derived. Do not invent missing uncertainty, methods, ethics, registration or novelty claims.

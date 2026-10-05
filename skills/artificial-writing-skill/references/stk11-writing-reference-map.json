@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-02",
+  "updated": "2026-10-05",
   "scope": "STK11 writing-framework selection; membership is not reading acceptance or a merged journal corpus",
   "core_authority": "stk11-priority-references.md",
   "identity_and_reading_authority": "library-index.csv",
@@ -565,7 +565,8 @@
         "therapeutic_vulnerability"
       ],
       "source_refs": [
-        "cancer-cell-2022-36150391-reading.md"
+        "cancer-cell-2022-36150391-reading.md",
+        "source-rechecks/2026-10-05-36150391.md"
       ],
       "added_on": "2026-10-02"
     },
@@ -716,6 +717,247 @@
       ],
       "source_refs": [
         "nature-communications-2025-40830141-reading.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "40057483",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "nature-communications-2025-40057483-reading.md",
+        "source-rechecks/2026-10-02-40057483.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "42008781",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "cancer-discovery-2026-42008781-reading.md",
+        "source-rechecks/2026-10-02-42008781.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "39694700",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "jitc-2024-39694700-reading.md",
+        "source-rechecks/2026-10-05-39694700.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "41135949",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "jitc-2025-41135949-reading.md",
+        "source-rechecks/2026-10-05-41135949.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "36512628",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "cancer-research-2023-36512628-reading.md",
+        "source-rechecks/2026-10-05-36512628.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "37098232",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_analysis",
+      "modules": [
+        "sequence_context",
+        "clinical_outcomes"
+      ],
+      "source_refs": [
+        "jco-2023-37098232-reading.md",
+        "source-rechecks/2026-10-02-37098232.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "37100205",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_analysis",
+      "modules": [
+        "sequence_context",
+        "immune_phenotype",
+        "clinical_outcomes"
+      ],
+      "source_refs": [
+        "annals-of-oncology-2023-37100205-reading.md",
+        "source-rechecks/2026-10-02-37100205.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "37068173",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_analysis",
+      "modules": [
+        "sequence_context",
+        "clinical_outcomes"
+      ],
+      "source_refs": [
+        "cancer-discovery-2023-37068173-reading.md",
+        "source-rechecks/2026-10-05-37068173.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "40882030",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "epigenetics",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "cancer-research-2025-40882030-reading.md",
+        "source-rechecks/2026-10-02-40882030.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "41423267",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_analysis",
+      "modules": [
+        "sequence_context",
+        "clinical_outcomes",
+        "immune_mechanism"
+      ],
+      "source_refs": [
+        "jitc-2025-41423267-reading.md",
+        "source-rechecks/2026-10-02-41423267.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "33853830",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "immune_mechanism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "cancer-research-2021-33853830-reading.md",
+        "source-rechecks/2026-10-05-33853830.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "34870237",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_analysis",
+      "modules": [
+        "sequence_context",
+        "proteogenomics",
+        "molecular_classification",
+        "clinical_outcomes"
+      ],
+      "source_refs": [
+        "nature-cancer-2021-34870237-reading.md",
+        "source-rechecks/2026-10-05-34870237.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "34045189",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "epigenetics",
+        "metabolism"
+      ],
+      "source_refs": [
+        "cancer-research-2021-34045189-reading.md",
+        "source-rechecks/2026-10-02-34045189.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "33264619",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "sequence_context",
+        "functional_state",
+        "metabolism",
+        "therapeutic_vulnerability"
+      ],
+      "source_refs": [
+        "cell-reports-2020-33264619-reading.md",
+        "source-rechecks/2026-10-02-33264619.md"
+      ],
+      "added_on": "2026-10-02"
+    },
+    {
+      "pmid": "34341533",
+      "tier": "topic_support",
+      "in_cross_gene_16": false,
+      "stk11_relation": "direct_function",
+      "modules": [
+        "functional_state",
+        "epigenetics",
+        "metastatic_progression"
+      ],
+      "source_refs": [
+        "nature-cell-biology-2021-34341533-reading.md",
+        "source-rechecks/2026-10-02-34341533.md"
       ],
       "added_on": "2026-10-02"
     }

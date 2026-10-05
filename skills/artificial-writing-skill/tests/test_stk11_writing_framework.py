@@ -6,6 +6,9 @@ from pathlib import Path
 
 
 class Stk11WritingFramework(unittest.TestCase):
+    SUPPLEMENT_READS = {'40057483','42008781','39694700','41135949','36512628',
+                        '37098232','37100205','37068173','40882030','41423267',
+                        '33853830','34870237','34045189','33264619','34341533'}
     NEW_LOCAL_READS = {'26833127', '28538732', '30297358', '31040157', '32312757', '32649874',
                        '34740862', '36150391', '36793385', '38330261', '38877143', '38997257',
                        '39207369', '39637943', '40198901', '40645185', '40749670', '40830141'}
@@ -35,14 +38,14 @@ class Stk11WritingFramework(unittest.TestCase):
         support = {record['pmid'] for record in self.records if record['tier'] == 'topic_support'}
         self.assertEqual(mapped_core, highlighted)
         self.assertFalse(highlighted & support)
-        self.assertEqual(support, {'36775193', '36494075', '37806385', '39804166', '39545922', '42507545'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'} | self.NEW_LOCAL_READS)
+        self.assertEqual(support, {'36775193', '36494075', '37806385', '39804166', '39545922', '42507545'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'} | self.NEW_LOCAL_READS | self.SUPPLEMENT_READS)
 
     def test_cross_gene_set_preserves_copy_context_additions(self):
         cross_gene = {record['pmid'] for record in self.records if record['in_cross_gene_16']}
         self.assertEqual(len(cross_gene), 16)
         extra = {record['pmid'] for record in self.records} - cross_gene
-        self.assertEqual(extra, {'39864548', '41870274', '42409117'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'} | self.NEW_LOCAL_READS)
-        self.assertEqual(len(self.records), 49)
+        self.assertEqual(extra, {'39864548', '41870274', '42409117'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'} | self.NEW_LOCAL_READS | self.SUPPLEMENT_READS)
+        self.assertEqual(len(self.records), 64)
 
     def test_scoped_source_evidence_resolves_without_private_paths(self):
         for record in self.records:
@@ -60,7 +63,7 @@ class Stk11WritingFramework(unittest.TestCase):
     def test_modules_and_analogue_boundaries(self):
         allowed_modules = {'sequence_context', 'clinical_outcomes', 'functional_state', 'immune_mechanism', 'longitudinal', 'copy_number',
                            'metabolism', 'therapeutic_vulnerability', 'epigenetics', 'proteogenomics', 'histology', 'dna_damage',
-                           'population_context', 'exposure_context'}
+                           'population_context', 'exposure_context', 'immune_phenotype', 'metastatic_progression', 'molecular_classification'}
         allowed_relations = {'direct_analysis', 'direct_function', 'contextual_analysis', 'structural_analogue'}
         for record in self.records:
             self.assertIn(record['tier'], {'core_highlight', 'topic_support'})

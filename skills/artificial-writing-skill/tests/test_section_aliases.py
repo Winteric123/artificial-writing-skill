@@ -18,13 +18,13 @@ class SectionAliases(unittest.TestCase):
 
     def test_heading_and_chinese_aliases_return_identical_hits(self):
         groups = {
-            'methods': ['Materials and Methods', 'Patients and Methods', 'Experimental Procedures', 'method', '材料与方法', '方法'],
+            'methods': ['Materials and Methods', 'materials-and-methods', 'Patients and Methods', 'patients-and-methods', 'Experimental Procedures', 'method', '材料与方法', '方法'],
             'results': ['result', '结果', '研究结果'],
             'discussion': ['disscussion', '讨论'],
             'conclusion': ['Conclusions', '结论'],
             'introduction': ['引言'],
             'title': ['标题'],
-            'figure': ['Figure legends', '图注'],
+            'figure': ['Figure legends', 'figure-legend', 'figure-legends', '图注'],
         }
         for canonical, aliases in groups.items():
             expected = search(self.entries, section=canonical, limit=100)

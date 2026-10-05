@@ -1,6 +1,6 @@
 # STK11写作文献：逐篇分析方法与分层调用
 
-2026-09-28。与[核心highlight](stk11-priority-references.md)放在同一写作模块；[方法指南](stk11-analysis-framework.md)给出条件性分析建议。本页记录**原文实际分析的逻辑和可迁移部分**，不是要求用户重复所有实验，也不宣称本次完成新的全文精读。
+2026-09-28。与[核心highlight](stk11-priority-references.md)放在同一写作模块；[方法指南](stk11-analysis-framework.md)给出条件性分析建议。本页记录**原文实际分析的逻辑和可迁移部分**，不是要求用户重复所有实验，也不宣称本次完成新的全文精读。下列19篇方法卡是这一框架的历史基础集；当前完整成员与新增证据路径以[成员映射](stk11-writing-reference-map.json)和[优先入口](stk11-priority-references.md)为准，不应把本页卡片数误报为当前STK11文献总量。
 
 ## 两层选择，不混淆优先级与证据强度
 

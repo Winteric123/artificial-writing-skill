@@ -6362,6 +6362,460 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "Article-level source context only; listed facets are supported but not exhaustive. Do not merge distinct human cohorts, tissues, cell systems, mouse models, or treatment settings. First-pass completion is not independent scientific acceptance."
+    },
+    "40057483": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "nature-communications-2025-40057483-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Immune-dependent preclinical effect with short follow-up. No human efficacy or validated biomarker. CyTOF is targeted single-cell protein, not scRNA. AT406/anti-PD1 supplementary experiment not independently viewed."
+    },
+    "42008781": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "bronchoalveolar-lavage"
+      ],
+      "model_ids": [
+        "gemm",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "cancer-discovery-2026-42008781-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "758698151e3b6ad54a6def5bcb71b2c59053c631a8ce9143a524542683e56e13",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Main single-cell mouse experiments pooled n2/condition and human KRAS/LKB1 n4; pseudotime is not lineage tracing. Human survival signatures observational. No anti-PD1 combination efficacy shown."
+    },
+    "39694700": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "jitc-2024-39694700-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "71ddf755c53fe45a0ae4004d277b9bbf4b46bde0e022d16d54ca7953cd0e6fa7",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "No STK11-mutation-specific clinical predictive result: treated n40 allWT. DCB is CR/PR, not durable6month benefit. Skp2 inhibitor attenuates, not improves, anti-PD-L1 efficacy in mouse models. Main table and site-name inconsistencies retained."
+    },
+    "41135949": {
+      "disease_ids": [
+        "nsclc",
+        "pancreatic-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood",
+        "bone-marrow"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jitc-2025-41135949-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "30d493e3aca91ae2e3dd465d6494b6160fb1b790da10098fe3f51d200787a1ed",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "No original scRNA-seq; GSE180963 reanalysis overlaps supplied PARP paper. Panc02 is pancreatic, not lung. OVA/FLT3L/DC interventions are mouse and CB1158 rescue in vitro. TCF1/TIM3 and ARG1-MFI figures contradict prose; affected claims withheld."
+    },
+    "36512628": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "gemm",
+        "mouse",
+        "human-cell-line"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-research-2023-36512628-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "a4fa6d39bd4755e809da7e58a791ec57f8569a68092111cdbbc10491bfe8cf94",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Mouse/cell preclinical results not universal STK11 clinical synthetic lethality/HRD. Olaparib alone short-term control but nonsignificant OS; combination survival improved. No mapped STAT1 PARylation residue, dose/timing conflicts retained."
+    },
+    "37098232": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jco-2023-37098232-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "e529248702acb3179eedf37c0180436067254fcc32a7f023d3292318ac8a17d1",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Single-arm; Figure 2 extreme-outcome subgroup denominators must not be treated as all-patient genotype response rates; STK11 OR 0.71 (0.25-2.02) is not equivalence or a predictive marker."
+    },
+    "37100205": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "e293e86e112ed531582217f92e797225c086e70bfe0e695444ca71cf05e7e65b",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Digital spatial IHC is not spatial transcriptomics; RNA is a targeted NanoString panel; mutation analysis is TNM-I and outcome analysis only historical UNN; prognostic association does not validate ICI prediction."
+    },
+    "37068173": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "cancer-discovery-2023-37068173-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "791ea5d6bee05404ad2667e4027938f37a118531c5849c9e3fcd2246bdb5056d",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Coverage-specific denominators; KSC is any of three genes, not triple mutation; includes deletions/amplifications; no randomized comparator separates prognosis from treatment prediction."
+    },
+    "40882030": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "colorectal-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "mouse",
+        "gemm",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "cancer-research-2025-40882030-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "fffdafba514680dd2e3f7c27fb685146ec1e62e5535bd83eee5d9968693bca32",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Preclinical immune-dependent sensitization and early clinical pharmacodynamics, not established patient response or survival benefit. Mouse models are KEAP1 wild type; MC38/CT26 are colon models. H3K9ac ChIP-seq is not ATAC-seq."
+    },
+    "41423267": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jitc-2025-41423267-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "e7dfd5e9af002f0a3244a31dd34b4116511f9688a5a1f579c430523fcaf5ca89",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "STK11 is a secondary direct outcome analysis within a smoking-focused retrospective study. Nonrandomized treatment comparisons do not establish a predictive interaction or a causal benefit of smoking; assay subsets and denominators differ."
+    },
+    "33853830": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "prostate-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung",
+        "bone-marrow",
+        "spleen"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "mouse",
+        "ex-vivo"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-research-2021-33853830-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "70aec452b31c10d3d067f7ea3d785b1afca5a804aaa0b54cc263629923aecaf3",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Model-specific immune-resistance mechanism; responses depend on the KPL-3M versus parental KPL-P background. No patient treatment-selection validation. G-MDSC percentages use CD45+ denominators; pooled samples are not independent biological replicates."
+    },
+    "34870237": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-clinical",
+        "human-cell-line"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "nature-cancer-2021-34870237-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "271d07d3d6217983780e01e2c3a66c23ede017c314ec2559aca8594605881856",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Proteome subtypes are not mutation diagnoses or validated clinical treatment predictors. Partial assay overlap and classifier denominator attrition retained. NCP orthogonal error36/104; no HLA-presentation/T-cell recognition proof. TCGA OS P.216 negative. No operational biological methods retained."
+    },
+    "34045189": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-cell-line"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cancer-research-2021-34045189-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "9f06352dad3dc159bc28d43f30f5192ea2e96e19d1f944e1c7d885c80405199f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Composite functional class not sequence-mutation class. Patient methylation/metabolite associations and cell-model therapy effects do not establish a complete causal methylation mechanism or immunotherapy prediction. External supplements unavailable."
+    },
+    "33264619": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-cell-line",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "cell-reports-2020-33264619-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "ca754c762a60235ac89d3261ebcfe866a17f8c5d38d66dfb49747948d80c5d18",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Joint-loss model dependency and treatment-agnostic prognosis, not universal STK11 therapy prediction. Clinical/TMA counts conflict; immune-deficient xenografts cannot establish antitumor immunity; no clinical safety/efficacy."
+    },
+    "34341533": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "gemm",
+        "mouse",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "computational-methods"
+      ],
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md",
+      "source_reference_line": 1,
+      "curation_method": "Version-specific complete first-pass main-text/visual evidence curation; no independent acceptance",
+      "source_sha256": "bb29824252c1e7caf63fbf87b8ada507c034c1533bb936fd8892f8a461388ba8",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Stage-dependent epigenetic/metastatic-state evidence in defined models, with small human public-data support. Human STK11 enrichment FDR=.088; no clinical prediction/therapy validation. Preserve source conflicts and liver P=.055. Notes intentionally contain no executable experimental procedures."
     }
   }
 }

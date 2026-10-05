@@ -1945,6 +1945,910 @@
       ],
       "restriction": "Independent-agent dual-version source recheck: withhold exact TMB subgroup claims (Fig1 text/graph conflict), the disputed Fig3D STK11/KRAS-WT OS HR/CI/P tuple, exact Fig6 pathway/cell counts and conflicting xCell significance values. Preserve KRAS-mutant backgrounds in the STK11/KEAP1 four groups. A null gene-by-gene interaction does not prove additivity or exclude synergy. TCGA deconvolution is not direct cell measurement; retrospective associations do not establish ICI-specific treatment prediction. External supplements not reviewed.",
       "source_reference": "source-rechecks/2026-10-02-34740862.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-40057483",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "Immune-dependent preclinical effect with short follow-up. No human efficacy or validated biomarker. CyTOF is targeted single-cell protein, not scRNA. AT406/anti-PD1 supplementary experiment not independently viewed.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40057483-1",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "Do not state all animal experiments randomized/blinded: Methods p14 random allocation conflicts with general p15 nonrandomized/nonblinded wording; IHC explicitly blinded. Preserve unresolved scope.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40057483-2",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "Do not assign a resolved mouse sex to KL efficacy studies: p11 female versus p14 male descriptions conflict.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40057483-3",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "H1792 occurs in both WT and mutant caption lists without consistent engineered-status wording; use explicit matched WT/KD descriptions, not an invented constitutive genotype.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40057483-4",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "Do not reuse a universal low-TMB description for STK11-mutant tumors; this study does not establish that population-wide direction.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40057483-5",
+      "article_ids": [
+        "40057483"
+      ],
+      "restriction": "No human efficacy, durable survival or validated predictive biomarker follows from short mouse studies and allogeneic PBMC killing; CyTOF is not scRNA-seq.",
+      "source_reference": "nature-communications-2025-40057483-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-42008781",
+      "article_ids": [
+        "42008781"
+      ],
+      "restriction": "Main single-cell mouse experiments pooled n2/condition and human KRAS/LKB1 n4; pseudotime is not lineage tracing. Human survival signatures observational. No anti-PD1 combination efficacy shown.",
+      "source_reference": "cancer-discovery-2026-42008781-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-42008781-1",
+      "article_ids": [
+        "42008781"
+      ],
+      "restriction": "Retain n2 mice/condition pooled in sequencing and only4 human KRAS/LKB1 tumors. Cell-level or individual-tumor counts cannot become independent mouse replicates.",
+      "source_reference": "cancer-discovery-2026-42008781-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-42008781-2",
+      "article_ids": [
+        "42008781"
+      ],
+      "restriction": "Pseudotime suggests state ordering, not fate mapping; reduced Arg1-positive fraction does not necessarily mean reduced total interstitial macrophage infiltration.",
+      "source_reference": "cancer-discovery-2026-42008781-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-42008781-3",
+      "article_ids": [
+        "42008781"
+      ],
+      "restriction": "Figure1I survival is in LKB1-WT human LUAD and other signatures are observational; do not label these STK11-mutant therapeutic outcomes or validated predictive biomarkers.",
+      "source_reference": "cancer-discovery-2026-42008781-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-42008781-4",
+      "article_ids": [
+        "42008781"
+      ],
+      "restriction": "Anti-LIF mouse efficacy does not establish human efficacy, safety, an approved regimen, or checkpoint synergy; no anti-PD1 combination is tested here.",
+      "source_reference": "cancer-discovery-2026-42008781-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-39694700",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "No STK11-mutation-specific clinical predictive result: the checkpoint-treated n40 cohort was all STK11-WT and is distinct from the n40 surgical series. DCB is CR/PR, not durable6month benefit. Skp2 inhibitor attenuates, not improves, anti-PD-L1 efficacy in mouse models. Main table and site-name inconsistencies retained.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-1",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Table1 stageIII7+14=21 versus total20; stageIV10+9=19 versus total20. Do not silently redistribute or reuse inconsistent stage totals.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-2",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Do not reuse prose35% low-LKB1 PD-L1 positivity: Table3 has9/14 positive. Preserve the source discrepancy, not a silent correction.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-3",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "K163/280R prose conflicts with Methods/Fig6F K136/280R. Do not curate K163 mechanism; K136/K280 is corroborated but retain alert.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-4",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Results calls model orthotopic, but Methods/Fig8 specify subcutaneous. Classify verified subcutaneous design and withhold orthotopic-specific claims.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-5",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "All40 immunotherapy patients STK11-WT; DCB=CR/PR, NDB=SD/PD, not duration-defined durable benefit. No mutation-predictive inference or treatment interaction.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-6",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Figure5 is anti-LKB1 IP-MS interaction enrichment in H1299/H292, not PD-L1 IP or unbiased whole-proteome profiling. Counts441/500/321 alternate between peptides and interacting proteins, so preserve that unresolved source terminology.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-7",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Human macrophage assay is CD68 in methods/panels, not the prose CD56 label; do not curate CD56 as macrophage-specific.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-39694700-8",
+      "article_ids": [
+        "39694700"
+      ],
+      "restriction": "Adding compound25 attenuated anti-PD-L1 efficacy; never reuse as sensitization or clinical resistance reversal. Protein decrease does not imply improved treatment effect.",
+      "source_reference": "jitc-2024-39694700-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-41135949",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "No original scRNA-seq; GSE180963 reanalysis overlaps PMID36512628 and is not an independent cohort. Panc02 is pancreatic, not lung. OVA/FLT3L/DC interventions are mouse and CB1158 rescue in vitro. Tumor/tdLN OT-I readouts are proportions, not absolute counts. TCF1/TIM3 and ARG1-MFI figures contradict prose; affected directions are withheld.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-1",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "Results p7 conflicts with Fig3B/C: stem-like TCF1+TIM3- fractions are nonsignificant, whereas terminal-like TCF1-TIM3+ proportions increase after knockout (P=.0025 LLC; P=.0207 Panc02). Withhold the conflicting prose direction; do not silently reconcile.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-2",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "Fig7D ARG1 MFI decreases with AGR2 (P.0068) while prose claims accumulation increase. CHX/imaging do not resolve that numerical contradiction; withhold direction-specific Fig7D conclusion.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-3",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "Methods anti-PD1 days1/4/7/10 versus Fig4A days5/7/9/11; no single exact schedule without clarification.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-4",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "Do not state ARG1 directly generates kynurenine: arginase acts on arginine, while kynurenine is a tryptophan-pathway product; proposed ARG1/IDO1 relationship is not measured isotope flux.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-5",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "Antigen uptake/migration, MHCII and SIINFEKL-H2Kb display differ. Some maturation and peptide-MHC-I endpoints ns, so no blanket abolition of antigen presentation/maturation.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-6",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "CompoundC and PRKAA1 knockdown converge on occupancy/AGR2 but not FOXA1 abundance; do not label every drug effect AMPK-specific.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41135949-7",
+      "article_ids": [
+        "41135949"
+      ],
+      "restriction": "GSE180963 is reused from PMID36512628, not independent original scRNA. DC/FLT3L mouse rescue and in-vitro CB1158 are not clinical efficacy evidence.",
+      "source_reference": "jitc-2025-41135949-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-36512628",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Mouse/cell preclinical results do not establish universal STK11 clinical synthetic lethality or HRD. Olaparib alone produced short-term control but nonsignificant OS; combination survival improved. Figure1J is CXCL10 transcript, Figure1K-L tests anti-PD-1 with or without fludarabine, and CXCL10 add-back is only reported through unsupplied FigureS1Q. Figure7 is a mechanism schematic; KP/KPL reanalysis is supplemental-only FigureS1D-E. No mapped STAT1 PARylation residue or body-weight/systemic-safety endpoint; dose/timing conflicts retained.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-1",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Orthotopic Methods prints both8mg/kg and25mg/kg olaparib; do not silently choose a dose. General25mg/kg does not resolve orthotopic wording.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-2",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Figure1A20weeks conflicts with Methods10weeks after lentivirus; withhold a definitive shared single-cell sampling time.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-3",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Results JAK2 phosphosite wording differs from Methods antibody specification/Fig1 labels; do not curate an exact site without clarification.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-4",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "STAT1 PARylation residue is not mapped; no literal same-Y701-residue competition/displacement mechanism is proven.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-5",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Olaparib alone reduces short-term burden but does not significantly prolong OS versus controls; retain this negative result and do not invent curve-derived medians/HRs.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-6",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Fig5A GEMM comparison lacks an olaparib-only arm; do not impute a4arm spontaneous-model study. No human efficacy or universal STK11-HRD marker follows.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36512628-7",
+      "article_ids": [
+        "36512628"
+      ],
+      "restriction": "Coculture is not established autologous patient tumor; CD8/NK1.1 depletion has specificity limits and percentages retain parent gates.",
+      "source_reference": "cancer-research-2023-36512628-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-37098232",
+      "article_ids": [
+        "37098232"
+      ],
+      "restriction": "Single-arm; Figure 2 extreme-outcome subgroup denominators must not be treated as all-patient genotype response rates; STK11 OR 0.71 (0.25-2.02) is not equivalence or a predictive marker.",
+      "source_reference": "jco-2023-37098232-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-37100205",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "Digital spatial IHC is not spatial transcriptomics; RNA is a targeted NanoString panel; mutation analysis is TNM-I and outcome analysis only historical UNN; prognostic association does not validate ICI prediction.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37100205-1",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "Figure 3C q<.01 caption conflicts gene-specific Results q=.02/.04/.03/.03; use Results values and disclose.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37100205-2",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "Table 1 stage IIIA n200 versus Figure 4A n210; preserve discrepancy.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37100205-3",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "Inflamed genomic LUAD n72 conflicts with reported 15% inflamed among all453 TNM-I; unresolved without supplement.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37100205-4",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "NF-kB pathway direction depends on contrast; do not simplify to uniformly highest in desert.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37100205-5",
+      "article_ids": [
+        "37100205"
+      ],
+      "restriction": "Fulltext adjusted DSS P=.016 versus abstract rounded .01; use full model CI.",
+      "source_reference": "annals-of-oncology-2023-37100205-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-37068173",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "Coverage-specific denominators; KSC is alteration of any one of KEAP1/SMARCA4/CDKN2A, not a triple mutation, and the source can include deletions, amplifications or rearrangements. Figure6B prints 25.3% beside19/76; preserve both rather than silently repairing the source. No randomized comparator separates prognosis from treatment prediction.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37068173-1",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "Main Results reverses STK11 mutant/WT ORR versus Figure3A: prose31.5% mutant vs34.3%WT, figureWT31.5%(76/241),mutant34.3%(35/102). Withhold exact group-direction ORR.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37068173-2",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "KSC32% uses the allthree-gene-evaluable n188, not424. Figure6 endpoint denominators also differ; Figure6B prints KSC-altered25.3% beside19/76, although the derived arithmetic is25.0%. Retain the source conflict.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37068173-3",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "Discovery threshold is log2 OR +/-2 and FDRq<=.10; STK11q=.082 meets paper threshold.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37068173-4",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "SMARCA4 WT Figure2C prints34.3% and72/209, slightly inconsistent arithmetically; retain rather than recalculate.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-37068173-5",
+      "article_ids": [
+        "37068173"
+      ],
+      "restriction": "ATRX/DAXX OS reports Cox HR.05 with95%CI.01-1.30 while log-rank P=.005. Figure4F also combines a Cox CI overlapping1 with a significant log-rank comparison and labels WT n107 in the legend versus111 in the risk table. Preserve test identity, uncertainty and both denominators.",
+      "source_reference": "cancer-discovery-2023-37068173-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-36150391",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Retain both the original typeset source and the 44-page author-manuscript layout; author-manuscript pp41-44 are the main Key Resources Table, not embedded supplements. The 393P parent has a p53-mutant background; allogeneic coculture is not clinical response. Immune-cell migration, peri-tumor infiltration and granzyme-B-associated activity are not a direct tumor-killing endpoint. Durable mouse response is not cure or rechallenge.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-1",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Original reading model-table rechallenge claim corrected: no rechallenge experiment established.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-2",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Figure7E second-pulse days22/23 versus caption21/22; do not supply exact protocol without resolving.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-3",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Actual Figure7F response6/7 overrides generic n8 legend.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-4",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Absolute immune-cell counts were not significantly changed at48h; spatial redistribution is separate. Do not relabel recruitment/infiltration or granzyme-B-associated activity as direct tumor killing. The in-vivo STING/CD8 dependency chain is localized to Figure7B-C.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-5",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "IC50 method says72h culture versus96h readout; no exact-duration transfer.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-36150391-6",
+      "article_ids": [
+        "36150391"
+      ],
+      "restriction": "Figure6 caption scale unit typo µM; no concentration inference.",
+      "source_reference": "cancer-cell-2022-36150391-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-40882030",
+      "article_ids": [
+        "40882030"
+      ],
+      "restriction": "Preclinical immune-dependent sensitization and early clinical pharmacodynamics, not established patient response or survival benefit. Mouse models are KEAP1 wild type; MC38/CT26 are colon models. H3K9ac ChIP-seq is not ATAC-seq.",
+      "source_reference": "cancer-research-2025-40882030-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40882030-1",
+      "article_ids": [
+        "40882030"
+      ],
+      "restriction": "Ten on-treatment biopsies and six evaluable paired specimens at selected dose levels support pharmacodynamics, not a clinical ORR, survival advantage or isolated contribution of TNG260.",
+      "source_reference": "cancer-research-2025-40882030-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40882030-2",
+      "article_ids": [
+        "40882030"
+      ],
+      "restriction": "Do not transfer model efficacy to STK11/KEAP1-double-mutant tumors: tested genotype comparisons are KEAP1 wild type, with distinct KRAS/TP53/STK11 backgrounds.",
+      "source_reference": "cancer-research-2025-40882030-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40882030-3",
+      "article_ids": [
+        "40882030"
+      ],
+      "restriction": "The Methods anti-PD1 mass unit is suspect; do not silently correct it or reuse it as an experimental protocol. Preserve the original-page discrepancy.",
+      "source_reference": "cancer-research-2025-40882030-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-40882030-4",
+      "article_ids": [
+        "40882030"
+      ],
+      "restriction": "Withhold disputed k6/k7 cluster labels, the Discussion methylation-versus-acetylation wording and CCL2/CCL22 label until source resolution. Figure3F reports P=.001 whereas prose reports P<.001.",
+      "source_reference": "cancer-research-2025-40882030-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-41423267",
+      "article_ids": [
+        "41423267"
+      ],
+      "restriction": "STK11 is a secondary direct outcome analysis within a smoking-focused retrospective study. Nonrandomized treatment comparisons do not establish a predictive interaction or a causal benefit of smoking; assay subsets and denominators differ.",
+      "source_reference": "jitc-2025-41423267-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41423267-1",
+      "article_ids": [
+        "41423267"
+      ],
+      "restriction": "Smoking-group counts differ between prose and Table1; mIF sample size differs between Methods691 and Results619. Preserve per-assay denominators and do not silently choose one.",
+      "source_reference": "jitc-2025-41423267-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41423267-2",
+      "article_ids": [
+        "41423267"
+      ],
+      "restriction": "Current-smoker chemoimmunotherapy ORR is43% in prose versus45% in Figure3A. Signature percentages and subgroup denominator labels differ in Figure5/prose; do not transfer these exact disputed estimates.",
+      "source_reference": "jitc-2025-41423267-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41423267-3",
+      "article_ids": [
+        "41423267"
+      ],
+      "restriction": "Figure6 shows significant never-versus-moderate PD-L1/dNLR comparisons despite prose saying none. Protein Methods use linear/logistic models but Results use OR/HR labels; Figure7 NOS3 differs from prose CCN4. Keep these source discrepancies explicit.",
+      "source_reference": "jitc-2025-41423267-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-41423267-4",
+      "article_ids": [
+        "41423267"
+      ],
+      "restriction": "STK11-associated ICI PFS/OS and KRAS/STK11 chemoimmunotherapy outcomes are observational; no universal STK11 resistance rule, formal treatment interaction, smoking causation or smoking recommendation is established.",
+      "source_reference": "jitc-2025-41423267-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-33853830",
+      "article_ids": [
+        "33853830"
+      ],
+      "restriction": "Model-specific immune-resistance mechanism; responses depend on the KPL-3M versus parental KPL-P background. No patient treatment-selection validation. G-MDSC percentages use CD45+ denominators; pooled samples are not independent biological replicates.",
+      "source_reference": "cancer-research-2021-33853830-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33853830-1",
+      "article_ids": [
+        "33853830"
+      ],
+      "restriction": "Do not apply KPL-3M combination clearance to parental KPL-P or unselected patients; parental antibody combination was ineffective. Preserve p53 and mutagenized-background differences.",
+      "source_reference": "cancer-research-2021-33853830-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33853830-2",
+      "article_ids": [
+        "33853830"
+      ],
+      "restriction": "G-MDSC58.5% versus7.6% are CD45+ fractions, not all tumor cells. BAL and suppression samples were pooled. ATRA combination8/11 clearance conflicts with caption group-size wording; do not invent a resolved denominator.",
+      "source_reference": "cancer-research-2021-33853830-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33853830-3",
+      "article_ids": [
+        "33853830"
+      ],
+      "restriction": "Anti-Gr1 is not absolutely G-MDSC-specific. Rechallenge specificity uses KPL-3M versus MyCCaP with separate group sizes; absence of growth is not generalized vaccine protection.",
+      "source_reference": "cancer-research-2021-33853830-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33853830-4",
+      "article_ids": [
+        "33853830"
+      ],
+      "restriction": "The reported euthanasia volume appears inconsistent and must not be reused operationally. Four-log-scale chemokine score wording is not a demonstrated four-fold or10000-fold secreted-protein increase.",
+      "source_reference": "cancer-research-2021-33853830-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-34870237",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Proteome subtypes are not mutation diagnoses or validated clinical treatment predictors. Partial assay overlap and classifier denominator attrition retained. NCP orthogonal error36/104; no HLA-presentation/T-cell recognition proof. TCGA OS P=.216 is negative. HNF1A methylation-versus-protein R=-0.43. Preserve the Figure6E tubulin, ED7D percentile and ED10I protein-total source conflicts. No operational biological methods retained.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-1",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Do not call all651 NCPs validated immunogenic neoantigens:104 reference spectra assessed,36 incorrect (about35%),despite nominal FDR<1%. Total-tissue MS is not HLA immunopeptidomics or T-cell immunogenicity validation.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-2",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "TP53/NCP P.057 and TCGA OS global P.216 are nonsignificant; retain these negative results and do not infer adjuvant treatment benefit from descriptive survival trends.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-3",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Preserve validation208→188→175 and late-stage84→61→58. Classification yield is not accuracy;94%/87% are internal repeated-test averages, not prospective sensitivity/specificity.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-4",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "141 proteomes,140 panel-sequenced,139 TMB,118 expression,113 methylation are different analysis sets; source192 is not192 profiled. No complete141 paired-omics claim.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-5",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "FGL1/LAG3 immune suppression is partly cited background; this paper supplies correlations and limited upstream expression perturbation, not new systemic immune-suppression proof or clinical LAG3/mTOR combination efficacy.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-6",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "FGL1/CPS1 cutoffs are arbitrary and Fig5 pairwise/Fig6 drug tests uncorrected; expression is not validated STK11-function diagnosis or clinical drug predictor.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-7",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "CTLA4 shown as RNA because not detected by MS; UMAP/Seurat operates on protein-network data, not original single cells. No original scRNA, spatial transcriptomics or HLA immunopeptidomics.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-8",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Fig5 final panel caption f is displayed h; CXL9 caption typo is CXCL9 in source data/figure. Preserve verified gene/panel identity without propagating typographic labels.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-9",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Figure6E graphic labels alpha-tubulin whereas its caption says beta-tubulin; withhold precise loading-control attribution unless source data resolves the conflict.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-10",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Discussion's HNF1A/TCF1 equivalence is ambiguous in cited T-cell context; do not equate HNF1A with TCF7 or transfer a T-cell pathway from this sentence without clarification.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-11",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Intro summarizes prior Gillette cohort110 while displayed reanalysis111; preserve analysis-specific denominator instead of silently harmonizing.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-12",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Reproduced subtype profiles and prognostic separation do not validate treatment-selection utility; retrospective early-stage tissue, admixture and missing biopsy classifications limit generalization.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34870237-13",
+      "article_ids": [
+        "34870237"
+      ],
+      "restriction": "Extended Data7D labels 1st/99th percentile cutoffs while its caption says 5th/95th; Extended Data10I prints5,123 late-stage proteins while its caption says5,124. Preserve each display/caption conflict and do not silently normalize the cutoff or total.",
+      "source_reference": "nature-cancer-2021-34870237-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-34045189",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "Composite functional class not sequence-mutation class. Patient methylation/metabolite associations and cell-model therapy effects do not establish a complete causal methylation mechanism or immunotherapy prediction. External supplements unavailable.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-1",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "16gene expression, sequence mutation and copy loss jointly define function-deficient class; never relabel all classifier-positive tumors STK11-mutant.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-2",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "Fig1B cell-line groups sum99, Methods/Results state98; preserve unresolved denominator, do not silently reconcile.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-3",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "No significant global-surrogate methylation change after LKB1 perturbation and inconsistent DNMT1 response; patient association does not prove a completed LKB1→SAM-e→DNA methylation mechanism.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-4",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "Metabolomics33 tumors including9 functional-loss; relative spectral intensities are not absolute concentrations or measured metabolic flux.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-5",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "FOXA motif enrichment is not direct binding measurement in these tumors; ENCODE controls are not matched epithelium. FOXA2 RNA P.21 is nonsignificant despite protein/localization findings.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-6",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "Fig3D legend mentionsTLR2 but graphic shows CXCL8/IRF3/IRF7 only; do not claim visually verifiedTLR2 result.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34045189-7",
+      "article_ids": [
+        "34045189"
+      ],
+      "restriction": "Azacytidine cell-model findings and supplement-only cisplatin description do not establish patient immunotherapy response or clinical biomarker utility.",
+      "source_reference": "cancer-research-2021-34045189-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-33264619",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "Joint-loss model dependency and treatment-agnostic prognosis, not universal STK11 therapy prediction. Clinical/TMA counts conflict; immune-deficient xenografts cannot establish antitumor immunity; no clinical safety/efficacy.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-1",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "Main text/Venn KRAS358 and joint123 differ from TableS5 KRAS359 and joint124; do not silently harmonize one-patient differences.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-2",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "Clinical Figure1 table reports median OS though caption says average; exact numerical HRs not printed. Mouse survival is time to prespecified tumor-size endpoint, not natural death or clinical OS.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-3",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "CCF292 samples derive from276patients; colocated19p loss/clonality do not establish temporal ordering of mutations.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-4",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "TMA counts include scored/duplicate cores and inconsistent119 vs60+58 source descriptions; no resolved unique patient denominator. Do not report staining-core fractions as patient prevalence.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-5",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "Caption/Methods three-cell-line wording differs from principal H358/H292 RNAseq models with three clones each; do not infer three distinct backgrounds.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-6",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "KEAP1 restoration inhibits growth while LKB1 restoration does not measurably reduce tested A549/H460 growth; retain this negative result without equivalence claims.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-7",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "AKR pharmacological/genetic effects limited and AKR family absent from significant screen hits; viability changes are not ferroptosis-specific because apoptosis also observed. Do not claim established AKR clinical therapy.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-8",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "No formal combination-index model establishes universal synergy; report measured combination effects and retain negative WT xenograft comparison. No patient efficacy/safety.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-33264619-9",
+      "article_ids": [
+        "33264619"
+      ],
+      "restriction": "Focused1463gene screen is not whole-genome; original cell bulk RNA is not patient multiomics. Immune-deficient xenograft findings do not demonstrate immune-competent antitumor immunity.",
+      "source_reference": "cell-reports-2020-33264619-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-boundary-34341533",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Stage-dependent epigenetic/metastatic-state evidence in defined models, with small human public-data support. Human STK11 enrichment FDR=.088; no clinical prediction/therapy validation. Preserve source conflicts and liver P=.055. Notes intentionally contain no executable experimental procedures.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-1",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Fig1b caption claims six chromatin genes FDR<.01, but displayed Suz12=.0354, Trim28=.0571, Smarce1=.0804. Describe six top20 chromatin-related genes, not six .01/.05-significant hits.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-2",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Human TCGA ATAC n21 (13/8). STK11 enrichment FDR=.088 is relative top rank, not q<.05. Methods references TCGA230 background binomial enrichment; do not invent direct two-group Fisher comparison.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-3",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Cluster12 n112 in p6 Results versus116 in ED9 caption, which omits cluster10; ED9d caption comparison1-11 versus plotted6-11. Do not invent definitive fraction or comparison set.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-4",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Specific allograft paragraph says randomized; general statistics says experiments not randomized. Not formally blinded; no statistical sample-size determination. Do not assert global randomized/blinded design.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-5",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Fig2c TEAD exact P9e-6 differs from four-star P<1e-6 definition. Fig2b caption duplicates x-axis; actual human x/mouse y. Fig5d heatmap points to ED7f rather than displayed ED10f; other ED10 in-text crossreferences are unreliable. Preserve locators and visible content.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-6",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Liver endpoint n9/n8 P=.055 is not significant at .05; retain local-tumor-size null result in Fig6f. No clinical ORR/OS or universally faster tumor growth follows.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-7",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "scATAC metastatic-like subset is not proven metastasis ancestor by lineage tracing; nuclei not independent tumors. cluster12 predominantly derives from two tumors of one mouse. Motif/footprint not unique direct SOX17-binding proof.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-8",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Kras/Trp53 mouse context and immunodeficient transplant endpoints do not establish immune evasion or ICI resistance. Unknown second signal remains. Original scATAC and human published scRNA reanalysis are not same-cell multiome or a new patient cohort.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
+    },
+    {
+      "id": "supplement-ccr-20261002-34341533-9",
+      "article_ids": [
+        "34341533"
+      ],
+      "restriction": "Embedded ED1-10 fully read, but external Supplementary Information/Tables1-6/Source Data/raw datasets not supplied/read. GSE167381 is a locator, not a claim of raw-data verification.",
+      "source_reference": "nature-cell-biology-2021-34341533-reading.md"
     }
   ],
   "entry_rules": [

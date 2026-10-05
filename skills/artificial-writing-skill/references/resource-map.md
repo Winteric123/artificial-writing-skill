@@ -31,11 +31,12 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 
 ## 2026-10-02 local STK11 intake
 
-- [Eighteen-paper local-PDF reconciliation](stk11-2026-10-02-local-unread-intake.md): 16 papers from the locally recorded 2025-JIF >10 candidate table and two below-threshold appendix papers now have complete first-pass main-text/main-visual reads, article-level structured notes and language units. All remain independently not reviewed; new journal routes are separate source-grounded article sets, not learned journal-wide profiles.
+- [Eighteen-paper local-PDF reconciliation](stk11-2026-10-02-local-unread-intake.md): 16 papers from the locally recorded 2025-JIF >10 candidate table and two below-threshold appendix papers received complete first-pass main-text/main-visual reads, article-level structured notes and language units. At intake they were independently not reviewed; consult the current quality registers for later promotions. New journal routes are separate source-grounded article sets, not learned journal-wide profiles.
+- [Sixteen-work post-correction source recheck](source-rechecks/2026-10-05-stk11-supplement-summary.md): covers the later cross-journal “补充CCR” intake, including 15 newly registered works and the additional PMID36150391 author-manuscript version. Six affected notes were corrected before final gate promotion. Use the journal quality registers for live status; review passage does not expand external-supplement coverage or core-highlight membership.
 - [PMID37495171 scientific reading](jto-2023-37495171-reading.md), [62 section-language units](jto-2023-37495171-language.md), and [independent bounded review](source-rechecks/2026-10-02-37495171.md): all17 supplied main-text pages and six main figures; supplements not supplied, review in progress.
 - [Six CCR support checks](ccr-2026-10-02-stk11-support-notes.md) and [five JTO support checks](jto-2026-10-02-stk11-support-notes.md) preserve previous reading dates and separate direct evidence, contextual evidence and structural analogues.
 - Single-paper language supplements for [PMID42456046](ccr-2026-42456046-language-addendum.md) and [PMID42485106](ccr-2026-42485106-language-addendum.md) repair article-level provenance, not reading or acceptance counts. [Their manifest](ccr-2026-10-02-language-addenda.csv) routes the CCR catalog build. Synthesized frames are not original quotations.
-- Current STK11 membership is31=13 core+18 support; fine assay tagging covers20 supplied-text-curated papers. These distinct sets must not be conflated.
+- Current STK11 membership is **64=13 core+51 topic support**; fine assay tagging covers **53** supplied-text-curated papers. These distinct sets must not be conflated, and only the journal quality registers establish source-recheck status.
 
 ## Existing source routes
 
@@ -97,6 +98,8 @@ The separate Cancer Discovery set adds bulk/microRNA/copy-number/RPPA subtyping,
 The [eight-paper 2025 intake](ccr-2025-2026-09-19-intake-language.md) is a historical batch, not the current corpus total. It adds CNS response-confirmation language, MAPK pathway/ICI biomarker interpretation, empirical shared-variant diagnostics, longitudinal immune/radiomic resistance profiling, oncolytic-virus spatial protein analysis, YAP/HER3/RET perturbation and xenografts, ecMYC genomic/spatial immune context, and LPA resistance multiomics. Actual global protein-abundance profiling in PMID40853904 must retain the unresolved label-free-versus-TMT Methods discrepancy; it does not establish a mature general proteomics profile. MIBI/IMC are spatial protein assays, not spatial RNA sequencing. c4 LPA secretion and CellChat signaling are inferred, not directly measured. None of these additions automatically becomes an STK11 highlight. Use [library-index.md](library-index.md) for current totals.
 
 ## JTO two-paper intake (2026-09-29)
+
+For the later user-supplied folder named “补充CCR”, use [the 2026-10-02 cross-journal intake](supplement-ccr-2026-10-02-intake.md) and its version manifest. The folder name does not identify a journal. This intake retains a user-skipped paper separately from completed main-text reads and does not promote acceptance or core highlights.
 
 - [EGFR DNA/RNA VAF](jto-2026-42674257-language.md): WES/bulk-RNA allele fractions, EGFR–TP53 context, prognosis and threshold-recalibration limits; separate supplements not supplied.
 - [Lorlatinib phase2 biomarkers](jto-2026-42749050-language.md): tissue/plasma targeted genomics, fusion/co-mutation taxonomy, ctDNA response and resistance; embedded scientific supplement read, administrative TableS1 inventoried only.

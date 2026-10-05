@@ -133,6 +133,27 @@
       "ledger": "jto-crr-deep-reading-ledger.md",
       "quality": "jto-crr-reading-quality-register.csv",
       "language_catalog": "jto-crr-section-language-catalog.csv"
+    },
+    "nature-cancer": {
+      "name": "Nature Cancer",
+      "bibliography": "nature-cancer-corpus-bibliography.csv",
+      "ledger": "nature-cancer-deep-reading-ledger.md",
+      "quality": "nature-cancer-reading-quality-register.csv",
+      "language_catalog": "nature-cancer-section-language-catalog.csv"
+    },
+    "cell-reports": {
+      "name": "Cell Reports",
+      "bibliography": "cell-reports-corpus-bibliography.csv",
+      "ledger": "cell-reports-deep-reading-ledger.md",
+      "quality": "cell-reports-reading-quality-register.csv",
+      "language_catalog": "cell-reports-section-language-catalog.csv"
+    },
+    "nature-cell-biology": {
+      "name": "Nature Cell Biology",
+      "bibliography": "nature-cell-biology-corpus-bibliography.csv",
+      "ledger": "nature-cell-biology-deep-reading-ledger.md",
+      "quality": "nature-cell-biology-reading-quality-register.csv",
+      "language_catalog": "nature-cell-biology-section-language-catalog.csv"
     }
   }
 }

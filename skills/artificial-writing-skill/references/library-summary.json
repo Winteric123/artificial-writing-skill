@@ -5,13 +5,13 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 347,
-  "included": 329,
+  "registered": 362,
+  "included": 344,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 329,
+  "main_text_complete": 344,
   "eligible_incomplete": 0,
-  "source_recheck_passed": 14,
+  "source_recheck_passed": 30,
   "stk11_highlights": 13,
   "years": {
     "2015": {
@@ -50,16 +50,16 @@
       "excluded": 0
     },
     "2020": {
-      "registered": 3,
-      "included": 3,
-      "complete": 3,
+      "registered": 4,
+      "included": 4,
+      "complete": 4,
       "incomplete": 0,
       "excluded": 0
     },
     "2021": {
-      "registered": 24,
-      "included": 24,
-      "complete": 24,
+      "registered": 28,
+      "included": 28,
+      "complete": 28,
       "incomplete": 0,
       "excluded": 0
     },
@@ -71,30 +71,30 @@
       "excluded": 7
     },
     "2023": {
-      "registered": 57,
-      "included": 52,
-      "complete": 52,
+      "registered": 61,
+      "included": 56,
+      "complete": 56,
       "incomplete": 0,
       "excluded": 5
     },
     "2024": {
-      "registered": 56,
-      "included": 52,
-      "complete": 52,
+      "registered": 57,
+      "included": 53,
+      "complete": 53,
       "incomplete": 0,
       "excluded": 4
     },
     "2025": {
-      "registered": 60,
-      "included": 58,
-      "complete": 58,
+      "registered": 64,
+      "included": 62,
+      "complete": 62,
       "incomplete": 0,
       "excluded": 2
     },
     "2026": {
-      "registered": 88,
-      "included": 88,
-      "complete": 88,
+      "registered": 89,
+      "included": 89,
+      "complete": 89,
       "incomplete": 0,
       "excluded": 0
     }
@@ -102,9 +102,9 @@
   "journal_years": {
     "Annals of Oncology": {
       "2023": {
-        "registered": 3,
-        "included": 3,
-        "complete": 3,
+        "registered": 4,
+        "included": 4,
+        "complete": 4,
         "incomplete": 0,
         "excluded": 0
       },
@@ -167,6 +167,20 @@
         "complete": 1,
         "incomplete": 0,
         "excluded": 0
+      },
+      "2023": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2026": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
       }
     },
     "Cancer Research": {
@@ -184,6 +198,20 @@
         "incomplete": 0,
         "excluded": 0
       },
+      "2021": {
+        "registered": 2,
+        "included": 2,
+        "complete": 2,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2023": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2024": {
         "registered": 1,
         "included": 1,
@@ -192,6 +220,15 @@
         "excluded": 0
       },
       "2025": {
+        "registered": 2,
+        "included": 2,
+        "complete": 2,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Cell": {
+      "2020": {
         "registered": 1,
         "included": 1,
         "complete": 1,
@@ -199,7 +236,7 @@
         "excluded": 0
       }
     },
-    "Cell": {
+    "Cell Reports": {
       "2020": {
         "registered": 1,
         "included": 1,
@@ -302,9 +339,30 @@
         "complete": 1,
         "incomplete": 0,
         "excluded": 0
+      },
+      "2024": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2025": {
+        "registered": 2,
+        "included": 2,
+        "complete": 2,
+        "incomplete": 0,
+        "excluded": 0
       }
     },
     "Journal of Clinical Oncology": {
+      "2023": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
       "2024": {
         "registered": 1,
         "included": 1,
@@ -380,6 +438,24 @@
         "excluded": 0
       }
     },
+    "Nature Cancer": {
+      "2021": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
+    "Nature Cell Biology": {
+      "2021": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
     "Nature Communications": {
       "2024": {
         "registered": 1,
@@ -389,9 +465,9 @@
         "excluded": 0
       },
       "2025": {
-        "registered": 1,
-        "included": 1,
-        "complete": 1,
+        "registered": 2,
+        "included": 2,
+        "complete": 2,
         "incomplete": 0,
         "excluded": 0
       }
@@ -435,16 +511,16 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 329,
+    "included": 344,
     "co_mutation": {
-      "analyzed": 115,
-      "not_identified": 187,
-      "context_only": 27
+      "analyzed": 124,
+      "context_only": 33,
+      "not_identified": 187
     },
     "co_alteration": {
-      "analyzed": 138,
+      "analyzed": 152,
       "not_identified": 162,
-      "context_only": 29
+      "context_only": 30
     },
     "coverage_complete": true
   }

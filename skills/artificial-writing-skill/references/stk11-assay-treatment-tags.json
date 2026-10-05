@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-02",
-  "scope": "Historical 20 supplied-PDF detailed reads plus 18 local-PDF full-text reads completed on 2026-10-02; non-exhaustive article facets, not all assays in every tissue",
+  "updated": "2026-10-05",
+  "scope": "Historical detailed records plus 15 newly completed supplied-paper reads on 2026-10-02; version-specific MPS1 addendum. PMID35504291 skipped by user, not promoted. Article facets are not exhaustive or independent acceptance.",
   "records": [
     {
       "stable_id": "STK11-PMID-38177135",
@@ -1628,19 +1628,19 @@
           "assay": "targeted_protein",
           "origin": "original",
           "sample_context": "cells_and_tumors",
-          "evidence": "cancer-cell-2022-36150391-language.md"
+          "evidence": "cancer-cell-2022-36150391-reading.md"
         },
         {
           "assay": "immune_cell_profiling",
           "origin": "original",
           "sample_context": "mouse_tumor",
-          "evidence": "cancer-cell-2022-36150391-language.md"
+          "evidence": "cancer-cell-2022-36150391-reading.md"
         },
         {
           "assay": "cytokine_assay",
           "origin": "original",
           "sample_context": "cells_and_tumors",
-          "evidence": "cancer-cell-2022-36150391-language.md"
+          "evidence": "cancer-cell-2022-36150391-reading.md"
         }
       ],
       "alteration_types": [
@@ -1650,10 +1650,10 @@
         "KRAS+STK11"
       ],
       "classification_level": "supplied_main_text_curated",
-      "evidence": "cancer-cell-2022-36150391-language.md",
-      "evidence_sha256": "d1553011561c43e4434f5b316c103cc069798628b1709a02212a0731b61a57cd",
+      "evidence": "cancer-cell-2022-36150391-reading.md",
+  "evidence_sha256": "734c1140d1d46fab1da8f25b4490b4cff760ddb59c2414c72e755b9f99a999fc",
       "pdf_sha256": "af110d8b7dd12ac9297abbd1ef37c7f8e58ffd73564806ebd179853c55c2fba5",
-      "boundary": "Article-specific source-grounded STK11 evidence. Initial complete reading is not independent acceptance; preserve assay, cohort, model and treatment boundaries."
+  "boundary": "Article-specific source-grounded STK11 evidence. Initial complete reading is not independent acceptance; preserve assay, cohort, model and treatment boundaries. Cross-version reading supports immune recruitment/peri-tumor infiltration and granzyme-B-associated activity in reductionist co-cultures, not a direct co-culture tumor-killing endpoint or the full human tumor microenvironment. Tumor-cell STING and CD8 dependency is localized to Fig.7B-C; no rechallenge evidence or patient benefit/safety inference. Separate supplements were not supplied. Figure2J cell-line labels and Figure5L readout labels remain unresolved source conflicts. Selected typeset PDF identity unchanged."
     },
     {
       "stable_id": "STK11-PMID-36793385",
@@ -2250,6 +2250,1168 @@
       "evidence_sha256": "e79ffa37d60ed1c3449b9f562e6b30adfc4ae14a8ce5d52766e08d355e96c206",
       "pdf_sha256": "8458f02c4a8021b063fab27458f8105c9e290c2fa4e8223a064b258323254f38",
       "boundary": "Article-specific source-grounded STK11 evidence. Initial complete reading is not independent acceptance; preserve assay, cohort, model and treatment boundaries."
+    },
+    {
+      "stable_id": "STK11-PMID-40057483",
+      "pmid": "40057483",
+      "journal": "Nature Communications",
+      "year": "2025",
+      "title": "Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer",
+      "doi": "10.1038/s41467-025-57297-5",
+      "primary_classification": "LKB1缺失相关IAP-JAK1-STING免疫依赖性脆弱性",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "experimental_targeted_therapy",
+        "ici_combination",
+        "sting_agonist"
+      ],
+      "drugs": [
+        "birinapant",
+        "BV6",
+        "GDC0152",
+        "AT406",
+        "AZD5582",
+        "LCL161",
+        "IFN-gamma",
+        "H151",
+        "ADU-S100",
+        "anti-PD1"
+      ],
+      "assays": [
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "human_tumor_cells_after_PBMC_coculture_GSE273406",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "public_human_LUAD",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        },
+        {
+          "assay": "protein_interaction",
+          "origin": "original",
+          "sample_context": "BRETn_TRFRET_coIP_pulldown_cell_lines",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        },
+        {
+          "assay": "single_cell_protein",
+          "origin": "original",
+          "sample_context": "16_marker_CyTOF_mouse_allograft",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "cell_signaling_immunoblots",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "mouse_tumor_IHC",
+          "evidence": "nature-communications-2025-40057483-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "STK11+BIRC2+JAK1+TMEM173"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-communications-2025-40057483-reading.md",
+      "evidence_sha256": "972b6c6231d52b265be9a2585a9f2ad11b5fca915aac8053a967dba74af9e9b0",
+      "pdf_sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
+      "boundary": "Immune-dependent preclinical effect with short follow-up. No human efficacy or validated biomarker. CyTOF is targeted single-cell protein, not scRNA. AT406/anti-PD1 supplementary experiment not independently viewed."
+    },
+    {
+      "stable_id": "STK11-PMID-42008781",
+      "pmid": "42008781",
+      "journal": "Cancer Discovery",
+      "year": "2026",
+      "title": "LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer",
+      "doi": "10.1158/2159-8290.CD-25-0470",
+      "primary_classification": "LIF-SOX17肿瘤可塑性与免疫抑制性髓系生态位",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "experimental_targeted_therapy",
+        "immune_depletion"
+      ],
+      "drugs": [
+        "anti-LIF antibody",
+        "clodronate",
+        "anti-CD4",
+        "anti-CD8"
+      ],
+      "assays": [
+        {
+          "assay": "single_cell_rna",
+          "origin": "original",
+          "sample_context": "mouse_Lkb1_genotype_tumors",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "single_nucleus_rna",
+          "origin": "original",
+          "sample_context": "human_KRAS_only14_KRAS_LKB1_4_tumors",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "cite_seq",
+          "origin": "original",
+          "sample_context": "mouse_ExCITE_RNA_protein_TCR_and_treatment_CITE",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "tcr_sequencing",
+          "origin": "original",
+          "sample_context": "mouse_tumors_ExCITE",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "mouse_sorted_tumor_cells",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA_LUAD",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "human_TMA_and_mouse_IHC_IF",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "BAL31_plex_cytokines_and_flow",
+          "evidence": "cancer-discovery-2026-42008781-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+TP53+STK11",
+        "KRAS+STK11",
+        "STK11+LIF+LIFR+SOX17"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-discovery-2026-42008781-reading.md",
+      "evidence_sha256": "3a26dd18ef3237ec4e1c4f914d94b8f245432e06651a6ed015c4b155126a33fd",
+      "pdf_sha256": "758698151e3b6ad54a6def5bcb71b2c59053c631a8ce9143a524542683e56e13",
+      "boundary": "Main single-cell mouse experiments pooled n2/condition and human KRAS/LKB1 n4; pseudotime is not lineage tracing. Human survival signatures observational. No anti-PD1 combination efficacy shown."
+    },
+    {
+      "stable_id": "STK11-PMID-39694700",
+      "pmid": "39694700",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2024",
+      "title": "LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer",
+      "doi": "10.1136/jitc-2024-009444",
+      "primary_classification": "LKB1-AMPK-Skp2调节PD-L1稳定性及抗PD-L1负向联合结果",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_monotherapy",
+        "ici_combination",
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "anti-PD1",
+        "anti-PD-L1",
+        "Skp2 compound25",
+        "metformin",
+        "compound C"
+      ],
+      "assays": [
+        {
+          "assay": "dna_ngs",
+          "origin": "original",
+          "sample_context": "193_STK11_mutant_clinical_cohort_and_TMB_comparator",
+          "evidence": "jitc-2024-39694700-reading.md"
+        },
+        {
+          "assay": "interactome_ptm_ms",
+          "origin": "original",
+          "sample_context": "LKB1_IP_MS_H1299_H292",
+          "evidence": "jitc-2024-39694700-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "cell_ubiquitination_stability_and_40_patient_IHC",
+          "evidence": "jitc-2024-39694700-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "human_and_mouse_multiplex_IF",
+          "evidence": "jitc-2024-39694700-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "STK11+KRAS",
+        "STK11+TP53",
+        "STK11+KEAP1",
+        "STK11+SKP2+CD274"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jitc-2024-39694700-reading.md",
+      "evidence_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+      "pdf_sha256": "71ddf755c53fe45a0ae4004d277b9bbf4b46bde0e022d16d54ca7953cd0e6fa7",
+      "boundary": "No STK11-mutation-specific clinical predictive result: the checkpoint-treated n=40 cohort was entirely STK11-WT, and the separate n=40 surgical expression/genotype specimens are not interchangeable with it. DCB is CR/PR, not duration-defined durable benefit. IP-MS enriched LKB1-interacting proteins in H1299/H292; it was neither a PD-L1 immunoprecipitation nor unbiased whole-proteome profiling, and peptide/protein counts conflict. Skp2 inhibition attenuated, rather than improved, anti-PD-L1 efficacy in mouse models. Main-table, lysine-site and implantation-route inconsistencies remain bounded."
+    },
+    {
+      "stable_id": "STK11-PMID-41135949",
+      "pmid": "41135949",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2025",
+      "title": "Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer",
+      "doi": "10.1136/jitc-2025-012710",
+      "primary_classification": "LKB1-AMPK-FOXA1-AGR2分泌调控与树突状细胞功能障碍",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "ici_combination",
+        "dc_cell_therapy",
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "anti-PD1",
+        "CB-1158",
+        "compound C",
+        "recombinant AGR2",
+        "FLT3L-overexpressing tumor intervention",
+        "OVA-loaded dendritic cells"
+      ],
+      "assays": [
+        {
+          "assay": "single_cell_rna",
+          "origin": "reanalysis",
+          "sample_context": "mouse_K_KL_GSE180963_shared_with_PMID36512628",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "secretome_ms",
+          "origin": "original",
+          "sample_context": "A549_H460_conditioned_medium_DIA_Orbitrap_Astral",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "interactome_ptm_ms",
+          "origin": "original",
+          "sample_context": "BMDC_recombinant_AGR2_pull_down_timsTOF",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "BMDC_AGR2_vs_IgG",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA_GTEx_and_CIDE",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "chip_seq",
+          "origin": "reanalysis",
+          "sample_context": "public_A549_FOXA1",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "chip_qpcr",
+          "origin": "original",
+          "sample_context": "FOXA1_promoter_occupancy_human_cells",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "ELISA_flow_cell_stability_function",
+          "evidence": "jitc-2025-41135949-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "immunofluorescence",
+          "evidence": "jitc-2025-41135949-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "STK11+PRKAA1+FOXA1+AGR2",
+        "AGR2+ARG1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jitc-2025-41135949-reading.md",
+      "evidence_sha256": "e67298c8dd35f938156239786f5d6ca34894c3cc85c32852c6dcc31b634a3bac",
+      "pdf_sha256": "30d493e3aca91ae2e3dd465d6494b6160fb1b790da10098fe3f51d200787a1ed",
+      "boundary": "No original scRNA-seq; GSE180963 is a reanalysis of the dataset generated in PMID36512628 and is not an independent cohort. Panc02 is pancreatic, not lung. OVA/FLT3L/DC interventions are mouse and CB-1158 rescue is in vitro. Tumor/tdLN OT-I percentage readouts do not establish lower absolute OT-I counts. TCF1/TIM3 and ARG1-MFI figures contradict prose; affected direction-specific claims are withheld."
+    },
+    {
+      "stable_id": "STK11-PMID-36512628",
+      "pmid": "36512628",
+      "journal": "Cancer Research",
+      "year": "2023",
+      "title": "PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer",
+      "doi": "10.1158/0008-5472.CAN-22-1740",
+      "primary_classification": "LKB1缺失-PARP1-STAT1 PARylation与PARP抑制联合免疫治疗",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "parp_inhibitor",
+        "ici_combination",
+        "immune_depletion"
+      ],
+      "drugs": [
+        "olaparib",
+        "anti-PD1",
+        "fludarabine",
+        "CXCL10",
+        "anti-CD8",
+        "anti-NK1.1"
+      ],
+      "assays": [
+        {
+          "assay": "single_cell_rna",
+          "origin": "original",
+          "sample_context": "mouse_Kras_K_KL_tumors_GSE180963",
+          "evidence": "cancer-research-2023-36512628-reading.md"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "reanalysis",
+          "sample_context": "mouse_KP_KPL_GSE194166",
+          "evidence": "cancer-research-2023-36512628-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "PARylation_coIP_immunoblot_flow_ELISA",
+          "evidence": "cancer-research-2023-36512628-reading.md"
+        },
+        {
+          "assay": "dna_damage_function",
+          "origin": "original",
+          "sample_context": "comet_DNA_damage_and_apoptosis_cell_models",
+          "evidence": "cancer-research-2023-36512628-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "mouse_tumor_IHC_IF",
+          "evidence": "cancer-research-2023-36512628-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+TP53+STK11",
+        "STK11+PARP1+STAT1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-research-2023-36512628-reading.md",
+      "evidence_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+      "pdf_sha256": "a4fa6d39bd4755e809da7e58a791ec57f8569a68092111cdbbc10491bfe8cf94",
+      "boundary": "Mouse/cell preclinical results do not establish universal STK11 clinical synthetic lethality or HRD. Olaparib alone produced short-term control but nonsignificant OS; combination survival improved. Fig.1J is the CXCL10-transcript panel and Fig.1K-L test anti-PD-1 with or without fludarabine; CXCL10 add-back is only a main-text report pointing to unsupplied Supplementary Fig.S1Q. Likewise, KP/KPL GSE194166 is text-reported via unsupplied Fig.S1D-E, while Fig.7 is a mechanism schematic. No mapped STAT1 PARylation residue or body-weight/systemic-safety endpoint; dose/timing conflicts remain."
+    },
+    {
+      "stable_id": "STK11-PMID-37098232",
+      "pmid": "37098232",
+      "journal": "Journal of Clinical Oncology",
+      "year": "2023",
+      "title": "Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100",
+      "doi": "10.1200/JCO.22.02524",
+      "primary_classification": "single-arm phase I/II extended follow-up with exploratory biomarker subgroups",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "targeted_therapy"
+      ],
+      "drugs": [
+        "sotorasib"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "central_baseline_genomic_biomarker_subset",
+          "evidence": "jco-2023-37098232-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "central_PD_L1_IHC_subset",
+          "evidence": "jco-2023-37098232-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1",
+        "KRAS+STK11+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jco-2023-37098232-reading.md",
+      "evidence_sha256": "091966816c1c3d2163c228408c8de7be117996f2e652256fcefcbe7431fb770f",
+      "pdf_sha256": "e529248702acb3179eedf37c0180436067254fcc32a7f023d3292318ac8a17d1",
+      "boundary": "Single-arm; Figure 2 extreme-outcome subgroup denominators must not be treated as all-patient genotype response rates; STK11 OR 0.71 (0.25-2.02) is not equivalence or a predictive marker."
+    },
+    {
+      "stable_id": "STK11-PMID-37100205",
+      "pmid": "37100205",
+      "journal": "Annals of Oncology",
+      "year": "2023",
+      "title": "Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial",
+      "doi": "10.1016/j.annonc.2023.04.005",
+      "primary_classification": "prospective/retrospective resected NSCLC cohorts with supervised digital pathology and molecular association",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "treatment_types": [],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "TNM_I_215_TSO500_not_WES",
+          "evidence": "annals-of-oncology-2023-37100205-reading.md"
+        },
+        {
+          "assay": "targeted_rna",
+          "origin": "original",
+          "sample_context": "TNM_I_132_NanoString_IO360_not_RNA_seq",
+          "evidence": "annals-of-oncology-2023-37100205-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "CD8_pan_cytokeratin_IHC_digital_pathology_TNM_I_UNN",
+          "evidence": "annals-of-oncology-2023-37100205-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "TP53+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "annals-of-oncology-2023-37100205-reading.md",
+      "evidence_sha256": "aca37fa17af82d408cbf6536bc66d5eaf26b6a62dea26915f548de936b0d29e8",
+      "pdf_sha256": "e293e86e112ed531582217f92e797225c086e70bfe0e695444ca71cf05e7e65b",
+      "boundary": "Digital spatial IHC is not spatial transcriptomics; RNA is a targeted NanoString panel; mutation analysis is TNM-I and outcome analysis only historical UNN; prognostic association does not validate ICI prediction."
+    },
+    {
+      "stable_id": "STK11-PMID-37068173",
+      "pmid": "37068173",
+      "journal": "Cancer Discovery",
+      "year": "2023",
+      "title": "Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC",
+      "doi": "10.1158/2159-8290.CD-22-1420",
+      "primary_classification": "pooled multicenter retrospective KRAS G12C inhibitor cohort",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "targeted_therapy"
+      ],
+      "drugs": [
+        "sotorasib",
+        "adagrasib"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "mixed_new_and_previous",
+          "sample_context": "clinical_tissue_plasma_panels_gene_specific_coverage_in_424_patients",
+          "evidence": "cancer-discovery-2023-37068173-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number",
+        "fusion"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1",
+        "KRAS+STK11+KEAP1",
+        "KRAS+SMARCA4",
+        "KRAS+CDKN2A"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-discovery-2023-37068173-reading.md",
+      "evidence_sha256": "83318ec5cd5f7f316084a638e6bee18f13f6d1295c88f07ec1d2a435227358b9",
+      "pdf_sha256": "791ea5d6bee05404ad2667e4027938f37a118531c5849c9e3fcd2246bdb5056d",
+      "boundary": "Coverage-specific denominators; KSC is alteration of any one of KEAP1/SMARCA4/CDKN2A, not a triple mutation, and the source includes deletions/amplifications/rearrangements as applicable. Figure6B prints 25.3% beside 19/76; 25.0% is only a derived arithmetic check, not a source correction. ATRX/DAXX OS combines a Cox CI crossing 1 with a significant log-rank P, and Figure4F shows WT n=107 in the legend versus 111 in the risk table. Preserve test identity and denominator conflicts. No randomized comparator separates prognosis from treatment prediction."
+    },
+    {
+      "stable_id": "STK11-PMID-40882030",
+      "pmid": "40882030",
+      "journal": "Cancer Research",
+      "year": "2025",
+      "title": "TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy",
+      "doi": "10.1158/0008-5472.CAN-25-0998",
+      "primary_classification": "CoREST抑制与STK11缺失肿瘤免疫增敏",
+      "stk11_relation": "direct_function",
+      "methods": [
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "epigenetic_therapy",
+        "ici_combination"
+      ],
+      "drugs": [
+        "TNG260",
+        "anti-PD1",
+        "pembrolizumab"
+      ],
+      "assays": [
+        {
+          "assay": "crispr_screen",
+          "origin": "original",
+          "sample_context": "focused_794_gene_in_vivo_screen_not_genome_wide",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "KL_and_KP_mouse_models_and_targeted_NanoString",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "chip_seq",
+          "origin": "original",
+          "sample_context": "H3K9ac_tumor_chromatin_not_ATAC",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "interactome_ptm_ms",
+          "origin": "original",
+          "sample_context": "A549_acetylpeptidomics_and_complex_selectivity",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "human_H4K5_acetylation_targeted_MS_and_IHC",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "paired_patient_biopsy_mIF_and_mouse_histology",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        },
+        {
+          "assay": "flow_cytometry",
+          "origin": "original",
+          "sample_context": "mouse_immune_cells",
+          "evidence": "cancer-research-2025-40882030-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+TP53"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-research-2025-40882030-reading.md",
+      "evidence_sha256": "be4a1c6290d92da16b245cd5014a42f6f598e3923d01a08455c509d503df8526",
+      "pdf_sha256": "fffdafba514680dd2e3f7c27fb685146ec1e62e5535bd83eee5d9968693bca32",
+      "boundary": "Preclinical immune-dependent sensitization and early clinical pharmacodynamics, not established patient response or survival benefit. Mouse models are KEAP1 wild type; MC38/CT26 are colon models. H3K9ac ChIP-seq is not ATAC-seq."
+    },
+    {
+      "stable_id": "STK11-PMID-41423267",
+      "pmid": "41423267",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2025",
+      "title": "Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer",
+      "doi": "10.1136/jitc-2025-012205",
+      "primary_classification": "吸烟背景、STK11共突变及免疫治疗结局",
+      "stk11_relation": "direct_mutation",
+      "methods": [
+        "clinical-correlative"
+      ],
+      "treatment_types": [
+        "ici_monotherapy",
+        "chemoimmunotherapy"
+      ],
+      "drugs": [
+        "anti-PD1",
+        "anti-PDL1"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "clinical_genomic_panels_not_all_4157_patients_same_assays",
+          "evidence": "jitc-2025-41423267-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "mIF_subset_with_619_vs_691_source_discrepancy",
+          "evidence": "jitc-2025-41423267-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "Olink_2941_protein_PEA_panel_152_plasma_samples_not_untargeted_MS",
+          "evidence": "jitc-2025-41423267-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "SU2C_111_samples_public_bulk_RNA",
+          "evidence": "jitc-2025-41423267-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+KEAP1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "jitc-2025-41423267-reading.md",
+      "evidence_sha256": "e32d8f46e3ac8031047e1742d64070930525904bc96eb17d27b0ab86fcf3e34c",
+      "pdf_sha256": "e7dfd5e9af002f0a3244a31dd34b4116511f9688a5a1f579c430523fcaf5ca89",
+      "boundary": "STK11 is a secondary direct outcome analysis within a smoking-focused retrospective study. Nonrandomized treatment comparisons do not establish a predictive interaction or a causal benefit of smoking; assay subsets and denominators differ."
+    },
+    {
+      "stable_id": "STK11-PMID-33853830",
+      "pmid": "33853830",
+      "journal": "Cancer Research",
+      "year": "2021",
+      "title": "Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer",
+      "doi": "10.1158/0008-5472.CAN-20-3564",
+      "primary_classification": "LKB1缺失、粒细胞样MDSC与联合检查点阻断抵抗",
+      "stk11_relation": "direct_function",
+      "methods": [
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "dual_checkpoint_blockade",
+        "myeloid_modulation"
+      ],
+      "drugs": [
+        "ATRA",
+        "anti-PD1",
+        "anti-CTLA4",
+        "anti-Gr1"
+      ],
+      "assays": [
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "CCLE_138_human_lung_cancer_lines",
+          "evidence": "cancer-research-2021-33853830-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "45_plex_cytokine_assay_ELISA_and_immunoblots",
+          "evidence": "cancer-research-2021-33853830-reading.md"
+        },
+        {
+          "assay": "flow_cytometry",
+          "origin": "original",
+          "sample_context": "mouse_tumor_and_coculture_immune_cells",
+          "evidence": "cancer-research-2021-33853830-reading.md"
+        },
+        {
+          "assay": "targeted_rna",
+          "origin": "original",
+          "sample_context": "selected_chemokine_qPCR",
+          "evidence": "cancer-research-2021-33853830-reading.md"
+        },
+        {
+          "assay": "functional_coculture",
+          "origin": "original",
+          "sample_context": "pooled_mouse_GMDSC_T_cell_suppression",
+          "evidence": "cancer-research-2021-33853830-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "KRAS+TP53+STK11"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-research-2021-33853830-reading.md",
+      "evidence_sha256": "b472c3d50397c8b78edb0252f963e77142e18ea6c998e7131aca42e51c8808e6",
+      "pdf_sha256": "70aec452b31c10d3d067f7ea3d785b1afca5a804aaa0b54cc263629923aecaf3",
+      "boundary": "Model-specific immune-resistance mechanism; responses depend on the KPL-3M versus parental KPL-P background. No patient treatment-selection validation. G-MDSC percentages use CD45+ denominators; pooled samples are not independent biological replicates."
+    },
+    {
+      "stable_id": "STK11-PMID-34870237",
+      "pmid": "34870237",
+      "journal": "Nature Cancer",
+      "year": "2021",
+      "title": "Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms",
+      "doi": "10.1038/s43018-021-00259-9",
+      "primary_classification": "NSCLC蛋白基因组分型、STK11相关FGL1/CPS1表型及分类器验证",
+      "stk11_relation": "direct_mutation",
+      "secondary_stk11_relations": [
+        "direct_function"
+      ],
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "drug_sensitivity_reanalysis",
+        "chemotherapy_exploratory",
+        "mtor_inhibitor_exploratory",
+        "checkpoint_target_hypothesis"
+      ],
+      "drugs": [
+        "docetaxel",
+        "rapamycin",
+        "temsirolimus",
+        "dactolisib",
+        "AZD8055",
+        "A-769662 (protein-endpoint context only)"
+      ],
+      "assays": [
+        {
+          "assay": "proteomics_ms",
+          "origin": "original",
+          "sample_context": "human_discovery141_DDA_DIA_validation208_late_stage84",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "discovery370_gene_panel140_TMB139",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "microarray",
+          "origin": "reanalysis",
+          "sample_context": "previously_measured_discovery_expression118",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "dna_methylation_array",
+          "origin": "reanalysis",
+          "sample_context": "previously_measured_discovery113_450K_array",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA_LUAD_and_pan_cancer",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "transcriptomics",
+          "origin": "reanalysis",
+          "sample_context": "public_GEO_NSCLC925_not_original_RNAseq",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "proteomics_ms",
+          "origin": "reanalysis",
+          "sample_context": "Gillette111_Xu103_public_cohorts",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "selected_human_IHC_TLS_histology",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "lung_cell_lines_and_HepG2_protein_endpoints",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        },
+        {
+          "assay": "drug_response",
+          "origin": "reanalysis",
+          "sample_context": "GDSC_109_NSCLC_11_high_FGL1_CPS1_vs98_other",
+          "evidence": "nature-cancer-2021-34870237-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "protein_expression",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1+SMARCA4 subtype_enrichment_not_universal_pairwise_cooccurrence",
+        "STK11+HNF1A+FGL1+CPS1",
+        "EGFR",
+        "RB1",
+        "TP53"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-cancer-2021-34870237-reading.md",
+      "evidence_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+      "pdf_sha256": "271d07d3d6217983780e01e2c3a66c23ede017c314ec2559aca8594605881856",
+      "boundary": "Proteome subtypes are not mutation diagnoses or validated clinical treatment predictors. Partial assay overlap and classifier-denominator attrition remain; NCP orthogonal review found 36/104 incorrect, without HLA-presentation or T-cell-recognition proof, and TCGA OS P=.216 is negative. The HNF1A methylation/protein correlation is R=-0.43, not -0.41. Preserve unresolved source conflicts for Fig.6E alpha- versus beta-tubulin, ED7D 1st/99th versus 5th/95th percentiles, and ED10I 5,123 versus 5,124 proteins. No operational biological methods retained."
+    },
+    {
+      "stable_id": "STK11-PMID-34045189",
+      "pmid": "34045189",
+      "journal": "Cancer Research",
+      "year": "2021",
+      "title": "STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma",
+      "doi": "10.1158/0008-5472.CAN-20-3199",
+      "primary_classification": "LKB1功能缺失相关DNA低甲基化与SAM-e耗竭",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "epigenetic_therapy_preclinical",
+        "chemotherapy_supplement_description",
+        "experimental_targeted_therapy"
+      ],
+      "drugs": [
+        "azacytidine",
+        "cisplatin (unsupplied supplement description only)",
+        "GSK2126458 (mechanistic context)"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_rna",
+          "origin": "original",
+          "sample_context": "OSU54_tumor_NanoString_functional_classifier",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "metabolomics_ms",
+          "origin": "original",
+          "sample_context": "OSU33_tumors_9_functional_loss_relative_intensity",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "targeted_methylation",
+          "origin": "original",
+          "sample_context": "tumor_repetitive_element_bisulfite_MassARRAY",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "reanalysis",
+          "sample_context": "TCGA427_tumors32_adjacent_normal",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "dna_methylation_array",
+          "origin": "reanalysis",
+          "sample_context": "TCGA450K",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "rrbs",
+          "origin": "reanalysis",
+          "sample_context": "CCLE_cell_lines_denominator98_vs99_unresolved",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "metabolomics_ms",
+          "origin": "reanalysis",
+          "sample_context": "CCLE",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "chip_seq",
+          "origin": "reanalysis",
+          "sample_context": "ENCODE_histone_mark_annotations_not_original_tumor_binding",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "cell_models_fractionation_immunoblots_microscopy",
+          "evidence": "cancer-research-2021-34045189-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "functional_inactivation"
+      ],
+      "gene_contexts": [
+        "KRAS+STK11",
+        "STK11+FOXA1+FOXA2+FOXA3",
+        "STK11+DNMT1"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cancer-research-2021-34045189-reading.md",
+      "evidence_sha256": "acb4cb2b730846226a033f360a94fe0acd8ec3550e95418f1f4d1161dd381b9b",
+      "pdf_sha256": "9f06352dad3dc159bc28d43f30f5192ea2e96e19d1f944e1c7d885c80405199f",
+      "boundary": "Composite functional class not sequence-mutation class. Patient methylation/metabolite associations and cell-model therapy effects do not establish a complete causal methylation mechanism or immunotherapy prediction. External supplements unavailable.",
+      "provenance": "Transcribed from prior agent B completed reading evidence, not a new PDF reread or independent source acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-33264619",
+      "pmid": "33264619",
+      "journal": "Cell Reports",
+      "year": "2020",
+      "title": "Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer",
+      "doi": "10.1016/j.celrep.2020.108444",
+      "primary_classification": "STK11-KEAP1共同失活、铁死亡保护与SCD1依赖",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "treatment_types": [
+        "experimental_targeted_therapy",
+        "ferroptosis_modulation_preclinical"
+      ],
+      "drugs": [
+        "CVT-11127",
+        "A939572",
+        "erastin",
+        "RSL3",
+        "MPA",
+        "Ki-696"
+      ],
+      "assays": [
+        {
+          "assay": "targeted_dna",
+          "origin": "original",
+          "sample_context": "human_clinical_tumor_normal_genomic_profiling",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        },
+        {
+          "assay": "allele_specific_copy_number",
+          "origin": "reanalysis",
+          "sample_context": "clinical19p_LOH_and_clonality",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "H358_H292_cell_models",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        },
+        {
+          "assay": "functional_genetic_screen",
+          "origin": "original",
+          "sample_context": "focused1463_gene_dependency_screen_not_genome_wide",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "cell_immunoblots_flow_functional_readouts",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "human_TMA_IHC_duplicate_cores_patient_count_unresolved",
+          "evidence": "cell-reports-2020-33264619-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "loss_of_heterozygosity",
+        "functional_inactivation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "STK11+KEAP1",
+        "KRAS+STK11+KEAP1",
+        "STK11+KEAP1+SCD1",
+        "KEAP1+NFE2L2"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "cell-reports-2020-33264619-reading.md",
+      "evidence_sha256": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
+      "pdf_sha256": "ca754c762a60235ac89d3261ebcfe866a17f8c5d38d66dfb49747948d80c5d18",
+      "boundary": "Joint-loss model dependency and treatment-agnostic prognosis, not universal STK11 therapy prediction. Clinical/TMA counts conflict; immune-deficient xenografts cannot establish antitumor immunity; no clinical safety/efficacy.",
+      "provenance": "Transcribed from prior agent B completed reading evidence, not a new PDF reread or independent source acceptance."
+    },
+    {
+      "stable_id": "STK11-PMID-34341533",
+      "pmid": "34341533",
+      "journal": "Nature Cell Biology",
+      "year": "2021",
+      "title": "LKB1 inactivation modulates chromatin accessibility to drive metastatic progression",
+      "doi": "10.1038/s41556-021-00728-4",
+      "primary_classification": "LKB1/SIK相关阶段依赖染色质状态与SOX17转移表型",
+      "stk11_relation": "direct_function",
+      "secondary_stk11_relations": [
+        "direct_mutation"
+      ],
+      "methods": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "computational-reanalysis"
+      ],
+      "treatment_types": [],
+      "drugs": [],
+      "assays": [
+        {
+          "assay": "atac_seq",
+          "origin": "original",
+          "sample_context": "mouse_cell_lines_primary_tumors_metastases_and_human_cell_lines",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "single_cell_atac",
+          "origin": "original",
+          "sample_context": "seven_mouse_primary_tumors_14413_nuclei",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "bulk_rna",
+          "origin": "original",
+          "sample_context": "mouse_cell_lines_and_tumors",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "atac_seq",
+          "origin": "reanalysis",
+          "sample_context": "TCGA_LUAD_21_primary_tumors",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "single_cell_rna",
+          "origin": "reanalysis",
+          "sample_context": "Laughney2020_human_LUAD_ten_donor_metastatic_clusters",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "genetic_perturbation",
+          "origin": "original",
+          "sample_context": "non_operational_loss_restoration_and_functional_evidence",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "targeted_protein",
+          "origin": "original",
+          "sample_context": "LKB1_SOX17_immunoblots",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        },
+        {
+          "assay": "spatial_protein",
+          "origin": "original",
+          "sample_context": "mouse_tumor_IHC_SOX17",
+          "evidence": "nature-cell-biology-2021-34341533-reading.md"
+        }
+      ],
+      "alteration_types": [
+        "sequence_mutation",
+        "functional_inactivation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        "KRAS+TP53+STK11",
+        "STK11+SIK1+SIK2+SIK3",
+        "STK11+SOX17"
+      ],
+      "classification_level": "supplied_main_text_curated",
+      "evidence": "nature-cell-biology-2021-34341533-reading.md",
+      "evidence_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+      "pdf_sha256": "bb29824252c1e7caf63fbf87b8ada507c034c1533bb936fd8892f8a461388ba8",
+      "boundary": "Stage-dependent epigenetic/metastatic-state evidence in defined models, with small human public-data support. Human STK11 enrichment FDR=.088; no clinical prediction/therapy validation. Preserve source conflicts and liver P=.055. Notes intentionally contain no executable experimental procedures."
     }
   ]
 }

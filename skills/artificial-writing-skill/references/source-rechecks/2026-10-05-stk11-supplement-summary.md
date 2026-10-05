@@ -1,0 +1,58 @@
+# STK11 topic-support bounded source-recheck summary
+
+## Scope and classification
+
+This record consolidates the source-recheck disposition for 16 STK11-related articles added as supplementary writing support. Each linked article record documents a source-bounded pass across `coverage_check`, `evidence_check`, `results_check`, `language_check`, `traceability_check`, and `transfer_check`. A bounded pass means that no unresolved blocking error remains within the stated main-text, display, language-sampling, and supplement scope; it is not a claim of zero residual error, independent experimental replication, clinical validity, or complete review of material that was not supplied.
+
+All 16 articles remain `topic_support`; none is promoted into the 13-record `core_highlight` set. Their membership also remains outside the historical cross-gene-16 subset. `direct_function` and `direct_analysis` describe the article's relation to STK11, not its tier or acceptance status: 11 records provide direct functional evidence in defined models, and five directly analyze STK11 status in clinical or molecular data. Acceptance of these records does not change the separate core-reference authority.
+
+Fifteen records use `independent_agent_source_recheck`. PMID 36150391 uses `same_agent_source_recheck` and must not be described as independently reviewed. The six post-correction integrations re-opened the affected source pages but did not change the original reviewer or review method.
+
+## Article-level disposition
+
+| Review record | Article | Journal / year | STK11 tier and relation | Review method | Supplement scope |
+|---|---|---|---|---|---|
+| [PMID 40057483](2026-10-02-40057483.md) | *Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer* | Nature Communications / 2025 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; main article and seven main figures reviewed |
+| [PMID 42008781](2026-10-02-42008781.md) | *LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer* | Cancer Discovery / 2026 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; external Figures S1-S13, Tables S1-S2, and data files excluded |
+| [PMID 39694700](2026-10-05-39694700.md) | *LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer* | Journal for ImmunoTherapy of Cancer / 2024 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; external Figures S1-S3, Tables S1-S5, and linked files excluded |
+| [PMID 41135949](2026-10-05-41135949.md) | *Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer* | Journal for ImmunoTherapy of Cancer / 2025 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; external files 1-6, including S1-S3, excluded |
+| [PMID 36512628](2026-10-05-36512628.md) | *PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer* | Cancer Research / 2023 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; external Figures S1-S7 and Tables S1-S2 excluded |
+| [PMID 37098232](2026-10-02-37098232.md) | *Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100* | Journal of Clinical Oncology / 2023 | `topic_support`; `direct_analysis` | `independent_agent_source_recheck` | `not_supplied`; Data Supplement and protocol absent |
+| [PMID 37100205](2026-10-02-37100205.md) | *Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial* | Annals of Oncology / 2023 | `topic_support`; `direct_analysis` | `independent_agent_source_recheck` | `not_supplied`; separate supplement and detailed external Methods excluded |
+| [PMID 37068173](2026-10-05-37068173.md) | *Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC* | Cancer Discovery / 2023 | `topic_support`; `direct_analysis` | `independent_agent_source_recheck` | `not_supplied`; linked supplement excluded |
+| [PMID 40882030](2026-10-02-40882030.md) | *TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy* | Cancer Research / 2025 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; external Supplementary Methods, Figures S1-S9, and Tables S1-S6 excluded |
+| [PMID 41423267](2026-10-02-41423267.md) | *Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer* | Journal for ImmunoTherapy of Cancer / 2025 | `topic_support`; `direct_analysis` | `independent_agent_source_recheck` | `not_supplied`; externally linked supplementary figures and tables excluded |
+| [PMID 33853830](2026-10-05-33853830.md) | *Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer* | Cancer Research / 2021 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; Supplementary Figures S1-S6 and Supplemental Table excluded |
+| [PMID 36150391](2026-10-05-36150391.md) | *MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer* | Cancer Cell / 2022 | `topic_support`; `direct_function` | `same_agent_source_recheck` | `not_supplied`; external Figures S1-S7 and Tables S1-S2 excluded; author-manuscript pp.41-44 are the main Key Resources Table |
+| [PMID 34870237](2026-10-05-34870237.md) | *Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms* | Nature Cancer / 2021 | `topic_support`; `direct_analysis` | `independent_agent_source_recheck` | `partially_reviewed`; embedded Extended Data 1-10 reviewed, separate Supplementary Figures 1-16, Tables 1-10, Data 1-2, Reporting Summary, and source spreadsheets excluded |
+| [PMID 34045189](2026-10-02-34045189.md) | *STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma* | Cancer Research / 2021 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `not_supplied`; Supplementary Figures 1-13 and external tables excluded |
+| [PMID 33264619](2026-10-02-33264619.md) | *Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer* | Cell Reports / 2020 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `partially_reviewed`; embedded S1-S7 and Table S5 reviewed, separate Tables S1-S4 and raw data excluded |
+| [PMID 34341533](2026-10-02-34341533.md) | *LKB1 inactivation modulates chromatin accessibility to drive metastatic progression* | Nature Cell Biology / 2021 | `topic_support`; `direct_function` | `independent_agent_source_recheck` | `partially_reviewed`; embedded Extended Data 1-10 reviewed, external Supplementary Information, Tables 1-6, and Source Data excluded |
+
+All 16 records have `review_status=passed` within the linked scope. Thirteen have `supplement_status=not_supplied`; three have `supplement_status=partially_reviewed`. A main-text reference to an external supplemental result does not convert that result into directly reviewed evidence.
+
+## Six corrected records
+
+| Review record | Correction and final disposition |
+|---|---|
+| [PMID 39694700](2026-10-05-39694700.md) | Corrected Figure 1/2 cohort and panel assignments; separated the surgical expression series from the 40-patient checkpoint-treated cohort; identified Figure 5 as anti-LKB1, rather than PD-L1, IP-MS; restored the Figure 6/7 ubiquitination and chase locators; corrected the in-vivo endpoint to tumor weight; retained the subcutaneous-versus-orthotopic source conflict. Affected language-catalog locators were synchronized. |
+| [PMID 41135949](2026-10-05-41135949.md) | Moved the intratumoral CD8 result to Figure 1J-K; corrected the cDC1 value to `P=0.0384` and the LLC T-cell-state value to `P=0.0025`; restored the Panc02 value `P=0.0207`; changed OT-I “counts” to proportions of live cells; withheld the conflicting prose direction rather than forcing a single interpretation. |
+| [PMID 36512628](2026-10-05-36512628.md) | Separated Figure 1J CXCL10 transcript expression from the supplemental-only CXCL10 add-back in Figure S1Q; placed anti-PD-1 +/- fludarabine at Figure 1K-L; removed a nonexistent main-text body-weight/safety endpoint; treated main Figure 7 as a mechanism schematic and the KP/KPL reanalysis as supplemental-only Figure S1D-E. The affected language provenance frame was synchronized. |
+| [PMID 37068173](2026-10-05-37068173.md) | Preserved the ATRX/DAXX OS tension between HR 0.05 (95% CI 0.01-1.30) and log-rank `P=0.005`; retained the Figure 4F wild-type legend `n=107` versus risk-table start 111; and recorded the KSC-altered graphic label 25.3% beside 19/76, whose arithmetic is 25.0%, without silently replacing either source value. |
+| [PMID 36150391](2026-10-05-36150391.md) | Replaced the unsupported direct “tumor killing” claim with immune-cell migration, peri-tumor infiltration, and granzyme-B-associated activity; moved the in-vivo STING/CD8 dependency chain to Figures 6-7, specifically Figure 7B-C; normalized supplement status to `not_supplied` and distinguished the Key Resources Table from supplemental evidence; retained Figure 2J cell-line and Figure 5L endpoint-label conflicts. The review method remains `same_agent_source_recheck`. |
+| [PMID 34870237](2026-10-05-34870237.md) | Corrected HNF1A methylation-versus-protein Pearson Rho to -0.43 (`n=64`, `P=0.00045`); retained the Extended Data 7D 1st/99th versus caption 5th/95th cutoff conflict, Extended Data 10I 5,123 versus caption 5,124 protein-total conflict, and Figure 6E alpha- versus beta-tubulin label conflict as unresolved source alerts. |
+
+## Aggregate gate result
+
+| Gate | Passed | Failed or pending | Aggregate boundary |
+|---|---:|---:|---|
+| `coverage_check` | 16 | 0 | Pass applies only to the displays, sections, and supplemental material explicitly listed in each linked record. |
+| `evidence_check` | 16 | 0 | Direct-function and direct-analysis evidence remain distinct; association is not automatically causation or treatment prediction. |
+| `results_check` | 16 | 0 | Corrected values and unresolved source conflicts are retained without silent repair or invented statistics. |
+| `language_check` | 16 | 0 | Reviewed terminology and frames remain constrained by section, assay, model, and source context; synthetic frames are not quotations. |
+| `traceability_check` | 16 | 0 | Each article has a linked review record with source/asset identity, locators, and relevant hashes or stable identifiers. |
+| `transfer_check` | 16 | 0 | Reuse must preserve population/model, comparator, endpoint, uncertainty, and nonclinical/nonpredictive limits. |
+
+## Explicitly deferred source
+
+PMID 35504291 (intake filename `mmc3.pdf`) was explicitly deferred and is not one of these 16 records. It was not opened, read, indexed, accepted, rejected, or included in any denominator in this summary. Its retained source file is outside this skill update. The completion of the 16 reviewed articles must not be used to infer any reading or review status for PMID 35504291.

@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "read_on": "2026-10-02",
+  "scope": "Intake-time snapshot dated 2026-10-02: 18 supplied PDFs representing 17 unique works; 17 PDFs/16 works were processed as 15 new article reads plus one additional version of an already registered article. One paper was skipped by the user and retained at intake. No CCR journal articles were present. No independent acceptance promotion was made at intake; later review state is recorded only in review_overlay and the live quality authorities.",
+  "review_overlay": {
+    "as_of": "2026-10-05",
+    "scope": "Post-intake live review state layered over the immutable intake facts below. Fifteen articles have bounded independent agent source rechecks; PMID 36150391 has a bounded same-agent source recheck and is not independently reviewed. The skipped PMID 35504291 boundary is unchanged.",
+    "passed_pmids": [
+      "40057483",
+      "42008781",
+      "39694700",
+      "41135949",
+      "36512628",
+      "37098232",
+      "37100205",
+      "37068173",
+      "36150391",
+      "40882030",
+      "41423267",
+      "33853830",
+      "34870237",
+      "34045189",
+      "33264619",
+      "34341533"
+    ],
+    "independent_agent_source_recheck_pmids": [
+      "40057483",
+      "42008781",
+      "39694700",
+      "41135949",
+      "36512628",
+      "37098232",
+      "37100205",
+      "37068173",
+      "40882030",
+      "41423267",
+      "33853830",
+      "34870237",
+      "34045189",
+      "33264619",
+      "34341533"
+    ],
+    "same_agent_source_recheck_pmids": [
+      "36150391"
+    ],
+    "review_records": {
+      "40057483": "source-rechecks/2026-10-02-40057483.md",
+      "42008781": "source-rechecks/2026-10-02-42008781.md",
+      "39694700": "source-rechecks/2026-10-05-39694700.md",
+      "41135949": "source-rechecks/2026-10-05-41135949.md",
+      "36512628": "source-rechecks/2026-10-05-36512628.md",
+      "37098232": "source-rechecks/2026-10-02-37098232.md",
+      "37100205": "source-rechecks/2026-10-02-37100205.md",
+      "37068173": "source-rechecks/2026-10-05-37068173.md",
+      "36150391": "source-rechecks/2026-10-05-36150391.md",
+      "40882030": "source-rechecks/2026-10-02-40882030.md",
+      "41423267": "source-rechecks/2026-10-02-41423267.md",
+      "33853830": "source-rechecks/2026-10-05-33853830.md",
+      "34870237": "source-rechecks/2026-10-05-34870237.md",
+      "34045189": "source-rechecks/2026-10-02-34045189.md",
+      "33264619": "source-rechecks/2026-10-02-33264619.md",
+      "34341533": "source-rechecks/2026-10-02-34341533.md"
+    },
+    "supplement_status": {
+      "not_supplied_pmids": [
+        "40057483",
+        "42008781",
+        "39694700",
+        "41135949",
+        "36512628",
+        "37098232",
+        "37100205",
+        "37068173",
+        "36150391",
+        "40882030",
+        "41423267",
+        "33853830",
+        "34045189"
+      ],
+      "partially_reviewed_pmids": [
+        "34870237",
+        "33264619",
+        "34341533"
+      ]
+    },
+    "summary": "source-rechecks/2026-10-05-stk11-supplement-summary.md"
+  },
+  "records": [
+    {
+      "pmid": "40057483",
+      "journal_id": "nature-communications",
+      "journal": "Nature Communications",
+      "year": "2025",
+      "title": "Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer",
+      "doi": "10.1038/s41467-025-57297-5",
+      "files": [
+        "41467_2025_Article_57297.pdf"
+      ],
+      "sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
+      "pages": 18,
+      "version": "publisher_typeset_pdf",
+      "note": "nature-communications-2025-40057483-reading.md",
+      "note_sha256": "972b6c6231d52b265be9a2585a9f2ad11b5fca915aac8053a967dba74af9e9b0",
+      "new_to_library": true,
+      "archive_relative": "Nature Communications/2025/Shu_Uncovering-the-rewired-IAP-JAK-regulatory-axis-as-an-immune-dependent-vulnerabilit_PMID40057483_VOR.pdf",
+      "actual_scope": "All main text, Methods, all main figures/captions and any main tables read; rendered main figure/table pages visually inspected. References/admin pages surveyed. No separate supplement supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "42008781",
+      "journal_id": "cancer-discovery",
+      "journal": "Cancer Discovery",
+      "year": "2026",
+      "title": "LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer",
+      "doi": "10.1158/2159-8290.CD-25-0470",
+      "files": [
+        "cd-25-0470.pdf"
+      ],
+      "sha256": "758698151e3b6ad54a6def5bcb71b2c59053c631a8ce9143a524542683e56e13",
+      "pages": 20,
+      "version": "publisher_typeset_pdf",
+      "note": "cancer-discovery-2026-42008781-reading.md",
+      "note_sha256": "3a26dd18ef3237ec4e1c4f914d94b8f245432e06651a6ed015c4b155126a33fd",
+      "new_to_library": true,
+      "archive_relative": "Cancer Discovery/2026/Pillai_LIF-Induced-Tumor-Plasticity-Establishes-an-Immunosuppressive-Myeloid-Niche-in-LKB_PMID42008781_VOR.pdf",
+      "actual_scope": "All main text, Methods, all main figures/captions and any main tables read; rendered main figure/table pages visually inspected. References/admin pages surveyed. No separate supplement supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "39694700",
+      "journal_id": "jitc",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2024",
+      "title": "LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer",
+      "doi": "10.1136/jitc-2024-009444",
+      "files": [
+        "jitc-12-12.pdf"
+      ],
+      "sha256": "71ddf755c53fe45a0ae4004d277b9bbf4b46bde0e022d16d54ca7953cd0e6fa7",
+      "pages": 16,
+      "version": "publisher_typeset_pdf",
+      "note": "jitc-2024-39694700-reading.md",
+      "note_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+      "new_to_library": true,
+      "archive_relative": "Journal for ImmunoTherapy of Cancer/2024/Lv_LKB1-dictates-sensitivity-to-immunotherapy-through-Skp2-mediated-ubiquitination-of_PMID39694700_VOR.pdf",
+      "actual_scope": "All main text, Methods, all main figures/captions and any main tables read; rendered main figure/table pages visually inspected. References/admin pages surveyed. No separate supplement supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "41135949",
+      "journal_id": "jitc",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2025",
+      "title": "Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer",
+      "doi": "10.1136/jitc-2025-012710",
+      "files": [
+        "jitc-13-10.pdf"
+      ],
+      "sha256": "30d493e3aca91ae2e3dd465d6494b6160fb1b790da10098fe3f51d200787a1ed",
+      "pages": 18,
+      "version": "publisher_typeset_pdf",
+      "note": "jitc-2025-41135949-reading.md",
+      "note_sha256": "e67298c8dd35f938156239786f5d6ca34894c3cc85c32852c6dcc31b634a3bac",
+      "new_to_library": true,
+      "archive_relative": "Journal for ImmunoTherapy of Cancer/2025/Yao_Tumor-secreted-AGR2-induces-dendritic-cell-dysfunction-and-impairs-immunotherapy-e_PMID41135949_VOR.pdf",
+      "actual_scope": "All main text, Methods, all main figures/captions and any main tables read; rendered main figure/table pages visually inspected. References/admin pages surveyed. No separate supplement supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "36512628",
+      "journal_id": "cancer-research",
+      "journal": "Cancer Research",
+      "year": "2023",
+      "title": "PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer",
+      "doi": "10.1158/0008-5472.CAN-22-1740",
+      "files": [
+        "PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer.pdf"
+      ],
+      "sha256": "a4fa6d39bd4755e809da7e58a791ec57f8569a68092111cdbbc10491bfe8cf94",
+      "pages": 14,
+      "version": "publisher_typeset_pdf",
+      "note": "cancer-research-2023-36512628-reading.md",
+      "note_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+      "new_to_library": true,
+      "archive_relative": "Cancer Research/2023/Long_PARP-Inhibition-Induces-Synthetic-Lethality-and-Adaptive-Immunity-in-LKB1-Mutant-L_PMID36512628_VOR.pdf",
+      "actual_scope": "All main text, Methods, all main figures/captions and any main tables read; rendered main figure/table pages visually inspected. References/admin pages surveyed. No separate supplement supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "37098232",
+      "journal_id": "jco",
+      "journal": "Journal of Clinical Oncology",
+      "year": "2023",
+      "title": "Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100",
+      "doi": "10.1200/JCO.22.02524",
+      "files": [
+        "dy-et-al-2023-long-term-outcomes-and-molecular-correlates-of-sotorasib-efficacy-in-patients-with-pretreated-kras-g12c.pdf"
+      ],
+      "sha256": "e529248702acb3179eedf37c0180436067254fcc32a7f023d3292318ac8a17d1",
+      "pages": 9,
+      "version": "publisher_typeset_pdf",
+      "note": "jco-2023-37098232-reading.md",
+      "note_sha256": "091966816c1c3d2163c228408c8de7be117996f2e652256fcefcbe7431fb770f",
+      "new_to_library": true,
+      "archive_relative": "Journal of Clinical Oncology/2023/Dy_Long-Term-Outcomes-and-Molecular-Correlates-of-Sotorasib-Efficacy-in-Patients-With_PMID37098232_VOR.pdf",
+      "actual_scope": "All substantive main text, Methods, every main figure/caption and main table visually inspected; no separate supplementary file supplied. Reference and administrative pages surveyed.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "37100205",
+      "journal_id": "annals-of-oncology",
+      "journal": "Annals of Oncology",
+      "year": "2023",
+      "title": "Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial",
+      "doi": "10.1016/j.annonc.2023.04.005",
+      "files": [
+        "PIIS0923753423001473.pdf"
+      ],
+      "sha256": "e293e86e112ed531582217f92e797225c086e70bfe0e695444ca71cf05e7e65b",
+      "pages": 11,
+      "version": "publisher_typeset_pdf",
+      "note": "annals-of-oncology-2023-37100205-reading.md",
+      "note_sha256": "aca37fa17af82d408cbf6536bc66d5eaf26b6a62dea26915f548de936b0d29e8",
+      "new_to_library": true,
+      "archive_relative": "Annals of Oncology/2023/Rakaee_Machine-learning-based-immune-phenotypes-correlate-with-STK11-KEAP1-co-mutations-a_PMID37100205_VOR.pdf",
+      "actual_scope": "All substantive main text, Methods, every main figure/caption and main table visually inspected; no separate supplementary file supplied. Reference and administrative pages surveyed.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "37068173",
+      "journal_id": "cancer-discovery",
+      "journal": "Cancer Discovery",
+      "year": "2023",
+      "title": "Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC",
+      "doi": "10.1158/2159-8290.CD-22-1420",
+      "files": [
+        "nihms-1889724.pdf",
+        "nihms-1889724 (1).pdf"
+      ],
+      "sha256": "791ea5d6bee05404ad2667e4027938f37a118531c5849c9e3fcd2246bdb5056d",
+      "pages": 29,
+      "version": "author_manuscript",
+      "note": "cancer-discovery-2023-37068173-reading.md",
+      "note_sha256": "83318ec5cd5f7f316084a638e6bee18f13f6d1295c88f07ec1d2a435227358b9",
+      "new_to_library": true,
+      "archive_relative": "Cancer Discovery/2023/Negrao_Comutations-and-KRASG12C-Inhibitor-Efficacy-in-Advanced-NSCLC_PMID37068173_AM.pdf",
+      "actual_scope": "All substantive main text, Methods, every main figure/caption and main table visually inspected; no separate supplementary file supplied. Reference and administrative pages surveyed.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "36150391",
+      "journal_id": "cancer-cell",
+      "journal": "Cancer Cell",
+      "year": "2022",
+      "title": "MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer",
+      "doi": "10.1016/j.ccell.2022.08.015",
+      "files": [
+        "nihms-1834598.pdf"
+      ],
+      "sha256": "e93039c6e35181a3f413e47786c507883f0c2bea9f1e4a6c37a5e2d0a3599fcc",
+      "pages": 44,
+      "version": "author_manuscript",
+      "note": "cancer-cell-2022-36150391-reading.md",
+      "note_sha256": "734c1140d1d46fab1da8f25b4490b4cff760ddb59c2414c72e755b9f99a999fc",
+      "new_to_library": false,
+      "archive_relative": "Cancer Cell/2022/Kitajima_MPS1-inhibition-primes-immunogenicity-of-KRAS-LKB1-mutant-lung-cancer_PMID36150391_AM.pdf",
+      "actual_scope": "All substantive main text, Methods, every main figure/caption and main table visually inspected; no separate supplementary file supplied. Reference and administrative pages surveyed.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "40882030",
+      "journal_id": "cancer-research",
+      "journal": "Cancer Research",
+      "year": "2025",
+      "title": "TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy",
+      "doi": "10.1158/0008-5472.CAN-25-0998",
+      "files": [
+        "can-25-0998.pdf"
+      ],
+      "sha256": "fffdafba514680dd2e3f7c27fb685146ec1e62e5535bd83eee5d9968693bca32",
+      "pages": 17,
+      "version": "publisher_typeset_pdf",
+      "note": "cancer-research-2025-40882030-reading.md",
+      "note_sha256": "be4a1c6290d92da16b245cd5014a42f6f598e3923d01a08455c509d503df8526",
+      "new_to_library": true,
+      "archive_relative": "Cancer Research/2025/Ahronian_TNG260-Is-a-Small-Molecule-CoREST-Inhibitor-That-Sensitizes-STK11-Mutant-Tumors-to_PMID40882030_VOR.pdf",
+      "actual_scope": "All 17 supplied pages; all substantive main sections and Figures1-5/captions visually read; external supplements not supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "41423267",
+      "journal_id": "jitc",
+      "journal": "Journal for ImmunoTherapy of Cancer",
+      "year": "2025",
+      "title": "Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer",
+      "doi": "10.1136/jitc-2025-012205",
+      "files": [
+        "jitc-13-12.pdf"
+      ],
+      "sha256": "e7dfd5e9af002f0a3244a31dd34b4116511f9688a5a1f579c430523fcaf5ca89",
+      "pages": 12,
+      "version": "publisher_typeset_pdf",
+      "note": "jitc-2025-41423267-reading.md",
+      "note_sha256": "e32d8f46e3ac8031047e1742d64070930525904bc96eb17d27b0ab86fcf3e34c",
+      "new_to_library": true,
+      "archive_relative": "Journal for ImmunoTherapy of Cancer/2025/Wang_Multi-omics-analysis-reveals-differential-benefits-of-immunotherapy-chemotherapy-b_PMID41423267_VOR.pdf",
+      "actual_scope": "All 12 supplied pages, main text, Figures1-7 and Table1 visually read; separate supplements not supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "33853830",
+      "journal_id": "cancer-research",
+      "journal": "Cancer Research",
+      "year": "2021",
+      "title": "Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer",
+      "doi": "10.1158/0008-5472.CAN-20-3564",
+      "files": [
+        "nihms-1695967.pdf"
+      ],
+      "sha256": "70aec452b31c10d3d067f7ea3d785b1afca5a804aaa0b54cc263629923aecaf3",
+      "pages": 30,
+      "version": "author_manuscript",
+      "note": "cancer-research-2021-33853830-reading.md",
+      "note_sha256": "b472c3d50397c8b78edb0252f963e77142e18ea6c998e7131aca42e51c8808e6",
+      "new_to_library": true,
+      "archive_relative": "Cancer Research/2021/Li_Inhibition-of-Granulocytic-Myeloid-Derived-Suppressor-Cells-Overcomes-Resistance-t_PMID33853830_AM.pdf",
+      "actual_scope": "All 30 supplied AM pages surveyed; all substantive main sections, Significance and Figures1-7/captions visually read. Separate supplements not supplied.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "34870237",
+      "journal_id": "nature-cancer",
+      "journal": "Nature Cancer",
+      "year": "2021",
+      "title": "Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms",
+      "doi": "10.1038/s43018-021-00259-9",
+      "files": [
+        "EMS133264.pdf"
+      ],
+      "sha256": "271d07d3d6217983780e01e2c3a66c23ede017c314ec2559aca8594605881856",
+      "pages": 59,
+      "version": "author_accepted_manuscript",
+      "note": "nature-cancer-2021-34870237-reading.md",
+      "note_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+      "new_to_library": true,
+      "archive_relative": "Nature Cancer/2021/Lehtiö_Proteogenomics-of-non-small-cell-lung-cancer-reveals-molecular-subtypes-associated_PMID34870237_AM.pdf",
+      "actual_scope": "All supplied main text/Methods and all18 main/Extended Data figure pages plus captions visually checked. No main/embedded tables. External supplemental files and protocols not supplied/read. Non-operational evidence/statistics/language summary only.",
+      "supplement_status_for_supplied_version": "partially_reviewed"
+    },
+    {
+      "pmid": "34045189",
+      "journal_id": "cancer-research",
+      "journal": "Cancer Research",
+      "year": "2021",
+      "title": "STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma",
+      "doi": "10.1158/0008-5472.CAN-20-3199",
+      "files": [
+        "nihms-1711029.pdf"
+      ],
+      "sha256": "9f06352dad3dc159bc28d43f30f5192ea2e96e19d1f944e1c7d885c80405199f",
+      "pages": 24,
+      "version": "author_accepted_manuscript",
+      "note": "cancer-research-2021-34045189-reading.md",
+      "note_sha256": "acb4cb2b730846226a033f360a94fe0acd8ec3550e95418f1f4d1161dd381b9b",
+      "new_to_library": true,
+      "archive_relative": "Cancer Research/2021/Koenig_STK11-LKB1-Loss-of-Function-Is-Associated-with-Global-DNA-Hypomethylation-and-S-Ad_PMID34045189_AM.pdf",
+      "actual_scope": "Preserved from agent B note: complete main text and Figures1-4/Table1 visually read; external FiguresS1-13/tables not supplied. This handoff author did not reread those PDFs or independently certify acceptance.",
+      "supplement_status_for_supplied_version": "not_supplied"
+    },
+    {
+      "pmid": "33264619",
+      "journal_id": "cell-reports",
+      "journal": "Cell Reports",
+      "year": "2020",
+      "title": "Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer",
+      "doi": "10.1016/j.celrep.2020.108444",
+      "files": [
+        "mmc6.pdf"
+      ],
+      "sha256": "ca754c762a60235ac89d3261ebcfe866a17f8c5d38d66dfb49747948d80c5d18",
+      "pages": 33,
+      "version": "publisher_typeset_main_with_embedded_supplement",
+      "note": "cell-reports-2020-33264619-reading.md",
+      "note_sha256": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
+      "new_to_library": true,
+      "archive_relative": "Cell Reports/2020/Wohlhieter_Concurrent-Mutations-in-STK11-and-KEAP1-Promote-Ferroptosis-Protection-and-SCD1-De_PMID33264619_VOR.pdf",
+      "actual_scope": "Preserved from agent B note: complete main text, graphical abstract, main Figures1-7 and Key Resources Table; embedded S1-S7/TableS5 read and visually inspected. External TablesS1-S4 not supplied. Handoff author has not independently reread/certified article acceptance.",
+      "supplement_status_for_supplied_version": "partially_reviewed"
+    },
+    {
+      "pmid": "34341533",
+      "journal_id": "nature-cell-biology",
+      "journal": "Nature Cell Biology",
+      "year": "2021",
+      "title": "LKB1 inactivation modulates chromatin accessibility to drive metastatic progression",
+      "doi": "10.1038/s41556-021-00728-4",
+      "files": [
+        "nihms-1725816.pdf"
+      ],
+      "sha256": "bb29824252c1e7caf63fbf87b8ada507c034c1533bb936fd8892f8a461388ba8",
+      "pages": 46,
+      "version": "author_manuscript",
+      "note": "nature-cell-biology-2021-34341533-reading.md",
+      "note_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+      "new_to_library": true,
+      "archive_relative": "Nature Cell Biology/2021/Pierce_LKB1-inactivation-modulates-chromatin-accessibility-to-drive-metastatic-progressio_PMID34341533_AM.pdf",
+      "actual_scope": "46 physical pages. All main scientific text/Methods; all six main figures and captions plus ten embedded Extended Data figures/captions read and visually inspected. References/admin surveyed. No external supplement/raw-data reanalysis. Non-operational evidence and language only.",
+      "supplement_status_for_supplied_version": "partially_reviewed"
+    }
+  ],
+  "skipped": [
+    {
+      "pmid": "35504291",
+      "file": "mmc3.pdf",
+      "status": "skipped_by_user_incomplete",
+      "source_preserved": true,
+      "reason": "User explicitly skipped the interrupted subtask; no completion, catalog or cleanup promotion."
+    }
+  ]
+}

@@ -305,7 +305,7 @@
       "pathway enrichment",
       "gene set",
       "differential expression",
-        "batch correction",
+      "batch correction",
       "random survival forest",
       "feature selection",
       "cross-validation",
@@ -388,7 +388,7 @@
       "apoptosis",
       "phosphorylation",
       "tumor regression",
-        "syngeneic",
+      "syngeneic",
       "基础实验"
     ],
     "liquid-biopsy": [
@@ -470,6 +470,11 @@
     ],
     "pleural-fluid": [
       "胸腔液"
+    ],
+    "bronchoalveolar-lavage": [
+      "bronchoalveolar lavage",
+      "BAL fluid",
+      "支气管肺泡灌洗液"
     ]
   },
   "models": {

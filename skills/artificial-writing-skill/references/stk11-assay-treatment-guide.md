@@ -2,7 +2,9 @@
 
 ## 2026-10-02 增量
 
-细标签当前覆盖38篇：此前20篇，加本次从本地PDF补齐精读的18篇。项目成员地图现有49篇（13核心+36专题支持）；核心highlight保持不变。首次完整精读只登记为`main_text_deep_read_complete`，不会自动变成独立复核通过；缺标签也不代表未测量。
+先前本地补齐批次增加18篇细标签；后续[补充CCR跨期刊批次](supplement-ccr-2026-10-02-intake.md)又新增15篇完整主文记录，并补读1篇既有文章的作者稿版本。PMID35504291按用户要求跳过，不计为完成。当前总量应从细标签、成员地图与权威期刊记录联查，不能沿用旧批次快照；13篇核心highlight保持不变。首次完整精读只登记为`main_text_deep_read_complete`，不会自动变成独立复核通过；缺标签也不代表未测量。
+
+2026-10-05复核覆盖后述跨期刊批次的16篇研究；六篇笔记先完成纠错，再按六门标准写入正式记录。实时状态见[复核汇总](source-rechecks/2026-10-05-stk11-supplement-summary.md)与各期刊quality register，不能由本页细标签或批次日期推断。
 
 ## 入口与状态
 
@@ -48,6 +50,6 @@ python scripts/search_stk11_references.py --pmid 42432246 --json
 python scripts/search_stk11_references.py --all-candidates --markdown
 ```
 
-`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。截至2026-10-02细标签覆盖38篇，其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
+`--origin`与`--assay`必须匹配同一条技术记录；不是一篇论文有“原创IHC”和“再分析单细胞”就匹配“原创单细胞”。候选只有旧筛选主题，不具备逐技术全文标签时不匹配技术过滤。当前覆盖范围见细标签JSON及各批次清单；其余候选的缺标签是待补，不是没有该技术。序列共突变更细的旧全库标签仍通过search_language的co-alteration过滤检索。
 
 段落/语句在原期刊section catalog，使用search_language按Abstract/Introduction/Methods/Results/Discussion/Conclusion检索；该目录不复制语言条目，也不额外累加词句数。合成句架不是原文引文，PDF页码是支撑概念的阅读定位，不是所有词句逐字出现的证明。

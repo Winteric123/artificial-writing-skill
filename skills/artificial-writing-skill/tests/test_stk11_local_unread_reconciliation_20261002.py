@@ -14,6 +14,11 @@ PMIDS = {'26833127', '28538732', '30297358', '31040157', '32312757', '32649874',
          '34740862', '36150391', '36793385', '38330261', '38877143', '38997257',
          '39207369', '39637943', '40198901', '40645185', '40749670', '40830141'}
 STRICT = PMIDS - {'38330261', '36793385'}
+LIVE_PASSED = {'34740862', '36150391'}
+REVIEW_METADATA = {
+    '34740862': ('independent_agent_source_recheck', '2026-10-02'),
+    '36150391': ('same_agent_source_recheck', '2026-10-02'),
+}
 
 
 def rows(name):
@@ -41,7 +46,8 @@ class LocalUnreadReconciliation(unittest.TestCase):
         cls.catalog_rows = []
         cls.quality = {}
         for configuration in cls.registry.values():
-            cls.catalog_rows.extend(row for row in rows(configuration['language_catalog']) if row['source_article_ids'] in PMIDS)
+            # Preserve the historical intake's exact language assets; later version addenda are tested separately.
+            cls.catalog_rows.extend(row for row in rows(configuration['language_catalog']) if row['source_article_ids'] in PMIDS and row['source_asset'] == cls.intake[row['source_article_ids']]['language_note'])
             cls.quality.update({row['pmid']: row for row in rows(configuration['quality']) if row['pmid'] in PMIDS})
 
     def test_exact_batch_and_false_positive_boundary(self):
@@ -51,13 +57,13 @@ class LocalUnreadReconciliation(unittest.TestCase):
                 self.assertEqual(self.intake[pmid]['jif_over_10_in_2025_snapshot'], 'yes' if pmid in STRICT else 'no')
         self.assertNotIn('17676035', {row['pmid'] for row in self.manifest})
 
-    def test_first_read_is_not_independent_acceptance(self):
+    def test_intake_snapshot_is_separate_from_live_review_status(self):
         for pmid in PMIDS:
             with self.subTest(pmid=pmid):
                 row = self.library[pmid]
                 self.assertEqual(row['reading_stage'], 'main_text_deep_read_complete')
                 self.assertEqual(row['main_read_completed_on'], '2026-10-02')
-                expected_review = 'passed' if pmid == '34740862' else 'not_reviewed'
+                expected_review = 'passed' if pmid in LIVE_PASSED else 'not_reviewed'
                 self.assertEqual(row['review_status'], expected_review)
                 self.assertEqual(row['stk11_highlight'], 'no')
                 manifest = self.intake[pmid]
@@ -69,10 +75,10 @@ class LocalUnreadReconciliation(unittest.TestCase):
                 quality = self.quality[pmid]
                 self.assertEqual(quality['review_status'], expected_review)
                 for gate in ('coverage_check', 'evidence_check', 'results_check', 'language_check', 'traceability_check', 'transfer_check'):
-                    self.assertEqual(quality[gate], 'pass' if pmid == '34740862' else 'pending')
-                if pmid == '34740862':
-                    self.assertEqual(quality['review_method'], 'independent_agent_source_recheck')
-                    self.assertEqual(quality['reviewed_on'], '2026-10-02')
+                    self.assertEqual(quality[gate], 'pass' if pmid in LIVE_PASSED else 'pending')
+                if pmid in LIVE_PASSED:
+                    self.assertEqual((quality['review_method'], quality['reviewed_on']),
+                                     REVIEW_METADATA[pmid])
                     self.assertTrue((REFS / quality['review_record']).is_file())
 
     def test_new_journals_have_isolated_assets(self):
@@ -89,8 +95,10 @@ class LocalUnreadReconciliation(unittest.TestCase):
         strict = [row for row in candidates if row['jif_over_10']]
         appendix = [row for row in candidates if not row['jif_over_10']]
         self.assertEqual((len(strict), len(appendix)), (80, 4))
-        self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in strict), 48)
-        self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in appendix), 2)
+        later = json.loads((REFS / 'supplement-ccr-2026-10-02-intake.json').read_text(encoding='utf-8'))
+        new = {row['pmid'] for row in later['records'] if row['new_to_library']}
+        self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in strict), 48 + len(new & {r['pmid'] for r in strict}))
+        self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in appendix), 2 + len(new & {r['pmid'] for r in appendix}))
 
     def test_language_locators_resolve_to_exact_lines(self):
         counts = Counter(row['source_article_ids'] for row in self.catalog_rows)

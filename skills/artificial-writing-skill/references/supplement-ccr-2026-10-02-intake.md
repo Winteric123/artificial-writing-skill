@@ -1,0 +1,37 @@
+# 补充CCR：2026-10-02 本批精读与归档目录
+
+18个供稿PDF对应17篇研究，其中1个完全重复副本。本次处理17个PDF/16篇：15篇新增主文精读，1篇补读44页作者稿版本。PMID35504291（mmc3.pdf）按用户要求跳过，未计为完成且保留原件。已处理论文涉及10种期刊，没有Clinical Cancer Research文章。首次精读与独立六门验收分开：本批均未新增passed状态。
+
+**2026-10-05状态覆盖：**上述末句仅描述2026-10-02首次入库时点。随后16篇均完成有界原始来源复核，其中六篇先修正笔记再复核；当前正式状态与方法见[复核汇总](source-rechecks/2026-10-05-stk11-supplement-summary.md)及各期刊quality register。外部补充材料范围未因此扩大，PMID35504291仍保持跳过。
+
+按实际期刊/年份归档；表格保留主文、内嵌材料、外部补充材料的区别。文献题名链接PubMed，笔记链接技能文件。
+
+| PMID / 题名 | 年份 · 期刊 | STK11相关原因 / 分类 | 供稿版本·页数 | 阅读与补充范围 | 笔记 |
+|---|---|---|---|---|---|
+| [37100205 — Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial](https://pubmed.ncbi.nlm.nih.gov/37100205/) | 2023 · Annals of Oncology | prospective/retrospective resected NSCLC cohorts with supervised digital pathology and molecular association; direct_mutation | publisher_typeset_pdf; 11页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](annals-of-oncology-2023-37100205-reading.md) |
+| [36150391 — MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer](https://pubmed.ncbi.nlm.nih.gov/36150391/) | 2022 · Cancer Cell | preclinical schedule-dependent cGAS-STING immunogenic priming; direct_function | author_manuscript; 44页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-cell-2022-36150391-reading.md) |
+| [37068173 — Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC](https://pubmed.ncbi.nlm.nih.gov/37068173/) | 2023 · Cancer Discovery | pooled multicenter retrospective KRAS G12C inhibitor cohort; direct_mutation | author_manuscript; 29页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-discovery-2023-37068173-reading.md) |
+| [42008781 — LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/42008781/) | 2026 · Cancer Discovery | LIF-SOX17肿瘤可塑性与免疫抑制性髓系生态位; direct_function | publisher_typeset_pdf; 20页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-discovery-2026-42008781-reading.md) |
+| [33853830 — Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/33853830/) | 2021 · Cancer Research | LKB1缺失、粒细胞样MDSC与联合检查点阻断抵抗; direct_function | author_manuscript; 30页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-research-2021-33853830-reading.md) |
+| [34045189 — STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma](https://pubmed.ncbi.nlm.nih.gov/34045189/) | 2021 · Cancer Research | LKB1功能缺失相关DNA低甲基化与SAM-e耗竭; direct_function | author_accepted_manuscript; 24页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-research-2021-34045189-reading.md) |
+| [36512628 — PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/36512628/) | 2023 · Cancer Research | LKB1缺失-PARP1-STAT1 PARylation与PARP抑制联合免疫治疗; direct_function | publisher_typeset_pdf; 14页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-research-2023-36512628-reading.md) |
+| [40882030 — TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy](https://pubmed.ncbi.nlm.nih.gov/40882030/) | 2025 · Cancer Research | CoREST抑制与STK11缺失肿瘤免疫增敏; direct_function | publisher_typeset_pdf; 17页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](cancer-research-2025-40882030-reading.md) |
+| [33264619 — Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/33264619/) | 2020 · Cell Reports | STK11-KEAP1共同失活、铁死亡保护与SCD1依赖; direct_function | publisher_typeset_main_with_embedded_supplement; 33页 | 主文及全部主图/表完成；supplement=partially_reviewed，范围见笔记 | [精读](cell-reports-2020-33264619-reading.md) |
+| [39694700 — LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer](https://pubmed.ncbi.nlm.nih.gov/39694700/) | 2024 · Journal for ImmunoTherapy of Cancer | LKB1-AMPK-Skp2调节PD-L1稳定性及抗PD-L1负向联合结果; direct_function | publisher_typeset_pdf; 16页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](jitc-2024-39694700-reading.md) |
+| [41135949 — Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer](https://pubmed.ncbi.nlm.nih.gov/41135949/) | 2025 · Journal for ImmunoTherapy of Cancer | LKB1-AMPK-FOXA1-AGR2分泌调控与树突状细胞功能障碍; direct_function | publisher_typeset_pdf; 18页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](jitc-2025-41135949-reading.md) |
+| [41423267 — Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer](https://pubmed.ncbi.nlm.nih.gov/41423267/) | 2025 · Journal for ImmunoTherapy of Cancer | 吸烟背景、STK11共突变及免疫治疗结局; direct_mutation | publisher_typeset_pdf; 12页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](jitc-2025-41423267-reading.md) |
+| [37098232 — Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100](https://pubmed.ncbi.nlm.nih.gov/37098232/) | 2023 · Journal of Clinical Oncology | single-arm phase I/II extended follow-up with exploratory biomarker subgroups; direct_mutation | publisher_typeset_pdf; 9页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](jco-2023-37098232-reading.md) |
+| [34870237 — Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms](https://pubmed.ncbi.nlm.nih.gov/34870237/) | 2021 · Nature Cancer | NSCLC蛋白基因组分型、STK11相关FGL1/CPS1表型及分类器验证; direct_mutation | author_accepted_manuscript; 59页 | 主文及全部主图/表完成；supplement=partially_reviewed，范围见笔记 | [精读](nature-cancer-2021-34870237-reading.md) |
+| [34341533 — LKB1 inactivation modulates chromatin accessibility to drive metastatic progression](https://pubmed.ncbi.nlm.nih.gov/34341533/) | 2021 · Nature Cell Biology | LKB1/SIK相关阶段依赖染色质状态与SOX17转移表型; direct_function | author_manuscript; 46页 | 主文及全部主图/表完成；supplement=partially_reviewed，范围见笔记 | [精读](nature-cell-biology-2021-34341533-reading.md) |
+| [40057483 — Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer](https://pubmed.ncbi.nlm.nih.gov/40057483/) | 2025 · Nature Communications | LKB1缺失相关IAP-JAK1-STING免疫依赖性脆弱性; direct_function | publisher_typeset_pdf; 18页 | 主文及全部主图/表完成；supplement=not_supplied，范围见笔记 | [精读](nature-communications-2025-40057483-reading.md) |
+| [35504291 — Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer](https://pubmed.ncbi.nlm.nih.gov/35504291/) | 2022 · Cell Metabolism | 待完成分类；不采用未完成精读结论 | mmc3.pdf | 用户要求跳过；原件保留，未计入完成 | 无完成笔记 |
+
+## 阅读与语言使用边界
+
+- 保留分节术语、短搭配和合成句架；句架不是原文引用，也不是替用户产生的新实验结果。
+- `mmc3.pdf`和`mmc6.pdf`是含主文与内嵌补充图的完整供稿，不是可直接丢弃的补充附件；前者本次跳过，后者按实际已读范围登记。
+- PMID36150391保留既有26页正式排版稿作为检索选定版本，新增44页作者稿单独登记；作者稿页码不能冒充正式稿页码。
+- 全部新增研究仅进入topic_support，不扩张用户原定core_highlight。
+- 数值、标签或图文方向冲突保留在逐篇笔记和language-controls提醒中；不以自动索引检查代替源文献复核。
+
+本批来源清单：[机器可读登记](supplement-ccr-2026-10-02-intake.json)。本地绝对路径和清理证据只保留在私有任务目录；PDF不属于分发到GitHub的技能内容。

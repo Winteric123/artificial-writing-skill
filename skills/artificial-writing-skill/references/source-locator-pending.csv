@@ -1,10 +1,13 @@
 ﻿stable_id,expression,source_article_ids,source_asset,source_line,state
+annals-of-oncology-lang-01f09483bb89545e3f31,heterogeneity within anatomical stage,37100205,annals-of-oncology-2023-37100205-reading.md,79,no-literal-match-needs-context-review
 annals-of-oncology-lang-099d3b0a7fda7178d037,biomarker-evaluable population,36709038,annals-of-oncology-2023-36709038-language.md,46,no-literal-match-needs-context-review
 annals-of-oncology-lang-0f038b50dca3d0b1d56b,analysis-specific denominator,39637943,annals-of-oncology-2025-39637943-language.md,11,no-literal-match-needs-context-review
 annals-of-oncology-lang-10fd62bbbbc2c4c5304c,wide confidence intervals,36709038,annals-of-oncology-2023-36709038-language.md,55,no-literal-match-needs-context-review
 annals-of-oncology-lang-22d12f06ca45be99fd5f,retrospective exploratory biomarker analysis,36709038,annals-of-oncology-2023-36709038-language.md,31,no-literal-match-needs-context-review
 annals-of-oncology-lang-2dc5f4c346ea6e6a73d4,treatment-independent prognostic context,37121400,annals-of-oncology-2023-37121400-language.md,18,no-literal-match-needs-context-review
+annals-of-oncology-lang-2f19501f313bc62c99b9,targeted immune-expression panel,37100205,annals-of-oncology-2023-37100205-reading.md,83,no-literal-match-needs-context-review
 annals-of-oncology-lang-31f712de69051b97215c,purity-adjusted sensitivity analysis,37121400,annals-of-oncology-2023-37121400-language.md,32,no-literal-match-needs-context-review
+annals-of-oncology-lang-5c65dbcf1a997580dac0,hypothesis-generating classification threshold,37100205,annals-of-oncology-2023-37100205-reading.md,87,no-literal-match-needs-context-review
 annals-of-oncology-lang-601df6b4c6fe8b046aad,complete-case multivariable analysis,36526124,annals-of-oncology-2023-36526124-language.md,30,no-literal-match-needs-context-review
 annals-of-oncology-lang-63171d351cf86f7b5b1c,beta-binomial likelihood,36526124,annals-of-oncology-2023-36526124-language.md,27,no-literal-match-needs-context-review
 annals-of-oncology-lang-6351edfa2a2a3ca4b183,purity-adjusted variant allele frequency,36526124,annals-of-oncology-2023-36526124-language.md,28,no-literal-match-needs-context-review
@@ -12,6 +15,7 @@ annals-of-oncology-lang-655ef231a29f14ca08d5,nominal P value,36709038,annals-of-
 annals-of-oncology-lang-76e4292e70acb871f652,mucinous histologic component,39637943,annals-of-oncology-2025-39637943-language.md,9,no-literal-match-needs-context-review
 annals-of-oncology-lang-7bf9afebefe11b8caf5b,permutation-based feature importance,37121400,annals-of-oncology-2023-37121400-language.md,31,no-literal-match-needs-context-review
 annals-of-oncology-lang-823449830c0660063533,equivocal evidence,36709038,annals-of-oncology-2023-36709038-language.md,41,no-literal-match-needs-context-review
+annals-of-oncology-lang-88b6431fd8c3f4fbfb12,pathologist-supervised pixel classification; whole-slide image analysis,37100205,annals-of-oncology-2023-37100205-reading.md,81,no-literal-match-needs-context-review
 annals-of-oncology-lang-8ee09cad2a709e24ef7a,allelic context may refine mutation-based stratification,36526124,annals-of-oncology-2023-36526124-language.md,17,no-literal-match-needs-context-review
 annals-of-oncology-lang-92bfb88301b236673854,genomically enriched but not gene-defined,39637943,annals-of-oncology-2025-39637943-language.md,12,no-literal-match-needs-context-review
 annals-of-oncology-lang-97fa2193b2c0a67b28d4,orthogonal immune phenotyping,36526124,annals-of-oncology-2023-36526124-language.md,31,no-literal-match-needs-context-review
@@ -25,6 +29,7 @@ annals-of-oncology-lang-cad076668c4566ea19ab,cohort-specific upper-tertile thres
 annals-of-oncology-lang-cd48b189bd83c9655565,partial versus complete allelic inactivation,36526124,annals-of-oncology-2023-36526124-language.md,25,no-literal-match-needs-context-review
 annals-of-oncology-lang-d073a0d7bacfd73589a8,metastatic organotropism,37121400,annals-of-oncology-2023-37121400-language.md,26,no-literal-match-needs-context-review
 annals-of-oncology-lang-e9e5a38fe450f9350451,log10-transformed continuous variable,36709038,annals-of-oncology-2023-36709038-language.md,48,no-literal-match-needs-context-review
+annals-of-oncology-lang-ed3865ae5f58a9a525fe,spatial immune phenotype; immune-cell exclusion,37100205,annals-of-oncology-2023-37100205-reading.md,76,no-literal-match-needs-context-review
 annals-of-oncology-lang-f21593099e9ab1bd3bc4,assay-dependent threshold,36709038,annals-of-oncology-2023-36709038-language.md,63,no-literal-match-needs-context-review
 cancer-cell-lang-05a832345fac1a50833a,cluster-wide versus genotype-specific feature,40749670,cancer-cell-2025-40749670-language.md,10,no-literal-match-needs-context-review
 cancer-cell-lang-0ac0261800006b656fde,passage-specific chromatin-accessible regions,38402609,cancer-cell-2024-38402609-language.md,37,no-literal-match-needs-context-review
@@ -40,6 +45,7 @@ cancer-cell-lang-566162e2c7e927d95252,proteomic-context heterogeneity,40749670,c
 cancer-cell-lang-57a019e4ceda3e33fe91,context-dependent sufficiency,38402609,cancer-cell-2024-38402609-language.md,46,no-literal-match-needs-context-review
 cancer-cell-lang-585dd919c400e6c89560,compensatory ATR-CHK1 activation,40645185,cancer-cell-2025-40645185-language.md,6,no-literal-match-needs-context-review
 cancer-cell-lang-59885f7a195c1f038c2f,exploratory clinical signal,40645185,cancer-cell-2025-40645185-language.md,12,no-literal-match-needs-context-review
+cancer-cell-lang-6cbbfbda31c26953dfe7,epigenetically silenced innate-immune signaling,36150391,cancer-cell-2022-36150391-reading.md,136,no-literal-match-needs-context-review
 cancer-cell-lang-7372466af6451a725808,lineage-state adaptation under targeted therapy,38402609,cancer-cell-2024-38402609-language.md,23,no-literal-match-needs-context-review
 cancer-cell-lang-74a4a5f577e6d162cb84,genotype-dependent ATR-inhibitor sensitivity,40645185,cancer-cell-2025-40645185-language.md,7,no-literal-match-needs-context-review
 cancer-cell-lang-753f328f4ecc8bcb7c53,reductionist immune co-culture,36150391,cancer-cell-2022-36150391-language.md,12,no-literal-match-needs-context-review
@@ -53,9 +59,11 @@ cancer-cell-lang-b94a6439a0f605bf736d,harmonized joint-cohort analysis,40749670,
 cancer-cell-lang-bc15e98ec40ebe571f3b,heterogeneous active-control regimens,40645185,cancer-cell-2025-40645185-language.md,11,no-literal-match-needs-context-review
 cancer-cell-lang-bd2402ddd081dfbf2bb3,tumor-cell-intrinsic innate sensing,36150391,cancer-cell-2022-36150391-language.md,10,no-literal-match-needs-context-review
 cancer-cell-lang-cb284040c2cbd1c1fa64,modality-specific denominator,40749670,cancer-cell-2025-40749670-language.md,6,no-literal-match-needs-context-review
+cancer-cell-lang-d196b5ad8d960b242087,pulse treatment followed by drug withdrawal; syngeneic transplantation,36150391,cancer-cell-2022-36150391-reading.md,140,no-literal-match-needs-context-review
 cancer-cell-lang-d2ea47307cee947d66ab,pulsed MPS1 inhibition,36150391,cancer-cell-2022-36150391-language.md,6,no-literal-match-needs-context-review
 cancer-cell-lang-d52bc10203ee5efeca46,late-like early-stage disease,40749670,cancer-cell-2025-40749670-language.md,12,no-literal-match-needs-context-review
 cancer-cell-lang-db50b418d6ed85e26eb4,spike-in-calibrated histone-mark profiling,38402609,cancer-cell-2024-38402609-language.md,36,no-literal-match-needs-context-review
+cancer-cell-lang-f2dc9179126ac6fbdb31,redistribution from the tumor periphery to the interior,36150391,cancer-cell-2022-36150391-reading.md,142,no-literal-match-needs-context-review
 cancer-cell-lang-f8ce42fc24a791d3f1b1,convergent dependency through distinct mechanisms,40645185,cancer-cell-2025-40645185-language.md,9,no-literal-match-needs-context-review
 cancer-discovery-lang-0141d77145353f674a36,jointly characterize [genomic and expression features]; resolve heterogeneity within [driver-defined disease],26069186,cancer-discovery-2026-09-19-stk11-language.md,147,no-literal-match-needs-context-review
 cancer-discovery-lang-07aeafcfbd644d6b9328,nominal differential-expression threshold,34230008,cancer-discovery-2021-34230008-language.md,34,no-literal-match-needs-context-review
@@ -64,15 +72,19 @@ cancer-discovery-lang-11b3618a9a2252cb5730,prognostic association 预后关联; 
 cancer-discovery-lang-1694e527ca0a428ae859,isogenic rescue 同源背景回补; knockdown 敲低; concentration–response curve 浓度反应曲线; half-maximal inhibitory concentration 半数抑制浓度,26069186,cancer-discovery-2026-09-19-stk11-language.md,179,no-literal-match-needs-context-review
 cancer-discovery-lang-18467ef102d89ef97a56,select the number of clusters using [criterion]; apply a fixed classifier to [independent cohort]; harmonize expression within [platform],26069186,cancer-discovery-2026-09-19-stk11-language.md,169,no-literal-match-needs-context-review
 cancer-discovery-lang-2a5c91f69e68b16825fe,attenuated cytosolic-DNA sensing,30297358,cancer-discovery-2019-30297358-language.md,5,no-literal-match-needs-context-review
+cancer-discovery-lang-2dc9a8229a3ac48cd9e6,"primary, adaptive and acquired resistance",37068173,cancer-discovery-2023-37068173-reading.md,92,no-literal-match-needs-context-review
 cancer-discovery-lang-37a24b7fbb932ec7171b,endpoint-specific censoring 终点特异删失; Cox proportional hazards model Cox比例风险模型; interaction test 交互作用检验; multiplicity correction 多重性校正,29773717,cancer-discovery-2026-09-19-stk11-language.md,267,no-literal-match-needs-context-review
 cancer-discovery-lang-37dafb82cc7e8a47a346,a mechanism-informed combination strategy,34230008,cancer-discovery-2021-34230008-language.md,19,no-literal-match-needs-context-review
 cancer-discovery-lang-3a9c1ca6ece7d2721899,resistance-associated phenotype 耐药相关表型; context-specific biomarker 背景特异标志物; validation cohort 验证队列,29773717,cancer-discovery-2026-09-19-stk11-language.md,311,no-literal-match-needs-context-review
 cancer-discovery-lang-3b2f4e86e5288849eb53,account for variation within [driver-defined group]; complement existing biomarkers; motivate functional testing,29773717,cancer-discovery-2026-09-19-stk11-language.md,246,no-literal-match-needs-context-review
 cancer-discovery-lang-40b9b3b6e37f3d3a6b40,epigenetically silenced STING state,30297358,cancer-discovery-2019-30297358-language.md,6,no-literal-match-needs-context-review
+cancer-discovery-lang-45f7904d307d446ee54c,deconvolution of overlapping co-alterations,37068173,cancer-discovery-2023-37068173-reading.md,99,no-literal-match-needs-context-review
 cancer-discovery-lang-462efdc34fbc4f0d96f1,response heterogeneity 反应异质性; co-mutational context 共突变背景; immune escape 免疫逃逸,29773717,cancer-discovery-2026-09-19-stk11-language.md,245,no-literal-match-needs-context-review
+cancer-discovery-lang-4e11540e79fd94f1c0fd,autochthonous genetically engineered lung tumors,42008781,cancer-discovery-2026-42008781-reading.md,53,no-literal-match-needs-context-review
 cancer-discovery-lang-4ff3872b24c60fad3dd4,primary resistance to checkpoint blockade,34230008,cancer-discovery-2021-34230008-language.md,27,no-literal-match-needs-context-review
 cancer-discovery-lang-54974c63e5e9e7669e02,associate with diminished response to [regimen]; evaluate across [clinical cohorts]; test in isogenic models,29773717,cancer-discovery-2026-09-19-stk11-language.md,235,no-literal-match-needs-context-review
 cancer-discovery-lang-59262b6cd26f2088fa28,objective response rate 客观缓解率; disease control rate 疾病控制率; functional loss 功能缺失; confidence interval 置信区间,29773717,cancer-discovery-2026-09-19-stk11-language.md,278,no-literal-match-needs-context-review
+cancer-discovery-lang-5b615cc65e7d0b5f851a,gene-specific mutation-evaluable population,37068173,cancer-discovery-2023-37068173-reading.md,94,no-literal-match-needs-context-review
 cancer-discovery-lang-6229f60021f79c76a18c,identify a candidate contributor to [resistance]; support further evaluation in [defined setting],29773717,cancer-discovery-2026-09-19-stk11-language.md,312,no-literal-match-needs-context-review
 cancer-discovery-lang-63b8ab0c4c7dd3d8eafd,isogenic knockout 同源背景敲除; syngeneic tumor model 同系肿瘤模型; intratumoral CD8 cells 肿瘤内CD8细胞,29773717,cancer-discovery-2026-09-19-stk11-language.md,289,no-literal-match-needs-context-review
 cancer-discovery-lang-73b63fcbbc01fdb9150c,does not distinguish prognosis from prediction; supports a mechanistic contribution in [model]; requires a treatment interaction,29773717,cancer-discovery-2026-09-19-stk11-language.md,301,no-literal-match-needs-context-review
@@ -83,6 +95,7 @@ cancer-discovery-lang-8356a712f02b3774b02c,beyond the initiating driver; within 
 cancer-discovery-lang-95b237fd042273568dc6,ex vivo suppression assay,34230008,cancer-discovery-2021-34230008-language.md,33,no-literal-match-needs-context-review
 cancer-discovery-lang-9801744df885ecdc6203,among [n] response-evaluable patients; compared with [reference genotype]; directionally consistent but imprecise,29773717,cancer-discovery-2026-09-19-stk11-language.md,279,no-literal-match-needs-context-review
 cancer-discovery-lang-9b29249e978fdf11a3a2,estimate survival using [method]; censor at [endpoint-specific date]; adjust for multiple comparisons using [method],29773717,cancer-discovery-2026-09-19-stk11-language.md,268,no-literal-match-needs-context-review
+cancer-discovery-lang-9d7b0c3995ac210580fd,expanded cellular indexing of transcriptomes and epitopes by sequencing,42008781,cancer-discovery-2026-42008781-reading.md,54,no-literal-match-needs-context-review
 cancer-discovery-lang-9dd87f941a6037b432db,enriched in [subtype]; associated with reduced [pathway readout]; concordant at the [RNA/protein] level,26069186,cancer-discovery-2026-09-19-stk11-language.md,191,no-literal-match-needs-context-review
 cancer-discovery-lang-a55d4963ca1f0840cfab,antisense-mediated target knockdown,34230008,cancer-discovery-2021-34230008-language.md,32,no-literal-match-needs-context-review
 cancer-discovery-lang-b7b09a70c6991ed6d652,primary resistance 原发耐药; genomic correlate 基因组相关因素; tumor-intrinsic mechanism 肿瘤内在机制,29773717,cancer-discovery-2026-09-19-stk11-language.md,234,no-literal-match-needs-context-review
@@ -94,31 +107,52 @@ cancer-discovery-lang-d5db11c165c4308388c5,provide a framework for [stratificati
 cancer-discovery-lang-d7cfa20c144947827671,recurrence-free survival 无复发生存; adjusted association 调整后关联; nonsignificant difference 未达显著差异; compound-specific response 化合物特异反应,26069186,cancer-discovery-2026-09-19-stk11-language.md,201,no-literal-match-needs-context-review
 cancer-discovery-lang-dcf7d16b05bc291ffc74,CRISPR-mediated gene deletion,34230008,cancer-discovery-2021-34230008-language.md,30,no-literal-match-needs-context-review
 cancer-discovery-lang-e34e3aa282e29cfec177,consistent with a context-dependent dependency; not fully captured by mutation status; warrant prospective evaluation,26069186,cancer-discovery-2026-09-19-stk11-language.md,213,no-literal-match-needs-context-review
+cancer-discovery-lang-e63b11328ce1e0af5d61,false-discovery-rate-adjusted enrichment analysis,37068173,cancer-discovery-2023-37068173-reading.md,96,no-literal-match-needs-context-review
 cancer-discovery-lang-e93a61846a62b53b19a1,restore pathway competence,30297358,cancer-discovery-2019-30297358-language.md,7,no-literal-match-needs-context-review
 cancer-discovery-lang-e9536957be5b57027951,reconstitute interferon-related output,30297358,cancer-discovery-2019-30297358-language.md,8,no-literal-match-needs-context-review
+cancer-discovery-lang-efa2f650953eb8156c28,genomic modifiers of treatment outcome,37068173,cancer-discovery-2023-37068173-reading.md,89,no-literal-match-needs-context-review
+cancer-discovery-lang-f87c9ab1db00a3419175,a dedifferentiated inflammatory tumor-cell state,42008781,cancer-discovery-2026-42008781-reading.md,56,no-literal-match-needs-context-review
 cancer-discovery-lang-fbcaae91c2f34293f329,persist after adjustment for [covariates]; fail to meet the prespecified threshold; differ across compounds,26069186,cancer-discovery-2026-09-19-stk11-language.md,202,no-literal-match-needs-context-review
 cancer-discovery-lang-fe616a1d959b11b5218f,co-mutation enrichment 共突变富集; functional deficiency 功能缺失; protein abundance 蛋白丰度; inflammatory signature 炎症表达特征,26069186,cancer-discovery-2026-09-19-stk11-language.md,190,no-literal-match-needs-context-review
+cancer-research-lang-0962b37f958c9a971a9f,maintenance methylation; repetitive-element transcription; pioneer transcription factor,34045189,cancer-research-2021-34045189-reading.md,68,no-literal-match-needs-context-review
+cancer-research-lang-0ed590349df68ac60b44,increased intratumoral T-cell density,40882030,cancer-research-2025-40882030-reading.md,90,no-literal-match-needs-context-review
+cancer-research-lang-17a981d97ffa06620177,functional LKB1 deficiency; methyl-donor availability,34045189,cancer-research-2021-34045189-reading.md,65,no-literal-match-needs-context-review
+cancer-research-lang-30184e07183ac153fe14,myeloid-mediated immunosuppression,33853830,cancer-research-2021-33853830-reading.md,76,no-literal-match-needs-context-review
 cancer-research-lang-3692a77202738d0b82ee,re-expression rescue,40198901,cancer-research-2025-40198901-language.md,13,no-literal-match-needs-context-review
+cancer-research-lang-3a6f99ebb0f4c85d0457,differentially methylated loci; chromatin-bound fraction; relative spectral intensity,34045189,cancer-research-2021-34045189-reading.md,72,no-literal-match-needs-context-review
 cancer-research-lang-4049163077b1d137c941,genotype-specific pathway rewiring,40198901,cancer-research-2025-40198901-language.md,12,no-literal-match-needs-context-review
+cancer-research-lang-4518938548a87c51d5c2,preclinical therapeutic window,40882030,cancer-research-2025-40882030-reading.md,93,no-literal-match-needs-context-review
 cancer-research-lang-489652fa07dd6961dd81,BMP6-ALK2-Smad axis,39207369,cancer-research-2024-39207369-language.md,49,no-literal-match-needs-context-review
 cancer-research-lang-49416a1e136f984adcd7,anaplerotic support,31040157,cancer-research-2019-31040157-language.md,10,no-literal-match-needs-context-review
 cancer-research-lang-49d5d845da3fafc705de,tumor-associated neutrophil accumulation,26833127,cancer-research-2016-26833127-language.md,7,no-literal-match-needs-context-review
 cancer-research-lang-49dc8997804e614f45e4,restore proliferative and effector activity,26833127,cancer-research-2016-26833127-language.md,12,no-literal-match-needs-context-review
 cancer-research-lang-4eeecee8ed0d7743c003,cooperative metabolic reprogramming,31040157,cancer-research-2019-31040157-language.md,7,no-literal-match-needs-context-review
 cancer-research-lang-4f9c8bbaae0e04f55184,partial rescue,31040157,cancer-research-2019-31040157-language.md,13,no-literal-match-needs-context-review
+cancer-research-lang-528573847e77eee8fdb1,paired pretreatment and on-treatment biopsies,40882030,cancer-research-2025-40882030-reading.md,87,no-literal-match-needs-context-review
+cancer-research-lang-54e6775a66cb9625fec6,model-dependent antitumor immunity,33853830,cancer-research-2021-33853830-reading.md,86,no-literal-match-needs-context-review
 cancer-research-lang-5bb859c18b2f26fd8e42,iron-homeostasis program,39207369,cancer-research-2024-39207369-language.md,11,no-literal-match-needs-context-review
+cancer-research-lang-5d6bb0cb7588060b58c0,tumor-cell-intrinsic immune evasion,40882030,cancer-research-2025-40882030-reading.md,82,no-literal-match-needs-context-review
 cancer-research-lang-5f1f47020ccb65282a2d,expression association,39207369,cancer-research-2024-39207369-language.md,14,no-literal-match-needs-context-review
 cancer-research-lang-69734d0d2bbb0ada1751,myeloid-dominant immune contexture,26833127,cancer-research-2016-26833127-language.md,11,no-literal-match-needs-context-review
+cancer-research-lang-6e3fd2359570ffef915f,syngeneic rechallenge,33853830,cancer-research-2021-33853830-reading.md,81,no-literal-match-needs-context-review
 cancer-research-lang-707586e4b870b50e3784,isogenic rescue,31040157,cancer-research-2019-31040157-language.md,12,no-literal-match-needs-context-review
+cancer-research-lang-724d3615ed5374a8bff3,kinase-dead rescue control,36512628,cancer-research-2023-36512628-reading.md,68,no-literal-match-needs-context-review
 cancer-research-lang-75e0ab8576d3cf3dff55,cystine-glutamate antiporter,40198901,cancer-research-2025-40198901-language.md,50,no-literal-match-needs-context-review
+cancer-research-lang-75e9b502e0b6577585ed,FDR-adjusted guide depletion,40882030,cancer-research-2025-40882030-reading.md,85,no-literal-match-needs-context-review
 cancer-research-lang-83343ac88dc646471699,no added survival benefit,26833127,cancer-research-2016-26833127-language.md,14,no-literal-match-needs-context-review
 cancer-research-lang-835e1dc5c6360abc05d6,invasion-linked transcriptomic screen,39207369,cancer-research-2024-39207369-language.md,8,no-literal-match-needs-context-review
 cancer-research-lang-838bfa73cf5041b293dd,genotype-selective vulnerability,31040157,cancer-research-2019-31040157-language.md,11,no-literal-match-needs-context-review
+cancer-research-lang-86d7fbf39f1d7f6c590c,composite functional-status assignment; matched sequence background; within-patient replicate averaging,34045189,cancer-research-2021-34045189-reading.md,70,no-literal-match-needs-context-review
+cancer-research-lang-a903222d549448a8a19c,pooled tumor-derived cells,33853830,cancer-research-2021-33853830-reading.md,79,no-literal-match-needs-context-review
+cancer-research-lang-aa02aee8d9a9bfd348ae,isogenic knockout model,40882030,cancer-research-2025-40882030-reading.md,84,no-literal-match-needs-context-review
 cancer-research-lang-b1d861e9546074c1cc54,prognostic association rather than treatment prediction,40198901,cancer-research-2025-40198901-language.md,15,no-literal-match-needs-context-review
+cancer-research-lang-b355fd5573c44e192fed,complex-selective deacetylase inhibition,40882030,cancer-research-2025-40882030-reading.md,88,no-literal-match-needs-context-review
 cancer-research-lang-b5a8fb3482641fa0baee,did not significantly affect tumor growth,31040157,cancer-research-2019-31040157-language.md,14,no-literal-match-needs-context-review
 cancer-research-lang-b61851478e8157afa7bd,kinase-dependent restriction,39207369,cancer-research-2024-39207369-language.md,9,no-literal-match-needs-context-review
 cancer-research-lang-dba53d50fd200b723d1d,dose-dependent suppression of invasion,39207369,cancer-research-2024-39207369-language.md,12,no-literal-match-needs-context-review
+cancer-research-lang-e54baa64fc507e274327,kinase-dead rescue construct,33853830,cancer-research-2021-33853830-reading.md,78,no-literal-match-needs-context-review
 cancer-research-lang-ef05787eaf3a07cb104b,T-cell-suppressed microenvironment,26833127,cancer-research-2016-26833127-language.md,10,no-literal-match-needs-context-review
+cancer-research-lang-fd62f0e0658c96969eb6,immune sensitization,40882030,cancer-research-2025-40882030-reading.md,80,no-literal-match-needs-context-review
 ccr-lang-000ff6853169e63a0c3a,serial plasma sampling,38995268,ccr-2024-38995268-language.md,39,no-literal-match-needs-context-review
 ccr-lang-001042577f7d04f57628,3+3 dose-escalation design,34140403,ccr-2021-34140403-language.md,31,no-literal-match-needs-context-review
 ccr-lang-002b77e15473a340b55c,noncompartmental pharmacokinetics,41252574,ccr-2026-09-19-batch2-language.md,194,no-literal-match-needs-context-review
@@ -3153,6 +3187,10 @@ cell-lang-92a2a4459ab99f7370cd,proteomically visible but transcriptionally silen
 cell-lang-b86929dc42832b90e9b5,deep-scale proteogenomic characterization,32649874,cell-2020-32649874-language.md,5,no-literal-match-needs-context-review
 cell-lang-dc1a34fd319fb2af6606,mutation-associated phosphosite outlier,32649874,cell-2020-32649874-language.md,11,no-literal-match-needs-context-review
 cell-lang-e02bc703e36a5cb1d83a,hypothesis-generating therapeutic nomination,32649874,cell-2020-32649874-language.md,12,no-literal-match-needs-context-review
+cell-reports-lang-11bd701ab5ff759501ae,genotype-selective depletion; lipid-peroxide accumulation; orthogonal genetic validation,33264619,cell-reports-2020-33264619-reading.md,75,no-literal-match-needs-context-review
+cell-reports-lang-670dca378b327e785c43,coordinated tumor-suppressor loss; clinically tractable dependency,33264619,cell-reports-2020-33264619-reading.md,71,no-literal-match-needs-context-review
+cell-reports-lang-e0c7bc738327f2be6b2a,genotype-defined vulnerability; ferroptosis protection,33264619,cell-reports-2020-33264619-reading.md,68,no-literal-match-needs-context-review
+cell-reports-lang-e51760b9ade6cb266988,left-truncated survival analysis; allele-specific copy number; competitive dropout assay,33264619,cell-reports-2020-33264619-reading.md,73,no-literal-match-needs-context-review
 cell-research-lang-2c84b559a6c4c163dd69,focal amplification and arm-level copy-number change,41345544,cell-research-2025-41345544-language.md,39,no-literal-match-needs-context-review
 cell-research-lang-4bbb2c15d1dad91edd73,the transition from precursor lesions to invasive disease,41345544,cell-research-2025-41345544-language.md,31,no-literal-match-needs-context-review
 cell-research-lang-54e79eb5b8d1bd014cf4,quality-controlled tumor–normal sequencing pairs,41345544,cell-research-2025-41345544-language.md,24,no-literal-match-needs-context-review
@@ -3167,14 +3205,19 @@ esmo-open-lang-726052f3cb2b68f1b550,treatment-by-biomarker interaction,32312757,
 esmo-open-lang-7bb2d251f8b744bd5eb8,adverse prognostic association,32312757,esmo-open-2020-32312757-language.md,13,no-literal-match-needs-context-review
 esmo-open-lang-8f50385dcac5c52d2b57,co-occurring alterations,32312757,esmo-open-2020-32312757-language.md,14,no-literal-match-needs-context-review
 jco-lang-10493143fff04af44d59,personalized post-progression strategies,38207230,jco-2024-38207230-language.md,25,no-literal-match-needs-context-review
+jco-lang-12f675c3ed95cc82b09c,heterogeneity in response durability,37098232,jco-2023-37098232-reading.md,67,no-literal-match-needs-context-review
+jco-lang-23a9619efc08e702450d,late-onset treatment-related adverse events,37098232,jco-2023-37098232-reading.md,71,no-literal-match-needs-context-review
 jco-lang-24e679e745f5c12f0671,image-derived nearest-neighbor distance,38207230,jco-2024-38207230-language.md,31,no-literal-match-needs-context-review
 jco-lang-2e067f15ff2598a911e5,acquired resistance to immune checkpoint inhibition,38207230,jco-2024-38207230-language.md,17,no-literal-match-needs-context-review
 jco-lang-40def4259cbbd9923076,preclinical validation is necessary,38207230,jco-2024-38207230-language.md,40,no-literal-match-needs-context-review
 jco-lang-413b81b1348542ed0084,tumor lineage similarity,38207230,jco-2024-38207230-language.md,28,no-literal-match-needs-context-review
+jco-lang-54ee4333ef06c2ed1ed6,pooled phase I/II analysis; blinded independent central review,37098232,jco-2023-37098232-reading.md,69,no-literal-match-needs-context-review
 jco-lang-78ffb90077eb9a228924,temporal association does not establish causality,38207230,jco-2024-38207230-language.md,38,no-literal-match-needs-context-review
 jco-lang-8843cbe311d3290a1b94,paired pre- and post-treatment specimens,38207230,jco-2024-38207230-language.md,16,no-literal-match-needs-context-review
 jco-lang-891f81f32e8e806a89f5,arm-level copy-number alterations,38207230,jco-2024-38207230-language.md,29,no-literal-match-needs-context-review
+jco-lang-bae59210fe084c9a9130,enrichment in the early-progression subgroup,37098232,jco-2023-37098232-reading.md,74,no-literal-match-needs-context-review
 jco-lang-c6dd78408767ff196408,the mechanisms underlying acquired resistance remain incompletely characterized,38207230,jco-2024-38207230-language.md,26,no-literal-match-needs-context-review
+jco-lang-d20a0bfc77bd07d72238,long-term clinical benefit; molecular correlates,37098232,jco-2023-37098232-reading.md,64,no-literal-match-needs-context-review
 jco-lang-ed2cc0a26650f3dc750e,newly detected biallelic alteration,38207230,jco-2024-38207230-language.md,33,no-literal-match-needs-context-review
 jco-precision-oncology-lang-1978e717612ef193422b,inferred immune-cell abundance,38330261,jco-precision-oncology-2024-38330261-language.md,7,no-literal-match-needs-context-review
 jco-precision-oncology-lang-79f80d595ea9cca39019,heterogeneity within STK11-mutant disease,38330261,jco-precision-oncology-2024-38330261-language.md,5,no-literal-match-needs-context-review
@@ -3183,12 +3226,22 @@ jco-precision-oncology-lang-a691455ebf1557f209e0,cross-dataset triangulation,383
 jco-precision-oncology-lang-accf6c32aaf326e41632,immune-active transcriptional state,38330261,jco-precision-oncology-2024-38330261-language.md,6,no-literal-match-needs-context-review
 jco-precision-oncology-lang-b00e7ffb88758cce7347,directionally favorable but statistically inconclusive,38330261,jco-precision-oncology-2024-38330261-language.md,8,no-literal-match-needs-context-review
 jco-precision-oncology-lang-c1a49d49977c15ad89d3,prognostic rather than predictive evidence,38330261,jco-precision-oncology-2024-38330261-language.md,10,no-literal-match-needs-context-review
+jitc-lang-057a478e6c768725fc37,assay-specific analysis set,41423267,jitc-2025-41423267-reading.md,91,no-literal-match-needs-context-review
+jitc-lang-07e386f83f075460f9b6,panel-derived mutational signature,41423267,jitc-2025-41423267-reading.md,88,no-literal-match-needs-context-review
+jitc-lang-0a6cf3bcbc4942dc6fa4,residual treatment-selection bias,41423267,jitc-2025-41423267-reading.md,94,no-literal-match-needs-context-review
+jitc-lang-15da7e7d10aea0d8aa6c,reverse Kaplan-Meier follow-up,41423267,jitc-2025-41423267-reading.md,85,no-literal-match-needs-context-review
+jitc-lang-237d10731d545a2d8d59,inverse probability treatment weighting,41423267,jitc-2025-41423267-reading.md,86,no-literal-match-needs-context-review
 jitc-lang-5ae11213cd5070c1e115,unstratified Cox proportional hazards model,35190375,jitc-2022-35190375-language.md,50,no-literal-match-needs-context-review
+jitc-lang-6418df2130c790fc9d2b,conditioned-medium transfer assay,41135949,jitc-2025-41135949-reading.md,67,no-literal-match-needs-context-review
 jitc-lang-6a344315f7fe4580947a,nonmutational functional loss,35190375,jitc-2022-35190375-language.md,65,no-literal-match-needs-context-review
+jitc-lang-6ecd1c276908881fc556,cumulative cigarette exposure,41423267,jitc-2025-41423267-reading.md,82,no-literal-match-needs-context-review
+jitc-lang-7298267e00920e92d145,secretome profiling,41135949,jitc-2025-41135949-reading.md,68,no-literal-match-needs-context-review
 jitc-lang-83b2096446b5702774a1,genetic heterogeneity,35190375,jitc-2022-35190375-language.md,44,no-literal-match-needs-context-review
 jitc-lang-8b4ac10498faeeb58b2a,VEGF-mediated immunosuppression,35190375,jitc-2022-35190375-language.md,43,no-literal-match-needs-context-review
 jitc-lang-b24d4a5508ce461aaaef,co-occurring STK11 and/or KEAP1 mutations,35190375,jitc-2022-35190375-language.md,55,no-literal-match-needs-context-review
+jitc-lang-b9b15d0950ed61242e25,immunoprecipitation coupled with mass spectrometry,39694700,jitc-2024-39694700-reading.md,70,no-literal-match-needs-context-review
 jitc-lang-baec486be4f296f5b569,numerically longer survival,35190375,jitc-2022-35190375-language.md,56,no-literal-match-needs-context-review
+jitc-lang-d877d361220d2dce3f12,ovalbumin-loaded dendritic cells,41135949,jitc-2025-41135949-reading.md,72,no-literal-match-needs-context-review
 jitc-lang-f2495fa96706f64cea08,baseline plasma samples,35190375,jitc-2022-35190375-language.md,48,no-literal-match-needs-context-review
 jitc-lang-fd358fefc66365330b13,underpowered subgroup comparison,35190375,jitc-2022-35190375-language.md,64,no-literal-match-needs-context-review
 jto-crr-lang-073cd6a06d9a2eb76f59,biomarker-evaluable population,36793385,jto-crr-2023-36793385-language.md,10,no-literal-match-needs-context-review
@@ -3708,6 +3761,13 @@ jto-lang-feffa630b6119d67be9a,double-mutant molecular subgroup,41932614,jto-2026
 jto-lang-ff1f1ef91957ff9ed0be,odds of intracranial progression,37572870,jto-2024-37572870-language.md,53,no-literal-match-needs-context-review
 jto-lang-ff767e510b20fa3fef66,intratumoral expression heterogeneity,38154514,jto-2024-38154514-language.md,58,no-literal-match-needs-context-review
 jto-lang-ffd50c673fa5d42cce83,numerically unfavorable estimate,37495171,jto-2023-37495171-language.md,66,no-literal-match-needs-context-review
+nature-cancer-lang-38354066c7010a933c79,molecular phenotype stratification,34870237,nature-cancer-2021-34870237-reading.md,99,no-literal-match-needs-context-review
+nature-cancer-lang-558a3b75fb4211b9af82,independent cohort validation,34870237,nature-cancer-2021-34870237-reading.md,102,no-literal-match-needs-context-review
+nature-cancer-lang-bb20be5c49dfeb3fac6b,data-independent acquisition mass spectrometry,34870237,nature-cancer-2021-34870237-reading.md,100,no-literal-match-needs-context-review
+nature-cell-biology-lang-214bf5c966fd0d32095f,stage-specific regulatory programs,34341533,nature-cell-biology-2021-34341533-reading.md,100,no-literal-match-needs-context-review
+nature-cell-biology-lang-824641aa63bf59edb405,metastasis-associated chromatin state,34341533,nature-cell-biology-2021-34341533-reading.md,106,no-literal-match-needs-context-review
+nature-cell-biology-lang-b53aaeb466fd23801393,context-dependent epigenetic remodeling,34341533,nature-cell-biology-2021-34341533-reading.md,111,no-literal-match-needs-context-review
+nature-cell-biology-lang-efd3d2200295e67a5ee0,donor-level expression summary,34341533,nature-cell-biology-2021-34341533-reading.md,103,no-literal-match-needs-context-review
 nature-communications-lang-338a9c0361d9081ef768,hypothesis-generating therapeutic vulnerability,40830141,nature-communications-2025-40830141-language.md,14,no-literal-match-needs-context-review
 nature-communications-lang-528e55e590baa10e2490,preserved labeling fraction,38997257,nature-communications-2024-38997257-language.md,11,no-literal-match-needs-context-review
 nature-communications-lang-59bb8299da5eea141be4,adaptive serine utilization,38997257,nature-communications-2024-38997257-language.md,8,no-literal-match-needs-context-review
@@ -3719,6 +3779,7 @@ nature-communications-lang-c2254fb667629322f880,stable genomic drivers but shift
 nature-communications-lang-caf1ed4cadda98f8b46e,retrospective comparative-effectiveness analysis,40830141,nature-communications-2025-40830141-language.md,9,no-literal-match-needs-context-review
 nature-communications-lang-d821ad5f2b4ed0b101b7,time on treatment as a surrogate endpoint,40830141,nature-communications-2025-40830141-language.md,10,no-literal-match-needs-context-review
 nature-communications-lang-e45e829cf68cf9b05c60,p53-contingent growth suppression,38997257,nature-communications-2024-38997257-language.md,7,no-literal-match-needs-context-review
+nature-communications-lang-f21309242ae49e79251d,paired tumor-only and immune-cell co-culture screens,40057483,nature-communications-2025-40057483-reading.md,56,no-literal-match-needs-context-review
 nature-genetics-lang-058d0f613a28ffb00b08,the combinatorial burden of testing rare alteration pairs,42432246,nature-genetics-2026-42432246-language.md,36,no-literal-match-needs-context-review
 nature-genetics-lang-4c7fdfd19decfc3ff68f,panel-specific testability of gene pairs,42432246,nature-genetics-2026-42432246-language.md,39,no-literal-match-needs-context-review
 nature-genetics-lang-57ef7be803911e8c51ea,context-dependent co-mutation patterns,42432246,nature-genetics-2026-42432246-language.md,25,no-literal-match-needs-context-review

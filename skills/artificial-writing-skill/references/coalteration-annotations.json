@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "curated_on": "2026-09-29",
+  "curated_on": "2026-10-05",
   "scope": "All current formal registry records; eligible article-level topic annotations. Preprints separate; candidate queues not promoted.",
   "boundary": "Topic-screening labels, not new full reads, acceptance, quotations, exhaustive gene pairs, or proof that a negative-screened source contains no co-alteration. Gene contexts include comparisons and negative associations, not only positive co-occurrence. All filters are article-level, not expression-level validation.",
   "articles": {
@@ -11708,18 +11708,18 @@
       "evidence": [
         {
           "source": "cancer-cell-2022-36150391-reading.md",
-          "source_sha256": "bfcdc360018bf5af45fc9465251589219292548456319e9742cf8c0e9fdaf7d5",
+          "source_sha256": "734c1140d1d46fab1da8f25b4490b4cff760ddb59c2414c72e755b9f99a999fc",
           "first_line": 13,
           "last_line": 23
         },
         {
           "source": "cancer-cell-2022-36150391-reading.md",
-          "source_sha256": "bfcdc360018bf5af45fc9465251589219292548456319e9742cf8c0e9fdaf7d5",
+          "source_sha256": "734c1140d1d46fab1da8f25b4490b4cff760ddb59c2414c72e755b9f99a999fc",
           "first_line": 40,
           "last_line": 52
         }
       ],
-      "boundary": "The engineered KRAS/LKB1 combination is central to the mechanistic work and therefore qualifies as analyzed broad co-alteration; no patient sequence-level co-mutation analysis was identified, so co_mutation remains context_only."
+      "boundary": "The engineered KRAS/LKB1 combination is central to the mechanistic work and therefore qualifies as analyzed broad co-alteration; no patient sequence-level co-mutation analysis was identified, so co_mutation remains context_only. Evidence lines13-23 and40-52 were recurred against the corrected note on2026-10-02: the unsupported rechallenge wording was removed, without changing this co-alteration classification. The44-page author-manuscript addendum is separate from the selected26-page PDF; no acceptance upgrade."
     },
     "36793385": {
       "pdf": {
@@ -12185,6 +12185,840 @@
         }
       ],
       "boundary": "The NSCLC-like LCNEC definition uses STK11, KRAS, or KEAP1 as alternative qualifying alterations, not a co-occurring pair. STK11 prognosis was single-gene and failed replication, so both co-topic labels remain context_only."
+    },
+    "33264619": {
+      "doi": "10.1016/j.celrep.2020.108444",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "prognosis",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "cell-reports-2020-33264619-reading.md",
+          "source_sha256": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
+          "first_line": 12,
+          "last_line": 14
+        },
+        {
+          "source": "cell-reports-2020-33264619-reading.md",
+          "source_sha256": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
+          "first_line": 38,
+          "last_line": 43
+        },
+        {
+          "source": "cell-reports-2020-33264619-reading.md",
+          "source_sha256": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
+          "first_line": 54,
+          "last_line": 60
+        }
+      ],
+      "classification_basis": "Retrospective patient single/double/triple sequence-genotype groups, allele-specific19p LOH/clonality analysis, and single-versus-joint functional-loss models provide explicit co-mutation and broader co-alteration analysis.",
+      "boundary": "STK11/KEAP1临床共突变与KRAS/STK11/KEAP1临床三基因组均有明确证据；19pLOH/拷贝丢失与工程共同失活分别保留，不当作额外序列突变，也不推断获得顺序。临床123/124及KRAS358/359计数差异未解决；292标本并非292独立患者。生存为治疗无关预后，SCD1依赖是模型证据，不是SCD1基因共突变或患者疗效预测。",
+      "pdf": {
+        "filename": "Wohlhieter_Concurrent-Mutations-in-STK11-and-KEAP1-Promote-Ferroptosis-Protection-and-SCD1-De_PMID33264619_VOR.pdf",
+        "sha256": "ca754c762a60235ac89d3261ebcfe866a17f8c5d38d66dfb49747948d80c5d18",
+        "physical_pages": 33,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "34045189": {
+      "doi": "10.1158/0008-5472.CAN-20-3199",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "assay_or_method",
+        "preclinical_mechanism"
+      ],
+      "evidence": [
+        {
+          "source": "cancer-research-2021-34045189-reading.md",
+          "source_sha256": "acb4cb2b730846226a033f360a94fe0acd8ec3550e95418f1f4d1161dd381b9b",
+          "first_line": 13,
+          "last_line": 15
+        },
+        {
+          "source": "cancer-research-2021-34045189-reading.md",
+          "source_sha256": "acb4cb2b730846226a033f360a94fe0acd8ec3550e95418f1f4d1161dd381b9b",
+          "first_line": 37,
+          "last_line": 39
+        },
+        {
+          "source": "cancer-research-2021-34045189-reading.md",
+          "source_sha256": "acb4cb2b730846226a033f360a94fe0acd8ec3550e95418f1f4d1161dd381b9b",
+          "first_line": 51,
+          "last_line": 57
+        }
+      ],
+      "classification_basis": "KRAS-stratified WT/L/K/KL human comparisons are actually performed, but LKB1 loss is a composite of expression classifier, sequence mutation and copy loss; the joint class cannot be recoded as a pure double-sequence-mutation subgroup.",
+      "boundary": "实际比较KRAS分层的LKB1复合功能状态，属于限定的广义共改变/功能组合分析；L分类含16基因表达、序列突变及拷贝数缺失，不将全部KL样本改写为KRAS/STK11双序列突变。序列标签仅为分类组成/背景；FOXA/DNMT1表达、SAM-e强度和甲基化相关性不构建额外共突变。",
+      "pdf": {
+        "filename": "Koenig_STK11-LKB1-Loss-of-Function-Is-Associated-with-Global-DNA-Hypomethylation-and-S-Ad_PMID34045189_AM.pdf",
+        "sha256": "9f06352dad3dc159bc28d43f30f5192ea2e96e19d1f944e1c7d885c80405199f",
+        "physical_pages": 24,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "author_accepted_manuscript",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "34870237": {
+      "doi": "10.1038/s43018-021-00259-9",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11"
+        ],
+        [
+          "KEAP1"
+        ],
+        [
+          "SMARCA4"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "nature-cancer-2021-34870237-reading.md",
+          "source_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+          "first_line": 16,
+          "last_line": 18
+        },
+        {
+          "source": "nature-cancer-2021-34870237-reading.md",
+          "source_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+          "first_line": 38,
+          "last_line": 40
+        },
+        {
+          "source": "nature-cancer-2021-34870237-reading.md",
+          "source_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+          "first_line": 58,
+          "last_line": 59
+        },
+        {
+          "source": "nature-cancer-2021-34870237-reading.md",
+          "source_sha256": "f08b48a241042e4902d34839becbb9ee1a8d25dfb963b3dc99a36260109768cd",
+          "first_line": 71,
+          "last_line": 73
+        }
+      ],
+      "classification_basis": "Clinical multi-gene sample annotations/oncoplot and mutation enrichment within proteome subtypes are actually described, qualifying as bounded descriptive genomic analysis. The existing note does not transcribe exact positive pair/triple counts, so selected single-gene retrieval contexts intentionally avoid constructing a fixed triple.",
+      "boundary": "analyzed仅指临床多基因样本注释/oncoplot与亚型关联的描述性分析，不是证明STK11+KEAP1+SMARCA4固定三突变或因果协同。基因上下文故意保留单基因检索锚点，未生成原笔记未明确计数的正共现对。FGL1/CPS1/HNF1A/STRADA共表达或蛋白相关性不作共改变；蛋白分型不是突变诊断，也不是共突变治疗获益验证。",
+      "pdf": {
+        "filename": "Lehtiö_Proteogenomics-of-non-small-cell-lung-cancer-reveals-molecular-subtypes-associated_PMID34870237_AM.pdf",
+        "sha256": "271d07d3d6217983780e01e2c3a66c23ede017c314ec2559aca8594605881856",
+        "physical_pages": 59,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "author_accepted_manuscript",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "36512628": {
+      "doi": "10.1158/0008-5472.CAN-22-1740",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "immune_context",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "cancer-research-2023-36512628-reading.md",
+          "source_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "source": "cancer-research-2023-36512628-reading.md",
+          "source_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+          "first_line": 23,
+          "last_line": 23
+        },
+        {
+          "source": "cancer-research-2023-36512628-reading.md",
+          "source_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+          "first_line": 34,
+          "last_line": 39
+        }
+      ],
+      "classification_basis": "Original K/KL mouse comparisons and public KP/KPL reanalysis explicitly evaluate Lkb1 functional loss in distinct driver backgrounds. No patient-level clinical sequence co-mutation analysis is established in the curated note.",
+      "boundary": "K/KL为原创工程背景比较，KP/KPL来自GSE194166再分析；两者均实际用于机制/免疫比较，但不能当作临床双/三序列突变发生率或患者治疗预测。KRAS+TP53+STK11不代表全部实验模型。PARP1/STAT1蛋白活性、PARylation及药物联合不是共突变。",
+      "pdf": {
+        "filename": "Long_PARP-Inhibition-Induces-Synthetic-Lethality-and-Adaptive-Immunity-in-LKB1-Mutant-L_PMID36512628_VOR.pdf",
+        "sha256": "a4fa6d39bd4755e809da7e58a791ec57f8569a68092111cdbbc10491bfe8cf94",
+        "physical_pages": 14,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "39694700": {
+      "doi": "10.1136/jitc-2024-009444",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "TP53"
+        ],
+        [
+          "STK11",
+          "KRAS"
+        ],
+        [
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "jitc-2024-39694700-reading.md",
+          "source_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "source": "jitc-2024-39694700-reading.md",
+          "source_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+          "first_line": 23,
+          "last_line": 26
+        },
+        {
+          "source": "jitc-2024-39694700-reading.md",
+          "source_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+          "first_line": 40,
+          "last_line": 42
+        },
+        {
+          "source": "jitc-2024-39694700-reading.md",
+          "source_sha256": "523a835aa9b2509e2996990a1014651acd01dcc630879fcd945d97d4288cc7eb",
+          "first_line": 51,
+          "last_line": 51
+        }
+      ],
+      "classification_basis": "A193-case STK11-mutant clinical NGS cohort reports TP53, KRAS and KEAP1 frequencies within the mutant population, supporting these selected pair contexts. No exact triple combination is generated from the note's unspecific35-triple-mutant count.",
+      "boundary": "193例STK11突变测序队列中的TP53/KRAS/KEAP1频率支持所列临床共突变背景；不由平面基因列表扩展所有二/三元组合，也不擅定35例triple的完整基因组成。40例ICI治疗队列全STK11-WT，表达-疗效关联不是这些共突变的治疗预测。SKP2/CD274共表达或泛素化位点不列为临床共突变。",
+      "pdf": {
+        "filename": "Lv_LKB1-dictates-sensitivity-to-immunotherapy-through-Skp2-mediated-ubiquitination-of_PMID39694700_VOR.pdf",
+        "sha256": "71ddf755c53fe45a0ae4004d277b9bbf4b46bde0e022d16d54ca7953cd0e6fa7",
+        "physical_pages": 16,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "40057483": {
+      "doi": "10.1038/s41467-025-57297-5",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "context_only",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "model_genotype",
+        "background_or_eligibility"
+      ],
+      "evidence": [
+        {
+          "source": "nature-communications-2025-40057483-reading.md",
+          "source_sha256": "972b6c6231d52b265be9a2585a9f2ad11b5fca915aac8053a967dba74af9e9b0",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "source": "nature-communications-2025-40057483-reading.md",
+          "source_sha256": "972b6c6231d52b265be9a2585a9f2ad11b5fca915aac8053a967dba74af9e9b0",
+          "first_line": 36,
+          "last_line": 44
+        }
+      ],
+      "classification_basis": "KRAS G12D/Lkb1-null and KRAS G12V/LKB1-perturbed backgrounds are named for mouse models, but the curated result is an LKB1-dependent IAP/JAK/STING mechanism rather than a newly analyzed clinical co-mutation distribution or explicit KRAS-by-STK11 interaction.",
+      "boundary": "KRAS+STK11仅为已记录肺癌模型背景；KRAS变体及LKB1功能干预不能改写为新患者双序列共突变结果。TP53为野生型控制背景，故不生成KRAS+STK11+TP53突变组合。BIRC2/JAK1/TMEM173相互作用、表达和药物组合不作基因共改变。",
+      "pdf": {
+        "filename": "Shu_Uncovering-the-rewired-IAP-JAK-regulatory-axis-as-an-immune-dependent-vulnerabilit_PMID40057483_VOR.pdf",
+        "sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
+        "physical_pages": 18,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "41135949": {
+      "doi": "10.1136/jitc-2025-012710",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "immune_context",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "jitc-2025-41135949-reading.md",
+          "source_sha256": "e67298c8dd35f938156239786f5d6ca34894c3cc85c32852c6dcc31b634a3bac",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "source": "jitc-2025-41135949-reading.md",
+          "source_sha256": "e67298c8dd35f938156239786f5d6ca34894c3cc85c32852c6dcc31b634a3bac",
+          "first_line": 23,
+          "last_line": 23
+        },
+        {
+          "source": "jitc-2025-41135949-reading.md",
+          "source_sha256": "e67298c8dd35f938156239786f5d6ca34894c3cc85c32852c6dcc31b634a3bac",
+          "first_line": 38,
+          "last_line": 40
+        },
+        {
+          "source": "cancer-research-2023-36512628-reading.md",
+          "source_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+          "first_line": 23,
+          "last_line": 23,
+          "role": "Only establishes KRAS/LKB1 meaning/provenance of shared dataset GSE180963; no borrowing of original-study outcome findings"
+        },
+        {
+          "source": "cancer-research-2023-36512628-reading.md",
+          "source_sha256": "f4861bec50b9e290e777a1eedbeabb14eb8d46c42f310f35862a8f3864314d76",
+          "first_line": 39,
+          "last_line": 39,
+          "role": "Only establishes KRAS/LKB1 meaning/provenance of shared dataset GSE180963; no borrowing of original-study outcome findings"
+        }
+      ],
+      "classification_basis": "The paper actually reanalyzes K versus KL mouse single-cell data (GSE180963) to compare immune context; its reading note links the dataset to PMID36512628, whose note specifies Kras/Lkb1 models. This supports engineered co-alteration analysis, not a new human sequence co-mutation analysis.",
+      "boundary": "KRAS+STK11来自实际再分析的K/KL工程小鼠资料；Kras背景释义由明确链接的GSE180963原始研究笔记补充定位，不是第二套独立原创单细胞或新临床双突变结果。LLC/Panc02中单一STK11功能比较不得自动扩写未记录的亲本驱动基因。AGR2/FOXA1/ARG1表达、蛋白结合和细胞干预不作患者共突变。",
+      "pdf": {
+        "filename": "Yao_Tumor-secreted-AGR2-induces-dendritic-cell-dysfunction-and-impairs-immunotherapy-e_PMID41135949_VOR.pdf",
+        "sha256": "30d493e3aca91ae2e3dd465d6494b6160fb1b790da10098fe3f51d200787a1ed",
+        "physical_pages": 18,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "42008781": {
+      "doi": "10.1158/2159-8290.CD-25-0470",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "existing-reading-note-semantic-curation-no-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "cancer-discovery-2026-42008781-reading.md",
+          "source_sha256": "3a26dd18ef3237ec4e1c4f914d94b8f245432e06651a6ed015c4b155126a33fd",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "source": "cancer-discovery-2026-42008781-reading.md",
+          "source_sha256": "3a26dd18ef3237ec4e1c4f914d94b8f245432e06651a6ed015c4b155126a33fd",
+          "first_line": 23,
+          "last_line": 31
+        },
+        {
+          "source": "cancer-discovery-2026-42008781-reading.md",
+          "source_sha256": "3a26dd18ef3237ec4e1c4f914d94b8f245432e06651a6ed015c4b155126a33fd",
+          "first_line": 39,
+          "last_line": 43
+        }
+      ],
+      "classification_basis": "The human KRAS-only versus KRAS/LKB1 comparison and TCGA co-mutant signature analysis are genuine patient-genotype descriptions; KRAS/TP53/LKB1 is separately supported as the principal engineered mouse context.",
+      "boundary": "人肿瘤KRAS-only n14与KRAS/LKB1 n4为实际序列基因型比较；KRAS+TP53+STK11另指主要工程模型，不能与人核转录组人数混用。LIF/SOX17状态不是新共突变。Fig1I生存分析在LKB1-WT人LUAD中，不作为共突变治疗获益证据；不把所有小鼠背景视为同一固定三突变。",
+      "pdf": {
+        "filename": "Pillai_LIF-Induced-Tumor-Plasticity-Establishes-an-Immunosuppressive-Myeloid-Niche-in-LKB_PMID42008781_VOR.pdf",
+        "sha256": "758698151e3b6ad54a6def5bcb71b2c59053c631a8ce9143a524542683e56e13",
+        "physical_pages": 20,
+        "checked_context_pages": [],
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "scope": "selected registered PDF identity only; decision based on existing reading-note semantic evidence; no PDF reopened or visually rechecked in this co-alteration pass"
+      }
+    },
+    "33853830": {
+      "doi": "10.1158/0008-5472.CAN-20-3564",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53"
+        ],
+        [
+          "KRAS",
+          "TP53",
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "immune_context",
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "boundary": "序列共突变分析来自CCLE138条NSCLC细胞系中KRAS/LKB1联合基因型与趋化因子簇的实际关联：18条共改变细胞系中16条在高表达簇，单独LKB1分布阴性。不是患者共同突变疗效队列。广义工程组合来自K/KP/KL与KPL模型；KRAS/TP53/STK11上下文为模型背景，不声称临床三突变发生率。MNU诱变KPL-3M与未诱变KPL-P的不同疗效不能归结为单独STK11或确定的新增基因配对；药物/抗体组合及趋化因子共表达不当作基因共突变。",
+      "evidence": [
+        {
+          "source": "cancer-research-2021-33853830-reading.md",
+          "source_sha256": "b472c3d50397c8b78edb0252f963e77142e18ea6c998e7131aca42e51c8808e6",
+          "first_line": 11,
+          "last_line": 19
+        },
+        {
+          "source": "cancer-research-2021-33853830-reading.md",
+          "source_sha256": "b472c3d50397c8b78edb0252f963e77142e18ea6c998e7131aca42e51c8808e6",
+          "first_line": 39,
+          "last_line": 68
+        }
+      ],
+      "pdf": {
+        "sha256": "70aec452b31c10d3d067f7ea3d785b1afca5a804aaa0b54cc263629923aecaf3",
+        "physical_pages": 30,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "34341533": {
+      "doi": "10.1038/s41556-021-00728-4",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "TP53",
+          "STK11"
+        ],
+        [
+          "STK11",
+          "SIK1",
+          "SIK2",
+          "SIK3"
+        ],
+        [
+          "STK11",
+          "SOX17"
+        ]
+      ],
+      "analysis_uses": [
+        "preclinical_mechanism",
+        "model_genotype"
+      ],
+      "boundary": "广义共同改变指共同Kras/Trp53背景下LKB1状态、SIK家族联合功能比较和SOX17功能比较，而非自然临床多基因共同突变率。三种gene_context均为工程/功能模型语境，不表示STK11与所有SIK同时在人肿瘤中序列突变，也不把SOX17高表达/染色质可及性单独当基因变异。人类21例TCGA结果是STK11与染色质分型关联，FDR=.088；据当前笔记不足以升级为实际自然序列共突变分析，故co_mutation仅context_only。没有直接谱系追踪证明cluster12转移祖先，肝终点P=.055及局部瘤大小阴性仍保留，不声称临床预测/治疗验证。",
+      "evidence": [
+        {
+          "source": "nature-cell-biology-2021-34341533-reading.md",
+      "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+          "first_line": 11,
+          "last_line": 19
+        },
+        {
+          "source": "nature-cell-biology-2021-34341533-reading.md",
+      "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+          "first_line": 47,
+          "last_line": 90
+        }
+      ],
+      "pdf": {
+        "sha256": "bb29824252c1e7caf63fbf87b8ada507c034c1533bb936fd8892f8a461388ba8",
+        "physical_pages": 46,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "37068173": {
+      "doi": "10.1158/2159-8290.CD-22-1420",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_loss",
+        "copy_number_gain",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "SMARCA4"
+        ],
+        [
+          "KRAS",
+          "CDKN2A"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes",
+        "resistance"
+      ],
+      "boundary": "实际分析KRAS G12C背景下的基线共同改变与KRAS抑制剂结局，并对STK11/KEAP1交叉背景作分层；不是本次新产生的机制实验。纳入的改变包括序列变异、肿瘤抑制基因纯合缺失、癌基因扩增及已报告重排，不能把全部患者/事件写成纯序列共突变；所列基因上下文不将具体CNV/重排归给未经转录的固定配对。KEAP1-altered irrespective of STK11是union而非双突变交集；KSC是任一KEAP1/SMARCA4/CDKN2A异常，不是三突变。STK11在KEAP1-WT内阴性亦属实际分析。不同检测/终点分母、ORR图文倒置及q<=.10标准需随结论保留，无随机比较不能确立预测性或因果耐药。",
+      "evidence": [
+        {
+          "source": "cancer-discovery-2023-37068173-reading.md",
+          "source_sha256": "83318ec5cd5f7f316084a638e6bee18f13f6d1295c88f07ec1d2a435227358b9",
+          "first_line": 32,
+          "last_line": 42
+        },
+        {
+          "source": "cancer-discovery-2023-37068173-reading.md",
+          "source_sha256": "83318ec5cd5f7f316084a638e6bee18f13f6d1295c88f07ec1d2a435227358b9",
+          "first_line": 44,
+          "last_line": 81
+        }
+      ],
+      "pdf": {
+        "sha256": "791ea5d6bee05404ad2667e4027938f37a118531c5849c9e3fcd2246bdb5056d",
+        "physical_pages": 29,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "37098232": {
+      "doi": "10.1200/JCO.22.02524",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes",
+        "genomic_landscape"
+      ],
+      "boundary": "KRAS G12C背景中的实际探索性STK11/KEAP1联合分层；四组交叉分类包括双突变及双WT，并非只引用背景。Figure2分析限定长期获益/早期进展两端人群，不能将其分母视作全部基因型患者或ORR。STK11关联不显著仍算实际分析，但不证明等效、阳性预测或因果耐药；单臂研究不能分离预后和治疗预测。列出的三基因上下文指KRAS入组背景加有证据的STK11/KEAP1交叉分组，不表示所有受试者固定三突变。",
+      "evidence": [
+        {
+          "source": "jco-2023-37098232-reading.md",
+          "source_sha256": "091966816c1c3d2163c228408c8de7be117996f2e652256fcefcbe7431fb770f",
+          "first_line": 24,
+          "last_line": 30
+        },
+        {
+          "source": "jco-2023-37098232-reading.md",
+          "source_sha256": "091966816c1c3d2163c228408c8de7be117996f2e652256fcefcbe7431fb770f",
+          "first_line": 44,
+          "last_line": 56
+        }
+      ],
+      "pdf": {
+        "sha256": "e529248702acb3179eedf37c0180436067254fcc32a7f023d3292318ac8a17d1",
+        "physical_pages": 9,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "37100205": {
+      "doi": "10.1016/j.annonc.2023.04.005",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ],
+        [
+          "TP53",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context"
+      ],
+      "boundary": "主文实际报告non-inflamed LUAD中STK11/KEAP1和TP53/KEAP1共现，虽然详细结果引用的FigureS13未提供；登记为主文报告层级而非补充图独立核查。未开展CNV分析，不能把这些组合改成共缺失。单独基因富集及其Q值、分母冲突需保留。预后模型在另一UNN队列而非TNM-I基因型子集，不把免疫表型的预后关联转成共突变的生存效应或ICI疗效预测。两个明确配对不能合成为三基因阳性组合，也不证明同克隆/相位或因果协作。",
+      "evidence": [
+        {
+          "source": "annals-of-oncology-2023-37100205-reading.md",
+          "source_sha256": "aca37fa17af82d408cbf6536bc66d5eaf26b6a62dea26915f548de936b0d29e8",
+          "first_line": 11,
+          "last_line": 19
+        },
+        {
+          "source": "annals-of-oncology-2023-37100205-reading.md",
+          "source_sha256": "aca37fa17af82d408cbf6536bc66d5eaf26b6a62dea26915f548de936b0d29e8",
+          "first_line": 36,
+          "last_line": 68
+        }
+      ],
+      "pdf": {
+        "sha256": "e293e86e112ed531582217f92e797225c086e70bfe0e695444ca71cf05e7e65b",
+        "physical_pages": 11,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "40882030": {
+      "doi": "10.1158/0008-5472.CAN-25-0998",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "context_only",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53"
+        ],
+        [
+          "STK11",
+          "HDAC1"
+        ]
+      ],
+      "analysis_uses": [
+        "preclinical_mechanism",
+        "immune_context",
+        "resistance",
+        "model_genotype"
+      ],
+      "boundary": "广义共同改变标签依据STK11缺失背景的遗传筛选及KL/KP等工程模型比较；HDAC1遗传命中不等于患者自然STK11/HDAC1共突变。KRAS/STK11和KRAS/TP53是实际比较的模型背景，KL与KP还涉及TP53差异，不能当仅一基因不同的等基因模型。本文未在所供笔记中建立新的自然序列共突变临床分析；相关序列基因型/既往临床共突变仅作背景。所有所用小鼠KEAP1 WT，不能标为已测试STK11/KEAP1双缺失疗效。患者资料仅配对药效学，无共同突变疗效验证；药物联合不是基因共同改变。",
+      "evidence": [
+        {
+          "source": "cancer-research-2025-40882030-reading.md",
+          "source_sha256": "be4a1c6290d92da16b245cd5014a42f6f598e3923d01a08455c509d503df8526",
+          "first_line": 11,
+          "last_line": 20
+        },
+        {
+          "source": "cancer-research-2025-40882030-reading.md",
+          "source_sha256": "be4a1c6290d92da16b245cd5014a42f6f598e3923d01a08455c509d503df8526",
+          "first_line": 37,
+          "last_line": 72
+        }
+      ],
+      "pdf": {
+        "sha256": "fffdafba514680dd2e3f7c27fb685146ec1e62e5535bd83eee5d9968693bca32",
+        "physical_pages": 17,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "41423267": {
+      "doi": "10.1136/jitc-2025-012205",
+      "eligibility": "included",
+      "curated_on": "2026-10-02",
+      "method": "manual-existing-note-semantic-curation-only-no-new-pdf-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes"
+      ],
+      "boundary": "主文有KRASmut/STK11mut及KRASmut/KEAP1mut的次级IO/chemo-IO结局分析，并与吸烟史调整并行，故不是仅背景提及。STK11单独IO结果属于该共突变分析背景，但不能将全部三基因扁平列表拼成固定KRAS/STK11/KEAP1三突变。精确组合参考组及分母未在所供主文明确，相关S30-35未供，不能补造。ORR、PFS、OS及调整/未调整估计分开；未报告正式治疗交互，不能由亚组P值差异确立治疗选择预测。没有在本条注释中把吸烟暴露或蛋白表达当基因共改变。",
+      "evidence": [
+        {
+          "source": "jitc-2025-41423267-reading.md",
+          "source_sha256": "e32d8f46e3ac8031047e1742d64070930525904bc96eb17d27b0ab86fcf3e34c",
+          "first_line": 9,
+          "last_line": 23
+        },
+        {
+          "source": "jitc-2025-41423267-reading.md",
+          "source_sha256": "e32d8f46e3ac8031047e1742d64070930525904bc96eb17d27b0ab86fcf3e34c",
+          "first_line": 43,
+          "last_line": 76
+        }
+      ],
+      "pdf": {
+        "sha256": "e7dfd5e9af002f0a3244a31dd34b4116511f9688a5a1f579c430523fcaf5ca89",
+        "physical_pages": 12,
+        "checked_context_pages": [],
+        "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
     }
   },
   "preprints": {
