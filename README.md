@@ -21,6 +21,8 @@ An optional **STK11/LKB1 module** organizes core references and separately desig
 
 Source registration, main-text reading, supplementary-material coverage, source rechecking, and independent review are separate states. Completion of one does not establish the others. Corpus inclusion is not evidence of exhaustive journal coverage or a systematic review.
 
+For newly supplied PDFs, the [intake safeguards](skills/artificial-writing-skill/SKILL.md#inventory-and-intake-safeguards) require physical-page coverage of text, figures, tables, captions, and reference or administrative pages. Text extraction is not a reading check; source-internal numerical conflicts remain explicit alerts rather than silently reconciled estimates.
+
 ## Resource directory
 
 | Resource | Purpose |
@@ -28,10 +30,12 @@ Source registration, main-text reading, supplementary-material coverage, source 
 | [Literature index](skills/artificial-writing-skill/references/library-index.md) · [Inventory summary](skills/artificial-writing-skill/references/library-summary.json) | Current article coverage, inclusion decisions, and recorded reading states |
 | [Language manifest](skills/artificial-writing-skill/references/language-index-manifest.json) · [Retrieval guide](skills/artificial-writing-skill/references/retrieval-and-maintenance.md) | Section-specific language resources, filters, and source-context interpretation |
 | [STK11/LKB1 analysis guide](skills/artificial-writing-skill/references/stk11-analysis-framework.md) · [Study logic map](skills/artificial-writing-skill/references/stk11-study-logic-map.md) | Question-specific selection of molecular, clinical, and mechanistic evidence |
+| [STK11 assay and treatment guide](skills/artificial-writing-skill/references/stk11-assay-treatment-guide.md) | Article retrieval by assay, data origin, treatment, research method, and relation to STK11 |
+| [Co-alteration classification](skills/artificial-writing-skill/references/coalteration-topics.md) | Structured retrieval distinguishing sequence co-mutation, copy-number alterations, fusions, and other genomic contexts |
 | [Reading acceptance criteria](skills/artificial-writing-skill/references/deep-reading-acceptance.md) · [Writing evaluation](skills/artificial-writing-skill/references/writing-evaluation.md) | Distinct requirements for source review, software checks, and writing-case assessment |
 | [Skill entrypoint](skills/artificial-writing-skill/SKILL.md) | Task routing, evidence rules, and operational safeguards |
 
-The linked registers and generated indexes are the authorities for current coverage; this overview does not duplicate changing article counts.
+The linked registers and generated indexes are the authorities for current coverage; this overview does not duplicate changing article counts. See the [changelog](CHANGELOG.md) for selected dated updates.
 
 ## Installation and use
 
@@ -69,6 +73,32 @@ python scripts/search_language.py --pmid 39804166 --section discussion --single-
 ```
 
 Read the returned source context before reuse. Synthetic frames are not quotations, and a literal PDF match does not establish contextual appropriateness. Unsupported journal or disease selections rely on supplied source material and core evidence rules.
+
+### STK11 article retrieval
+
+Use the dedicated article directory to select evidence by assay, data origin, treatment, or research method:
+
+```powershell
+python scripts/search_stk11_references.py --assay single_cell_rna --origin original
+python scripts/search_stk11_references.py --treatment perioperative_ici
+python scripts/search_stk11_references.py --relation direct_mutation --method computational-methods
+```
+
+Assay and origin must match the same assay record; original and reanalyzed data are not interchangeable. Missing tags indicate incomplete curation, not absence of an assay. Directory membership does not establish completed reading or direct STK11 evidence.
+
+### Structured co-alteration retrieval
+
+For section-specific language from articles with curated genomic classifications, use structured filters rather than relying only on keyword matches:
+
+```powershell
+python scripts/search_language.py --co-alteration analyzed --co-gene MTAP --section results --limit 5
+python scripts/search_language.py --co-mutation analyzed --co-gene STK11 --section results --single-paper --limit 5
+python scripts/search_language.py --journal jto --co-alteration analyzed --co-type copy_number_loss --section discussion --limit 5
+```
+
+`--co-alteration` covers broader genomic contexts; `--co-mutation` selects sequence-level co-mutations, with same-gene compound variants separately qualified. Add `--co-gene`, `--co-type`, or `--co-use` to refine the selection. The label `analyzed` includes descriptive or negative findings; it does not establish positive co-occurrence, mechanistic cooperation, or treatment prediction. These are article-level filters, so inspect each returned expression and its source boundary before reuse.
+
+### Wisp Science
 
 Wisp Science may use the same canonical skills root through a verified shared configuration. Avoid maintaining an independent duplicate; after skill changes, reload through **Settings → Skills** and start a new conversation when necessary.
 
