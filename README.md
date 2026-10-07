@@ -35,7 +35,7 @@ For newly supplied PDFs, the [intake safeguards](skills/artificial-writing-skill
 | [Reading acceptance criteria](skills/artificial-writing-skill/references/deep-reading-acceptance.md) · [Writing evaluation](skills/artificial-writing-skill/references/writing-evaluation.md) | Distinct requirements for source review, software checks, and writing-case assessment |
 | [Skill entrypoint](skills/artificial-writing-skill/SKILL.md) | Task routing, evidence rules, and operational safeguards |
 
-The linked registers and generated indexes are the authorities for current coverage; this overview does not duplicate changing article counts. See the [changelog](CHANGELOG.md) for selected dated updates.
+The linked registers and generated indexes are the authorities for current coverage; this overview does not duplicate changing article counts. See the [changelog](CHANGELOG.md) for selected dated updates, [maintenance and reproducibility](MAINTENANCE.md) for automated checks and snapshots, and [citation guidance](CITATION.md) for recording the version used in research.
 
 ## Installation and use
 
@@ -107,6 +107,8 @@ Wisp Science may use the same canonical skills root through a verified shared co
 Writing must preserve the population or model, comparator, endpoint, denominator, analysis status, and uncertainty. Association is not causation; prognosis is not treatment prediction; subgroup significance is not interaction evidence; preclinical activity is not patient benefit. Missing data, methods, citations, or approvals must not be invented.
 
 Software checks assess register consistency, dependency hashes, retrieval behavior, and links. Writing-case evaluation examines factual fidelity and claim calibration. Article-level acceptance requires the documented source review. None of these checks substitutes for the others, and generated text requires researcher review. The resource is not a clinical decision-support system.
+
+[GitHub Actions](https://github.com/Winteric123/artificial-writing-skill/actions/workflows/repository-checks.yml) runs repository checks and the skill regression suite on Ubuntu and Windows. Consult the run attached to the relevant commit; a green check is software-integrity evidence, not scientific acceptance.
 
 ## Independence and rights
 

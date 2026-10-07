@@ -1,0 +1,49 @@
+name: Repository checks
+
+"on":
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.10", "3.12"]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Test repository checker
+        run: python -X utf8 -B -S -m unittest discover -s .github/tests -p "test_*.py" -v
+      - name: Check public files, documentation, and retrieval examples
+        run: python -X utf8 -B -S .github/scripts/check_repository.py
+      - name: Check skill registers, provenance, and links
+        run: python -X utf8 -B -S skills/artificial-writing-skill/scripts/check_skill_health.py
+      - name: Run skill regression tests
+        run: python -X utf8 -B -S -m unittest discover -s skills/artificial-writing-skill/tests -p "test_*.py" -v
+      - name: Confirm checks did not modify tracked files
+        run: git diff --exit-code

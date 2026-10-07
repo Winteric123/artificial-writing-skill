@@ -4,6 +4,11 @@ Selected, dated changes to the repository and its distributed skill. This log is
 
 ## 2026-10-07
 
+### Repository maintenance
+
+- Added a read-only GitHub Actions matrix for Ubuntu/Windows and Python 3.10/3.12, using pinned official actions and no project secrets. It runs repository safeguards, README retrieval examples, skill health checks, and the existing regression suite; actual results remain attached to each workflow run.
+- Added repository-checker tests, [maintenance and snapshot instructions](MAINTENANCE.md), and [citation/version-recording guidance](CITATION.md). These do not create an author list, assign a license, or change article reading states.
+
 ### Documentation
 
 - Added homepage entrypoints and executable examples for the existing STK11 assay, data-origin, treatment, and research-method filters, and for structured co-alteration retrieval. No new retrieval behavior or literature status is introduced by these documentation changes.
