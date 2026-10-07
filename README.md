@@ -1,35 +1,41 @@
 # Artificial Writing Skill
 
-A source-grounded Codex skill for biomedical translation, scientific writing, and evidence synthesis. It combines structured literature reading with retrieval of section-specific terminology, collocations, sentence frames, and paragraph models. Its purpose is to improve scientific expression while preserving the meaning, numerical results, uncertainty, and scope of the underlying evidence.
+**Source-grounded biomedical writing and evidence communication**
 
-## Scope and capabilities
+Artificial Writing Skill is a Codex resource for biomedical translation, manuscript development, and literature synthesis, with a focus on clinical and translational oncology. It integrates structured article-level reading records with section-specific language retrieval. The governing principle is fidelity to the underlying evidence: clearer expression should not alter numerical results, uncertainty, study context, or the strength of a scientific claim.
 
-The skill supports Chinese–English biomedical translation, manuscript revision and drafting, evidence audits, literature summaries, research reports, and presentation text. Clinical and translational oncology are the principal application areas, including biomarker studies, immunotherapy, targeted therapy, multi-omics, computational analyses, and experimental models.
+## Research scope
 
-Operation, communication scenario, journal, disease, manuscript section, audience, and evidence domain are selected independently. The corpus-backed profiles cover *Clinical Cancer Research* and lung-cancer communication within their documented source coverage. Other journals contribute article-specific evidence and language resources; inclusion does not establish a learned journal-wide style. The [profile registry](skills/artificial-writing-skill/references/profile-registry.md) defines these support levels and their limits.
+The resource supports Chinese–English translation, manuscript drafting and revision, evidence summaries, research reports, and presentation text. Its principal domains include cancer biomarkers, immunotherapy, targeted therapy, multi-omics, computational analysis, and preclinical models.
 
-The optional STK11/LKB1 module links core framework references with separately labelled topic-support studies. It distinguishes sequence variants, copy-number alterations, functional state, immune mechanisms, metabolism, and clinical outcomes. The [analysis guide](skills/artificial-writing-skill/references/stk11-analysis-framework.md), [study logic map](skills/artificial-writing-skill/references/stk11-study-logic-map.md), and [membership register](skills/artificial-writing-skill/references/stk11-writing-reference-map.json) support study-specific selection without treating contextual evidence as direct STK11 evidence.
+The corpus-backed communication profiles focus on *Clinical Cancer Research* and lung cancer within documented source coverage. Selected articles from other journals, including the *Journal of Thoracic Oncology*, contribute study-specific evidence and language resources; they do not establish journal-wide writing profiles. Task, journal, disease, manuscript section, audience, and evidence domain are selected independently. See the [profile registry](skills/artificial-writing-skill/references/profile-registry.md) for supported combinations and fallback rules.
 
-## Literature, provenance, and retrieval
+An optional **STK11/LKB1 module** organizes core references and separately designated supporting studies. It distinguishes direct molecular evidence from contextual analyses and methodological analogues, and separates sequence variation, copy-number alterations, functional state, immune mechanisms, metabolism, and clinical outcomes.
 
-Each journal retains its own bibliography, reading ledger, quality register, and language catalog. Records preserve bibliographic identifiers, supplied source versions, article-level scope, and links to reading evidence. The [library index](skills/artificial-writing-skill/references/library-index.md) and [inventory summary](skills/artificial-writing-skill/references/library-summary.json) provide current coverage and reading states; the [language manifest](skills/artificial-writing-skill/references/language-index-manifest.json) reports retrieval coverage. These generated records are the inventory authorities.
+## Evidence and language workflow
 
-Literature intake verifies article identity and eligibility, reads the supplied main text and available supporting material, records central findings and limitations, and curates language by section and rhetorical function. Main-text completion, supplementary coverage, source rechecking, and independent review remain distinct. The [acceptance criteria](skills/artificial-writing-skill/references/deep-reading-acceptance.md) define the evidence required for status changes. Indexed coverage is not exhaustive journal coverage.
+1. **Source registration.** Record article identity, eligibility, PMID/DOI, source version, and available reading evidence.
+2. **Structured appraisal.** Retain the research question, design, population or model, assays, endpoints, analysis sets, central findings, negative results, and limitations.
+3. **Language curation.** Organize terminology, collocations, and explicitly labelled synthetic sentence and paragraph frames by manuscript section and rhetorical function.
+4. **Contextual retrieval.** Select resources by source and scientific scope while retaining provenance, usage restrictions, and review status. Held or quarantined entries are excluded from default writing retrieval.
 
-Retrieval can be filtered by journal, year, PMID, section, evidence domain, and language-unit type. Results retain source context, usage restrictions, and review status. Synthetic frames are labelled separately from source expressions; a literal PDF match does not establish contextual suitability. Held or quarantined entries are excluded from default writing retrieval.
+Source registration, main-text reading, supplementary-material coverage, source rechecking, and independent review are separate states. Completion of one does not establish the others. Corpus inclusion is not evidence of exhaustive journal coverage or a systematic review.
 
-Run these examples from `skills/artificial-writing-skill` with Python 3.10 or later:
+## Resource directory
 
-```powershell
-python scripts/search_language.py --journal ccr --section results --query "co-mutation" --limit 5
-python scripts/search_language.py --pmid 39804166 --section discussion --single-paper --limit 5
-```
+| Resource | Purpose |
+|---|---|
+| [Literature index](skills/artificial-writing-skill/references/library-index.md) · [Inventory summary](skills/artificial-writing-skill/references/library-summary.json) | Current article coverage, inclusion decisions, and recorded reading states |
+| [Language manifest](skills/artificial-writing-skill/references/language-index-manifest.json) · [Retrieval guide](skills/artificial-writing-skill/references/retrieval-and-maintenance.md) | Section-specific language resources, filters, and source-context interpretation |
+| [STK11/LKB1 analysis guide](skills/artificial-writing-skill/references/stk11-analysis-framework.md) · [Study logic map](skills/artificial-writing-skill/references/stk11-study-logic-map.md) | Question-specific selection of molecular, clinical, and mechanistic evidence |
+| [Reading acceptance criteria](skills/artificial-writing-skill/references/deep-reading-acceptance.md) · [Writing evaluation](skills/artificial-writing-skill/references/writing-evaluation.md) | Distinct requirements for source review, software checks, and writing-case assessment |
+| [Skill entrypoint](skills/artificial-writing-skill/SKILL.md) | Task routing, evidence rules, and operational safeguards |
 
-Consult [retrieval and maintenance](skills/artificial-writing-skill/references/retrieval-and-maintenance.md) for additional filters, source-scope interpretation, index rebuilding, and validation.
+The linked registers and generated indexes are the authorities for current coverage; this overview does not duplicate changing article counts.
 
 ## Installation and use
 
-Install the `skills/artificial-writing-skill` directory under the canonical Codex skills root: `$CODEX_HOME/skills` when configured, otherwise `$HOME/.codex/skills`. For a new PowerShell installation:
+Install `skills/artificial-writing-skill` under the canonical Codex skills root: `$CODEX_HOME/skills` when configured, otherwise `$HOME/.codex/skills`. The following PowerShell example is for a **new installation** and stops if the target already exists:
 
 ```powershell
 git clone https://github.com/Winteric123/artificial-writing-skill.git
@@ -38,33 +44,42 @@ $skillsRoot = if ($env:CODEX_HOME) {
 } else {
     Join-Path $HOME ".codex\skills"
 }
+$skillTarget = Join-Path $skillsRoot "artificial-writing-skill"
+if (Test-Path -LiteralPath $skillTarget) {
+    throw "An installation already exists. Review and reconcile it before updating."
+}
 New-Item -ItemType Directory -Force $skillsRoot | Out-Null
-Copy-Item -Recurse ".\artificial-writing-skill\skills\artificial-writing-skill" $skillsRoot
+Copy-Item -Recurse ".\artificial-writing-skill\skills\artificial-writing-skill" $skillTarget
 ```
 
-Invoke the skill with source text or study results and specify the required output:
+Provide the source text or study results and specify the intended output:
 
 ```text
 Use $artificial-writing-skill to revise this Discussion.
 Journal: Clinical Cancer Research. Disease: lung cancer.
-Preserve all numerical results and distinguish exploratory subgroup
-associations from evidence of treatment prediction.
+Preserve numerical results and uncertainty. Distinguish exploratory
+subgroup associations from evidence of treatment prediction.
 ```
 
-The [skill entrypoint](skills/artificial-writing-skill/SKILL.md) routes the task to the relevant workflow and references. Unsupported journal or disease selections use supplied source material and core evidence rules.
+For direct retrieval, run from `skills/artificial-writing-skill` with Python 3.10 or later:
 
-Wisp Science can share the canonical skills root through `WISP_SKILLS_PATH` or an existing skills-root directory junction. Use the configured shared route without creating a duplicate installation. After changes, reload skills in **Settings → Skills** and start a new conversation when updated instructions are required.
+```powershell
+python scripts/search_language.py --journal ccr --section results --query "co-mutation" --limit 5
+python scripts/search_language.py --pmid 39804166 --section discussion --single-paper --limit 5
+```
 
-## Scientific boundaries and validation
+Read the returned source context before reuse. Synthetic frames are not quotations, and a literal PDF match does not establish contextual appropriateness. Unsupported journal or disease selections rely on supplied source material and core evidence rules.
 
-Outputs must preserve population, model, comparator, endpoint, denominator, analysis status, and uncertainty. The workflow distinguishes association from causation, prognosis from treatment prediction, subgroup findings from interaction evidence, and preclinical effects from patient benefit. It does not provide clinical decision support or invent data, methods, citations, or study approvals.
+Wisp Science may use the same canonical skills root through a verified shared configuration. Avoid maintaining an independent duplicate; after skill changes, reload through **Settings → Skills** and start a new conversation when necessary.
 
-Source eligibility follows the registered corpus policy. Commentaries, editorials, and replies are excluded from reusable corpus learning; background sources and preprints retain separate status. These restrictions do not prevent requested writing or translation in those genres.
+## Scientific integrity and evaluation
 
-Maintenance checks cover record consistency, provenance, dependency hashes, retrieval behavior, and documentation links. Scientific acceptance requires the documented source review; passing software checks alone does not establish it. The [evaluation guide](skills/artificial-writing-skill/references/writing-evaluation.md) separates mechanical checks, writing-case assessment, and independent review.
+Writing must preserve the population or model, comparator, endpoint, denominator, analysis status, and uncertainty. Association is not causation; prognosis is not treatment prediction; subgroup significance is not interaction evidence; preclinical activity is not patient benefit. Missing data, methods, citations, or approvals must not be invented.
+
+Software checks assess register consistency, dependency hashes, retrieval behavior, and links. Writing-case evaluation examines factual fidelity and claim calibration. Article-level acceptance requires the documented source review. None of these checks substitutes for the others, and generated text requires researcher review. The resource is not a clinical decision-support system.
 
 ## Independence and rights
 
-This is an independent, unofficial project, unaffiliated with and not endorsed or sponsored by the American Association for Cancer Research or *Clinical Cancer Research*.
+This is an independent, unofficial project, unaffiliated with and not endorsed by the American Association for Cancer Research or *Clinical Cancer Research*.
 
-The repository does not distribute source PDFs, complete full-text extracts, or private research data. Bibliographic identifiers and curated resources support traceability; underlying articles retain their respective copyright and licensing terms. No open-source license has been selected for this repository.
+Source PDFs, complete full-text extracts, and private research data are not distributed in this repository. Underlying articles retain their respective copyright and licensing terms. No open-source license has been selected for the repository.
