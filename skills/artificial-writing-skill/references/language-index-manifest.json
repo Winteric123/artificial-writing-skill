@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "index_version": "e55f2add263109d9240c19c0c481f3995c18f72f0d383503fe8ae87fb8e01c8f",
+  "index_version": "b21117d5e0fec2f463dbd08e34186c5ba75e97f20cabb60530855e71245bebcc",
   "entry_count": 10389,
   "journals": {
     "annals-of-oncology": 89,
@@ -321,7 +321,7 @@
     "ccr-2026-09-19-pending15-language.md": "8933765675f5f6014076c426d1ad20bb920516c29f62e0e083eeac1b117887fb",
     "ccr-2026-09-19-supplement-language.md": "6d2ba444eef2506e8883d081fc4d32e9053c3697be41a953fded9894b5ea500a",
     "ccr-2026-09-23-intake-language.md": "c8c611dcbcc09b9aed414de34181d7c57bc1636afd97f58c039f528c4a9331c6",
-    "ccr-2026-10-07-coalteration-scope.md": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+    "ccr-2026-10-07-coalteration-scope.md": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
     "ccr-2026-40833744-language.md": "d06d5a2a557f2b94eac9818f6b6d41db55322a80c7efa823783712c1f6224c2d",
     "ccr-2026-41403154-language.md": "bc67fda7f54aea77e252a86710f68bc4981cc3e2343be54bc5800caf0887a5ba",
     "ccr-2026-41511400-language.md": "07fab81716a70d16d643df3fe098d0f580a565994346f053025f8f4abe80598a",
@@ -359,7 +359,7 @@
     "cell-research-reading-quality-register.csv": "6c77896a71b3f96dab687cb6f44fa303c632a6a17b3f275a43bc4b60fac68df6",
     "cell-research-section-language-catalog.csv": "fae8720a5dca68867cb1a2d63e97c832ecacff8f2067c31055a78b14825c26f8",
     "cell-section-language-catalog.csv": "ed5d0f26f72935e2034447d5e658a3ddb53828cbaa9364d9fd611e6f077c82ef",
-    "coalteration-annotations.json": "120cad49dd720c6d321c40a3d8420e8d266992c4e0b339f891e72c5dbf56aa30",
+    "coalteration-annotations.json": "0bd009580d46ba9749cc62e87daef24ab0113e43f198e2b124f5cf75f7ad051a",
     "coalteration-recheck-2026-09-28.md": "8a5851906f201cac878f914ca5dfe13f1668faf96661ed386213dc47e83feec1",
     "coalteration-topics.md": "de1a79748b44e851ddea5d8cd11305aaf63de5ccdf07034c772dde02cf6cf415",
     "core-evidence-language.md": "c9b31cf75f06e072e85f0b88cc2109abcd5e1b37ea4af51e87d0e2f434fb6ef4",
@@ -544,5 +544,5 @@
     "curated-expression-topic": 151
   },
   "scope": "Cross-journal retrieval view only; source corpora, counts and reading statuses remain separate.",
-  "index_file_sha256": "a8e10457af35b53eccd9ce4872dac793209ca6048470da44421a0dfbee7aaaeb"
+  "index_file_sha256": "2b132740a40df50e12ad356f91ca3334d082e456fd0cf3de3ccd219a25c3698b"
 }

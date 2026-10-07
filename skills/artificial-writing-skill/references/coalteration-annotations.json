@@ -13041,7 +13041,7 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 7,
           "last_line": 22
         },
@@ -13098,7 +13098,7 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 23,
           "last_line": 38
         },
@@ -13160,7 +13160,7 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 39,
           "last_line": 57
         },
@@ -13215,7 +13215,7 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 58,
           "last_line": 75
         },
@@ -13276,7 +13276,7 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 76,
           "last_line": 91
         },
@@ -13339,9 +13339,9 @@
       "evidence": [
         {
           "source": "ccr-2026-10-07-coalteration-scope.md",
-          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "source_sha256": "cadd6fac299d101f923cc3c360d56a9488ee11e6f6996be0a7ec9994f0ea3074",
           "first_line": 92,
-          "last_line": 107
+          "last_line": 106
         },
         {
           "source": "ccr-2022-34921025-reading.md",
