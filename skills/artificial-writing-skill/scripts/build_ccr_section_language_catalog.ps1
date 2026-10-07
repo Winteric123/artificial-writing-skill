@@ -100,11 +100,14 @@ $reading2023Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "c
 $reading2021To2022Completion = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2021-2022-completion-2026-09-26-manifest.csv") -Encoding UTF8)
 $reading20260928 = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-09-28-reading-manifest.csv") -Encoding UTF8)
 $languageAddenda20261002 = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-10-02-language-addenda.csv") -Encoding UTF8)
-$sectionIndexedReadings = @($reading2024Intake) + @($readingLatestIntake) + @($readingKeapnessStk11) + @($reading20260926) + @($reading2023Completion) + @($reading2021To2022Completion) + @($reading20260928) + @($languageAddenda20261002)
+$reading20261007 = @(Import-Csv -LiteralPath (Join-Path $referencesPath "ccr-2026-10-07-reading-manifest.csv") -Encoding UTF8)
+$sectionIndexedReadings = @($reading2024Intake) + @($readingLatestIntake) + @($readingKeapnessStk11) + @($reading20260926) + @($reading2023Completion) + @($reading2021To2022Completion) + @($reading20260928) + @($languageAddenda20261002) + @($reading20261007)
 foreach ($article in $sectionIndexedReadings) {
     if ($article.reading_stage -ne "main_text_deep_read_complete") { continue }
     $assets[$article.source_asset] = [ordered]@{
-        source_set = if ($article.pmid -in $languageAddenda20261002.pmid) {
+        source_set = if ($article.pmid -in $reading20261007.pmid) {
+            "ccr-intake-20261007-$($article.pmid)"
+        } elseif ($article.pmid -in $languageAddenda20261002.pmid) {
             "ccr-2026-10-02-stk11-language-addendum-$($article.pmid)"
         } elseif ($article.pmid -in $reading20260928.pmid) {
             "ccr-intake-20260928-$($article.pmid)"

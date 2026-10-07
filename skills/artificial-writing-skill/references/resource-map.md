@@ -81,6 +81,11 @@ The [STK11 bounded recheck](stk11-highlight-bounded-recheck-2026-09-19.md) recor
 ## 2024 completion and later2026intake
 
 See [ccr-2024-and-intake-2026-09-23.md](ccr-2024-and-intake-2026-09-23.md) for37article-specific reading records.33eligible sources enter the section catalog;4background sources are excluded from original-study language. New domains include variant-origin prediction, spatial pathology, LCNEC single-cell profiling, proteomics, cfDNA epigenomics and inherited-risk surveillance. These expand article-level terminology, not disease-wide or journal-wide style claims.
+
+## CCR supplied six-paper intake (2026-10-07)
+
+Use the [batch overview](ccr-2026-10-07-intake.md) and [version manifest](ccr-2026-10-07-reading-manifest.csv) for six original articles from issue years2020–2022: CDKN2A/ICI, RET fusion assays, LUAD methylation subgroups, HER3 ADC sensitization, NOTCH/ICI and NSCLC organoid qualification. Each has a separate scientific reading note, full physical-page coverage and section-language asset. Initial reading and source alerts do not establish separate acceptance. Two2020 sources are user-designated historical exceptions. The previously deferred Cell Metabolism PMID35504291 is outside this intake and remains unlearned.
+
 ## Source identity corrections
 
 - [PMID correction map](source-identity-corrections.csv): read whenever a PDF filename, NIHMS identifier, PMCID, DOI or PMID conflicts. The DOI/title-verified PMID is authoritative; the legacy value remains only as an audit alias.

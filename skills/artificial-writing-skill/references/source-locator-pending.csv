@@ -189,6 +189,7 @@ ccr-lang-0260a37bcd017657bdd3,referral-related selection bias,41790029,ccr-2026-
 ccr-lang-028b45f457922f92c993,T-cell dependency,34407972,ccr-2021-34407972-language.md,39,no-literal-match-needs-context-review
 ccr-lang-02cfb03e1da97ec9f631,additive survival association,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,91,no-literal-match-needs-context-review
 ccr-lang-02e3f25811d5b56661e9,bead-based signal normalization,35993913,ccr-2022-35993913-language.md,69,no-literal-match-needs-context-review
+ccr-lang-02e49f1c3bdf31fca1e6,oncogenic kinase fusion,33272981,ccr-2021-33272981-language.md,34,no-literal-match-needs-context-review
 ccr-lang-030053cbd66409a3aea7,patient-derived tumor culture,36602782,ccr-2023-36602782-language.md,65,no-literal-match-needs-context-review
 ccr-lang-03185977617122f95a8e,single-arm benchmark comparison,41511400,ccr-2026-41511400-language.md,85,no-literal-match-needs-context-review
 ccr-lang-0328db955131575d42fa,oncogenic driver subset,37022784,ccr-2023-37022784-language.md,49,no-literal-match-needs-context-review
@@ -199,6 +200,7 @@ ccr-lang-034ad5378c8792c3afc6,molecularly unselected population,35511938,ccr-202
 ccr-lang-037c3fb4a2ccaec4c473,secondary resistance mutation,41790029,ccr-2026-09-19-pending15-language.md,436,no-literal-match-needs-context-review
 ccr-lang-03986a04992e2d133f0c,state-specific immunosuppressive program,33622705,ccr-2021-33622705-language.md,69,no-literal-match-needs-context-review
 ccr-lang-03d0c556d3a75a751080,variable importance in projection,41849236,ccr-2026-immunotherapy-fulltext-language.md,210,no-literal-match-needs-context-review
+ccr-lang-03da9637e8b8114ed5d6,selectively co-tested cohort,33272981,ccr-2021-33272981-language.md,54,no-literal-match-needs-context-review
 ccr-lang-03eb6f6ca33a2cac795b,low-shedding analytic subset,34446541,ccr-2021-34446541-language.md,51,no-literal-match-needs-context-review
 ccr-lang-03f3960f43e7234fcbf4,first-line immunotherapy association,42268349,ccr-2026-09-19-supplement-language.md,643,no-literal-match-needs-context-review
 ccr-lang-03f539f90d730b5604b3,endpoint concordance,35511917,ccr-2022-35511917-language.md,43,no-literal-match-needs-context-review
@@ -246,6 +248,7 @@ ccr-lang-074d59f66bbe9f2bd44c,paired baseline and on-treatment samples,42714875,
 ccr-lang-07581c407eb1801ef3e7,targeted metabolite quantification,38837903,ccr-2024-38837903-language.md,39,no-literal-match-needs-context-review
 ccr-lang-0771a00991d1dbe4d1a7,enhanced combination activity,38330145,ccr-2024-38330145-language.md,51,no-literal-match-needs-context-review
 ccr-lang-07a340a6b2c5ecb01033,heterogeneous treatment outcomes,36166003,ccr-2022-36166003-language.md,25,no-literal-match-needs-context-review
+ccr-lang-07e53783b8c1504836c9,immune microenvironment heterogeneity,35802677,ccr-2022-35802677-language.md,34,no-literal-match-needs-context-review
 ccr-lang-0806b6d98e85996f302c,overlapping biomarker subsets,36971777,ccr-2023-36971777-language.md,103,no-literal-match-needs-context-review
 ccr-lang-0809e599757d251a51ab,likelihood-ratio test,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,231,no-literal-match-needs-context-review
 ccr-lang-089c40e4ea8bb454c340,tumor mutational burden category,39545922;39786430;40208070;40247431;40553459;40788282;40828417;40864503;41065506,ccr-2025-immunotherapy-fulltext-language.md,205,no-literal-match-needs-context-review
@@ -267,6 +270,7 @@ ccr-lang-09878af7253775cafc87,compound EGFR mutation,37249619,ccr-2023-37249619-
 ccr-lang-0996d5509a7f592dbff2,"truncating mutation, gene fusion, or homozygous deletion",32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,52,no-literal-match-needs-context-review
 ccr-lang-099e52105967f65c87c1,platform-qualified analytic population,42148883,ccr-2026-42148883-language.md,40,no-literal-match-needs-context-review
 ccr-lang-09b591c2988b60b9529e,potential germline variant from tumor-only sequencing,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,159,no-literal-match-needs-context-review
+ccr-lang-09bdc65c8d12f1c5f8ee,truncating alteration,32241817,ccr-2020-32241817-language.md,39,no-literal-match-needs-context-review
 ccr-lang-09c43f0479c5bd333d91,therapeutic balance between exposure and marrow recovery,41563386,ccr-2026-41563386-language.md,86,no-literal-match-needs-context-review
 ccr-lang-09dc1418f8d00d68c7a6,untargeted plasma metabolomics,40853904,ccr-2025-2026-09-19-intake-language.md,496,no-literal-match-needs-context-review
 ccr-lang-09de92ecc94703c77a44,SWI/SNF chromatin-remodeling complex,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,34,no-literal-match-needs-context-review
@@ -332,8 +336,10 @@ ccr-lang-0f313a78da9f181481c6,inconsistent tissue cross-reactivity,36692420,ccr-
 ccr-lang-0f6a25518ab36ee64a15,single-region inference,42126592;42149140;42360104;42440365;42456046;42485106;42489696,ccr-2026-immunotherapy-fulltext-language.md,221,no-literal-match-needs-context-review
 ccr-lang-0f7c69bb67fe1f27be82,intratumoral target heterogeneity,41945491,ccr-2026-09-19-pending15-language.md,629,no-literal-match-needs-context-review
 ccr-lang-0f80b753fee2887a17cc,acquired chemoresistance,39017606,ccr-2024-39017606-language.md,30,no-literal-match-needs-context-review
+ccr-lang-0ff8f057e16f2bbf9d0f,exploratory subgroup separation,35802677,ccr-2022-35802677-language.md,63,no-literal-match-needs-context-review
 ccr-lang-0ffed53e22d98af13408,cross-platform discrimination,41591979,ccr-2026-09-19-pending15-language.md,259,no-literal-match-needs-context-review
 ccr-lang-100419427b76db3b3fa2,deleterious ATM alteration prevalence,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,176,no-literal-match-needs-context-review
+ccr-lang-1012118ff22ade7b5c62,no observed recurrence,35802677,ccr-2022-35802677-language.md,64,no-literal-match-needs-context-review
 ccr-lang-10378ef4c073fe308b47,subtype-stratified screen,37382635,ccr-2023-37382635-language.md,65,no-literal-match-needs-context-review
 ccr-lang-103a2397bf773a294534,metabolic tumor burden,39437011,ccr-2025-genomics-2026-09-20-language.md,225,no-literal-match-needs-context-review
 ccr-lang-104deeacf272b89daa11,adaptive suppression of pyroptosis,42013305,ccr-2026-09-19-supplement-language.md,905,no-literal-match-needs-context-review
@@ -444,11 +450,13 @@ ccr-lang-1949742971dc857cf2e0,unresolved assay-description discrepancy,40853904,
 ccr-lang-1953990417a1271176ca,candidate-variant prioritization,38261467,ccr-2024-38261467-language.md,42,no-literal-match-needs-context-review
 ccr-lang-1973aaa6fd32d78bce65,cycle-specific nondetection,37702716,ccr-2023-37702716-language.md,81,no-literal-match-needs-context-review
 ccr-lang-197aaaf36885c22af5fd,cumulative incidence with competing events,33323404,ccr-2021-33323404-language.md,80,no-literal-match-needs-context-review
+ccr-lang-197c0151caa4dd718611,overlapping array probes,35802677,ccr-2022-35802677-language.md,43,no-literal-match-needs-context-review
 ccr-lang-19841b111939f4721fd7,nonsignificant numerical enrichment,34016641,ccr-2021-34016641-language.md,52,no-literal-match-needs-context-review
 ccr-lang-19c6e33e7ccfbeb9ca31,clonal pathogenic alteration,38300729,ccr-2024-38300729-language.md,36,no-literal-match-needs-context-review
 ccr-lang-19cd01118b8185e1b2b7,immune-context heterogeneity,42440361,ccr-2026-09-19-supplement-language.md,152,no-literal-match-needs-context-review
 ccr-lang-19e87e1bb19319dc6e51,co-occurring pathway alterations,34446541,ccr-2021-34446541-language.md,34,no-literal-match-needs-context-review
 ccr-lang-1a168946906f76fd071b,copy-number-adjusted variant fraction,34446541,ccr-2021-34446541-language.md,41,no-literal-match-needs-context-review
+ccr-lang-1ab52249d8d597351f5d,retrospective biomarker evaluation,32241817,ccr-2020-32241817-language.md,67,no-literal-match-needs-context-review
 ccr-lang-1ad0b09e8ae0ee1baa09,cytotoxic T-cell attack,35980349,ccr-2022-35980349-language.md,53,no-literal-match-needs-context-review
 ccr-lang-1afa938a955c2e06b6d4,small paired cohort,36449664,ccr-2023-36449664-language.md,97,no-literal-match-needs-context-review
 ccr-lang-1b02c5e5ceac815e82ef,pre-existing mixed histology,39150541,ccr-2024-39150541-language.md,56,no-literal-match-needs-context-review
@@ -525,6 +533,7 @@ ccr-lang-208c9c10912813ccde3a,single-sample gene set enrichment analysis,4234037
 ccr-lang-209cd629ee4fdf033087,ctDNA molecular response,41563386,ccr-2026-41563386-language.md,76,no-literal-match-needs-context-review
 ccr-lang-20a35f02ca9715c6aa67,attenuation of STAT1 downregulation,42714874,ccr-2026-09-12-supplement-language.md,190,no-literal-match-needs-context-review
 ccr-lang-20b0e01348b66df6b3f6,approval based on,34462287,ccr-2022-34462287-language.md,25,no-literal-match-needs-context-review
+ccr-lang-20b7433e6e9b54f98c3a,genotype-associated drug sensitivity,31694835,ccr-2020-31694835-language.md,59,no-literal-match-needs-context-review
 ccr-lang-20c9334c40232afe8ade,reference-label uncertainty,42001480,ccr-2026-09-19-batch2-language.md,277,no-literal-match-needs-context-review
 ccr-lang-20ef3106b0727dee34d7,sparse risk sets at the curve tail,42714840,ccr-2026-09-12-supplement-language.md,132,no-literal-match-needs-context-review
 ccr-lang-20f0ad5a4006cff1b8fe,housekeeping-gene normalization,35511938,ccr-2022-35511938-language.md,69,no-literal-match-needs-context-review
@@ -538,6 +547,7 @@ ccr-lang-21967f990b96f86c58dd,Clopper–Pearson confidence interval,40310449,ccr
 ccr-lang-21a5535ee2fb1d6290ae,somatic short variant,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,152,no-literal-match-needs-context-review
 ccr-lang-21add6befb605b7d62ef,paired tissue sampling,36469573,ccr-2023-36469573-language.md,65,no-literal-match-needs-context-review
 ccr-lang-21d3582b6c4b3a413340,independent prognostic contribution,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,90,no-literal-match-needs-context-review
+ccr-lang-21f0f4738293c67c5b8d,functional ambiguity of missense variants,32241817,ccr-2020-32241817-language.md,69,no-literal-match-needs-context-review
 ccr-lang-220556099ee839ff4729,sum of longest diameters,35767426,ccr-2022-35767426-language.md,79,no-literal-match-needs-context-review
 ccr-lang-220e87e7f17e13c0b88a,noncompartmental analysis,35404402,ccr-2022-35404402-language.md,75,no-literal-match-needs-context-review
 ccr-lang-223e032ed62ee4a3c985,signature-high wild-type subgroup,38980931,ccr-2024-38980931-language.md,94,no-literal-match-needs-context-review
@@ -612,10 +622,12 @@ ccr-lang-2768abceba04d0e5abca,historical benchmark,41701940,ccr-2026-09-19-batch
 ccr-lang-2795cd0dbaa831fb48c7,genomic-context confounding,42599160,ccr-2026-09-19-pending15-language.md,1299,no-literal-match-needs-context-review
 ccr-lang-279986f3d33a1f177e7d,clonal-hematopoiesis contamination,41537692;42440365;42489696,ccr-2026-immunotherapy-fulltext-language.md,174,no-literal-match-needs-context-review
 ccr-lang-27a7ca92f7e02e13416e,higher cumulative locoregional recurrence,33323404,ccr-2021-33323404-language.md,102,no-literal-match-needs-context-review
+ccr-lang-27a8b2f81575b7b2c188,pretreatment circulating tumor DNA,32241817,ccr-2020-32241817-language.md,37,no-literal-match-needs-context-review
 ccr-lang-27b6c3656527185bab2b,inferred subtype abundance,33622705,ccr-2021-33622705-language.md,70,no-literal-match-needs-context-review
 ccr-lang-27cc046c57ae3ebde0cc,absolute and relative measures,34301751,ccr-2021-34301751-language.md,53,no-literal-match-needs-context-review
 ccr-lang-27cf3668a6c42fa5658f,escape mechanism,34407972,ccr-2021-34407972-language.md,105,no-literal-match-needs-context-review
 ccr-lang-27f185e8ce075a7d7d6b,molecular clearance,41400436,ccr-2026-09-19-batch2-language.md,333,no-literal-match-needs-context-review
+ccr-lang-28251ff8577bcd6aa7f0,estimated immune-cell fraction,32241817,ccr-2020-32241817-language.md,56,no-literal-match-needs-context-review
 ccr-lang-2827fba62a874fbf7efe,co-occurring pathway alteration,42360806,ccr-2026-42360806-language.md,60,no-literal-match-needs-context-review
 ccr-lang-282a909f90a47e6a6be2,centrally confirmed alteration,41556942,ccr-2026-09-19-supplement-language.md,812,no-literal-match-needs-context-review
 ccr-lang-2832db37faafec46badf,investigator-assessed progression,36971777,ccr-2023-36971777-language.md,83,no-literal-match-needs-context-review
@@ -634,6 +646,7 @@ ccr-lang-294d9c9bf86627981986,clonal reinvigoration,41805895;42008740;42189883,c
 ccr-lang-297e0c9f41f30ca0d32a,inducible costimulator agonist,35511938,ccr-2022-35511938-language.md,23,no-literal-match-needs-context-review
 ccr-lang-299b8020fbc8647a5454,discordance between genotype and protein phenotype,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,93,no-literal-match-needs-context-review
 ccr-lang-299dec916f422cfcf57e,multivariable Cox proportional-hazards model,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,59,no-literal-match-needs-context-review
+ccr-lang-29a9adc5a3495943b916,surrogate protein marker,33272981,ccr-2021-33272981-language.md,37,no-literal-match-needs-context-review
 ccr-lang-2a15466f687833088d5f,benchmark-exceeding response estimate,41511400,ccr-2026-41511400-language.md,70,no-literal-match-needs-context-review
 ccr-lang-2a2e6a819982ce1164f3,nonsignificant clinical trend,36595561,ccr-2023-36595561-language.md,85,no-literal-match-needs-context-review
 ccr-lang-2a368c5b67754cd56019,research-antibody exposure,36165915,ccr-2023-36165915-language.md,65,no-literal-match-needs-context-review
@@ -641,6 +654,7 @@ ccr-lang-2a3ea7697cd1912e55be,circulating tumor DNA detectability,34446541,ccr-2
 ccr-lang-2a533bfd15d5152e5209,KRAS/STK11 co-enrichment,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,177,no-literal-match-needs-context-review
 ccr-lang-2a6070b987065d7305e0,fusion-calling threshold,39887260,ccr-2025-genomics-2026-09-20-language.md,274,no-literal-match-needs-context-review
 ccr-lang-2a7de12cee07cfdd217e,cause-specific event hazard,35140122,ccr-2022-35140122-language.md,39,no-literal-match-needs-context-review
+ccr-lang-2a8dd7580456eff6378a,co-deleted neighboring genes,34074656,ccr-2021-34074656-language.md,82,no-literal-match-needs-context-review
 ccr-lang-2ab7f60456aa741841b5,maladaptive wound response,39540841,ccr-2025-omics-methods-2026-09-23-language.md,39,no-literal-match-needs-context-review
 ccr-lang-2ac5c399d8f8e1dbe426,immune-enriched region,41537692;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696,ccr-2026-immunotherapy-fulltext-language.md,127,no-literal-match-needs-context-review
 ccr-lang-2afa2b2b1f04a1d24d4e,Monte Carlo resampling,38109210,ccr-2024-38109210-language.md,39,no-literal-match-needs-context-review
@@ -680,6 +694,8 @@ ccr-lang-2d9481b6783fc6ebbf47,inactive GDP-bound state,35404402,ccr-2022-3540440
 ccr-lang-2d990276d427ca838d6a,benefit–risk assessment,37265412,ccr-2023-37265412-language.md,97,no-literal-match-needs-context-review
 ccr-lang-2d99e0d205230175b5a0,underpowered negative finding,37233987,ccr-2023-37233987-language.md,97,no-literal-match-needs-context-review
 ccr-lang-2d9ca5188b30f59f99a0,registry frequency cohort,36913537,ccr-2023-36913537-language.md,65,no-literal-match-needs-context-review
+ccr-lang-2d9f24d376d402807d5e,discordant subgroup findings,34074656,ccr-2021-34074656-language.md,65,no-literal-match-needs-context-review
+ccr-lang-2db280f567f2d09bf7f4,cohort-dependent missingness,35802677,ccr-2022-35802677-language.md,75,no-literal-match-needs-context-review
 ccr-lang-2db7623211716e764705,rare benefit-positive exception,38300729,ccr-2024-38300729-language.md,44,no-literal-match-needs-context-review
 ccr-lang-2dbae147059ca2b21721,mutation-independent signal,37071497,ccr-2023-37071497-language.md,51,no-literal-match-needs-context-review
 ccr-lang-2dc85d2e9ccf73b7630d,molecular recrudescence,37071497,ccr-2023-37071497-language.md,83,no-literal-match-needs-context-review
@@ -692,6 +708,7 @@ ccr-lang-2ea963dea7310edee569,co-occurring epigenetic regulator alterations,4070
 ccr-lang-2eb3a2a4c85facc0d138,actionable mutation of interest,40388547,ccr-2025-genomics-2026-09-20-language.md,176,no-literal-match-needs-context-review
 ccr-lang-2eec9d8f4e242270ada3,registration-based time origin,38165684,ccr-2024-38165684-language.md,36,no-literal-match-needs-context-review
 ccr-lang-2eef56e81c68e4faed4b,epigenetic sensitization,37725585,ccr-2023-37725585-language.md,49,no-literal-match-needs-context-review
+ccr-lang-2ef6d4cce12929e47000,genomic determinants of response,32241817,ccr-2020-32241817-language.md,29,no-literal-match-needs-context-review
 ccr-lang-2f0a4882f9b0b2329ccf,verification bias,38526394,ccr-2024-38526394-language.md,63,no-literal-match-needs-context-review
 ccr-lang-2f2a0d8adf287ff13329,no statistically significant difference in PFS,33558425,ccr-2021-33558425-language.md,70,no-literal-match-needs-context-review
 ccr-lang-2f399538a0415c44a252,MRI-based tumor volumetry,38330145,ccr-2024-38330145-language.md,42,no-literal-match-needs-context-review
@@ -717,6 +734,7 @@ ccr-lang-3070d6156a4ba235399e,Ba/F3 transformation assay,33685866,ccr-2021-33685
 ccr-lang-30809c04a1d6cb6f49c7,persistent gene amplification,42360806,ccr-2026-42360806-language.md,64,no-literal-match-needs-context-review
 ccr-lang-308f8d3af909ac7f9fc5,longitudinal molecular monitoring,34759042,ccr-2022-34759042-language.md,34,no-literal-match-needs-context-review
 ccr-lang-3090f99cdbff108ae0aa,elastic-net Cox regression,35727603,ccr-2022-35727603-language.md,87,no-literal-match-needs-context-review
+ccr-lang-309bc6a963b2cba52c03,upper-quartile normalization,34074656,ccr-2021-34074656-language.md,48,no-literal-match-needs-context-review
 ccr-lang-30be6bd25c95c8fd8ca6,pathogenic-variant eligibility,39400264,ccr-2024-39400264-language.md,43,no-literal-match-needs-context-review
 ccr-lang-30c3029aa5fe3bfd1ac9,biopsy-level dependence,37223924,ccr-2023-37223924-language.md,99,no-literal-match-needs-context-review
 ccr-lang-30c4a7be9687f9854313,induced regression,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,274,no-literal-match-needs-context-review
@@ -748,6 +766,7 @@ ccr-lang-32c85f54d1d2b5dcec3a,prospective clinical-utility evaluation,42377115,c
 ccr-lang-32d5d82e24a97e710484,four-parameter logistic fit,42478960,ccr-2026-09-19-batch2-language.md,543,no-literal-match-needs-context-review
 ccr-lang-32de8b8f15fff76d00eb,treated-cohort outcome stratification,42456046,ccr-2026-42456046-language-addendum.md,75,no-literal-match-needs-context-review
 ccr-lang-32df4c27f9d2dfd680cd,compartment-restricted cytokine delivery,35993913,ccr-2022-35993913-language.md,23,no-literal-match-needs-context-review
+ccr-lang-32e5dca1bad4ebab52f1,cross-cohort concordance,34074656,ccr-2021-34074656-language.md,64,no-literal-match-needs-context-review
 ccr-lang-32eb71e09aefd5b6a2f8,integrated safety population,38875108,ccr-2024-38875108-language.md,40,no-literal-match-needs-context-review
 ccr-lang-32f0806c94b2525282cd,comorbidity burden,37125965,ccr-2023-37125965-language.md,51,no-literal-match-needs-context-review
 ccr-lang-32f45f731d0ddc30b779,unmeasured treatment response,37223924,ccr-2023-37223924-language.md,101,no-literal-match-needs-context-review
@@ -799,6 +818,7 @@ ccr-lang-36883a305de9b1101ac7,purity- and ploidy-adjusted copy number,42658187,c
 ccr-lang-368efc3484f257df5b43,test-dependent statistical significance,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,336,no-literal-match-needs-context-review
 ccr-lang-36a6a154b06df264cc95,spot-level differential expression,41805895;42008740;42456046,ccr-2026-immunotherapy-fulltext-language.md,147,no-literal-match-needs-context-review
 ccr-lang-36ce5eb5f3822921f89c,biallelic inactivation,42599160,ccr-2026-09-19-pending15-language.md,1290,no-literal-match-needs-context-review
+ccr-lang-36eacb4e72d471dd9427,preclinical-to-clinical translation,31694835,ccr-2020-31694835-language.md,73,no-literal-match-needs-context-review
 ccr-lang-371458298dba00606a01,sampling-related heterogeneity,35852792,ccr-2022-35852792-language.md,89,no-literal-match-needs-context-review
 ccr-lang-371dd1ae9879a14b7b69,putative acquired resistance alteration,42658187,ccr-2026-09-19-pending15-language.md,1391,no-literal-match-needs-context-review
 ccr-lang-3727a70b3966db4ce41d,ongoing treatment at data lock,35101883,ccr-2022-35101883-language.md,89,no-literal-match-needs-context-review
@@ -812,6 +832,7 @@ ccr-lang-37ce2168ebb225044a21,preexisting co-occurring alterations,34301751,ccr-
 ccr-lang-37d0ad6ffb49e0d27846,tissue-positive/plasma-negative subgroup,40388547,ccr-2025-genomics-2026-09-20-language.md,187,no-literal-match-needs-context-review
 ccr-lang-37e09c112db135308157,genotype–phenotype correlation,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,148,no-literal-match-needs-context-review
 ccr-lang-37e9fd2719a462175b36,clinical-cutoff uncertainty,37289191,ccr-2023-37289191-language.md,97,no-literal-match-needs-context-review
+ccr-lang-38018c40e35eee69c2fb,subthreshold signal separation,33272981,ccr-2021-33272981-language.md,70,no-literal-match-needs-context-review
 ccr-lang-380440a30411bed4bc5a,allele-versus-context distinction,33558425,ccr-2021-33558425-language.md,81,no-literal-match-needs-context-review
 ccr-lang-384734175893997b229f,noninvasive monitoring,36166003,ccr-2022-36166003-language.md,67,no-literal-match-needs-context-review
 ccr-lang-384ce16ec2b98217bab4,biomarker-evaluable population,35275991,ccr-2022-35275991-language.md,31,no-literal-match-needs-context-review
@@ -825,6 +846,7 @@ ccr-lang-38c49eb6f370c4a1b848,nominal subgroup association,39836372,ccr-2025-202
 ccr-lang-38cbd72539e0f89b63d2,long-term treatment burden,35012927,ccr-2022-35012927-language.md,61,no-literal-match-needs-context-review
 ccr-lang-38cd5eb2e573f1d71e1a,tumor-cell-intrinsic immune evasion,34667030,ccr-2022-34667030-language.md,37,no-literal-match-needs-context-review
 ccr-lang-38e40b22595075b8317e,HLA and tumor-antigen screening,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,142,no-literal-match-needs-context-review
+ccr-lang-38efb5df97aa442a2437,methylation-to-expression inference,35802677,ccr-2022-35802677-language.md,77,no-literal-match-needs-context-review
 ccr-lang-38f75efd125b0303f80e,genotype-specific vulnerability,40465424,ccr-2025-omics-methods-2026-09-23-language.md,304,no-literal-match-needs-context-review
 ccr-lang-3906334553a5ce759d77,one-sided DeLong comparison,41591979,ccr-2026-09-19-pending15-language.md,252,no-literal-match-needs-context-review
 ccr-lang-390eba37f99b2bb7eaca,M1-like macrophage polarization,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,131,no-literal-match-needs-context-review
@@ -845,12 +867,15 @@ ccr-lang-3a6e5af0ee74e430c443,spectrum of genomic alterations,32709715,ccr-2026-
 ccr-lang-3a832e4a1a8b0cedb003,confidence interval was not estimable,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,302,no-literal-match-needs-context-review
 ccr-lang-3afb22c06cbcde4a2734,do not establish clinical utility,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506;41537692;41587109;41649868;41671081;41805895;41817317;41837748;41849236;41920765;42008740;42126592;42148884;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42507545;42574065,ccr-phrase-patterns.md,87,no-literal-match-needs-context-review
 ccr-lang-3b04b4b365b13f3d1882,spherical projection maps,35727603,ccr-2022-35727603-language.md,83,no-literal-match-needs-context-review
+ccr-lang-3b238572a89a883116ef,sequential versus upfront combined testing,33272981,ccr-2021-33272981-language.md,91,no-literal-match-needs-context-review
 ccr-lang-3b2cad1a5e00478964b8,incremental prognostic information,41400436,ccr-2026-09-19-batch2-language.md,340,no-literal-match-needs-context-review
 ccr-lang-3b6915736a76ab52413c,grade 3 or higher event,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,299,no-literal-match-needs-context-review
 ccr-lang-3b7475e7906906f9f97f,free-fraction adjusted exposure,35404402,ccr-2022-35404402-language.md,91,no-literal-match-needs-context-review
+ccr-lang-3b76be7e02ddae4b5aea,mutation-associated age difference,35802677,ccr-2022-35802677-language.md,62,no-literal-match-needs-context-review
 ccr-lang-3b8b9e37b086315f2885,clinicopathologic–genomic correlation,33947695,ccr-2021-33947695-language.md,61,no-literal-match-needs-context-review
 ccr-lang-3b9aba0386fc47712c3b,kinase-domain-retaining fusion,42578969,ccr-2026-09-19-pending15-language.md,1181,no-literal-match-needs-context-review
 ccr-lang-3bb6a6b1b69eb8090907,caspase-3/7 apoptosis assay,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,259,no-literal-match-needs-context-review
+ccr-lang-3bcf1f0fa4aa7f4ba228,retrospective treatment-associated signal,34074656,ccr-2021-34074656-language.md,81,no-literal-match-needs-context-review
 ccr-lang-3bf0b2eee159c1e8f739,fully drug-resistant cell,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,268,no-literal-match-needs-context-review
 ccr-lang-3bf54228ee34b2f861fc,analytical versus clinical sensitivity,42377115,ccr-2026-42377115-language.md,74,no-literal-match-needs-context-review
 ccr-lang-3bfba81384f5912a076d,held-out validation cohort,41945491,ccr-2026-09-19-pending15-language.md,638,no-literal-match-needs-context-review
@@ -877,6 +902,7 @@ ccr-lang-3d521f4d0042cc32a902,molecularly heterogeneous resistance,42440354,ccr-
 ccr-lang-3d57466abdd674460d50,oncogenic driver retention,42360806,ccr-2026-42360806-language.md,39,no-literal-match-needs-context-review
 ccr-lang-3d703194775cb46b90da,immune-signature enrichment,38277235,ccr-2024-38277235-language.md,40,no-literal-match-needs-context-review
 ccr-lang-3d7b1bebbb8028252ea0,capacity to mount an antitumor response,35852792,ccr-2022-35852792-language.md,55,no-literal-match-needs-context-review
+ccr-lang-3d7f968f8e0d1c2734c8,normal epithelial outgrowth,31694835,ccr-2020-31694835-language.md,56,no-literal-match-needs-context-review
 ccr-lang-3d8dcd3db6eafb44ce45,SEB-stimulated peripheral blood mononuclear cell assay,41649868;41837748;42148884,ccr-2026-translational-mechanisms-fulltext-language.md,190,no-literal-match-needs-context-review
 ccr-lang-3dc66720216e9dbc201d,mechanistic synergy hypothesis,42507540,ccr-2026-09-19-supplement-language.md,484,no-literal-match-needs-context-review
 ccr-lang-3ddf38501be437307129,reference-free methylation profiling,39620930,ccr-2025-genomics-2026-09-20-language.md,608,no-literal-match-needs-context-review
@@ -904,7 +930,9 @@ ccr-lang-3ec795a65432f929affa,pharmacodynamic target inhibition,35247924,ccr-202
 ccr-lang-3edbc3d2f04ad1248788,discordant assay classification,42440358,ccr-2026-42440358-language.md,50,no-literal-match-needs-context-review
 ccr-lang-3ef7d07e5028df99acdd,regimen-dependent biomarker performance,37801329,ccr-2024-37801329-language.md,31,no-literal-match-needs-context-review
 ccr-lang-3f0c03f2f032bde89af5,immune-metabolic regulation,34407972,ccr-2021-34407972-language.md,107,no-literal-match-needs-context-review
+ccr-lang-3f171f3c758718c07767,patient-matched normal DNA,34074656,ccr-2021-34074656-language.md,46,no-literal-match-needs-context-review
 ccr-lang-3f3474a1e8d2303ade51,histology-dependent activity,42578969,ccr-2026-09-19-pending15-language.md,1182,no-literal-match-needs-context-review
+ccr-lang-3f357610195cf5eab5af,adjusted linear association,34921025,ccr-2022-34921025-language.md,52,no-literal-match-needs-context-review
 ccr-lang-3f816cfe6e3d1054094f,mixed-effects model,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,311,no-literal-match-needs-context-review
 ccr-lang-3f8d3dfa7224d993b8f9,treatment interaction,41784525,ccr-2026-09-19-supplement-language.md,548,no-literal-match-needs-context-review
 ccr-lang-3fa316d1933a1a263fbe,symptom-triggered imaging,35144967,ccr-2022-35144967-language.md,79,no-literal-match-needs-context-review
@@ -963,12 +991,14 @@ ccr-lang-4465c52d55acc3d90585,context-dependent signaling,41543339,ccr-2026-09-1
 ccr-lang-447181071c694a365f15,single-patient disease stabilization,33685866,ccr-2021-33685866-language.md,76,no-literal-match-needs-context-review
 ccr-lang-4488c3055528aa59033b,historical standard-therapy context,33558425,ccr-2021-33558425-language.md,84,no-literal-match-needs-context-review
 ccr-lang-44a84f128238e7e42169,adequate ctDNA shedding,34753780,ccr-2022-34753780-language.md,59,no-literal-match-needs-context-review
+ccr-lang-44deb65f0063df4ff16d,endpoint-specific treatment interaction,32241817,ccr-2020-32241817-language.md,53,no-literal-match-needs-context-review
 ccr-lang-44eafab428fb995183d5,matched-normal sequencing,41400436,ccr-2026-09-19-batch2-language.md,333,no-literal-match-needs-context-review
 ccr-lang-45072bc524536d82da92,rituximab-responsive elimination marker,36692420,ccr-2023-36692420-language.md,64,no-literal-match-needs-context-review
 ccr-lang-45260a80417bb0c96f10,assay failure or tissue unavailability,36201167,ccr-2023-36201167-language.md,71,no-literal-match-needs-context-review
 ccr-lang-4533638638bd86d42992,genotype–drug structural compatibility,33685866,ccr-2021-33685866-language.md,87,no-literal-match-needs-context-review
 ccr-lang-455cad81c83dfaeed8b9,network hub based on connectivity,42714875,ccr-2026-09-12-supplement-language.md,262,no-literal-match-needs-context-review
 ccr-lang-456e5c263bfd2c8da58c,single-arm efficacy signal,42507540,ccr-2026-09-19-supplement-language.md,484,no-literal-match-needs-context-review
+ccr-lang-4584c54ade346484d675,histology-dependent association,34074656,ccr-2021-34074656-language.md,37,no-literal-match-needs-context-review
 ccr-lang-45e73ca2a6fd97f130d3,tumor-to-background uptake,38277241,ccr-2024-38277241-language.md,51,no-literal-match-needs-context-review
 ccr-lang-45ed8df66efb9674d31b,platform-dependent detection,42377115,ccr-2026-42377115-language.md,76,no-literal-match-needs-context-review
 ccr-lang-4609b61d1209fa2de85b,rolling-circle amplification,39836411,ccr-2025-genomics-2026-09-20-language.md,552,no-literal-match-needs-context-review
@@ -997,6 +1027,7 @@ ccr-lang-482fc4ce03860293d0f8,allogeneic cellular product,36692420,ccr-2023-3669
 ccr-lang-4839ae63956f63cab190,median was not reached,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,296,no-literal-match-needs-context-review
 ccr-lang-483d61fe1b6b55047380,tumor-suppressor inactivation,35247924,ccr-2022-35247924-language.md,57,no-literal-match-needs-context-review
 ccr-lang-485d9a745f12be3c4e6f,internally validated performance estimate,42485106,ccr-2026-42485106-language-addendum.md,77,no-literal-match-needs-context-review
+ccr-lang-486b797cb755e6b04a38,conflicting clinical evidence,34074656,ccr-2021-34074656-language.md,36,no-literal-match-needs-context-review
 ccr-lang-487e225d078f54545c16,morphology-guided region of interest,39150541,ccr-2024-39150541-language.md,64,no-literal-match-needs-context-review
 ccr-lang-48a7a8808bc49bef600f,long-term nonprogressor,39670974,ccr-2025-2026-09-19-intake-language.md,227,no-literal-match-needs-context-review
 ccr-lang-48cccf5b9d4b27e869fe,component contribution,37227187,ccr-2023-37227187-language.md,60,no-literal-match-needs-context-review
@@ -1014,6 +1045,7 @@ ccr-lang-491ea4df19d142de1ea2,antibody-derived surface-protein readout,42307634,
 ccr-lang-4922df39d9952769ad55,classification accuracy,42001480,ccr-2026-09-19-batch2-language.md,270,no-literal-match-needs-context-review
 ccr-lang-49249f5800322c0bdb4b,prespecified null response rate,37233987,ccr-2023-37233987-language.md,67,no-literal-match-needs-context-review
 ccr-lang-4928d9fea4cc273b89a2,amplicon segment size,42340371,ccr-2026-42340371-language.md,53,no-literal-match-needs-context-review
+ccr-lang-496d4be2b6f684741990,treatment-predictive evidence,35802677,ccr-2022-35802677-language.md,79,no-literal-match-needs-context-review
 ccr-lang-497c665dae550c5f79e5,candidate outcome marker,36166003,ccr-2022-36166003-language.md,53,no-literal-match-needs-context-review
 ccr-lang-498ad7341eb57261beb2,variant-level tracking,38995268,ccr-2024-38995268-language.md,40,no-literal-match-needs-context-review
 ccr-lang-498f66f7a74e6575eb91,trimmed mean of M values normalization,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,159,no-literal-match-needs-context-review
@@ -1034,6 +1066,7 @@ ccr-lang-4ae53152a0e9792c7deb,expected questionnaire forms,35012927,ccr-2022-350
 ccr-lang-4afd963f7e9350133a5b,discordant deletion,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,81,no-literal-match-needs-context-review
 ccr-lang-4b0f7cc85a5577b26ddd,hypomorphic effect,42599160,ccr-2026-09-19-pending15-language.md,1299,no-literal-match-needs-context-review
 ccr-lang-4b1b0d7319f62ee96777,compensatory regulatory circuitry,41537692;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696,ccr-2026-immunotherapy-fulltext-language.md,117,no-literal-match-needs-context-review
+ccr-lang-4b3581a53e74c7856fb3,nonsignificant survival contrast,35802677,ccr-2022-35802677-language.md,65,no-literal-match-needs-context-review
 ccr-lang-4b3699fbd40158bd9fa8,endpoint hierarchy,42765908,ccr-2026-42765908-language.md,62,no-literal-match-needs-context-review
 ccr-lang-4b4dfa70d52f2e5a4996,Bliss delta-area analysis,37289191,ccr-2023-37289191-language.md,69,no-literal-match-needs-context-review
 ccr-lang-4b57750c780be50018eb,target-expression selection,39287821,ccr-2024-39287821-language.md,30,no-literal-match-needs-context-review
@@ -1087,6 +1120,7 @@ ccr-lang-4f180688811dfb3ec026,expression-derived macrophage score,33020056,ccr-2
 ccr-lang-4f1a8b8fd003345184f7,covariate balance assessment,35140122,ccr-2022-35140122-language.md,41,no-literal-match-needs-context-review
 ccr-lang-4f2cbcbbda24fd7805ba,post-baseline confounding,35511917,ccr-2022-35511917-language.md,117,no-literal-match-needs-context-review
 ccr-lang-4f350e80103684faca74,treatment-duration question,37702716,ccr-2023-37702716-language.md,51,no-literal-match-needs-context-review
+ccr-lang-4f3b453abbdddcb64f4b,assay-dependent classification,32241817,ccr-2020-32241817-language.md,68,no-literal-match-needs-context-review
 ccr-lang-4f3c728cfad799f44ca7,molecularly targeted treatment,35144967,ccr-2022-35144967-language.md,61,no-literal-match-needs-context-review
 ccr-lang-4f5867a65c7587641a65,host metabolic factor,37125965,ccr-2023-37125965-language.md,49,no-literal-match-needs-context-review
 ccr-lang-4f64c82a8ed83f59d446,cellular potency,37249619,ccr-2023-37249619-language.md,81,no-literal-match-needs-context-review
@@ -1111,6 +1145,7 @@ ccr-lang-5095ddb9287a6b08d7bd,histology confounding,38109210,ccr-2024-38109210-l
 ccr-lang-50a4682765c25acd37d5,genotype-incomplete surrogate,33023953,ccr-2021-33023953-language.md,85,no-literal-match-needs-context-review
 ccr-lang-50bcb276e1869a4c1b29,grade 3–4 toxicity,41894181,ccr-2026-09-19-supplement-language.md,1061,no-literal-match-needs-context-review
 ccr-lang-50d3d48053eee2995a9f,immune-related versus treatment-related adverse event,40378060,ccr-2026-09-23-intake-language.md,102,no-literal-match-needs-context-review
+ccr-lang-5106b1df09c4186c9e7a,technical and biological replicates,31694835,ccr-2020-31694835-language.md,43,no-literal-match-needs-context-review
 ccr-lang-5110ee55319fe70590b1,non-isogenic cell-line confounding,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,313,no-literal-match-needs-context-review
 ccr-lang-5124e57a4c6017166800,multi-omics validation gap,39150541,ccr-2024-39150541-language.md,95,no-literal-match-needs-context-review
 ccr-lang-513b3f15fdf1e9daeca1,tumor-supporting stroma,35972732,ccr-2022-35972732-language.md,65,no-literal-match-needs-context-review
@@ -1136,6 +1171,8 @@ ccr-lang-52db0a12465833e3ce43,single-layer biomarker,42440358,ccr-2026-42440358-
 ccr-lang-52de5a8b2399b33b92fe,low tumor shedding,38526394,ccr-2024-38526394-language.md,30,no-literal-match-needs-context-review
 ccr-lang-52f07d27d082f6bcbc66,ROI-sampling constraint,38630755,ccr-2024-38630755-language.md,90,no-literal-match-needs-context-review
 ccr-lang-530d0a26344150fb663f,co-mutational context,33558425,ccr-2021-33558425-language.md,49,no-literal-match-needs-context-review
+ccr-lang-53134315d2405bf07fd9,candidate treatment-response biomarker,34074656,ccr-2021-34074656-language.md,15,no-literal-match-needs-context-review
+ccr-lang-531bb175d8195b39d055,immune deconvolution estimate,34074656,ccr-2021-34074656-language.md,52,no-literal-match-needs-context-review
 ccr-lang-534b81da3f89e9e1dcc9,cancer-type-matched background,39561276,ccr-2025-2026-09-19-intake-language.md,169,no-literal-match-needs-context-review
 ccr-lang-535674c15335e11e0586,adrenergic–mesenchymal state,36602782,ccr-2023-36602782-language.md,53,no-literal-match-needs-context-review
 ccr-lang-536e39ffccc47277ccbd,hypothesis-generating therapeutic vulnerability,33323404,ccr-2021-33323404-language.md,126,no-literal-match-needs-context-review
@@ -1226,6 +1263,7 @@ ccr-lang-5ae5274ad064534d3965,paired PET and tissue IHC,39545922;39821070;402080
 ccr-lang-5af36e7e79fa5daae6e3,PRMT5/MAT2A-directed strategy,41649868;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,140,no-literal-match-needs-context-review
 ccr-lang-5b302b9c0662eb7faf09,false-discovery-rate adjustment,35091439,ccr-2022-35091439-language.md,73,no-literal-match-needs-context-review
 ccr-lang-5b5afd1ce90851a6cc35,methylation-based ctDNA quantification,41563386,ccr-2026-41563386-language.md,64,no-literal-match-needs-context-review
+ccr-lang-5b9755ed24dc22e21aec,model-establishment criteria,31694835,ccr-2020-31694835-language.md,72,no-literal-match-needs-context-review
 ccr-lang-5b9aec6f612524c15163,forward inclusion and backward elimination,40343815;40499141;40928991,ccr-2025-immunotherapy-fulltext-language.md,289,no-literal-match-needs-context-review
 ccr-lang-5ba99e4ed0690d92b6fc,conditional survivor population,39670974,ccr-2025-2026-09-19-intake-language.md,248,no-literal-match-needs-context-review
 ccr-lang-5bab536a16f9336231b2,below-limit-of-detection analyte,39651955,ccr-2025-clinical-2026-09-23-language.md,181,no-literal-match-needs-context-review
@@ -1241,6 +1279,7 @@ ccr-lang-5c9cabf6944139f31145,adverse event leading to discontinuation,39466024;
 ccr-lang-5cbe387cbd51e5ee13a3,single-region misclassification risk,38630755,ccr-2024-38630755-language.md,87,no-literal-match-needs-context-review
 ccr-lang-5ceba8b58f0e8da54cd2,histologic and genomic heterogeneity,33077574,ccr-2026-09-12-supplement-language.md,29,no-literal-match-needs-context-review
 ccr-lang-5cf49c5f02b67f3822f8,uptake of germline testing,35363308,ccr-2022-35363308-language.md,91,no-literal-match-needs-context-review
+ccr-lang-5d18106a46f980dc592c,biochemical damage readout,34921025,ccr-2022-34921025-language.md,70,no-literal-match-needs-context-review
 ccr-lang-5d1c3a4730711781129f,tissue–plasma discordance,34753780,ccr-2022-34753780-language.md,93,no-literal-match-needs-context-review
 ccr-lang-5d1effad985aa4b49abb,systemic acquired resistance,35767426,ccr-2022-35767426-language.md,35,no-literal-match-needs-context-review
 ccr-lang-5d2cc3e0e427b65ac256,a total of [N] patients,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506;41537692;41587109;41649868;41671081;41805895;41817317;41837748;41849236;41920765;42008740;42126592;42148884;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42507545;42574065,ccr-phrase-patterns.md,86,no-literal-match-needs-context-review
@@ -1315,6 +1354,7 @@ ccr-lang-63620e2748c1cd0734ef,small-animal PET biodistribution,39545922;39821070
 ccr-lang-63648a03bafc67c752ad,matched leukocyte sequencing,34446541,ccr-2021-34446541-language.md,38,no-literal-match-needs-context-review
 ccr-lang-6365e5b72c42af9ea251,FDR q value,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,219,no-literal-match-needs-context-review
 ccr-lang-637edf1f81747632fdd1,late risk set,42207168,ccr-2026-09-19-pending15-language.md,837,no-literal-match-needs-context-review
+ccr-lang-638620d128bb72a282b5,clinically relevant preclinical model,31694835,ccr-2020-31694835-language.md,12,no-literal-match-needs-context-review
 ccr-lang-63920e2e2604e092e254,response-evaluable population,41252574,ccr-2026-09-19-batch2-language.md,194,no-literal-match-needs-context-review
 ccr-lang-639b73234fb74c6e9896,highest nonseverely toxic dose (HNSTD),41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,209,no-literal-match-needs-context-review
 ccr-lang-63b0b5abefe36c9fe204,treatment-naive metastatic disease,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,85,no-literal-match-needs-context-review
@@ -1324,18 +1364,22 @@ ccr-lang-63d0ee73c6a9b7f16766,patient-derived cell model,41649868;41837748;42148
 ccr-lang-64011e2f42bf2ea87cab,signal-seeking combination,39017667,ccr-2024-39017667-language.md,30,no-literal-match-needs-context-review
 ccr-lang-641043a1ff58488cd94d,historical platinum exposure,33685865,ccr-2021-33685865-language.md,70,no-literal-match-needs-context-review
 ccr-lang-6418bcd61075ba2aa220,incomplete penetrance,39400264,ccr-2024-39400264-language.md,33,no-literal-match-needs-context-review
+ccr-lang-642e2bde39eb942d5d29,preranked gene set enrichment analysis,32241817,ccr-2020-32241817-language.md,41,no-literal-match-needs-context-review
 ccr-lang-6462d452c481f34bfe09,matched tissue–plasma profiling,38060240,ccr-2024-38060240-language.md,39,no-literal-match-needs-context-review
 ccr-lang-6466d48a3781f587eda0,unmeasured co-alteration confounding,33323404,ccr-2021-33323404-language.md,124,no-literal-match-needs-context-review
 ccr-lang-64855bf2117e5d9919da,intracranial activity,38875108,ccr-2024-38875108-language.md,51,no-literal-match-needs-context-review
 ccr-lang-64994cdc539ae2c10317,retained chromosome copies,38630790,ccr-2024-38630790-language.md,54,no-literal-match-needs-context-review
+ccr-lang-64a7849d4b7fbbd03e3a,histologic and molecular fidelity,31694835,ccr-2020-31694835-language.md,29,no-literal-match-needs-context-review
 ccr-lang-64ae364755fba9bfb51f,target engagement,41649868;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,129,no-literal-match-needs-context-review
 ccr-lang-64b4a600c7c6043dfb09,tissue-free methylation assay,41537692;42440365;42489696,ccr-2026-immunotherapy-fulltext-language.md,183,no-literal-match-needs-context-review
 ccr-lang-64d4bc02f92eb1cd1aa0,residual age imbalance,35140122,ccr-2022-35140122-language.md,51,no-literal-match-needs-context-review
+ccr-lang-64e9e3104e8c8437edd2,transcript-confirmed rearrangement,33272981,ccr-2021-33272981-language.md,68,no-literal-match-needs-context-review
 ccr-lang-64ff8a528ad4bbf4a53d,gene-evaluable denominator,41537704,ccr-2026-09-19-pending15-language.md,69,no-literal-match-needs-context-review
 ccr-lang-6503d5e70447586629c3,atezolizumab-associated survival benefit,41784525,ccr-2026-09-19-supplement-language.md,557,no-literal-match-needs-context-review
 ccr-lang-65093734d14872bf1caa,internal model optimism,35838647,ccr-2022-35838647-language.md,81,no-literal-match-needs-context-review
 ccr-lang-652586623fcf3b8060d4,large-scale compound screen,33023953,ccr-2021-33023953-language.md,61,no-literal-match-needs-context-review
 ccr-lang-6532567e0f03c6ed7afc,intrathoracic recurrence,36794455,ccr-2023-36794455-language.md,81,no-literal-match-needs-context-review
+ccr-lang-6533a168aa13700401fa,paired resistance specimens,34921025,ccr-2022-34921025-language.md,45,no-literal-match-needs-context-review
 ccr-lang-653f1e7decf867124e47,second-site EGFR alteration,36729110,ccr-2023-36729110-language.md,49,no-literal-match-needs-context-review
 ccr-lang-6550ee8681d3d2c67666,dynamic changes in mutant allele frequency,35713632,ccr-2022-35713632-language.md,55,no-literal-match-needs-context-review
 ccr-lang-655ee927c588ab2fae33,parallel signaling pathway,42578969,ccr-2026-09-19-pending15-language.md,1209,no-literal-match-needs-context-review
@@ -1359,7 +1403,9 @@ ccr-lang-670c05c09935b14da24b,cell-surface immunophenotype,42307634,ccr-2026-09-
 ccr-lang-670c4f9d3c3995dde34e,baseline inflammation signature,35511938,ccr-2022-35511938-language.md,85,no-literal-match-needs-context-review
 ccr-lang-673bfb99f9535a986b75,Lin concordance correlation coefficient,41945491,ccr-2026-09-19-pending15-language.md,639,no-literal-match-needs-context-review
 ccr-lang-675ea3d6214fe5820be0,dose-limiting toxicity observation window,35254415,ccr-2022-35254415-language.md,67,no-literal-match-needs-context-review
+ccr-lang-676897dbc201bc2cebab,culture-associated selection,31694835,ccr-2020-31694835-language.md,70,no-literal-match-needs-context-review
 ccr-lang-67781610a64fc90d8fb4,PBMC-humanized xenograft,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,266,no-literal-match-needs-context-review
+ccr-lang-677f7a4fa6612b6eba98,chronological age,35802677,ccr-2022-35802677-language.md,35,no-literal-match-needs-context-review
 ccr-lang-6785a4c880b9d29cbafe,discrimination and calibration,38723277,ccr-2024-38723277-language.md,51,no-literal-match-needs-context-review
 ccr-lang-678942dd440ea890f147,ROI-level pseudoreplication,40299768,ccr-2025-2026-09-19-intake-language.md,444,no-literal-match-needs-context-review
 ccr-lang-67941f86aa64d18ce71d,molecular relatedness,39561276,ccr-2025-2026-09-19-intake-language.md,164,no-literal-match-needs-context-review
@@ -1388,9 +1434,11 @@ ccr-lang-68f24d4c9fc2b8377a17,model predictive check,40343815;40499141;40928991,
 ccr-lang-692e67a6f1d78f460ca8,nonrandomized treatment cohort,39017667,ccr-2024-39017667-language.md,39,no-literal-match-needs-context-review
 ccr-lang-69388693dfa56d822243,pathway-related expression phenotype,37233991,ccr-2023-37233991-language.md,49,no-literal-match-needs-context-review
 ccr-lang-695f17211dff1e4c9cca,institutional clinicogenomic cohort,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,156,no-literal-match-needs-context-review
+ccr-lang-69747516394d970252d4,atypical rearrangement pattern,33272981,ccr-2021-33272981-language.md,71,no-literal-match-needs-context-review
 ccr-lang-6979d8d5e18ba268b7c4,pharmacologic phenocopy,39078310,ccr-2024-39078310-language.md,64,no-literal-match-needs-context-review
 ccr-lang-698b720b532ba4d64250,isoform-selective inhibitor,35247924,ccr-2022-35247924-language.md,23,no-literal-match-needs-context-review
 ccr-lang-69a6d3768483c9ae7bac,treatment-cohort-specific survival association,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,293,no-literal-match-needs-context-review
+ccr-lang-69b01ab6dd270da68f5b,variant of uncertain functional significance,34074656,ccr-2021-34074656-language.md,47,no-literal-match-needs-context-review
 ccr-lang-69b7d41e73742e001934,heterogeneous treatment exposure,37939140,ccr-2024-37939140-language.md,66,no-literal-match-needs-context-review
 ccr-lang-69c0eb916c2708d53be0,durable stable disease,42599160,ccr-2026-09-19-pending15-language.md,1290,no-literal-match-needs-context-review
 ccr-lang-69ce419a0ca707894b61,topoisomerase I inhibitor payload,41961582,ccr-2026-09-23-intake-language.md,30,no-literal-match-needs-context-review
@@ -1437,15 +1485,18 @@ ccr-lang-6dbd63181946850f015e,ever-positive patient status,34759042,ccr-2022-347
 ccr-lang-6dbe5521659994603ca9,historical safety comparison,37227187,ccr-2023-37227187-language.md,61,no-literal-match-needs-context-review
 ccr-lang-6dccab490c3e60bcc4f5,competitive cysteine engagement,40465424,ccr-2025-omics-methods-2026-09-23-language.md,316,no-literal-match-needs-context-review
 ccr-lang-6df29f125f56c35bb5cd,colony-forming capacity,41649868;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,134,no-literal-match-needs-context-review
+ccr-lang-6e1ad297dcf2da5f7324,inferred immune fraction,35802677,ccr-2022-35802677-language.md,60,no-literal-match-needs-context-review
 ccr-lang-6e34609d83c3f4ee4063,ctDNA-evaluable analysis set,38630555,ccr-2024-38630555-language.md,42,no-literal-match-needs-context-review
 ccr-lang-6e3873ce8d2767546058,confirmed objective response rate,34740925,ccr-2022-34740925-language.md,39,no-literal-match-needs-context-review
 ccr-lang-6e517e6930db522f7fd1,per-protocol response population,36378548,ccr-2023-36378548-language.md,69,no-literal-match-needs-context-review
 ccr-lang-6e52f03329ae18cfcfb3,independent validation cohort,42059900,ccr-2026-09-19-supplement-language.md,391,no-literal-match-needs-context-review
 ccr-lang-6e6b0b007b05641e193d,pathogenic splice event,41556942,ccr-2026-09-19-supplement-language.md,794,no-literal-match-needs-context-review
+ccr-lang-6e6e0ebacec347e30bc3,methylation-based deconvolution,35802677,ccr-2022-35802677-language.md,46,no-literal-match-needs-context-review
 ccr-lang-6e73520fcd3e536f77ae,antigen-blocking control,39841860,ccr-2025-omics-methods-2026-09-23-language.md,142,no-literal-match-needs-context-review
 ccr-lang-6e8ae084cf42c58e25e7,escalation with overdose control,41252574,ccr-2026-09-19-batch2-language.md,194,no-literal-match-needs-context-review
 ccr-lang-6e9865d24045b57c80db,leave-cancer-type-out evaluation,39620930,ccr-2025-genomics-2026-09-20-language.md,610,no-literal-match-needs-context-review
 ccr-lang-6eb594a2f77501644615,training-case exclusion analysis,35511938,ccr-2022-35511938-language.md,89,no-literal-match-needs-context-review
+ccr-lang-6eca88ef6c81b5a31a55,pathway-signature repression,34921025,ccr-2022-34921025-language.md,66,no-literal-match-needs-context-review
 ccr-lang-6ed8889304e8bf511130,external cohort assessment,33593884,ccr-2021-33593884-language.md,63,no-literal-match-needs-context-review
 ccr-lang-6ee1c0d26ac5b468ebe5,neoantigen presentation capacity,34016641,ccr-2021-34016641-language.md,36,no-literal-match-needs-context-review
 ccr-lang-6ef04f61dc8b8b9c1bd9,peritumoral lymphocyte distribution,42456051,ccr-2026-42456051-language.md,69,no-literal-match-needs-context-review
@@ -1461,9 +1512,11 @@ ccr-lang-6f6987586296c601ca67,patient-derived organoid model,38330145,ccr-2024-3
 ccr-lang-6f6d957fb50dc3166b82,association versus mechanism,37725585,ccr-2023-37725585-language.md,97,no-literal-match-needs-context-review
 ccr-lang-6f6e9b3f306c49b9b124,platinum-ineligible population,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,94,no-literal-match-needs-context-review
 ccr-lang-6f8e78856a6f289761e3,flow-cytometric measurement of intracellular ROS,33077574,ccr-2026-09-12-supplement-language.md,41,no-literal-match-needs-context-review
+ccr-lang-6f9337246a27c996ee6b,exact binomial confidence interval,33272981,ccr-2021-33272981-language.md,53,no-literal-match-needs-context-review
 ccr-lang-6fb982fb48f94cbdd002,epigenetic heterogeneity and plasticity,35920742,ccr-2022-35920742-language.md,137,no-literal-match-needs-context-review
 ccr-lang-6fbd496de665cd80379d,relative variant clonality,42440354,ccr-2026-09-19-pending15-language.md,1007,no-literal-match-needs-context-review
 ccr-lang-6fd121c99fb2a0fb6874,adjusted hazard ratio,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,74,no-literal-match-needs-context-review
+ccr-lang-6fefca8ead5fb04235e4,independent prognostic validation,35802677,ccr-2022-35802677-language.md,78,no-literal-match-needs-context-review
 ccr-lang-6ff7e295ccd16725bb2c,dose-adjusted switching,41945500,ccr-2026-09-19-supplement-language.md,988,no-literal-match-needs-context-review
 ccr-lang-700ebcf4a31cac2e38ab,exploratory co-mutation analysis,37233987,ccr-2023-37233987-language.md,99,no-literal-match-needs-context-review
 ccr-lang-70191cab94b7eaab346e,unstratified Cox proportional hazards model,34301751,ccr-2021-34301751-language.md,71,no-literal-match-needs-context-review
@@ -1477,12 +1530,15 @@ ccr-lang-70ac33e202a47e889c6b,coefficient of variation,34903582,ccr-2022-3490358
 ccr-lang-70b7471ad8e48e33647c,deconvolution-related uncertainty,33622705,ccr-2021-33622705-language.md,82,no-literal-match-needs-context-review
 ccr-lang-70d43a053d69d6b27592,persistent transitional state,39540841,ccr-2025-omics-methods-2026-09-23-language.md,65,no-literal-match-needs-context-review
 ccr-lang-70eaeed7b77f82c67118,co-deletion-associated transcriptional suppression,42148883,ccr-2026-42148883-language.md,48,no-literal-match-needs-context-review
+ccr-lang-710d096d36d267f03800,random-effects pooled estimate,32241817,ccr-2020-32241817-language.md,43,no-literal-match-needs-context-review
 ccr-lang-710ffe8ed83d97a234c8,immunogenic cell-death potential,42013305,ccr-2026-09-19-supplement-language.md,905,no-literal-match-needs-context-review
 ccr-lang-712a26c2f2aaf6ee0f99,partial resensitization,38630555,ccr-2024-38630555-language.md,53,no-literal-match-needs-context-review
 ccr-lang-713489c045b6aa88ae81,target-molecule quantification,36692420,ccr-2023-36692420-language.md,61,no-literal-match-needs-context-review
 ccr-lang-713dae1ed9ae051fd2de,missing or unevaluable,35144967,ccr-2022-35144967-language.md,95,no-literal-match-needs-context-review
 ccr-lang-7149016e522d8794753f,confirmatory study,34903582,ccr-2022-34903582-language.md,113,no-literal-match-needs-context-review
 ccr-lang-714b18d485324dbe7923,negative immunohistochemical correlate,39651955,ccr-2025-clinical-2026-09-23-language.md,190,no-literal-match-needs-context-review
+ccr-lang-716113896b0dd0709757,adaptive receptor regulation,34921025,ccr-2022-34921025-language.md,17,no-literal-match-needs-context-review
+ccr-lang-71742e6002aa37f1783f,composite molecular reference standard,33272981,ccr-2021-33272981-language.md,20,no-literal-match-needs-context-review
 ccr-lang-719aff19e16a03aca1e8,mutation-level concordance,42377115,ccr-2026-42377115-language.md,62,no-literal-match-needs-context-review
 ccr-lang-71a2df733b9dbe43f2b4,treatment-by-biomarker interaction,39437011,ccr-2025-genomics-2026-09-20-language.md,233,no-literal-match-needs-context-review
 ccr-lang-71b04ffb11f404c15702,global proteome profiling,40208070,ccr-2025-immunotherapy-fulltext-language.md,213,no-literal-match-needs-context-review
@@ -1493,6 +1549,7 @@ ccr-lang-723a97980eae1b140f41,CRISPR-mediated knockout,42478960,ccr-2026-09-19-b
 ccr-lang-723d1a95c97a79e114d8,sampling dependence,38127300,ccr-2024-38127300-language.md,63,no-literal-match-needs-context-review
 ccr-lang-723ee3e88d424565433f,manufacturing failure,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,144,no-literal-match-needs-context-review
 ccr-lang-72a64b54ad332e75c989,clinico-genomic determinants of treatment efficacy,39804166,ccr-2025-genomics-2026-09-20-language.md,26,no-literal-match-needs-context-review
+ccr-lang-72ac40f4ceb7390df23e,treatment beyond progression,34921025,ccr-2022-34921025-language.md,68,no-literal-match-needs-context-review
 ccr-lang-72b3452f4cb0903524ec,blinded histopathologic assessment,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,271,no-literal-match-needs-context-review
 ccr-lang-72ce199695712c5e4972,historical comparison,34740922,ccr-2022-34740922-language.md,113,no-literal-match-needs-context-review
 ccr-lang-72d1b49b060cdd502665,differentially abundant taxon,41849236,ccr-2026-immunotherapy-fulltext-language.md,204,no-literal-match-needs-context-review
@@ -1535,6 +1592,7 @@ ccr-lang-75baf605aeec438eb636,subtype-associated drug sensitivity,33023953,ccr-2
 ccr-lang-75be44d8d3fe005823e3,variant-aware sequence database,40465424,ccr-2025-omics-methods-2026-09-23-language.md,317,no-literal-match-needs-context-review
 ccr-lang-75d63fffc6cb5d47d9dd,matched buffy-coat sequencing,42001480,ccr-2026-09-19-batch2-language.md,263,no-literal-match-needs-context-review
 ccr-lang-7605f0a94cd60769c9b0,Akaike information criterion–based model selection,42714875,ccr-2026-09-12-supplement-language.md,249,no-literal-match-needs-context-review
+ccr-lang-760f6ef5e687f9751fc8,paired increase in H-score,34921025,ccr-2022-34921025-language.md,63,no-literal-match-needs-context-review
 ccr-lang-76129d88f23ce7ff06e2,Holm–Sidak-adjusted comparisons,35993913,ccr-2022-35993913-language.md,73,no-literal-match-needs-context-review
 ccr-lang-76318920433e31047ead,regulon-activity inference,33622705,ccr-2021-33622705-language.md,59,no-literal-match-needs-context-review
 ccr-lang-7643c86e11872e233100,locoregional treatment failure,33323404,ccr-2021-33323404-language.md,67,no-literal-match-needs-context-review
@@ -1554,6 +1612,7 @@ ccr-lang-7705a3216e661f4dc2d7,near-complete driver ascertainment,33947695,ccr-20
 ccr-lang-7739c1db13394550018b,purinergic signaling,36044531,ccr-2022-36044531-language.md,63,no-literal-match-needs-context-review
 ccr-lang-77442666a5cd81d05fcb,prospective clinical validation,41870274,ccr-2026-09-19-batch2-language.md,73,no-literal-match-needs-context-review
 ccr-lang-778af503ed79cc077755,endpoint non-equivalence,37223888,ccr-2023-37223888-language.md,103,no-literal-match-needs-context-review
+ccr-lang-77c25201dab8dadf19a2,available-case outcome analysis,35802677,ccr-2022-35802677-language.md,50,no-literal-match-needs-context-review
 ccr-lang-77ed64551815e7a229bc,small paired-biopsy subset,40932352,ccr-2025-2026-09-19-intake-language.md,311,no-literal-match-needs-context-review
 ccr-lang-77f2069438e22bed9eb1,unblinded manual rescue review,39887260,ccr-2025-genomics-2026-09-20-language.md,281,no-literal-match-needs-context-review
 ccr-lang-77fc08f72163341cdd4f,treatment-emergent antidrug antibodies,40260627,ccr-2025-clinical-2026-09-23-language.md,35,no-literal-match-needs-context-review
@@ -1563,6 +1622,7 @@ ccr-lang-784be8398ab3a33ebb33,functional validation gap,40853904,ccr-2025-2026-0
 ccr-lang-78539c71ab7b9feba5a9,recurrent genomic alteration,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,35,no-literal-match-needs-context-review
 ccr-lang-785c776bd1316d0903f6,dysfunctional T-cell state,38088895,ccr-2024-38088895-language.md,29,no-literal-match-needs-context-review
 ccr-lang-786fc6197971a9e89fc5,cross-platform agreement,38277235,ccr-2024-38277235-language.md,65,no-literal-match-needs-context-review
+ccr-lang-78ab28127ed49bc20d6d,histology-specific outcome analysis,34074656,ccr-2021-34074656-language.md,20,no-literal-match-needs-context-review
 ccr-lang-78b17fdb6aa68858fe63,SMARCA4 immunohistochemistry,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,54,no-literal-match-needs-context-review
 ccr-lang-78b92ec31b88ad9e6ecf,90% inhibitory concentration (IC90),41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,198,no-literal-match-needs-context-review
 ccr-lang-792b2818f26d5a2bb5a6,treatment-related interstitial lung disease,42507540,ccr-2026-09-19-supplement-language.md,474,no-literal-match-needs-context-review
@@ -1575,7 +1635,9 @@ ccr-lang-79e75f650f08cd58628c,assay-specific classification,38912901,ccr-2024-38
 ccr-lang-7a1646c8526e910ebc45,threshold optimism,36806911,ccr-2023-36806911-language.md,97,no-literal-match-needs-context-review
 ccr-lang-7a17d0a6a192e91d2c4b,shallow whole-genome sequencing,34759042,ccr-2022-34759042-language.md,40,no-literal-match-needs-context-review
 ccr-lang-7a377e866b25b70fd362,hypothesis-generating biomarker association,42658187,ccr-2026-09-19-pending15-language.md,1403,no-literal-match-needs-context-review
+ccr-lang-7a649a5e326399cf87d4,cytoplasmic staining threshold,33272981,ccr-2021-33272981-language.md,51,no-literal-match-needs-context-review
 ccr-lang-7a6929532849e6a982f3,off-the-shelf allogeneic product,42207176,ccr-2026-09-19-supplement-language.md,290,no-literal-match-needs-context-review
+ccr-lang-7a84bd228da3d9b84047,target-expression heterogeneity,34921025,ccr-2022-34921025-language.md,16,no-literal-match-needs-context-review
 ccr-lang-7ac36b550c6857778d1b,cause-specific association,41779007,ccr-2026-09-19-pending15-language.md,355,no-literal-match-needs-context-review
 ccr-lang-7ae7fec27660ee176a6a,genotype-specific therapeutic gap,33685865,ccr-2021-33685865-language.md,50,no-literal-match-needs-context-review
 ccr-lang-7af2a72db246d14e17e5,blinded sequential pathology assessment,38180245,ccr-2024-38180245-language.md,35,no-literal-match-needs-context-review
@@ -1600,6 +1662,7 @@ ccr-lang-7c3b949d16c2b007ba7f,CAR transgene copies,42207176,ccr-2026-09-19-suppl
 ccr-lang-7c487c164974c9e728b4,MHC class I induction,35920742,ccr-2022-35920742-language.md,43,no-literal-match-needs-context-review
 ccr-lang-7c50fe62d755dc1e0279,epigenetic-pathway upregulation,39150541,ccr-2024-39150541-language.md,80,no-literal-match-needs-context-review
 ccr-lang-7c5e9e5e9ad2474b601f,prospective enrichment,35511938,ccr-2022-35511938-language.md,31,no-literal-match-needs-context-review
+ccr-lang-7c615cfc4e7739f5a2b0,exonic breakpoint discordance,33272981,ccr-2021-33272981-language.md,49,no-literal-match-needs-context-review
 ccr-lang-7c725c72c17b5e6174fe,ataxia-telangiectasia mutated kinase,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,250,no-literal-match-needs-context-review
 ccr-lang-7c92de26b7ffa924ccb6,actionability-conditioned concordance,40833744,ccr-2026-40833744-language.md,36,no-literal-match-needs-context-review
 ccr-lang-7cb1184456cb9823bc68,drug-repurposing rationale,36537918,ccr-2023-36537918-language.md,49,no-literal-match-needs-context-review
@@ -1612,9 +1675,11 @@ ccr-lang-7d02b6f7e0ddb945d60a,cross-study confounding,41945490,ccr-2026-09-19-ba
 ccr-lang-7d2ab40749c0b3d54ef5,population-level calibration,41779007,ccr-2026-09-19-pending15-language.md,364,no-literal-match-needs-context-review
 ccr-lang-7d5a0f0e0588c0261f99,single-nucleus RNA sequencing,41945490,ccr-2026-09-19-batch2-language.md,472,no-literal-match-needs-context-review
 ccr-lang-7d7667a29ead55e95837,sensitivity to proportional-hazards assumptions,35140122,ccr-2022-35140122-language.md,53,no-literal-match-needs-context-review
+ccr-lang-7d797a1424cf0e245915,short tandem repeat authentication,31694835,ccr-2020-31694835-language.md,38,no-literal-match-needs-context-review
 ccr-lang-7d8eebd3d7fdd14a8379,cross-model discordance,36602782,ccr-2023-36602782-language.md,101,no-literal-match-needs-context-review
 ccr-lang-7d96ceb5b93895833abc,treatment-limiting toxicity,36729110,ccr-2023-36729110-language.md,85,no-literal-match-needs-context-review
 ccr-lang-7daa3c768cf1ccbb8b9a,wide confidence interval,35727603,ccr-2022-35727603-language.md,107,no-literal-match-needs-context-review
+ccr-lang-7dbf952736a45f3963c5,membranous-only staining,33272981,ccr-2021-33272981-language.md,72,no-literal-match-needs-context-review
 ccr-lang-7dc9d66b610b163ff74a,outcome-blinded annotation,35852792,ccr-2022-35852792-language.md,71,no-literal-match-needs-context-review
 ccr-lang-7e03b38a1149b2cb8526,complementary biomarker information,33020056,ccr-2021-33020056-language.md,36,no-literal-match-needs-context-review
 ccr-lang-7e12c4aaac0971ae4a51,surveillance without systemic treatment change,35767426,ccr-2022-35767426-language.md,97,no-literal-match-needs-context-review
@@ -1633,6 +1698,7 @@ ccr-lang-7f1d30ffa9b50ec28d3d,nonmutational pathway activation,38980931,ccr-2024
 ccr-lang-7f1dc634cf594bcc4538,Clopper–Pearson confidence interval,41511400,ccr-2026-41511400-language.md,60,no-literal-match-needs-context-review
 ccr-lang-7f1eb5fa6051c44018ad,assay-stratified activity,41511400,ccr-2026-41511400-language.md,72,no-literal-match-needs-context-review
 ccr-lang-7f3b7ab67df3a4f9756e,immunodeficient xenograft,36165915,ccr-2023-36165915-language.md,67,no-literal-match-needs-context-review
+ccr-lang-7f533f797e43359b40e0,CD8-to-Treg ratio,35802677,ccr-2022-35802677-language.md,61,no-literal-match-needs-context-review
 ccr-lang-7f82268b230058ad1557,dose-proportional exposure,34740925,ccr-2022-34740925-language.md,85,no-literal-match-needs-context-review
 ccr-lang-7f83ed7876f41ad092ca,real-world treatment effectiveness,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,111,no-literal-match-needs-context-review
 ccr-lang-7f865730c4ef54fb84ce,postprogression molecular profiling,41790029,ccr-2026-09-19-pending15-language.md,435,no-literal-match-needs-context-review
@@ -1656,6 +1722,7 @@ ccr-lang-80747ef6992a3ffa0ef3,unresectable locally advanced disease,39466024;395
 ccr-lang-80773cdd726211148c35,retrospective treatment-selection confounding,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,311,no-literal-match-needs-context-review
 ccr-lang-808ccd172a8c8a5d1fcd,fragment-length distribution,40465842,ccr-2025-genomics-2026-09-20-language.md,462,no-literal-match-needs-context-review
 ccr-lang-80935e8d3b45be0930ae,treatment-by-biomarker interaction,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,337,no-literal-match-needs-context-review
+ccr-lang-809714ae220b4a642290,resectable lung adenocarcinoma,35802677,ccr-2022-35802677-language.md,31,no-literal-match-needs-context-review
 ccr-lang-8097d83493edd07888cf,bulk transcriptomic profile,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,149,no-literal-match-needs-context-review
 ccr-lang-809f9b893eebcacb2bef,zero-interaction-potency model,36537918,ccr-2023-36537918-language.md,69,no-literal-match-needs-context-review
 ccr-lang-80b2b34abd9b3b4545d3,spatially discordant immune states,42456046,ccr-2026-42456046-language-addendum.md,36,no-literal-match-needs-context-review
@@ -1706,6 +1773,7 @@ ccr-lang-844d854d9c544ca10eee,concentration-dependent QTc effect,36112541,ccr-20
 ccr-lang-8479d1377540ed14368e,disease-free after resection,35012927,ccr-2022-35012927-language.md,59,no-literal-match-needs-context-review
 ccr-lang-848e79a4daa2287e1d98,polyploid accumulation,37289191,ccr-2023-37289191-language.md,83,no-literal-match-needs-context-review
 ccr-lang-849cb7c35ee4db1ee56d,sphere-forming phenotype,36165915,ccr-2023-36165915-language.md,81,no-literal-match-needs-context-review
+ccr-lang-84b6a9a49dc7efd67e57,nominal enrichment probability,34921025,ccr-2022-34921025-language.md,51,no-literal-match-needs-context-review
 ccr-lang-84d8d7381ea4b0d8bd43,benefit–risk assessment,38875108,ccr-2024-38875108-language.md,62,no-literal-match-needs-context-review
 ccr-lang-84f3cf320639cf322f12,droplet digital PCR,42377115,ccr-2026-42377115-language.md,47,no-literal-match-needs-context-review
 ccr-lang-85277c11403b8bd5f8d3,assay-success population,36201167,ccr-2023-36201167-language.md,59,no-literal-match-needs-context-review
@@ -1729,6 +1797,7 @@ ccr-lang-86d77b60fea7426a69c6,gain-of-function pathway alteration,38630555,ccr-2
 ccr-lang-86fd16ae1fa193e96ee3,histology-informed molecular testing,33947695,ccr-2021-33947695-language.md,50,no-literal-match-needs-context-review
 ccr-lang-86fd9ddd29aa5c4bf913,pathogenic or likely pathogenic variants,35363308,ccr-2022-35363308-language.md,41,no-literal-match-needs-context-review
 ccr-lang-87291bdc38fcc6448049,transformation-associated signal,38912901,ccr-2024-38912901-language.md,53,no-literal-match-needs-context-review
+ccr-lang-872982354ea35136467f,species-specific read filtering,31694835,ccr-2020-31694835-language.md,39,no-literal-match-needs-context-review
 ccr-lang-8737d3692dc539b8b005,single-stranded adapter ligation,42113010,ccr-2026-09-19-pending15-language.md,732,no-literal-match-needs-context-review
 ccr-lang-876b0be0abfc4d5d6102,lineage-defining transcription factor,38180245,ccr-2024-38180245-language.md,31,no-literal-match-needs-context-review
 ccr-lang-87707db569b98ed329b8,whole-transcriptome RNA sequencing,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,148,no-literal-match-needs-context-review
@@ -1742,6 +1811,7 @@ ccr-lang-8803ab37e74e1ad52b4a,geometric-mean selectivity ratio,40465424,ccr-2025
 ccr-lang-88040747444a7514d583,copy-number alteration,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,153,no-literal-match-needs-context-review
 ccr-lang-881e21ff52b1c135fb7b,exposure-outcome association,41779007,ccr-2026-09-19-pending15-language.md,339,no-literal-match-needs-context-review
 ccr-lang-88373265ac6f0d8f447d,model-dependent regression,36602782,ccr-2023-36602782-language.md,83,no-literal-match-needs-context-review
+ccr-lang-8856acb7d690694cdccb,candidate treatment-response biomarker,32241817,ccr-2020-32241817-language.md,12,no-literal-match-needs-context-review
 ccr-lang-885ef757bd977f638452,time-dependent bias,37939140,ccr-2024-37939140-language.md,65,no-literal-match-needs-context-review
 ccr-lang-886f5299cf6a8b9137d1,pre-existing resistance mutation,33685866,ccr-2021-33685866-language.md,71,no-literal-match-needs-context-review
 ccr-lang-8872aace9a3f47f09d13,complete-case multivariable analysis,42148883,ccr-2026-42148883-language.md,50,no-literal-match-needs-context-review
@@ -1750,6 +1820,7 @@ ccr-lang-88929332b21bfb8a4d27,discordant molecular trajectories,37939140,ccr-202
 ccr-lang-88bda0e4827b8c936cfa,persistent inflammatory signal,39670974,ccr-2025-2026-09-19-intake-language.md,239,no-literal-match-needs-context-review
 ccr-lang-88e40926690cdc500214,on-target/off-tumor reactivity,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,156,no-literal-match-needs-context-review
 ccr-lang-88ee90074b0311722343,therapeutic index,41701940,ccr-2026-09-19-batch2-language.md,397,no-literal-match-needs-context-review
+ccr-lang-8917da537b97afc07763,stromal contribution to expression,31694835,ccr-2020-31694835-language.md,71,no-literal-match-needs-context-review
 ccr-lang-89258c4efe41781be66f,retrospective clinicogenomic cohort,33558425,ccr-2021-33558425-language.md,57,no-literal-match-needs-context-review
 ccr-lang-893939229ea4ce4dba60,unconfirmed objective response,42765908,ccr-2026-42765908-language.md,55,no-literal-match-needs-context-review
 ccr-lang-897a900ab3456d7a7a69,molecularly matched repurposing,39352721,ccr-2024-39352721-language.md,30,no-literal-match-needs-context-review
@@ -1859,6 +1930,7 @@ ccr-lang-9216f43809300b0a9197,subcutaneous flank-tumor model,41920765,ccr-2026-i
 ccr-lang-9221c437946cff9d5128,immune exclusion,36595561,ccr-2023-36595561-language.md,53,no-literal-match-needs-context-review
 ccr-lang-9224430ccd0e12dcbf70,tissue-resident cytotoxic phenotype,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,127,no-literal-match-needs-context-review
 ccr-lang-9227d33a59b7739a126c,comparative benchmark,35511917,ccr-2022-35511917-language.md,59,no-literal-match-needs-context-review
+ccr-lang-92490444edb0b376d190,hypothesis-generating subgroup,35802677,ccr-2022-35802677-language.md,76,no-literal-match-needs-context-review
 ccr-lang-92597037c36eae29c63a,mutual-exclusivity pattern,42340371,ccr-2026-42340371-language.md,70,no-literal-match-needs-context-review
 ccr-lang-926348974353ece39a84,TEMRA phenotype,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,128,no-literal-match-needs-context-review
 ccr-lang-926be57031e1cd88e456,independent validation dataset,34921023,ccr-2022-34921023-language.md,103,no-literal-match-needs-context-review
@@ -1874,10 +1946,12 @@ ccr-lang-92f92487e338beebb2f4,preranked positional gene-set enrichment,42148883,
 ccr-lang-9301251fa376a58c4bce,intratumoral target engagement,42578969,ccr-2026-09-19-pending15-language.md,1210,no-literal-match-needs-context-review
 ccr-lang-9323d07ed3fd615bd913,endpoint and line-of-therapy heterogeneity,33685865,ccr-2021-33685865-language.md,84,no-literal-match-needs-context-review
 ccr-lang-932ee2d71c898901aec7,clinical translation boundary,37382635,ccr-2023-37382635-language.md,101,no-literal-match-needs-context-review
+ccr-lang-9334bda7de2ade5641f4,leading-edge gene subset,32241817,ccr-2020-32241817-language.md,42,no-literal-match-needs-context-review
 ccr-lang-9338178b7cccbac303ae,endogenous mutant expression,41543339,ccr-2026-09-19-pending15-language.md,172,no-literal-match-needs-context-review
 ccr-lang-934a8831db808037a295,not directly applicable,35101883,ccr-2022-35101883-language.md,105,no-literal-match-needs-context-review
 ccr-lang-9365336492fac0140739,noninvasive symptom assessment,37233986,ccr-2023-37233986-language.md,53,no-literal-match-needs-context-review
 ccr-lang-9368f511ee71dde34492,contingency safety mechanism,36692420,ccr-2023-36692420-language.md,86,no-literal-match-needs-context-review
+ccr-lang-9377f2a18898ff8e663d,FDR-nonsignificant trend,34921025,ccr-2022-34921025-language.md,67,no-literal-match-needs-context-review
 ccr-lang-93908aa97b0deda3f1f4,lineage transformation,37227187,ccr-2023-37227187-language.md,54,no-literal-match-needs-context-review
 ccr-lang-93c45a2a537bc6a6b210,sequential molecular-testing algorithm,33947695,ccr-2021-33947695-language.md,57,no-literal-match-needs-context-review
 ccr-lang-93cd364db7049c016ba4,multiplet exclusion,41945490,ccr-2026-09-19-batch2-language.md,472,no-literal-match-needs-context-review
@@ -1892,7 +1966,9 @@ ccr-lang-94597de7edcb6f9a20df,covariate-adjusted hazard model,39879384,ccr-2025-
 ccr-lang-948d2d252ec35bced142,nested patient-derived xenograft models,39836411,ccr-2025-genomics-2026-09-20-language.md,554,no-literal-match-needs-context-review
 ccr-lang-94b1b1b61d2dd4cb8e8a,biomarker subset selection,39017667,ccr-2024-39017667-language.md,63,no-literal-match-needs-context-review
 ccr-lang-94b7a7773d1bfe7422bc,outcome-associated vascular phenotype,35727603,ccr-2022-35727603-language.md,53,no-literal-match-needs-context-review
+ccr-lang-94c19b2fa53ec5866df2,region-of-interest scoring,35802677,ccr-2022-35802677-language.md,48,no-literal-match-needs-context-review
 ccr-lang-95143b5c82fd65350943,late toxicity ascertainment,39287821,ccr-2024-39287821-language.md,64,no-literal-match-needs-context-review
+ccr-lang-951bc49316ca87ed6210,post-resection recurrence,35802677,ccr-2022-35802677-language.md,32,no-literal-match-needs-context-review
 ccr-lang-9525ba8f01154d162891,transient biochemical deviation,35993913,ccr-2022-35993913-language.md,103,no-literal-match-needs-context-review
 ccr-lang-95265b31507815644172,efficacy–toxicity biomarker associations,42714875,ccr-2026-09-12-supplement-language.md,239,no-literal-match-needs-context-review
 ccr-lang-953149905961b762e13a,joint longitudinal and survival model,34759042,ccr-2022-34759042-language.md,45,no-literal-match-needs-context-review
@@ -1912,10 +1988,13 @@ ccr-lang-96af39ca874a55fe7e36,clinical utility,38088895,ccr-2024-38088895-langua
 ccr-lang-96b99f58d6fd524d8875,immune-contexture heterogeneity,38277235,ccr-2024-38277235-language.md,29,no-literal-match-needs-context-review
 ccr-lang-9719f95254a344c01234,component-attribution uncertainty,40932352,ccr-2025-2026-09-19-intake-language.md,312,no-literal-match-needs-context-review
 ccr-lang-9728ca1a9062c20d4ecc,curatively resected cohort,35838647,ccr-2022-35838647-language.md,56,no-literal-match-needs-context-review
+ccr-lang-97375ed82b9b01c24c3e,expression–copy-number discordance,34921025,ccr-2022-34921025-language.md,65,no-literal-match-needs-context-review
+ccr-lang-973b44f30603fa82ec67,hybrid-capture DNA sequencing,33272981,ccr-2021-33272981-language.md,46,no-literal-match-needs-context-review
 ccr-lang-973c085849f00c50a1e0,RECIST v1.1 response,41894181,ccr-2026-09-19-supplement-language.md,1052,no-literal-match-needs-context-review
 ccr-lang-974eca19d1c2528ccb4d,activating and tertiary resistance mutations,38330145,ccr-2024-38330145-language.md,33,no-literal-match-needs-context-review
 ccr-lang-976745e9f2d579a69035,antibody intervention,36595561,ccr-2023-36595561-language.md,67,no-literal-match-needs-context-review
 ccr-lang-976e678f825784e43667,biomarker-evaluable population,37702716,ccr-2023-37702716-language.md,53,no-literal-match-needs-context-review
+ccr-lang-977cf7ccfd85ad20b905,reverse-phase protein array,34921025,ccr-2022-34921025-language.md,50,no-literal-match-needs-context-review
 ccr-lang-978373157314c575e174,combined KEAP1/STK11 mutation status,42456046,ccr-2026-42456046-language-addendum.md,63,no-literal-match-needs-context-review
 ccr-lang-979e0a4f7292530e8977,matched buffy-coat sequencing,39932457,ccr-2025-genomics-2026-09-20-language.md,84,no-literal-match-needs-context-review
 ccr-lang-97bad93a396e111430be,enrichment after multiplicity correction,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,72,no-literal-match-needs-context-review
@@ -1926,6 +2005,7 @@ ccr-lang-97fce801658c7c3063e4,shotgun metagenomic sequencing,41849236,ccr-2026-i
 ccr-lang-9806dbd9aa29e7671964,endogenous expression levels,34407972,ccr-2021-34407972-language.md,103,no-literal-match-needs-context-review
 ccr-lang-980c42342501800dfae6,tumor-fraction threshold,38526394,ccr-2024-38526394-language.md,39,no-literal-match-needs-context-review
 ccr-lang-9815de940e8f8f5b2d49,reduced statistical power,35980349,ccr-2022-35980349-language.md,105,no-literal-match-needs-context-review
+ccr-lang-98287a2f5749618570fa,whole-transcriptome sequencing,34921025,ccr-2022-34921025-language.md,49,no-literal-match-needs-context-review
 ccr-lang-98297add3bd9a787c9a0,candidate predictive biomarker,35511938,ccr-2022-35511938-language.md,103,no-literal-match-needs-context-review
 ccr-lang-984d60a629801b964f1f,steric-clash modeling,33685866,ccr-2021-33685866-language.md,64,no-literal-match-needs-context-review
 ccr-lang-987a27fdf19545ff1623,cell-line versus patient prevalence,39150543,ccr-2024-39150543-language.md,65,no-literal-match-needs-context-review
@@ -1949,6 +2029,7 @@ ccr-lang-9a2110ce25aa196b4081,compartment-specific lymphocyte distribution,38127
 ccr-lang-9a23a23c30b247ec166d,response heterogeneity,37432985,ccr-2023-37432985-language.md,51,no-literal-match-needs-context-review
 ccr-lang-9a36f05531b5c2df358f,CNS-penetrant inhibitor,35404402,ccr-2022-35404402-language.md,23,no-literal-match-needs-context-review
 ccr-lang-9a5f0dc66c735770ceeb,antigen-dependent killing,35972732,ccr-2022-35972732-language.md,101,no-literal-match-needs-context-review
+ccr-lang-9a67d866dd3ca51ec7bb,methylation-based classification,35802677,ccr-2022-35802677-language.md,33,no-literal-match-needs-context-review
 ccr-lang-9a748272774a4b35ca12,Clopper–Pearson exact confidence interval,35144967,ccr-2022-35144967-language.md,73,no-literal-match-needs-context-review
 ccr-lang-9a7a99843a63d20a8492,third-generation CAR construct,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,147,no-literal-match-needs-context-review
 ccr-lang-9a806a51efe787b38d01,risk-group stratification,42456051,ccr-2026-42456051-language.md,67,no-literal-match-needs-context-review
@@ -1960,6 +2041,7 @@ ccr-lang-9ab90c214b6946d2c445,transcriptome-inferred immune fraction,37097610,cc
 ccr-lang-9ad7008d9b8c8aea0e1b,independent adverse prognostic factor,35838647,ccr-2022-35838647-language.md,69,no-literal-match-needs-context-review
 ccr-lang-9ae37bba311c51fe9445,drug-related fatal interstitial lung disease,42048384,ccr-2026-09-19-supplement-language.md,59,no-literal-match-needs-context-review
 ccr-lang-9aecfd703a9bcf8593fe,optimum biological dose,41701940,ccr-2026-09-19-batch2-language.md,403,no-literal-match-needs-context-review
+ccr-lang-9b2e6e893f25718e43a9,acquired kinase-inhibitor resistance,34921025,ccr-2022-34921025-language.md,33,no-literal-match-needs-context-review
 ccr-lang-9b35c6d09b77269560e5,intrinsic versus contextual effects,35091439,ccr-2022-35091439-language.md,101,no-literal-match-needs-context-review
 ccr-lang-9b4444f21b37cd321f70,spatial colocalization,41784525,ccr-2026-09-19-supplement-language.md,557,no-literal-match-needs-context-review
 ccr-lang-9b50981aa04a12c37435,likelihood-ratio improvement,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,326,no-literal-match-needs-context-review
@@ -1973,8 +2055,10 @@ ccr-lang-9be83bd4b572e603f5ca,totality of exposure-response evidence,40343815;40
 ccr-lang-9bea5e1aee3ebdff135b,diagnostic reclassification,39561276,ccr-2025-2026-09-19-intake-language.md,178,no-literal-match-needs-context-review
 ccr-lang-9bf1e75249114d533125,genetic target perturbation,39017606,ccr-2024-39017606-language.md,40,no-literal-match-needs-context-review
 ccr-lang-9bf3f8b2877148280e11,anatomical disease subtype,42360806,ccr-2026-42360806-language.md,36,no-literal-match-needs-context-review
+ccr-lang-9bf79f7b3aa072b46da2,biomarker discovery platform,31694835,ccr-2020-31694835-language.md,30,no-literal-match-needs-context-review
 ccr-lang-9c0de1c9ede1242e1fff,enhancing and nonenhancing tissue,34702773,ccr-2022-34702773-language.md,73,no-literal-match-needs-context-review
 ccr-lang-9c3f098ed73c9e297e87,voom-transformed expression data,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,160,no-literal-match-needs-context-review
+ccr-lang-9c5a9899174c00933fb8,blinded semiquantitative scoring,33272981,ccr-2021-33272981-language.md,52,no-literal-match-needs-context-review
 ccr-lang-9c7499bc8808abfb86b2,T-cell receptor repertoire sequencing,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,150,no-literal-match-needs-context-review
 ccr-lang-9c8b001fac1b39fadf53,definitive concurrent chemoradiotherapy,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,107,no-literal-match-needs-context-review
 ccr-lang-9ca0a58359c234a4ea7f,constitutively active chimeric protein,35144967,ccr-2022-35144967-language.md,57,no-literal-match-needs-context-review
@@ -1987,6 +2071,7 @@ ccr-lang-9d122d4e62e3a853e495,phase [number] study of [intervention] in [populat
 ccr-lang-9d15fd112b2225a5bf89,diagnostic ascertainment,40704901,ccr-2025-genomics-2026-09-20-language.md,128,no-literal-match-needs-context-review
 ccr-lang-9d1cdc58a4c357ac5966,single-model dependency,39150541,ccr-2024-39150541-language.md,94,no-literal-match-needs-context-review
 ccr-lang-9d1eeee6e0d8bf60beee,concentration-dependent inhibition of efflux,35404402,ccr-2022-35404402-language.md,93,no-literal-match-needs-context-review
+ccr-lang-9d2a3deadcf640cd1aa3,immune-cell PD-L1 expression,34074656,ccr-2021-34074656-language.md,67,no-literal-match-needs-context-review
 ccr-lang-9d37ba3c1921504cf203,random-effects meta-analysis,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,269,no-literal-match-needs-context-review
 ccr-lang-9d4ae8b150a1accbdd28,IL2 variant,41252574,ccr-2026-09-19-batch2-language.md,188,no-literal-match-needs-context-review
 ccr-lang-9d5e75af29708908aa76,anti-CD3-stimulated killing,36595561,ccr-2023-36595561-language.md,69,no-literal-match-needs-context-review
@@ -2016,6 +2101,7 @@ ccr-lang-9f722d290b95d4e54443,collective variable,40465424,ccr-2025-omics-method
 ccr-lang-9f74c1729aaa03ad2775,co-occurrence and mutual exclusivity,41790029,ccr-2026-09-19-pending15-language.md,445,no-literal-match-needs-context-review
 ccr-lang-9f970ab3dc681b8ed8d7,ICI-naive,35980349,ccr-2022-35980349-language.md,23,no-literal-match-needs-context-review
 ccr-lang-9f9fa43aad68f97cfae2,plasma-only detection,36201167,ccr-2023-36201167-language.md,69,no-literal-match-needs-context-review
+ccr-lang-9fecbd2a2b59a6ec2324,internal validation set,33272981,ccr-2021-33272981-language.md,55,no-literal-match-needs-context-review
 ccr-lang-a02c7b5a2c1b83e27b87,assay-dependent passenger filtering,38300729,ccr-2024-38300729-language.md,39,no-literal-match-needs-context-review
 ccr-lang-a02edfeb31a400ac00ae,provisional dose recommendation,39287821,ccr-2024-39287821-language.md,63,no-literal-match-needs-context-review
 ccr-lang-a02fef6c609f0752cf78,partial representation of immune contexture,42456046,ccr-2026-42456046-language-addendum.md,37,no-literal-match-needs-context-review
@@ -2038,6 +2124,7 @@ ccr-lang-a15b33b80abcf4a6ffa7,target-phosphorylation suppression,36602782,ccr-20
 ccr-lang-a16abae80743a82ec707,immune-suppression signature,42440361,ccr-2026-09-19-supplement-language.md,142,no-literal-match-needs-context-review
 ccr-lang-a16b57bbbd640c0e597d,class-switched clone,41805895;42008740;42189883,ccr-2026-immunotherapy-fulltext-language.md,163,no-literal-match-needs-context-review
 ccr-lang-a16db2e8df4b86ba157d,baseline proteome reanalysis,37725585,ccr-2023-37725585-language.md,67,no-literal-match-needs-context-review
+ccr-lang-a17c3c343e7bf8f872bb,blinded H-score assessment,34921025,ccr-2022-34921025-language.md,46,no-literal-match-needs-context-review
 ccr-lang-a181285db512a0c1ba8e,single-base-substitution signature,33593884,ccr-2021-33593884-language.md,62,no-literal-match-needs-context-review
 ccr-lang-a1a2a4cb659a240451a1,paired on-treatment blood sampling,39670974,ccr-2025-2026-09-19-intake-language.md,232,no-literal-match-needs-context-review
 ccr-lang-a1b9b6510506a3201ec5,single-arm efficacy context,42752799,ccr-2026-09-19-supplement-language.md,235,no-literal-match-needs-context-review
@@ -2045,6 +2132,7 @@ ccr-lang-a1bb111c4ef83a15db32,line-of-therapy sequencing,39466024;39545922;39576
 ccr-lang-a1be9d8ee32a55439a43,tissue-composition confounding,35394499,ccr-2022-35394499-language.md,101,no-literal-match-needs-context-review
 ccr-lang-a1c1760a961a8e4eaad6,target-specific internalization,40208070;40499141;40928991,ccr-2025-immunotherapy-fulltext-language.md,173,no-literal-match-needs-context-review
 ccr-lang-a1c240b2aaef117199f4,genotype-independent functional state,38980931,ccr-2024-38980931-language.md,111,no-literal-match-needs-context-review
+ccr-lang-a21344be1dfe0315c61e,unmeasured epigenetic silencing,34074656,ccr-2021-34074656-language.md,83,no-literal-match-needs-context-review
 ccr-lang-a21d325731cc9251248f,partially exhausted T cell,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,129,no-literal-match-needs-context-review
 ccr-lang-a2220f0173d08d2e603d,data-driven covariate selection,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,319,no-literal-match-needs-context-review
 ccr-lang-a223a55051d15fd2f341,attenuated effector expansion,37992307,ccr-2024-37992307-language.md,51,no-literal-match-needs-context-review
@@ -2059,8 +2147,10 @@ ccr-lang-a2b54f32e1d8569fbb5a,intensity normalization,39704655,ccr-2025-omics-me
 ccr-lang-a2e312cba9c3841c1ec1,allelic heterogeneity,36913537,ccr-2023-36913537-language.md,49,no-literal-match-needs-context-review
 ccr-lang-a31b2c6735e40e2ebd56,time-dependent classification,41400436,ccr-2026-09-19-batch2-language.md,348,no-literal-match-needs-context-review
 ccr-lang-a33396d285145e75a433,nearest-neighbor distance,37756581,ccr-2023-37756581-language.md,83,no-literal-match-needs-context-review
+ccr-lang-a34876f779aabab21fff,partner-specific sensitivity,33272981,ccr-2021-33272981-language.md,69,no-literal-match-needs-context-review
 ccr-lang-a3b773c91ceddae93dc5,bulk-RNA immune deconvolution,39545922;39786430;40208070;40247431;40553459;40788282;40828417;40864503;41065506,ccr-2025-immunotherapy-fulltext-language.md,191,no-literal-match-needs-context-review
 ccr-lang-a3baeb9b68423e0e52ef,nonrandomized dose comparison,41701940,ccr-2026-09-19-batch2-language.md,417,no-literal-match-needs-context-review
+ccr-lang-a3cb515f08f5725b551a,predictive-biomarker validation,34921025,ccr-2022-34921025-language.md,86,no-literal-match-needs-context-review
 ccr-lang-a4116b999ddc53f4045a,discordant immune readouts across modalities,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,202,no-literal-match-needs-context-review
 ccr-lang-a41667726fcf0e2689d9,adjusted hazard ratio,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506;41537692;41587109;41649868;41671081;41805895;41817317;41837748;41849236;41920765;42008740;42126592;42148884;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42507545;42574065,ccr-phrase-patterns.md,86,no-literal-match-needs-context-review
 ccr-lang-a41b95b503b4cb6736d7,dose interruption and reduction,35247924,ccr-2022-35247924-language.md,89,no-literal-match-needs-context-review
@@ -2068,12 +2158,14 @@ ccr-lang-a4291d31c08ef78773fa,exon-level fusion breakpoint,40704901,ccr-2025-gen
 ccr-lang-a42b6d119361457f8a7c,risk of postoperative recurrence,36951523,ccr-2023-36951523-language.md,51,no-literal-match-needs-context-review
 ccr-lang-a42c6594265f303a219d,variance-stabilizing transformation,34407972,ccr-2021-34407972-language.md,71,no-literal-match-needs-context-review
 ccr-lang-a4322c5474c8b4f43f25,in situ proximity ligation assay,39836411,ccr-2025-genomics-2026-09-20-language.md,551,no-literal-match-needs-context-review
+ccr-lang-a43ca9daeced49b2c027,minimum follow-up requirement,35802677,ccr-2022-35802677-language.md,49,no-literal-match-needs-context-review
 ccr-lang-a458c05208c2d72846f7,receptor-ligand proximity,34686497,ccr-2022-34686497-language.md,53,no-literal-match-needs-context-review
 ccr-lang-a45e0c8f0dd2ca3db638,rare-disease benchmark,41894181,ccr-2026-09-19-supplement-language.md,1071,no-literal-match-needs-context-review
 ccr-lang-a46ca8de6c06c52450a3,acquired kinase fusion,36996322,ccr-2023-36996322-language.md,51,no-literal-match-needs-context-review
 ccr-lang-a47525a868baec16289b,targeted immune-expression panel,35254415,ccr-2022-35254415-language.md,71,no-literal-match-needs-context-review
 ccr-lang-a498418543491e50d48b,cumulative incidence function,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,208,no-literal-match-needs-context-review
 ccr-lang-a4a13e263cc570748de5,GeoMx digital spatial profiling,39150541,ccr-2024-39150541-language.md,63,no-literal-match-needs-context-review
+ccr-lang-a4ac5d24e0e80892a0bd,nominal pathway enrichment,32241817,ccr-2020-32241817-language.md,54,no-literal-match-needs-context-review
 ccr-lang-a4b2ba550689bb74a16b,co-enrichment restricted to KRAS-wild-type tumors,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,289,no-literal-match-needs-context-review
 ccr-lang-a4d5c63d4c3fc5b701e0,equal event subsampling,36166003,ccr-2022-36166003-language.md,83,no-literal-match-needs-context-review
 ccr-lang-a4db93062552b9470e4a,effector gene signature,41701940,ccr-2026-09-19-batch2-language.md,410,no-literal-match-needs-context-review
@@ -2091,6 +2183,7 @@ ccr-lang-a5956b6392097f66df11,assay-specific nondetection threshold,40261185,ccr
 ccr-lang-a59c4a190e94d07c3a7c,confirmed objective response,36044531,ccr-2022-36044531-language.md,99,no-literal-match-needs-context-review
 ccr-lang-a59d5f7c07d383cf34d0,co-occurring alteration,37223888,ccr-2023-37223888-language.md,83,no-literal-match-needs-context-review
 ccr-lang-a5f52d93c2798faeab8c,dose-specific safety population,41961582,ccr-2026-09-23-intake-language.md,43,no-literal-match-needs-context-review
+ccr-lang-a5f5eadef61ae32fb529,interpatient heterogeneity,34921025,ccr-2022-34921025-language.md,64,no-literal-match-needs-context-review
 ccr-lang-a5f6d237c28163dc066d,dose-modification frequency,36112541,ccr-2023-36112541-language.md,85,no-literal-match-needs-context-review
 ccr-lang-a5ff6a54abdd2932df5b,unstructured covariance,35012927,ccr-2022-35012927-language.md,77,no-literal-match-needs-context-review
 ccr-lang-a61fbbe0df5d16d36564,clonotype-linked cell state,39545922;39786430;40208070;40247431;40553459;40788282;40828417;40864503;41065506,ccr-2025-immunotherapy-fulltext-language.md,197,no-literal-match-needs-context-review
@@ -2152,6 +2245,7 @@ ccr-lang-a9f3c59970f19bcbb0b0,EGFR glycosylation,42507540,ccr-2026-09-19-supplem
 ccr-lang-a9fdb72563f50307f29c,variant-source classification,39932457,ccr-2025-genomics-2026-09-20-language.md,85,no-literal-match-needs-context-review
 ccr-lang-aa23c93bbe1bc5ef3ba5,potential confounding effect,35101883,ccr-2022-35101883-language.md,103,no-literal-match-needs-context-review
 ccr-lang-aa26b84464cc2733c1fa,hypothesis-generating immune correlate,40932352,ccr-2025-2026-09-19-intake-language.md,313,no-literal-match-needs-context-review
+ccr-lang-aa427e286b6cb7b22c36,endpoint-specific comparison,31694835,ccr-2020-31694835-language.md,45,no-literal-match-needs-context-review
 ccr-lang-aa4fd8831b5a9e355a35,urinary metabolite biomarker,38837903,ccr-2024-38837903-language.md,29,no-literal-match-needs-context-review
 ccr-lang-aa6c9895c401246fa902,risk mitigation,37022784,ccr-2023-37022784-language.md,99,no-literal-match-needs-context-review
 ccr-lang-aa6fc8a44547f22a76c5,combination potentiation,42478960,ccr-2026-09-19-batch2-language.md,551,no-literal-match-needs-context-review
@@ -2160,6 +2254,7 @@ ccr-lang-aa81ebb2aa76d51a232c,paired pre- and on-treatment biopsies,40932352,ccr
 ccr-lang-aa98079e47bd1f80c33e,incremental prognostic information,33077574,ccr-2026-09-12-supplement-language.md,54,no-literal-match-needs-context-review
 ccr-lang-aa9ede743f72a30a4bb7,recurrence-free survival from surgery,35727603,ccr-2022-35727603-language.md,101,no-literal-match-needs-context-review
 ccr-lang-aac9063fd497475862b3,cellular-origin adjudication,41537692;42440365;42489696,ccr-2026-immunotherapy-fulltext-language.md,173,no-literal-match-needs-context-review
+ccr-lang-aaeb873d6c8c8bb06022,cohort-composition heterogeneity,34074656,ccr-2021-34074656-language.md,85,no-literal-match-needs-context-review
 ccr-lang-aaedb140140f71a6557f,lineage-specific genomic context,42340371,ccr-2026-42340371-language.md,39,no-literal-match-needs-context-review
 ccr-lang-ab271e5321ffeef8da1b,renal/hepatobiliary clearance,39841860,ccr-2025-omics-methods-2026-09-23-language.md,155,no-literal-match-needs-context-review
 ccr-lang-ab36841f0591edc6cb18,biological versus physical half-life,39841860,ccr-2025-omics-methods-2026-09-23-language.md,130,no-literal-match-needs-context-review
@@ -2225,12 +2320,14 @@ ccr-lang-b021ae633077c391a9e6,false-negative uncertainty,38526394,ccr-2024-38526
 ccr-lang-b0701a1b44983f366058,K-nearest-neighbor imputation,41591979,ccr-2026-09-19-pending15-language.md,251,no-literal-match-needs-context-review
 ccr-lang-b07d3387d0d95f0099de,treatment-associated stem-like programs,39879384,ccr-2025-omics-methods-2026-09-23-language.md,396,no-literal-match-needs-context-review
 ccr-lang-b08103771e04cfc0f1e2,multiplicity limitation,36255391,ccr-2023-36255391-language.md,101,no-literal-match-needs-context-review
+ccr-lang-b092062bf539db43fafb,nontranscribed structural variant,33272981,ccr-2021-33272981-language.md,73,no-literal-match-needs-context-review
 ccr-lang-b0971c37e4730ddeb0a3,benefit-risk interpretation,41701940,ccr-2026-09-19-batch2-language.md,417,no-literal-match-needs-context-review
 ccr-lang-b0a5fbfdc6f79aa0c695,receptor knockout experiment,41649868;41837748;42148884,ccr-2026-translational-mechanisms-fulltext-language.md,189,no-literal-match-needs-context-review
 ccr-lang-b0ab8e7bb29e50e93a62,biallelic pathway inactivation,33020056,ccr-2021-33020056-language.md,54,no-literal-match-needs-context-review
 ccr-lang-b0bc2c115ddf0673720e,deconvolution-estimated abundance,37756581,ccr-2023-37756581-language.md,69,no-literal-match-needs-context-review
 ccr-lang-b0c35abcebcea9127185,on-target off-tumor risk,42478960,ccr-2026-09-19-batch2-language.md,559,no-literal-match-needs-context-review
 ccr-lang-b0d7dcac790b6a936d65,residual treatment-selection confounding,35140122,ccr-2022-35140122-language.md,33,no-literal-match-needs-context-review
+ccr-lang-b0def8b95b637861794f,cohort-specific effect estimate,32241817,ccr-2020-32241817-language.md,55,no-literal-match-needs-context-review
 ccr-lang-b0f271f0104fad8048b7,late-onset immune-related toxicity,36794455,ccr-2023-36794455-language.md,85,no-literal-match-needs-context-review
 ccr-lang-b0f6309422b43667ec86,inconsistent external replication,33020056,ccr-2021-33020056-language.md,55,no-literal-match-needs-context-review
 ccr-lang-b11f741701dabfc550ae,targeted immune transcriptomics,37125965,ccr-2023-37125965-language.md,69,no-literal-match-needs-context-review
@@ -2244,6 +2341,7 @@ ccr-lang-b1b7afbe755c2005d940,schedule-dependent exposure,42765908,ccr-2026-4276
 ccr-lang-b1d1cfc3e2b7e1c16746,incremental information in a joint model,33020056,ccr-2021-33020056-language.md,52,no-literal-match-needs-context-review
 ccr-lang-b1d9cec451d329f82d6d,computational hypothesis generation,33622705,ccr-2021-33622705-language.md,83,no-literal-match-needs-context-review
 ccr-lang-b1e4de98b44a89c9e324,complementary assay information,41790029,ccr-2026-09-19-pending15-language.md,465,no-literal-match-needs-context-review
+ccr-lang-b1e4e663b565d66bc4ec,nominal pathway enrichment,34074656,ccr-2021-34074656-language.md,68,no-literal-match-needs-context-review
 ccr-lang-b1fde04dfaeac91260fa,paired differential expression,41945490,ccr-2026-09-19-batch2-language.md,472,no-literal-match-needs-context-review
 ccr-lang-b20c81a6bb46341730bc,CFSE dilution assay,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,260,no-literal-match-needs-context-review
 ccr-lang-b218c3d8641944627432,subcutaneous and disseminated xenograft models,36692420,ccr-2023-36692420-language.md,62,no-literal-match-needs-context-review
@@ -2261,6 +2359,7 @@ ccr-lang-b2c1a9bdda7f760f242d,dose-limiting myelosuppression,39470668,ccr-2025-2
 ccr-lang-b2cebc7eb8930e72d49a,rechallenge heterogeneity,41945500,ccr-2026-09-19-supplement-language.md,988,no-literal-match-needs-context-review
 ccr-lang-b2d7e123d2870d8cac83,FFPE proteomic profiling,38723277,ccr-2024-38723277-language.md,39,no-literal-match-needs-context-review
 ccr-lang-b2e46d66f4e2998acd2b,RECIST-defined objective response,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,162,no-literal-match-needs-context-review
+ccr-lang-b33314c8bae2fafe72f6,hypothesis-generating combination strategy,32241817,ccr-2020-32241817-language.md,70,no-literal-match-needs-context-review
 ccr-lang-b3603e04eed6a59f0d58,historical-control interpretation,33685865,ccr-2021-33685865-language.md,82,no-literal-match-needs-context-review
 ccr-lang-b363b46a337dc95dbf87,model-context limitation,36595561,ccr-2023-36595561-language.md,97,no-literal-match-needs-context-review
 ccr-lang-b3777975e0f4a862bbb6,T- and B-cell activation pathways,42440361,ccr-2026-09-19-supplement-language.md,142,no-literal-match-needs-context-review
@@ -2337,6 +2436,7 @@ ccr-lang-ba09da24f33ebf413369,T-cell-sparing effect,41920765,ccr-2026-immunother
 ccr-lang-ba16c5c8bfc9f32aa07a,immunogenicity mitigation,41252574,ccr-2026-09-19-batch2-language.md,209,no-literal-match-needs-context-review
 ccr-lang-ba1a91fb160b2c3abcec,coincidental variant sharing,39561276,ccr-2025-2026-09-19-intake-language.md,163,no-literal-match-needs-context-review
 ccr-lang-ba2dce723ce20e07181f,thoracic malignancy,36469573,ccr-2023-36469573-language.md,53,no-literal-match-needs-context-review
+ccr-lang-ba32db0a8dd8fc550100,adjusted outcome association,32241817,ccr-2020-32241817-language.md,57,no-literal-match-needs-context-review
 ccr-lang-ba3bd87d7ad988ea2496,conformational-state occupancy,40465424,ccr-2025-omics-methods-2026-09-23-language.md,305,no-literal-match-needs-context-review
 ccr-lang-ba3dd25ed7a79620f7b7,nonsignificant longitudinal protein changes,42714875,ccr-2026-09-12-supplement-language.md,263,no-literal-match-needs-context-review
 ccr-lang-ba4af7f15909f1ee7eb0,heterogeneous matched-treatment experience,33947695,ccr-2021-33947695-language.md,72,no-literal-match-needs-context-review
@@ -2346,7 +2446,9 @@ ccr-lang-ba884b5803ff8cb042b2,complementary response assessment,35972732,ccr-202
 ccr-lang-ba918d7e3d71f474e04f,pairedness in the experimental design,34407972,ccr-2021-34407972-language.md,73,no-literal-match-needs-context-review
 ccr-lang-ba94f2b11709e059a55f,leptomeningeal disease,36449664,ccr-2023-36449664-language.md,49,no-literal-match-needs-context-review
 ccr-lang-bab440cf7042ea3d4a89,sustained pathway suppression,40465424,ccr-2025-omics-methods-2026-09-23-language.md,330,no-literal-match-needs-context-review
+ccr-lang-bac56cb42ad232d08d95,nonrandom treatment continuation,34921025,ccr-2022-34921025-language.md,83,no-literal-match-needs-context-review
 ccr-lang-bad354b381ce6a556c34,ROC-derived Youden index,42752799,ccr-2026-09-19-supplement-language.md,216,no-literal-match-needs-context-review
+ccr-lang-bb1497da521d83c78d5a,partner-agnostic detection,33272981,ccr-2021-33272981-language.md,35,no-literal-match-needs-context-review
 ccr-lang-bb2b44d67de0ae1ab8fa,myeloid-derived suppressor cells,34407972,ccr-2021-34407972-language.md,57,no-literal-match-needs-context-review
 ccr-lang-bb2dd20234bc8c16c53e,fusion-defined population,37265412,ccr-2023-37265412-language.md,49,no-literal-match-needs-context-review
 ccr-lang-bb5c74fdb6cb731d9a4a,partial recovery during maintenance,41801128,ccr-2026-09-19-pending15-language.md,562,no-literal-match-needs-context-review
@@ -2394,6 +2496,7 @@ ccr-lang-bdf786dc81dc34573259,on-target resistance alteration,42360806,ccr-2026-
 ccr-lang-be2e1a77b1d50a9c07d2,signature-based deconvolution,33622705,ccr-2021-33622705-language.md,58,no-literal-match-needs-context-review
 ccr-lang-be34bd0563d0a9e4c326,parameter-screening experiment,41920765,ccr-2026-immunotherapy-fulltext-language.md,251,no-literal-match-needs-context-review
 ccr-lang-be38d97ab2f6b4b816a4,centroid-based classifier,37233991,ccr-2023-37233991-language.md,67,no-literal-match-needs-context-review
+ccr-lang-be3bcb6ba5116401732a,bypass signaling,34921025,ccr-2022-34921025-language.md,34,no-literal-match-needs-context-review
 ccr-lang-be5050d460a4bf1c3bb8,treatment-related fatal pneumonitis,42658187,ccr-2026-09-19-pending15-language.md,1392,no-literal-match-needs-context-review
 ccr-lang-be5a93bec90ce6cc90c1,isotope-labeled peptide standard,40047548,ccr-2025-genomics-2026-09-20-language.md,506,no-literal-match-needs-context-review
 ccr-lang-be670885e2f653bcc368,steady-state concentration,34702773,ccr-2022-34702773-language.md,85,no-literal-match-needs-context-review
@@ -2422,6 +2525,7 @@ ccr-lang-c0357ed1d02f97aacf67,proteomic vulnerability,37725585,ccr-2023-37725585
 ccr-lang-c04ee23cb82e569dc2e4,prospective biomarker validation,42440358,ccr-2026-42440358-language.md,59,no-literal-match-needs-context-review
 ccr-lang-c050e4de356dd6553aeb,prespecified futility boundary,40378060,ccr-2026-09-23-intake-language.md,92,no-literal-match-needs-context-review
 ccr-lang-c0634a2955143ce2cadd,glycemic-control uncertainty,37125965,ccr-2023-37125965-language.md,101,no-literal-match-needs-context-review
+ccr-lang-c06375b96ed45d3aec1a,investigator-assessed response,34074656,ccr-2021-34074656-language.md,50,no-literal-match-needs-context-review
 ccr-lang-c06fb89b44bcc548a81a,exploratory PD-L1 subgroup,41511400,ccr-2026-41511400-language.md,74,no-literal-match-needs-context-review
 ccr-lang-c072028768b0a976c559,gene-specific concordance,36201167,ccr-2023-36201167-language.md,60,no-literal-match-needs-context-review
 ccr-lang-c0817aae47db6003c758,chemotherapy-refractory disease,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,99,no-literal-match-needs-context-review
@@ -2464,6 +2568,7 @@ ccr-lang-c278d2f1e4c15e18ffd7,tumor-free proportion,41649868;41817317;41837748;4
 ccr-lang-c27f12ae6b70d60d0303,confirmed response duration,38875108,ccr-2024-38875108-language.md,50,no-literal-match-needs-context-review
 ccr-lang-c28d9089226bbf83a3bb,grade-specific pulmonary toxicity,38165684,ccr-2024-38165684-language.md,43,no-literal-match-needs-context-review
 ccr-lang-c29c623eb766b029d67d,acquired genomic alteration,36729110,ccr-2023-36729110-language.md,81,no-literal-match-needs-context-review
+ccr-lang-c2ff6a6a26cb17fdebb5,clinical–preclinical evidence boundary,34921025,ccr-2022-34921025-language.md,82,no-literal-match-needs-context-review
 ccr-lang-c304314833d359c2e87a,biased toward early progressors,34301751,ccr-2021-34301751-language.md,105,no-literal-match-needs-context-review
 ccr-lang-c3102de90b23d7e06860,at least one postbaseline assessment,34740925,ccr-2022-34740925-language.md,73,no-literal-match-needs-context-review
 ccr-lang-c31161f955b5efe17ad6,compartment-associated localization,39704655,ccr-2025-omics-methods-2026-09-23-language.md,242,no-literal-match-needs-context-review
@@ -2472,6 +2577,7 @@ ccr-lang-c3216d830237e7aa8b93,cumulative distribution separation,41591979,ccr-20
 ccr-lang-c357856a62557a6ddf2c,real-world overall survival,41870274,ccr-2026-09-19-batch2-language.md,63,no-literal-match-needs-context-review
 ccr-lang-c3766594168e3f9f4949,patient-level and variant-level data,35363308,ccr-2022-35363308-language.md,87,no-literal-match-needs-context-review
 ccr-lang-c38d9d12cbadcbf5d479,CAR-positive viable cell dose,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,146,no-literal-match-needs-context-review
+ccr-lang-c3969d450073a0665b7a,most-variable CpG sites,35802677,ccr-2022-35802677-language.md,45,no-literal-match-needs-context-review
 ccr-lang-c3cbf3775a7706ffee96,reference-group hazard ratio,36913537,ccr-2023-36913537-language.md,81,no-literal-match-needs-context-review
 ccr-lang-c3fe27d7c66ed00357a4,primary immune endpoint,36469573,ccr-2023-36469573-language.md,81,no-literal-match-needs-context-review
 ccr-lang-c403d2ad69b8422de1f9,near dose-proportional exposure,41587109;41671081;42574065,ccr-2026-immunotherapy-fulltext-language.md,276,no-literal-match-needs-context-review
@@ -2497,12 +2603,14 @@ ccr-lang-c563be9f2e9628a1047a,subset-specific immune effect,36595561,ccr-2023-36
 ccr-lang-c57245e358eebf1c7ba7,within-tumor phenotype heterogeneity,38980931,ccr-2024-38980931-language.md,98,no-literal-match-needs-context-review
 ccr-lang-c576bc7d178adf9f3b9a,KRAS-constrained co-mutation landscape,37733794,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,287,no-literal-match-needs-context-review
 ccr-lang-c57e245233a3a302f7a4,tumor-informed assay,42059900,ccr-2026-09-19-supplement-language.md,373,no-literal-match-needs-context-review
+ccr-lang-c5883d0519469053f9d0,disease-status-dependent detection,33272981,ccr-2021-33272981-language.md,74,no-literal-match-needs-context-review
 ccr-lang-c5a06c0e4f0f5106d399,multiregion neoantigen clonality,34016641,ccr-2021-34016641-language.md,42,no-literal-match-needs-context-review
 ccr-lang-c5a1bc50380d613dd0b9,underrepresented rearrangements,34753780,ccr-2022-34753780-language.md,107,no-literal-match-needs-context-review
 ccr-lang-c5ca9716d87213c9f633,tumor-agnostic therapy,35144967,ccr-2022-35144967-language.md,59,no-literal-match-needs-context-review
 ccr-lang-c5cdffc76ebf57901f2a,global circulating tumor fraction,40465842,ccr-2025-genomics-2026-09-20-language.md,456,no-literal-match-needs-context-review
 ccr-lang-c611259106dc6e09db32,bulk-expression immune deconvolution,34667030,ccr-2022-34667030-language.md,45,no-literal-match-needs-context-review
 ccr-lang-c63746f4bb209a56eb37,posttranscriptional stabilization,38261467,ccr-2024-38261467-language.md,54,no-literal-match-needs-context-review
+ccr-lang-c63ad1fbb9775498f77f,long-term propagation,31694835,ccr-2020-31694835-language.md,55,no-literal-match-needs-context-review
 ccr-lang-c66049ccfd8d060d4a8a,sustained serial killing,36692420,ccr-2023-36692420-language.md,72,no-literal-match-needs-context-review
 ccr-lang-c664a710c96105466469,potential predictive utility,35972732,ccr-2022-35972732-language.md,55,no-literal-match-needs-context-review
 ccr-lang-c66619793cb25a3f4c5c,late toxicity outside the escalation window,40880183,ccr-2025-clinical-2026-09-23-language.md,134,no-literal-match-needs-context-review
@@ -2532,6 +2640,7 @@ ccr-lang-c83387b4f6b4b1dd687f,reference-cohort training,37233991,ccr-2023-372339
 ccr-lang-c83b8bbff280a5ccaab9,radiographically confirmed response,35144967,ccr-2022-35144967-language.md,75,no-literal-match-needs-context-review
 ccr-lang-c84f75b7560ed36af870,antigen-experienced B-cell response,41537692;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696,ccr-2026-immunotherapy-fulltext-language.md,123,no-literal-match-needs-context-review
 ccr-lang-c8923406b853adb66ecc,protein-level association,38723277,ccr-2024-38723277-language.md,52,no-literal-match-needs-context-review
+ccr-lang-c8aaeccdbe731390048d,continuous tumor mutation burden,34074656,ccr-2021-34074656-language.md,51,no-literal-match-needs-context-review
 ccr-lang-c8ae9e719845e373c601,antigen-presentation machinery,40932352,ccr-2025-2026-09-19-intake-language.md,292,no-literal-match-needs-context-review
 ccr-lang-c8bc1d0761f7dcc300b6,covariate-based dose adjustment,40343815;40499141;40928991,ccr-2025-immunotherapy-fulltext-language.md,290,no-literal-match-needs-context-review
 ccr-lang-c8c4460ea382edd1007e,integrated transcriptomic-proteomic pathway analysis,40208070,ccr-2025-immunotherapy-fulltext-language.md,218,no-literal-match-needs-context-review
@@ -2554,6 +2663,7 @@ ccr-lang-c9e18ea35ec1abb57039,numerically favorable but inconclusive estimates,4
 ccr-lang-ca0fa8e1ed5644b4e445,dose-limiting toxicity window,42048384,ccr-2026-09-19-supplement-language.md,50,no-literal-match-needs-context-review
 ccr-lang-ca10bf1158a56811ce37,nonrandomized treatment allocation,42207168,ccr-2026-09-19-pending15-language.md,846,no-literal-match-needs-context-review
 ccr-lang-ca121c0a35025ef13fcd,sample-level detection rate,34759042,ccr-2022-34759042-language.md,52,no-literal-match-needs-context-review
+ccr-lang-ca25cd6dcb63de1498c4,organoid tumor purity,31694835,ccr-2020-31694835-language.md,28,no-literal-match-needs-context-review
 ccr-lang-ca3e1a567c4aeaa6de24,driver-negative residual group,33947695,ccr-2021-33947695-language.md,60,no-literal-match-needs-context-review
 ccr-lang-ca6901bdf5ccdda3045a,on-treatment ctDNA decline,38995268,ccr-2024-38995268-language.md,51,no-literal-match-needs-context-review
 ccr-lang-ca92900faf6db121da84,temporospatial heterogeneity,40388547,ccr-2025-genomics-2026-09-20-language.md,177,no-literal-match-needs-context-review
@@ -2579,8 +2689,10 @@ ccr-lang-cbf8d11d715572f20a8c,encapsulated cytokine-producing cells,35993913,ccr
 ccr-lang-cc0b7bbf839cc5754889,progressive cohort restriction,35511917,ccr-2022-35511917-language.md,97,no-literal-match-needs-context-review
 ccr-lang-cc0f1b04c06e798a867f,stratified log-rank analysis,42714840,ccr-2026-09-12-supplement-language.md,110,no-literal-match-needs-context-review
 ccr-lang-cc31516c46b055c94ff2,RNA-sequencing comparison,36165915,ccr-2023-36165915-language.md,69,no-literal-match-needs-context-review
+ccr-lang-cc4c8329000e1f0ed9b6,epigenetic heterogeneity,35802677,ccr-2022-35802677-language.md,16,no-literal-match-needs-context-review
 ccr-lang-cc551c6d913526e388c3,complete loss of nuclear expression,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,55,no-literal-match-needs-context-review
 ccr-lang-cc951ee754d1fde2a338,mean standardized uptake value,39545922;39821070;40208070;40343815,ccr-2025-immunotherapy-fulltext-language.md,237,no-literal-match-needs-context-review
+ccr-lang-cca4748a323eb2341ad7,diagnostic assay harmonization,33272981,ccr-2021-33272981-language.md,36,no-literal-match-needs-context-review
 ccr-lang-ccb163f4f5c470863167,GeoMx digital spatial profiling,42440361,ccr-2026-09-19-supplement-language.md,133,no-literal-match-needs-context-review
 ccr-lang-ccd1032961c8408bd7c4,undetectable baseline circulating variant signal,40310449,ccr-2025-genomics-2026-09-20-language.md,331,no-literal-match-needs-context-review
 ccr-lang-ccdccc333ae8cec36652,tissue spatial configuration,42456051,ccr-2026-42456051-language.md,41,no-literal-match-needs-context-review
@@ -2605,8 +2717,10 @@ ccr-lang-ce42ac33aa4419c81581,persistent downstream phosphorylation,38630555,ccr
 ccr-lang-ce73b089d03f27c21540,protein–protein interaction network,42714875,ccr-2026-09-12-supplement-language.md,250,no-literal-match-needs-context-review
 ccr-lang-ceac07b37197e97a4a5c,dual-positive subgroup,42377115,ccr-2026-42377115-language.md,61,no-literal-match-needs-context-review
 ccr-lang-ced9c7958f6ccf76291c,prospective clinical validation,41591979,ccr-2026-09-19-pending15-language.md,272,no-literal-match-needs-context-review
+ccr-lang-cede863ee4b19e4a838b,orthogonal confirmation,33272981,ccr-2021-33272981-language.md,89,no-literal-match-needs-context-review
 ccr-lang-ceeead9603b251649cd0,post-neoadjuvant plasma sample,42377115,ccr-2026-42377115-language.md,64,no-literal-match-needs-context-review
 ccr-lang-cef0977b3b22e045922a,macrophage-dependent activity,42478960,ccr-2026-09-19-batch2-language.md,551,no-literal-match-needs-context-review
+ccr-lang-cef0e7be59429ebd789c,model-source concordance,31694835,ccr-2020-31694835-language.md,58,no-literal-match-needs-context-review
 ccr-lang-cf0b0b8258d7bc56d27f,highest-single-agent model,37725585,ccr-2023-37725585-language.md,65,no-literal-match-needs-context-review
 ccr-lang-cf237d6052a78f4851a0,variant allele fraction distribution,40388547,ccr-2025-genomics-2026-09-20-language.md,188,no-literal-match-needs-context-review
 ccr-lang-cf2726f64c9bbaf0c0e0,pharmacologic pleiotropy,40299768,ccr-2025-2026-09-19-intake-language.md,443,no-literal-match-needs-context-review
@@ -2632,6 +2746,7 @@ ccr-lang-d0b2198b546dace0b2cf,alteration-class-specific association testing,4234
 ccr-lang-d0bf7dcf457a587f8f41,objective-response enrichment,42752799,ccr-2026-09-19-supplement-language.md,225,no-literal-match-needs-context-review
 ccr-lang-d0cce8f45c4d32d8506d,genotoxic therapy,35165102,ccr-2022-35165102-language.md,61,no-literal-match-needs-context-review
 ccr-lang-d0d235a9140b3cc223c5,descriptive treatment activity,36201167,ccr-2023-36201167-language.md,74,no-literal-match-needs-context-review
+ccr-lang-d0dcbb8b8108ad104820,predicted damaging missense variant,32241817,ccr-2020-32241817-language.md,38,no-literal-match-needs-context-review
 ccr-lang-d1010cc3f53c813d0238,companion-imaging rationale,39841860,ccr-2025-omics-methods-2026-09-23-language.md,131,no-literal-match-needs-context-review
 ccr-lang-d1121f8ba8fc58c4156b,more-than-dose-proportional exposure,35254415,ccr-2022-35254415-language.md,83,no-literal-match-needs-context-review
 ccr-lang-d113e51de5d7fd2af63c,inverse probability weighting for missingness,39466024;39545922;39576208;39786430;39821070;40208070;40247431;40343815;40499141;40552922;40553459;40788282;40828417;40864503;40928991;41026583;41065506,ccr-2025-immunotherapy-fulltext-language.md,310,no-literal-match-needs-context-review
@@ -2698,7 +2813,9 @@ ccr-lang-d5fa8ad61f3393b85483,amplification prevalence,41870274,ccr-2026-09-19-b
 ccr-lang-d5fe7e7e3808067e5a13,hazard ratio per score point,36166003,ccr-2022-36166003-language.md,43,no-literal-match-needs-context-review
 ccr-lang-d61a7563cbbcbef6565f,phage-display selection,38277241,ccr-2024-38277241-language.md,39,no-literal-match-needs-context-review
 ccr-lang-d62fa9437d249e28f6bc,residual false-negative risk,36201167,ccr-2023-36201167-language.md,84,no-literal-match-needs-context-review
+ccr-lang-d63aca58866728579af1,culture initiation rate,31694835,ccr-2020-31694835-language.md,54,no-literal-match-needs-context-review
 ccr-lang-d6464cb3755e6ff36380,cell-cell communication signal,41537692;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696,ccr-2026-immunotherapy-fulltext-language.md,130,no-literal-match-needs-context-review
+ccr-lang-d652d1e94dbc91797977,epigenetic age estimate,35802677,ccr-2022-35802677-language.md,36,no-literal-match-needs-context-review
 ccr-lang-d6574fa5ba5a587937e5,feedback-driven MAPK rebound,42048384,ccr-2026-09-19-supplement-language.md,41,no-literal-match-needs-context-review
 ccr-lang-d65f226c8430c3dbae07,design-specific confidence level,38165684,ccr-2024-38165684-language.md,38,no-literal-match-needs-context-review
 ccr-lang-d675d939c5cbec38ed27,sensitivity at fixed specificity,41591979,ccr-2026-09-19-pending15-language.md,261,no-literal-match-needs-context-review
@@ -2726,6 +2843,7 @@ ccr-lang-d899f5c508322373cd28,G12C-specific enrichment not retained after correc
 ccr-lang-d8b0c01b62d99bc2b35e,central FISH assessment,36971777,ccr-2023-36971777-language.md,65,no-literal-match-needs-context-review
 ccr-lang-d8c16d68c720ec4d7345,primary-versus-resistant-metastatic tissue mismatch,42714874,ccr-2026-09-12-supplement-language.md,202,no-literal-match-needs-context-review
 ccr-lang-d8f0d393a435ea110679,bypass pathway activation,41537704,ccr-2026-09-19-pending15-language.md,79,no-literal-match-needs-context-review
+ccr-lang-d90dbacaea7998093a2b,loss-of-function genomic alteration,34074656,ccr-2021-34074656-language.md,34,no-literal-match-needs-context-review
 ccr-lang-d91593e7e378bbb649dd,class-specific recall and precision,42456046,ccr-2026-42456046-language-addendum.md,50,no-literal-match-needs-context-review
 ccr-lang-d9422dc96490baf39280,copy-number-adjusted cancer cell fraction,41543339,ccr-2026-09-19-pending15-language.md,148,no-literal-match-needs-context-review
 ccr-lang-d94717e61950399bdd25,actionable gene fusion,38060240,ccr-2024-38060240-language.md,29,no-literal-match-needs-context-review
@@ -2758,7 +2876,9 @@ ccr-lang-db750db8769dae34527c,confidence interval spanning the null,32709715,ccr
 ccr-lang-db850e9641e2a154d863,opposing cross-cohort survival association,38300729,ccr-2024-38300729-language.md,46,no-literal-match-needs-context-review
 ccr-lang-db8c8359d951daf5f6ae,feature-selection pipeline,38723277,ccr-2024-38723277-language.md,40,no-literal-match-needs-context-review
 ccr-lang-db9f0f8577c62dcb6fe4,within-histology multiplicity correction,42340371,ccr-2026-42340371-language.md,59,no-literal-match-needs-context-review
+ccr-lang-dbc29b47bb650d5e05f8,tumor cell-intrinsic alteration,32241817,ccr-2020-32241817-language.md,28,no-literal-match-needs-context-review
 ccr-lang-dbc911061af5e083a1c3,partition around medoids,41400436,ccr-2026-09-19-batch2-language.md,333,no-literal-match-needs-context-review
+ccr-lang-dbe2c5f442411775696f,feedback-regulation hypothesis,34921025,ccr-2022-34921025-language.md,85,no-literal-match-needs-context-review
 ccr-lang-dbeade937b731a83f8e6,clonality assignment,33593884,ccr-2021-33593884-language.md,61,no-literal-match-needs-context-review
 ccr-lang-dbf94500b97fa7de3b98,subclonal resistance,41790029,ccr-2026-09-19-pending15-language.md,466,no-literal-match-needs-context-review
 ccr-lang-dbfe77feec817434017f,clinical false-positive attribution,39932457,ccr-2025-genomics-2026-09-20-language.md,80,no-literal-match-needs-context-review
@@ -2776,6 +2896,7 @@ ccr-lang-dd0835d6a563d619c57b,treatment-adaptation strategy,41400436,ccr-2026-09
 ccr-lang-dd1014c9a5072f4e4322,allometric dose scaling,35792882,ccr-2022-35792882-language.md,69,no-literal-match-needs-context-review
 ccr-lang-dd15bc891b8728727e77,false-go frequency,36595566,ccr-2023-36595566-language.md,81,no-literal-match-needs-context-review
 ccr-lang-dd210a3d1dbd1ccd3af1,CRISPR/Cas9-engineered cell line,41649868;41837748;42148884,ccr-2026-translational-mechanisms-fulltext-language.md,174,no-literal-match-needs-context-review
+ccr-lang-dd3aaa469f30e1af851e,marker-by-treatment interaction,32241817,ccr-2020-32241817-language.md,44,no-literal-match-needs-context-review
 ccr-lang-dd8ab2d7f76f436d6974,conventional CD4-positive T cell,41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,112,no-literal-match-needs-context-review
 ccr-lang-dd8d64b55a447af412a7,regimen-specific hazard ratio,36806911,ccr-2023-36806911-language.md,83,no-literal-match-needs-context-review
 ccr-lang-ddbe459686c9217ac8ab,Bray-Curtis dissimilarity,41849236,ccr-2026-immunotherapy-fulltext-language.md,200,no-literal-match-needs-context-review
@@ -2818,6 +2939,7 @@ ccr-lang-e1394e0234d406360dc2,compartment-specific lymphocyte abundance,42714874
 ccr-lang-e13a9b9863d1ea732ee5,compensatory upregulation,34407972,ccr-2021-34407972-language.md,89,no-literal-match-needs-context-review
 ccr-lang-e15390b21a0e3ff85a54,tumor-agnostic detection,41537692;42440365;42489696,ccr-2026-immunotherapy-fulltext-language.md,182,no-literal-match-needs-context-review
 ccr-lang-e15f279aa4b32a171623,immunologically cold tumor microenvironment,35920742,ccr-2022-35920742-language.md,23,no-literal-match-needs-context-review
+ccr-lang-e15f30a8c3cdae57f184,targeted DNA profiling,34921025,ccr-2022-34921025-language.md,48,no-literal-match-needs-context-review
 ccr-lang-e17fbebf8291027c7aee,adenosine-pathway modulation,36044531,ccr-2022-36044531-language.md,139,no-literal-match-needs-context-review
 ccr-lang-e1845e4caa63d4df426e,"mucinous, proliferative, and mesenchymal state",33023953,ccr-2021-33023953-language.md,70,no-literal-match-needs-context-review
 ccr-lang-e1f85d6793c6587f50dc,benefit–risk balance,36951523,ccr-2023-36951523-language.md,99,no-literal-match-needs-context-review
@@ -2844,6 +2966,7 @@ ccr-lang-e3695ba8e4c37d58ea11,KRAS-wild-type diagnostic gap,33947695,ccr-2021-33
 ccr-lang-e36bcb1050d44582c73a,sample-level detection rate,34446541,ccr-2021-34446541-language.md,48,no-literal-match-needs-context-review
 ccr-lang-e3d6187c4daadda8305f,gene-signature score,42440361,ccr-2026-09-19-supplement-language.md,133,no-literal-match-needs-context-review
 ccr-lang-e3e909277473365dbe5a,below the detectable limit,35381070,ccr-2022-35381070-language.md,99,no-literal-match-needs-context-review
+ccr-lang-e3f225bdf9337ef8a07b,treatment-associated phenotypic change,34921025,ccr-2022-34921025-language.md,37,no-literal-match-needs-context-review
 ccr-lang-e41eed570e70b995ddb9,evolving molecular actionability,42360806,ccr-2026-42360806-language.md,74,no-literal-match-needs-context-review
 ccr-lang-e43138e859f428c2981a,smoking-related mutational exposure,41417462,ccr-2026-09-19-supplement-language.md,711,no-literal-match-needs-context-review
 ccr-lang-e431deb35ed806aa6b36,stabilized inverse probability weighting,35140122,ccr-2022-35140122-language.md,40,no-literal-match-needs-context-review
@@ -2852,6 +2975,7 @@ ccr-lang-e43f03ccda3901b47977,selection by treatment duration,36913537,ccr-2023-
 ccr-lang-e45449c420d6b87c8a12,method-dependent heterogeneity estimate,38630755,ccr-2024-38630755-language.md,73,no-literal-match-needs-context-review
 ccr-lang-e45e7ead875cca978691,cell-state annotation,41805895;42008740;42456046,ccr-2026-immunotherapy-fulltext-language.md,140,no-literal-match-needs-context-review
 ccr-lang-e472ba75d20678700c0a,longitudinal clinical annotation,37223888,ccr-2023-37223888-language.md,53,no-literal-match-needs-context-review
+ccr-lang-e484a9fd3c1de481bd10,incomplete assay overlap,34921025,ccr-2022-34921025-language.md,84,no-literal-match-needs-context-review
 ccr-lang-e494e14d3d19e0e72cfb,linkage disequilibrium blocks,34244291,ccr-2021-34244291-language.md,89,no-literal-match-needs-context-review
 ccr-lang-e49bbd20a1beac590558,spatial immune ecology,42440361,ccr-2026-09-19-supplement-language.md,124,no-literal-match-needs-context-review
 ccr-lang-e4ad382478fa7b92c9da,external-validation gap,42485106,ccr-2026-42485106-language-addendum.md,78,no-literal-match-needs-context-review
@@ -2859,6 +2983,7 @@ ccr-lang-e4c3818c30cd3ee6b89a,assay-specific cutoff,36951523,ccr-2023-36951523-l
 ccr-lang-e4c930d9a408ca88ea6e,discriminative ability,34244291,ccr-2021-34244291-language.md,85,no-literal-match-needs-context-review
 ccr-lang-e4d75fc52fec084580f8,phosphopeptide capture,39704655,ccr-2025-omics-methods-2026-09-23-language.md,228,no-literal-match-needs-context-review
 ccr-lang-e4da2b6d8970ec772d10,paired-specimen molecular profiling,36201167,ccr-2023-36201167-language.md,46,no-literal-match-needs-context-review
+ccr-lang-e4e137ab4d7887ca1295,limited statistical power,34074656,ccr-2021-34074656-language.md,69,no-literal-match-needs-context-review
 ccr-lang-e4e16a11ce438e5ee210,taxonomic annotation,41849236,ccr-2026-immunotherapy-fulltext-language.md,197,no-literal-match-needs-context-review
 ccr-lang-e4ed80816ae9737b07ca,isotropic resampling,35727603,ccr-2022-35727603-language.md,79,no-literal-match-needs-context-review
 ccr-lang-e4ff936311d2893e7696,continuous versus categorical risk,35727603,ccr-2022-35727603-language.md,45,no-literal-match-needs-context-review
@@ -2876,15 +3001,19 @@ ccr-lang-e5aaa78120139712d5a7,PD-L1-high enrichment,42268349,ccr-2026-09-19-supp
 ccr-lang-e5b245f7c09fa6fef7e7,biexponential model,36595566,ccr-2023-36595566-language.md,65,no-literal-match-needs-context-review
 ccr-lang-e5da115e6e71bca496b1,biopsy-to-resection sampling bias,42307634,ccr-2026-09-19-pending15-language.md,929,no-literal-match-needs-context-review
 ccr-lang-e5dffd2a2e46bdab944e,paired solid and liquid biospecimens,39561276,ccr-2025-2026-09-19-intake-language.md,171,no-literal-match-needs-context-review
+ccr-lang-e63aee05506c48c26e1d,antibody–drug conjugate payload,34921025,ccr-2022-34921025-language.md,36,no-literal-match-needs-context-review
 ccr-lang-e65d5fbe81e3aa7c4083,within-patient meaningful change,41801128,ccr-2026-09-19-pending15-language.md,548,no-literal-match-needs-context-review
+ccr-lang-e676bf88c637abf6190f,enhanced combination activity,34921025,ccr-2022-34921025-language.md,69,no-literal-match-needs-context-review
 ccr-lang-e67e9ca008e7ce00b5a6,data-adaptive treatment-effect subgroup,42485106,ccr-2026-42485106-language-addendum.md,76,no-literal-match-needs-context-review
 ccr-lang-e6883b506617640da0ac,effector-to-target ratio,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,151,no-literal-match-needs-context-review
 ccr-lang-e68ce0cd224dc8b7d72c,neuroendocrine-high state,39150541,ccr-2024-39150541-language.md,55,no-literal-match-needs-context-review
 ccr-lang-e68dc5d62129afbd4c24,irregular sampling,37071497,ccr-2023-37071497-language.md,99,no-literal-match-needs-context-review
 ccr-lang-e68ed9527dc53adf2183,candidate adjuvant biomarker,42440361,ccr-2026-09-19-supplement-language.md,152,no-literal-match-needs-context-review
+ccr-lang-e6adeb7a41340d05faee,preanalytic and assay-specific constraints,33272981,ccr-2021-33272981-language.md,90,no-literal-match-needs-context-review
 ccr-lang-e6ce18f30d79379a623f,model selection by Bayesian information criterion,40343815;40499141;40928991,ccr-2025-immunotherapy-fulltext-language.md,287,no-literal-match-needs-context-review
 ccr-lang-e6feff7b50397dafb9dc,overlapping treatment recommendations,42484497,ccr-2026-42484497-language.md,46,no-literal-match-needs-context-review
 ccr-lang-e70401529610278efc73,orthogonal experimental support,41649868;41837748;42148884,ccr-2026-translational-mechanisms-fulltext-language.md,194,no-literal-match-needs-context-review
+ccr-lang-e70b6b81ed65c1e35475,fusion-testing performance,33272981,ccr-2021-33272981-language.md,15,no-literal-match-needs-context-review
 ccr-lang-e73e5193df5a8b3b4b1a,confounding by indication,35767426,ccr-2022-35767426-language.md,109,no-literal-match-needs-context-review
 ccr-lang-e75680e52ef70dfb520d,ex vivo colony assay,36537918,ccr-2023-36537918-language.md,65,no-literal-match-needs-context-review
 ccr-lang-e778f350035a2bb18e66,locked expression signature,38088895,ccr-2024-38088895-language.md,40,no-literal-match-needs-context-review
@@ -2905,6 +3034,7 @@ ccr-lang-e852c563c74866a8d755,absolute-mode immune deconvolution,33020056,ccr-20
 ccr-lang-e8597c2f2bea45c4dc1d,testing-era ascertainment bias,33947695,ccr-2021-33947695-language.md,82,no-literal-match-needs-context-review
 ccr-lang-e85e19a90ea25b16f52d,treatment-emergent adverse event,42048384,ccr-2026-09-19-supplement-language.md,59,no-literal-match-needs-context-review
 ccr-lang-e865e8ced3baff800549,proof-of-concept diagnostic modeling,41591979,ccr-2026-09-19-pending15-language.md,270,no-literal-match-needs-context-review
+ccr-lang-e86bae0a222c47d0a427,residual confounding,34074656,ccr-2021-34074656-language.md,84,no-literal-match-needs-context-review
 ccr-lang-e87b8d4ec4b675f3e7f2,allele-specific KRAS biology,41417462,ccr-2026-09-19-supplement-language.md,711,no-literal-match-needs-context-review
 ccr-lang-e8b4eb302cd444bfcd7d,"placebo-controlled, double-blind trial",35101883,ccr-2022-35101883-language.md,31,no-literal-match-needs-context-review
 ccr-lang-e8eac8c11d9adae4cad3,surrogate-endpoint validation,38995268,ccr-2024-38995268-language.md,64,no-literal-match-needs-context-review
@@ -2913,6 +3043,7 @@ ccr-lang-e907cce1e08808393cdc,polysome fractionation,39078310,ccr-2024-39078310-
 ccr-lang-e91b5025c26459559e5c,syngeneic immunocompetent model,39466024;40208070;40343815;40499141;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,264,no-literal-match-needs-context-review
 ccr-lang-e91fbdbffc6f9c25b5e7,region-of-interest selection,42440361,ccr-2026-09-19-supplement-language.md,133,no-literal-match-needs-context-review
 ccr-lang-e93191f676d589260aa4,selected clinical vignette,37249619,ccr-2023-37249619-language.md,97,no-literal-match-needs-context-review
+ccr-lang-e93e0f4fce094b54dd34,structural variant of unknown significance,33272981,ccr-2021-33272981-language.md,48,no-literal-match-needs-context-review
 ccr-lang-e94e9423612acbcce34d,time-dependent covariate,34244291,ccr-2021-34244291-language.md,67,no-literal-match-needs-context-review
 ccr-lang-e9672dab2de5ffb99c1d,step-up dosing regimen,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,303,no-literal-match-needs-context-review
 ccr-lang-e97e1e9daf6b0c40e03b,combination-attribution uncertainty,41563386,ccr-2026-41563386-language.md,89,no-literal-match-needs-context-review
@@ -2921,6 +3052,7 @@ ccr-lang-e988bb14f9e8924d5934,routine diagnostic feasibility,38088895,ccr-2024-3
 ccr-lang-e98d64de701c02423994,Spearman rank correlation,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,226,no-literal-match-needs-context-review
 ccr-lang-e99ebafc653cd3478cae,conditional average treatment effect,42485106,ccr-2026-42485106-language-addendum.md,37,no-literal-match-needs-context-review
 ccr-lang-e9d5d78209b27e2e97ee,directionally consistent but imprecise estimate,42148883,ccr-2026-42148883-language.md,49,no-literal-match-needs-context-review
+ccr-lang-e9ea0726e4893c730f2b,retained lineage features,31694835,ccr-2020-31694835-language.md,57,no-literal-match-needs-context-review
 ccr-lang-e9f1d029bed1e64dd578,driver-specific attenuation in agreement,36201167,ccr-2023-36201167-language.md,73,no-literal-match-needs-context-review
 ccr-lang-e9f8e604a8d851f155b7,Clopper–Pearson exact confidence interval,41961582,ccr-2026-09-23-intake-language.md,37,no-literal-match-needs-context-review
 ccr-lang-ea290d6c2bb750fb4e50,risk–benefit assessment,42048384,ccr-2026-09-19-supplement-language.md,69,no-literal-match-needs-context-review
@@ -2936,11 +3068,14 @@ ccr-lang-ead6332a16c550f7b36b,historical standard-of-care outcome,33685865,ccr-2
 ccr-lang-eae249e81b683b5b852d,model-ranked top-benefit subgroup,42485106,ccr-2026-42485106-language-addendum.md,62,no-literal-match-needs-context-review
 ccr-lang-eae5193faadec90fcccb,multisite ablative radiotherapy,41537692;41587109;41671081;41805895;41849236;41920765;42008740;42126592;42149140;42189883;42360104;42405849;42440365;42456046;42485106;42489696;42574065,ccr-2026-immunotherapy-fulltext-language.md,97,no-literal-match-needs-context-review
 ccr-lang-eae66b205730bba98c6e,ATM immunohistochemical expression score,37097610,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,160,no-literal-match-needs-context-review
+ccr-lang-eaef518fb3237125978a,reference-standard limitation,33272981,ccr-2021-33272981-language.md,87,no-literal-match-needs-context-review
 ccr-lang-eaf445895a78075f38fb,assay turnaround,41400436,ccr-2026-09-19-batch2-language.md,348,no-literal-match-needs-context-review
 ccr-lang-eb1c8b381ee4a8d8ad98,ongoing antitumor immunity,35767426,ccr-2022-35767426-language.md,59,no-literal-match-needs-context-review
+ccr-lang-eb1da0a1a73e30f42a92,orthogonal pathway perturbation,34921025,ccr-2022-34921025-language.md,53,no-literal-match-needs-context-review
 ccr-lang-eb5496b43e40e5f263d0,limited Treg expansion,41945490,ccr-2026-09-19-batch2-language.md,480,no-literal-match-needs-context-review
 ccr-lang-eb5d4d4e4a3313500729,therapeutic vulnerability,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,41,no-literal-match-needs-context-review
 ccr-lang-eb5ee046dca0355504d7,nuclear-to-cytoplasmic reporter ratio,42440358,ccr-2026-42440358-language.md,43,no-literal-match-needs-context-review
+ccr-lang-eb6f3aec256ee5b84270,membrane target abundance,34921025,ccr-2022-34921025-language.md,35,no-literal-match-needs-context-review
 ccr-lang-eb87af1f12dccc43ee98,diagnosis-anchored follow-up,33323404,ccr-2021-33323404-language.md,79,no-literal-match-needs-context-review
 ccr-lang-eb916ad9e01d03e882bf,fibroblast-rich microenvironment,41945491,ccr-2026-09-19-pending15-language.md,651,no-literal-match-needs-context-review
 ccr-lang-eb9c0b822fc605d2a466,restricted mutation spectrum,42377115,ccr-2026-42377115-language.md,75,no-literal-match-needs-context-review
@@ -2998,6 +3133,7 @@ ccr-lang-f004ab1a431ece569fa6,numerically longer duration of response,40310449,c
 ccr-lang-f025fd93ffc493085372,lineage-tracing limitation,36469573,ccr-2023-36469573-language.md,101,no-literal-match-needs-context-review
 ccr-lang-f031b2ee17f9a4fb049c,temporal alignment,37233986,ccr-2023-37233986-language.md,65,no-literal-match-needs-context-review
 ccr-lang-f0591b7febed0a178fc6,consolidative thoracic radiotherapy,40880183,ccr-2025-clinical-2026-09-23-language.md,123,no-literal-match-needs-context-review
+ccr-lang-f066282b368d8a521067,targeted exonic sequencing,35802677,ccr-2022-35802677-language.md,47,no-literal-match-needs-context-review
 ccr-lang-f06dfcb2b47598d14163,cell-fate imaging,42013305,ccr-2026-09-19-supplement-language.md,886,no-literal-match-needs-context-review
 ccr-lang-f076bc93a58aa5821350,deconvolved,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,170,no-literal-match-needs-context-review
 ccr-lang-f07cc78d57ba12eec92b,cross-cohort validation,42440361,ccr-2026-09-19-supplement-language.md,152,no-literal-match-needs-context-review
@@ -3041,7 +3177,9 @@ ccr-lang-f3b0fc50ffdea9623f74,therapeutic-window limitation,36537918,ccr-2023-36
 ccr-lang-f3bad8cdd19882df15ee,resistance-associated alteration,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,93,no-literal-match-needs-context-review
 ccr-lang-f3f1c895741f84263f46,population-dependent predictive value,42113010,ccr-2026-09-19-pending15-language.md,757,no-literal-match-needs-context-review
 ccr-lang-f410c03e4c97a3a8f8ea,dropped below the level of detection,35713632,ccr-2022-35713632-language.md,85,no-literal-match-needs-context-review
+ccr-lang-f436a42c4b79f5ef3d8f,spectrum-dependent diagnostic performance,33272981,ccr-2021-33272981-language.md,88,no-literal-match-needs-context-review
 ccr-lang-f4455c2d7fe59d3bd11f,allele-specific copy-number profiling,38630790,ccr-2024-38630790-language.md,41,no-literal-match-needs-context-review
+ccr-lang-f44d33ca010f73243a09,model-dependent generalizability,34921025,ccr-2022-34921025-language.md,87,no-literal-match-needs-context-review
 ccr-lang-f45d8d116053ba2a2c51,FDR-controlled gene-set enrichment,38630755,ccr-2024-38630755-language.md,63,no-literal-match-needs-context-review
 ccr-lang-f47863baccbe6122151a,discordant response and survival findings,37233991,ccr-2023-37233991-language.md,85,no-literal-match-needs-context-review
 ccr-lang-f4a1d12b81e805de7098,contiguous-locus codeletion,42148883,ccr-2026-42148883-language.md,35,no-literal-match-needs-context-review
@@ -3122,6 +3260,7 @@ ccr-lang-faeca5628f0a67ec224b,per-standard-deviation increase,41779007,ccr-2026-
 ccr-lang-fb01aa7d6ce64393c37b,residual uncertainty,37265412,ccr-2023-37265412-language.md,101,no-literal-match-needs-context-review
 ccr-lang-fb2a3df268f0f2eaeaea,on-target kinase-domain resistance,33685866,ccr-2021-33685866-language.md,49,no-literal-match-needs-context-review
 ccr-lang-fb44bf210c215b2de13a,right-censoring,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,233,no-literal-match-needs-context-review
+ccr-lang-fb5f8374fc222413b371,preclinical growth inhibition,31694835,ccr-2020-31694835-language.md,60,no-literal-match-needs-context-review
 ccr-lang-fb64942c62d599abfc59,molecular responder,42059900,ccr-2026-09-19-supplement-language.md,391,no-literal-match-needs-context-review
 ccr-lang-fb6e36e25d6d3bddf63a,broadly refractory kinase,33685866,ccr-2021-33685866-language.md,73,no-literal-match-needs-context-review
 ccr-lang-fb8299ea6485ec381ff7,oncogenicity-informed variant classification,32709715,ccr-2026-09-14-atm-smarca4-stk11-priority-language.md,51,no-literal-match-needs-context-review
@@ -3133,6 +3272,7 @@ ccr-lang-fba0729d47939ed05435,genotype-defined treatment population,39836411,ccr
 ccr-lang-fba36eac7683cf387373,differential scan frequency,35511917,ccr-2022-35511917-language.md,113,no-literal-match-needs-context-review
 ccr-lang-fbb2366dad15936260d8,in vivo expansion and persistence,39466024;39576208;40828417;41026583,ccr-2025-immunotherapy-fulltext-language.md,157,no-literal-match-needs-context-review
 ccr-lang-fbc1b9280465f7e25949,early treatment adaptation,42059900,ccr-2026-09-19-supplement-language.md,401,no-literal-match-needs-context-review
+ccr-lang-fbc80895a1d11511bc02,bulk-transcriptome deconvolution,32241817,ccr-2020-32241817-language.md,40,no-literal-match-needs-context-review
 ccr-lang-fbdd21dea92a74ec0c3c,flow-cytometric phenotyping,41649868;41837748;42148884,ccr-2026-translational-mechanisms-fulltext-language.md,187,no-literal-match-needs-context-review
 ccr-lang-fbdf0e8c55bc67240887,delta radiomic feature,39670974,ccr-2025-2026-09-19-intake-language.md,233,no-literal-match-needs-context-review
 ccr-lang-fbe8919c8daf064debfe,checkpoint-inhibitor rechallenge,40932352,ccr-2025-2026-09-19-intake-language.md,291,no-literal-match-needs-context-review
@@ -3170,6 +3310,7 @@ ccr-lang-fe78d239d67e37795c35,germinal-center activity,41537692;41805895;4184923
 ccr-lang-feac74847af08a772336,pharmacodynamic-clinical dissociation,41252574,ccr-2026-09-19-batch2-language.md,209,no-literal-match-needs-context-review
 ccr-lang-feafe7d75d9dbad14814,post-chemoradiotherapy consolidation,38165684,ccr-2024-38165684-language.md,31,no-literal-match-needs-context-review
 ccr-lang-fecbcf7eecd8f3b4a20a,allele-fraction normalization,34446541,ccr-2021-34446541-language.md,40,no-literal-match-needs-context-review
+ccr-lang-ff1091ffcb6c1990bf25,assay-specific evaluable set,34921025,ccr-2022-34921025-language.md,47,no-literal-match-needs-context-review
 ccr-lang-ff24db440b87c6ca848f,early-onset multifocal tumor initiation,33077574,ccr-2026-09-12-supplement-language.md,48,no-literal-match-needs-context-review
 ccr-lang-ff27da539d29172cf7fe,read-level methylation extraction,41591979,ccr-2026-09-19-pending15-language.md,247,no-literal-match-needs-context-review
 ccr-lang-ff4c1f57de4068eb3358,concordant codeletion,41649868;41817317;41837748;42148884;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,81,no-literal-match-needs-context-review
@@ -3177,6 +3318,7 @@ ccr-lang-ff77a440fbf49a35447b,interradiographic monitoring,37233986,ccr-2023-372
 ccr-lang-ff7b0b93225372420b34,therapeutically tractable,34261696,ccr-2021-34261696-language.md,57,no-literal-match-needs-context-review
 ccr-lang-ffa70f2f5b1cecc4bae1,decision-threshold tradeoff,36595566,ccr-2023-36595566-language.md,99,no-literal-match-needs-context-review
 ccr-lang-ffb4c65a922a252ef3bd,spatial transcriptomic spot,41805895;42008740;42456046,ccr-2026-immunotherapy-fulltext-language.md,145,no-literal-match-needs-context-review
+ccr-lang-ffbcad21ebe47108a633,lineage-marker immunostaining,31694835,ccr-2020-31694835-language.md,41,no-literal-match-needs-context-review
 ccr-lang-ffc17bc2439010fef43b,circular binary segmentation,41649868;41817317;42507545,ccr-2026-translational-mechanisms-fulltext-language.md,156,no-literal-match-needs-context-review
 ccr-lang-ffe29d8588d63826f2cd,delayed hepatic toxicity,39287821,ccr-2024-39287821-language.md,51,no-literal-match-needs-context-review
 ccr-lang-fffe17c1040a600a467e,Benjamini–Hochberg adjustment,35511938,ccr-2022-35511938-language.md,73,no-literal-match-needs-context-review

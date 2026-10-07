@@ -59,6 +59,8 @@ For assay-, treatment- or design-specific STK11 preparation, use [the detailed c
 
 Actual journal identity governs archiving and corpus assets; project names and intake folders do not. Retain issue/online dates, full title, PMID/DOI, actual PDF version and hash. Preprint, author manuscript, pre-proof and formal versions retain independent evidence histories.
 
+For a newly supplied PDF, record one-based physical-page coverage, including text, figures/tables/captions and reference or administrative pages. Separate actual reading and visual inspection from extraction success. Preserve source-internal numerical conflicts as retrieval alerts; do not silently choose the more favorable estimate.
+
 Exclude commentaries, editorials and replies from reusable corpus learning; keep narrative reviews/background sources separate. This does not prohibit translating or drafting these genres on request. Do not mistake treatment response for reply-type correspondence.
 
 Report scope for every count: journal(s), issue-year range, topic/batch filter and formal versus provisional inclusion. Indexed, PDF-present, screened, main-text-complete, source-recheck-passed and independently reviewed are different states. Use current journal registers and derived indexes rather than old prose snapshots; topic support and core priority are separate from all of them.

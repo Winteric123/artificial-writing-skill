@@ -4,7 +4,7 @@
 
 标签依据及用法：[coalteration-topics.md](coalteration-topics.md)。权威逐篇记录：[coalteration-annotations.json](coalteration-annotations.json)。机器表：[library-index.csv](library-index.csv)。
 
-纳入正式论文 344 篇；序列共突变实际分析/描述 124 篇；广义共改变实际分析/描述 152 篇。前者是后者子集，不能相加。
+纳入正式论文 350 篇；序列共突变实际分析/描述 127 篇；广义共改变实际分析/描述 158 篇。前者是后者子集，不能相加。
 
 “实际分析/描述”包括描述性oncoplot/少数病例，并非全是共突变主题主文或阳性机制结果。“本轮未识别”不是全文绝无相关内容。列示基因上下文非穷尽，包含互斥检验和模型，不表示每一组合均正共现。
 
@@ -73,8 +73,12 @@
 
 | 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
 |---|---|---|---|---|---|---|
+| 2020 | [32241817 — Identification of Deleterious NOTCH Mutation as Novel Predictor to Efficacious Immunotherapy in NSCLC](https://pubmed.ncbi.nlm.nih.gov/32241817/) | 实际分析/描述 | 实际分析/描述 | TP53+KRAS | genomic_landscape;treatment_outcomes | no |
+| 2020 | [31694835 — Organoid Cultures as Preclinical Models of Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/31694835/) | 本轮未识别 | 实际分析/描述 | KRAS;KRAS+CDKN2A | genomic_landscape;assay_or_method;model_genotype;preclinical_mechanism | no |
 | 2020 | [32709715 — The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/32709715/) | 实际分析/描述 | 实际分析/描述 | SMARCA4+TP53;SMARCA4+KEAP1;SMARCA4+STK11;SMARCA4+KRAS | genomic_landscape;prognosis;treatment_outcomes | yes |
+| 2021 | [33272981 — A Performance Comparison of Commonly Used Assays to Detect RET Fusions](https://pubmed.ncbi.nlm.nih.gov/33272981/) | 本轮未识别 | 实际分析/描述 | EGFR+RET;RET | genomic_landscape;resistance;assay_or_method | no |
 | 2021 | [34140403 — A Phase I Study of APX005M and Cabiralizumab with or without Nivolumab in Patients with Melanoma, Kidney Cancer, or Non-Small Cell Lung Cancer Resistant to Anti-PD-1/PD-L1](https://pubmed.ncbi.nlm.nih.gov/34140403/) | 本轮未识别 | 本轮未识别 | — | — | no |
+| 2021 | [34074656 — CDKN2A Alterations and Response to Immunotherapy in Solid Tumors](https://pubmed.ncbi.nlm.nih.gov/34074656/) | 本轮未识别 | 实际分析/描述 | CDKN2A | genomic_landscape | no |
 | 2021 | [33947695 — Comprehensive Molecular and Clinicopathologic Analysis of 200 Pulmonary Invasive Mucinous Adenocarcinomas Identifies Distinct Characteristics of Molecular Subtypes](https://pubmed.ncbi.nlm.nih.gov/33947695/) | 实际分析/描述 | 实际分析/描述 | ERBB3;KRAS+STK11 | genomic_landscape;prognosis | no |
 | 2021 | [33323402 — Cross-Site Concordance Evaluation of Tumor DNA and RNA Sequencing Platforms for the CIMAC-CIDC Network](https://pubmed.ncbi.nlm.nih.gov/33323402/) | 实际分析/描述 | 实际分析/描述 | TP53+KRAS | assay_or_method;genomic_landscape | no |
 | 2021 | [33020056 — Genome and Transcriptome Biomarkers of Response to Immune Checkpoint Inhibitors in Advanced Solid Tumors](https://pubmed.ncbi.nlm.nih.gov/33020056/) | 实际分析/描述 | 实际分析/描述 | JAK1+HLA-A | genomic_landscape;immune_context;resistance;treatment_outcomes | no |
@@ -113,11 +117,13 @@
 | 2022 | [35091439 — Comparative Analysis and Isoform-Specific Therapeutic Vulnerabilities of KRAS Mutations in Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/35091439/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;KRAS+TP53;KRAS+STK11+KEAP1 | genomic_landscape;treatment_outcomes | no |
 | 2022 | [35101883 — Continuation of Pembrolizumab with Additional Chemotherapy after Progression with PD-1/PD-L1 Inhibitor Monotherapy in Patients with Advanced NSCLC: A Randomized, Placebo-Controlled Phase II Study](https://pubmed.ncbi.nlm.nih.gov/35101883/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2022 | [35394499 — Distinct Immune Gene Programs Associated with Host Tumor Immunity, Neoadjuvant Chemotherapy, and Chemoimmunotherapy in Resectable NSCLC](https://pubmed.ncbi.nlm.nih.gov/35394499/) | 本轮未识别 | 本轮未识别 | — | — | no |
+| 2022 | [35802677 — DNA Methylation Profiling Identifies Subgroups of Lung Adenocarcinoma with Distinct Immune Cell Composition, DNA Methylation Age, and Clinical Outcome](https://pubmed.ncbi.nlm.nih.gov/35802677/) | 实际分析/描述 | 实际分析/描述 | EGFR;KRAS;TP53;STK11;KEAP1;ATM | genomic_landscape | no |
 | 2022 | [34462287 — FDA Approval Summary: Nivolumab in Combination with Ipilimumab for the Treatment of Unresectable Malignant Pleural Mesothelioma](https://pubmed.ncbi.nlm.nih.gov/34462287/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2022 | [34903582 — FDA Approval Summary: Sotorasib for KRAS G12C-Mutated Metastatic NSCLC](https://pubmed.ncbi.nlm.nih.gov/34903582/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2022 | [35699599 — First-In-Human Phase I Study of the OX40 Agonist MOXR0916 in Patients with Advanced Solid Tumors](https://pubmed.ncbi.nlm.nih.gov/35699599/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2022 | [35511938 — First-in-Human Phase I/II ICONIC Trial of the ICOS Agonist Vopratelimab Alone and with Nivolumab: ICOS-High CD4 T-Cell Populations and Predictors of Response](https://pubmed.ncbi.nlm.nih.gov/35511938/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2022 | [35012927 — Health-Related Quality of Life Outcomes in Patients with Resected Epidermal Growth Factor Receptor-Mutated Non-Small Cell Lung Cancer Who Received Adjuvant Osimertinib in the Phase III ADAURA Trial](https://pubmed.ncbi.nlm.nih.gov/35012927/) | 本轮未识别 | 本轮未识别 | — | — | no |
+| 2022 | [34921025 — HER3 Augmentation via Blockade of EGFR/AKT Signaling Enhances Anticancer Activity of HER3-Targeting Patritumab Deruxtecan in EGFR-Mutated Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/34921025/) | 实际分析/描述 | 实际分析/描述 | EGFR;TP53;RB1;MYCN;MYC;MET;ERBB2 | genomic_landscape;resistance | no |
 | 2022 | [35363308 — Identification and Management of Pathogenic Variants in BRCA1, BRCA2, and PALB2 in a Tumor-Only Genomic Testing Program](https://pubmed.ncbi.nlm.nih.gov/35363308/) | 实际分析/描述 | 实际分析/描述 | — | genomic_landscape;variant_origin | no |
 | 2022 | [34667030 — Inactivation of AMPK Leads to Attenuation of Antigen Presentation and Immune Evasion in Lung Adenocarcinoma](https://pubmed.ncbi.nlm.nih.gov/34667030/) | 仅背景/模型/方法上下文 | 实际分析/描述 | KRAS+STK11;KRAS+PRKAA1+PRKAA2 | preclinical_mechanism;model_genotype | no |
 | 2022 | [35920742 — Inhibition of LSD1 with Bomedemstat Sensitizes Small Cell Lung Cancer to Immune Checkpoint Blockade and T-Cell Killing](https://pubmed.ncbi.nlm.nih.gov/35920742/) | 仅背景/模型/方法上下文 | 仅背景/模型/方法上下文 | RB1+TP53 | model_genotype | no |

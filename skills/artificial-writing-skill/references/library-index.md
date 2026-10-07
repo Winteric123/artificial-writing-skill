@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记362篇；当前纳入344篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读344篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 13篇。
+正式期刊登记368篇；当前纳入350篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读350篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 13篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -19,9 +19,9 @@
 | 2017 | 1 | 1 | 1 | 0 | 0 |
 | 2018 | 1 | 1 | 1 | 0 | 0 |
 | 2019 | 2 | 2 | 2 | 0 | 0 |
-| 2020 | 4 | 4 | 4 | 0 | 0 |
-| 2021 | 28 | 28 | 28 | 0 | 0 |
-| 2022 | 53 | 46 | 46 | 0 | 7 |
+| 2020 | 6 | 6 | 6 | 0 | 0 |
+| 2021 | 30 | 30 | 30 | 0 | 0 |
+| 2022 | 55 | 48 | 48 | 0 | 7 |
 | 2023 | 61 | 56 | 56 | 0 | 5 |
 | 2024 | 57 | 53 | 53 | 0 | 4 |
 | 2025 | 64 | 62 | 62 | 0 | 2 |
@@ -38,7 +38,7 @@
 | Cell | 1 | 1 | 1 |
 | Cell Reports | 1 | 1 | 1 |
 | Cell Research | 1 | 1 | 1 |
-| Clinical Cancer Research | 281 | 263 | 263 |
+| Clinical Cancer Research | 287 | 269 | 269 |
 | ESMO Open | 1 | 1 | 1 |
 | JCO Precision Oncology | 1 | 1 | 1 |
 | JTO Clinical and Research Reports | 1 | 1 | 1 |
@@ -78,9 +78,9 @@
 | Cell | 2020 | 1 | 1 | 1 | 0 | 0 |
 | Cell Reports | 2020 | 1 | 1 | 1 | 0 | 0 |
 | Cell Research | 2025 | 1 | 1 | 1 | 0 | 0 |
-| Clinical Cancer Research | 2020 | 1 | 1 | 1 | 0 | 0 |
-| Clinical Cancer Research | 2021 | 22 | 22 | 22 | 0 | 0 |
-| Clinical Cancer Research | 2022 | 50 | 43 | 43 | 0 | 7 |
+| Clinical Cancer Research | 2020 | 3 | 3 | 3 | 0 | 0 |
+| Clinical Cancer Research | 2021 | 24 | 24 | 24 | 0 | 0 |
+| Clinical Cancer Research | 2022 | 52 | 45 | 45 | 0 | 7 |
 | Clinical Cancer Research | 2023 | 44 | 39 | 39 | 0 | 5 |
 | Clinical Cancer Research | 2024 | 39 | 35 | 35 | 0 | 4 |
 | Clinical Cancer Research | 2025 | 50 | 48 | 48 | 0 | 2 |
@@ -257,17 +257,21 @@
 
 ### Clinical Cancer Research
 
-#### 2020（1篇）
+#### 2020（3篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
+| 32241817 | Identification of Deleterious NOTCH Mutation as Novel Predictor to Efficacious Immunotherapy in NSCLC | 10.1158/1078-0432.CCR-19-3976 | Precision Medicine and Imaging | 已完成 | no |
+| 31694835 | Organoid Cultures as Preclinical Models of Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-19-1376 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 32709715 | The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer | 10.1158/1078-0432.ccr-20-1825 | Translational Cancer Mechanisms and Therapy | 已完成 | yes |
 
-#### 2021（22篇）
+#### 2021（24篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
+| 33272981 | A Performance Comparison of Commonly Used Assays to Detect RET Fusions | 10.1158/1078-0432.CCR-20-3208 | Precision Medicine and Imaging | 已完成 | no |
 | 34140403 | A Phase I Study of APX005M and Cabiralizumab with or without Nivolumab in Patients with Melanoma, Kidney Cancer, or Non-Small Cell Lung Cancer Resistant to Anti-PD-1/PD-L1 | 10.1158/1078-0432.ccr-21-0903 | Clinical Trials: Immunotherapy | 已完成 | no |
+| 34074656 | CDKN2A Alterations and Response to Immunotherapy in Solid Tumors | 10.1158/1078-0432.CCR-21-0575 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33947695 | Comprehensive Molecular and Clinicopathologic Analysis of 200 Pulmonary Invasive Mucinous Adenocarcinomas Identifies Distinct Characteristics of Molecular Subtypes | 10.1158/1078-0432.CCR-21-0423 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33323402 | Cross-Site Concordance Evaluation of Tumor DNA and RNA Sequencing Platforms for the CIMAC-CIDC Network | 10.1158/1078-0432.ccr-20-3251 | Precision Medicine and Imaging | 已完成 | no |
 | 33020056 | Genome and Transcriptome Biomarkers of Response to Immune Checkpoint Inhibitors in Advanced Solid Tumors | 10.1158/1078-0432.CCR-20-1163 | Precision Medicine and Imaging | 已完成 | no |
@@ -290,7 +294,7 @@
 | 33558425 | Treatment Outcomes and Clinical Characteristics of Patients with KRAS-G12C Mutant Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-20-4023 | Precision Medicine and Imaging | 已完成 | no |
 | 34407972 | Upregulation of C/EBPα Inhibits Suppressive Activity of Myeloid Cells and Potentiates Antitumor Response in Mice and Patients with Cancer | 10.1158/1078-0432.ccr-21-0986 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 
-#### 2022（43篇）
+#### 2022（45篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
@@ -311,11 +315,13 @@
 | 35091439 | Comparative Analysis and Isoform-Specific Therapeutic Vulnerabilities of KRAS Mutations in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-2719 | Precision Medicine and Imaging | 已完成 | no |
 | 35101883 | Continuation of Pembrolizumab with Additional Chemotherapy after Progression with PD-1/PD-L1 Inhibitor Monotherapy in Patients with Advanced NSCLC: A Randomized, Placebo-Controlled Phase II Study | 10.1158/1078-0432.ccr-21-3646 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 35394499 | Distinct Immune Gene Programs Associated with Host Tumor Immunity, Neoadjuvant Chemotherapy, and Chemoimmunotherapy in Resectable NSCLC | 10.1158/1078-0432.ccr-21-3207 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 35802677 | DNA Methylation Profiling Identifies Subgroups of Lung Adenocarcinoma with Distinct Immune Cell Composition, DNA Methylation Age, and Clinical Outcome | 10.1158/1078-0432.CCR-22-0391 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34462287 | FDA Approval Summary: Nivolumab in Combination with Ipilimumab for the Treatment of Unresectable Malignant Pleural Mesothelioma | 10.1158/1078-0432.ccr-21-1466 | CCR Drug Updates | 已完成 | no |
 | 34903582 | FDA Approval Summary: Sotorasib for KRAS G12C-Mutated Metastatic NSCLC | 10.1158/1078-0432.ccr-21-3074 | CCR Drug Updates | 已完成 | no |
 | 35699599 | First-In-Human Phase I Study of the OX40 Agonist MOXR0916 in Patients with Advanced Solid Tumors | 10.1158/1078-0432.ccr-21-4020 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 35511938 | First-in-Human Phase I/II ICONIC Trial of the ICOS Agonist Vopratelimab Alone and with Nivolumab: ICOS-High CD4 T-Cell Populations and Predictors of Response | 10.1158/1078-0432.ccr-21-4256 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 35012927 | Health-Related Quality of Life Outcomes in Patients with Resected Epidermal Growth Factor Receptor-Mutated Non-Small Cell Lung Cancer Who Received Adjuvant Osimertinib in the Phase III ADAURA Trial | 10.1158/1078-0432.ccr-21-3530 | Clinical Trials: Targeted Therapy | 已完成 | no |
+| 34921025 | HER3 Augmentation via Blockade of EGFR/AKT Signaling Enhances Anticancer Activity of HER3-Targeting Patritumab Deruxtecan in EGFR-Mutated Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-21-3359 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 35363308 | Identification and Management of Pathogenic Variants in BRCA1, BRCA2, and PALB2 in a Tumor-Only Genomic Testing Program | 10.1158/1078-0432.ccr-21-2861 | Precision Medicine and Imaging | 已完成 | no |
 | 34667030 | Inactivation of AMPK Leads to Attenuation of Antigen Presentation and Immune Evasion in Lung Adenocarcinoma | 10.1158/1078-0432.CCR-21-2049 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 35920742 | Inhibition of LSD1 with Bomedemstat Sensitizes Small Cell Lung Cancer to Immune Checkpoint Blockade and T-Cell Killing | 10.1158/1078-0432.ccr-22-1128 | Translational Cancer Mechanisms and Therapy | 已完成 | no |

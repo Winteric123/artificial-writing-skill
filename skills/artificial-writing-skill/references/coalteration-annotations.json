@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "curated_on": "2026-10-05",
+  "curated_on": "2026-10-07",
   "scope": "All current formal registry records; eligible article-level topic annotations. Preprints separate; candidate queues not promoted.",
   "boundary": "Topic-screening labels, not new full reads, acceptance, quotations, exhaustive gene pairs, or proof that a negative-screened source contains no co-alteration. Gene contexts include comparisons and negative associations, not only positive co-occurrence. All filters are article-level, not expression-level validation.",
   "articles": {
@@ -12745,13 +12745,13 @@
       "evidence": [
         {
           "source": "nature-cell-biology-2021-34341533-reading.md",
-      "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+          "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
           "first_line": 11,
           "last_line": 19
         },
         {
           "source": "nature-cell-biology-2021-34341533-reading.md",
-      "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
+          "source_sha256": "9179482b1058b71dc5fad3018f24d0e5f21fdfb83b2c7c757646bbe41d350ad7",
           "first_line": 47,
           "last_line": 90
         }
@@ -13018,6 +13018,348 @@
         "physical_pages": 12,
         "checked_context_pages": [],
         "scope": "Selected registered PDF identity bound from source-pdf-locators.json; this curation reopened only existing canonical reading notes, no new PDF text/visual inspection, no independent acceptance or passed promotion."
+      }
+    },
+    "34074656": {
+      "doi": "10.1158/1078-0432.CCR-21-0575",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "CDKN2A"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 7,
+          "last_line": 22
+        },
+        {
+          "source": "ccr-2021-34074656-reading.md",
+          "source_sha256": "5a92b6e7299c3591b290faa4a2e164de6e9e66ec1377623a2e785afa2be2f0d6",
+          "first_line": 51,
+          "last_line": 51,
+          "section": "Key numerical, negative and figure checks / IFN cluster row"
+        },
+        {
+          "source": "ccr-2021-34074656-reading.md",
+          "source_sha256": "5a92b6e7299c3591b290faa4a2e164de6e9e66ec1377623a2e785afa2be2f0d6",
+          "first_line": 58,
+          "last_line": 63,
+          "section": "Source conflicts and claim ceiling"
+        }
+      ],
+      "boundary": "旁邻区域共删除不等于序列共突变；43%的分母是CDKN2A纯合删除TCGA BLCA样本，不是全部TCGA样本或ICI病例。该共删除与免疫耐药关系仅假说，不增添treatment_outcomes或immune_context作为已实测共删除效应。gene_contexts只登记CDKN2A，不凭基因簇笼统名补造具体IFNA/IFNB/IFNG配对；p2 CDKN2A/CDKN2B文献背景不是本篇新共删除结果。没有STK11直接证据。not_identified不是全文生物学阴性保证。",
+      "pdf": {
+        "sha256": "73ad6ad2b4a5018a6d71e6c5c11fca47e8e8776c08e4af1aa94fa7cfdd489061",
+        "physical_pages": 11,
+        "checked_context_pages": [
+          8
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "33272981": {
+      "doi": "10.1158/1078-0432.CCR-20-3208",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "fusion_rearrangement"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR",
+          "RET"
+        ],
+        [
+          "RET"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "resistance",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 23,
+          "last_line": 38
+        },
+        {
+          "source": "ccr-2021-33272981-reading.md",
+          "source_sha256": "96aefa9c0c9cbf5d408cf7b5c9b883d5b2cdca115357c1753072d2075213173d",
+          "first_line": 43,
+          "last_line": 47,
+          "section": "Numerical and main-table checks / C versusD support"
+        },
+        {
+          "source": "ccr-2021-33272981-reading.md",
+          "source_sha256": "96aefa9c0c9cbf5d408cf7b5c9b883d5b2cdca115357c1753072d2075213173d",
+          "first_line": 90,
+          "last_line": 90,
+          "section": "Main figure inventory and interpretation / Figure2"
+        },
+        {
+          "source": "ccr-2021-33272981-reading.md",
+          "source_sha256": "96aefa9c0c9cbf5d408cf7b5c9b883d5b2cdca115357c1753072d2075213173d",
+          "first_line": 102,
+          "last_line": 103,
+          "section": "Source alerts / Other-driver exclusivity and resistance boundary"
+        }
+      ],
+      "boundary": "序列变异加融合属于广义共改变，不是序列双突变；融合两端基因不能作为两次独立事件。4例EGFR/RET观察支持耐药背景，不能从单次检测推定同克隆、因果协作或所有病例均有本研究配对前后测序证明新获得。6/151是作者定义的non-RET driver集合，含激素表达，不可整体称6例基因共改变；选择仅EGFR/RET作为明确基因组合。Table1脚注列ERBB2扩增为非RET驱动示例，但未逐例定位，故本建议不新增RET/ERBB2特定共改变配对或copy_number_gain标签。BRAF/RET互斥在p3属于阴性对照选择依据，不当作新的无偏互斥检验。RET单基因context表示与未逐一转录的驱动指标比较，不推定所有GroupD结构变异都是功能融合。无直接STK11分析。",
+      "pdf": {
+        "sha256": "36900a46c1604b8bda24c00911a33009effd465eb7e68f69384f8936b58d6edc",
+        "physical_pages": 14,
+        "checked_context_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "32241817": {
+      "doi": "10.1158/1078-0432.CCR-19-3976",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "TP53",
+          "KRAS"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 39,
+          "last_line": 57
+        },
+        {
+          "source": "ccr-2020-32241817-reading.md",
+          "source_sha256": "f1c9941dd895874497f50edd54713909c472e03f0f28d768b20182490e1a3228",
+          "first_line": 26,
+          "last_line": 38,
+          "heading": "Physical-page coverage",
+          "physical_locator": "p4 Figure1A and p11 Table1",
+          "rationale_zh": "Figure1A是逐患者/样本列的多基因序列变异图谱。更明确的是Table1实际列出TP53 and KRAS (co-mut vs mono-mut + WT)结局比较，并非仅共同进入一个多变量模型。"
+        }
+      ],
+      "boundary": "该共突变标签由实际TP53/KRAS双突变对照分析和逐样本图谱支持；两项结局比较均不显著，不是因果协同或治疗交互。这里只保留明确的TP53/KRAS基因对，不从Figure1扁平基因名单生成所有组合。NOTCH1/2/3分组本身是家族突变分类/并集，不等于同一肿瘤的三突变；STK11和KEAP1单独协变量共同入模并非STK11/KEAP1共突变分析，因此不在此记录加入该基因对。未从统计Methods提及fraction of CNA而推定实际CNV共变异结果。非穷尽基因对标注，外部补充未读。",
+      "pdf": {
+        "sha256": "7932e9af2e1e1bb002c983dc404407ecd42f2b8de6833d4f1912bd136ca3661d",
+        "physical_pages": 13,
+        "checked_context_pages": [
+          4,
+          11
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "31694835": {
+      "doi": "10.1158/1078-0432.CCR-19-1376",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain",
+        "copy_number_loss"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS"
+        ],
+        [
+          "KRAS",
+          "CDKN2A"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "assay_or_method",
+        "model_genotype",
+        "preclinical_mechanism"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 58,
+          "last_line": 75
+        },
+        {
+          "source": "ccr-2020-31694835-reading.md",
+          "source_sha256": "77733aa72099a28909970ba8c141a237b953013afcdd6ec7022b82fa2c7517aa",
+          "first_line": 55,
+          "last_line": 59,
+          "heading": "Central numerical results and adverse/null findings",
+          "physical_locator": "p7 Figure3A/B and p8 Results: NSCLC organoids preserve the mutation and copy number landscape; Utility of long-term NSCLC organoids for drug testing",
+          "rationale_zh": "p8明确同一PDXO426模型含KRAS G13C序列突变与KRAS扩增，并在同页上半段报告PDXO426的KRAS扩增和CDKN2A缺失；主文进行来源组织/PDX/类器官的WES及CNV保留比较，并将该KRAS突变/扩增模型用于药敏比较。这是实际描述的广义共变异，不只是未来模型背景。"
+        }
+      ],
+      "boundary": "KRAS序列突变+扩增不是同基因双序列突变，故不加same_gene_compound，也不标co_mutation_status=analyzed。KRAS与CDKN2A分别含扩增/缺失成分，不能改写为双点突变。Fig3A是不同标本之间突变一致性/总量热图，不是逐基因共突变oncoPrint；主文列TP53/DDR2/KRAS/KEAP1/CUL3/NOTCH等是跨模型出现的基因清单，不能任意配对。p8的FGFR1扩增属于另一个PDXO274模型，不与PDXO426的KRAS/CDKN2A拼成三基因背景。药物组合和磷蛋白共抑制不算基因组共变异。单模型药敏不证明KRAS/CDKN2A合作机制或患者治疗获益。未定位序列共突变只限本次主文判断，未提供S3等补充可含其他变异，不构成全文库或生物学不存在断言。",
+      "pdf": {
+        "sha256": "f4d4126c44129452041a136420de1da6d53b3abc65eae903fe395791b4ec3dba",
+        "physical_pages": 14,
+        "checked_context_pages": [
+          7,
+          8
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "35802677": {
+      "doi": "10.1158/1078-0432.CCR-22-0391",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ],
+        [
+          "KRAS"
+        ],
+        [
+          "TP53"
+        ],
+        [
+          "STK11"
+        ],
+        [
+          "KEAP1"
+        ],
+        [
+          "ATM"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 76,
+          "last_line": 91
+        },
+        {
+          "source": "ccr-2022-35802677-reading.md",
+          "source_sha256": "fd09713fd828b8e7cdc6012f74f19c5b73e981190387be8ca9c2abe511fda69e",
+          "first_line": 13,
+          "last_line": 67
+        }
+      ],
+      "boundary": "Analyzed qualifies only as a descriptive patient/sample-level genomic landscape. No pair-specific enrichment, interaction, common clone, causal synergy, STK11 co-mutation survival effect or treatment prediction is established. Six flat gene contexts must not be expanded into all possible positive pairs. The separate single-gene DNAm-age and immune comparisons are not the basis for the co-mutation label. Methylation/immune composition and IHC are not genomic alteration types. No copy-number or fusion type added; external SupplementaryS7 not independently inspected.",
+      "pdf": {
+        "sha256": "6c26028a053caa3d78bf19789d7c30b63e04a996f26a9a7f20891744edaf5da2",
+        "physical_pages": 12,
+        "checked_context_pages": [
+          7
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "34921025": {
+      "doi": "10.1158/1078-0432.CCR-21-3359",
+      "eligibility": "included",
+      "curated_on": "2026-10-07",
+      "method": "article-level-topic-curation-after-complete-initial-read-with-targeted-context-reopening",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "same_gene_compound",
+        "copy_number_gain"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ],
+        [
+          "TP53"
+        ],
+        [
+          "RB1"
+        ],
+        [
+          "MYCN"
+        ],
+        [
+          "MYC"
+        ],
+        [
+          "MET"
+        ],
+        [
+          "ERBB2"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "resistance"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-07-coalteration-scope.md",
+          "source_sha256": "936b419d5c727274fa08e7cea60cb0a89d43cd1dea62c8fdf7a184cc048392d9",
+          "first_line": 92,
+          "last_line": 107
+        },
+        {
+          "source": "ccr-2022-34921025-reading.md",
+          "source_sha256": "1c6dc9a997d6f868c0946b797084c8cfe9725f6a61ba99fadc121981bfdf98df",
+          "first_line": 32,
+          "last_line": 51
+        }
+      ],
+      "boundary": "EGFR activating plus T790M variants are same-gene compound status, not a two-gene co-mutation; no cis/trans phasing is established. EGFR mutation plus EGFR/MET/ERBB2 copy gain is broad co-alteration, not two sequence mutations. Figure3 annotates posttreatment measurements and marks pre-existing events with asterisks; do not call every displayed alteration acquired. Missing gray cells are not wild-type. Gene contexts are selected, not an exhaustive or all-pairs map; no STK11 label. HER3 protein augmentation, EMT expression, ADC combinations and small-cell histologic conversion are not themselves genomic co-alterations. This supports resistance-context description and HER3-association analysis, not a validated co-mutation treatment-prediction rule.",
+      "pdf": {
+        "sha256": "7ec266334c2fd697b7fa73f8d6554ef4f807ac191be1a5556d740b59f10b0780",
+        "physical_pages": 15,
+        "checked_context_pages": [
+          4,
+          5,
+          7
+        ],
+        "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
       }
     }
   },

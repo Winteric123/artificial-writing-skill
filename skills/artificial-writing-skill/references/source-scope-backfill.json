@@ -6816,6 +6816,188 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "Stage-dependent epigenetic/metastatic-state evidence in defined models, with small human public-data support. Human STK11 enrichment FDR=.088; no clinical prediction/therapy validation. Preserve source conflicts and liver P=.055. Notes intentionally contain no executable experimental procedures."
+    },
+    "34074656": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2021-34074656-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "73ad6ad2b4a5018a6d71e6c5c11fca47e8e8776c08e4af1aa94fa7cfdd489061",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "33272981": {
+      "disease_ids": [
+        "mixed-solid-tumors",
+        "nsclc",
+        "thyroid-cancer"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "cross-tumor-methods",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2021-33272981-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "36900a46c1604b8bda24c00911a33009effd465eb7e68f69384f8936b58d6edc",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "35802677": {
+      "disease_ids": [
+        "lung-adenocarcinoma"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2022-35802677-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "6c26028a053caa3d78bf19789d7c30b63e04a996f26a9a7f20891744edaf5da2",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "34921025": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "human-tissue",
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2022-34921025-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "7ec266334c2fd697b7fa73f8d6554ef4f807ac191be1a5556d740b59f10b0780",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "32241817": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2020-32241817-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "7932e9af2e1e1bb002c983dc404407ecd42f2b8de6833d4f1912bd136ca3661d",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "31694835": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "organoid",
+        "human-tissue",
+        "ex-vivo",
+        "mouse",
+        "pdx",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "computational-methods"
+      ],
+      "source_reference": "ccr-2020-31694835-reading.md",
+      "source_reference_line": 3,
+      "curation_method": "article-level curation from complete supplied-PDF text and visual initial reading, 2026-10-07",
+      "source_sha256": "f4d4126c44129452041a136420de1da6d53b3abc65eae903fe395791b4ec3dba",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
     }
   }
 }

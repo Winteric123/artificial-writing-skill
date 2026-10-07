@@ -5,11 +5,11 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 362,
-  "included": 344,
+  "registered": 368,
+  "included": 350,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 344,
+  "main_text_complete": 350,
   "eligible_incomplete": 0,
   "source_recheck_passed": 30,
   "stk11_highlights": 13,
@@ -50,23 +50,23 @@
       "excluded": 0
     },
     "2020": {
-      "registered": 4,
-      "included": 4,
-      "complete": 4,
+      "registered": 6,
+      "included": 6,
+      "complete": 6,
       "incomplete": 0,
       "excluded": 0
     },
     "2021": {
-      "registered": 28,
-      "included": 28,
-      "complete": 28,
+      "registered": 30,
+      "included": 30,
+      "complete": 30,
       "incomplete": 0,
       "excluded": 0
     },
     "2022": {
-      "registered": 53,
-      "included": 46,
-      "complete": 46,
+      "registered": 55,
+      "included": 48,
+      "complete": 48,
       "incomplete": 0,
       "excluded": 7
     },
@@ -256,23 +256,23 @@
     },
     "Clinical Cancer Research": {
       "2020": {
-        "registered": 1,
-        "included": 1,
-        "complete": 1,
+        "registered": 3,
+        "included": 3,
+        "complete": 3,
         "incomplete": 0,
         "excluded": 0
       },
       "2021": {
-        "registered": 22,
-        "included": 22,
-        "complete": 22,
+        "registered": 24,
+        "included": 24,
+        "complete": 24,
         "incomplete": 0,
         "excluded": 0
       },
       "2022": {
-        "registered": 50,
-        "included": 43,
-        "complete": 43,
+        "registered": 52,
+        "included": 45,
+        "complete": 45,
         "incomplete": 0,
         "excluded": 7
       },
@@ -511,14 +511,14 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 344,
+    "included": 350,
     "co_mutation": {
-      "analyzed": 124,
-      "context_only": 33,
-      "not_identified": 187
+      "analyzed": 127,
+      "not_identified": 190,
+      "context_only": 33
     },
     "co_alteration": {
-      "analyzed": 152,
+      "analyzed": 158,
       "not_identified": 162,
       "context_only": 30
     },

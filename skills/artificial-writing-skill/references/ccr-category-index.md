@@ -16,19 +16,19 @@ Generated from the bibliography and quality register, not inferred from article 
 | Novel Biomarkers and Precision Medicine | 23 | 23 | 23 |
 | Official category unverified | 4 | 4 | 4 |
 | Perspectives | 1 | 0 | 0 |
-| Precision Medicine and Imaging | 52 | 52 | 52 |
+| Precision Medicine and Imaging | 54 | 54 | 54 |
 | Research Article | 3 | 3 | 3 |
 | Research Briefs: Clinical Trial Brief Reports | 6 | 6 | 6 |
 | Research Briefs: Precision Medicine and Therapeutics | 8 | 8 | 8 |
 | Review | 8 | 0 | 0 |
 | Special Report | 1 | 0 | 0 |
-| Translational Cancer Mechanisms and Therapy | 66 | 66 | 66 |
+| Translational Cancer Mechanisms and Therapy | 70 | 70 | 70 |
 | Translational Mechanisms and Therapy | 18 | 18 | 18 |
 
 ## Verification status
 
 - official_generic_online_first: 3
-- official_section: 274
+- official_section: 280
 - pending_official_verification: 4
 
 ## Unverified or generic labels

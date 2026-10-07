@@ -21,11 +21,11 @@ Reading completion and review acceptance are separate axes. A documented source 
 
 ## Status summary
 
-As of 2026-09-28, all registered CCR years2020–2026, without a topic filter:
+As of 2026-10-07, all registered CCR years2020–2026, without a topic filter:
 
-- bibliography records: **281**;
-- eligible corpus sources: **263**;
-- completed language-focused main-text reads: **263**;
+- bibliography records: **287**;
+- eligible corpus sources: **269**;
+- completed language-focused main-text reads: **269**;
 - eligible incomplete: **0**;
 - excluded: **18** (eight legacy commentaries and 10 separately read background sources).
 
@@ -38,6 +38,8 @@ The [2023 completion batch](ccr-2023-completion-2026-09-26.md) reads the36 previ
 The [ccr-2021-2022-completion-2026-09-26](ccr-2021-2022-completion-2026-09-26.md) currently records49 new main-text completions and3 separately read background sources;0 of the original52 remain unfinished. Only recorded completions enter the language catalog.
 
 The [2026-09-28 intake](ccr-2026-09-28-intake.md) adds nine original-study main-text reads: three each from2021/2022/2024, with main figures/tables and section-indexed language. All nine are new formal records, not new2026 publications. Supplements remain not_supplied, review_status not_reviewed; no STK11 highlight is added. The Conforti publisher companion resolves main-figure visibility only. Archive/hash and cleanup records remain in the private local batch report.
+
+The [2026-10-07 intake](ccr-2026-10-07-intake.md) adds six supplied CCR main articles (79 physical pages) from issue years2020–2022. Every supplied page was read and visually inspected, including main figures/tables/captions and reference/admin pages. External supplements remain not_supplied and all six retain review_status=not_reviewed; the prior user-deferred Cell Metabolism paper is not included. No STK11 core-highlight or acceptance status is promoted.
 
 ### Supplied-batch completion scope
 
@@ -326,12 +328,18 @@ Join this ledger to [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) b
 | 38261467 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2024-38261467-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
 | 34667030 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2022-34667030-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
 | 38630555 | 2026-09-28 | Translational Cancer Mechanisms and Therapy | ccr-2024-38630555-language.md: all main sections/figures/tables; source alerts and physical-page evidence recorded; supplements not supplied; not acceptance-reviewed |
+| 34074656 | 2026-10-07 | Translational Cancer Mechanisms and Therapy | genomics;bulk-transcriptomics;immunotherapy;clinical-correlative;survival-analysis;statistics; [ccr-2021-34074656-reading.md](ccr-2021-34074656-reading.md); [ccr-2021-34074656-language.md](ccr-2021-34074656-language.md); all 11 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
+| 33272981 | 2026-10-07 | Precision Medicine and Imaging | targeted-genomics;targeted-transcriptomics;liquid-biopsy;fusion-detection;IHC;FISH;assay-validation;statistics; [ccr-2021-33272981-reading.md](ccr-2021-33272981-reading.md); [ccr-2021-33272981-language.md](ccr-2021-33272981-language.md); all 14 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
+| 35802677 | 2026-10-07 | Translational Cancer Mechanisms and Therapy | epigenomics;targeted-genomics;immune-deconvolution;bioinformatics;survival-analysis;statistics;STK11-context; [ccr-2022-35802677-reading.md](ccr-2022-35802677-reading.md); [ccr-2022-35802677-language.md](ccr-2022-35802677-language.md); all 12 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
+| 34921025 | 2026-10-07 | Translational Cancer Mechanisms and Therapy | targeted-therapy;ADC;EGFR;HER3;targeted-genomics;bulk-transcriptomics;targeted-protein-assay;RPPA;basic-experiments;statistics; [ccr-2022-34921025-reading.md](ccr-2022-34921025-reading.md); [ccr-2022-34921025-language.md](ccr-2022-34921025-language.md); all 15 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
+| 32241817 | 2026-10-07 | Precision Medicine and Imaging | genomics;bulk-transcriptomics;NOTCH;STK11-context;immunotherapy;clinical-correlative;interaction-analysis;statistics; [ccr-2020-32241817-reading.md](ccr-2020-32241817-reading.md); [ccr-2020-32241817-language.md](ccr-2020-32241817-language.md); all 13 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
+| 31694835 | 2026-10-07 | Translational Cancer Mechanisms and Therapy | organoid;genomics;copy-number;bulk-transcriptomics;PDX;preclinical-models;targeted-therapy;basic-experiments;statistics; [ccr-2020-31694835-reading.md](ccr-2020-31694835-reading.md); [ccr-2020-31694835-language.md](ccr-2020-31694835-language.md); all 14 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
 
 ## Pending or incomplete deep reads
 
-There are **88 eligible CCR articles whose main-text deep reading is not complete**. Exact membership is the included rows in the quality register minus the completed PMID set above. Do not infer unread versus partially read from PDF presence.
+There are **0 eligible registered CCR articles whose main-text deep reading is not complete** as of2026-10-07. This applies only to registered sources, not all CCR publications. Exact membership is the included rows in the quality register minus the completed PMID set above. Do not infer unread versus partially read from PDF presence.
 
-The 13 excluded records are not future original-study reading tasks; background reads are tracked separately. This batch does not complete the entire historical library or establish exhaustive journal coverage.
+The 18 excluded records are not future original-study reading tasks; background reads are tracked separately. This batch does not complete the entire historical library or establish exhaustive journal coverage.
 
 ## Update rules
 
