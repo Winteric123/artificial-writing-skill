@@ -17,13 +17,13 @@ def rows(name):
 
 
 class LocalStk11Intake(unittest.TestCase):
-    def test_new_main_read_does_not_promote_review_or_priority(self):
+    def test_new_main_read_keeps_review_separate_from_unified_membership(self):
         record = next(r for r in rows('library-index.csv') if r['pmid'] == '37495171')
         self.assertEqual(record['main_read_completed_on'], '2026-10-02')
         self.assertEqual(record['reading_stage'], 'main_text_deep_read_complete')
         self.assertEqual(record['review_status'], 'in_progress')
         self.assertEqual(record['supplement_status'], 'not_supplied')
-        self.assertNotEqual(record['stk11_highlight'], 'yes')
+        self.assertEqual(record['stk11_highlight'], 'yes')
         quality = next(r for r in rows('jto-reading-quality-register.csv') if r['pmid'] == record['pmid'])
         self.assertEqual(quality['review_method'], 'independent_agent_source_recheck')
         self.assertEqual(quality['results_check'], 'pending')

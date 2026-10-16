@@ -39,6 +39,17 @@ VALUE_OPTIONS = {
     "scripts/search_stk11_references.py": {
         "--assay", "--origin", "--treatment", "--method", "--relation", "--pmid",
     },
+    "scripts/search_stk11_sentence_templates.py": {
+        "--query", "--pmid", "--template-id", "--result-type", "--content-type",
+        "--significance", "--section", "--source-section", "--legacy-origin",
+        "--tier", "--evidence-layer", "--limit",
+    },
+    "scripts/search_ccr_results_logic.py": {
+        "--query", "--pmid", "--template-id", "--year", "--domain",
+        "--result-polarity", "--polarity", "--inferential-status", "--significance",
+        "--result-type", "--evidence-layer", "--rhetorical-function",
+        "--logic-position", "--section", "--limit",
+    },
 }
 FLAG_OPTIONS = {
     "scripts/search_language.py": {
@@ -48,6 +59,8 @@ FLAG_OPTIONS = {
     "scripts/search_stk11_references.py": {
         "--all-candidates", "--core-only", "--json", "--markdown",
     },
+    "scripts/search_stk11_sentence_templates.py": {"--json"},
+    "scripts/search_ccr_results_logic.py": {"--paper-logic", "--json"},
 }
 
 
@@ -212,7 +225,7 @@ def parse_example(line):
         raise ValueError("Shell operators, expansion, and multiline commands are not allowed")
     tokens = shlex.split(line, posix=True)
     if len(tokens) < 2 or tokens[0] != "python" or tokens[1] not in VALUE_OPTIONS:
-        raise ValueError("Only 'python scripts/search_language.py' and 'python scripts/search_stk11_references.py' are allowed")
+        raise ValueError("Only approved read-only retrieval scripts are allowed")
     script, position = tokens[1], 2
     while position < len(tokens):
         option = tokens[position]
@@ -255,6 +268,41 @@ def result_ids(script, stdout):
             raise ValueError("Invalid language matched_count")
         if any(not re.fullmatch(r"[a-z0-9-]+-lang-[0-9a-f]{20}", identifier) for identifier in ids):
             raise ValueError("Invalid stable language ID")
+    elif script == "scripts/search_stk11_sentence_templates.py":
+        payload = json.loads(stdout)
+        rows = payload.get("records")
+        if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
+            raise ValueError("Invalid STK11 sentence-template records")
+        ids = [row.get("id", "") for row in rows]
+        if type(payload.get("matched_count")) is not int or payload["matched_count"] < len(ids):
+            raise ValueError("Invalid STK11 sentence-template matched_count")
+        if any(not isinstance(identifier, str) or not re.fullmatch(
+                r"stk11-ccr-sent-[a-z0-9]+(?:-[a-z0-9]+)*", identifier
+        ) for identifier in ids):
+            raise ValueError("Invalid STK11 sentence-template ID")
+    elif script == "scripts/search_ccr_results_logic.py":
+        payload = json.loads(stdout)
+        has_records = "records" in payload
+        has_papers = "papers" in payload
+        if has_records == has_papers:
+            raise ValueError("CCR Results-logic output must contain records or papers, but not both")
+        rows = payload["records"] if has_records else payload["papers"]
+        if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
+            raise ValueError("Invalid CCR Results-logic rows")
+        if type(payload.get("matched_count")) is not int or payload["matched_count"] < len(rows):
+            raise ValueError("Invalid CCR Results-logic matched_count")
+        if has_records:
+            ids = [row.get("id", "") for row in rows]
+            if any(not isinstance(identifier, str) or not re.fullmatch(
+                    r"ccr-logic-[0-9]{8}-[a-z0-9]+(?:-[a-z0-9]+)*", identifier
+            ) for identifier in ids):
+                raise ValueError("Invalid CCR Results-logic sentence ID")
+        else:
+            ids = [row.get("pmid", "") for row in rows]
+            if any(not isinstance(identifier, str) or not re.fullmatch(
+                    r"[0-9]{8}", identifier
+            ) for identifier in ids):
+                raise ValueError("Invalid CCR Results-logic paper PMID")
     elif stdout.lstrip().startswith("{"):
         payload = json.loads(stdout)
         rows = payload.get("records", [])

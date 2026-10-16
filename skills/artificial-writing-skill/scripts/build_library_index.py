@@ -2,7 +2,6 @@ import argparse
 import csv
 import json
 import io
-import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -53,15 +52,31 @@ def journal_year_counts(rows):
     return counts
 
 
+def unified_highlight_ids(references):
+    mapping = read_json(references / 'stk11-writing-reference-map.json')
+    if mapping.get('schema_version') != 2 or mapping.get('collection_id') != 'stk11_highlight':
+        raise ValueError('Unsupported STK11 highlight membership schema')
+    if mapping.get('membership_rule') != 'all_records' or not mapping.get('membership_semantics') or not mapping.get('tier_semantics'):
+        raise ValueError('Incomplete STK11 highlight membership semantics')
+    records = mapping.get('records', [])
+    identifiers = [record['pmid'] for record in records]
+    if not identifiers or len(identifiers) != len(set(identifiers)):
+        raise ValueError('Empty or duplicate STK11 highlight membership')
+    allowed_tiers = set(mapping.get('legacy_tier_counts', {}))
+    if allowed_tiers != {'core_highlight', 'topic_support'} or any(record.get('tier') not in allowed_tiers for record in records):
+        raise ValueError('Invalid historical STK11 highlight tier')
+    actual_counts = {tier: sum(record['tier'] == tier for record in records) for tier in allowed_tiers}
+    if actual_counts != mapping['legacy_tier_counts']:
+        raise ValueError('Historical STK11 highlight tier counts changed')
+    return set(identifiers)
+
+
 def build(skill):
     validate(skill)
     references = skill / 'references'
     vocabulary = read_json(references / 'retrieval-vocabulary.json')
     scope_annotations = load_scope_annotations(skill, vocabulary)
-    highlight_text = (references / 'stk11-priority-references.md').read_text(encoding='utf-8-sig')
-    highlight_ids = set(re.findall(r'^\| 1 \| [^|]+ \| \d{4} \| (\d{8}) \|', highlight_text, re.M))
-    if not highlight_ids:
-        raise ValueError('Highlight table changed; verify its parser before proceeding')
+    highlight_ids = unified_highlight_ids(references)
     version_path = references / 'source-version-register.csv'
     versions = {row['pmid']: row for row in read_rows(version_path)} if version_path.exists() else {}
     batch_path = references / 'ccr-2026-09-23-reading-manifest.csv'

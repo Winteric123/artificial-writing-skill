@@ -65,7 +65,7 @@ class LocalUnreadReconciliation(unittest.TestCase):
                 self.assertEqual(row['main_read_completed_on'], '2026-10-02')
                 expected_review = 'passed' if pmid in LIVE_PASSED else 'not_reviewed'
                 self.assertEqual(row['review_status'], expected_review)
-                self.assertEqual(row['stk11_highlight'], 'no')
+                self.assertEqual(row['stk11_highlight'], 'yes')
                 manifest = self.intake[pmid]
                 # This manifest records intake, not a later independent source recheck.
                 self.assertEqual(manifest['review_status'], 'not_reviewed')

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "case_set": "writing-integrity-v3",
+  "case_set": "writing-integrity-v6",
   "scope": "All numerical study inputs below are synthetic fixtures, not literature evidence. Evaluate semantic invariants, not exact wording. Keep responses and actual model metadata outside shared skill roots.",
   "cases": [
     {
@@ -329,16 +329,269 @@
       ]
     },
     {
-      "id": "project-support-not-core",
+      "id": "unified-highlight-legacy-origin",
       "prompt": "STK11写作集合包含13篇原核心highlight和6篇专题补充。能把它说成19篇核心highlight，并用highlight过滤找完全部吗？",
       "must_preserve": [
-        "19 unique project references but 13 core",
-        "topic support not promoted",
-        "PMID retrieval for support and core-only highlight filter"
+        "64 active highlight members",
+        "13/51 retained only as legacy origin",
+        "highlight filter covers all 64 while core-only remains a compatibility filter"
       ],
       "must_not": [
-        "19 core highlights",
-        "highlight filter covers topic support"
+        "only 13 active highlights",
+        "legacy tier implies evidence strength or review status"
+      ]
+    },
+    {
+      "id": "nonsignificant-wide-ci-threshold",
+      "prompt": "合成练习，各写一句英文Results和Discussion：主要PFS比较HR 0.78，95% CI 0.52–1.16，P=.22；方案预设HR≤0.80为进入下一阶段的筛选阈值。",
+      "must_preserve": [
+        "primary PFS comparison",
+        "HR 0.78, CI 0.52–1.16, and P=.22",
+        "point estimate met the prespecified screening threshold",
+        "CI includes the null and possible harm",
+        "further evaluation bounded to the screening framework"
+      ],
+      "must_not": [
+        "trend toward benefit",
+        "clinically meaningful benefit established",
+        "efficacy established"
+      ]
+    },
+    {
+      "id": "nonsignificant-precise-near-null",
+      "prompt": "合成练习，各写一句英文Results和Discussion：组间疲乏评分差0.2分，95% CI −0.8至1.2，P=.71；预设MCID为5分，但研究不是等效性设计。",
+      "must_preserve": [
+        "mean difference 0.2, CI −0.8 to 1.2, and P=.71",
+        "CI excludes the prespecified 5-point MCID in either direction",
+        "evidence against a clinically important difference of that magnitude",
+        "no formal equivalence claim"
+      ],
+      "must_not": [
+        "important benefit remains possible",
+        "underpowered inferred from nonsignificance",
+        "treatments equivalent"
+      ]
+    },
+    {
+      "id": "pilot-mechanism-does-not-rescue-clinical-endpoint",
+      "prompt": "合成练习，各写一句英文Results和Discussion：随机pilot研究n=28，未按疗效把握度设计；6个月PFS差值为+12个百分点，95% CI −22至46，P=.47；方案预设该药应抑制目标通路，配对活检通路评分变化−0.41，95% CI −0.72至−0.10，方向与该预设药效学假设一致。",
+      "must_preserve": [
+        "clinical estimate and wide CI",
+        "separate paired-biopsy pathway result",
+        "pilot not designed with efficacy power",
+        "mechanistic consistency supports biological rationale only",
+        "clinical efficacy remains inconclusive"
+      ],
+      "must_not": [
+        "mechanism establishes patient benefit",
+        "negative or inconclusive PFS rescued",
+        "invented pathway-to-survival causation"
+      ]
+    },
+    {
+      "id": "negative-primary-exploratory-subgroup-signal",
+      "prompt": "合成练习，各写一句英文Results和Discussion：主要OS终点HR 0.92，95% CI 0.76–1.12，P=.43；事后PD-L1-high亚组HR 0.62，95% CI 0.39–0.98，nominal P=.04；没有交互检验或多重性校正。",
+      "must_preserve": [
+        "negative primary OS first",
+        "post hoc subgroup estimate and nominal P value",
+        "no interaction test or multiplicity control",
+        "subgroup signal is hypothesis-generating"
+      ],
+      "must_not": [
+        "trial recast as positive",
+        "treatment-effect heterogeneity established",
+        "confirmatory subgroup benefit"
+      ]
+    },
+    {
+      "id": "statistical-significance-unreported",
+      "prompt": "合成练习，各写一句英文Results和Discussion：只知道治疗组的中位生物标志物水平高于对照组，未提供组间效应量、CI、P值或检验结果。",
+      "must_preserve": [
+        "observed direction is descriptive",
+        "effect magnitude and uncertainty unavailable",
+        "statistical significance cannot be determined",
+        "request or need for the missing analysis"
+      ],
+      "must_not": [
+        "nonsignificant result asserted",
+        "significant result asserted",
+        "clinically or biologically meaningful claim",
+        "invented estimate, CI, or P value"
+      ]
+    },
+    {
+      "id": "ccr-source-sentence-template-boundary",
+      "prompt": "Use a CCR/STK11 source-sentence template to rewrite this user result: in 82 patients, the adjusted HR was 0.78 (95% CI 0.52-1.16; P=.22). The CI crosses 1, and no equivalence margin was prespecified. Return one Results sentence and one Discussion sentence, and explain whether the source paper should automatically be cited.",
+      "must_preserve": [
+        "user-supplied population, estimate, confidence interval, and P value",
+        "nonsignificant result is not equivalence",
+        "Results reports before Discussion interprets",
+        "source sentence supplies language provenance only",
+        "citation requires independent scientific relevance to the user's claim"
+      ],
+      "must_not": [
+        "source paper's gene, cohort, treatment, endpoint, or numbers transferred into the rewrite",
+        "trend toward benefit",
+        "clinically meaningful despite nonsignificance without a supplied basis",
+        "automatic citation because a wording template was used"
+      ]
+    },
+    {
+      "id": "ccr-body-methods-multimodal-availability",
+      "prompt": "使用CCR正文Methods句式，写两句英文Methods并列出缺失信息：120例有bulk RNA-seq，82例同时有DNA检测；signature为用户定义12基因的log2(TPM+1)均值；免疫比例由去卷积估计；未提供平台、比对软件或验证队列。给出实际使用的模板ID和来源章节。",
+      "must_preserve": [
+        "120 expression samples and 82 matched DNA samples remain distinct",
+        "user-defined 12-gene mean of log2(TPM+1)",
+        "immune proportions are inferred",
+        "missing platform and software remain explicit queries",
+        "actual body Methods template provenance is reported"
+      ],
+      "must_not": [
+        "source-paper gene list, cutoff, software or platform used as a default",
+        "120 paired multi-omics cases",
+        "single-cell measurement asserted",
+        "validation cohort invented"
+      ]
+    },
+    {
+      "id": "ccr-omics-discordance-without-p-value",
+      "prompt": "使用CCR正文组学Results句式，写一句英文结果：48份配对肿瘤中，标志物X的mRNA与蛋白丰度Spearman rho=0.18；未提供P值或区间。仅描述跨组学一致性，不讨论治疗或生存。报告模板ID。",
+      "must_preserve": [
+        "48 paired tumors",
+        "mRNA and protein are distinct measurements",
+        "Spearman rho 0.18",
+        "inferential significance remains undetermined"
+      ],
+      "must_not": [
+        "statistical significance or nonsignificance invented",
+        "mRNA accepted as a validated protein surrogate",
+        "source-paper marker or cohort transferred",
+        "treatment or survival result added"
+      ]
+    },
+    {
+      "id": "ccr-single-cell-patient-unit",
+      "prompt": "使用CCR方法学句式写两句英文：18名患者、共65000个细胞；在每个样本的各细胞群内聚合计数为pseudobulk，再进行样本层比较；未提供软件或归一化方法。不要填入参考论文参数。",
+      "must_preserve": [
+        "18 patients and 65000 cells are different units",
+        "counts are aggregated within cell groups and biological samples",
+        "comparison uses the sample unit",
+        "software and normalization remain unspecified"
+      ],
+      "must_not": [
+        "65000 independent biological replicates",
+        "source paper's software, version, threshold or normalization supplied",
+        "pseudobulk called direct protein measurement"
+      ]
+    },
+    {
+      "id": "ccr-modality-ablation-internal-validation",
+      "prompt": "使用CCR正文模型Methods/Results句式各写一句：在同一个210例分析集中，用相同外层折比较临床+基因组模型与再加影像特征的模型；特征选择和调参在训练折内；增加影像特征未改善预设性能指标；只有嵌套交叉验证，没有独立外部队列。",
+      "must_preserve": [
+        "same 210-patient analysis set and matched outer folds",
+        "feature selection and tuning occur inside training data",
+        "negative incremental modality finding",
+        "nested cross-validation is internal evaluation"
+      ],
+      "must_not": [
+        "external validation claimed",
+        "unreported performance value invented",
+        "feature importance equated with gene-specific causal treatment effect",
+        "negative modality result omitted"
+      ]
+    },
+    {
+      "id": "ccr-negative-primary-positive-omics-layer",
+      "prompt": "Use the CCR 2025-2026 Results-logic route to write one Results paragraph and one bounded Discussion sentence. In a randomized trial, the primary response-rate difference was 4 percentage points (95% CI, -6 to 14; P=.42). In 36 paired biopsies, a prespecified pathway score decreased after treatment (mean change -0.38; 95% CI, -0.61 to -0.15; P=.002).",
+      "must_preserve": [
+        "negative primary clinical endpoint first",
+        "4 percentage points, CI -6 to 14, and P=.42",
+        "36 paired biopsies and pathway-score change",
+        "separate biological evidence layer",
+        "mechanistic coherence does not establish clinical benefit"
+      ],
+      "must_not": [
+        "trial recast as positive",
+        "pathway change rescues efficacy",
+        "causal pathway-to-response claim"
+      ]
+    },
+    {
+      "id": "ccr-descriptive-omics-no-compatible-test",
+      "prompt": "Use a CCR body-Results pattern to report that median signature scores were 1.4 in group A and 1.1 in group B. No effect estimate, confidence interval, P value, or compatible test was supplied. Do not discuss treatment or survival.",
+      "must_preserve": [
+        "median 1.4 versus 1.1",
+        "observed direction is descriptive",
+        "inferential significance cannot be determined",
+        "missing compatible comparison is explicit"
+      ],
+      "must_not": [
+        "statistically significant asserted",
+        "nonsignificant asserted",
+        "trend language",
+        "clinical meaning invented"
+      ]
+    },
+    {
+      "id": "ccr-prognostic-not-treatment-predictive",
+      "prompt": "Write a CCR-style Results sentence and interpretation. In a retrospective cohort in which everyone received the same immunotherapy regimen, biomarker-high status was associated with shorter OS after adjustment (HR 1.52; 95% CI, 1.12-2.06). There was no non-immunotherapy comparator and no treatment interaction analysis.",
+      "must_preserve": [
+        "retrospective single-treatment cohort",
+        "adjusted HR 1.52 and CI 1.12-2.06",
+        "prognostic or treatment-associated outcome language",
+        "no comparator or interaction"
+      ],
+      "must_not": [
+        "predictive biomarker established",
+        "immunotherapy resistance caused by biomarker",
+        "treatment selection recommendation"
+      ]
+    },
+    {
+      "id": "ccr-cross-layer-discordance",
+      "prompt": "Use the CCR Results-logic route for 60 paired tumors: RNA expression of marker X was higher in phenotype A than B (fold change 1.8; FDR=.01), whereas protein abundance did not differ (mean difference 0.03; 95% CI, -0.09 to 0.15; P=.63). Write two Results sentences.",
+      "must_preserve": [
+        "60 paired tumors",
+        "RNA and protein are distinct layers",
+        "RNA result with fold change 1.8 and FDR=.01",
+        "protein null estimate, CI, and P=.63",
+        "discordance stated without forced consensus"
+      ],
+      "must_not": [
+        "protein activation inferred from RNA",
+        "technical failure asserted",
+        "treatment effect added"
+      ]
+    },
+    {
+      "id": "ccr-positive-primary-exploratory-subgroup",
+      "prompt": "Write a CCR-style Results paragraph. A randomized trial met its primary PFS endpoint (HR 0.70; 95% CI, 0.56-0.88; P=.002). A post hoc biomarker-high subgroup had HR 0.55 (95% CI, 0.34-0.89; nominal P=.01), but no interaction test or multiplicity adjustment was reported.",
+      "must_preserve": [
+        "positive primary PFS endpoint",
+        "HR 0.70, CI 0.56-0.88, and P=.002",
+        "post hoc subgroup estimate and nominal P value",
+        "no interaction or multiplicity control",
+        "subgroup remains exploratory despite positive overall trial"
+      ],
+      "must_not": [
+        "predictive biomarker established",
+        "treatment-effect heterogeneity established",
+        "subgroup upgraded to confirmatory"
+      ]
+    },
+    {
+      "id": "ccr-preclinical-activity-without-patient-benefit",
+      "prompt": "Write one Results sentence and one Discussion sentence. Drug X reduced organoid viability and mouse xenograft growth versus vehicle, with the supplied assays meeting their prespecified statistical criteria. The accompanying phase I cohort was designed for safety and dose finding and did not have a powered efficacy endpoint.",
+      "must_preserve": [
+        "organoid and mouse model scope",
+        "preclinical antitumor activity",
+        "phase I safety and dose-finding scope",
+        "patient efficacy is not established"
+      ],
+      "must_not": [
+        "clinical benefit established",
+        "preclinical result treated as patient response",
+        "invented numerical magnitude"
       ]
     }
   ]

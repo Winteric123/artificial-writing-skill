@@ -43649,6 +43649,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": []
@@ -47049,6 +47050,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -224422,6 +224424,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -276265,7 +276268,9 @@
       "source_context_rechecks": [],
       "retrieval_state": "usable",
       "control_reasons": [],
-      "usage_card_ids": [],
+      "usage_card_ids": [
+        "informative-inconclusive-result"
+      ],
       "source_alert_ids": []
     },
     {
@@ -279630,6 +279635,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -286002,6 +286008,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -296864,6 +296871,7 @@
       "control_reasons": [],
       "usage_card_ids": [
         "endpoint-hierarchy",
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -304959,6 +304967,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": []
@@ -306935,6 +306944,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": []
@@ -314024,6 +314034,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": []
@@ -318001,7 +318012,8 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
-        "association"
+        "association",
+        "informative-inconclusive-result"
       ],
       "source_alert_ids": [
         "ccr-2021-2022-completion-2026-09-26-34244291"
@@ -321131,6 +321143,7 @@
       "usage_card_ids": [
         "association",
         "adjusted-estimate",
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -397578,6 +397591,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -419173,7 +419187,8 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
-        "association"
+        "association",
+        "informative-inconclusive-result"
       ],
       "source_alert_ids": [
         "reading-2024-intake-20260923-38048058"
@@ -459610,7 +459625,8 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
-        "association"
+        "association",
+        "informative-inconclusive-result"
       ],
       "source_alert_ids": []
     },
@@ -504336,7 +504352,9 @@
       "source_context_rechecks": [],
       "retrieval_state": "usable",
       "control_reasons": [],
-      "usage_card_ids": [],
+      "usage_card_ids": [
+        "informative-inconclusive-result"
+      ],
       "source_alert_ids": [
         "reading-2024-intake-20260923-42148883"
       ]
@@ -526246,6 +526264,7 @@
       "retrieval_state": "usable",
       "control_reasons": [],
       "usage_card_ids": [
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -536386,7 +536405,9 @@
       "source_context_rechecks": [],
       "retrieval_state": "usable",
       "control_reasons": [],
-      "usage_card_ids": [],
+      "usage_card_ids": [
+        "informative-inconclusive-result"
+      ],
       "source_alert_ids": [
         "stk11-local-20261002-42456046",
         "stk11-local-20261002-42485106"
@@ -555546,7 +555567,9 @@
       "source_context_rechecks": [],
       "retrieval_state": "usable",
       "control_reasons": [],
-      "usage_card_ids": [],
+      "usage_card_ids": [
+        "informative-inconclusive-result"
+      ],
       "source_alert_ids": []
     },
     {
@@ -620022,6 +620045,7 @@
       "control_reasons": [],
       "usage_card_ids": [
         "analysis-population",
+        "informative-inconclusive-result",
         "recheck-inconsistent-interval"
       ],
       "source_alert_ids": [
@@ -647057,6 +647081,7 @@
       "control_reasons": [],
       "usage_card_ids": [
         "endpoint-hierarchy",
+        "informative-inconclusive-result",
         "recheck-union-intersection"
       ],
       "source_alert_ids": [
@@ -660923,7 +660948,7 @@
       "supplement_status": "not_recorded",
       "supplied_pdf_version": "not_classified_by_header",
       "source_sha256": "29c4ac351e2abb1ff9b8478390b84146debed3f7e318459c7def256aec280588",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -663289,7 +663314,7 @@
       "supplement_status": "not_recorded",
       "supplied_pdf_version": "not_classified_by_header",
       "source_sha256": "c795f9d233acd688cca4a87407fe7a0a2c8e863c69b8c9833d696982ced28855",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -663372,7 +663397,7 @@
       "supplement_status": "not_recorded",
       "supplied_pdf_version": "not_classified_by_header",
       "source_sha256": "4844b3589ded1523689287e2216b87d50240e0ff44a9581c55c6e6972dfdffee",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -663960,7 +663985,7 @@
       "supplement_status": "not_recorded",
       "supplied_pdf_version": "not_classified_by_header",
       "source_sha256": "54b667455f7662b67a11643f6e741a7cdab3dac36965a549f956c578e89ddf7b",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -664109,7 +664134,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "not_classified_by_header",
       "source_sha256": "758747dacfc448ee96e212d42e64fbf07f8e0f125df525821154c53f81e7cf91",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -668503,7 +668528,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_main_pdf",
       "source_sha256": "238c89c029a713a161255a6c9bddc5f9fe03424ccbf92e6f1650239613795f03",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "",
@@ -670949,7 +670974,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "e6fe17f7403bcb66e94d6aaad03137c6ea95e62e0c04f5d84b33ac7f5554ad19",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "NSCLC",
@@ -673846,7 +673871,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "93eb22b1aa149270f5e592b3317fe5c8cfe7b7681c1d67433d36378829838480",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "NSCLC;lung-cancer;pan-cancer-extension",
@@ -673935,7 +673960,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "62ed98bd908b24800e28f8759c3cff246129b27a141da6582b794f6468a97630",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "stage-I-III-NSCLC;stage-III-clinical-analysis;lung-cancer-models",
@@ -684246,7 +684271,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "e73bce75e0bce8d13dd49a461131334535e9e3fcab9b36426c21cec6a09529d8",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc;lung-adenocarcinoma",
@@ -684351,7 +684376,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "bf807ebc10ee26e9c5615fc2287c5c02f9b8fb1af2d4775678f0865860b6bfd3",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -684453,7 +684478,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "f339bfcd0b44ea5b41bb989d0ff722317711f5a0e6769f9016399f6eb2c75627",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung-adenocarcinoma",
@@ -684860,7 +684885,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "d77d4de8fb117434af35201d5c32afad35a623c9b4e6b82795560b77ccf8677f",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -685615,7 +685640,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "4646c98d563828f705279e4e0df6629acd527fe10881552161133ea3cdc28e25",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -686062,7 +686087,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "70a6c24b0f55a9e4bff9867e3f304369d2948bbeb176b4f48e9eb687f4fe696a",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc;lung-adenocarcinoma",
@@ -686628,7 +686653,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_article_in_press",
       "source_sha256": "e70affcd744783f58c0f37566334d32e92bfa015ba900a33a9fc0780005542b4",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung-adenocarcinoma",
@@ -686830,7 +686855,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "journal_preproof",
       "source_sha256": "bf58cb67f644c9e5f59df82f95c410b92bd229ee8fce31c9538ceecb91ec4ebc",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -686959,7 +686984,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_version_of_record",
       "source_sha256": "5cd96af8d8dfcf0312bf2a6f0c6b0d8498f0018e2ee107268edcc1687d4e6b7f",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-37495171.md",
       "source_scope": {
         "disease_scope": "NSCLC",
@@ -687073,7 +687098,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "version_of_record",
       "source_sha256": "0b949840772064fbcef9db32662636a498819e74e25578b1288b6c67c71828bf",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-34740862.md",
       "source_scope": {
         "disease_scope": "advanced lung adenocarcinoma; separate TCGA LUAD molecular cohort",
@@ -687489,7 +687514,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "9ba434211d6a6ffba3073ee21ba4d702cc618fb9e7deb2b27820963cd2f3916c",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "KRAS-driven non-small-cell lung cancer with LKB1 loss",
@@ -687583,7 +687608,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "758698151e3b6ad54a6def5bcb71b2c59053c631a8ce9143a524542683e56e13",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-42008781.md",
       "source_scope": {
         "disease_scope": "nsclc;luad",
@@ -687696,7 +687721,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "791ea5d6bee05404ad2667e4027938f37a118531c5849c9e3fcd2246bdb5056d",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-37068173.md",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -688015,7 +688040,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "bafc1ec0f06ba2a9612a5ef33efb7479247af9cc84a7726ba9613d4a5b143bbf",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "KRAS/LKB1-mutant non-small-cell lung cancer, predominantly lung adenocarcinoma",
@@ -688499,7 +688524,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "71ddf755c53fe45a0ae4004d277b9bbf4b46bde0e022d16d54ca7953cd0e6fa7",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-39694700.md",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -688616,7 +688641,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "30d493e3aca91ae2e3dd465d6494b6160fb1b790da10098fe3f51d200787a1ed",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-41135949.md",
       "source_scope": {
         "disease_scope": "nsclc;pancreatic-cancer",
@@ -688738,7 +688763,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "e7dfd5e9af002f0a3244a31dd34b4116511f9688a5a1f579c430523fcaf5ca89",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-41423267.md",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -688939,7 +688964,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "af110d8b7dd12ac9297abbd1ef37c7f8e58ffd73564806ebd179853c55c2fba5",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-36150391.md",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -689038,7 +689063,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "a1651a96a16821ba5cc5da97b4c9659c1f6b1708f05a1147a50b45d853994207",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -689151,7 +689176,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "de58caa8636829bc3a3fe8c394d61c062ca360bf007440cfe19b9d1208e1265e",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -689536,7 +689561,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "4cb7a2caaed55c7197e899810cf5c03cdf032d71e0f6852ae37a285a49771092",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -689635,7 +689660,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "e293e86e112ed531582217f92e797225c086e70bfe0e695444ca71cf05e7e65b",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-37100205.md",
       "source_scope": {
         "disease_scope": "nsclc;luad;lusc",
@@ -689834,7 +689859,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "e529248702acb3179eedf37c0180436067254fcc32a7f023d3292318ac8a17d1",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-37098232.md",
       "source_scope": {
         "disease_scope": "nsclc",
@@ -690040,7 +690065,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "31c3737e143d255b1ff62237a992c4b07fa90279e61a901a657f94782849ef35",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -690141,7 +690166,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "a704985e0bdf3872c79f50ad2b9a35eab146054db4773d41f960f1c236b7ed36",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -690243,7 +690268,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "9cae781bbcd99d4cf78825af5a56679af062cc6ba213707c89616343ad276673",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -690343,7 +690368,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "ce4a7e9558e46aeb9cc54e777e9f08159b7e6ebf295b27abcea4ff7cc6721e1b",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -690451,7 +690476,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "a4fa6d39bd4755e809da7e58a791ec57f8569a68092111cdbbc10491bfe8cf94",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-36512628.md",
       "source_scope": {
         "disease_scope": "nsclc;luad",
@@ -690562,7 +690587,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "fffdafba514680dd2e3f7c27fb685146ec1e62e5535bd83eee5d9968693bca32",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-40882030.md",
       "source_scope": {
         "disease_scope": "nsclc;lung-adenocarcinoma;colorectal-cancer",
@@ -690672,7 +690697,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "70aec452b31c10d3d067f7ea3d785b1afca5a804aaa0b54cc263629923aecaf3",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-33853830.md",
       "source_scope": {
         "disease_scope": "nsclc;lung-adenocarcinoma;prostate-cancer",
@@ -690783,7 +690808,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "author_accepted_manuscript",
       "source_sha256": "9f06352dad3dc159bc28d43f30f5192ea2e96e19d1f944e1c7d885c80405199f",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-34045189.md",
       "source_scope": {
         "disease_scope": "luad;nsclc",
@@ -690890,7 +690915,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "c9494ca9d5a7df98586f12a7716144997699c9a789ea0aa85cb773334c5d3457",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "KRAS/LKB1-mutant lung cancer with KP and KPL genetic comparators",
@@ -690990,7 +691015,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "8458f02c4a8021b063fab27458f8105c9e290c2fa4e8223a064b258323254f38",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691091,7 +691116,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-40057483.md",
       "source_scope": {
         "disease_scope": "nsclc;luad",
@@ -691190,7 +691215,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "770c1ab2ad06176f4f542f77744a23336e61c8139c11e0c259254ac9d3ad7bfe",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691291,7 +691316,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "0fa6af31aba05532754f07d76c377be185736216180c29d3bbcba52a96ffab67",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691395,7 +691420,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "e9ae7ed13ea2fa7c1a30f90a40fa1a0b7a2d31eca83f1c34bfdeb17388b8caa4",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691486,7 +691511,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "a857dc76c6e48264ede67f3db00de32212c31706b9030c906ef321cc065da2fc",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691582,7 +691607,7 @@
       "supplement_status": "not_supplied",
       "supplied_pdf_version": "publisher_typeset_pdf",
       "source_sha256": "06c4390f4e034c1939a0697fa57c0db477b953a4371ebda12a701c38640dcc6e",
-      "highlight": false,
+      "highlight": true,
       "review_record": "",
       "source_scope": {
         "disease_scope": "lung cancer; preserve article-specific histology and model boundaries",
@@ -691681,7 +691706,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "author_accepted_manuscript",
       "source_sha256": "271d07d3d6217983780e01e2c3a66c23ede017c314ec2559aca8594605881856",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-05-34870237.md",
       "source_scope": {
         "disease_scope": "nsclc;luad;lung-squamous",
@@ -691800,7 +691825,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
       "source_sha256": "ca754c762a60235ac89d3261ebcfe866a17f8c5d38d66dfb49747948d80c5d18",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-33264619.md",
       "source_scope": {
         "disease_scope": "luad;nsclc",
@@ -691914,7 +691939,7 @@
       "supplement_status": "partially_reviewed",
       "supplied_pdf_version": "author_manuscript",
       "source_sha256": "bb29824252c1e7caf63fbf87b8ada507c034c1533bb936fd8892f8a461388ba8",
-      "highlight": false,
+      "highlight": true,
       "review_record": "source-rechecks/2026-10-02-34341533.md",
       "source_scope": {
         "disease_scope": "nsclc;luad",
@@ -692781,6 +692806,51 @@
           "colocalization",
           "co-localization",
           "co-localisation"
+        ]
+      },
+      {
+        "id": "nonsignificance",
+        "terms": [
+          "未达到统计学显著性",
+          "无统计学显著性",
+          "差异无统计学意义",
+          "不显著",
+          "nonsignificant",
+          "non-significant",
+          "not statistically significant",
+          "did not reach statistical significance"
+        ]
+      },
+      {
+        "id": "statistical-significance-undetermined",
+        "terms": [
+          "统计学意义不明",
+          "统计学意义无法判断",
+          "未报告统计检验",
+          "statistical significance could not be determined",
+          "statistical significance was not reported"
+        ]
+      },
+      {
+        "id": "informative-inconclusive-result",
+        "terms": [
+          "未显著但有信息价值",
+          "虽未显著但仍有意义",
+          "统计学尚无定论",
+          "nonsignificant but informative",
+          "statistically inconclusive",
+          "range of plausible effects",
+          "compatible with clinically important effects"
+        ]
+      },
+      {
+        "id": "imprecision",
+        "terms": [
+          "估计不精确",
+          "置信区间较宽",
+          "imprecise",
+          "imprecision",
+          "wide confidence interval"
         ]
       }
     ]
@@ -693848,6 +693918,50 @@
       "unsafe_example": "No study has ever examined this question because none was retrieved locally.",
       "boundary": "空白和首次性主张需要检索支撑；翻译时不新增这些主张。",
       "basis": "writing-expression-guidance.md"
+    },
+    "informative-inconclusive-result": {
+      "id": "informative-inconclusive-result",
+      "match_terms": [
+        "statistically inconclusive",
+        "imprecise estimate",
+        "wide confidence interval",
+        "remained compatible with",
+        "confidence interval did not exclude",
+        "interval did not exclude"
+      ],
+      "zh": "未显著但仍有特定信息价值／统计学尚无定论",
+      "sections": [
+        "abstract-results",
+        "results",
+        "discussion",
+        "conclusion"
+      ],
+      "use_when": "效应量和区间已知，需说明区间仍容许或已经排除哪些重要效应，以及该信息可支持何种有限用途。",
+      "confusable": "有信息价值不等于结果阳性、效应已证实或临床获益已建立。",
+      "safe_example": "The estimate did not demonstrate benefit, but the confidence interval defined the range of effects that remained plausible.",
+      "unsafe_example": "Although P exceeded 0.05, the benefit was still clinically meaningful.",
+      "boundary": "必须给出具体依据，如预设阈值、区间范围、生物学一致性或后续研究用途；单凭方向符合预期或P值接近0.05不够。",
+      "basis": "nonsignificant-results-language.md"
+    },
+    "statistical-significance-undetermined": {
+      "id": "statistical-significance-undetermined",
+      "match_terms": [
+        "statistical significance could not be determined",
+        "statistical significance was not reported",
+        "inferential test was not reported"
+      ],
+      "zh": "统计学意义未报告／无法判断",
+      "sections": [
+        "abstract-results",
+        "results",
+        "discussion"
+      ],
+      "use_when": "只有描述性方向或数值，但没有足以判断推断状态的效应量、区间、P值或检验结果。",
+      "confusable": "统计学意义无法判断不等于已经检验但未显著。",
+      "safe_example": "The observed difference was descriptive; statistical significance could not be determined from the reported data.",
+      "unsafe_example": "The difference was nonsignificant because no P value was reported.",
+      "boundary": "不得补造效应量、区间或P值，也不得据缺失信息声称结果显著、未显著或有临床意义。",
+      "basis": "nonsignificant-results-language.md"
     },
     "recheck-exome-control": {
       "id": "recheck-exome-control",

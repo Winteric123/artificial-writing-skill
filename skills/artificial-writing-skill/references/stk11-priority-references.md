@@ -1,10 +1,18 @@
 # STK11 topic-priority reference register
 
+## 2026-10-15 current unified-highlight overlay
+
+The active STK11 highlight collection contains **64 unique articles**. Every record in [the membership map](stk11-writing-reference-map.json) is an active highlight member. The retained `core_highlight` (13) and `topic_support` (51) values describe historical origin only; they do not divide current membership, establish evidence strength, or change reading and review status. `search_language.py --highlight` and `search_stk11_references.py --highlight-only` therefore retrieve the unified 64-article set. `--core-only` is kept only as a compatibility filter for the original 13 seed articles.
+
+The CCR subset contains **15 articles** (6 from the original seed set and 9 later additions). Verified whole-sentence records are available through [the CCR sentence-rewriting guide](stk11-sentence-rewriting.md) and `python scripts/search_stk11_sentence_templates.py`. The original abstract-result set is documented in [its source audit](stk11-ccr-sentence-source-audit.md); reread body Methods and molecular/experimental Results are documented in [the full-text audit](stk11-ccr-fulltext-sentence-audit.md) and [the omics Methods/Results writing route](stk11-ccr-omics-methods-writing.md). Each record keeps the normalized source sentence, paper identity, registered PDF hash and physical page separate from its synthetic rewrite template, content/result type, use scenario and claim boundary. Template provenance does not authorize importing the source paper's data or citing it as support for a user's different result.
+
+This overlay changes collection/retrieval semantics only. It does **not** upgrade any article's main-text reading, source-recheck, acceptance, supplement coverage or STK11 evidence relation. The dated 13/19/49/64 descriptions below remain historical snapshots and provenance records.
+
 2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
 
 ## 2026-10-05 source-recheck and correction overlay
 
-The live membership map now contains **64 unique articles: 13 unchanged core highlights and 51 topic-support articles**. The later “补充CCR” intake contributed 15 new topic-support studies and one additional author-manuscript version of an already registered study; its folder name does not establish journal identity. All 16 works in that intake now have dated six-gate source-recheck records after six reading assets were corrected and rechecked. Fifteen reviews use `independent_agent_source_recheck`; PMID36150391 is transparently recorded as `same_agent_source_recheck`. See the [16-paper review summary](source-rechecks/2026-10-05-stk11-supplement-summary.md) and current journal quality registers for authoritative status. External supplement scope is unchanged, and PMID35504291 remains user-deferred and outside completion/review counts.
+At the 2026-10-05 snapshot, the membership map contained **64 unique articles: 13 records from the original core-origin set and 51 later-added topic-support records**. Under the 2026-10-15 overlay, all 64 are active highlight members and those tier values are historical origin only. The later “补充CCR” intake contributed 15 new topic-support studies and one additional author-manuscript version of an already registered study; its folder name does not establish journal identity. All 16 works in that intake now have dated six-gate source-recheck records after six reading assets were corrected and rechecked. Fifteen reviews use `independent_agent_source_recheck`; PMID36150391 is transparently recorded as `same_agent_source_recheck`. See the [16-paper review summary](source-rechecks/2026-10-05-stk11-supplement-summary.md) and current journal quality registers for authoritative status. External supplement scope is unchanged, and PMID35504291 remains user-deferred and outside completion/review counts.
 
 ## 2026-10-02 local intake update
 
@@ -18,9 +26,9 @@ The original 13 core highlights below remain unchanged in membership. Six existi
 
 Select sections according to the question: sequence co-mutation and driver background; variant/function concordance; treatment-context-specific outcomes; immune/experimental mechanisms; copy-number/neighboring-locus context; longitudinal evolution. Direct STK11 evidence, contextual analysis and structural analogues can inform the same manuscript but should be discussed separately when their inference differs. The three core articles outside the cross-gene 16-paper set (PMID39864548, PMID41870274, PMID42409117) remain available for copy-number and structural-context modules.
 
-For topic-support language, retrieve by the selected PMID rather than `--highlight`, which intentionally still selects the original core set. For a one-sentence translation, do not load the full analysis framework or the entire collection. Do not invent missing analyses or make a proposed statistical model appear in past-tense Methods as an executed analysis.
+At that 2026-09-28 snapshot, topic-support language was retrieved by PMID because `--highlight` then selected only the original core set. Current behavior is governed by the 2026-10-15 overlay: `--highlight` selects all 64 active members, while `--core-only` explicitly selects the original 13. For a one-sentence translation, do not load the full analysis framework or the entire collection. Do not invent missing analyses or make a proposed statistical model appear in past-tense Methods as an executed analysis.
 
-## Status
+## Historical original-13 status
 
 **Highlighted: STK11 core writing-framework references / STK11课题核心写作框架参考文献.**
 
@@ -28,7 +36,7 @@ The user designated all thirteen papers below as core framework references for f
 
 As of 2026-09-19, all thirteen registered highlights have recorded main-text deep-reading completion, including their main figures, tables and captions. The set contains six CCR, four JTO, two Cancer Discovery and one Nature papers; journal assets and counts remain separate. The Nature PDF's embedded Extended Data figures/tables and Reporting Summary were also read; external supplementary files remain outside this batch. Completion and user priority do not establish a separate source-recheck pass.
 
-## Highlighted priority references
+## Original 13 seed references
 
 | Priority | Journal | Publication year | PMID | Principal exposure | Why it is important for STK11 work | Safe use |
 |---:|---|---:|---:|---|---|---|
@@ -89,16 +97,17 @@ For the recorded bounded source recheck, read [the review record](stk11-highligh
 When the user's task centers on STK11:
 
 1. Load the user's source text, study design, numerical results, and intended section before any learned language.
-2. Read the highlighted framework roles in this register. For an outline or full-manuscript task, select matching core and topic-support modules using [the method guide](stk11-analysis-framework.md) and [article logic map](stk11-study-logic-map.md); do not load all papers by default. Map each proposed comparison to the user's actual analysis set and evidence. For a narrow sentence-level task, retrieve the relevant section directly. For AmpRatio and copy-number context, load PMID 41870274 in [ccr-2026-09-19-batch2-language.md](ccr-2026-09-19-batch2-language.md).
-3. Read [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md) for the three CCR papers' article-level section maps, numerical checks, reusable language, and claim limits.
-4. Read the PMID 41417462 and PMID 42268349 sections in [ccr-2026-09-19-supplement-language.md](ccr-2026-09-19-supplement-language.md) for the two highlighted KRAS papers' section-indexed language and claim boundaries.
-5. Read [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) for the four JTO papers' section maps, classifications, numerical checks, reusable language, figure/table narratives, and claim limits.
-6. For PMID 26069186/29773717, load [Cancer Discovery language](cancer-discovery-2026-09-19-stk11-language.md) and [section catalog](cancer-discovery-section-language-catalog.csv); for PMID 39385035, load [Nature language](nature-2026-09-19-stk11-language.md) and [section catalog](nature-section-language-catalog.csv). Their source-conflict restrictions apply before retrieval.
-7. Search [ccr-section-language-catalog.csv](ccr-section-language-catalog.csv) only for CCR-derived expressions. Do not search or count the JTO papers as if they were CCR catalog records.
-8. Use [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) when NRF2/KEAP1/STK11 experimental models or clinical signatures are relevant.
-9. Draft from the user's evidence. The priority papers guide terminology and reasoning but do not replace a citation check against the claim being written.
+2. Search the unified 64-article collection, then select matching modules by evidence relation and the user's actual question; do not load all papers by default. The 13/51 labels are historical origin metadata, not a ranking. For an outline or full-manuscript task, use [the method guide](stk11-analysis-framework.md) and [article logic map](stk11-study-logic-map.md). For a narrow sentence-level task, retrieve the relevant section directly. For AmpRatio and copy-number context, load PMID 41870274 in [ccr-2026-09-19-batch2-language.md](ccr-2026-09-19-batch2-language.md).
+3. When a CCR whole-sentence pattern is useful, query [the verified starter set](stk11-ccr-sentence-templates.json) with `search_stk11_sentence_templates.py`. Match the user's result type, significance state, evidence layer and section; use only the template architecture, and fill it only from the user's supplied evidence.
+4. Read [ccr-2026-09-14-atm-smarca4-stk11-priority-language.md](ccr-2026-09-14-atm-smarca4-stk11-priority-language.md) for the three CCR papers' article-level section maps, numerical checks, reusable language, and claim limits.
+5. Read the PMID 41417462 and PMID 42268349 sections in [ccr-2026-09-19-supplement-language.md](ccr-2026-09-19-supplement-language.md) for the two KRAS papers' section-indexed language and claim boundaries.
+6. Read [jto-2026-09-14-stk11-priority-language.md](jto-2026-09-14-stk11-priority-language.md) for the historical four-paper JTO seed subset's section maps, classifications, numerical checks, reusable language, figure/table narratives, and claim limits.
+7. For PMID 26069186/29773717, load [Cancer Discovery language](cancer-discovery-2026-09-19-stk11-language.md) and [section catalog](cancer-discovery-section-language-catalog.csv); for PMID 39385035, load [Nature language](nature-2026-09-19-stk11-language.md) and [section catalog](nature-section-language-catalog.csv). Their source-conflict restrictions apply before retrieval.
+8. Search [ccr-section-language-catalog.csv](ccr-section-language-catalog.csv) only for CCR-derived expressions. Do not search or count the JTO papers as if they were CCR catalog records.
+9. Use [ccr-2026-09-12-supplement-language.md](ccr-2026-09-12-supplement-language.md) when NRF2/KEAP1/STK11 experimental models or clinical signatures are relevant.
+10. Draft from the user's evidence. The collection papers guide terminology and reasoning but do not replace a citation check against the claim being written.
 
-The [44-record expanded directory](stk11-expanded-reference-directory.md) is for candidate discovery only; it neither replaces this thirteen-paper highlight register nor implies all candidates were acquired/read.
+The [44-record expanded directory](stk11-expanded-reference-directory.md) is for candidate discovery only; it neither replaces the active 64-article membership map nor implies all candidates were acquired/read.
 
 ## Mandatory boundaries
 
@@ -107,7 +116,7 @@ The [44-record expanded directory](stk11-expanded-reference-directory.md) is for
 - Distinguish co-occurrence, mutual exclusivity, statistical interaction, biological cooperation, prognosis, and treatment-effect prediction.
 - State the conditioning context for subgroup findings, especially KRAS status.
 - For PMID 41417462, keep the 636-patient molecular cohort separate from the 151-patient advanced-disease treatment cohort; describe ICB outcomes as treatment-associated, not STK11-specific benefit.
-- For PMID 42268349, distinguish Q61H from Q61L and preserve the reported Q61H–STK11 enrichment versus Q61L–STK11 mutual exclusivity; do not generalize either pattern to all KRAS Q61 tumors.
+- For PMID 42268349, distinguish Q61H from Q61L and preserve the reported Q61H–STK11 enrichment versus the absence of observed STK11 alterations in the reported Q61L subset; zero observed cases do not establish biological mutual exclusivity, and neither pattern should be generalized to all KRAS Q61 tumors.
 - Keep mutation status, predicted functional consequence, allelic status, RNA abundance, and protein expression separate.
 - Preserve nonsignificant results and confidence intervals that include the null.
 - Do not turn retrospective treatment exposure into randomized comparative efficacy.

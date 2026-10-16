@@ -71,10 +71,29 @@ def apply_controls(entry, controls):
     return entry
 
 
+def unified_highlight_membership(references):
+    mapping = read_json(references / 'stk11-writing-reference-map.json')
+    if mapping.get('schema_version') != 2 or mapping.get('collection_id') != 'stk11_highlight':
+        raise ValueError('Unsupported STK11 highlight membership schema')
+    if mapping.get('membership_rule') != 'all_records' or not mapping.get('membership_semantics') or not mapping.get('tier_semantics'):
+        raise ValueError('Incomplete STK11 highlight membership semantics')
+    records = mapping.get('records', [])
+    identifiers = [record['pmid'] for record in records]
+    if not identifiers or len(identifiers) != len(set(identifiers)):
+        raise ValueError('Empty or duplicate STK11 highlight membership')
+    allowed_tiers = set(mapping.get('legacy_tier_counts', {}))
+    if allowed_tiers != {'core_highlight', 'topic_support'} or any(record.get('tier') not in allowed_tiers for record in records):
+        raise ValueError('Invalid historical STK11 highlight tier')
+    actual_counts = {tier: sum(record['tier'] == tier for record in records) for tier in allowed_tiers}
+    if actual_counts != mapping['legacy_tier_counts']:
+        raise ValueError('Historical STK11 highlight tier counts changed')
+    return {record['pmid']: record for record in records}
+
+
 def build(skill):
     validate(skill)
     references = skill / 'references'
-    dependencies = {'journal-registry.json', 'language-controls.json', 'language-usage-cards.json', 'language-id-migrations.json', 'stk11-priority-references.md', 'source-version-register.csv', 'library-index.csv', 'retrieval-vocabulary.json', 'retrieval-annotations.json'}
+    dependencies = {'journal-registry.json', 'language-controls.json', 'language-usage-cards.json', 'language-id-migrations.json', 'stk11-writing-reference-map.json', 'source-version-register.csv', 'library-index.csv', 'retrieval-vocabulary.json', 'retrieval-annotations.json'}
     vocabulary = read_json(references / 'retrieval-vocabulary.json')
     annotations = read_json(references / 'retrieval-annotations.json')
     annotations['articles'] = load_scope_annotations(skill, vocabulary)
@@ -85,6 +104,11 @@ def build(skill):
     dependencies.update({'source-scope-backfill.json', 'source-pdf-locators.json'})
     dependencies.update(pdf_locators['source_asset_hashes'])
     library = {row['pmid']: row for row in read_csv(references / 'library-index.csv')}
+    membership = unified_highlight_membership(references)
+    highlights = set(membership)
+    library_highlights = {pmid for pmid, row in library.items() if row['stk11_highlight'] == 'yes'}
+    if highlights != library_highlights:
+        raise ValueError('STK11 highlight membership differs from library-index.csv; rebuild the library index first')
     co_annotations = load_annotations(skill, list(library.values()))
     dependencies.update({'coalteration-annotations.json', 'coalteration-topics.md', 'preprint-source-register.csv'})
     for record in [*co_annotations['articles'].values(), *co_annotations.get('preprints', {}).values()]:
@@ -126,7 +150,6 @@ def build(skill):
         reference_path(skill, relative)
         dependencies.add(relative)
     versions = {row['pmid']: row for row in read_csv(references / 'source-version-register.csv')}
-    highlights = set(re.findall(r'^\| 1 \| [^|]+ \| \d{4} \| (\d{8}) \|', (references / 'stk11-priority-references.md').read_text(encoding='utf-8-sig'), re.M))
     entries = []
     articles = {}
     seen_pmids = set()

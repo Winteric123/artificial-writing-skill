@@ -35,6 +35,8 @@ class September26Intake(unittest.TestCase):
         self.library = {row['pmid']: row for row in records('library-index.csv')}
         self.bibliography = {row['pmid']: row for row in records('ccr-corpus-bibliography.csv')}
         self.catalog = records('ccr-section-language-catalog.csv')
+        mapping = json.loads((REFERENCES / 'stk11-writing-reference-map.json').read_text(encoding='utf-8'))
+        self.highlights = {row['pmid'] for row in mapping['records']}
 
     def test_batch_identity_pages_and_duplicate_dates(self):
         self.assertEqual(len(self.manifest), 16)
@@ -47,7 +49,8 @@ class September26Intake(unittest.TestCase):
             self.assertEqual(indexed['reading_stage'], 'main_text_deep_read_complete')
             self.assertEqual(indexed['review_status'], 'not_reviewed')
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
-            self.assertEqual(indexed['stk11_highlight'], 'no')
+            expected = 'yes' if article['pmid'] in self.highlights else 'no'
+            self.assertEqual(indexed['stk11_highlight'], expected)
             self.assertEqual(len(article['sha256']), 64)
             self.assertTrue(article['main_visual_physical_pages'])
         for pmid in NEW_PMIDS:

@@ -107,9 +107,13 @@ class RepositoryChecks(unittest.TestCase):
         text = self.block("git clone https://example.test/repo", "Copy-Item source target")
         text += self.block('python scripts/search_language.py --query "co-mutation" --limit 5')
         text += self.block("python scripts/search_stk11_references.py --assay single_cell_rna --origin original")
+        text += self.block("python scripts/search_stk11_sentence_templates.py --source-section results --content-type functional_perturbation --json")
+        text += self.block("python scripts/search_ccr_results_logic.py --paper-logic --domain integrated_omics --polarity mixed --limit 3")
         result = checker.read_examples(text)
-        self.assertEqual(len(result), 2)
+        self.assertEqual(len(result), 4)
         self.assertEqual(result[0]["arguments"][2], "co-mutation")
+        self.assertEqual(result[2]["arguments"][0], "scripts/search_stk11_sentence_templates.py")
+        self.assertEqual(result[3]["arguments"][0], "scripts/search_ccr_results_logic.py")
 
     def test_malicious_and_unsupported_python_commands_rejected(self):
         bad = (
@@ -125,6 +129,14 @@ class RepositoryChecks(unittest.TestCase):
             "py -3 scripts/search_language.py",
             "python scripts/search_language.py --query",
             "python scripts/search_language.py positional",
+            "python scripts/search_stk11_sentence_templates.py --render --template-id stk11-ccr-sent-12345678-result",
+            "python scripts/search_stk11_sentence_templates.py --slot result=value",
+            "python scripts/search_stk11_sentence_templates.py --skill-path ../private",
+            "python scripts/search_stk11_sentence_templates.py --catalog-path ../private.json",
+            "python scripts/search_ccr_results_logic.py --render --template-id ccr-logic-12345678-result",
+            "python scripts/search_ccr_results_logic.py --slot result=value",
+            "python scripts/search_ccr_results_logic.py --skill-path ../private",
+            "python scripts/search_ccr_results_logic.py --catalog-path ../private.json",
         )
         for command in bad:
             with self.subTest(command=command), self.assertRaises(ValueError):
@@ -150,6 +162,78 @@ class RepositoryChecks(unittest.TestCase):
         self.assertEqual(checker.result_ids("scripts/search_stk11_references.py", text), [identifier])
         markdown = f"| [{identifier}](https://pubmed.ncbi.nlm.nih.gov/12345678/) | title |"
         self.assertEqual(checker.result_ids("scripts/search_stk11_references.py", markdown), [identifier])
+
+    def test_sentence_template_and_ccr_result_ids(self):
+        stk11_id = "stk11-ccr-sent-32709715-abstract-results-coalteration"
+        stk11 = json.dumps({"matched_count": 2, "records": [{"id": stk11_id}]})
+        self.assertEqual(
+            checker.result_ids("scripts/search_stk11_sentence_templates.py", stk11),
+            [stk11_id],
+        )
+
+        ccr_id = "ccr-logic-40853904-c-027"
+        ccr_sentence = json.dumps({"matched_count": 4, "records": [{"id": ccr_id}]})
+        self.assertEqual(
+            checker.result_ids("scripts/search_ccr_results_logic.py", ccr_sentence),
+            [ccr_id],
+        )
+
+        ccr_paper = json.dumps({"matched_count": 2, "papers": [{"pmid": "40853904"}]})
+        self.assertEqual(
+            checker.result_ids("scripts/search_ccr_results_logic.py", ccr_paper),
+            ["40853904"],
+        )
+
+    def test_invalid_sentence_template_and_ccr_outputs_fail(self):
+        invalid = (
+            ("scripts/search_stk11_sentence_templates.py", "{}"),
+            ("scripts/search_stk11_sentence_templates.py", json.dumps({
+                "matched_count": 0,
+                "records": [{"id": "stk11-ccr-sent-32709715-result"}],
+            })),
+            ("scripts/search_stk11_sentence_templates.py", json.dumps({
+                "matched_count": 1,
+                "records": [{"id": "invalid"}],
+            })),
+            ("scripts/search_ccr_results_logic.py", "{}"),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 1,
+                "records": [{"id": "ccr-logic-40853904-c-027"}],
+                "papers": [{"pmid": "40853904"}],
+            })),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 0,
+                "records": [{"id": "ccr-logic-40853904-c-027"}],
+            })),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 1,
+                "records": [{"id": "invalid"}],
+            })),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 1,
+                "papers": [{"pmid": "123"}],
+            })),
+        )
+        for script, output in invalid:
+            with self.subTest(script=script, output=output), self.assertRaises(ValueError):
+                checker.result_ids(script, output)
+
+        for script, output in (
+            ("scripts/search_stk11_sentence_templates.py", json.dumps({
+                "matched_count": 2,
+                "records": [{"id": "stk11-ccr-sent-32709715-result"}] * 2,
+            })),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 2,
+                "records": [{"id": "ccr-logic-40853904-c-027"}] * 2,
+            })),
+            ("scripts/search_ccr_results_logic.py", json.dumps({
+                "matched_count": 2,
+                "papers": [{"pmid": "40853904"}] * 2,
+            })),
+        ):
+            with self.subTest(script=script), self.assertRaises(ValueError):
+                checker.result_ids(script, output)
 
     def test_empty_malformed_or_duplicate_results_fail(self):
         bad = ('{}', '{"matched_count":0,"entries":[]}', '{"matched_count":1,"entries":[{"stable_id":"bad"}]}', 'not JSON')
@@ -177,6 +261,45 @@ class RepositoryChecks(unittest.TestCase):
             result = checker.check_examples(self.root, skip=True)
         run.assert_not_called()
         self.assertEqual(result["examples"][0]["execution"], "skipped")
+
+    def test_new_example_execution_is_argv_only_and_read_only(self):
+        skill = self.root / checker.SKILL
+        (skill / "scripts").mkdir(parents=True)
+        for name in ("search_stk11_sentence_templates.py", "search_ccr_results_logic.py"):
+            (skill / "scripts" / name).write_text("", encoding="utf-8")
+        self.readme.write_text(
+            self.block(
+                "python scripts/search_stk11_sentence_templates.py --result-type null_or_inconclusive --json",
+                "python scripts/search_ccr_results_logic.py --paper-logic --domain prognosis --limit 2",
+            ),
+            encoding="utf-8",
+        )
+        outputs = (
+            json.dumps({
+                "matched_count": 1,
+                "records": [{"id": "stk11-ccr-sent-32709715-result"}],
+            }),
+            json.dumps({
+                "matched_count": 1,
+                "papers": [{"pmid": "40853904"}],
+            }),
+        )
+        completed = [subprocess.CompletedProcess([], 0, output, "") for output in outputs]
+        with patch.object(checker.subprocess, "run", side_effect=completed) as run:
+            result = checker.check_examples(self.root)
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(run.call_count, 2)
+        self.assertEqual(
+            run.call_args_list[0].args[0][4],
+            "scripts/search_stk11_sentence_templates.py",
+        )
+        self.assertEqual(
+            run.call_args_list[1].args[0][4],
+            "scripts/search_ccr_results_logic.py",
+        )
+        for call in run.call_args_list:
+            self.assertNotIn("shell", call.kwargs)
+            self.assertEqual(call.kwargs["env"]["PYTHONDONTWRITEBYTECODE"], "1")
 
 
 if __name__ == "__main__":

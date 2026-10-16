@@ -9,7 +9,7 @@ The [Repository checks workflow](.github/workflows/repository-checks.yml) runs o
 The workflow runs:
 
 1. Tests of the repository-level checker.
-2. Checks for prohibited tracked artifacts, root-document links, and executable README retrieval examples.
+2. Checks for prohibited tracked artifacts, root-document links, and executable README examples spanning language, article, source-linked sentence, and paper-logic retrieval.
 3. Read-only skill health checks of registers, provenance dependencies, and internal links.
 4. The existing skill regression suite.
 5. A check that tracked files were not modified.

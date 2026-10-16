@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stk11-ccr-sentence-templates.schema.json",
+  "title": "STK11/CCR source-linked sentence templates",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated", "scope", "project_scope", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "updated": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "scope": {"type": "string", "minLength": 1},
+    "project_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["membership_source", "journal_id", "legacy_origin_tiers", "expected_pmids", "coverage_unit", "coverage_complete", "coverage_statement"],
+      "properties": {
+        "membership_source": {"type": "string", "minLength": 1},
+        "journal_id": {"const": "ccr"},
+        "legacy_origin_tiers": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"enum": ["core_highlight", "topic_support"]}
+        },
+        "expected_pmids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[0-9]{8}$"}
+        },
+        "coverage_unit": {"const": "at_least_one_template_per_expected_paper"},
+        "coverage_complete": {"type": "boolean"},
+        "coverage_statement": {"type": "string", "minLength": 1},
+        "fulltext_coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["unit", "methods_minimum", "results_minimum", "coverage_complete", "audit_resource"],
+          "properties": {
+            "unit": {"const": "body_methods_and_nonclinical_results_per_paper"},
+            "methods_minimum": {"type": "integer", "minimum": 1, "maximum": 10},
+            "results_minimum": {"type": "integer", "minimum": 1, "maximum": 10},
+            "coverage_complete": {"type": "boolean"},
+            "audit_resource": {"const": "stk11-ccr-fulltext-sentence-audit.md"}
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "section": {
+      "enum": [
+        "abstract-background", "abstract-conclusion", "abstract-methods", "abstract-results",
+        "conclusion", "discussion", "figure-caption", "introduction", "methods", "results",
+        "table", "translational-relevance"
+      ]
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "required", "evidence_source"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "description": {"type": "string", "minLength": 1},
+        "required": {"const": true},
+        "evidence_source": {"const": "user_supplied"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pdf_sha256", "supplied_pdf_version", "physical_page", "section", "source_sentence",
+        "verification_level", "quotation_verified", "verification_record"
+      ],
+      "properties": {
+        "pdf_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "supplied_pdf_version": {"type": "string", "minLength": 1},
+        "physical_page": {"type": "integer", "minimum": 1},
+        "section": {"$ref": "#/$defs/section"},
+        "source_sentence": {"type": "string", "minLength": 1},
+        "verification_level": {"enum": ["normalized_pdf_text_match", "visually_verified_exact"]},
+        "quotation_verified": {"type": "boolean"},
+        "verification_record": {"type": "string", "minLength": 1}
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "pmid", "doi", "title", "journal", "journal_id", "year", "legacy_origin_tier",
+        "stk11_relation", "source", "result_type", "significance_status", "evidence_layer",
+        "rhetorical_function", "target_sections", "use_when_zh", "do_not_use_when_zh",
+        "rewrite_template", "slots", "source_specific_tokens", "usage_card_ids", "claim_ceiling",
+        "evidence_boundary", "transfer_notes"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^stk11-ccr-sent-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "pmid": {"type": "string", "pattern": "^[0-9]{8}$"},
+        "doi": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "journal": {"type": "string", "minLength": 1},
+        "journal_id": {"const": "ccr"},
+        "year": {"type": "string", "pattern": "^[0-9]{4}$"},
+        "legacy_origin_tier": {"enum": ["core_highlight", "topic_support"]},
+        "stk11_relation": {"enum": ["contextual_analysis", "direct_analysis", "direct_function", "structural_analogue"]},
+        "source": {"$ref": "#/$defs/source"},
+        "result_type": {
+          "enum": [
+            "adjusted_prognostic_association", "coalteration_enrichment", "cross_omics_concordance", "assay_concordance",
+            "exploratory_subgroup_signal", "frequency", "group_comparison", "mechanistic_readout",
+            "model_performance", "null_or_inconclusive", "observational_treatment_association",
+            "cohort_assembly", "sequencing_and_processing", "signature_construction",
+            "immune_deconvolution", "cell_state_annotation", "pathway_enrichment",
+            "genomic_landscape", "validation_design", "functional_perturbation", "spatial_heterogeneity"
+          ]
+        },
+        "significance_status": {"enum": ["mixed", "not_applicable", "nonsignificant", "significant", "undetermined"]},
+        "evidence_layer": {"enum": ["clinical", "genomic", "integrated", "preclinical", "protein", "single_cell", "transcriptomic"]},
+        "rhetorical_function": {"type": "string", "minLength": 1},
+        "target_sections": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/section"}},
+        "use_when_zh": {"type": "string", "minLength": 1},
+        "do_not_use_when_zh": {"type": "string", "minLength": 1},
+        "rewrite_template": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?:[^\\[\\]]|\\[[a-z][a-z0-9_]*\\])+$"
+        },
+        "slots": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/slot"}},
+        "source_specific_tokens": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "usage_card_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "claim_ceiling": {"enum": ["association_only", "descriptive_only", "exploratory_hypothesis", "mechanistic_model_only", "model_performance_only"]},
+        "evidence_boundary": {"type": "string", "minLength": 1},
+        "transfer_notes": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

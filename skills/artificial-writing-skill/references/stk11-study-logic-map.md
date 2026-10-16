@@ -2,14 +2,18 @@
 
 2026-09-28。与[核心highlight](stk11-priority-references.md)放在同一写作模块；[方法指南](stk11-analysis-framework.md)给出条件性分析建议。本页记录**原文实际分析的逻辑和可迁移部分**，不是要求用户重复所有实验，也不宣称本次完成新的全文精读。下列19篇方法卡是这一框架的历史基础集；当前完整成员与新增证据路径以[成员映射](stk11-writing-reference-map.json)和[优先入口](stk11-priority-references.md)为准，不应把本页卡片数误报为当前STK11文献总量。
 
-## 两层选择，不混淆优先级与证据强度
+## 2026-10-15统一集合覆盖层
 
-- **A层：原13篇核心highlight**，保留原优先级和阅读/验收记录。
-- **B层：6篇专题补充**，本次加入STK11写作集合；按具体问题调用，不自动升级为原核心highlight或验收通过。
+当前64篇成员均属于统一`stk11_highlight`集合。下列A/B层只保留为这19篇历史基础卡片的来源标签，不再决定当前highlight成员资格，也不代表证据强弱、阅读完成或复核通过。`search_language.py --highlight`和`search_stk11_references.py --highlight-only`检索全部64篇；`--core-only`仅用于明确需要原13篇历史种子时的兼容查询。
+
+## 历史两层来源，不混淆来源、优先级与证据强度
+
+- **A层：原13篇种子highlight**，保留历史来源和阅读/验收记录。
+- **B层：6篇早期专题补充**，保留历史来源；其当前highlight成员资格来自64篇成员映射，不改变验收状态。
 - 此前跨基因16篇与A层重叠10篇，另有6篇B层；合并是**19篇独立文章，不是29篇**。A层另外3篇提供拷贝数/结构类比，不能因不在这16篇中而遗漏。
 - [成员映射](stk11-writing-reference-map.json)只维护PMID、层级、用途和证据路径。全文题名、期刊、出版年、DOI、阅读状态按PMID查[文献索引](library-index.csv)。角色可重叠，不改变按期刊归档。
 - `direct_analysis`表示有直接STK11分析；`contextual_analysis`表示STK11位于另一主问题的背景/亚组中；`structural_analogue`主要借鉴结构。均不表示因果强度，且不能把某篇文章的所有结论都转给STK11。
-- `--highlight`仍只选择A层；检索B层语言时用对应`--pmid`，无需修改其期刊语言库或伪造新的精读记录。
+- `--highlight`选择完整64篇统一集合；`--core-only`才只选择历史A层原13篇。任何检索都不修改期刊语言库、精读记录或复核状态。
 
 ## 模块选择表
 

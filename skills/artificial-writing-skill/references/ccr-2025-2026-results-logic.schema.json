@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/artificial-writing-skill/ccr-2025-2026-results-logic.schema.json",
+  "title": "CCR 2025-2026 source-linked Results logic",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "updated",
+    "scope",
+    "project_scope",
+    "papers",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "updated": {"type": "string", "format": "date"},
+    "scope": {"type": "string", "minLength": 1},
+    "project_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "membership_source",
+        "journal_id",
+        "issue_years",
+        "eligibility",
+        "expected_pmids",
+        "coverage_unit",
+        "paper_coverage_complete",
+        "sentence_minimum_per_paper",
+        "sentence_maximum_per_paper",
+        "audit_resource",
+        "source_scope"
+      ],
+      "properties": {
+        "membership_source": {"const": "library-index.csv"},
+        "journal_id": {"const": "ccr"},
+        "issue_years": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {"enum": ["2025", "2026"]}
+        },
+        "eligibility": {"const": "included"},
+        "expected_pmids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[0-9]{8}$"}
+        },
+        "coverage_unit": {"const": "per-paper-results-logic-with-source-sentences"},
+        "paper_coverage_complete": {"const": true},
+        "sentence_minimum_per_paper": {"type": "integer", "minimum": 1, "maximum": 10},
+        "sentence_maximum_per_paper": {"type": "integer", "minimum": 1, "maximum": 10},
+        "audit_resource": {"const": "ccr-2025-2026-results-logic-audit.md"},
+        "source_scope": {"type": "string", "minLength": 1}
+      }
+    },
+    "papers": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/paper"}
+    },
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "nonemptyString": {"type": "string", "minLength": 1},
+    "pmid": {"type": "string", "pattern": "^[0-9]{8}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "pageList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "integer", "minimum": 1}
+    },
+    "stringList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonemptyString"}
+    },
+    "polarity": {
+      "enum": ["positive", "negative", "mixed", "inconclusive", "descriptive"]
+    },
+    "domain": {
+      "enum": [
+        "genomics", "transcriptomics", "single_cell", "spatial_omics",
+        "proteomics", "metabolomics", "integrated_omics", "liquid_biopsy",
+        "clinical_efficacy", "prognosis", "safety", "pk_pd",
+        "diagnostic_model", "preclinical_functional", "imaging", "other"
+      ]
+    },
+    "paper": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pmid", "doi", "year", "title", "journal", "journal_id",
+        "pdf_sha256", "supplied_pdf_version", "physical_pages",
+        "results_pages_read", "visual_pages_checked", "result_profile",
+        "domains", "central_results", "narrative_sequence",
+        "negative_result_handling", "omics_logic", "efficacy_logic",
+        "prognosis_logic", "claim_boundaries", "record_ids"
+      ],
+      "properties": {
+        "pmid": {"$ref": "#/$defs/pmid"},
+        "doi": {"$ref": "#/$defs/nonemptyString"},
+        "year": {"enum": ["2025", "2026"]},
+        "title": {"$ref": "#/$defs/nonemptyString"},
+        "journal": {"const": "Clinical Cancer Research"},
+        "journal_id": {"const": "ccr"},
+        "pdf_sha256": {"$ref": "#/$defs/sha256"},
+        "supplied_pdf_version": {"$ref": "#/$defs/nonemptyString"},
+        "physical_pages": {"type": "integer", "minimum": 1},
+        "results_pages_read": {"$ref": "#/$defs/pageList"},
+        "visual_pages_checked": {"$ref": "#/$defs/pageList"},
+        "result_profile": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/polarity"}
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/domain"}
+        },
+        "central_results": {"$ref": "#/$defs/stringList"},
+        "narrative_sequence": {"$ref": "#/$defs/stringList"},
+        "negative_result_handling": {"$ref": "#/$defs/nonemptyString"},
+        "omics_logic": {"$ref": "#/$defs/nonemptyString"},
+        "efficacy_logic": {"$ref": "#/$defs/nonemptyString"},
+        "prognosis_logic": {"$ref": "#/$defs/nonemptyString"},
+        "claim_boundaries": {"$ref": "#/$defs/stringList"},
+        "record_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^ccr-logic-[0-9]{8}-[a-z0-9]+(?:-[a-z0-9]+)*$"}
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pdf_sha256", "supplied_pdf_version", "physical_page", "physical_pages", "section",
+        "subheading", "source_sentence", "verification_level",
+        "quotation_verified", "visual_verified", "verification_record",
+        "text_extraction_match", "verification_note"
+      ],
+      "properties": {
+        "pdf_sha256": {"$ref": "#/$defs/sha256"},
+        "supplied_pdf_version": {"$ref": "#/$defs/nonemptyString"},
+        "physical_page": {"type": "integer", "minimum": 1},
+        "physical_pages": {"$ref": "#/$defs/pageList"},
+        "section": {"const": "results"},
+        "subheading": {"$ref": "#/$defs/nonemptyString"},
+        "source_sentence": {"$ref": "#/$defs/nonemptyString"},
+        "verification_level": {"const": "visually_verified_exact"},
+        "quotation_verified": {"const": true},
+        "visual_verified": {"const": true},
+        "verification_record": {
+          "type": "string",
+          "pattern": "^ccr-2025-2026-results-logic-audit\\.md#pmid-[0-9]{8}$"
+        },
+        "text_extraction_match": {
+          "enum": ["normalized_literal", "punctuation_insensitive", "none"]
+        },
+        "verification_note": {"$ref": "#/$defs/nonemptyString"}
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "required", "evidence_source"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "description": {"$ref": "#/$defs/nonemptyString"},
+        "required": {"const": true},
+        "evidence_source": {"const": "user_supplied"}
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "pmid", "doi", "title", "journal", "journal_id", "year",
+        "source", "domains", "result_polarity", "inferential_status",
+        "result_type", "evidence_layer", "rhetorical_function",
+        "logic_position", "target_sections", "use_when_zh",
+        "do_not_use_when_zh", "rewrite_template", "template_language", "slots",
+        "source_specific_tokens", "claim_ceiling", "evidence_boundary",
+        "logic_note_zh"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^ccr-logic-[0-9]{8}-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "pmid": {"$ref": "#/$defs/pmid"},
+        "doi": {"$ref": "#/$defs/nonemptyString"},
+        "title": {"$ref": "#/$defs/nonemptyString"},
+        "journal": {"const": "Clinical Cancer Research"},
+        "journal_id": {"const": "ccr"},
+        "year": {"enum": ["2025", "2026"]},
+        "source": {"$ref": "#/$defs/source"},
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/domain"}
+        },
+        "result_polarity": {"$ref": "#/$defs/polarity"},
+        "inferential_status": {
+          "enum": ["significant", "nonsignificant", "mixed", "not_reported", "not_applicable"]
+        },
+        "result_type": {
+          "enum": [
+            "omics_landscape", "differential_feature", "pathway_or_state",
+            "cross_layer_concordance", "assay_concordance", "treatment_efficacy",
+            "treatment_activity", "survival_prognosis", "biomarker_association",
+            "subgroup_signal", "negative_primary_endpoint", "null_biomarker",
+            "safety_tolerability", "pk_pd_exposure", "diagnostic_performance",
+            "model_performance", "functional_perturbation", "resistance_mechanism",
+            "descriptive_frequency", "other"
+          ]
+        },
+        "evidence_layer": {
+          "enum": [
+            "clinical", "genomic", "transcriptomic", "protein", "single_cell",
+            "spatial", "metabolomic", "integrated", "preclinical", "modeling", "imaging"
+          ]
+        },
+        "rhetorical_function": {
+          "enum": [
+            "establish_analysis_set", "state_primary_finding", "quantify_effect",
+            "report_null_result", "contrast_groups", "contrast_modalities",
+            "qualify_uncertainty", "state_exception", "integrate_evidence_layers",
+            "connect_to_outcome", "limit_inference", "justify_follow_up"
+          ]
+        },
+        "logic_position": {"enum": ["opening", "development", "contrast", "qualification", "closure"]},
+        "target_sections": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["abstract-results", "results", "discussion", "conclusion"]}
+        },
+        "use_when_zh": {"$ref": "#/$defs/nonemptyString"},
+        "do_not_use_when_zh": {"$ref": "#/$defs/nonemptyString"},
+        "rewrite_template": {"$ref": "#/$defs/nonemptyString"},
+        "template_language": {"const": "en-US"},
+        "slots": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/slot"}},
+        "source_specific_tokens": {"$ref": "#/$defs/stringList"},
+        "claim_ceiling": {
+          "enum": [
+            "descriptive_only", "association_only", "exploratory_hypothesis",
+            "model_performance_only", "preclinical_mechanism_only",
+            "clinical_activity_only", "comparative_efficacy_only",
+            "prognostic_association_only"
+          ]
+        },
+        "evidence_boundary": {"$ref": "#/$defs/nonemptyString"},
+        "logic_note_zh": {"$ref": "#/$defs/nonemptyString"}
+      },
+      "allOf": [
+        {
+          "oneOf": [
+            {"properties": {"result_type": {"const": "omics_landscape"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only"]}}},
+            {"properties": {"result_type": {"const": "differential_feature"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only", "preclinical_mechanism_only"]}}},
+            {"properties": {"result_type": {"const": "pathway_or_state"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only", "exploratory_hypothesis", "preclinical_mechanism_only"]}}},
+            {"properties": {"result_type": {"const": "cross_layer_concordance"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only"]}}},
+            {"properties": {"result_type": {"const": "assay_concordance"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only", "model_performance_only"]}}},
+            {"properties": {"result_type": {"const": "treatment_efficacy"}, "claim_ceiling": {"enum": ["comparative_efficacy_only", "exploratory_hypothesis", "association_only"]}}},
+            {"properties": {"result_type": {"const": "treatment_activity"}, "claim_ceiling": {"enum": ["clinical_activity_only"]}}},
+            {"properties": {"result_type": {"const": "survival_prognosis"}, "claim_ceiling": {"enum": ["prognostic_association_only"]}}},
+            {"properties": {"result_type": {"const": "biomarker_association"}, "claim_ceiling": {"enum": ["association_only", "exploratory_hypothesis", "preclinical_mechanism_only", "prognostic_association_only"]}}},
+            {"properties": {"result_type": {"const": "subgroup_signal"}, "claim_ceiling": {"enum": ["exploratory_hypothesis"]}}},
+            {"properties": {"result_type": {"const": "negative_primary_endpoint"}, "claim_ceiling": {"enum": ["clinical_activity_only", "comparative_efficacy_only"]}}},
+            {"properties": {"result_type": {"const": "null_biomarker"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only", "exploratory_hypothesis", "prognostic_association_only"]}}},
+            {"properties": {"result_type": {"const": "safety_tolerability"}, "claim_ceiling": {"enum": ["clinical_activity_only", "association_only"]}}},
+            {"properties": {"result_type": {"const": "pk_pd_exposure"}, "claim_ceiling": {"enum": ["association_only", "clinical_activity_only", "model_performance_only"]}}},
+            {"properties": {"result_type": {"const": "diagnostic_performance"}, "claim_ceiling": {"enum": ["model_performance_only", "exploratory_hypothesis"]}}},
+            {"properties": {"result_type": {"const": "model_performance"}, "claim_ceiling": {"enum": ["model_performance_only", "exploratory_hypothesis"]}}},
+            {"properties": {"result_type": {"const": "functional_perturbation"}, "claim_ceiling": {"enum": ["preclinical_mechanism_only", "association_only", "exploratory_hypothesis"]}}},
+            {"properties": {"result_type": {"const": "resistance_mechanism"}, "claim_ceiling": {"enum": ["preclinical_mechanism_only", "association_only", "exploratory_hypothesis"]}}},
+            {"properties": {"result_type": {"const": "descriptive_frequency"}, "claim_ceiling": {"enum": ["descriptive_only"]}}},
+            {"properties": {"result_type": {"const": "other"}, "claim_ceiling": {"enum": ["descriptive_only", "association_only", "exploratory_hypothesis"]}}}
+          ]
+        }
+      ]
+    }
+  }
+}

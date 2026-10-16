@@ -2,6 +2,24 @@
 
 Selected, dated changes to the repository and its distributed skill. This log is not an exhaustive commit history, a versioned release declaration, or a live reading-status register. Current coverage and acceptance states are maintained in the [literature index](skills/artificial-writing-skill/references/library-index.md) and linked journal registers.
 
+## 2026-10-16
+
+### Source-linked sentence writing
+
+- Added a whole-sentence rewrite route for the 15 CCR articles in the STK11 collection. Its 106 records connect the source sentence and physical-page provenance to content type, use scenario, evidence boundary, and a synthetic template whose values must come from the user's study.
+- Extended that route beyond abstract results to body Methods, molecular and multi-omic Results, functional experiments, and paragraph-level writing guidance. Historical STK11 admission labels remain provenance only; the active highlight collection remains 64 articles.
+
+### CCR 2025–2026 Results logic
+
+- Added a bounded catalog for all 123 currently included CCR issue-year articles (48 from 2025 and 75 from 2026): 2,390 registered main-PDF pages, 598 focused body-Results pages reread, 313 selected source or central-result pages visually checked, and 267 complete body-Results sentence records.
+- Added sentence- and paper-level retrieval across omics, treatment efficacy or activity, prognosis, models, and functional experiments. Result polarity is independent of inferential status; claim ceilings preserve endpoint hierarchy, prognosis-versus-prediction, exploratory subgroup, cross-layer, and preclinical-to-clinical boundaries.
+- Recorded 128 normalized literal and 54 punctuation-insensitive extraction matches. The remaining 85 sentences retain explicit visual-verification records without being silently promoted to mechanical matches; nine cross-page sentences carry contiguous physical-page spans.
+- Added schema/runtime compatibility checks, safe slot rendering, Windows UTF-8 CLI handling, focused writing cases, and regression coverage. Local verification passed the complete 254-test skill suite and six independent synthetic behavior cases before repository synchronization.
+
+### Scope boundary
+
+- This update does not distribute source PDFs or full-text extracts, certify unprovided supplements, alter historical main-read or independent-review status, or change STK11 membership. Sentence excerpts remain attributed provenance and are not a license to the underlying publications.
+
 ## 2026-10-07
 
 ### Repository maintenance

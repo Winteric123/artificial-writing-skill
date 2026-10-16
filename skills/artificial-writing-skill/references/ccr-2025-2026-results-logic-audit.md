@@ -1,0 +1,4048 @@
+# CCR 2025-2026 Results-logic rereading audit
+
+## Scope and boundary
+
+- Journal: Clinical Cancer Research; issue years 2025 and 2026.
+- Current installed membership rule: journal=CCR, issue year in 2025/2026, eligibility=included.
+- Included papers: 123 (2025: 48; 2026: 75). Excluded 2025 commentary/review records: 2.
+- Registered supplied main-PDF extent: 2390 physical pages.
+- Focused body-Results pages recorded as reread: 598; selected source/central-result pages visually checked: 313.
+- Source-linked full-sentence records: 267; the actual per-paper range is 2-3 records (the validator permits 2-4).
+- Each PDF path was kept only in the private task manifest. The shared resource retains the registered version, SHA-256, physical page and article identity.
+- Rereading covered the complete body Results narrative, the Abstract/Discussion hierarchy for central findings, and sufficient Methods context to identify analysis units, comparisons and inference. It was not a new six-gate acceptance review and did not change historical main-read dates or review status.
+- Separate or unprovided supplements remain outside this focused rereading unless an existing article record independently states otherwise.
+
+## Aggregate record profile
+
+- Result polarity: {'descriptive': 22, 'inconclusive': 30, 'mixed': 45, 'negative': 62, 'positive': 108}
+- Inferential status: {'mixed': 27, 'nonsignificant': 62, 'not_applicable': 54, 'not_reported': 57, 'significant': 67}
+- Result types: {'assay_concordance': 11, 'biomarker_association': 19, 'cross_layer_concordance': 3, 'descriptive_frequency': 7, 'diagnostic_performance': 5, 'differential_feature': 14, 'functional_perturbation': 27, 'model_performance': 8, 'negative_primary_endpoint': 4, 'null_biomarker': 26, 'omics_landscape': 2, 'other': 4, 'pathway_or_state': 15, 'pk_pd_exposure': 5, 'resistance_mechanism': 6, 'safety_tolerability': 7, 'subgroup_signal': 26, 'survival_prognosis': 37, 'treatment_activity': 33, 'treatment_efficacy': 8}
+- Domains (multi-label): {'clinical_efficacy': 87, 'diagnostic_model': 15, 'genomics': 40, 'imaging': 5, 'integrated_omics': 23, 'liquid_biopsy': 26, 'metabolomics': 4, 'other': 4, 'pk_pd': 9, 'preclinical_functional': 39, 'prognosis': 70, 'proteomics': 18, 'safety': 11, 'single_cell': 3, 'spatial_omics': 4, 'transcriptomics': 10}
+
+The counts describe selected writing-pattern sentences, not the prevalence of scientific findings in the journal. A paper can contain more than one polarity and domain.
+
+## PMID 39437011
+
+- Identity: Metabolic Tumor Volume Assessed by 18F FDG-PET CT Scan as a Predictive Biomarker for Immune Checkpoint Blockers in Advanced NSCLC and Its Biological Correlates (2025); DOI 10.1158/1078-0432.ccr-24-1993.
+- Supplied PDF: publisher_main_pdf; SHA-256 `f83aaeeaec6b37dc72abec6c96f08e5da7cdcc43b8b38368817906df87184865`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 4, 10.
+- Result profile: positive, negative, mixed.
+- Domains: metabolomics, integrated_omics, prognosis, imaging.
+- Central results:
+  - High total metabolic tumor volume was independently associated with shorter survival, whereas exploratory microbiome differences disappeared after multiplicity correction.
+- Narrative sequence:
+  - Define the imaging burden, relate it to survival, then explore immune and microbial correlates and close with an FDR-sensitive null.
+- Negative-result handling: The paper explicitly distinguishes nominal species-level differences from the absence of FDR-adjusted significance.
+- Omics logic: Bulk immune deconvolution and stool microbiome analyses are correlational; inferred cell proportions are not direct cell counts.
+- Efficacy/activity logic: Treatment comparisons are observational within an ICI-treated cohort and do not establish predictive interaction.
+- Prognosis logic: tMTV is treated as a prognostic association after multivariable adjustment, not as a validated treatment-selection marker.
+- Claim/source boundaries:
+  - Retrospective single-cohort associations remain vulnerable to confounding
+  - nominal microbiome signals do not survive multiplicity correction.
+- Selected source-linked sentence records:
+  - `ccr-logic-39437011-c-001`: physical page(s) 4; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: In a multivariate model including known prognostic variables (Table 2), tMTV remained independently associated with OS, along with ECOG PS 2 and LDH above the upper limit of normal (ULN).
+    - PDF SHA-256: `f83aaeeaec6b37dc72abec6c96f08e5da7cdcc43b8b38368817906df87184865`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-39437011-c-002`: physical page(s) 10; negative; nonsignificant; differential_feature; report_null_result; closure.
+    - Source sentence: Out of the top 50 species, 17 showed significant differences between high and low tMTV before FDR correction (Supplementary Fig. S3D), while none remained significant after FDR correction.
+    - PDF SHA-256: `f83aaeeaec6b37dc72abec6c96f08e5da7cdcc43b8b38368817906df87184865`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39466024
+
+- Identity: Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies (2025); DOI 10.1158/1078-0432.ccr-24-2172.
+- Supplied PDF: not_classified_by_header; SHA-256 `133c2b767c824d2a9b31854f827c57c272afb2d90e7cdc4c12802ea095704b3b`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 5, 8.
+- Result profile: negative, mixed.
+- Domains: clinical_efficacy, safety, pk_pd.
+- Central results:
+  - ROR1 CAR-T cells showed limited solid-tumor activity, transient regressions, and clinically important pulmonary toxicity in a first-in-human study.
+- Narrative sequence:
+  - Begin with dose delivery and toxicity, then describe expansion, trafficking and antitumor activity, ending with durability limits.
+- Negative-result handling: Stable disease and early regression are bounded by progression before six months; toxicity and activity are reported together when clinically linked.
+- Omics logic: Correlative trafficking and anti-CAR immune measurements support biological activity but not tumor-cell killing in all lesions.
+- Efficacy/activity logic: Single-arm phase I activity is descriptive and cannot establish comparative efficacy.
+- Prognosis logic: Survival was not the central inferential endpoint.
+- Claim/source boundaries:
+  - Very small heterogeneous cohorts and dose-level changes preclude causal or comparative claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-39466024-c-003`: physical page(s) 5; mixed; not_reported; safety_tolerability; state_exception; contrast.
+    - Source sentence: A CT scan 6 days after CAR-T–cell infusion showed a decrease in the perihilar mass but progressive lung inflammation or edema (Fig. 2A), and the patient died of respiratory failure 17 days after CAR-T–cell infusion.
+    - PDF SHA-256: `133c2b767c824d2a9b31854f827c57c272afb2d90e7cdc4c12802ea095704b3b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39466024-c-004`: physical page(s) 8; negative; not_reported; treatment_activity; qualify_uncertainty; closure.
+    - Source sentence: All remaining patients with stable disease at day 28, including one patient with initial regression of nodal and subcutaneous metastasis, progressed before 6 months (Fig. 4A and C).
+    - PDF SHA-256: `133c2b767c824d2a9b31854f827c57c272afb2d90e7cdc4c12802ea095704b3b`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39470668
+
+- Identity: Phase I/II Investigator-Initiated Study of Olaparib and Temozolomide in SCLC: Final Analysis and CNS Outcomes (2025); DOI 10.1158/1078-0432.ccr-24-2350.
+- Supplied PDF: not_classified_by_header; SHA-256 `f87aa9ee188bb924930af06e0280eaad84163faf6ec688f23ff77fe2377b51f2`; 10 physical pages.
+- Focused Results pages reread: 3, 4, 5.
+- Visual pages checked: 3, 4.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, safety.
+- Central results:
+  - Combination olaparib and temozolomide had limited overall activity that halted expansion, alongside an exploratory intracranial disease-control signal.
+- Narrative sequence:
+  - Report the halted expansion and overall activity first, then characterize dose/schedule and the selected CNS subgroup.
+- Negative-result handling: Negative overall activity is stated directly; the CNS signal is kept exploratory and separated from the stopped expansion.
+- Omics logic: No omics layer was central to the selected result logic.
+- Efficacy/activity logic: Intracranial response is a selected subgroup result in a nonrandomized early-phase trial.
+- Prognosis logic: Time-to-event outcomes are descriptive and not used to claim prognosis.
+- Claim/source boundaries:
+  - The CNS subgroup excludes previously irradiated target lesions but remains small and lacks a comparator.
+- Selected source-linked sentence records:
+  - `ccr-logic-39470668-c-005`: physical page(s) 3; negative; not_reported; treatment_activity; limit_inference; opening.
+    - Source sentence: A phase II expansion group was initially planned for cohort 2, but accrual was halted after 16 patients were enrolled in dose escalation (dose levels 1–5) because of limited observed activity.
+    - PDF SHA-256: `f87aa9ee188bb924930af06e0280eaad84163faf6ec688f23ff77fe2377b51f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39470668-c-006`: physical page(s) 4; positive; not_reported; subgroup_signal; quantify_effect; development.
+    - Source sentence: Among these 15 patients with no prior brain radiation to the target CNS lesions, the best overall intracranial response (including confirmed and unconfirmed responses) was complete response in 6/15 patients, PR in 4/15 patients, and stable disease in 3/15 patients for a CNS disease control rate of 87% (95% CI, 59.5%–98.3%; Table 3).
+    - PDF SHA-256: `f87aa9ee188bb924930af06e0280eaad84163faf6ec688f23ff77fe2377b51f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39495173
+
+- Identity: YAP Regulates HER3 Signaling-Driven Adaptive Resistance to RET Inhibitors in RET-Aberrant Cancers (2025); DOI 10.1158/1078-0432.ccr-24-1762.
+- Supplied PDF: not_classified_by_header; SHA-256 `abc7996da2620f455d56d394fee656c153cb0a0bb1eb70dd483aca4477186c6d`; 15 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 7, 9.
+- Result profile: positive, negative, mixed.
+- Domains: integrated_omics, preclinical_functional.
+- Central results:
+  - 高YAP的RET异常模型出现HER3相关适应性耐药，pan-ERBB联合可在部分模型恢复RET-TKI敏感性，但敏感细胞系未见额外增殖抑制。
+- Narrative sequence:
+  - 先界定YAP/HER3状态与耐药表型，再做遗传/药理干预，最后以跨模型例外限定联合策略。
+- Negative-result handling: 把敏感细胞系的阴性组合结果作为模型依赖性边界，而非笼统否定。
+- Omics logic: 细胞系表达与信号层结果用于分层机制，不外推为患者肿瘤直接证据。
+- Efficacy/activity logic: 仅有临床队列探索信息，核心疗效证据为前临床。
+- Prognosis logic: 无可确证的临床预后结论。
+- Claim/source boundaries:
+  - 前临床模型、药物剂量和YAP高表达背景限定；不得宣称临床协同。
+- Selected source-linked sentence records:
+  - `ccr-logic-39495173-ccr25-26-a-001`: physical page(s) 7; negative; nonsignificant; functional_perturbation; report_null_result; contrast.
+    - Source sentence: However, this combination did not significantly impact the proliferation of EHMES10 and TT cells, which are sensitive to RET-TKIs, compared with RET-TKI monotherapy (Fig. 3C).
+    - PDF SHA-256: `abc7996da2620f455d56d394fee656c153cb0a0bb1eb70dd483aca4477186c6d`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39495173-ccr25-26-a-002`: physical page(s) 9; positive; not_reported; functional_perturbation; integrate_evidence_layers; closure.
+    - Source sentence: Collectively, these results show that cell sensitivity to the RET-TKIs is enhanced by co-treatment with afatinib in RET-aberrant cancer cell lines exhibiting high YAP expression.
+    - PDF SHA-256: `abc7996da2620f455d56d394fee656c153cb0a0bb1eb70dd483aca4477186c6d`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39540841
+
+- Identity: Aberrant Activation of Wound-Healing Programs within the Metastatic Niche Facilitates Lung Colonization by Osteosarcoma Cells (2025); DOI 10.1158/1078-0432.ccr-24-0049.
+- Supplied PDF: publisher_main_pdf; SHA-256 `66c9553d6966c5507facd4091428c5f166106e44ea24b656b0f2d10b89a9cfa2`; 16 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 8, 10.
+- Result profile: positive.
+- Domains: single_cell, integrated_omics, clinical_efficacy, preclinical_functional.
+- Central results:
+  - 单细胞分析显示肺转移灶富集Trem2/Cd9/Spp1巨噬细胞，抗纤维化药在免疫完整和缺陷模型均抑制转移进展。
+- Narrative sequence:
+  - 由转移生态图谱到候选伤口愈合程序，再以药理干预验证可操作性。
+- Negative-result handling: 未把未涉及的临床生存或自发转移终点硬补为阴性。
+- Omics logic: 单细胞簇用于描述小鼠转移微环境，不等同人类直接测量。
+- Efficacy/activity logic: 疗效只在动物实验性肺定植模型中成立。
+- Prognosis logic: 未报告人类预后。
+- Claim/source boundaries:
+  - 尾静脉定植模型不是自发转移模型，不能外推患者获益。
+- Selected source-linked sentence records:
+  - `ccr-logic-39540841-ccr25-26-a-003`: physical page(s) 8; positive; not_reported; differential_feature; contrast_groups; development.
+    - Source sentence: Notably, a population of macrophages expressing Trem2, Cd9, and Spp1 was highly enriched in lung metastasis compared with healthy lung and primary tibial tumors.
+    - PDF SHA-256: `66c9553d6966c5507facd4091428c5f166106e44ea24b656b0f2d10b89a9cfa2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39540841-ccr25-26-a-004`: physical page(s) 8; positive; significant; functional_perturbation; state_primary_finding; closure.
+    - Source sentence: We found that nintedanib significantly hindered metastatic progression in both immunocompetent (F420 and K7M2) and immunodeficient (OS-17) models.
+    - PDF SHA-256: `66c9553d6966c5507facd4091428c5f166106e44ea24b656b0f2d10b89a9cfa2`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39545922
+
+- Identity: Divergent Clinical and Immunologic Outcomes Based on STK11 Co-mutation Status in Resectable KRAS-Mutant Lung Cancers Following Neoadjuvant Immune Checkpoint Blockade (2025); DOI 10.1158/1078-0432.ccr-24-2983.
+- Supplied PDF: not_classified_by_header; SHA-256 `29c4ac351e2abb1ff9b8478390b84146debed3f7e318459c7def256aec280588`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 4, 5, 6.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - STK11状态与MPR无显著差异，但KRAS突变亚队列中STK11共突变与更高复发风险相关。
+- Narrative sequence:
+  - 先报告病理反应阴性，再转向复发结局阳性，形成终点分层而非单一结论。
+- Negative-result handling: 明确有限样本与P=1.0；不把无显著MPR差异解释为等效。
+- Omics logic: 免疫分析支持生物背景，但不把组织相关性升级为治疗预测。
+- Efficacy/activity logic: MPR分析限手术切除者。
+- Prognosis logic: 复发关联CI很宽，仅属治疗后队列中的预后性信号。
+- Claim/source boundaries:
+  - 不得把复发风险关联写成STK11对新辅助ICB的预测性治疗交互。
+- Selected source-linked sentence records:
+  - `ccr-logic-39545922-ccr25-26-a-005`: physical page(s) 4; negative; nonsignificant; null_biomarker; report_null_result; opening.
+    - Source sentence: In this limited sized cohort, there was no statistical difference in the rate of MPR between the STK11wt (25%) and STK11mut (17%) KRASmut tumors that were surgically resected (Fig. 1A; P = 1.0).
+    - PDF SHA-256: `29c4ac351e2abb1ff9b8478390b84146debed3f7e318459c7def256aec280588`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-39545922-ccr25-26-a-006`: physical page(s) 5; positive; significant; survival_prognosis; connect_to_outcome; contrast.
+    - Source sentence: However, a divergence in recurrence outcomes was noted within the KRASmut subcohort, with a significantly higher risk of recurrence in the presence of STK11 co-mutation (HR = 7.09; 95% CI, 1.25–40.1; P = 0.027; Fig. 1E), with a median RFS of 14.03 months for KRASmut/STK11mut tumors, and the median RFS for KRASmut/STK11wt tumors not reached.
+    - PDF SHA-256: `29c4ac351e2abb1ff9b8478390b84146debed3f7e318459c7def256aec280588`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 39561276
+
+- Identity: Analysis of Shared Variants between Cancer Biospecimens (2025); DOI 10.1158/1078-0432.ccr-24-1583.
+- Supplied PDF: author_manuscript; SHA-256 `03c30369b45594037665d129ff261388f690dde703b80f7cf924e6af34d9aae8`; 22 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 7, 8.
+- Result profile: positive.
+- Domains: genomics, diagnostic_model.
+- Central results:
+  - A shared-variant molecular probability score accurately distinguished same-origin from distinct cancers and prompted diagnosis or treatment changes in selected discordant cases.
+- Narrative sequence:
+  - Derive the score, validate discrimination, review discordant cases, then describe clinical reassignment and plasma extensions.
+- Negative-result handling: Discordance is adjudicated rather than relabeled as assay failure; selected case review is kept distinct from cohort-wide performance.
+- Omics logic: The genomic score uses shared variants and relatedness features; it is a classifier, not direct proof of clonal origin in every case.
+- Efficacy/activity logic: Treatment changes after review are process outcomes, not evidence that the changes improved efficacy.
+- Prognosis logic: Prognosis was not a central endpoint.
+- Claim/source boundaries:
+  - Clinical diagnosis is an imperfect reference, and the 80 discordant cases were a selected subset.
+- Selected source-linked sentence records:
+  - `ccr-logic-39561276-c-007`: physical page(s) 7; positive; not_reported; diagnostic_performance; state_primary_finding; development.
+    - Source sentence: Overall, the MPS discriminated if compared tumors were initially diagnosed as a single disease versus distinct cancers with an area under the curve (AUC) of 0.96 (Figure 3d).
+    - PDF SHA-256: `03c30369b45594037665d129ff261388f690dde703b80f7cf924e6af34d9aae8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39561276-c-008`: physical page(s) 8; positive; not_reported; biomarker_association; connect_to_outcome; closure.
+    - Source sentence: In total, 22 out of the 80 examined discordant cases (28%) underwent a subsequent change in their clinical diagnosis and/or treatment predicted by MPS evaluation of shared variants.
+    - PDF SHA-256: `03c30369b45594037665d129ff261388f690dde703b80f7cf924e6af34d9aae8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39576208
+
+- Identity: Safety and Tolerability of Letetresgene Autoleucel (GSK3377794): Pilot Studies in Patients with Advanced Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-1591.
+- Supplied PDF: not_classified_by_header; SHA-256 `9a61e35a2b031e196a0a192f4eef601773583f9302686d7d56f5da783dd09d33`; 14 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 7.
+- Result profile: positive, mixed.
+- Domains: clinical_efficacy.
+- Central results:
+  - In the single-arm study, one of the five patients (ORR 20%
+  - 95% CI, 0.5–71.6) had a confirmed partial response (PR) following the first T-cell infusion.
+  - In the multiarm study, six (86%) and two (33%) patients had stable disease as best response in arms A and C, respectively, and no patients had a PR or complete response (Fig. 2A and B).
+- Narrative sequence:
+  - 先报告单臂研究中的个体客观缓解，再对另一研究臂的疾病稳定与无缓解进行并列呈现。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从两项小型早期研究、样本极少且置信区间很宽；只能表述临床活性，不能进行比较疗效推断。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 两项小型早期研究、样本极少且置信区间很宽；只能表述临床活性，不能进行比较疗效推断。
+  - 极小样本单臂活性；置信区间必须保留。
+  - 描述性多臂结果，无正式组间效应检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-39576208-b-39576208-r1`: physical page(s) 7; positive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: In the single-arm study, one of the five patients (ORR 20%; 95% CI, 0.5–71.6) had a confirmed partial response (PR) following the first T-cell infusion.
+    - PDF SHA-256: `9a61e35a2b031e196a0a192f4eef601773583f9302686d7d56f5da783dd09d33`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39576208-b-39576208-r2`: physical page(s) 7; mixed; not_reported; treatment_activity; contrast_groups; contrast.
+    - Source sentence: In the multiarm study, six (86%) and two (33%) patients had stable disease as best response in arms A and C, respectively, and no patients had a PR or complete response (Fig. 2A and B).
+    - PDF SHA-256: `9a61e35a2b031e196a0a192f4eef601773583f9302686d7d56f5da783dd09d33`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39620930
+
+- Identity: Noninvasive Multicancer Detection Using DNA Hypomethylation of LINE-1 Retrotransposons (2025); DOI 10.1158/1078-0432.ccr-24-2669.
+- Supplied PDF: publisher_main_pdf; SHA-256 `49f763c630f8436daf29b1356d72682f010c4be033d55e6e1487ca32d457e6ec`; 17 physical pages.
+- Focused Results pages reread: 7, 8, 9, 10, 11, 12.
+- Visual pages checked: 8, 11, 12.
+- Result profile: positive, negative, mixed.
+- Domains: integrated_omics, diagnostic_model.
+- Central results:
+  - 部分癌种/分期的全局甲基化未见差异，而基于LINE-1甲基化的分类器在验证中显示较高AUC但固定特异度下灵敏度差异大。
+- Narrative sequence:
+  - 从生物信号分布进入特征选择和模型验证，再以特异度-灵敏度权衡限定应用。
+- Negative-result handling: 保留癌种/分期特异的阴性结果，不概括为所有癌症均无甲基化差异。
+- Omics logic: 甲基化特征用于分类建模。
+- Efficacy/activity logic: 无治疗疗效分析。
+- Prognosis logic: 无预后推断。
+- Claim/source boundaries:
+  - 病例-对照/富集设计不支持人群筛查PPV或临床效用。
+- Selected source-linked sentence records:
+  - `ccr-logic-39620930-ccr25-26-a-007`: physical page(s) 8; negative; nonsignificant; differential_feature; report_null_result; contrast.
+    - Source sentence: The global methylation was not significantly different in metastatic non–small cell lung cancers (LC M+) nor in localized stages of breast cancer (BRC M0).
+    - PDF SHA-256: `49f763c630f8436daf29b1356d72682f010c4be033d55e6e1487ca32d457e6ec`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39620930-ccr25-26-a-008`: physical page(s) 11; positive; not_applicable; diagnostic_performance; quantify_effect; closure.
+    - Source sentence: The results showed excellent classification performances with an overall AUC of 88% when testing all cancers together with no annotations of their histologic types and AUC between 88% and 100% for the cancer subgroup ‘expert’ models with sensitivities at 99% specificity between 49% and 100% (Fig. 4E), including 55% for localized breast cancers.
+    - PDF SHA-256: `49f763c630f8436daf29b1356d72682f010c4be033d55e6e1487ca32d457e6ec`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39651955
+
+- Identity: Phase I/II Trial of Exportin 1 Inhibitor Selinexor plus Docetaxel in Previously Treated, Advanced KRAS-Mutant Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-1722.
+- Supplied PDF: author_manuscript; SHA-256 `daa642b8a1bfafe6caa07ee04843257be010103b781c07263097d88cfb1bfe5f`; 22 physical pages.
+- Focused Results pages reread: 6, 7, 8.
+- Visual pages checked: 7, 17.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - KRAS突变亚型间影像反应无显著差异，TP53改变则与更短PFS相关。
+- Narrative sequence:
+  - 先给总体活性，再逐层考察基因亚组，区分无效应证据与预后性关联。
+- Negative-result handling: KRAS亚型P=0.30仅表示未检出差异。
+- Omics logic: 面板变异用于探索分层，不等同全基因组机制。
+- Efficacy/activity logic: 单臂研究不能得出比较疗效。
+- Prognosis logic: TP53–PFS属于治疗队列内预后关联，不是治疗特异预测。
+- Claim/source boundaries:
+  - 样本小且无对照治疗交互。
+- Selected source-linked sentence records:
+  - `ccr-logic-39651955-ccr25-26-a-009`: physical page(s) 7; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: Figure 1A–B shows radiographic response according to KRAS mutation type, with no significant difference observed (P=0.30).
+    - PDF SHA-256: `daa642b8a1bfafe6caa07ee04843257be010103b781c07263097d88cfb1bfe5f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39651955-ccr25-26-a-010`: physical page(s) 7; positive; significant; survival_prognosis; quantify_effect; development.
+    - Source sentence: Median PFS was 1.8 months (95% CI, 1.0 to 4.1 months) for TP53 altered vs 7.4 months (95% CI, 1.5 to 12.0 months) for TP53 wild type (HR 0.22; 95% CI, 0.07-0.67; P=0.003).
+    - PDF SHA-256: `daa642b8a1bfafe6caa07ee04843257be010103b781c07263097d88cfb1bfe5f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39670974
+
+- Identity: Longitudinal Blood Immune-Inflammatory and Radiomic Profiling to Decode Different Patterns of Acquired Resistance to Immunotherapy in Patients with NSCLC (2025); DOI 10.1158/1078-0432.ccr-24-1926.
+- Supplied PDF: not_classified_by_header; SHA-256 `0745432bd82f501f47d4e0930c476889cbc19052402d59036c4291e649753274`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 5, 6, 7.
+- Result profile: positive, mixed.
+- Domains: proteomics, prognosis, preclinical_functional, imaging.
+- Central results:
+  - Systemic acquired resistance was associated with distinct inflammatory features and markedly shorter post-progression survival than oligoprogression.
+- Narrative sequence:
+  - Compare baseline immune features, connect resistance pattern to post-progression survival, then add longitudinal and radiomic correlates.
+- Negative-result handling: Mostly null baseline immune comparisons are preserved with explicit exceptions and trends.
+- Omics logic: Blood immune cells, cytokines and radiomics are separate modalities; radiomic analyses involve a particularly small subset.
+- Efficacy/activity logic: Resistance-pattern comparisons are observational and do not prove that local treatment causes longer survival.
+- Prognosis logic: Post-progression survival differences are prognostic associations between resistance phenotypes.
+- Claim/source boundaries:
+  - Small radiomic and subgroup samples, treatment heterogeneity and post-progression selection limit inference.
+- Selected source-linked sentence records:
+  - `ccr-logic-39670974-c-009`: physical page(s) 5; mixed; mixed; differential_feature; state_exception; contrast.
+    - Source sentence: Baseline PB immune cells and cytokines were not significantly different between oligoAR and sysAR (Supplementary Table S5), except for higher baseline values of TGF-β1 (P < 0.05) and a trend toward increased IL-6 in sysAR (Fig. 2).
+    - PDF SHA-256: `0745432bd82f501f47d4e0930c476889cbc19052402d59036c4291e649753274`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39670974-c-010`: physical page(s) 6; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Despite similar baseline clinical features, oligoAR patients had a prolonged postprogression survival compared with sysAR (median 20.3 vs. 5.6 months; HR, 0.22; 95% CI, 0.10–0.48; P < 0.001; Fig. 3A).
+    - PDF SHA-256: `0745432bd82f501f47d4e0930c476889cbc19052402d59036c4291e649753274`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 39704655
+
+- Identity: Smoking-Associated Carcinogen-Induced Inflammation Promotes Lung Carcinogenesis via IRAK4 Activation (2025); DOI 10.1158/1078-0432.ccr-24-2182.
+- Supplied PDF: author_manuscript; SHA-256 `ec00d3c0e9d402ef878abb5d20474d576a3c8848e59b6fc21fbddd30873487bd`; 18 physical pages.
+- Focused Results pages reread: 6, 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: positive.
+- Domains: integrated_omics, preclinical_functional.
+- Central results:
+  - Myosin heavy chain 9 protein (MYH9) was dephosphorylated significantly at serine 1943 residue in both cell lines upon IRAK4 inhibition.
+  - Both IRAK4 knockout cell lines demonstrated significant reduction in Matrigel invasion in vitro.
+- Narrative sequence:
+  - 由磷酸化改变推进到侵袭表型，形成分子靶点—功能读出的机制链。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于protein证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 证据限于细胞和动物前临床模型，不得外推为患者获益。
+  - 蛋白磷酸化读出来自细胞系。
+  - 体外侵袭实验不能替代临床转移结局。
+- Selected source-linked sentence records:
+  - `ccr-logic-39704655-b-39704655-r1`: physical page(s) 7; positive; significant; differential_feature; state_primary_finding; development.
+    - Source sentence: Myosin heavy chain 9 protein (MYH9) was dephosphorylated significantly at serine 1943 residue in both cell lines upon IRAK4 inhibition.
+    - PDF SHA-256: `ec00d3c0e9d402ef878abb5d20474d576a3c8848e59b6fc21fbddd30873487bd`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39704655-b-39704655-r2`: physical page(s) 8; positive; significant; functional_perturbation; connect_to_outcome; closure.
+    - Source sentence: Both IRAK4 knockout cell lines demonstrated significant reduction in Matrigel invasion in vitro.
+    - PDF SHA-256: `ec00d3c0e9d402ef878abb5d20474d576a3c8848e59b6fc21fbddd30873487bd`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39786430
+
+- Identity: Phase II Open-Label Trial of Brentuximab Vedotin with Pembrolizumab in PD-1-Pretreated Metastatic Non-Small Cell Lung Cancer and Metastatic Cutaneous Melanoma (2025); DOI 10.1158/1078-0432.ccr-24-1478.
+- Supplied PDF: not_classified_by_header; SHA-256 `161475ef37513dd386391420ab7f34295e1ad0e01f605a8baff57fde4c37e6b1`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 4, 7.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - 难治性NSCLC队列观察到14% ORR和72% DCR，但不同PD-L1层级的ORR、DCR、PFS和OS均无显著差异。
+- Narrative sequence:
+  - 先定量单臂活性，再用标志物亚组阴性结果限制选择性解释。
+- Negative-result handling: PD-L1阴性比较不被写成标志物无用或等效。
+- Omics logic: IHC仅作探索性分层。
+- Efficacy/activity logic: 仅支持单臂临床活性。
+- Prognosis logic: 未建立独立预后效应。
+- Claim/source boundaries:
+  - 不能称为恢复免疫治疗敏感性或优于标准治疗。
+- Selected source-linked sentence records:
+  - `ccr-logic-39786430-ccr25-26-a-011`: physical page(s) 4; positive; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: For the secondary refractory metastatic NSCLC cohort, the confirmed ORR per RECIST v1.1 was 14%, with a DCR of 72%.
+    - PDF SHA-256: `161475ef37513dd386391420ab7f34295e1ad0e01f605a8baff57fde4c37e6b1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39786430-ccr25-26-a-012`: physical page(s) 7; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: For patients with metastatic NSCLC, there was no significant difference observed in ORR, DCR, median PFS, or median OS in patients with different PD-L1 expression levels (TPS <1, TPS 1–49, and TPS ≥50) as assessed by central laboratory evaluation (Supplementary Table S6).
+    - PDF SHA-256: `161475ef37513dd386391420ab7f34295e1ad0e01f605a8baff57fde4c37e6b1`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39804166
+
+- Identity: Impact of Co-mutations and Transcriptional Signatures in Non-Small Cell Lung Cancer Patients Treated with Adagrasib in the KRYSTAL-1 Trial (2025); DOI 10.1158/1078-0432.ccr-24-2310.
+- Supplied PDF: publisher_main_pdf; SHA-256 `238c89c029a713a161255a6c9bddc5f9fe03424ccbf92e6f1650239613795f03`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 4, 5.
+- Result profile: positive, mixed.
+- Domains: prognosis, other.
+- Central results:
+  - KEAP1或STK11共突变与较差PFS/OS相关；ORR中KEAP1仅数值降低，STK11两组相同。
+- Narrative sequence:
+  - 从生存强信号到反应终点的阴性/趋势差异，强调结局不一致。
+- Negative-result handling: 把KEAP1 P=0.07与STK11 P=1.00分开，不把趋势升级。
+- Omics logic: 共突变来自肿瘤基因组分层。
+- Efficacy/activity logic: adagrasib单队列反应比较不能证明治疗交互。
+- Prognosis logic: 生存结果为治疗队列内预后关联。
+- Claim/source boundaries:
+  - 不得称共突变为已验证耐药预测标志物。
+- Selected source-linked sentence records:
+  - `ccr-logic-39804166-ccr25-26-a-013`: physical page(s) 4; positive; significant; survival_prognosis; connect_to_outcome; opening.
+    - Source sentence: Patients whose tumor harbored KEAP1MUT or STK11MUT had significantly worse PFS and OS upon treatment with adagrasib [KEAP1: PFS 4.1 vs. 9.9 months, HR 2.7 (95% CI, 1.6–4.7), log-rank P < 0.01; OS 5.4 vs. 19.0 months, HR 3.6 (95% CI, 2.0–6.6), log-rank P < 0.01; STK11: PFS 4.2 vs. 11.0 months, HR 2.2 (95% CI, 1.3–3.6), log-rank P < 0.01; OS 9.8 months vs. not reached (NR), HR 2.6, (95% CI, 1.4–4.7), log-rank P < 0.01; Fig. 1A–D].
+    - PDF SHA-256: `238c89c029a713a161255a6c9bddc5f9fe03424ccbf92e6f1650239613795f03`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39804166-ccr25-26-a-014`: physical page(s) 4; mixed; mixed; null_biomarker; contrast_groups; contrast.
+    - Source sentence: Patients whose tumor harbored a KEAP1MUT showed numerically lower ORR (30% vs. 53%, chi-square P = 0.07), and there was no difference in ORR according to STK11 co-mutation status (45% vs. 45%, chi-square P = 1.00; Fig. 1E and F).
+    - PDF SHA-256: `238c89c029a713a161255a6c9bddc5f9fe03424ccbf92e6f1650239613795f03`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 39821070
+
+- Identity: Tremelimumab plus Durvalumab prior to Chemoradiotherapy in Unresectable, Locally Advanced Non-Small Cell Lung Cancer: The Induction Trial (2025); DOI 10.1158/1078-0432.ccr-24-3476.
+- Supplied PDF: not_classified_by_header; SHA-256 `5f9d04efbd88da8f05ec4f1266bcb720fdc2300a8c9d34e16364c1bc17b4da51`; 10 physical pages.
+- Focused Results pages reread: 4, 5.
+- Visual pages checked: 4, 5.
+- Result profile: positive, mixed.
+- Domains: clinical_efficacy, safety.
+- Central results:
+  - 低剂量tremelimumab队列按预设标准安全，高剂量队列不安全；部分N2/N3患者观察到纵隔降期。
+- Narrative sequence:
+  - 先以安全性决定剂量可行性，再报告探索性临床活动。
+- Negative-result handling: 高剂量毒性是研究主导结果，不被降期信号掩盖。
+- Omics logic: 无核心组学推断。
+- Efficacy/activity logic: 降期为小样本探索性活性。
+- Prognosis logic: 未成熟到预后判断。
+- Claim/source boundaries:
+  - 剂量队列很小，不能推广到其他方案或长期获益。
+- Selected source-linked sentence records:
+  - `ccr-logic-39821070-ccr25-26-a-015`: physical page(s) 4; mixed; not_applicable; safety_tolerability; state_primary_finding; opening.
+    - Source sentence: The low-dose tremelimumab cohort (I) was deemed safe, and both high-dose tremelimumab cohorts (II and III) were unsafe according to the safety criterion, as three patients developed grade ≥3 irAE in cohorts II and III.
+    - PDF SHA-256: `5f9d04efbd88da8f05ec4f1266bcb720fdc2300a8c9d34e16364c1bc17b4da51`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39821070-ccr25-26-a-016`: physical page(s) 5; positive; not_applicable; treatment_activity; quantify_effect; development.
+    - Source sentence: Eight of 11 patients (73%) with either multilevel N2 or N3 disease at baseline were downstaged to N0, N1, or single-level N2 based on pathological, radiological, and nuclear restaging (Fig. 2B; Supplementary Fig. S1).
+    - PDF SHA-256: `5f9d04efbd88da8f05ec4f1266bcb720fdc2300a8c9d34e16364c1bc17b4da51`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39836372
+
+- Identity: MAPK Pathway-Activating Alteration and Immunotherapy Efficacy in Squamous Cell Lung Carcinoma: Results from the Randomized, Prospective SQUINT Trial (2025); DOI 10.1158/1078-0432.ccr-24-2077.
+- Supplied PDF: not_classified_by_header; SHA-256 `208c2164219030d690c494474e477bbfea5fe9178ec5c5a9b4025b5b2270312d`; 10 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 5, 7.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, prognosis.
+- Central results:
+  - Patients positive for mutation and/or CNV in MAPK1/MAPK3 signaling pathway genes had significantly longer OS [16.3 months (95% CI, 13.5–30.6) vs. 10.7 months (95% CI, 6.1–13.3)
+  - P < 0.001] and PFS [6.3 months (95% CI, 4.1–10.5) vs. 4.2 months (95% CI, 3.0–8.6)
+  - P = 0.03] than individuals without any MAPK1/MAPK3 mutation or CNV (Fig. 3).
+  - As illustrated in Supplementary Fig. S13, there was no difference in the median OS between patients with versus without MAPK1/MAPK3 alterations, supporting the predictive rather than simply prognostic role of such molecular events [HR = 0.74 (95% CI, 0.43–1.27)
+  - P = 0.28].
+- Narrative sequence:
+  - 先报告分子改变与免疫治疗后生存的阳性关联，再用未接受相关治疗的外部队列检验其是否只是一般预后标志。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated、genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 作者提出预测性解释，但未提供正式治疗交互检验；不得写成已验证的疗效预测标志物。
+  - 治疗背景内分子亚组关联；不等于正式治疗交互。
+  - 对照队列阴性支持作者的预测性解释，但没有正式交互检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-39836372-b-39836372-r1`: physical page(s) 5; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Patients positive for mutation and/or CNV in MAPK1/MAPK3 signaling pathway genes had significantly longer OS [16.3 months (95% CI, 13.5–30.6) vs. 10.7 months (95% CI, 6.1–13.3); P < 0.001] and PFS [6.3 months (95% CI, 4.1–10.5) vs. 4.2 months (95% CI, 3.0–8.6); P = 0.03] than individuals without any MAPK1/MAPK3 mutation or CNV (Fig. 3).
+    - PDF SHA-256: `208c2164219030d690c494474e477bbfea5fe9178ec5c5a9b4025b5b2270312d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-39836372-b-39836372-r2`: physical page(s) 7; negative; nonsignificant; null_biomarker; limit_inference; qualification.
+    - Source sentence: As illustrated in Supplementary Fig. S13, there was no difference in the median OS between patients with versus without MAPK1/MAPK3 alterations, supporting the predictive rather than simply prognostic role of such molecular events [HR = 0.74 (95% CI, 0.43–1.27); P = 0.28].
+    - PDF SHA-256: `208c2164219030d690c494474e477bbfea5fe9178ec5c5a9b4025b5b2270312d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 39836411
+
+- Identity: In Situ RAS:RAF Binding Correlates with Response to KRASG12C Inhibitors in KRASG12C-Mutant Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-3714.
+- Supplied PDF: author_manuscript; SHA-256 `906d4aeb1ee7d47886083cbc9a82285b0b66ede112cd569c35c66fee0c80b9f6`; 29 physical pages.
+- Focused Results pages reread: 7, 8, 9, 10, 11, 12.
+- Visual pages checked: 10, 12.
+- Result profile: positive, negative, mixed.
+- Domains: proteomics, prognosis, preclinical_functional.
+- Central results:
+  - In situ RAS–RAF binding correlated with KRASG12C-inhibitor disease control and PFS, whereas an alternative EGFR–GRB2 PLA readout did not.
+- Narrative sequence:
+  - Validate the PLA assay, establish mechanistic models, connect the candidate readout to treated cases, then use an orthogonal null as specificity evidence.
+- Negative-result handling: The null EGFR–GRB2 association is used as a contrast rather than being hidden.
+- Omics logic: PLA measures protein proximity in fixed tissue; it is not equivalent to pathway flux or direct kinase activity.
+- Efficacy/activity logic: Clinical associations lack a randomized biomarker-treatment interaction test.
+- Prognosis logic: PFS associations are treatment-cohort prognostic/response associations rather than validated prediction.
+- Claim/source boundaries:
+  - Small retrospective treated cohorts and assay-specific thresholds constrain generalization.
+- Selected source-linked sentence records:
+  - `ccr-logic-39836411-c-011`: physical page(s) 10; positive; not_reported; biomarker_association; connect_to_outcome; development.
+    - Source sentence: We found that a higher panRAS–CRAF PLA level was associated with a longer PFS (Figure 4B), and patients who manifested disease control exhibited higher panRAS–CRAF PLA foci compared to those without disease control (Figure 4C).
+    - PDF SHA-256: `906d4aeb1ee7d47886083cbc9a82285b0b66ede112cd569c35c66fee0c80b9f6`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39836411-c-012`: physical page(s) 12; negative; nonsignificant; null_biomarker; report_null_result; closure.
+    - Source sentence: Consistent with our in vitro results, the quantity of EGFR–GRB2 PLA foci showed no association with the response to KRASG12Ci in these settings (Figure 5D–G).
+    - PDF SHA-256: `906d4aeb1ee7d47886083cbc9a82285b0b66ede112cd569c35c66fee0c80b9f6`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39841860
+
+- Identity: Pretargeted Trop-2 ImmunoPET for Rapid, Selective Detection of Pancreatic Tumors (2025); DOI 10.1158/1078-0432.ccr-24-3098.
+- Supplied PDF: author_manuscript; SHA-256 `63eade82c7979fe4853ec7687e8affb699011bc7159bd772a41bfa6a35bc34ab`; 17 physical pages.
+- Focused Results pages reread: 6, 7.
+- Visual pages checked: 7, 16.
+- Result profile: positive, mixed.
+- Domains: preclinical_functional, imaging.
+- Central results:
+  - 在已测试构建体中，[64Cu]Cu-Sar-Tz/TCO-Lys-Trop-2.2表现最佳；可裂解构型反而在关键时间点肿瘤靶向较差。
+- Narrative sequence:
+  - 通过构建体筛选、体内分布和失败构型形成设计迭代逻辑。
+- Negative-result handling: 未报告统计时仅称inferior，不补写显著性。
+- Omics logic: 分子成像与体内分布是前临床功能层证据。
+- Efficacy/activity logic: 不涉及治疗疗效。
+- Prognosis logic: 不涉及预后。
+- Claim/source boundaries:
+  - ‘best’只限所测试构建体；肿瘤摄取不等于临床诊断性能。
+- Selected source-linked sentence records:
+  - `ccr-logic-39841860-ccr25-26-a-017`: physical page(s) 7; positive; not_applicable; functional_perturbation; state_primary_finding; closure.
+    - Source sentence: Thus [64Cu]Cu-Sar-Tz clearly is the best pretargeting companion moiety for TCO-Lys-Trop-2.2 of the constructs tested based on highest tumor uptake and lowest off tumor uptake as well.
+    - PDF SHA-256: `63eade82c7979fe4853ec7687e8affb699011bc7159bd772a41bfa6a35bc34ab`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-39841860-ccr25-26-a-018`: physical page(s) 7; mixed; not_reported; functional_perturbation; contrast_groups; contrast.
+    - Source sentence: Previous pretargeted imaging with [64Cu]Cu-Sar-Tz to Trop-2.2-Lys-TCO yielded excellent targeting and clearance, however [64Cu]Cu-Sar-Tz imaging with TCO-SS-Trop-2.2 revealed inferior tumor targeting at 4- and 24-hours post injection (Supplemental Figure 4B).
+    - PDF SHA-256: `63eade82c7979fe4853ec7687e8affb699011bc7159bd772a41bfa6a35bc34ab`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39853318
+
+- Identity: Follow-up Analysis Enhances Understanding of Molecular Residual Disease in Localized Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-2909.
+- Supplied PDF: publisher_main_pdf; SHA-256 `3ce365040f2b48f5b03720e1d6f3dc1fcd786ad5da6d00681c0be66d064d506c`; 10 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7, 8.
+- Visual pages checked: 3, 7.
+- Result profile: positive, mixed, inconclusive.
+- Domains: liquid_biopsy, prognosis.
+- Central results:
+  - Longitudinal undetectable MRD strongly associated with longer DFS, while a matched observational comparison did not show a significant adjuvant-therapy survival difference.
+- Narrative sequence:
+  - Define longitudinal MRD states, connect them to recurrence and DFS, then test whether adjuvant therapy altered outcomes in selected groups.
+- Negative-result handling: The nonsignificant adjuvant comparison is reported with its wide confidence interval and is not called equivalence.
+- Omics logic: Personalized ctDNA detection is a genomic surrogate of residual disease and may miss isolated brain relapse.
+- Efficacy/activity logic: Propensity matching reduces measured imbalance but does not create randomized treatment evidence.
+- Prognosis logic: MRD status is prognostic; treatment benefit is not established from the null observational comparison.
+- Claim/source boundaries:
+  - Same-cohort derivation, limited events and site-specific shedding affect transportability.
+- Selected source-linked sentence records:
+  - `ccr-logic-39853318-c-013`: physical page(s) 3; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Likewise, patients with longitudinal undetectable MRD had significantly prolonged DFS compared with those with detectable MRD (HR = 0.05; 95% CI, 0.03–0.08; P < 0.001; Fig. 2D).
+    - PDF SHA-256: `3ce365040f2b48f5b03720e1d6f3dc1fcd786ad5da6d00681c0be66d064d506c`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-39853318-c-014`: physical page(s) 7; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; closure.
+    - Source sentence: The results indicated that there was no significant difference in survival between those who received adjuvant therapy and those who did not (HR = 0.69; 95% CI, 0.22–2.15; P = 0.529; Fig. 5B; Supplementary Table S7).
+    - PDF SHA-256: `3ce365040f2b48f5b03720e1d6f3dc1fcd786ad5da6d00681c0be66d064d506c`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 39879384
+
+- Identity: Targeting AXL Inhibits the Growth and Metastasis of Prostate Cancer in Bone (2025); DOI 10.1158/1078-0432.ccr-24-3028.
+- Supplied PDF: author_manuscript; SHA-256 `fea6567636d55d307db32aef251b8f59ddd9160232cda2f87f5d8158170b526c`; 26 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9.
+- Visual pages checked: 6, 8.
+- Result profile: positive, negative, mixed.
+- Domains: proteomics, preclinical_functional.
+- Central results:
+  - Both univariable and multivariable logistic regression analyses (Fig. 1F) showed that high p-AXL protein expression was significantly associated with survival outcome.
+  - However, combination therapy compared to batiraxcept alone did not show statistically significant differences in suppression of tumor growth based on bioluminescence imaging (Fig. 4A and B).
+- Narrative sequence:
+  - 患者样本的蛋白表达—结局关联之后，转入药物干预实验并报告联合治疗未显著优于单药。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于protein证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 临床相关性与前临床干预证据层不同，不能拼接成临床因果结论。
+  - 组织蛋白表达与结局相关，不证明因果。
+  - 前临床阴性比较不能写成等效。
+- Selected source-linked sentence records:
+  - `ccr-logic-39879384-b-39879384-r1`: physical page(s) 6; positive; significant; biomarker_association; connect_to_outcome; development.
+    - Source sentence: Both univariable and multivariable logistic regression analyses (Fig. 1F) showed that high p-AXL protein expression was significantly associated with survival outcome.
+    - PDF SHA-256: `fea6567636d55d307db32aef251b8f59ddd9160232cda2f87f5d8158170b526c`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39879384-b-39879384-r2`: physical page(s) 8; negative; nonsignificant; functional_perturbation; report_null_result; contrast.
+    - Source sentence: However, combination therapy compared to batiraxcept alone did not show statistically significant differences in suppression of tumor growth based on bioluminescence imaging (Fig. 4A and B).
+    - PDF SHA-256: `fea6567636d55d307db32aef251b8f59ddd9160232cda2f87f5d8158170b526c`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 39887260
+
+- Identity: Round-Robin Comparison of RET Rearrangement Detection in ctDNA: A Novel Method for Limited Clinical Samples (2025); DOI 10.1158/1078-0432.ccr-24-3747.
+- Supplied PDF: publisher_main_pdf; SHA-256 `abacdebcfa699a6b1d8078b9fcdb4a5bdfd96e7924b959e49ea110a44177be3c`; 7 physical pages.
+- Focused Results pages reread: 2, 3.
+- Visual pages checked: 3, 4.
+- Result profile: inconclusive, descriptive.
+- Domains: genomics, liquid_biopsy.
+- Central results:
+  - 三种液体检测平台的RET重排检出比例相近但分母因失败样本不同，且非盲人工复核缺乏统一阳性判定。
+- Narrative sequence:
+  - 先交代平台检出与失败分母，再用人工复核偏倚限制解释。
+- Negative-result handling: 没有阴性对照，未把未评估的特异度写成阴性结果。
+- Omics logic: ctDNA融合检测属于跨平台方法学比较。
+- Efficacy/activity logic: 不涉及治疗疗效。
+- Prognosis logic: 不涉及预后。
+- Claim/source boundaries:
+  - 检出率不是灵敏度；人工复核偏倚和标准化不足必须保留。
+- Selected source-linked sentence records:
+  - `ccr-logic-39887260-ccr25-26-a-019`: physical page(s) 3; descriptive; not_applicable; assay_concordance; quantify_effect; development.
+    - Source sentence: Guardant360 detected a RET rearrangement in 60% of cases (24/40), F1LCDx in 63.9% of cases (23/36), and ctDx-First in 67.6% of cases (25/37), with F1LCDx and ctDx-First having smaller denominators owing to failed samples [Fig. 2A (i)].
+    - PDF SHA-256: `abacdebcfa699a6b1d8078b9fcdb4a5bdfd96e7924b959e49ea110a44177be3c`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39887260-ccr25-26-a-020`: physical page(s) 3; inconclusive; not_applicable; other; limit_inference; qualification.
+    - Source sentence: However, these results need to be interpreted with caution as unblinded manual review is inherently biased with no standardization of what stipulates a positive call.
+    - PDF SHA-256: `abacdebcfa699a6b1d8078b9fcdb4a5bdfd96e7924b959e49ea110a44177be3c`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 39932457
+
+- Identity: Characterization of Plasma Cell-Free DNA Variants as of Tumor or Clonal Hematopoiesis Origin in 16,812 Advanced Cancer Patients (2025); DOI 10.1158/1078-0432.ccr-24-3335.
+- Supplied PDF: publisher_main_pdf; SHA-256 `673fef02fcf4f5915ab5d3ad250b0a6761df9788183d67fff76d28f2a605637b`; 9 physical pages.
+- Focused Results pages reread: 3.
+- Visual pages checked: 3, 4.
+- Result profile: descriptive.
+- Domains: genomics, liquid_biopsy.
+- Central results:
+  - 42.3%的患者至少有一个CH变异；在变异层面27.8%被判定为CH而非肿瘤来源。
+- Narrative sequence:
+  - 先报告患者层患病比例，再报告变异层来源重分类，强调分母切换。
+- Negative-result handling: 没有正式阴性比较。
+- Omics logic: 配对白细胞/血浆变异频率用于来源判定。
+- Efficacy/activity logic: 不涉及疗效。
+- Prognosis logic: 不涉及预后。
+- Claim/source boundaries:
+  - 不得混淆患者比例与变异比例，也不得把分类规则视为绝对真值。
+- Selected source-linked sentence records:
+  - `ccr-logic-39932457-ccr25-26-a-021`: physical page(s) 3; descriptive; not_applicable; descriptive_frequency; quantify_effect; opening.
+    - Source sentence: Across all patients, 42.3% patients presented at least one CH variant among reportable clinical genes.
+    - PDF SHA-256: `673fef02fcf4f5915ab5d3ad250b0a6761df9788183d67fff76d28f2a605637b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-39932457-ccr25-26-a-022`: physical page(s) 3; descriptive; not_applicable; descriptive_frequency; quantify_effect; development.
+    - Source sentence: Of these, 11,639 (27.8%) variants were classified as CH and not of tumor origin based on their relative buffy coat vs. plasma VF (Fig. 2).
+    - PDF SHA-256: `673fef02fcf4f5915ab5d3ad250b0a6761df9788183d67fff76d28f2a605637b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40047548
+
+- Identity: Quantitative Protein Expression of Antibody-Drug Conjugate Targets in EGFR Mutated and Wild-type Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-3347.
+- Supplied PDF: author_manuscript; SHA-256 `78f46616cce817cac3cd3cf61755212f998634c587bcba518670aa46d33a9e02`; 23 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11.
+- Visual pages checked: 10, 11.
+- Result profile: negative, mixed.
+- Domains: proteomics, prognosis.
+- Central results:
+  - ADC target proteins showed weak cross-target correlations and TROP2 expression did not clearly stratify survival.
+- Narrative sequence:
+  - Map expression by histology and genotype, quantify cross-target correlations, then test associations with TKI outcomes.
+- Negative-result handling: Small significant and nonsignificant correlations are reported side by side; null survival analyses are explicit.
+- Omics logic: IHC protein expression is direct tissue measurement but assay/scoring heterogeneity remains.
+- Efficacy/activity logic: No ADC-treated cohort was evaluated, so target abundance is not a treatment-response biomarker here.
+- Prognosis logic: Survival analyses are prognostic within treated cohorts, not predictive of ADC benefit.
+- Claim/source boundaries:
+  - Retrospective tissue availability and multiple comparisons limit clinical translation.
+- Selected source-linked sentence records:
+  - `ccr-logic-40047548-c-015`: physical page(s) 10; mixed; mixed; cross_layer_concordance; contrast_groups; development.
+    - Source sentence: In the combined population, HER2 demonstrated a weak positive correlation with TROP2 (r:0.13, p=0.0046, n=443), HER3 (r:0.18, p=0.0002, n=418), and a non-significant weak positive correlation with EGFR (r:0.12, p=0.0505, n=262).
+    - PDF SHA-256: `78f46616cce817cac3cd3cf61755212f998634c587bcba518670aa46d33a9e02`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40047548-c-016`: physical page(s) 11; negative; nonsignificant; null_biomarker; report_null_result; closure.
+    - Source sentence: No clear benefit was observed between the TROP2 expression subgroups for PFS (log-rank p=0.2508, HR=1.17, 95%CI: 0.63, 2.22) or OS (log-rank p=0.8999, HR=1.04, 95%CI: 0.54, 2.02).
+    - PDF SHA-256: `78f46616cce817cac3cd3cf61755212f998634c587bcba518670aa46d33a9e02`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40162917
+
+- Identity: Randomized Phase III Study of EGFR Tyrosine Kinase Inhibitor and Intercalated Platinum-Doublet Chemotherapy for Non-Small Cell Lung Cancer Harboring EGFR Mutation (2025); DOI 10.1158/1078-0432.ccr-24-3532.
+- Supplied PDF: publisher_main_pdf; SHA-256 `855640641c34509ed59a6cd4403590ce4d2d0ab38ddc2ea11a8670ff9cd902e2`; 10 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6.
+- Visual pages checked: 4, 6.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - 主要OS终点未证实优效，ITT中次要PFS终点有利于EGFR-TKI加交替化疗。
+- Narrative sequence:
+  - 先明确主要终点阴性，再报告次要终点效应与敏感性/亚组，而非用PFS重写试验结论。
+- Negative-result handling: OS阴性被放在叙述层级首位。
+- Omics logic: 无核心组学。
+- Efficacy/activity logic: 随机试验支持PFS效应，但总体成功解释受主要OS阴性约束。
+- Prognosis logic: OS主要终点阴性；PFS是次要终点。
+- Claim/source boundaries:
+  - 正文Results对同一PFS报P=0.0003，而Figure 3A/图注报P=0.0058（HR/CI相同）；必须显式标注，不能静默择一。
+- Selected source-linked sentence records:
+  - `ccr-logic-40162917-ccr25-26-a-023`: physical page(s) 4; negative; nonsignificant; negative_primary_endpoint; state_primary_finding; opening.
+    - Source sentence: The superiority of OS was not demonstrated in the ITT population.
+    - PDF SHA-256: `855640641c34509ed59a6cd4403590ce4d2d0ab38ddc2ea11a8670ff9cd902e2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40162917-ccr25-26-a-024`: physical page(s) 4; positive; significant; treatment_efficacy; quantify_effect; contrast.
+    - Source sentence: In the ITT population, the median PFS was 12.0 months (95% CI, 10.8–14.4) in the EGFR-TKI monotherapy group and 18.0 months (95% CI, 15.6–20.4) in the EGFR TKI plus intercalated chemotherapy group (HR = 0.762; 95% CI, 0.628–0.925; P = 0.0003; Fig. 3A).
+    - PDF SHA-256: `855640641c34509ed59a6cd4403590ce4d2d0ab38ddc2ea11a8670ff9cd902e2`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40208070
+
+- Identity: Ad-SGE-DKK3 Gene Therapy Overcomes Resistance to Immune Checkpoint Blockade in Pleural Mesothelioma (2025); DOI 10.1158/1078-0432.ccr-24-4024.
+- Supplied PDF: author_manuscript; SHA-256 `2901eb52be9132262b07e21635630793f3a4f53f977adbfe0be7db447f1391e2`; 33 physical pages.
+- Focused Results pages reread: 7, 8, 9, 10, 11, 12.
+- Visual pages checked: 9, 10, 11.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, preclinical_functional.
+- Central results:
+  - DKK3 gene therapy remodeled antitumor immunity in models and produced limited single-arm activity in 12 patients, without evidence that DKK3 directly generated neopeptide responses.
+- Narrative sequence:
+  - Move from immune and antigen-presentation experiments to a mechanistic null, then report the small clinical cohort.
+- Negative-result handling: The absence of increased neopeptide burden constrains the proposed mechanism while leaving alternative immune mechanisms open.
+- Omics logic: Multi-assay preclinical findings are integrated, but lack of DKK3-derived MHC-I peptides argues against a direct neopeptide mechanism.
+- Efficacy/activity logic: The 12-patient clinical series supports activity only and cannot demonstrate synergy with checkpoint blockade.
+- Prognosis logic: Prognosis was not a central inferential aim.
+- Claim/source boundaries:
+  - Preclinical mechanisms and human activity are distinct evidence layers and should not be collapsed.
+- Selected source-linked sentence records:
+  - `ccr-logic-40208070-c-017`: physical page(s) 9, 10; negative; not_reported; functional_perturbation; report_null_result; qualification.
+    - Source sentence: Our analysis revealed that DKK3 treatment did not result in increased neopeptide burden, nor were DKK3-related peptides presented by MHC-I molecules, indicating that DKK3 does not directly contribute to neopeptide responses (Fig. 4H, Supplementary Fig. S6 and Table S6).
+    - PDF SHA-256: `2901eb52be9132262b07e21635630793f3a4f53f977adbfe0be7db447f1391e2`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40208070-c-018`: physical page(s) 11; positive; not_applicable; treatment_activity; quantify_effect; closure.
+    - Source sentence: Among the 12 patients treated on this protocol, the ORR was 16.6% with two patients achieving a partial response (PR) (Fig. 5C, 5D, and 5E).
+    - PDF SHA-256: `2901eb52be9132262b07e21635630793f3a4f53f977adbfe0be7db447f1391e2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40247431
+
+- Identity: Factors Associated with Disease Progression after Discontinuation of Immune Checkpoint Inhibitors for Immune-Related Toxicity in Patients with Advanced Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-2990.
+- Supplied PDF: author_manuscript; SHA-256 `7f571f615fe24ff7d5f573aa0c2ecd996c96e718b24e95cfd24681db3f7fed11`; 26 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 9, 10, 23.
+- Result profile: positive, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - 更高连续TMB与停药后PFS改善相关但与OS不显著；停药前治疗时长和最佳反应在多变量模型中与停药后结局相关。
+- Narrative sequence:
+  - 从临床结局描述进入候选因素，再用终点不一致和偏倚限制解释。
+- Negative-result handling: TMB对OS的P=0.08与PFS阳性并列。
+- Omics logic: TMB为探索性基因组指标。
+- Efficacy/activity logic: 不是随机停药或治疗时长比较。
+- Prognosis logic: 关联受选择、保证时间/时间相关偏倚影响。
+- Claim/source boundaries:
+  - 不能据此规定最短治疗时长或声称因果停药策略。
+- Selected source-linked sentence records:
+  - `ccr-logic-40247431-ccr25-26-a-025`: physical page(s) 9; mixed; mixed; survival_prognosis; contrast_groups; contrast.
+    - Source sentence: A higher TMB value (as a continuous variable) was associated with a significantly improved post-discontinuation PFS (HR: 0.72, 95% CI, 0.59–0.90, P=0.003) but not OS (HR: 0.81, 95% CI, 0.65–1.02, P=0.08).
+    - PDF SHA-256: `7f571f615fe24ff7d5f573aa0c2ecd996c96e718b24e95cfd24681db3f7fed11`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40247431-ccr25-26-a-026`: physical page(s) 10; positive; significant; biomarker_association; connect_to_outcome; closure.
+    - Source sentence: Multivariable analysis confirmed treatment duration before discontinuation for immune-related toxicity and CR/PR as BOR were independently associated with improved post-discontinuation PFS and OS.
+    - PDF SHA-256: `7f571f615fe24ff7d5f573aa0c2ecd996c96e718b24e95cfd24681db3f7fed11`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40260627
+
+- Identity: Izalontamab (SI-B001), a Novel EGFRxHER3 Bispecific Antibody in Patients with Locally Advanced or Metastatic Epithelial Tumor: Results from First-in-Human Phase I/Ib Study (2025); DOI 10.1158/1078-0432.ccr-25-0206.
+- Supplied PDF: publisher_main_pdf; SHA-256 `114ab54110a26e13e9840d7127296e8e4f5591b36a94854af35a02edf75fdd2a`; 8 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6.
+- Visual pages checked: 4, 5, 6.
+- Result profile: mixed, inconclusive, descriptive.
+- Domains: proteomics, clinical_efficacy.
+- Central results:
+  - 57例可评估患者中ORR 4%、DCR 37%、中位PFS 1.9个月；各EGFR/HER3表达水平均见反应。
+- Narrative sequence:
+  - 先给总体单臂活性，再描述表达层级中未见清晰选择性。
+- Negative-result handling: ‘regardless’未附正式比较，不标成统计学不显著。
+- Omics logic: IHC表达是探索性分层。
+- Efficacy/activity logic: 仅支持有限单臂活性。
+- Prognosis logic: 无独立预后分析。
+- Claim/source boundaries:
+  - 原文DCR 21/57与同段2例PR+18例SD的算术合计不一致，保留并提示。
+- Selected source-linked sentence records:
+  - `ccr-logic-40260627-ccr25-26-a-027`: physical page(s) 4, 5; descriptive; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: Of 57 evaluable patients, the confirmed ORR was 4% (2/57), the DCR (PRs and stable disease) was 37% (21/57), and the median PFS (95% CI) was 1.9 (1.7–2.8) months (Supplementary Figs. S2 and S3).
+    - PDF SHA-256: `114ab54110a26e13e9840d7127296e8e4f5591b36a94854af35a02edf75fdd2a`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40260627-ccr25-26-a-028`: physical page(s) 6; inconclusive; not_reported; null_biomarker; qualify_uncertainty; qualification.
+    - Source sentence: Responses were observed regardless of the EGFR or HER3 expression level (Supplementary Fig. S4).
+    - PDF SHA-256: `114ab54110a26e13e9840d7127296e8e4f5591b36a94854af35a02edf75fdd2a`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40261185
+
+- Identity: ctDNA Clearance as an Early Indicator of Improved Clinical Outcomes in Advanced NSCLC Treated with TKI: Findings from an Aggregate Analysis of Eight Clinical Trials (2025); DOI 10.1158/1078-0432.ccr-24-3612.
+- Supplied PDF: publisher_main_pdf; SHA-256 `5f080a1392bfaf9703780440c4f5a296bcaa0e6aaccc191fb670fd7cdb702910`; 11 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6.
+- Visual pages checked: 4, 5.
+- Result profile: positive, negative, mixed.
+- Domains: liquid_biopsy, prognosis.
+- Central results:
+  - Across eight trials, ctDNA clearance associated with better PFS and OS, whereas first RECIST assessment showed no apparent association.
+- Narrative sequence:
+  - Define patient-level ctDNA categories, compare survival, contrast with radiographic response, and discuss surrogate limitations.
+- Negative-result handling: The RECIST null is directly contrasted with the ctDNA association without labeling trial-level surrogacy.
+- Omics logic: Aggregated genomic monitoring harmonizes patient-level signals across studies but retains assay and schedule heterogeneity.
+- Efficacy/activity logic: Clearance is associated with outcome; it does not prove that changing therapy on clearance improves efficacy.
+- Prognosis logic: The analysis supports individual-level prognostic association, not trial-level surrogate validity.
+- Claim/source boundaries:
+  - Pooling eight trials and differing sampling schedules limit causal and regulatory claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-40261185-c-019`: physical page(s) 4; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Among patients with D ctDNA before treatment, those with ctDNA clearance had improved OS and PFS compared with patients with persistent ctDNA detection (HR for OS = 2.12, P < 0.001; HR for PFS = 1.52, P = 0.002; Fig. 2A and B).
+    - PDF SHA-256: `5f080a1392bfaf9703780440c4f5a296bcaa0e6aaccc191fb670fd7cdb702910`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40261185-c-020`: physical page(s) 5; negative; nonsignificant; null_biomarker; contrast_modalities; contrast.
+    - Source sentence: In contrast to the ctDNA detection category analysis, there was not an apparent association between first RECIST and OS or PFS (HR = 1.21, P = 0.254 and HR = 0.96, P = 0.728, respectively; Fig. 3A and B).
+    - PDF SHA-256: `5f080a1392bfaf9703780440c4f5a296bcaa0e6aaccc191fb670fd7cdb702910`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40299768
+
+- Identity: Amplification of Extrachromosomal MYC Paralogs Shapes Immunosuppressive Tumor Microenvironment in Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-3399.
+- Supplied PDF: not_classified_by_header; SHA-256 `ec71c193a86866b66ca34dbedb600565cec934d6c96a3eacef27cc2715234ac8`; 14 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9, 10.
+- Visual pages checked: 8, 10.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, transcriptomics, spatial_omics, preclinical_functional.
+- Central results:
+  - ecMYC-amplified SCLC displayed proliferative, spatially immune-excluded and immunosuppressive states, while HU failed to activate antigen-presentation programs in an ecMYC-negative line.
+- Narrative sequence:
+  - Characterize ecDNA, perturb replication stress, compare cell lines, then integrate spatial and transcriptional immune evidence.
+- Negative-result handling: The cell-line-specific null is retained to show context dependence.
+- Omics logic: RNA programs, spatial protein patterns and cell-state inference are complementary but not interchangeable direct measurements.
+- Efficacy/activity logic: No clinical treatment efficacy comparison was performed.
+- Prognosis logic: Human tissue associations do not establish survival prediction.
+- Claim/source boundaries:
+  - Mechanistic claims are bounded to preclinical perturbations and associative human spatial data.
+- Selected source-linked sentence records:
+  - `ccr-logic-40299768-c-021`: physical page(s) 8; negative; nonsignificant; pathway_or_state; report_null_result; contrast.
+    - Source sentence: In contrast, no significant upregulation of antigen processing and presentation genes or immune-related pathways were observed in HU-treated SHP-77 (ecMYC− cell line; Supplementary Fig. S4F and S4G).
+    - PDF SHA-256: `ec71c193a86866b66ca34dbedb600565cec934d6c96a3eacef27cc2715234ac8`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40299768-c-022`: physical page(s) 10; positive; not_reported; pathway_or_state; integrate_evidence_layers; closure.
+    - Source sentence: These findings demonstrated that SCLC carrying highly amplified MYC paralogs exhibited increased proliferative tumor cells, spatially excluded immune cell infiltration, and stimulated the generation of negative immune regulatory markers, thus suggesting a comprehensive immunosuppressive tumor microenvironment in ecMYC+ SCLC.
+    - PDF SHA-256: `ec71c193a86866b66ca34dbedb600565cec934d6c96a3eacef27cc2715234ac8`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40310449
+
+- Identity: Liquid and Tissue Biopsies for Identifying MET Exon 14 Skipping NSCLC: Analyses from the Phase II VISION Study of Tepotinib (2025); DOI 10.1158/1078-0432.ccr-24-4097.
+- Supplied PDF: publisher_main_pdf; SHA-256 `d2e88c490d060482bcc35655f828587fbb7bd0816a1bf939fb367d8bdfb885ef`; 10 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6.
+- Visual pages checked: 5, 6.
+- Result profile: positive, descriptive.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - Overall, meaningful durable efficacy was observed in treatment-naïve and previously treated TBx-positive patients, irrespective of the LBx result.
+  - The median PFS was shorter in patients with detectable ctDNA (9.5 months
+  - 95% CI, 8.2–11.2) than in patients with undetectable ctDNA (19.4 months
+  - 95% CI, 8.2–ne
+  - Fig. 4A).
+- Narrative sequence:
+  - 先按组织/液体活检状态描述单臂疗效，再以基线ctDNA可检出性分层呈现PFS方向。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从VISION为单臂研究中的描述性亚组分析；未报告的组间检验不得补写为显著或不显著。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - VISION为单臂研究中的描述性亚组分析；未报告的组间检验不得补写为显著或不显著。
+  - 作者总结性措辞；组间正式检验未报告。
+  - 基线ctDNA可检出性可能反映肿瘤负荷；无报告P值。
+- Selected source-linked sentence records:
+  - `ccr-logic-40310449-b-40310449-r1`: physical page(s) 5; positive; not_reported; treatment_activity; state_primary_finding; opening.
+    - Source sentence: Overall, meaningful durable efficacy was observed in treatment-naïve and previously treated TBx-positive patients, irrespective of the LBx result.
+    - PDF SHA-256: `d2e88c490d060482bcc35655f828587fbb7bd0816a1bf939fb367d8bdfb885ef`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40310449-b-40310449-r2`: physical page(s) 6; positive; not_reported; survival_prognosis; contrast_groups; development.
+    - Source sentence: The median PFS was shorter in patients with detectable ctDNA (9.5 months; 95% CI, 8.2–11.2) than in patients with undetectable ctDNA (19.4 months; 95% CI, 8.2–ne; Fig. 4A).
+    - PDF SHA-256: `d2e88c490d060482bcc35655f828587fbb7bd0816a1bf939fb367d8bdfb885ef`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40343815
+
+- Identity: 68Ga-NK224 PET/CT for Noninvasive Evaluation of PD-L1 Expression and Intertumor Heterogeneity: A Translational Exploratory Study (2025); DOI 10.1158/1078-0432.ccr-25-0160.
+- Supplied PDF: not_classified_by_header; SHA-256 `71a29082de417bd69b45155b83dcf83aadd4da7bfa043324a0e421118c5b39c6`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6.
+- Visual pages checked: 6.
+- Result profile: positive, negative, mixed.
+- Domains: proteomics, other.
+- Central results:
+  - A significant correlation was identified between 68Ga-NK224 uptake and PD-L1 expression (Fig. 4B, P < 0.001).
+  - There was no significant difference in 68Ga-NK224 uptake between lung and metastatic lesions (P = 0.709).
+- Narrative sequence:
+  - 同一成像探针先报告与PD-L1表达的相关性，再报告肺与转移灶摄取无显著差异。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于protein证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 探索性转化成像研究；相关性不等于诊断准确性或临床效用已验证。
+  - 相关性不等于诊断校准或临床效用。
+  - 未显著不能解释为肺与转移灶等效。
+- Selected source-linked sentence records:
+  - `ccr-logic-40343815-b-40343815-r1`: physical page(s) 6; positive; significant; biomarker_association; connect_to_outcome; development.
+    - Source sentence: A significant correlation was identified between 68Ga-NK224 uptake and PD-L1 expression (Fig. 4B, P < 0.001).
+    - PDF SHA-256: `71a29082de417bd69b45155b83dcf83aadd4da7bfa043324a0e421118c5b39c6`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40343815-b-40343815-r2`: physical page(s) 6; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: There was no significant difference in 68Ga-NK224 uptake between lung and metastatic lesions (P = 0.709).
+    - PDF SHA-256: `71a29082de417bd69b45155b83dcf83aadd4da7bfa043324a0e421118c5b39c6`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40378060
+
+- Identity: Phase I/II Study of Tifcemalimab, an Anti-B and T-Lymphocyte Attenuator Antibody, in Combination with Toripalimab in Previously Treated Advanced Lung Cancer (2025); DOI 10.1158/1078-0432.CCR-25-0022.
+- Supplied PDF: publisher_main_pdf; SHA-256 `193099d4a3898b29e049b8caf03f33442fc0c1cf57e48829855d60546be4084f`; 9 physical pages.
+- Focused Results pages reread: 4, 5.
+- Visual pages checked: 5.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, other.
+- Central results:
+  - Fourteen patients had PR and eight patients had SD
+  - the ORR and DCR were 35.0% (95% CI, 20.6%–51.7%) and 55.0% (95% CI, 38.5%–70.7%), respectively (Fig. 2D
+  - Table 4).
+  - Further correlation analysis with PFS showed no significant improvement (Supplementary Fig. S5A and S5B).
+- Narrative sequence:
+  - 先量化单臂缓解/疾病控制，再报告探索性指标与PFS未呈显著改善。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从早期单臂研究；阴性相关分析不能写成等效或排除关联。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 早期单臂研究；阴性相关分析不能写成等效或排除关联。
+  - 单臂可评价人群的描述性活性。
+  - 需保持相关分析口径，不可写成治疗无效。
+- Selected source-linked sentence records:
+  - `ccr-logic-40378060-b-40378060-r1`: physical page(s) 5; positive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: Fourteen patients had PR and eight patients had SD; the ORR and DCR were 35.0% (95% CI, 20.6%–51.7%) and 55.0% (95% CI, 38.5%–70.7%), respectively (Fig. 2D; Table 4).
+    - PDF SHA-256: `193099d4a3898b29e049b8caf03f33442fc0c1cf57e48829855d60546be4084f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40378060-b-40378060-r2`: physical page(s) 5; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: Further correlation analysis with PFS showed no significant improvement (Supplementary Fig. S5A and S5B).
+    - PDF SHA-256: `193099d4a3898b29e049b8caf03f33442fc0c1cf57e48829855d60546be4084f`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40388547
+
+- Identity: Concordance between Tumor Tissue and Plasma DNA Genotyping in the NCI-MATCH Trial (EAY131) (2025); DOI 10.1158/1078-0432.ccr-24-3531.
+- Supplied PDF: author_manuscript; SHA-256 `7e65c9ba1fa23e5a530c6200390493b9f54dd650e4181833d3b416572f53f1db`; 25 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8.
+- Visual pages checked: 6, 7.
+- Result profile: positive.
+- Domains: integrated_omics, prognosis.
+- Central results:
+  - Maximum plasma VAF for all somatic alterations in the sample was higher in patients with concordant samples compared to patients with non-concordant samples (8.5% vs 0.6%, p<0.001).
+  - Patients for whom the aMOIs were present in tissue but not in plasma had longer PFS and OS compared to those with mutations detected in plasma (175 days vs 111 days, p=0.016 for PFS
+  - and 465 days vs 221 days, p=0.001 for OS).
+- Narrative sequence:
+  - 从组织—血浆一致性及VAF差异，推进到血浆是否检出可行动变异与生存结局的关联。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于genomic、integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - ctDNA可检出性受肿瘤负荷影响；生存差异是预后性关联，不是治疗预测效应。
+  - 一致性受ctDNA丰度影响。
+  - 血浆检出状态的预后关联，不是治疗选择效应。
+- Selected source-linked sentence records:
+  - `ccr-logic-40388547-b-40388547-r1`: physical page(s) 6; positive; significant; assay_concordance; contrast_groups; development.
+    - Source sentence: Maximum plasma VAF for all somatic alterations in the sample was higher in patients with concordant samples compared to patients with non-concordant samples (8.5% vs 0.6%, p<0.001).
+    - PDF SHA-256: `7e65c9ba1fa23e5a530c6200390493b9f54dd650e4181833d3b416572f53f1db`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40388547-b-40388547-r2`: physical page(s) 7; positive; significant; survival_prognosis; connect_to_outcome; closure.
+    - Source sentence: Patients for whom the aMOIs were present in tissue but not in plasma had longer PFS and OS compared to those with mutations detected in plasma (175 days vs 111 days, p=0.016 for PFS; and 465 days vs 221 days, p=0.001 for OS).
+    - PDF SHA-256: `7e65c9ba1fa23e5a530c6200390493b9f54dd650e4181833d3b416572f53f1db`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40465424
+
+- Identity: STX-721, a Covalent EGFR/HER2 Exon 20 Inhibitor, Utilizes Exon 20-Mutant Dynamic Protein States and Achieves Unique Mutant Selectivity Across Human Cancer Models (2025); DOI 10.1158/1078-0432.ccr-24-3833.
+- Supplied PDF: publisher_main_pdf; SHA-256 `57542a317556047f0493db87398fa2b73321699f6ccac8eb062cb0901c49ff76`; 17 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9, 10, 11, 12, 13.
+- Visual pages checked: 12, 13.
+- Result profile: positive, negative, mixed.
+- Domains: preclinical_functional.
+- Central results:
+  - STX-721 selectivity for the common ASV ex20ins mutation was lost in the presence of a co-occurring C797S mutation, consistent with its C797-covalent mechanism of action (Supplementary Fig. S4A
+  - ref. 66).
+  - Once daily dosages of 12.5 to 100 mg/kg for 21 days were well tolerated and showed antitumor activity in LU0387 tumors, with 12.5 to 25 mg/kg once daily generating partial tumor regression and 50 to 100 mg/kg once daily giving full regression (Fig. 5A
+  - Supplementary Fig. S5A and S5B
+  - Supplementary Table S6).
+- Narrative sequence:
+  - 先刻画特定耐药共突变导致选择性丧失，再用异种移植模型量化剂量相关的肿瘤回缩。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 全部为前临床选择性与药效证据，不支持临床疗效或安全性声明。
+  - 细胞模型中的机制性例外。
+  - 小鼠PDX剂量—效应，不是人体疗效/耐受性。
+- Selected source-linked sentence records:
+  - `ccr-logic-40465424-b-40465424-r1`: physical page(s) 12; negative; not_applicable; resistance_mechanism; state_exception; contrast.
+    - Source sentence: STX-721 selectivity for the common ASV ex20ins mutation was lost in the presence of a co-occurring C797S mutation, consistent with its C797-covalent mechanism of action (Supplementary Fig. S4A; ref. 66).
+    - PDF SHA-256: `57542a317556047f0493db87398fa2b73321699f6ccac8eb062cb0901c49ff76`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40465424-b-40465424-r2`: physical page(s) 13; positive; not_reported; functional_perturbation; quantify_effect; development.
+    - Source sentence: Once daily dosages of 12.5 to 100 mg/kg for 21 days were well tolerated and showed antitumor activity in LU0387 tumors, with 12.5 to 25 mg/kg once daily generating partial tumor regression and 50 to 100 mg/kg once daily giving full regression (Fig. 5A; Supplementary Fig. S5A and S5B; Supplementary Table S6).
+    - PDF SHA-256: `57542a317556047f0493db87398fa2b73321699f6ccac8eb062cb0901c49ff76`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40465842
+
+- Identity: Elevated ctDNA Tumor Fraction Is Associated with Improved Mutation Detection but Worse Overall Survival in Advanced Non-Small Cell Lung Cancer: A Lung-MAP Study (2025); DOI 10.1158/1078-0432.ccr-24-3658.
+- Supplied PDF: author_manuscript; SHA-256 `a1139c78174c16d98f0e9f9cfe11d17f6cdd4c374b6e0f80d254763a8a68f9a3`; 25 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9.
+- Visual pages checked: 8, 9.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, liquid_biopsy, prognosis.
+- Central results:
+  - Higher ctDNA tumor fraction improved plasma–tissue mutation agreement but was associated with worse overall survival.
+- Narrative sequence:
+  - Quantify concordance by alteration class and tumor fraction, then connect tumor fraction to survival.
+- Negative-result handling: Low PPA for copy-number alterations is presented explicitly and interpreted in light of tumor fraction.
+- Omics logic: Plasma–tissue concordance is conditional on shedding and alteration class.
+- Efficacy/activity logic: No treatment-response interaction was tested.
+- Prognosis logic: Tumor fraction is prognostic in this advanced NSCLC cohort.
+- Claim/source boundaries:
+  - Reference tissue timing and low tumor fraction constrain sensitivity
+  - association does not imply causality.
+- Selected source-linked sentence records:
+  - `ccr-logic-40465842-c-023`: physical page(s) 8; negative; not_applicable; assay_concordance; quantify_effect; development.
+    - Source sentence: Among CNAs, the PPA was 9% (4–14%) and among those with TF ≥1%, the PPA was 14% (6–22%).
+    - PDF SHA-256: `a1139c78174c16d98f0e9f9cfe11d17f6cdd4c374b6e0f80d254763a8a68f9a3`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40465842-c-024`: physical page(s) 9; positive; significant; survival_prognosis; connect_to_outcome; closure.
+    - Source sentence: Participants with higher tumor fraction were at over a 2-fold increased risk of death relative to those with TF < 1% (For TF 1–9.9%: HR (95% CI). 2.45 (1.66–3.61), p<0.001; for TF ≥10%: 2.75 (1.89–4.03), p<0.001) (Figure 6).
+    - PDF SHA-256: `a1139c78174c16d98f0e9f9cfe11d17f6cdd4c374b6e0f80d254763a8a68f9a3`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40499141
+
+- Identity: Preclinical Evaluation of DB-1419, a Novel Bifunctional and Bispecific Anti-B7-H3 × PD-L1 Antibody-Drug Conjugate (2025); DOI 10.1158/1078-0432.ccr-25-0634.
+- Supplied PDF: not_classified_by_header; SHA-256 `3ba4cd5e47170a4e5708791640a1ca56392880ca67fbf081c726c631ccc33480`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 5, 6, 8.
+- Result profile: positive, mixed.
+- Domains: safety, preclinical_functional.
+- Central results:
+  - DB-1419 showed context-dependent binding–cytotoxicity correlations and strong tumor-growth inhibition across preclinical models.
+- Narrative sequence:
+  - Characterize binding and internalization, relate them to cytotoxicity, then confirm antitumor activity in xenograft and PDX models.
+- Negative-result handling: A weak overall correlation is quantified rather than overstated, while receptor-specific differences are preserved.
+- Omics logic: Protein binding, cytotoxicity and in vivo response are integrated preclinical layers.
+- Efficacy/activity logic: No human efficacy data are included.
+- Prognosis logic: Prognosis was not studied.
+- Claim/source boundaries:
+  - All efficacy and mechanism claims remain preclinical and model-dependent.
+- Selected source-linked sentence records:
+  - `ccr-logic-40499141-c-025`: physical page(s) 5, 6; mixed; not_reported; biomarker_association; qualify_uncertainty; development.
+    - Source sentence: We also observed a weak correlation between DB-1419 binding activity and cytotoxicity (R = −0.2), mainly affected by binding activity to B7-H3 (R = −0.18) compared with PD-L1 (R = 0.64; Fig. 2C and D).
+    - PDF SHA-256: `3ba4cd5e47170a4e5708791640a1ca56392880ca67fbf081c726c631ccc33480`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40499141-c-026`: physical page(s) 8; positive; significant; functional_perturbation; quantify_effect; development.
+    - Source sentence: In the LD1-0034-361136 PDX model, DB-1419 resulted in significant inhibition of tumor growth at 28 days in a dose-independent manner (TGI of 6 mg/kg, 96.19%; TGI of 12 mg/kg, 97.18%; Fig. 4D and E).
+    - PDF SHA-256: `3ba4cd5e47170a4e5708791640a1ca56392880ca67fbf081c726c631ccc33480`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40552922
+
+- Identity: Combined Targeting of PD-1 and TIM-3 in Patients with Locally Advanced or Metastatic Non-Small Cell Lung Cancer: AMBER Part 2B (2025); DOI 10.1158/1078-0432.ccr-25-0806.
+- Supplied PDF: not_classified_by_header; SHA-256 `4f56f5d0b66936052dda520852f33b96b3f84a702817afa139bfa58f45149930`; 9 physical pages.
+- Focused Results pages reread: 3, 4.
+- Visual pages checked: 3, 4, 5.
+- Result profile: negative, mixed.
+- Domains: proteomics, clinical_efficacy.
+- Central results:
+  - 基线PD-L1与TIM-3无相关，但TIM-3在PR/SD患者中高于PD患者。
+- Narrative sequence:
+  - 先报告两标志物不相关，再给疾病控制分组的差异，形成负—正对照。
+- Negative-result handling: 无相关结果有明确R和P值。
+- Omics logic: IHC表达为小样本探索性测量。
+- Efficacy/activity logic: 疾病控制关联不能证明疗效预测。
+- Prognosis logic: 无长期预后结论。
+- Claim/source boundaries:
+  - 事后分组、小样本，不能视为已验证预测标志物。
+- Selected source-linked sentence records:
+  - `ccr-logic-40552922-ccr25-26-a-029`: physical page(s) 3; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: No correlation between baseline PD-L1 expression and TIM-3 expression was observed in patients with and without disease control, whether evaluated per RECIST v1.1 (R = 0.16; P = 0.37; Fig. 3A) or irRECIST (R = 0.16; P = 0.37; Fig. 3B).
+    - PDF SHA-256: `4f56f5d0b66936052dda520852f33b96b3f84a702817afa139bfa58f45149930`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40552922-ccr25-26-a-030`: physical page(s) 3, 4; mixed; mixed; biomarker_association; contrast_groups; contrast.
+    - Source sentence: Within pretreatment tumors, TIM-3 expression was similarly distributed in patients with adenocarcinoma and squamous cell carcinoma (Fig. 3C and D); however, TIM-3 expression was significantly greater for patients with a PR or SD compared with patients with progressive disease.
+    - PDF SHA-256: `4f56f5d0b66936052dda520852f33b96b3f84a702817afa139bfa58f45149930`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40553459
+
+- Identity: Multidimensional Analysis of B7 Homolog 3 RNA Expression in Small Cell Lung Cancer Molecular Subtypes (2025); DOI 10.1158/1078-0432.ccr-24-3981.
+- Supplied PDF: not_classified_by_header; SHA-256 `f402ec2a720d530a7a06fe3d071c7b30ba027e13806ee9018a332cd2851d9fd5`; 7 physical pages.
+- Focused Results pages reread: 3, 4.
+- Visual pages checked: 3, 4.
+- Result profile: negative.
+- Domains: transcriptomics, other.
+- Central results:
+  - Across the molecular subtypes, B7-H3 expression was high and consistent, with no significant differences overall or in any pairwise comparison (q > 0.05
+  - Fig. 2A).
+  - B7-H3 expression was not significantly correlated with CD8+ T cells, nonregulatory CD4+ T cells, regulatory T cells, M1 macrophages, neutrophils, NK cells, or myeloid dendritic cells (P > 0.05
+  - Supplementary Fig. S2).
+- Narrative sequence:
+  - 以跨分子亚型的整体阴性比较开场，再逐项报告与推断免疫细胞丰度均无显著相关。
+- Negative-result handling: 明确保留2条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于transcriptomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 免疫细胞来自bulk转录组去卷积而非直接细胞计数；未显著不等于无生物学关系。
+  - 多重比较后的亚型阴性结果；不证明表达完全相同。
+  - 细胞丰度来自bulk RNA去卷积，不是直接细胞测量。
+- Selected source-linked sentence records:
+  - `ccr-logic-40553459-b-40553459-r1`: physical page(s) 3; negative; nonsignificant; null_biomarker; report_null_result; development.
+    - Source sentence: Across the molecular subtypes, B7-H3 expression was high and consistent, with no significant differences overall or in any pairwise comparison (q > 0.05; Fig. 2A).
+    - PDF SHA-256: `f402ec2a720d530a7a06fe3d071c7b30ba027e13806ee9018a332cd2851d9fd5`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-40553459-b-40553459-r2`: physical page(s) 4; negative; nonsignificant; null_biomarker; report_null_result; closure.
+    - Source sentence: B7-H3 expression was not significantly correlated with CD8+ T cells, nonregulatory CD4+ T cells, regulatory T cells, M1 macrophages, neutrophils, NK cells, or myeloid dendritic cells (P > 0.05; Supplementary Fig. S2).
+    - PDF SHA-256: `f402ec2a720d530a7a06fe3d071c7b30ba027e13806ee9018a332cd2851d9fd5`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40704901
+
+- Identity: Molecular Characterization of NUT Carcinoma: A Report from the NUT Carcinoma Registry (2025); DOI 10.1158/1078-0432.ccr-25-1071.
+- Supplied PDF: author_manuscript; SHA-256 `3db22f4a9c560ee2b812ebdb6fd27d90d381012c26870125517dfa16287e4a3e`; 20 physical pages.
+- Focused Results pages reread: 6, 7, 8.
+- Visual pages checked: 7, 8, 15.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, prognosis, diagnostic_model.
+- Central results:
+  - 调整原发部位后检测状态与生存无显著关联；RNA融合检测比DNA检测更常检出NUTM1融合。
+- Narrative sequence:
+  - 登记队列先描述诊断路径，再连接生存，最后比较检测模态。
+- Negative-result handling: 宽CI的阴性生存模型不被写成等效。
+- Omics logic: RNA/DNA差异为检测率而非金标准准确性。
+- Efficacy/activity logic: 无比较治疗疗效。
+- Prognosis logic: 生存关联为登记资料，受确诊和治疗异质性影响。
+- Claim/source boundaries:
+  - 原文个别病例BRD4外显子编号及历史诊断年份出现内部差异；不得自行统一。
+- Selected source-linked sentence records:
+  - `ccr-logic-40704901-ccr25-26-a-031`: physical page(s) 7; negative; nonsignificant; survival_prognosis; report_null_result; qualification.
+    - Source sentence: After adjusting for primary tumor site (thoracic vs. non-thoracic) using a multivariable Cox regression model, the association remained non-significant (adjusted HR=1.27; 95% CI 0.53–2.76, p=0.57).
+    - PDF SHA-256: `3db22f4a9c560ee2b812ebdb6fd27d90d381012c26870125517dfa16287e4a3e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40704901-ccr25-26-a-032`: physical page(s) 7, 8; positive; significant; assay_concordance; contrast_modalities; development.
+    - Source sentence: When comparing tests performed using an assay that tests for NC-defining NUTM1 fusions, RNA fusion assays were much more likely to detect NUTM1 gene fusions than DNA assays (p<0.001, Fisher’s exact).
+    - PDF SHA-256: `3db22f4a9c560ee2b812ebdb6fd27d90d381012c26870125517dfa16287e4a3e`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 40788282
+
+- Identity: Early ctDNA Dynamics Inform First-Line Therapy in Patients with Extensive-Stage Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-25-2011.
+- Supplied PDF: author_manuscript; SHA-256 `d9291b48f844b74c1c85070adb9c2a434ccdce181d970dd0815afd0c2bb908f2`; 13 physical pages.
+- Focused Results pages reread: 5, 6.
+- Visual pages checked: 5, 6, 12.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, liquid_biopsy, clinical_efficacy, prognosis.
+- Central results:
+  - 基线cfDNA指标与靶病灶总径未见相关；C3D1达到cMR者更常维持反应且PFS更长。
+- Narrative sequence:
+  - 从基线负相关结果转到纵向分子反应的阳性结局关联。
+- Negative-result handling: 基线‘did not correlate’句未给统计量，标为未报告而非不显著。
+- Omics logic: cfDNA动态为探索性基因组生物标志物。
+- Efficacy/activity logic: 不能据此证明ctDNA指导治疗获益。
+- Prognosis logic: cMR与PFS关联不是替代终点验证。
+- Claim/source boundaries:
+  - 样本小（约27例）且为探索性。
+- Selected source-linked sentence records:
+  - `ccr-logic-40788282-ccr25-26-a-033`: physical page(s) 5; negative; not_reported; biomarker_association; report_null_result; contrast.
+    - Source sentence: Baseline cfDNA levels, maxVAF, and meanVAF did not correlate with the baseline sum of target lesions (SOTL) diameters calculated per RECIST v1.1 criteria (Supplementary Fig. S3A).
+    - PDF SHA-256: `d9291b48f844b74c1c85070adb9c2a434ccdce181d970dd0815afd0c2bb908f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40788282-ccr25-26-a-034`: physical page(s) 6; positive; not_reported; biomarker_association; connect_to_outcome; closure.
+    - Source sentence: Patients with cMR at C3D1 were more likely to maintain durable responses (>3 cycles) on maintenance and had longer PFS (Fig. 2D-F).
+    - PDF SHA-256: `d9291b48f844b74c1c85070adb9c2a434ccdce181d970dd0815afd0c2bb908f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40828417
+
+- Identity: The Activity of EGFR CAR NK and CAR T Cells against EGFR Inhibitor-Resistant NSCLC and Drug-Tolerant Persister Cells (2025); DOI 10.1158/1078-0432.ccr-25-1693.
+- Supplied PDF: author_manuscript; SHA-256 `faeb181555ad893803bce649c4f4c2a4d7c79fbeef6783967751a1551a689aee`; 37 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11, 12, 13, 14.
+- Visual pages checked: 9, 10, 28.
+- Result profile: positive, mixed.
+- Domains: preclinical_functional.
+- Central results:
+  - EGFR CAR-T在耐药细胞中仍有裂解但弱于亲本细胞，二代CAR-NK对耐药细胞裂解反而增强。
+- Narrative sequence:
+  - 通过亲本/耐药配对和CAR-T/CAR-NK平台对照构建机制差异。
+- Negative-result handling: 保留CAR-T杀伤下降这一例外。
+- Omics logic: 表达与功能均在细胞/动物层验证。
+- Efficacy/activity logic: 无患者疗效。
+- Prognosis logic: 无临床预后。
+- Claim/source boundaries:
+  - 仅前临床；不可声称人体安全性、持久性或疗效。
+- Selected source-linked sentence records:
+  - `ccr-logic-40828417-ccr25-26-a-035`: physical page(s) 9; mixed; significant; functional_perturbation; state_exception; contrast.
+    - Source sentence: 8BB3z EGFR CAR-T cells showed specific lysis activity against H1975 OR5 and OR16 cells, although the killing activity was decreased as compared to H1975 parental cells (p < 0.001 for CTB-8BB3z and p = 0.005 for PNB-8BB3z; Fig. 2A).
+    - PDF SHA-256: `faeb181555ad893803bce649c4f4c2a4d7c79fbeef6783967751a1551a689aee`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40828417-ccr25-26-a-036`: physical page(s) 10; positive; significant; functional_perturbation; contrast_groups; development.
+    - Source sentence: Second-generation EGFR CAR-NK cells exhibited significantly increased specific cell lysis against H1975 OR cells and HCC4006 OR cells compared to their respective parental cells (Fig. 2D).
+    - PDF SHA-256: `faeb181555ad893803bce649c4f4c2a4d7c79fbeef6783967751a1551a689aee`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40853904
+
+- Identity: Multiomics and Single-Cell Insights Reveal a Lysophosphatidic Acid-Mediated Resistant Mechanism to Third-generation EGFR-TKI in Non-Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-25-0993.
+- Supplied PDF: not_classified_by_header; SHA-256 `fb009024c7a6364156d82052fa5b09df94f4e6783f5f107497ae97286c3414ea`; 18 physical pages.
+- Focused Results pages reread: 12, 13, 14, 15.
+- Visual pages checked: 14, 15.
+- Result profile: positive, mixed.
+- Domains: single_cell, metabolomics, integrated_omics, prognosis, preclinical_functional.
+- Central results:
+  - An LPA-related score separated survival in training but not conventionally in testing, while single-cell pathway activity implicated a malignant-cell subset in LPA production.
+- Narrative sequence:
+  - Build the metabolic landscape, derive and test a score, then localize candidate pathways with single-cell analysis and functional follow-up.
+- Negative-result handling: The test-cohort P value is described as approaching significance, not as significant.
+- Omics logic: Single-cell pathway scores infer biosynthetic potential and do not directly measure lipid secretion.
+- Efficacy/activity logic: No randomized treatment interaction establishes predictive utility for EGFR-TKI selection.
+- Prognosis logic: The score has internal training/test prognostic evidence but no external validation.
+- Claim/source boundaries:
+  - The paper contains internal inconsistencies in reported metabolite counts/platform descriptions
+  - score and pathway claims should retain cohort and assay labels.
+- Selected source-linked sentence records:
+  - `ccr-logic-40853904-c-027`: physical page(s) 14; mixed; mixed; survival_prognosis; qualify_uncertainty; contrast.
+    - Source sentence: Kaplan–Meier survival analysis demonstrated that the high-score group had significantly improved OS in the training cohort (P = 0.0014) and approached statistical significance in the test cohort (P = 0.055; Fig. 2L).
+    - PDF SHA-256: `fb009024c7a6364156d82052fa5b09df94f4e6783f5f107497ae97286c3414ea`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40853904-c-028`: physical page(s) 15; positive; not_reported; pathway_or_state; integrate_evidence_layers; development.
+    - Source sentence: Notably, a subset of malignant epithelial cells exhibited elevated activity in glycerophospholipid biosynthesis and LPC hydrolysis pathways, suggesting their pivotal role in LPA production (Fig. 7C; Supplementary Fig. S8B).
+    - PDF SHA-256: `fb009024c7a6364156d82052fa5b09df94f4e6783f5f107497ae97286c3414ea`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40864503
+
+- Identity: First-Line MET Tyrosine Kinase Inhibitors versus Immunotherapy ± Chemotherapy for Patients with MET Exon 14 Skipping Mutant Metastatic NSCLC (2025); DOI 10.1158/1078-0432.ccr-25-1735.
+- Supplied PDF: not_classified_by_header; SHA-256 `2cd656d2434bf72d0e7775071ae755b3e5bc16fe7c9f1a1d6e0d75a82dd49efb`; 12 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7.
+- Visual pages checked: 3, 4.
+- Result profile: mixed, inconclusive.
+- Domains: clinical_efficacy.
+- Central results:
+  - At a median follow-up of 37.9 months (95% CI, 34.5–49.6), rwORR to first-line treatment was 57% with MET TKI versus 40% with ICI ± chemotherapy (OR, 1.99
+  - 95% CI, 1.05–3.80
+  - P = 0.04
+  - Fig. 2A
+  - Supplementary Table S5), whereas there was no difference in median rwPFS (8.2 months with MET TKI vs. 5.7 months with ICI ± chemotherapy
+  - HR, 0.85
+  - 95% CI, 0.59–1.22
+  - P = 0.4) or OS (19.4 months with MET TKI versus 22.1 months with ICI ± chemotherapy
+  - HR, 0.97
+  - 95% CI, 0.65–1.45
+  - P = 0.9
+  - Fig. 2B and C).
+  - A numerically longer OS was observed with ICI ± chemotherapy compared with MET TKI, although this did not reach statistical significance (43.8 vs. 15.8 months
+  - HR, 0.52
+  - 95% CI, 0.26–1.04
+  - P = 0.07
+  - Fig. 3A–C).
+- Narrative sequence:
+  - 整体队列同时呈现ORR阳性差异与PFS/OS阴性结果，随后对一个探索性亚组用“numerically longer…did not reach significance”降级。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从回顾性、非随机治疗选择；亚组方向性结果不是治疗交互证据。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 回顾性、非随机治疗选择；亚组方向性结果不是治疗交互证据。
+  - 回顾性非随机比较；ORR阳性与时间终点阴性必须同时保留。
+  - 探索性亚组且无交互检验；方向性不等于获益。
+- Selected source-linked sentence records:
+  - `ccr-logic-40864503-b-40864503-r1`: physical page(s) 3; mixed; mixed; treatment_efficacy; contrast_groups; development.
+    - Source sentence: At a median follow-up of 37.9 months (95% CI, 34.5–49.6), rwORR to first-line treatment was 57% with MET TKI versus 40% with ICI ± chemotherapy (OR, 1.99; 95% CI, 1.05–3.80; P = 0.04; Fig. 2A; Supplementary Table S5), whereas there was no difference in median rwPFS (8.2 months with MET TKI vs. 5.7 months with ICI ± chemotherapy; HR, 0.85; 95% CI, 0.59–1.22; P = 0.4) or OS (19.4 months with MET TKI versus 22.1 months with ICI ± chemotherapy; HR, 0.97; 95% CI, 0.65–1.45; P = 0.9; Fig. 2B and C).
+    - PDF SHA-256: `2cd656d2434bf72d0e7775071ae755b3e5bc16fe7c9f1a1d6e0d75a82dd49efb`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40864503-b-40864503-r2`: physical page(s) 4; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: A numerically longer OS was observed with ICI ± chemotherapy compared with MET TKI, although this did not reach statistical significance (43.8 vs. 15.8 months; HR, 0.52; 95% CI, 0.26–1.04; P = 0.07; Fig. 3A–C).
+    - PDF SHA-256: `2cd656d2434bf72d0e7775071ae755b3e5bc16fe7c9f1a1d6e0d75a82dd49efb`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40880183
+
+- Identity: Phase I Dose-Escalation Trial Combining Olaparib and Thoracic Radiotherapy in Extensive-Stage Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-24-4342.
+- Supplied PDF: author_manuscript; SHA-256 `2f77a2ccf539d6677e12db2da7bf8945b36b7cb60f9cc02ed328d268de3b46de`; 23 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8.
+- Visual pages checked: 7, 8, 16.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, clinical_efficacy, safety.
+- Central results:
+  - 确定olaparib+胸部放疗的MTD/RP2D，但未找到显著基因组结局相关物。
+- Narrative sequence:
+  - 剂量递增先解决可行剂量，再报告探索性活性与阴性生物标志物。
+- Negative-result handling: 阴性面板分析明确为未识别，而非不存在。
+- Omics logic: MSK-IMPACT面板范围限制探索。
+- Efficacy/activity logic: 剂量确定不等于疗效确证。
+- Prognosis logic: 无可靠预后标志物。
+- Claim/source boundaries:
+  - 局部复发率按放疗起点与诊断起点口径不同；需带时间起点。
+- Selected source-linked sentence records:
+  - `ccr-logic-40880183-ccr25-26-a-037`: physical page(s) 7; positive; not_applicable; safety_tolerability; state_primary_finding; closure.
+    - Source sentence: Therefore, the final MTD of olaparib + TRT (30 Gy in 10 fractions), defining our recommended phase II dose for further exploration, was determined to be 200mg twice daily.
+    - PDF SHA-256: `2f77a2ccf539d6677e12db2da7bf8945b36b7cb60f9cc02ed328d268de3b46de`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40880183-ccr25-26-a-038`: physical page(s) 7, 8; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: We explored biomarkers such as somatic mutation patterns in this patient dataset as potential correlates of clinical outcomes or PARP sensitization but were unable to identify any significant correlates using MSK IMPACT, our institutional NGS panel mutational analysis.
+    - PDF SHA-256: `2f77a2ccf539d6677e12db2da7bf8945b36b7cb60f9cc02ed328d268de3b46de`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 40928991
+
+- Identity: Tarlatamab Exposure-Efficacy and Exposure-Safety Relationships to Inform Dose Selection in Patients with Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-25-2134.
+- Supplied PDF: not_classified_by_header; SHA-256 `ec06e8aa9f4092d2cfcae78feb39e172127855f1fa4f50c837b72933f77538ea`; 10 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9.
+- Visual pages checked: 6, 7.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis, pk_pd.
+- Central results:
+  - Tarlatamab exposure associated with lower PFS/OS hazards over part of the exposure range, with no additional benefit beyond the exposure corresponding to the selected dose.
+- Narrative sequence:
+  - Model exposure, relate it to efficacy and safety, then identify a plateau that supports dose selection.
+- Negative-result handling: The plateau is stated explicitly to avoid implying monotonic benefit at higher exposure.
+- Omics logic: Exposure metrics are model-derived PK quantities.
+- Efficacy/activity logic: Exposure–efficacy association is not randomized dose causality.
+- Prognosis logic: PFS/OS relationships are exposure associations conditioned on treated patients.
+- Claim/source boundaries:
+  - Confounding by disease status and dose modifications can affect exposure–response.
+- Selected source-linked sentence records:
+  - `ccr-logic-40928991-c-029`: physical page(s) 6; negative; not_reported; pk_pd_exposure; report_null_result; closure.
+    - Source sentence: At exposures beyond the second quartile (corresponding to 10 mg every 2 weeks), no further increase in PFS or OS was observed.
+    - PDF SHA-256: `ec06e8aa9f4092d2cfcae78feb39e172127855f1fa4f50c837b72933f77538ea`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40928991-c-030`: physical page(s) 6; positive; not_reported; pk_pd_exposure; quantify_effect; development.
+    - Source sentence: These analyses suggest that a one-unit increase in Cavg, first cycle in logarithmic scale is associated with approximately 8% and 15% reduction in the hazard for PFS and OS events, respectively.
+    - PDF SHA-256: `ec06e8aa9f4092d2cfcae78feb39e172127855f1fa4f50c837b72933f77538ea`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40932352
+
+- Identity: Effects of CVA21, an Oncolytic Virus, in Combination with Pembrolizumab on Immunogenicity and the Tumor Microenvironment in Advanced NSCLC: A Phase I/II Trial (2025); DOI 10.1158/1078-0432.ccr-25-1449.
+- Supplied PDF: not_classified_by_header; SHA-256 `ee1d338d81dc97b8a055efd733c1e4f63e0768cf9b5b922d6e0de81cd3462c93`; 11 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7, 8.
+- Visual pages checked: 4, 8.
+- Result profile: positive, descriptive.
+- Domains: integrated_omics, clinical_efficacy.
+- Central results:
+  - The ORR was 20% with two patients who had prior anti–PD-1 ICI resistance (patients 7 and 12) exhibiting partial response (PR) to combination treatment CVA21/pembrolizumab (Fig. 1C and D).
+  - All patients in the gPFS group exhibited an increase in CD8+ T-cell abundance following treatment, a pattern not consistently observed in the loPFS group in which only two patients (patients 5 and 18) showed evidence of increased CD8+ T-cell abundance (Fig. 4F).
+- Narrative sequence:
+  - 先报告单臂组合治疗的缓解活性，再将空间免疫变化与按PFS后验划分的组别并列。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于spatial证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从样本量小且gPFS/loPFS为探索性分组；空间蛋白变化不构成疗效因果机制证明。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 样本量小且gPFS/loPFS为探索性分组；空间蛋白变化不构成疗效因果机制证明。
+  - 小型单臂试验的观察性活性。
+  - 后验PFS分组、小样本空间蛋白结果；不构成机制因果。
+- Selected source-linked sentence records:
+  - `ccr-logic-40932352-b-40932352-r1`: physical page(s) 4; positive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: The ORR was 20% with two patients who had prior anti–PD-1 ICI resistance (patients 7 and 12) exhibiting partial response (PR) to combination treatment CVA21/pembrolizumab (Fig. 1C and D).
+    - PDF SHA-256: `ee1d338d81dc97b8a055efd733c1e4f63e0768cf9b5b922d6e0de81cd3462c93`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-40932352-b-40932352-r2`: physical page(s) 8; descriptive; not_reported; pathway_or_state; contrast_groups; development.
+    - Source sentence: All patients in the gPFS group exhibited an increase in CD8+ T-cell abundance following treatment, a pattern not consistently observed in the loPFS group in which only two patients (patients 5 and 18) showed evidence of increased CD8+ T-cell abundance (Fig. 4F).
+    - PDF SHA-256: `ee1d338d81dc97b8a055efd733c1e4f63e0768cf9b5b922d6e0de81cd3462c93`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41026583
+
+- Identity: D3-GPC2-Directed CAR T Cells Are Safe and Efficacious in Preclinical Models of Neuroblastoma and Small Cell Lung Cancer (2025); DOI 10.1158/1078-0432.ccr-25-0089.
+- Supplied PDF: author_manuscript; SHA-256 `1b801192d1d1b8a3749a7c341bc177743a0db66a9cdb670995d1cf2c3e5967b9`; 36 physical pages.
+- Focused Results pages reread: 10, 11, 12, 13, 14, 15.
+- Visual pages checked: 13, 15.
+- Result profile: positive, negative, mixed.
+- Domains: preclinical_functional.
+- Central results:
+  - While positive control D3-GPC2 CAR-BBz CAR T cell and isogenic SH-SY5Y-GPC2 cell co-incubations were positive for both IFN-γ and granzyme B, there were no significant number of spots observed for either IFN-γ (Figure 4A) or granzyme B (Figure 4B) following co-culture of any human primary cell line with D3-GPC2 CAR-BBz T cells.
+  - Finally, we showed that, similar to neuroblastoma xenografts, D3-GPC2 CAR T cells induce SCLC xenograft tumor regression and significantly prolong murine survival without any signs of toxicity.
+- Narrative sequence:
+  - 先以正常原代细胞共培养的阴性反应支持特异性，再以SCLC异种移植的回缩和生存延长支持功能活性。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 前临床模型中的安全性与有效性不能改写为人体安全或临床疗效。
+  - 原代细胞共培养阴性仅支持前临床特异性。
+  - 异种移植模型，不得改写为人体疗效或安全。
+- Selected source-linked sentence records:
+  - `ccr-logic-41026583-b-41026583-r1`: physical page(s) 13; negative; nonsignificant; functional_perturbation; contrast_groups; contrast.
+    - Source sentence: While positive control D3-GPC2 CAR-BBz CAR T cell and isogenic SH-SY5Y-GPC2 cell co-incubations were positive for both IFN-γ and granzyme B, there were no significant number of spots observed for either IFN-γ (Figure 4A) or granzyme B (Figure 4B) following co-culture of any human primary cell line with D3-GPC2 CAR-BBz T cells.
+    - PDF SHA-256: `1b801192d1d1b8a3749a7c341bc177743a0db66a9cdb670995d1cf2c3e5967b9`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41026583-b-41026583-r2`: physical page(s) 15; positive; significant; functional_perturbation; connect_to_outcome; closure.
+    - Source sentence: Finally, we showed that, similar to neuroblastoma xenografts, D3-GPC2 CAR T cells induce SCLC xenograft tumor regression and significantly prolong murine survival without any signs of toxicity.
+    - PDF SHA-256: `1b801192d1d1b8a3749a7c341bc177743a0db66a9cdb670995d1cf2c3e5967b9`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41065506
+
+- Identity: LRP1b Loss Predicts Sensitivity to Immunotherapy in Patients with NSCLC: An Analysis of the Phase III CheckMate-026 Randomized Trial (2025); DOI 10.1158/1078-0432.ccr-25-0952.
+- Supplied PDF: author_manuscript; SHA-256 `a7c7f0c2c6f99bc2fd2f37f7b0dea1b1b44efbbbed12fb9eda524402cb6eacdb`; 24 physical pages.
+- Focused Results pages reread: 7, 8, 9.
+- Visual pages checked: 8, 9, 21.
+- Result profile: mixed.
+- Domains: genomics, clinical_efficacy, prognosis.
+- Central results:
+  - LRP1B关联随TMB层级和治疗臂不同：部分亚组PFS/ORR阳性，低TMB或化疗臂内关联阴性。
+- Narrative sequence:
+  - 先做TMB分层生存，再做调整后反应分析，最后强调臂内关联不等于交互。
+- Negative-result handling: 保留低TMB和化疗臂内阴性结果。
+- Omics logic: 肿瘤基因组变异与TMB共同分层。
+- Efficacy/activity logic: 随机来源数据但未正式证明生物标志物×治疗交互。
+- Prognosis logic: 主要是治疗队列内结局关联。
+- Claim/source boundaries:
+  - 不同臂显著性不同不能替代交互检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-41065506-ccr25-26-a-039`: physical page(s) 8; mixed; mixed; subgroup_signal; contrast_groups; contrast.
+    - Source sentence: Progression-free survival was longer in tumors with TMB ≥ 10 and any alteration in LRP1b compared to LRP1b wild type (HR: 0.79, 95%CI: 0.67–0.93, p < 0.005), while there was no difference in PFS for pathogenic/likely pathogenic LRP1b altered NSCLC when TMB < 10 (HR 1.06, 95%CI: 0.75–1.5 p=0.73) (Supplementary Figure 1).
+    - PDF SHA-256: `a7c7f0c2c6f99bc2fd2f37f7b0dea1b1b44efbbbed12fb9eda524402cb6eacdb`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41065506-ccr25-26-a-040`: physical page(s) 9; mixed; mixed; biomarker_association; contrast_groups; contrast.
+    - Source sentence: The association between LRP1b alterations and ORR remained significant after adjustment for TMB with an odds ratio for ORR of 3.25 (95%CI 1.53–6.90 p=0.002) for nivolumab for LRP1b altered vs wild type NSCLC, while no association was found for chemotherapy response based on LRP1b status adjusting for TMB (p=0.11) (Figure 5a).
+    - PDF SHA-256: `a7c7f0c2c6f99bc2fd2f37f7b0dea1b1b44efbbbed12fb9eda524402cb6eacdb`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 40833744
+
+- Identity: The Impact of Concordance between Liquid and Tissue Biopsy for Actionable Mutations: Insights from the ROME Trial (2026); DOI 10.1158/1078-0432.ccr-25-0430.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `9cfaa4454cacbfe52b1986cf386a2da557d87b28840b51a533d6c5c4e957d272`; 11 physical pages.
+- Focused Results pages reread: 4, 5.
+- Visual pages checked: 4, 7.
+- Result profile: mixed, descriptive.
+- Domains: genomics, liquid_biopsy, clinical_efficacy, prognosis.
+- Central results:
+  - 组织和液体活检的一致率约49%，两者各有独有可行动变异；一致亚组中PFS较优而OS区间跨1。
+- Narrative sequence:
+  - 先呈现双样本互补性，再在探索亚组连接分子肿瘤板决策与结局。
+- Negative-result handling: OS与PFS证据强度分开呈现。
+- Omics logic: 液体/组织比较受平台和肿瘤分数影响。
+- Efficacy/activity logic: 探索性事后亚组不支持整体比较疗效。
+- Prognosis logic: 生存结果不能解释为活检模态导致。
+- Claim/source boundaries:
+  - 按检测一致性形成的亚组具有选择性和后随机化风险。
+- Selected source-linked sentence records:
+  - `ccr-logic-40833744-ccr25-26-a-041`: physical page(s) 4; mixed; mixed; subgroup_signal; quantify_effect; contrast.
+    - Source sentence: In the TT arm, the median OS was 10.89 versus 7.70 months in the SoC arm [HR = 0.76; 95% confidence interval (CI), 0.53–1.09; Fig. 2A], and the median PFS was 4.90 versus 2.80 months (HR = 0.56; 95% CI, 0.41–0.77; Fig. 2B), respectively.
+    - PDF SHA-256: `9cfaa4454cacbfe52b1986cf386a2da557d87b28840b51a533d6c5c4e957d272`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-40833744-ccr25-26-a-042`: physical page(s) 4; descriptive; not_applicable; assay_concordance; contrast_modalities; opening.
+    - Source sentence: The overall concordance rate between tissue and liquid biopsies in MTB-indicated alterations was 49.2% (197 patients, T + L group), with actionable alterations found exclusively in tissue biopsies in 34.8% of cases (139 patients, T group) and exclusively in liquid biopsies in 16.0% (64 patients, L group).
+    - PDF SHA-256: `9cfaa4454cacbfe52b1986cf386a2da557d87b28840b51a533d6c5c4e957d272`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41252574
+
+- Identity: Cergutuzumab Amunaleukin in Combination with Atezolizumab in Patients with Carcinoembryonic Antigen-Positive Advanced/Metastatic Solid Tumors (2026); DOI 10.1158/1078-0432.ccr-25-2440.
+- Supplied PDF: not_classified_by_header; SHA-256 `b10dcb1f18900dcc57fc156636e4d75572461e63f2b323682a9763cfb84b426f`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 6, 8.
+- Result profile: negative, mixed.
+- Domains: proteomics, clinical_efficacy, pk_pd.
+- Central results:
+  - The combination showed little marked clinical benefit in several small tumor cohorts but induced NK/CD8 T-cell increases without CD4/Treg changes.
+- Narrative sequence:
+  - Describe safety and PK, report tumor-specific activity, then connect peripheral immune pharmacodynamics to treatment.
+- Negative-result handling: Limited activity is stated directly; selective immune changes preserve null components.
+- Omics logic: Peripheral blood cell changes do not establish intratumoral immune activation.
+- Efficacy/activity logic: Early-phase single-arm cohorts cannot establish comparative benefit.
+- Prognosis logic: Survival estimates are descriptive and cohort-specific.
+- Claim/source boundaries:
+  - Small heterogeneous tumor cohorts and immunogenicity limit broad efficacy claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-41252574-c-031`: physical page(s) 6; negative; not_reported; treatment_activity; qualify_uncertainty; development.
+    - Source sentence: The combination of atezolizumab with CA did not seem to provide marked benefit for patients with colorectal cancer (n = 14; median PFS: 2.4 months; 95% CI, 1.9–5.8) or other cancer types (n = 5; median PFS: 1.7 months; 95% CI, 1.6–NA; Fig. 1; Supplementary Fig. S2).
+    - PDF SHA-256: `b10dcb1f18900dcc57fc156636e4d75572461e63f2b323682a9763cfb84b426f`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41252574-c-032`: physical page(s) 8; mixed; mixed; differential_feature; contrast_groups; development.
+    - Source sentence: In peripheral blood, treatment with CA plus atezolizumab induced significant increases in NK and CD8+ T-cell numbers, whereas there were no significant changes in CD4+ T-cell numbers, including Tregs (Fig. 3A).
+    - PDF SHA-256: `b10dcb1f18900dcc57fc156636e4d75572461e63f2b323682a9763cfb84b426f`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41378983
+
+- Identity: Efficacy and CNS Toxicity of Nivolumab and Ipilimumab in Rare Cancer Brain Metastases: A Multicenter Basket Trial Analysis (NCI/SWOG S1609) (2026); DOI 10.1158/1078-0432.ccr-25-2900.
+- Supplied PDF: not_classified_by_header; SHA-256 `b244855ca3eecba87cf8b74885e4367a350f60c9e0c70a382eeab746be83a756`; 6 physical pages.
+- Focused Results pages reread: 2, 3.
+- Visual pages checked: 3, 4.
+- Result profile: negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - Brain metastasis status was not significantly associated with PFS, and no intracranial responses occurred although half achieved intracranial stable disease.
+- Narrative sequence:
+  - Compare patients with and without brain metastases, then describe the small evaluable intracranial cohort.
+- Negative-result handling: The paper pairs a formal survival null with a bounded stable-disease observation.
+- Omics logic: No omics analysis was central.
+- Efficacy/activity logic: Stable disease without responses is activity evidence, not proof of efficacy.
+- Prognosis logic: The adjusted PFS null does not establish equivalence.
+- Claim/source boundaries:
+  - Small heterogeneous basket subgroups and limited intracranial evaluability create wide uncertainty.
+- Selected source-linked sentence records:
+  - `ccr-logic-41378983-c-033`: physical page(s) 3; negative; nonsignificant; subgroup_signal; report_null_result; development.
+    - Source sentence: There was no statistically significant difference in PFS between patients with and without BM in the univariate analysis [hazard ratio (HR), 1.22; 95% confidence interval (CI), 0.77–1.93; P = 0.39] or after adjustment for age, sex, performance status, race, ethnicity, and histology (HR: 1.29; 95% CI, 0.81–2.07; P = 0.28; Fig. 1A; Table 3).
+    - PDF SHA-256: `b244855ca3eecba87cf8b74885e4367a350f60c9e0c70a382eeab746be83a756`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41378983-c-034`: physical page(s) 3; mixed; not_applicable; treatment_activity; state_exception; closure.
+    - Source sentence: Although no intracranial responses were observed, six (50%) patients achieved stable intracranial disease.
+    - PDF SHA-256: `b244855ca3eecba87cf8b74885e4367a350f60c9e0c70a382eeab746be83a756`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41400436
+
+- Identity: Broad Utility of Ultrasensitive Analysis of ctDNA Dynamics across Solid Tumors Treated with Immunotherapy (2026); DOI 10.1158/1078-0432.ccr-25-2312.
+- Supplied PDF: not_classified_by_header; SHA-256 `d848d2481ed65b85c750971adeab057b3dd41c20c37d0bdf61f77383f6aeca85`; 17 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 6, 9.
+- Result profile: positive, mixed.
+- Domains: liquid_biopsy, clinical_efficacy, prognosis.
+- Central results:
+  - Ultrasensitive ctDNA molecular response associated with improved PFS, OS and response
+  - a peri-progression decrease replicated directionally but not significantly in validation.
+- Narrative sequence:
+  - Define ctDNA response, connect it to outcomes, validate prospectively, then explore dynamics around unconfirmed progression.
+- Negative-result handling: The validation P value of 0.07 is reported as numerical rather than significant.
+- Omics logic: ctDNA dynamics are a genomic monitoring measure and depend on shedding and assay sensitivity.
+- Efficacy/activity logic: Associations do not establish benefit from continuing treatment beyond progression.
+- Prognosis logic: ctDNA response is prognostic in treated cohorts.
+- Claim/source boundaries:
+  - Selected evaluable patients and an internally printed invalid confidence interval require cautious use
+  - the conflicting CI is not used in templates.
+- Selected source-linked sentence records:
+  - `ccr-logic-41400436-c-035`: physical page(s) 6; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Our results show that patients who attained ctDNA-mR had significantly increased PFS (non-ctDNA-mR HR = 2.69; log-rank P = 7.52 × 10−6) and OS (non-ctDNA-mR HR = 2.23; log-rank P = 4.83 × 10−4; Fig. 2A–D) and higher OR than patients who did not (24.24%, 8/33 patients vs. 1.10%, 1/91 patients, respectively).
+    - PDF SHA-256: `d848d2481ed65b85c750971adeab057b3dd41c20c37d0bdf61f77383f6aeca85`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41400436-c-036`: physical page(s) 9; mixed; mixed; subgroup_signal; qualify_uncertainty; closure.
+    - Source sentence: In this study, we demonstrate that any ctDNA decrease immediately prior to iuPD was associated with improved survival from the iuPD timepoint in the primary cohort (1-year survival of 80% vs. 39% in the decreasing vs. increasing ctDNA group; Fig. 7C; Log-rank P = 0.02) and numerically superior in the validation cohort (67% 1-year survival vs. 16% in the decreasing vs. increasing ctDNA group; Fig. 7D; log-rank P = 0.07).
+    - PDF SHA-256: `d848d2481ed65b85c750971adeab057b3dd41c20c37d0bdf61f77383f6aeca85`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41403154
+
+- Identity: Germline Pathogenic Variant Prediction Model for Tumor-Only Sequencing Based on Japanese Clinicogenomic Database (2026); DOI 10.1158/1078-0432.ccr-25-2985.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `a712f731cdfc755daa01db84f7db7e94b482a51f2778ffa43aafa27084659d16`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 6, 7, 9.
+- Result profile: positive, mixed.
+- Domains: genomics, diagnostic_model.
+- Central results:
+  - 列线图与机器学习模型在发现和验证数据中AUC较高，优于ESMO标准。
+- Narrative sequence:
+  - 从特征构建到内部评估、独立队列验证和决策曲线，再与指南标准比较。
+- Negative-result handling: 没有把未测得的真实胚系状态写成阴性。
+- Omics logic: 肿瘤面板特征用于胚系来源分诊。
+- Efficacy/activity logic: 无治疗疗效。
+- Prognosis logic: 无预后。
+- Claim/source boundaries:
+  - 验证队列VAF缺失并固定/推定；模型不能替代正常组织确证。
+- Selected source-linked sentence records:
+  - `ccr-logic-41403154-ccr25-26-a-043`: physical page(s) 6; positive; not_applicable; model_performance; quantify_effect; development.
+    - Source sentence: The AUC of the ROC curves for the nomogram, LightGBM, and random forest models were 0.96, 0.97, and 0.96, respectively, all demonstrating high predictive performance.
+    - PDF SHA-256: `a712f731cdfc755daa01db84f7db7e94b482a51f2778ffa43aafa27084659d16`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41403154-ccr25-26-a-044`: physical page(s) 7; mixed; significant; model_performance; contrast_modalities; contrast.
+    - Source sentence: Although the Nomogram, LightGBM, and random forest models demonstrated comparable predictive performance, the ESMO criteria showed significantly lower performance (P < 0.001).
+    - PDF SHA-256: `a712f731cdfc755daa01db84f7db7e94b482a51f2778ffa43aafa27084659d16`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41417462
+
+- Identity: Molecular and Clinical Characteristics of Patients with Non-Small Cell Lung Cancer Harboring KRAS G12V Mutations (2026); DOI 10.1158/1078-0432.ccr-25-2581.
+- Supplied PDF: not_classified_by_header; SHA-256 `3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556`; 10 physical pages.
+- Focused Results pages reread: 4, 5, 6.
+- Visual pages checked: 4, 5, 6, 7.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, clinical_efficacy, prognosis.
+- Central results:
+  - 常见共突变与rwOS无显著差异；真实世界一线治疗组间ORR不同。
+- Narrative sequence:
+  - 先描述KRAS G12V分子/临床图谱，再探索非随机治疗组反应与生存。
+- Negative-result handling: 共突变rwOS阴性明确保留。
+- Omics logic: 共突变用于临床分层但不支持机制。
+- Efficacy/activity logic: 组间基线不平衡，不能作因果比较疗效。
+- Prognosis logic: rwOS关联不显著。
+- Claim/source boundaries:
+  - 观察性、非随机、治疗选择偏倚明显；文内个别结局方向表述需谨慎。
+- Selected source-linked sentence records:
+  - `ccr-logic-41417462-ccr25-26-a-045`: physical page(s) 4; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: No significant difference in rwOS was observed comparing TP53 versus wild-type (WT) TP53, KEAP1 versus WT KEAP1, and STK11 versus WT STK11 (Supplementary Fig. S2B–S2E).
+    - PDF SHA-256: `3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41417462-ccr25-26-a-046`: physical page(s) 5; positive; significant; treatment_activity; contrast_groups; development.
+    - Source sentence: In the CTX group, the ORR was 21% and significantly lower than that in the CTX–ICB group (ORR 44.4%) or the ICB group (ORR 68.6%; P ≤ 0.005).
+    - PDF SHA-256: `3532ee70eef471e66046f91cdccae0621581006f8941e502f5a3d124a93f9556`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41511400
+
+- Identity: TAPISTRY: A Phase II Study of Atezolizumab in Patients with Tumor Mutational Burden–High Tumors (2026); DOI 10.1158/1078-0432.CCR-25-3336.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `632732e99f0cd6c0a759dd0b343a2788c0ede6bfb8e759404cca09668bf2d2fe`; 9 physical pages.
+- Focused Results pages reread: 4, 5.
+- Visual pages checked: 4.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy.
+- Central results:
+  - After a median follow-up of 9.8 months, IRC-assessed ORR in patients with TMB ≥16 mut/Mb (primary endpoint) using the enrollment assay (n = 112) was 22.3% (95% CI, 15–31.2
+  - Table 2).
+  - An ORR of 0% was reported in patients with breast (n = 11) and hepatobiliary (n = 9) cancer (Table 3).
+- Narrative sequence:
+  - 先给出全肿瘤TMB高人群的主要终点ORR，再如实列出特定瘤种0%缓解。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从肿瘤泛癌种单臂研究；0%是观察到的比例，不是经检验的无效结论。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 肿瘤泛癌种单臂研究；0%是观察到的比例，不是经检验的无效结论。
+  - 单臂主要终点估计，不是对照性疗效。
+  - 0%为小亚组观察值，未作正式无效检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-41511400-b-41511400-r1`: physical page(s) 4; positive; not_reported; treatment_activity; state_primary_finding; opening.
+    - Source sentence: After a median follow-up of 9.8 months, IRC-assessed ORR in patients with TMB ≥16 mut/Mb (primary endpoint) using the enrollment assay (n = 112) was 22.3% (95% CI, 15–31.2; Table 2).
+    - PDF SHA-256: `632732e99f0cd6c0a759dd0b343a2788c0ede6bfb8e759404cca09668bf2d2fe`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41511400-b-41511400-r2`: physical page(s) 4; negative; not_reported; subgroup_signal; state_exception; contrast.
+    - Source sentence: An ORR of 0% was reported in patients with breast (n = 11) and hepatobiliary (n = 9) cancer (Table 3).
+    - PDF SHA-256: `632732e99f0cd6c0a759dd0b343a2788c0ede6bfb8e759404cca09668bf2d2fe`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41537692
+
+- Identity: Minimal Residual Disease Enhances Prognostic Stratification beyond Pathologic Response in Resectable Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-2958.
+- Supplied PDF: not_classified_by_header; SHA-256 `a4ebfbd8f9ac55bf5faa983cc81c3fb6996fa65578010624e99305cb9e1e61ad`; 8 physical pages.
+- Focused Results pages reread: 3.
+- Visual pages checked: 3.
+- Result profile: positive.
+- Domains: prognosis.
+- Central results:
+  - Detection of MRD at any time point (either after surgery or during adjuvant treatment/observation) was significantly associated with inferior EFS and OS, with hazard ratios (HR) of 10.2 (95% CI, 3.7–28.3) for EFS and 10 (95% CI, 2–49.9) for OS (Fig. 2).
+  - When restricting the analysis to MRD-negative cases with at least two consecutive MRD-negative plasma samples (n = 25), we found that all MRD-negative patients were alive at the data cutoff [HR: not estimable (NE), P < 0.001], with only one relapse reported (HR: 41.6
+  - 95% CI, 5–348.8
+  - Fig. 3).
+- Narrative sequence:
+  - 从任一时点MRD阳性与EFS/OS的强关联，推进到连续MRD阴性者的极少事件与不可估HR。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 观察性预后分层；宽置信区间和不可估终点必须保留，不得写成疗效预测。
+  - 预后关联且区间很宽；不预测特定治疗获益。
+  - 事件极少；不可估HR和极宽区间须保留。
+- Selected source-linked sentence records:
+  - `ccr-logic-41537692-b-41537692-r1`: physical page(s) 3; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Detection of MRD at any time point (either after surgery or during adjuvant treatment/observation) was significantly associated with inferior EFS and OS, with hazard ratios (HR) of 10.2 (95% CI, 3.7–28.3) for EFS and 10 (95% CI, 2–49.9) for OS (Fig. 2).
+    - PDF SHA-256: `a4ebfbd8f9ac55bf5faa983cc81c3fb6996fa65578010624e99305cb9e1e61ad`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41537692-b-41537692-r2`: physical page(s) 3; positive; significant; survival_prognosis; quantify_effect; qualification.
+    - Source sentence: When restricting the analysis to MRD-negative cases with at least two consecutive MRD-negative plasma samples (n = 25), we found that all MRD-negative patients were alive at the data cutoff [HR: not estimable (NE), P < 0.001], with only one relapse reported (HR: 41.6; 95% CI, 5–348.8; Fig. 3).
+    - PDF SHA-256: `a4ebfbd8f9ac55bf5faa983cc81c3fb6996fa65578010624e99305cb9e1e61ad`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41537704
+
+- Identity: Landscape of Genomic Mechanisms of Resistance to Selective RET Inhibitors in RET-Altered Solid Tumors: Analysis of the RETgistry Global Consortium (2026); DOI 10.1158/1078-0432.ccr-25-4382.
+- Supplied PDF: author_manuscript; SHA-256 `bfbfba3545e7b853aecf493f8b6d841c12e06e1862a78140a7f0624cfe5ba50f`; 26 physical pages.
+- Focused Results pages reread: 5, 6, 7.
+- Visual pages checked: 6, 7.
+- Result profile: positive, descriptive.
+- Domains: integrated_omics, preclinical_functional.
+- Central results:
+  - Paired pre-/post-SRI sample analysis indicated that 72 (72.7%) post-SRI samples harbored acquired genomic alterations, comprising on-target RET mutations in 2 (2.0%) biopsies, both on-target RET mutations and off-target alterations in 10 (10.1%) biopsies, and off-target alterations alone in 60 (60.6%) biopsies (Figure 3B, Supplementary Table 2).
+  - MET alterations were enriched in post-SRI versus pre-SRI tissue biopsies among patients with lung and thyroid cancer collectively (17.6% vs 2.0%, p=0.022) and in the subgroup with lung cancer (19.1% vs 2.1%, p=0.022, Figure 5C).
+- Narrative sequence:
+  - 先枚举治疗后检出的在靶/旁路改变，再用配对前后样本检验MET改变富集。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 耐药后取样存在选择；只有配对证据才可支持“获得性”，不能把所有治疗后改变都称为新生耐药机制。
+  - “获得性”限定于配对前后样本分析。
+  - 治疗后选择样本中的富集，不证明每个改变均由药物诱导。
+- Selected source-linked sentence records:
+  - `ccr-logic-41537704-b-41537704-r1`: physical page(s) 6; descriptive; not_reported; resistance_mechanism; quantify_effect; development.
+    - Source sentence: Paired pre-/post-SRI sample analysis indicated that 72 (72.7%) post-SRI samples harbored acquired genomic alterations, comprising on-target RET mutations in 2 (2.0%) biopsies, both on-target RET mutations and off-target alterations in 10 (10.1%) biopsies, and off-target alterations alone in 60 (60.6%) biopsies (Figure 3B, Supplementary Table 2).
+    - PDF SHA-256: `bfbfba3545e7b853aecf493f8b6d841c12e06e1862a78140a7f0624cfe5ba50f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41537704-b-41537704-r2`: physical page(s) 7; positive; significant; differential_feature; contrast_groups; development.
+    - Source sentence: MET alterations were enriched in post-SRI versus pre-SRI tissue biopsies among patients with lung and thyroid cancer collectively (17.6% vs 2.0%, p=0.022) and in the subgroup with lung cancer (19.1% vs 2.1%, p=0.022, Figure 5C).
+    - PDF SHA-256: `bfbfba3545e7b853aecf493f8b6d841c12e06e1862a78140a7f0624cfe5ba50f`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41543339
+
+- Identity: RRAS and RRAS2 Mutations Are Recurrent Oncogenic Drivers in Lung Cancer and Are Sensitive to the Pan-RAS Inhibitor RMC-6236 (2026); DOI 10.1158/1078-0432.ccr-25-2734.
+- Supplied PDF: author_manuscript; SHA-256 `45204c45a69ae68b0638491874ccacdb46d8901b041bb75aa34aea43c950f805`; 28 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11, 12, 13.
+- Visual pages checked: 9, 13.
+- Result profile: mixed, inconclusive, descriptive.
+- Domains: genomics, preclinical_functional.
+- Central results:
+  - RRAS/RRAS2 hotspot mutations were rare recurrent NSCLC drivers, with preclinical pan-RAS sensitivity but an ERK-phosphorylation reduction that narrowly missed significance.
+- Narrative sequence:
+  - Establish prevalence and clonality, test transforming function, then evaluate pharmacologic response in vitro and in vivo.
+- Negative-result handling: A near-threshold nonsignificant phospho-ERK result is explicitly qualified.
+- Omics logic: Patient genomics establishes rarity; functional models support mechanism but are not clinical response evidence.
+- Efficacy/activity logic: Drug sensitivity remains preclinical.
+- Prognosis logic: No human prognostic association was established.
+- Claim/source boundaries:
+  - The manuscript appears to duplicate RRASQ87L where context suggests a possible variant-label typo
+  - preserve the source wording and flag it.
+- Selected source-linked sentence records:
+  - `ccr-logic-41543339-c-037`: physical page(s) 9; descriptive; not_applicable; descriptive_frequency; quantify_effect; opening.
+    - Source sentence: Taken together, the two dominant hotspot mutations, RRAS p.Q87L and RRAS2 p.Q72L, were detected in 0.45% of patients with NSCLC (38/8,488).
+    - PDF SHA-256: `45204c45a69ae68b0638491874ccacdb46d8901b041bb75aa34aea43c950f805`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41543339-c-038`: physical page(s) 13; inconclusive; nonsignificant; functional_perturbation; qualify_uncertainty; contrast.
+    - Source sentence: Although ERK 1/2 phosphorylation was diminished by 58.3 ± 3.4% this was not statistically significant (p=0.055) (Figure 4C).
+    - PDF SHA-256: `45204c45a69ae68b0638491874ccacdb46d8901b041bb75aa34aea43c950f805`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41556942
+
+- Identity: Crizotinib in Patients with Tumors with MET Amplification or Exon 14 Deletion: Results from the NCI-MATCH ECOG-ACRIN Trial Subprotocols C1 and C2 (2026); DOI 10.1158/1078-0432.ccr-25-1247.
+- Supplied PDF: author_manuscript; SHA-256 `09fb3bd89d04ddfd8f3472f521119f54f94eb0172f145af120107cff5ee56f6b`; 21 physical pages.
+- Focused Results pages reread: 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy.
+- Central results:
+  - The ORR was 14% (4/28, 90% CI: 5.0%–29.8%) (Figure 1)
+  - the null hypothesis of response rate not exceeding 5% was rejected at the 1-sided 0.05 significance level (P=0.049), thus meeting the primary endpoint.
+  - Since the null hypothesis of response rate not exceeding 5% could not be rejected at the one-sided 0.05 significance level (P=0.15), subprotocol C2 did not meet its primary endpoint.
+- Narrative sequence:
+  - 用完全平行的主要终点句式，对照C1达到预设阈值与C2未达到阈值。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从必须区分观察到相同ORR与统计决策不同；未达主要终点不等于药物绝对无活性。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 必须区分观察到相同ORR与统计决策不同；未达主要终点不等于药物绝对无活性。
+  - 按预设单臂阈值达到主要终点；不等于随机对照获益。
+  - 未达主要终点不等于排除任何临床活性。
+- Selected source-linked sentence records:
+  - `ccr-logic-41556942-b-41556942-r1`: physical page(s) 7; positive; significant; treatment_activity; state_primary_finding; development.
+    - Source sentence: The ORR was 14% (4/28, 90% CI: 5.0%–29.8%) (Figure 1); the null hypothesis of response rate not exceeding 5% was rejected at the 1-sided 0.05 significance level (P=0.049), thus meeting the primary endpoint.
+    - PDF SHA-256: `09fb3bd89d04ddfd8f3472f521119f54f94eb0172f145af120107cff5ee56f6b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41556942-b-41556942-r2`: physical page(s) 8; negative; nonsignificant; negative_primary_endpoint; report_null_result; contrast.
+    - Source sentence: Since the null hypothesis of response rate not exceeding 5% could not be rejected at the one-sided 0.05 significance level (P=0.15), subprotocol C2 did not meet its primary endpoint.
+    - PDF SHA-256: `09fb3bd89d04ddfd8f3472f521119f54f94eb0172f145af120107cff5ee56f6b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41563386
+
+- Identity: Camonsertib, an ATRi, in Combination with Low-Dose Gemcitabine in Solid Tumors with DNA Damage Response Aberrations: Preclinical and Phase Ib Results (2026); DOI 10.1158/1078-0432.CCR-25-2240.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `14c637b3c4955099d238af9ed4f300ff869c04c827cdf4c2912c7cd94e0eb75e`; 13 physical pages.
+- Focused Results pages reread: 5, 6.
+- Visual pages checked: 5, 6.
+- Result profile: positive, mixed, inconclusive.
+- Domains: clinical_efficacy, preclinical_functional.
+- Central results:
+  - The ORR (RECIST or CA-125) was 11.9% (8/67
+  - Supplementary Table S6).
+  - Whether the reversion was present but undetectable prior to starting treatment or arose in response to the combination therapy cannot be determined.
+- Narrative sequence:
+  - 先描述早期试验总体缓解率，再以单患者纵向ctDNA中耐药回复突变的来源不确定性收束。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从Phase Ib探索性证据；单患者时间序列不能区分基线低频克隆与治疗诱导。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - Phase Ib探索性证据；单患者时间序列不能区分基线低频克隆与治疗诱导。
+  - Phase Ib混合反应标准的描述性ORR。
+  - 单患者纵向观察无法区分检出限与真正获得性。
+- Selected source-linked sentence records:
+  - `ccr-logic-41563386-b-41563386-r1`: physical page(s) 5; positive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: The ORR (RECIST or CA-125) was 11.9% (8/67; Supplementary Table S6).
+    - PDF SHA-256: `14c637b3c4955099d238af9ed4f300ff869c04c827cdf4c2912c7cd94e0eb75e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41563386-b-41563386-r2`: physical page(s) 6; inconclusive; not_applicable; resistance_mechanism; limit_inference; closure.
+    - Source sentence: Whether the reversion was present but undetectable prior to starting treatment or arose in response to the combination therapy cannot be determined.
+    - PDF SHA-256: `14c637b3c4955099d238af9ed4f300ff869c04c827cdf4c2912c7cd94e0eb75e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41587109
+
+- Identity: FDA Approval Summary: Tarlatamab for the Treatment of Extensive-Stage Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-2287.
+- Supplied PDF: author_manuscript; SHA-256 `9b72e0427f0104845a88825ed201d6329d771c82dfa0590ab4c55797cc8f06c0`; 11 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 5, 6.
+- Result profile: positive, mixed, inconclusive.
+- Domains: clinical_efficacy.
+- Central results:
+  - Tarlatamab produced a confirmed 40% ORR with durable responses supporting accelerated approval, while apparent platinum-sensitivity subgroup differences had overlapping confidence intervals.
+- Narrative sequence:
+  - Summarize pivotal efficacy and safety, then qualify subgroup patterns and state the confirmatory requirement.
+- Negative-result handling: Overlapping confidence intervals are used to reject overinterpretation of subgroup point estimates.
+- Omics logic: No omics layer was central beyond target expression context.
+- Efficacy/activity logic: Single-arm ORR and DOR support clinical activity and accelerated approval, not comparative efficacy.
+- Prognosis logic: Survival benefit was not established.
+- Claim/source boundaries:
+  - Regulatory conclusion is conditional on confirmatory evidence and does not validate subgroup heterogeneity.
+- Selected source-linked sentence records:
+  - `ccr-logic-41587109-c-039`: physical page(s) 5; positive; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: The confirmed ORR by BICR was 40% (95% CI: 31%, 51%) with a median DOR of 9.7 months (range 2.7, 20.7+) (Table 3).
+    - PDF SHA-256: `9b72e0427f0104845a88825ed201d6329d771c82dfa0590ab4c55797cc8f06c0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41587109-c-040`: physical page(s) 6; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: While the ORR point estimates differ between these subgroups, the 95% confidence intervals overlap, and, given the known mechanism of action of tarlatamab in activating and redirecting T cells to target DLL3-expressing tumor cells, FDA considers that a true difference in efficacy of tarlatamab based on platinum sensitivity status is unlikely.
+    - PDF SHA-256: `9b72e0427f0104845a88825ed201d6329d771c82dfa0590ab4c55797cc8f06c0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41591979
+
+- Identity: Epigenetic Instability-Based Metrics in Cell-Free DNA for Early Cancer Detection (2026); DOI 10.1158/1078-0432.ccr-25-3384.
+- Supplied PDF: not_classified_by_header; SHA-256 `960d70597757aec5fa91c6a290abc8d7eda2e90b1275dbf4c295cd6619345630`; 12 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 8, 9.
+- Result profile: positive, mixed, inconclusive.
+- Domains: genomics, diagnostic_model.
+- Central results:
+  - Interestingly, although VarCGI is elevated for later-stage cancers, it did not pass the P value cutoff (Supplementary Fig. S5A).
+  - Furthermore, the LUAD samples were distinguished with an AUC of 0.96 and approximately 81% sensitivity at 95% specificity using VarRead measurements across the B-269 CGI (Fig. 6C, classification task: healthy vs. LUAD).
+- Narrative sequence:
+  - 先报告分期相关指标未通过预设P值阈值，再报告肺腺癌分类器在特定操作点的AUC与敏感度。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 分类性能来自研究数据集；不等同于前瞻性筛查效能或临床净获益。
+  - 方向性升高但未越过阈值，不能写成显著。
+  - 数据集内分类性能，不是前瞻性筛查验证。
+- Selected source-linked sentence records:
+  - `ccr-logic-41591979-b-41591979-r1`: physical page(s) 8; inconclusive; nonsignificant; null_biomarker; qualify_uncertainty; qualification.
+    - Source sentence: Interestingly, although VarCGI is elevated for later-stage cancers, it did not pass the P value cutoff (Supplementary Fig. S5A).
+    - PDF SHA-256: `960d70597757aec5fa91c6a290abc8d7eda2e90b1275dbf4c295cd6619345630`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41591979-b-41591979-r2`: physical page(s) 9; positive; not_reported; diagnostic_performance; quantify_effect; development.
+    - Source sentence: Furthermore, the LUAD samples were distinguished with an AUC of 0.96 and approximately 81% sensitivity at 95% specificity using VarRead measurements across the B-269 CGI (Fig. 6C, classification task: healthy vs. LUAD).
+    - PDF SHA-256: `960d70597757aec5fa91c6a290abc8d7eda2e90b1275dbf4c295cd6619345630`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41649868
+
+- Identity: JIN-A02, a Mutant-Selective Fourth-Generation EGFR Inhibitor, Overcomes C797S-Mediated Resistance and Demonstrates Intracranial Activity in NSCLC (2026); DOI 10.1158/1078-0432.ccr-25-3720.
+- Supplied PDF: not_classified_by_header; SHA-256 `3c58386c56034027dd51929869c48790f4e8cb013ad0f5d09079235138d07456`; 11 physical pages.
+- Focused Results pages reread: 4, 5, 6.
+- Visual pages checked: 5, 6, 7.
+- Result profile: positive, mixed.
+- Domains: liquid_biopsy, clinical_efficacy, preclinical_functional.
+- Central results:
+  - 新型EGFR抑制剂在耐药异种移植模型抑制生长，早期患者中ctDNA下降可与影像PD并存。
+- Narrative sequence:
+  - 由体外抑制到体内模型，再以极早期临床和分子动态作有限转化连接。
+- Negative-result handling: PD患者ctDNA下降被作为反例，避免把ctDNA单向解释为反应。
+- Omics logic: ctDNA仅为少数患者的探索性动态。
+- Efficacy/activity logic: 临床部分为早期、小样本活性信号。
+- Prognosis logic: 无成熟预后。
+- Claim/source boundaries:
+  - 前临床疗效与人类个案不能合并成确证临床效果。
+- Selected source-linked sentence records:
+  - `ccr-logic-41649868-ccr25-26-a-047`: physical page(s) 5; positive; significant; functional_perturbation; quantify_effect; development.
+    - Source sentence: Quantitative analysis confirmed significant inhibition of tumor growth by JIN-A02 compared with vehicle and osimertinib (25 mg/kg; Fig. 2B).
+    - PDF SHA-256: `3c58386c56034027dd51929869c48790f4e8cb013ad0f5d09079235138d07456`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41649868-ccr25-26-a-048`: physical page(s) 6; mixed; not_applicable; biomarker_association; state_exception; qualification.
+    - Source sentence: Within the same cohort, two PD patients also demonstrated reductions in EGFR-mutant ctDNA; however, both individuals carried baseline TP53 co-mutations (variant allele frequency of 12.63% and 3.84%, respectively; Supplementary Fig. S5).
+    - PDF SHA-256: `3c58386c56034027dd51929869c48790f4e8cb013ad0f5d09079235138d07456`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41671081
+
+- Identity: Subcutaneously Administered Tislelizumab in Locally Advanced or Metastatic Non-Small Cell Lung Cancer: Pharmacokinetics and Safety Results from the BGB-A317-103 Phase I Study (2026); DOI 10.1158/1078-0432.ccr-25-2173.
+- Supplied PDF: not_classified_by_header; SHA-256 `e0141d0bf0c989e342ae743ff63937d442aefd05c0466e8785569603c2772f49`; 8 physical pages.
+- Focused Results pages reread: 4, 5, 6.
+- Visual pages checked: 4, 5.
+- Result profile: mixed, inconclusive, descriptive.
+- Domains: clinical_efficacy, prognosis, safety, pk_pd.
+- Central results:
+  - Subcutaneous tislelizumab showed high estimated bioavailability and acceptable safety, while efficacy follow-up was too immature to estimate median PFS.
+- Narrative sequence:
+  - Report PK by injection site, summarize safety and immunogenicity, then cautiously describe preliminary activity.
+- Negative-result handling: One PFS event and non-estimable confidence bounds are used to signal immaturity.
+- Omics logic: Bioavailability derives from preliminary population PK modeling.
+- Efficacy/activity logic: Phase I uncontrolled activity is descriptive.
+- Prognosis logic: PFS cannot be interpreted prognostically with one event.
+- Claim/source boundaries:
+  - Small dose cohorts and immature follow-up preclude efficacy conclusions.
+- Selected source-linked sentence records:
+  - `ccr-logic-41671081-c-041`: physical page(s) 4; descriptive; not_applicable; pk_pd_exposure; quantify_effect; development.
+    - Source sentence: Preliminary PopPK modeling estimated bioavailability of 85.6% (relative standard error 4%) for subcutaneous injection in the thigh and 72.4% (relative standard error 6.2%) for subcutaneous injection in the abdomen.
+    - PDF SHA-256: `e0141d0bf0c989e342ae743ff63937d442aefd05c0466e8785569603c2772f49`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41671081-c-042`: physical page(s) 4; inconclusive; not_applicable; treatment_activity; qualify_uncertainty; closure.
+    - Source sentence: With only one PFS event observed among 18 evaluable patients, the median PFS was not reached [95% CI, not estimable (NE)–NE].
+    - PDF SHA-256: `e0141d0bf0c989e342ae743ff63937d442aefd05c0466e8785569603c2772f49`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41701940
+
+- Identity: Safety, Pharmacokinetics, Pharmacodynamics, and Preliminary Efficacy from a First-in-Human Study of Volrustomig, a Novel PD-1/CTLA-4 Bispecific Antibody (2026); DOI 10.1158/1078-0432.ccr-25-3447.
+- Supplied PDF: not_classified_by_header; SHA-256 `57cfb38e803b39a56f674994b339ce26dfb36cb570e5f66eee743da611af544e`; 15 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9, 10.
+- Visual pages checked: 10.
+- Result profile: positive.
+- Domains: integrated_omics, clinical_efficacy.
+- Central results:
+  - This was evidenced by increases in T-cell infiltration (CD8+, 2.3-fold, P = 0.04) and proliferation (CD8+Ki67+, 2.1-fold, P = 0.04), enhanced T-cell cytotoxicity and activation as indicated by granzyme B expression (2.2-fold, P = 0.01), and enhanced effector T-cell and IFNγ gene signatures (≥2-fold increase, P < 0.01
+  - Fig. 2A and B).
+  - The ORR was 19.8% (95% CI 12–29.8
+  - Table 3
+  - data in individual dose-exploration cohorts shown in Supplementary Table S3).
+- Narrative sequence:
+  - 先以配对药效学生物标志物量化免疫激活，再报告剂量探索总体ORR。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从首次人体、剂量探索和单臂设计；只能称初步临床活性。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 首次人体、剂量探索和单臂设计；只能称初步临床活性。
+  - 配对药效学变化支持靶向效应，不证明其介导临床缓解。
+  - 首次人体单臂剂量探索的初步活性。
+- Selected source-linked sentence records:
+  - `ccr-logic-41701940-b-41701940-r1`: physical page(s) 10; positive; significant; pathway_or_state; integrate_evidence_layers; development.
+    - Source sentence: This was evidenced by increases in T-cell infiltration (CD8+, 2.3-fold, P = 0.04) and proliferation (CD8+Ki67+, 2.1-fold, P = 0.04), enhanced T-cell cytotoxicity and activation as indicated by granzyme B expression (2.2-fold, P = 0.01), and enhanced effector T-cell and IFNγ gene signatures (≥2-fold increase, P < 0.01; Fig. 2A and B).
+    - PDF SHA-256: `57cfb38e803b39a56f674994b339ce26dfb36cb570e5f66eee743da611af544e`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41701940-b-41701940-r2`: physical page(s) 10; positive; not_reported; treatment_activity; quantify_effect; closure.
+    - Source sentence: The ORR was 19.8% (95% CI 12–29.8; Table 3; data in individual dose-exploration cohorts shown in Supplementary Table S3).
+    - PDF SHA-256: `57cfb38e803b39a56f674994b339ce26dfb36cb570e5f66eee743da611af544e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41779007
+
+- Identity: Association of Blood Levels of Forever Plastics with Lung Cancer Mortality among Ever Smokers in the Prostate, Lung, Colorectal, and Ovarian (PLCO) Cohort Study (2026); DOI 10.1158/1078-0432.ccr-25-3846.
+- Supplied PDF: author_manuscript; SHA-256 `abfd3ae200ba390a738ca9f2caa7f7104c606eb223e908657bcebfb0909f2378`; 19 physical pages.
+- Focused Results pages reread: 5, 6, 7.
+- Visual pages checked: 5, 7.
+- Result profile: positive, negative, mixed.
+- Domains: metabolomics, prognosis.
+- Central results:
+  - Time-dependent analyses revealed non-significant associations (p>0.05) between individual plastic chemicals and risk of lung cancer (Table 2).
+  - Cumulative incidence curves based on PFAP quantiles in the entire PLCO specimen set further demonstrated increasing lung cancer mortality risk across ascending risk strata (modified χ2 test, p < 0.001) (Figure 2
+  - Figure S3).
+- Narrative sequence:
+  - 先报告单个塑料化学物与肺癌风险的时间依赖分析均未显著，再报告综合风险评分与死亡风险分层。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于metabolomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 观察性代谢/暴露关联，不能推断因果；复合评分阳性不反转单个暴露的阴性结果。
+  - 多种单项暴露均未显著，不等于证明零风险。
+  - 观察性复合评分与死亡风险关联，不可写成因果。
+- Selected source-linked sentence records:
+  - `ccr-logic-41779007-b-41779007-r1`: physical page(s) 5; negative; nonsignificant; biomarker_association; report_null_result; contrast.
+    - Source sentence: Time-dependent analyses revealed non-significant associations (p>0.05) between individual plastic chemicals and risk of lung cancer (Table 2).
+    - PDF SHA-256: `abfd3ae200ba390a738ca9f2caa7f7104c606eb223e908657bcebfb0909f2378`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41779007-b-41779007-r2`: physical page(s) 7; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Cumulative incidence curves based on PFAP quantiles in the entire PLCO specimen set further demonstrated increasing lung cancer mortality risk across ascending risk strata (modified χ2 test, p < 0.001) (Figure 2; Figure S3).
+    - PDF SHA-256: `abfd3ae200ba390a738ca9f2caa7f7104c606eb223e908657bcebfb0909f2378`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41784525
+
+- Identity: Locus-Specific Human Endogenous Retrovirus ERVK18 Expression Indicates an Inflamed Microenvironment and Favorable Immunotherapy Outcome in Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-3302.
+- Supplied PDF: not_classified_by_header; SHA-256 `a1a7f53151e17fcf45be6984758f0c00db737c19852a235f69bd1c527ec4085d`; 16 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10, 11, 12.
+- Visual pages checked: 9, 12.
+- Result profile: positive, mixed.
+- Domains: integrated_omics, clinical_efficacy, other.
+- Central results:
+  - Most immune cell types exhibited elevated abundance in the ERVK18-high group, particularly CD8+ T cells (Wilcoxon rank-sum test, P = 5.3 × 10−9) and cytotoxic lymphocytes (Wilcoxon rank-sum test, P = 1.6 × 10−15), whereas neutrophil levels showed no significance (Wilcoxon rank-sum test, P = 0.11
+  - Fig. 3A).
+  - Among all 135 ERVK18-high patients in the IMpower133 cohort, patients who received atezolizumab plus carboplatin and etoposide (CE) demonstrated a significant prolonged OS compared with patients who only received placebo plus CE (HR = 1.75 for placebo + CE vs. atezolizumab + CE, 95% CI, 1.18–2.59
+  - P = 0.00555), as the median OS increased from 9.8 months (95% CI, 8.4–11.6) to 15.9 months (95% CI, 11.9–18.2
+  - Fig. 5D).
+- Narrative sequence:
+  - 先在bulk表达推断中同时报告多种免疫细胞富集与中性粒细胞阴性结果，再报告随机试验内标志物高亚组的OS差异。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于transcriptomic、integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 免疫丰度为计算推断；亚组内治疗比较缺少正式交互检验，不能称验证性预测标志物。
+  - bulk表达推断的细胞丰度；同时保留阳性与阴性细胞类型。
+  - 随机试验内标志物高亚组；无正式交互检验，不能定论预测性。
+- Selected source-linked sentence records:
+  - `ccr-logic-41784525-b-41784525-r1`: physical page(s) 9; mixed; mixed; pathway_or_state; contrast_groups; development.
+    - Source sentence: Most immune cell types exhibited elevated abundance in the ERVK18-high group, particularly CD8+ T cells (Wilcoxon rank-sum test, P = 5.3 × 10−9) and cytotoxic lymphocytes (Wilcoxon rank-sum test, P = 1.6 × 10−15), whereas neutrophil levels showed no significance (Wilcoxon rank-sum test, P = 0.11; Fig. 3A).
+    - PDF SHA-256: `a1a7f53151e17fcf45be6984758f0c00db737c19852a235f69bd1c527ec4085d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41784525-b-41784525-r2`: physical page(s) 12; positive; significant; subgroup_signal; connect_to_outcome; closure.
+    - Source sentence: Among all 135 ERVK18-high patients in the IMpower133 cohort, patients who received atezolizumab plus carboplatin and etoposide (CE) demonstrated a significant prolonged OS compared with patients who only received placebo plus CE (HR = 1.75 for placebo + CE vs. atezolizumab + CE, 95% CI, 1.18–2.59; P = 0.00555), as the median OS increased from 9.8 months (95% CI, 8.4–11.6) to 15.9 months (95% CI, 11.9–18.2; Fig. 5D).
+    - PDF SHA-256: `a1a7f53151e17fcf45be6984758f0c00db737c19852a235f69bd1c527ec4085d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41790029
+
+- Identity: Genomic Profiling of Epidermal Growth Factor Receptor Mutation-Positive Non-Small Cell Lung Cancer after Progression on First-line Osimertinib: Phase II ORCHARD Study (2026); DOI 10.1158/1078-0432.ccr-25-4540.
+- Supplied PDF: not_classified_by_header; SHA-256 `a2d0e5b81aff98db74418e096d51448714df3668bd578d01e4f14936579b88d5`; 11 physical pages.
+- Focused Results pages reread: 2, 3, 4, 5.
+- Visual pages checked: 4, 5.
+- Result profile: negative, descriptive.
+- Domains: integrated_omics, other.
+- Central results:
+  - Using tissue NGS alone or plasma NGS alone, 25% and 27% of samples, respectively, had multiple resistance mechanisms identified, which increased to 46% when combining tissue and plasma NGS.
+  - NGS of plasma samples with low EGFR variant allele frequency (VAF
+  - <5%) did not detect MET amplifications that were detected in tissue [1 vs. 14 samples, respectively
+  - overall percent agreement (OPA), 85%
+  - positive predictive value (PPV), 0%
+  - and negative predictive value (NPV), 85%
+  - Fig. 2D and Supplementary Table S3].
+- Narrative sequence:
+  - 先显示组织和血浆联合检测增加多重耐药机制检出，再说明低VAF血浆对组织MET扩增的漏检。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 进展后横断面样本并非全部有配对基线；不得把检出的机制一律称为获得性。
+  - 联合检测提高检出，不等于每个机制均为获得性。
+  - 低ctDNA情境下的组织—血浆差异；不等于血浆检测普遍无效。
+- Selected source-linked sentence records:
+  - `ccr-logic-41790029-b-41790029-r1`: physical page(s) 4; descriptive; not_reported; assay_concordance; contrast_modalities; development.
+    - Source sentence: Using tissue NGS alone or plasma NGS alone, 25% and 27% of samples, respectively, had multiple resistance mechanisms identified, which increased to 46% when combining tissue and plasma NGS.
+    - PDF SHA-256: `a2d0e5b81aff98db74418e096d51448714df3668bd578d01e4f14936579b88d5`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41790029-b-41790029-r2`: physical page(s) 5; negative; not_reported; assay_concordance; contrast_modalities; qualification.
+    - Source sentence: NGS of plasma samples with low EGFR variant allele frequency (VAF; <5%) did not detect MET amplifications that were detected in tissue [1 vs. 14 samples, respectively; overall percent agreement (OPA), 85%; positive predictive value (PPV), 0%; and negative predictive value (NPV), 85%; Fig. 2D and Supplementary Table S3].
+    - PDF SHA-256: `a2d0e5b81aff98db74418e096d51448714df3668bd578d01e4f14936579b88d5`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41801128
+
+- Identity: Patient-Reported Outcomes in FLAURA2: Osimertinib with or without Chemotherapy in Patients with Previously Untreated EGFR-Mutated Advanced Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-3431.
+- Supplied PDF: not_classified_by_header; SHA-256 `fbf72b6e41019b99e57a5f2df5bd8a5c118cb6ae7f426de4c3b00f9f34ffd076`; 13 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: mixed, inconclusive, descriptive.
+- Domains: clinical_efficacy.
+- Central results:
+  - Patient-reported function and symptoms were broadly maintained
+  - cough deterioration favored the combination numerically but the confidence interval included no effect.
+- Narrative sequence:
+  - Describe completion, longitudinal scores and clinically meaningful thresholds, then report time-to-deterioration endpoints.
+- Negative-result handling: Statistical uncertainty and the distinction between numerical and clinically meaningful change are retained.
+- Omics logic: No omics analysis was central.
+- Efficacy/activity logic: PROs support symptom impact, not tumor efficacy by themselves.
+- Prognosis logic: Time-to-deterioration is an outcome endpoint, not a prognostic biomarker.
+- Claim/source boundaries:
+  - Open-label reporting, attrition and multiplicity limit isolated endpoint interpretation.
+- Selected source-linked sentence records:
+  - `ccr-logic-41801128-c-043`: physical page(s) 7; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; development.
+    - Source sentence: Delayed TTD in favor of osimertinib plus chemotherapy [median not reached; 95% CI, 30.4 to not calculable (NC)] versus osimertinib monotherapy (median 24.7 months; 95% CI, 21.3 to NC) was observed for cough (HR, 0.77; 95% CI, 0.57–1.04).
+    - PDF SHA-256: `fbf72b6e41019b99e57a5f2df5bd8a5c118cb6ae7f426de4c3b00f9f34ffd076`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41801128-c-044`: physical page(s) 7; descriptive; not_applicable; treatment_activity; quantify_effect; development.
+    - Source sentence: In both treatment arms, the MMRM analysis showed non-clinically meaningful improvements from baseline over time in GHS/QoL and physical functioning (QLQ-C30), chest pain, and dyspnea (QLQ-LC13; Fig. 4; Supplementary Table S2; Fig. 5).
+    - PDF SHA-256: `fbf72b6e41019b99e57a5f2df5bd8a5c118cb6ae7f426de4c3b00f9f34ffd076`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41805895
+
+- Identity: Decoding B-cell Signatures of Complete Pathologic Response to Perioperative Chemoimmunotherapy in Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-3315.
+- Supplied PDF: not_classified_by_header; SHA-256 `3e2d608d146248fa068845698e53f2d8ceec92d920853cf6f1a19852ec1fa65d`; 14 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 4, 8.
+- Result profile: negative, mixed.
+- Domains: spatial_omics, integrated_omics, other.
+- Central results:
+  - However, CPR tumors exhibited significantly higher BCR clonality (P = 0.030) and greater Top 10 CS (P = 0.043), along with a trend toward lower diversity (P = 0.069), compared with NCPR tumors (Fig. 2A).
+  - However, no significant differences in TLS density were observed between CPR and NCPR tumors within the ChIO-treated cohort (Fig. 3C and D).
+- Narrative sequence:
+  - 先以“显著差异+趋势”组合描述BCR特征，再报告治疗队列中TLS密度无显著差异。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated、spatial证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 小型探索性转化队列；空间细胞估计来自算法，病理缓解关联不是治疗预测交互。
+  - 病理缓解关联中显著与趋势结果须分开。
+  - 小队列阴性比较不证明TLS无作用。
+- Selected source-linked sentence records:
+  - `ccr-logic-41805895-b-41805895-r1`: physical page(s) 4; mixed; mixed; pathway_or_state; contrast_groups; development.
+    - Source sentence: However, CPR tumors exhibited significantly higher BCR clonality (P = 0.030) and greater Top 10 CS (P = 0.043), along with a trend toward lower diversity (P = 0.069), compared with NCPR tumors (Fig. 2A).
+    - PDF SHA-256: `3e2d608d146248fa068845698e53f2d8ceec92d920853cf6f1a19852ec1fa65d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41805895-b-41805895-r2`: physical page(s) 8; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: However, no significant differences in TLS density were observed between CPR and NCPR tumors within the ChIO-treated cohort (Fig. 3C and D).
+    - PDF SHA-256: `3e2d608d146248fa068845698e53f2d8ceec92d920853cf6f1a19852ec1fa65d`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41817317
+
+- Identity: Ionizing Radiation Enhances Prognostically Significant Cellular Immunity Programs in the Brain Metastasis Microenvironment (2026); DOI 10.1158/1078-0432.ccr-25-3525.
+- Supplied PDF: not_classified_by_header; SHA-256 `d4223e167da2991a60f942aa6a44935806075ca4464d1d9ba693ada1133ebc32`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 6, 7.
+- Result profile: positive, negative, mixed.
+- Domains: prognosis.
+- Central results:
+  - TCR diversity remained independently prognostic after multivariable analysis, whereas the TIL-content survival association did not persist.
+- Narrative sequence:
+  - Map immune programs, compare irradiation contexts, then test which immune metrics retain survival association.
+- Negative-result handling: The null multivariable TIL result contrasts with the retained TCR signal.
+- Omics logic: Bulk deconvolution infers cell content; TCR diversity is a repertoire metric rather than direct function.
+- Efficacy/activity logic: No treatment interaction was tested.
+- Prognosis logic: Both findings are prognostic associations in brain metastasis tissue.
+- Claim/source boundaries:
+  - Retrospective tissue selection and prior radiation complicate causal interpretation.
+- Selected source-linked sentence records:
+  - `ccr-logic-41817317-c-045`: physical page(s) 6; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: We found that TCR diversity (high vs. low) remained the only prognostically significant stratifying factor following multivariable analysis (Dunnett P value = 0.0009; Table 3).
+    - PDF SHA-256: `d4223e167da2991a60f942aa6a44935806075ca4464d1d9ba693ada1133ebc32`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41817317-c-046`: physical page(s) 6; negative; nonsignificant; null_biomarker; contrast_modalities; contrast.
+    - Source sentence: By contrast, the statistical significance of TIL content (high vs. low) relative to OS in this cohort was not maintained (Dunnett P value = 0.16).
+    - PDF SHA-256: `d4223e167da2991a60f942aa6a44935806075ca4464d1d9ba693ada1133ebc32`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41837748
+
+- Identity: Improving Anti-CTLA-4 Therapies through Peptide Masking and Fragment Crystallizable Non-fucosylation: Preclinical Characterization of Three Novel Antibodies (2026); DOI 10.1158/1078-0432.ccr-25-1230.
+- Supplied PDF: not_classified_by_header; SHA-256 `da9acee79d02881bfe116e21110d915d686d3467fd73673b94ff5b53c19adaaf`; 20 physical pages.
+- Focused Results pages reread: 9, 10, 11, 12, 13, 14.
+- Visual pages checked: 12, 13.
+- Result profile: positive, mixed, inconclusive.
+- Domains: prognosis, preclinical_functional.
+- Central results:
+  - NF相对IPI-like显著延长小鼠生存；NF-PB方向上延长但P=0.0668。
+- Narrative sequence:
+  - 从免疫表型/肿瘤控制到长期生存，再以未达显著的构型比较限定。
+- Negative-result handling: 明确区分显著生存差异和未达显著趋势。
+- Omics logic: 免疫状态为前临床机制层。
+- Efficacy/activity logic: 无临床疗效。
+- Prognosis logic: 只涉及动物生存。
+- Claim/source boundaries:
+  - 不得将小鼠长期存活外推至人类。
+- Selected source-linked sentence records:
+  - `ccr-logic-41837748-ccr25-26-a-049`: physical page(s) 13; positive; significant; functional_perturbation; connect_to_outcome; development.
+    - Source sentence: A significantly longer survival was noted in mice treated with NF compared with IPI-like (median LCSS: not reached vs. 165 days, respectively).
+    - PDF SHA-256: `da9acee79d02881bfe116e21110d915d686d3467fd73673b94ff5b53c19adaaf`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41837748-ccr25-26-a-050`: physical page(s) 13; inconclusive; nonsignificant; functional_perturbation; qualify_uncertainty; qualification.
+    - Source sentence: Comparison of survival outcomes in mice treated with NF-PB versus IPI-like also suggested that the NF-PB modifications extended survival, although this observation did not reach statistical significance (P = 0.0668; Fig. 4H).
+    - PDF SHA-256: `da9acee79d02881bfe116e21110d915d686d3467fd73673b94ff5b53c19adaaf`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41849236
+
+- Identity: Low-Dose Intestinal Irradiation Enhances the Efficacy and Prognosis of PD-1 Blockade in Metastatic Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-4153.
+- Supplied PDF: not_classified_by_header; SHA-256 `b7207ca182930ec9bff8c0a2ee754d2a211ec31db19ed7d45339a74f88f7d4d1`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 4, 6, 7.
+- Result profile: mixed, inconclusive.
+- Domains: metabolomics, clinical_efficacy.
+- Central results:
+  - 小肠平均辐射剂量1–3 Gy组结局较好；前瞻队列中DCR有差异而ORR不显著，代谢组通路富集未显著。
+- Narrative sequence:
+  - 由回顾性剂量–结局关联到小型前瞻验证，再引入微生物/代谢机制探索。
+- Negative-result handling: ORR和代谢组阴性与DCR阳性并列，不以单一阳性概括。
+- Omics logic: 粪便宏基因组和血清代谢组为探索性关联。
+- Efficacy/activity logic: 无随机剂量分配，不能声称低剂量肠照射导致更好疗效。
+- Prognosis logic: 回顾性生存关联易受混杂。
+- Claim/source boundaries:
+  - 剂量分组、适应证和样本规模限制因果解释。
+- Selected source-linked sentence records:
+  - `ccr-logic-41849236-ccr25-26-a-051`: physical page(s) 6; mixed; mixed; subgroup_signal; contrast_groups; contrast.
+    - Source sentence: The ORR were 50%, 18.2%, and 22.2% for 1 to 3, <1, and >3 Gy, respectively (P = 0.323), and the DCR were 90%, 63.7%, and 33.3%, respectively (P = 0.041; Fig. 3A; Supplementary Fig. S7A).
+    - PDF SHA-256: `b7207ca182930ec9bff8c0a2ee754d2a211ec31db19ed7d45339a74f88f7d4d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41849236-ccr25-26-a-052`: physical page(s) 7; inconclusive; nonsignificant; pathway_or_state; qualify_uncertainty; qualification.
+    - Source sentence: At the pathway level, compared with the non-PR group, tryptophan metabolism related to indole derivatives was positively enriched in the PR group both before and after radiotherapy although the difference was not statistically significant (Supplementary Fig. S8B–S8E).
+    - PDF SHA-256: `b7207ca182930ec9bff8c0a2ee754d2a211ec31db19ed7d45339a74f88f7d4d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41870274
+
+- Identity: The Pan-Tumor Landscape of Gene Amplifications and Copy Number Amplification Ratio for Established and Emerging Clinical Targets (2026); DOI 10.1158/1078-0432.ccr-25-4018.
+- Supplied PDF: not_classified_by_header; SHA-256 `926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a`; 14 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 7, 9.
+- Result profile: positive, mixed.
+- Domains: genomics, liquid_biopsy, prognosis.
+- Central results:
+  - Amplification ratio showed a nonlinear association with real-world survival, and liquid detection agreement rose sharply with tumor fraction.
+- Narrative sequence:
+  - Map pan-tumor amplification, relate amplitude to outcomes, then quantify tissue–liquid agreement.
+- Negative-result handling: Significant lower-tertile separation and a null upper-tertile contrast are presented together.
+- Omics logic: Copy-number calls depend on purity, ploidy and platform; liquid PPA is tumor-fraction dependent.
+- Efficacy/activity logic: Observational treated cohorts do not establish amplification as a treatment-selection biomarker.
+- Prognosis logic: rwOS analyses are associations and may reflect tumor biology and care patterns.
+- Claim/source boundaries:
+  - Cross-platform thresholds and tumor-fraction enrichment limit direct interchangeability.
+- Selected source-linked sentence records:
+  - `ccr-logic-41870274-c-047`: physical page(s) 7; mixed; mixed; subgroup_signal; qualify_uncertainty; contrast.
+    - Source sentence: Patients with amplifications in the second and third tertiles had significantly longer rwOS compared with the first tertile (both P < 0.01), but the largest increase in rwOS was observed between the first and second tertiles, with a nonsignificant difference between the second and third tertiles (P = 0.93; Fig. 2B; Supplementary Fig. S17A).
+    - PDF SHA-256: `926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41870274-c-048`: physical page(s) 9; positive; not_applicable; assay_concordance; quantify_effect; development.
+    - Source sentence: Across all genes, positive percent agreement (PPA) of amplification detection in liquid was 38.5%, which increased to 88.1% among samples with TF ≥ 20% (Supplementary Fig. S40).
+    - PDF SHA-256: `926c2d776ad197b858c3af1ccf7e32f47347d4382e8a491b5c503e0d7f5b157a`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41894181
+
+- Identity: The Efficacy and Safety of Tislelizumab plus Anlotinib as First-Line Treatment in Advanced Pulmonary Sarcomatoid Carcinoma: A Single-Arm Phase II Trial (2026); DOI 10.1158/1078-0432.ccr-25-4770.
+- Supplied PDF: not_classified_by_header; SHA-256 `754824d63c507f9d574334fbbd85ba09279ac678d5272b0ef4c40e46375a819c`; 9 physical pages.
+- Focused Results pages reread: 3, 4.
+- Visual pages checked: 3, 4.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, other.
+- Central results:
+  - The single-arm regimen produced a high ORR and DCR, while no subgroup interaction was detected.
+- Narrative sequence:
+  - State overall response and survival, summarize safety, then report exploratory subgroup interactions.
+- Negative-result handling: Null interactions are explicit and are not converted into claims of uniform benefit.
+- Omics logic: No omics layer was central beyond PD-L1 subgrouping.
+- Efficacy/activity logic: Single-arm results show activity, not comparative efficacy.
+- Prognosis logic: Survival estimates are descriptive.
+- Claim/source boundaries:
+  - Small sample size makes interaction tests underpowered
+  - absence of interaction is not equivalence.
+- Selected source-linked sentence records:
+  - `ccr-logic-41894181-c-049`: physical page(s) 3; positive; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: The ORR was 55.17% (95% CI, 35.69%–73.55%), and the DCR was 96.55% (95% CI, 82.24%–99.91%).
+    - PDF SHA-256: `754824d63c507f9d574334fbbd85ba09279ac678d5272b0ef4c40e46375a819c`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-41894181-c-050`: physical page(s) 4; negative; nonsignificant; subgroup_signal; report_null_result; closure.
+    - Source sentence: No statistically significant interactions were observed for any subgroup variables, including age, gender, ECOG performance status, metastatic pattern, or PD-L1 expression level (all P > 0.05).
+    - PDF SHA-256: `754824d63c507f9d574334fbbd85ba09279ac678d5272b0ef4c40e46375a819c`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 41920765
+
+- Identity: Irreversible Electroporation Enhances Solid Tumor Infiltration and Selective Cancer Cell Lysis by CAR T Cells (2026); DOI 10.1158/1078-0432.ccr-25-4159.
+- Supplied PDF: author_manuscript; SHA-256 `853084080c5ddfd54f08d3e84b1151016faa306f440d90f60afadcb35996ca6c`; 29 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11.
+- Visual pages checked: 8, 11.
+- Result profile: positive, negative, mixed.
+- Domains: preclinical_functional.
+- Central results:
+  - Further screening revealed a set of parameters (1000 V/cm, 10 μs, and 200x pulses)—which we termed sIRE—that resulted in lysis of 64% of mesothelioma cells and sparing of 86% of CAR T cells, yielding more than 50% difference in viability (p<0.0001).
+  - Repeated sIRE at 14 days after CAR T-cell infusion was not associated with any appreciable differences in tumor growth (Figure 5d), tumor volume (Figure 5e), or spleen weight (Figure 5g), compared with the first sIRE treatment.
+- Narrative sequence:
+  - 先优化电穿孔参数并量化肿瘤细胞与CAR-T细胞的差异存活，再报告重复处理未见额外肿瘤控制。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 体外与小鼠证据；‘no appreciable differences’未给正式检验时不得标为统计学不显著。
+  - 体外参数筛选结果。
+  - 原文未给正式检验，编码为not_reported而非nonsignificant。
+- Selected source-linked sentence records:
+  - `ccr-logic-41920765-b-41920765-r1`: physical page(s) 8; positive; significant; functional_perturbation; quantify_effect; development.
+    - Source sentence: Further screening revealed a set of parameters (1000 V/cm, 10 μs, and 200x pulses)—which we termed sIRE—that resulted in lysis of 64% of mesothelioma cells and sparing of 86% of CAR T cells, yielding more than 50% difference in viability (p<0.0001).
+    - PDF SHA-256: `853084080c5ddfd54f08d3e84b1151016faa306f440d90f60afadcb35996ca6c`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41920765-b-41920765-r2`: physical page(s) 11; negative; not_reported; functional_perturbation; report_null_result; qualification.
+    - Source sentence: Repeated sIRE at 14 days after CAR T-cell infusion was not associated with any appreciable differences in tumor growth (Figure 5d), tumor volume (Figure 5e), or spleen weight (Figure 5g), compared with the first sIRE treatment.
+    - PDF SHA-256: `853084080c5ddfd54f08d3e84b1151016faa306f440d90f60afadcb35996ca6c`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41945490
+
+- Identity: A First-in-Human Phase I Clinical Trial Evaluating Clinical Activity and Proof of Mechanism of Tobemstomig, a PD-1-LAG-3 Bispecific Antibody, in Patients with CPI-Experienced Melanoma (2026); DOI 10.1158/1078-0432.ccr-25-4478.
+- Supplied PDF: not_classified_by_header; SHA-256 `033688bef8b5a5c2033acb0a226969add897cd0a2c6c0635933a47f752d57b79`; 56 physical pages.
+- Focused Results pages reread: 25, 26, 27, 28, 29, 30, 31, 32, 33, 34.
+- Visual pages checked: 31, 32, 33, 34, 51.
+- Result profile: negative, mixed.
+- Domains: transcriptomics, proteomics, clinical_efficacy, pk_pd.
+- Central results:
+  - NSCLC扩展队列20例无反应；基线IHC未与反应显著相关，但治疗中免疫效应签名在tobemstomig疾病控制者中诱导。
+- Narrative sequence:
+  - 先报告疾病队列临床活性，再报告基线标志物阴性，最后用配对bulk与snRNA药效学解释机制。
+- Negative-result handling: 临床与基线生物标志物阴性居前，不能被药效学阳性取代。
+- Omics logic: bulk RNA与snRNA伪bulk方向一致，但不是直接证明细胞频率或临床效应。
+- Efficacy/activity logic: 药效学诱导不等于疗效；lomvastomig为跨研究描述性参照。
+- Prognosis logic: 无确证预后分析。
+- Claim/source boundaries:
+  - 跨研究比较、配对样本少，单细胞分析为14对样本伪bulk。
+- Selected source-linked sentence records:
+  - `ccr-logic-41945490-ccr25-26-a-053`: physical page(s) 31; negative; not_applicable; treatment_activity; state_primary_finding; opening.
+    - Source sentence: In the NSCLC-specific expansion cohort, none of the 20 patients experienced a response (Supplementary Table S8), the mPFS was 2.5 months (95% CI: 1.6, 5.2).
+    - PDF SHA-256: `033688bef8b5a5c2033acb0a226969add897cd0a2c6c0635933a47f752d57b79`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41945490-ccr25-26-a-054`: physical page(s) 31; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: Across prespecified baseline IHC biomarkers (PD-L1 TC% and TAP%, LAG-3 tumor area fraction, and CD8A+ cell density), no statistically significant association with clinical response (CR/PR versus SD/PD) was observed in this study (Supplementary Fig. S2).
+    - PDF SHA-256: `033688bef8b5a5c2033acb0a226969add897cd0a2c6c0635933a47f752d57b79`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41945490-ccr25-26-a-055`: physical page(s) 32, 33; mixed; mixed; pathway_or_state; contrast_groups; contrast.
+    - Source sentence: Consistent with these visual patterns, differential expression and signature analyses showed that IFN-γ and CD8 T-cell effector signatures increased significantly on treatment in tobemstomig-treated patients with disease control (CR/PR/SD; Benjamini-Hochberg-adjusted P < 0.001), whereas no significant induction was observed in lomvastomig-treated patients (Fig. 4C).
+    - PDF SHA-256: `033688bef8b5a5c2033acb0a226969add897cd0a2c6c0635933a47f752d57b79`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41945491
+
+- Identity: ADC Target Profiling in NSCLC: Generalizable AI Separates TROP-2 and cMET Phenotypes (2026); DOI 10.1158/1078-0432.ccr-25-4513.
+- Supplied PDF: not_classified_by_header; SHA-256 `f6638a46d70803e918682e787cb99026158c7664206ed5ebea986df899ab2101`; 22 physical pages.
+- Focused Results pages reread: 7, 8, 9, 10, 11, 12, 13, 14, 15.
+- Visual pages checked: 8, 9.
+- Result profile: positive, negative, mixed.
+- Domains: proteomics, prognosis, diagnostic_model.
+- Central results:
+  - An AI model closely reproduced pathologist H-scores across targets, while TROP-2 expression showed no clear OS association.
+- Narrative sequence:
+  - Train and validate compartment-specific models, compare with experts, map expression, then test survival associations.
+- Negative-result handling: The prognostic null is stated directly despite strong analytic agreement.
+- Omics logic: IHC protein phenotypes and model outputs are measurements; agreement does not prove clinical utility.
+- Efficacy/activity logic: No ADC-treated validation establishes treatment prediction.
+- Prognosis logic: Expression–OS analyses are prognostic only.
+- Claim/source boundaries:
+  - Internal data splits and target-specific external validation do not substitute for prospective clinical validation.
+- Selected source-linked sentence records:
+  - `ccr-logic-41945491-c-051`: physical page(s) 9; positive; not_applicable; model_performance; quantify_effect; development.
+    - Source sentence: Model-derived H-scores closely matched expert assessments, with mean pairwise correlations of 0.92 for membranous TROP-2 [ICC (2,1) = 0.881 (95% CI, 0.840–0.920)], 0.79 for cytoplasmic TROP-2 [ICC (2,1) = 0.659 (95% CI, 0.530–0.760)], and 0.93 for cMET [ICC (2,1) = 0.883 (95% CI, 0.830–0.920)] when compared with pathologist-derived H-scores (Fig. 3G–I).
+    - PDF SHA-256: `f6638a46d70803e918682e787cb99026158c7664206ed5ebea986df899ab2101`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41945491-c-052`: physical page(s) 9; negative; nonsignificant; null_biomarker; report_null_result; closure.
+    - Source sentence: Survival analyses showed no clear association between TROP-2 expression and OS in either LUAD or LUSC for both membranous (LUAD P = 0.71, LUSC P = 0.71; Supplementary Fig. S3A and S3C) and cytoplasmic staining (LUAD P = 0.99, LUSC P = 0.56; Supplementary Fig. S3B and S3D).
+    - PDF SHA-256: `f6638a46d70803e918682e787cb99026158c7664206ed5ebea986df899ab2101`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 41945500
+
+- Identity: Retreatment with First-Generation Selective RET Inhibitors in RET-Rearranged NSCLC Pretreated with Selpercatinib or Pralsetinib: Results from the RET-MAP Registry (2026); DOI 10.1158/1078-0432.ccr-25-4814.
+- Supplied PDF: not_classified_by_header; SHA-256 `5a85b85cd6b5dcb8ba5a9f1e4e4b8f3940d2b69e4273f1ad79ebd6fb64462df0`; 19 physical pages.
+- Focused Results pages reread: 9, 10, 11.
+- Visual pages checked: 10, 11.
+- Result profile: positive, mixed.
+- Domains: genomics, clinical_efficacy, prognosis, preclinical_functional.
+- Central results:
+  - Switching first-generation selective RET inhibitors produced substantial activity in selected patients, while MET amplification marked shorter first-inhibitor PFS in an exploratory analysis.
+- Narrative sequence:
+  - Describe reasons for switching, quantify retreatment outcomes, then examine resistance mechanisms and duration.
+- Negative-result handling: The resistance-mechanism analysis is labeled exploratory despite a significant P value.
+- Omics logic: Genomic resistance calls are associated with clinical trajectories but do not prove mechanism in each patient.
+- Efficacy/activity logic: Registry retreatment activity is subject to selection and lacks a concurrent comparator.
+- Prognosis logic: MET amplification is associated with PFS and should not be treated as a validated predictive interaction.
+- Claim/source boundaries:
+  - Small retrospective registry cohorts and heterogeneous reasons for switching limit causal conclusions.
+- Selected source-linked sentence records:
+  - `ccr-logic-41945500-c-053`: physical page(s) 10; positive; not_applicable; treatment_activity; quantify_effect; development.
+    - Source sentence: The ORR at the time of switching was 67%, median PFS on the second SRI was 9.9 months, the 6-month PFS rate was 80.3%, and the median TTF was 13 months (Figure 2A).
+    - PDF SHA-256: `5a85b85cd6b5dcb8ba5a9f1e4e4b8f3940d2b69e4273f1ad79ebd6fb64462df0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-41945500-c-054`: physical page(s) 11; positive; significant; resistance_mechanism; connect_to_outcome; closure.
+    - Source sentence: In an exploratory analysis, patients with MET amplification had significantly shorter PFS on their first SRI compared with those with other resistance mechanisms (median PFS 6.4 vs. 15.6 months; P = 0.015; eFigure 1), suggesting a more aggressive biological phenotype or early onset resistance.
+    - PDF SHA-256: `5a85b85cd6b5dcb8ba5a9f1e4e4b8f3940d2b69e4273f1ad79ebd6fb64462df0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 41961582
+
+- Identity: First-Line Sacituzumab Govitecan Plus Pembrolizumab and Carboplatin in Metastatic Non-Small Cell Lung Cancer: Nonsquamous and Squamous Cohorts of the EVOKE-02 Study (2026); DOI 10.1158/1078-0432.CCR-25-4485.
+- Supplied PDF: publisher_line_numbered_manuscript; SHA-256 `db2e53da2fffc530de21855d91502e3c8e9061fb63f1d6aab69a26b95e29804a`; 29 physical pages.
+- Focused Results pages reread: 13, 14, 15.
+- Visual pages checked: 14, 15, 28.
+- Result profile: positive, mixed, descriptive.
+- Domains: clinical_efficacy, safety.
+- Central results:
+  - 两个队列IRC ORR约39%–45%；推荐剂量下高等级TEAE常见并因骨髓抑制调整剂量。
+- Narrative sequence:
+  - 安全导入先确定剂量，再报告两个组织学队列活性和安全性。
+- Negative-result handling: 不把高毒性率弱化为可忽略。
+- Omics logic: 无核心组学。
+- Efficacy/activity logic: 单臂活性，不支持优于标准治疗。
+- Prognosis logic: 无成熟预后。
+- Claim/source boundaries:
+  - 剂量调整背景和安全性分母必须保留。
+- Selected source-linked sentence records:
+  - `ccr-logic-41961582-ccr25-26-a-056`: physical page(s) 15; positive; not_applicable; treatment_activity; state_primary_finding; opening.
+    - Source sentence: The primary endpoint of ORR, as assessed by the IRC, was 45.1% (95% CI, 31.1%–59.7%) in Cohort C and 39.0% (95% CI, 24.2%–55.5%) in Cohort D (Table 2).
+    - PDF SHA-256: `db2e53da2fffc530de21855d91502e3c8e9061fb63f1d6aab69a26b95e29804a`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-41961582-ccr25-26-a-057`: physical page(s) 15; descriptive; not_applicable; safety_tolerability; quantify_effect; development.
+    - Source sentence: Among patients who received SG 7.5 mg/kg, any-grade TEAEs were reported in all 66 patients (100%) and grade greater than or equal to 3 TEAEs were reported in 57 patients (86.4%) (Table 4).
+    - PDF SHA-256: `db2e53da2fffc530de21855d91502e3c8e9061fb63f1d6aab69a26b95e29804a`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42001480
+
+- Identity: plasmaCHORD: A Machine Learning Approach to Distinguish Clonal Hematopoiesis-Derived Variants in Liquid Biopsies from Patients with Solid Tumors (2026); DOI 10.1158/1078-0432.ccr-25-0976.
+- Supplied PDF: not_classified_by_header; SHA-256 `c97a1ba442ab42c5aa6b1a52c2afd3a878c1e7348591f9e07f9a88cbe3e7633f`; 16 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10.
+- Visual pages checked: 7, 9.
+- Result profile: positive, negative, mixed.
+- Domains: liquid_biopsy, diagnostic_model.
+- Central results:
+  - VAF alone poorly distinguished tumor from clonal-hematopoiesis variants, whereas the locked plasmaCHORD model achieved high discrimination in validation.
+- Narrative sequence:
+  - Build a weak baseline comparator, train and lock the model, validate performance, then illustrate clinical use cases.
+- Negative-result handling: The weak VAF benchmark is retained to show incremental model value.
+- Omics logic: Features integrate plasma and clinical/genomic context; labels derive from matched reference sequencing.
+- Efficacy/activity logic: No treatment efficacy endpoint was studied.
+- Prognosis logic: Prognosis was not studied.
+- Claim/source boundaries:
+  - Model performance depends on the matched-sequencing reference and requires external workflow validation.
+- Selected source-linked sentence records:
+  - `ccr-logic-42001480-c-055`: physical page(s) 7; negative; not_applicable; diagnostic_performance; qualify_uncertainty; contrast.
+    - Source sentence: However, given the significant overlap in VAF distributions between tumor and CH variants, VAF alone was only able to distinguish variant origin with a ROC AUC of 0.61 (95% confidence interval, 0.56–0.67, Fig. 2C).
+    - PDF SHA-256: `c97a1ba442ab42c5aa6b1a52c2afd3a878c1e7348591f9e07f9a88cbe3e7633f`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42001480-c-056`: physical page(s) 9; positive; significant; model_performance; quantify_effect; development.
+    - Source sentence: Using the prespecified cutoff score of 0.5, plasmaCHORD predicted variant origin with a sensitivity of 82%, specificity of 80.3%, and accuracy of 80.2% (P < 2e−16 compared with the null information rate of 0.61; Fig. 4C) and an AUC of 0.902 (Fig. 4D).
+    - PDF SHA-256: `c97a1ba442ab42c5aa6b1a52c2afd3a878c1e7348591f9e07f9a88cbe3e7633f`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42007996
+
+- Identity: ZW191 an FRalpha-Targeted Topoisomerase 1 Inhibitor ADC with a Differentiated Antitumor Efficacy and Tolerability Profile (2026); DOI 10.1158/1078-0432.ccr-25-4691.
+- Supplied PDF: not_classified_by_header; SHA-256 `b0ab61a93adb49cb833a5b5f2450780cc466e007c8d6434005298d8fd78660dd`; 43 physical pages.
+- Focused Results pages reread: 16, 17, 18, 19, 20, 21, 22.
+- Visual pages checked: 20, 21.
+- Result profile: positive, mixed.
+- Domains: preclinical_functional.
+- Central results:
+  - ZW191 resulted in a statistically significant inhibition of tumor growth compared to control (p<0.05), including durable regressions, in 4 of 7 adenocarcinoma NSCLC models (H-scores between 20-190), 3 of 4 EC models (H-scores between 200-220) and 5 of 7 TNBC models (H-scores between 105-240) (Fig. 4D, Supplementary Figure S10).
+  - While single dose level comparisons limit analysis of “synergism” in vivo, these combinations nonetheless indicate additive activity.
+- Narrative sequence:
+  - 先跨多种PDX模型报告显著抑瘤/回缩，再主动限制单剂量组合实验不能判定协同。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 前临床模型且每模型样本有限；additive activity不等于正式协同检验。
+  - PDX模型层面的显著抑瘤，不等于患者疗效。
+  - 未进行充分剂量矩阵，不能声称协同。
+- Selected source-linked sentence records:
+  - `ccr-logic-42007996-b-42007996-r1`: physical page(s) 20; positive; significant; functional_perturbation; quantify_effect; development.
+    - Source sentence: ZW191 resulted in a statistically significant inhibition of tumor growth compared to control (p<0.05), including durable regressions, in 4 of 7 adenocarcinoma NSCLC models (H-scores between 20-190), 3 of 4 EC models (H-scores between 200-220) and 5 of 7 TNBC models (H-scores between 105-240) (Fig. 4D, Supplementary Figure S10).
+    - PDF SHA-256: `b0ab61a93adb49cb833a5b5f2450780cc466e007c8d6434005298d8fd78660dd`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42007996-b-42007996-r2`: physical page(s) 21; mixed; not_applicable; functional_perturbation; limit_inference; qualification.
+    - Source sentence: While single dose level comparisons limit analysis of “synergism” in vivo, these combinations nonetheless indicate additive activity.
+    - PDF SHA-256: `b0ab61a93adb49cb833a5b5f2450780cc466e007c8d6434005298d8fd78660dd`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42008740
+
+- Identity: A Phase II Study of Stereotactic Ablative Radiotherapy plus Atezolizumab plus Tiragolumab in Treatment-Naïve Patients with Advanced Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-4990.
+- Supplied PDF: not_classified_by_header; SHA-256 `feff25b212c1f12a774d5ea63f6bc8371cf465fa10aa7a73ed0677243719e2c0`; 13 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7.
+- Visual pages checked: 3, 4, 11.
+- Result profile: mixed, descriptive.
+- Domains: integrated_omics, clinical_efficacy.
+- Central results:
+  - The median PFS at the start of SBRT was 9.3 months (95% CI, CI 6–not evaluable
+  - Fig. 1A).
+  - Consistent with this finding, the cytotoxicity score (GZMA, GZMB, GZMK, GNLY, IFNG, PRF1, and NKG7) increased following treatment in the CB group but decreased in NCB samples (Fig. 2I).
+- Narrative sequence:
+  - 先报告单臂PFS估计，再以小样本单细胞结果描述临床获益组与非获益组的相反免疫轨迹。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学叙述限定于single_cell证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从单臂、小样本且单细胞配对数极少；原文PFS置信区间存在重复‘CI’版式错误。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 单臂、小样本且单细胞配对数极少；原文PFS置信区间存在重复‘CI’版式错误。
+  - 保留原文重复CI的版式问题；单臂PFS估计。
+  - 极少量配对单细胞样本与后验获益分组；非正式疗效机制检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-42008740-b-42008740-r1`: physical page(s) 3; descriptive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: The median PFS at the start of SBRT was 9.3 months (95% CI, CI 6–not evaluable; Fig. 1A).
+    - PDF SHA-256: `feff25b212c1f12a774d5ea63f6bc8371cf465fa10aa7a73ed0677243719e2c0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42008740-b-42008740-r2`: physical page(s) 4; descriptive; not_reported; pathway_or_state; contrast_groups; development.
+    - Source sentence: Consistent with this finding, the cytotoxicity score (GZMA, GZMB, GZMK, GNLY, IFNG, PRF1, and NKG7) increased following treatment in the CB group but decreased in NCB samples (Fig. 2I).
+    - PDF SHA-256: `feff25b212c1f12a774d5ea63f6bc8371cf465fa10aa7a73ed0677243719e2c0`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42013305
+
+- Identity: Dual Inhibition of TRIP13 and Aurora A Induces Mitotic DNA Damage and Concurrent Pyroptotic-Apoptotic Cell Death in Rb-Deficient Cancer Cells (2026); DOI 10.1158/1078-0432.ccr-25-4712.
+- Supplied PDF: author_manuscript; SHA-256 `f23337ff413676dfbf8ce144bec5585a129095f7adeed4ca33c092fe5b6473e8`; 36 physical pages.
+- Focused Results pages reread: 9, 10, 11, 12, 13, 14, 15, 16.
+- Visual pages checked: 10, 11, 15, 16, 25.
+- Result profile: positive, mixed, inconclusive.
+- Domains: genomics, transcriptomics, proteomics, preclinical_functional.
+- Central results:
+  - 人肿瘤表达关联在部分癌种受功效限制；TRIP13耗竭加Aurora A抑制在模型中显著抑瘤，并见转录–蛋白一致性。
+- Narrative sequence:
+  - 由人肿瘤关联提出脆弱性，再以细胞和条件性异种移植干预验证，最后跨组学整合。
+- Negative-result handling: 小样本癌种未达显著及单药无显著效应被保留。
+- Omics logic: 转录、蛋白和功能层证据方向整合，但相关不代表因果。
+- Efficacy/activity logic: 无患者疗效。
+- Prognosis logic: 无临床预后。
+- Claim/source boundaries:
+  - 因果机制仅限前临床扰动体系。
+- Selected source-linked sentence records:
+  - `ccr-logic-42013305-ccr25-26-a-058`: physical page(s) 10; inconclusive; nonsignificant; differential_feature; qualify_uncertainty; qualification.
+    - Source sentence: Although statistical significance was not reached in HNSC tumors due to the small sample size, tumors with RB1 LOF exhibited higher expression of MAD2L1 and correspondingly increased TRIP13 mRNA levels in both HNSC and LUSC tumors.
+    - PDF SHA-256: `f23337ff413676dfbf8ce144bec5585a129095f7adeed4ca33c092fe5b6473e8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42013305-ccr25-26-a-059`: physical page(s) 11; positive; significant; functional_perturbation; integrate_evidence_layers; development.
+    - Source sentence: Consistent with our in vitro findings, doxycycline-induced depletion of TRIP13, combined with alisertib, resulted in significant suppression of TRIP13 KO:AID xenograft tumor growth (average tumor volume, 109.6 mm3) compared with control (average tumor volume, 488.2 mm3) at day 25.
+    - PDF SHA-256: `f23337ff413676dfbf8ce144bec5585a129095f7adeed4ca33c092fe5b6473e8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42013305-ccr25-26-a-060`: physical page(s) 15, 16; positive; significant; cross_layer_concordance; integrate_evidence_layers; closure.
+    - Source sentence: Importantly, both GSDME and caspase-3 demonstrated significant positive correlations between mRNA and protein levels, supporting strong concordance between transcriptomic and proteomic expression (Fig. S9d).
+    - PDF SHA-256: `f23337ff413676dfbf8ce144bec5585a129095f7adeed4ca33c092fe5b6473e8`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42048384
+
+- Identity: The SOS1 Inhibitor BI 1701963 as Monotherapy or in Combination with Trametinib in Patients with KRAS Mutation-Positive Solid Tumors (2026); DOI 10.1158/1078-0432.ccr-25-3725.
+- Supplied PDF: not_classified_by_header; SHA-256 `8f9bb79543f61be72b3b4e479b0bac56bf83d433c65ff4c54a839246aa1b1dd4`; 11 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: mixed, inconclusive.
+- Domains: clinical_efficacy, safety, pk_pd.
+- Central results:
+  - BI 1701963 showed rapid, dose-dependent exposure but low response and disease control
+  - too few ILD cases prevented firm exposure–risk conclusions.
+- Narrative sequence:
+  - Describe dose escalation and PK, report limited activity, then characterize toxicity and explicitly bound exposure–safety inference.
+- Negative-result handling: Low activity and an underpowered exposure–ILD analysis are directly stated.
+- Omics logic: PK exposure is measured/modelled independently of tumor response.
+- Efficacy/activity logic: Early-phase nonrandomized data do not establish efficacy or combination benefit.
+- Prognosis logic: Survival was not central.
+- Claim/source boundaries:
+  - Dose cohorts were small and the fatal ILD signal cannot be modeled reliably.
+- Selected source-linked sentence records:
+  - `ccr-logic-42048384-c-057`: physical page(s) 7; mixed; not_reported; treatment_activity; contrast_modalities; contrast.
+    - Source sentence: Overall response and disease control rates were low, despite rapid absorption of BI 1701963 as shown by the median maximum observed plasma concentration (Cmax) being reached 1 to 5 hours after the first dose and dose-dependent exposure area under the plasma concentration time curve (AUC) with moderate to high observed variability (Supplementary Fig. S1).
+    - PDF SHA-256: `8f9bb79543f61be72b3b4e479b0bac56bf83d433c65ff4c54a839246aa1b1dd4`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42048384-c-058`: physical page(s) 8; inconclusive; not_applicable; pk_pd_exposure; limit_inference; closure.
+    - Source sentence: Due to low patient numbers with ILD, it was not possible to draw firm conclusions on the relationship between dose/exposure and the risk of developing this AE.
+    - PDF SHA-256: `8f9bb79543f61be72b3b4e479b0bac56bf83d433c65ff4c54a839246aa1b1dd4`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42059900
+
+- Identity: Early ctDNA Stratifies Survival in Locally Advanced and Oligometastatic Lung Cancer Treated with Radiotherapy (2026); DOI 10.1158/1078-0432.ccr-25-4983.
+- Supplied PDF: not_classified_by_header; SHA-256 `0d6f89fdf4bb2b9c37b86d65b882c8599f86c5abfdeab72f9b7d43937086adc1`; 44 physical pages.
+- Focused Results pages reread: 17, 18, 19, 20, 21, 22, 23, 24, 25.
+- Visual pages checked: 19, 24.
+- Result profile: positive, mixed.
+- Domains: liquid_biopsy, prognosis.
+- Central results:
+  - Early ctDNA fraction associated with survival across locally advanced and oligometastatic radiotherapy cohorts, with endpoint-specific nulls retained.
+- Narrative sequence:
+  - Derive ctDNA features prospectively, test PFS/OS, validate the threshold, then extend to oligometastatic disease and longitudinal change.
+- Negative-result handling: A significant PFS association alongside a nonsignificant OS association is reported in one cohort.
+- Omics logic: ctDNA fraction is burden-derived and not a direct measure of radiosensitivity.
+- Efficacy/activity logic: No untreated comparator or interaction test establishes prediction of radiotherapy benefit.
+- Prognosis logic: The evidence is prognostic across treated cohorts.
+- Claim/source boundaries:
+  - Cohort heterogeneity, threshold transport and unvalidated dynamic analyses limit clinical use.
+- Selected source-linked sentence records:
+  - `ccr-logic-42059900-c-059`: physical page(s) 19; mixed; mixed; survival_prognosis; qualify_uncertainty; contrast.
+    - Source sentence: In this same prospective cohort, mid-treatment ctFE correlated with significantly worse PFS (HR 1.14, 95% CI 1.02–1.27, p = 0.026), but not with OS (HR 1.10, 95% CI 0.98–1.22, p = 0.109) (Supplementary Fig. 2).
+    - PDF SHA-256: `0d6f89fdf4bb2b9c37b86d65b882c8599f86c5abfdeab72f9b7d43937086adc1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42059900-c-060`: physical page(s) 24; positive; significant; survival_prognosis; connect_to_outcome; closure.
+    - Source sentence: Again, using the same burden-based ctFE approach (with the same 0.016411 threshold), patients with high pre-treatment ctFE strikingly had significantly worse OS than those with low ctFE (median 15.1 vs. 28.2 mo., HR 2.47, 95% CI 1.34–4.55; p = 0.003) (Fig. 6A).
+    - PDF SHA-256: `0d6f89fdf4bb2b9c37b86d65b882c8599f86c5abfdeab72f9b7d43937086adc1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42113010
+
+- Identity: A Noninvasive Circulating Tumor DNA Methylation Classifier to Identify Benign Pulmonary Nodules (2026); DOI 10.1158/1078-0432.ccr-25-4520.
+- Supplied PDF: not_classified_by_header; SHA-256 `9e04e45a09ce18a75d3101b49bbd59888cfa5cefaf3cf69cd0a3e2d547f06427`; 12 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8.
+- Visual pages checked: 8, 10.
+- Result profile: positive, inconclusive.
+- Domains: diagnostic_model.
+- Central results:
+  - ctDNA甲基化分类器在两个独立肺结节队列AUC约0.92–0.95，并主动要求人群队列进一步验证。
+- Narrative sequence:
+  - 标志物发现—模型训练—双队列验证—风险流程构想—应用限定。
+- Negative-result handling: 没有将未验证人群效用写成阴性，而是作为待验证边界。
+- Omics logic: 甲基化信号用于诊断模型。
+- Efficacy/activity logic: 无治疗疗效。
+- Prognosis logic: 无预后。
+- Claim/source boundaries:
+  - 结节富集病例-对照设计；不能直接声称筛查或减少侵入性检查的实际效用。
+- Selected source-linked sentence records:
+  - `ccr-logic-42113010-ccr25-26-a-061`: physical page(s) 8; positive; not_applicable; diagnostic_performance; quantify_effect; closure.
+    - Source sentence: The external validation cohort 2 confirmed its robust performance, with an AUC of 0.92 (95% CI, 0.89–0.96), a sensitivity of 82.05%, and a specificity of 92.16% (Fig. 5B; Supplementary Table S3).
+    - PDF SHA-256: `9e04e45a09ce18a75d3101b49bbd59888cfa5cefaf3cf69cd0a3e2d547f06427`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42113010-ccr25-26-a-062`: physical page(s) 8; inconclusive; not_applicable; other; limit_inference; qualification.
+    - Source sentence: These findings suggest that the classifier may provide value in refining risk assessment for IPNs, although further validation in population-based cohorts is warranted.
+    - PDF SHA-256: `9e04e45a09ce18a75d3101b49bbd59888cfa5cefaf3cf69cd0a3e2d547f06427`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42126592
+
+- Identity: Mitochondrial Imaging Detects Early Cardiac Changes Following Cancer Immunotherapy (2026); DOI 10.1158/1078-0432.ccr-26-0277.
+- Supplied PDF: author_manuscript; SHA-256 `f75b973ff4b6c3042091d755cf4924c18b3f2bdeffaf7323661099a89bb5c67d`; 26 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11, 12, 13.
+- Visual pages checked: 11, 12.
+- Result profile: mixed, inconclusive.
+- Domains: safety, imaging.
+- Central results:
+  - A subset showed increased mitochondrial tracer uptake despite absent average change in advanced NSCLC, and an n=2 cardiac observation remained hypothesis-generating.
+- Narrative sequence:
+  - Describe group uptake, identify heterogeneous responders, then explore cardiac uptake and ECG concordance.
+- Negative-result handling: Absent group-level change is preserved while noting a subset signal; the cardiac result is explicitly preliminary.
+- Omics logic: PET uptake cannot distinguish cardiomyocyte mitochondrial activity from immune-cell contribution without further validation.
+- Efficacy/activity logic: No treatment efficacy endpoint was tested.
+- Prognosis logic: No prognostic claim is supported.
+- Claim/source boundaries:
+  - Retrospective small cohorts and only two detailed cardiac cases preclude diagnostic validation.
+- Selected source-linked sentence records:
+  - `ccr-logic-42126592-c-061`: physical page(s) 11; mixed; not_reported; subgroup_signal; state_exception; contrast.
+    - Source sentence: Although average group-wise increases in [18F]F-AraG uptake were modest in melanoma patients and absent in advanced NSCLC patients, a notable subset of patients showed a significant increase.
+    - PDF SHA-256: `f75b973ff4b6c3042091d755cf4924c18b3f2bdeffaf7323661099a89bb5c67d`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42126592-c-062`: physical page(s) 12; inconclusive; not_applicable; other; limit_inference; closure.
+    - Source sentence: Although this preliminary analysis included only two patients without detailed treatment histories and is primarily hypothesis-generating, the observations suggest that [18F]F-AraG PET may have potential as a noninvasive tool for monitoring cardiotoxicity and assessing cardiomyocyte viability.
+    - PDF SHA-256: `f75b973ff4b6c3042091d755cf4924c18b3f2bdeffaf7323661099a89bb5c67d`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42148883
+
+- Identity: Comprehensive Genomic and Transcriptomic Characterization of MTAP Loss across Advanced Solid Tumors (2026); DOI 10.1158/1078-0432.ccr-25-4936.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `430a708feea869a088a74a75aad2807c0910e1fad1507fdcb2c4f9f501d7de3b`; 12 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 7, 8.
+- Result profile: positive, mixed, inconclusive.
+- Domains: integrated_omics, prognosis.
+- Central results:
+  - In a sensitivity analysis restricted to patients with primary tumor specimens, MTAP loss showed a trend toward shorter ICB PFS that was directionally consistent with the overall analysis, although statistical significance was not reached in this smaller subset (median PFS: 3.6 vs. 4.2 months
+  - HR: 1.50
+  - 95% CI, 0.86–2.63
+  - P = 0.147
+  - Supplementary Fig. S3C).
+  - This pooled analysis revealed that MTAP loss tumors exhibited significantly reduced infiltration of CD4+ T cells (P = 0.05), CD8+ T cells (P = 0.02), and M2 macrophages (P = 0.02) compared with MTAP WT tumors.
+- Narrative sequence:
+  - 先在敏感性分析中保留方向一致但未显著的PFS关联，再报告bulk去卷积得到的免疫细胞差异。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated、transcriptomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 回顾性关联；xCell为推断丰度，MTAP与ICB结局关系不是治疗交互。
+  - 敏感性子集方向一致但未显著，不得宣称复制成功。
+  - xCell/bulk去卷积的推断丰度，不是直接细胞计数。
+- Selected source-linked sentence records:
+  - `ccr-logic-42148883-b-42148883-r1`: physical page(s) 7; inconclusive; nonsignificant; survival_prognosis; qualify_uncertainty; qualification.
+    - Source sentence: In a sensitivity analysis restricted to patients with primary tumor specimens, MTAP loss showed a trend toward shorter ICB PFS that was directionally consistent with the overall analysis, although statistical significance was not reached in this smaller subset (median PFS: 3.6 vs. 4.2 months; HR: 1.50; 95% CI, 0.86–2.63; P = 0.147; Supplementary Fig. S3C).
+    - PDF SHA-256: `430a708feea869a088a74a75aad2807c0910e1fad1507fdcb2c4f9f501d7de3b`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42148883-b-42148883-r2`: physical page(s) 8; positive; significant; pathway_or_state; contrast_groups; development.
+    - Source sentence: This pooled analysis revealed that MTAP loss tumors exhibited significantly reduced infiltration of CD4+ T cells (P = 0.05), CD8+ T cells (P = 0.02), and M2 macrophages (P = 0.02) compared with MTAP WT tumors.
+    - PDF SHA-256: `430a708feea869a088a74a75aad2807c0910e1fad1507fdcb2c4f9f501d7de3b`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42148884
+
+- Identity: Incidence of B-cell Malignancies in Patients with Lung Cancer Receiving PD-1 Blockade Therapy (2026); DOI 10.1158/1078-0432.ccr-25-3406.
+- Supplied PDF: not_classified_by_header; SHA-256 `f23730446e1c1a9c269ed732162991ed10599de0a2271478d5877a4788ddb342`; 15 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 7, 9.
+- Result profile: positive, negative, mixed.
+- Domains: safety, preclinical_functional.
+- Central results:
+  - PD-1 blockade was associated with higher subsequent lymphoma incidence, and TFH-deficient mice did not show the tumor-exacerbating effect.
+- Narrative sequence:
+  - Estimate clinical incidence with competing risks, describe cases, then test a TFH/IL-axis mechanism in mice.
+- Negative-result handling: The knockout null is used to localize the preclinical mechanism.
+- Omics logic: Human claims are observational; murine perturbation provides mechanistic support in a model only.
+- Efficacy/activity logic: The analysis concerns a late adverse outcome, not antitumor efficacy.
+- Prognosis logic: Incidence is an association and not proof that PD-1 blockade caused lymphoma.
+- Claim/source boundaries:
+  - Era, surveillance and treatment-selection confounding remain possible.
+- Selected source-linked sentence records:
+  - `ccr-logic-42148884-c-063`: physical page(s) 7; positive; significant; safety_tolerability; connect_to_outcome; development.
+    - Source sentence: Even after accounting for competing risks, such as death and censoring due to radiotherapy, the cumulative incidence of lymphoma remained significantly higher in the Pt + ICI group than in the Pt group (Supplementary Fig. S5B; Supplementary Table S6).
+    - PDF SHA-256: `f23730446e1c1a9c269ed732162991ed10599de0a2271478d5877a4788ddb342`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42148884-c-064`: physical page(s) 9; negative; nonsignificant; functional_perturbation; contrast_groups; closure.
+    - Source sentence: In Cd4creBcl6flox/flox mice lacking TFH cells (Supplementary Fig. S10B), the E.G7/Il4r/Il21r tumors were not exacerbated by PD-1 blockade but were comparable with the control tumors (Fig. 5B).
+    - PDF SHA-256: `f23730446e1c1a9c269ed732162991ed10599de0a2271478d5877a4788ddb342`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42149140
+
+- Identity: Clinical Outcomes and Predictors of Response to PD-(L)1 Blockade in Patients with NSCLC without Actionable Genomic Alterations Who Never Used Tobacco (2026); DOI 10.1158/1078-0432.ccr-25-4793.
+- Supplied PDF: not_classified_by_header; SHA-256 `6f3d3d9703597c317cf3bb525f48561e642fea87a94f461e61d721589a24cd49`; 37 physical pages.
+- Focused Results pages reread: 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22.
+- Visual pages checked: 15, 20.
+- Result profile: negative, mixed, inconclusive.
+- Domains: genomics, prognosis.
+- Central results:
+  - Candidate genomic correlates, including normalized TMB and KMT2D, showed null or merely numerical outcome differences in a retrospective ICI-treated cohort.
+- Narrative sequence:
+  - Describe clinical outcomes, compare regimens, then explore normalized TMB and low-frequency genomic correlates.
+- Negative-result handling: Null TMB and underpowered KMT2D trends are retained without declaring predictive value.
+- Omics logic: Sequencing analyses involve small subsets and platform-normalized measures.
+- Efficacy/activity logic: Cross-regimen observational comparisons do not establish treatment superiority.
+- Prognosis logic: Biomarker analyses are prognostic/associational within treated patients.
+- Claim/source boundaries:
+  - Small genomic subsets, multiple exploratory tests and no untreated comparator preclude predictive claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-42149140-c-065`: physical page(s) 15; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: However, no significant differences in ORR, mPFS, or mOS were observed between the two groups (Supplementary figure 6A-C).
+    - PDF SHA-256: `6f3d3d9703597c317cf3bb525f48561e642fea87a94f461e61d721589a24cd49`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42149140-c-066`: physical page(s) 20; inconclusive; nonsignificant; biomarker_association; qualify_uncertainty; closure.
+    - Source sentence: Although KMT2D-mutant patients demonstrated numerically improved PFS and OS, these differences did not reach statistical significance, likely due to the small sample size (Supplementary figure 13C–D).
+    - PDF SHA-256: `6f3d3d9703597c317cf3bb525f48561e642fea87a94f461e61d721589a24cd49`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42189883
+
+- Identity: Sequential Immune Activation of Effector T Cells as Biomarkers of Response to Durvalumab in Patients with Locally Advanced NSCLC (2026); DOI 10.1158/1078-0432.ccr-25-3991.
+- Supplied PDF: not_classified_by_header; SHA-256 `a18d08856f0a655751efcbf99d4cde538901e202ab718d1295da314633d0775a`; 11 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7.
+- Visual pages checked: 4, 5, 7.
+- Result profile: mixed.
+- Domains: prognosis, pk_pd.
+- Central results:
+  - 外周CD62Llow CD8 T细胞在cCRT后无显著改变、durvalumab后增加；PFS分层中log-rank与Wilcoxon结果不一致。
+- Narrative sequence:
+  - 先描绘分阶段免疫动力学，再探索与生存关联，最后用检验不一致限定。
+- Negative-result handling: cCRT阶段P=0.069和生存检验差异均保留。
+- Omics logic: 外周血流式表型不是肿瘤内直接测量。
+- Efficacy/activity logic: 无随机阶段对照，不能归因于durvalumab。
+- Prognosis logic: 探索性阈值关联为预后性而非预测性。
+- Claim/source boundaries:
+  - 需并列报告两种生存检验，不能只择显著者。
+- Selected source-linked sentence records:
+  - `ccr-logic-42189883-ccr25-26-a-063`: physical page(s) 4; mixed; mixed; differential_feature; contrast_groups; contrast.
+    - Source sentence: Conversely, CD62Llow CD8+ T cells showed no significant change after cCRT but demonstrated a notable increase following durvalumab treatment (mean difference: cCRT, -2.0 ± 12.6, t = 1.8, df = 135, P = 0.069; durvalumab, 6.8 ± 9.3, t = 7.5, df = 104, P < 0.0001; Fig. 2G and H).
+    - PDF SHA-256: `a18d08856f0a655751efcbf99d4cde538901e202ab718d1295da314633d0775a`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42189883-ccr25-26-a-064`: physical page(s) 5; mixed; mixed; survival_prognosis; qualify_uncertainty; qualification.
+    - Source sentence: Kaplan–Meier analysis revealed a median PFS of 28.5 months (95% CI, 20.4–38) in the high group and 11.0 months (95% CI, 5.3–21.2) in the low group (log-rank P = 0.057, Wilcoxon P = 0.038; Fig. 5C).
+    - PDF SHA-256: `a18d08856f0a655751efcbf99d4cde538901e202ab718d1295da314633d0775a`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42207168
+
+- Identity: Mature Outcomes and Patterns of Failure in the Phase II FLARE-RT Trial of Biological Image-Guided and Risk-Adaptive Chemoradiation for Unresectable NSCLC (2026); DOI 10.1158/1078-0432.ccr-25-2626.
+- Supplied PDF: author_manuscript; SHA-256 `a59711a38d6f57596977129879c2c41774b405a5a0b473b42114fb99d423cec5`; 21 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9, 10.
+- Visual pages checked: 7, 8.
+- Result profile: mixed, inconclusive.
+- Domains: clinical_efficacy, diagnostic_model, other.
+- Central results:
+  - PET response status showed a non-significant trend of interest for treatment failure.
+  - Note that this result may be confounded by differences in radiation therapy dose: patients who were PET non-responders received an adaptive boost, whereas PET responders did not.
+- Narrative sequence:
+  - 先报告PET反应分层的非显著趋势，再紧接指出自适应加量造成的剂量混杂。
+- Negative-result handling: 明确保留2条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 非随机风险适应治疗，小样本且剂量由PET反应决定；不能把趋势写成加量获益。
+  - 未显著趋势，不可转述为获益。
+  - 剂量由PET反应决定，存在结构性混杂。
+- Selected source-linked sentence records:
+  - `ccr-logic-42207168-b-42207168-r1`: physical page(s) 7; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: PET response status showed a non-significant trend of interest for treatment failure.
+    - PDF SHA-256: `a59711a38d6f57596977129879c2c41774b405a5a0b473b42114fb99d423cec5`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42207168-b-42207168-r2`: physical page(s) 8; inconclusive; not_applicable; model_performance; limit_inference; closure.
+    - Source sentence: Note that this result may be confounded by differences in radiation therapy dose: patients who were PET non-responders received an adaptive boost, whereas PET responders did not.
+    - PDF SHA-256: `a59711a38d6f57596977129879c2c41774b405a5a0b473b42114fb99d423cec5`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42207176
+
+- Identity: Intrathecal Allogeneic B7-H3-Targeted CAR Gamma Delta T Cells for Leptomeningeal Metastasis from Solid Tumors: Safety Efficacy and Immunologic Dynamics in a Phase I Trial (2026); DOI 10.1158/1078-0432.ccr-26-0738.
+- Supplied PDF: not_classified_by_header; SHA-256 `042a3e8c01c3e52baf00f21a58e3ab425f51180e3a132f8873334c87b8cac27f`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9.
+- Visual pages checked: 5, 6, 7.
+- Result profile: positive, descriptive.
+- Domains: single_cell, proteomics, liquid_biopsy, clinical_efficacy.
+- Central results:
+  - Three patients achieved short-term stable disease and showed transient CSF cytokine increases after intrathecal allogeneic B7-H3 CAR γδ T cells.
+- Narrative sequence:
+  - Establish safety and feasibility, report individual clinical courses, then map CSF cytokine and cellular dynamics.
+- Negative-result handling: With n=3, absence of response is not converted into a formal null; all activity is descriptive.
+- Omics logic: CSF cytokines and single-cell profiles are longitudinal correlates, not direct proof of tumor killing.
+- Efficacy/activity logic: Phase I n=3 data support feasibility and activity description only.
+- Prognosis logic: Prognosis was not inferentially assessed.
+- Claim/source boundaries:
+  - Very small sample size, no comparator and heterogeneous prior therapy prevent efficacy claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-42207176-c-067`: physical page(s) 5; descriptive; not_applicable; treatment_activity; quantify_effect; development.
+    - Source sentence: All 3 patients had stable disease (SD) on days 14 and 30.
+    - PDF SHA-256: `042a3e8c01c3e52baf00f21a58e3ab425f51180e3a132f8873334c87b8cac27f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42207176-c-068`: physical page(s) 6; positive; not_reported; pathway_or_state; quantify_effect; development.
+    - Source sentence: Seven of the 12 cytokines measured in CSF increased on day 1, including IL5, IL6, IL9, IL13, IL22, tumor necrosis factor (TNF) α, and interferon (IFN) γ, and generally returned toward baseline on day 7 (Fig. 2D).
+    - PDF SHA-256: `042a3e8c01c3e52baf00f21a58e3ab425f51180e3a132f8873334c87b8cac27f`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42268349
+
+- Identity: Molecular and Clinical Characteristics of Patients with Non-Small Cell Lung Cancer Harboring KRAS Q61 Mutations to Assess Therapeutic Responses (2026); DOI 10.1158/1078-0432.ccr-26-0133.
+- Supplied PDF: not_classified_by_header; SHA-256 `13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766`; 24 physical pages.
+- Focused Results pages reread: 8, 9, 10.
+- Visual pages checked: 9, 10.
+- Result profile: positive, negative, mixed, descriptive.
+- Domains: genomics, prognosis.
+- Central results:
+  - There were considerable differences between Q61H and Q61L: STK11 was the most frequent co-mutation in Q61H (45.8%), followed by TP53 (32.1%) and KEAP1 (31.3%).
+  - A statistically significant difference in OS was observed between patients receiving CTX and ICB as monotherapy (HR 0.29, 95% CI 0.12–0.69).
+  - No significant differences were found between patients receiving CTX-ICB versus CTX alone (HR 0.68, 95% CI 0.39–1.19) or ICB alone (HR 0.39, 95% CI 0.14–1.09).
+- Narrative sequence:
+  - 从KRAS Q61等位基因的共突变谱，转向不同治疗的OS比较，并并列呈现一个显著比较和两个未显著比较。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 回顾性治疗选择且ICI单药人数很少；没有正式交互检验，不能宣称疗效预测。
+  - 基因组频率描述，不蕴含功能因果。
+  - 回顾性非随机且ICI组很小；不是治疗交互。
+  - 两个未显著比较不得写成等效。
+- Selected source-linked sentence records:
+  - `ccr-logic-42268349-b-42268349-r1`: physical page(s) 9; descriptive; not_reported; descriptive_frequency; contrast_groups; development.
+    - Source sentence: There were considerable differences between Q61H and Q61L: STK11 was the most frequent co-mutation in Q61H (45.8%), followed by TP53 (32.1%) and KEAP1 (31.3%).
+    - PDF SHA-256: `13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42268349-b-42268349-r2`: physical page(s) 10; positive; significant; survival_prognosis; contrast_groups; development.
+    - Source sentence: A statistically significant difference in OS was observed between patients receiving CTX and ICB as monotherapy (HR 0.29, 95% CI 0.12–0.69).
+    - PDF SHA-256: `13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42268349-b-42268349-r3`: physical page(s) 10; negative; nonsignificant; survival_prognosis; report_null_result; contrast.
+    - Source sentence: No significant differences were found between patients receiving CTX-ICB versus CTX alone (HR 0.68, 95% CI 0.39–1.19) or ICB alone (HR 0.39, 95% CI 0.14–1.09).
+    - PDF SHA-256: `13b1e175a3abd35ebab4757b894277bf29274068d00d98d01197b68ffc01f766`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42307634
+
+- Identity: Pulsed Electric Field Ablation Reprograms Tumor Immunity and Stimulates Germinal Center Formation in Tertiary Lymphoid Structures in Patients with Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-3847.
+- Supplied PDF: not_classified_by_header; SHA-256 `cf94aa472650b1be71268bb4631a7d4592d245715c2af548f007479a1a28f156`; 19 physical pages.
+- Focused Results pages reread: 10, 11, 12, 13, 14.
+- Visual pages checked: 10, 14.
+- Result profile: positive, mixed, inconclusive.
+- Domains: integrated_omics, other.
+- Central results:
+  - Although not statistically significant, an observable trend indicating an increase in the total number of TLS in ablated tumors was noted (Fig. 1D).
+  - The prevalence of tumors with at least one TLS_GC was significantly increased in ablated tumors (47%) compared with controls (24%
+  - Fig. 5H).
+- Narrative sequence:
+  - 先报告TLS总数仅有未显著上升趋势，再报告含生发中心TLS的肿瘤比例显著增加。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于spatial证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 探索性治前/治后及扩展历史对照；组织面积与样本构成差异限制因果解释。
+  - 趋势性结果必须显式保留未显著。
+  - 探索性非随机组织比较，不证明临床结局获益。
+- Selected source-linked sentence records:
+  - `ccr-logic-42307634-b-42307634-r1`: physical page(s) 10; inconclusive; nonsignificant; pathway_or_state; qualify_uncertainty; qualification.
+    - Source sentence: Although not statistically significant, an observable trend indicating an increase in the total number of TLS in ablated tumors was noted (Fig. 1D).
+    - PDF SHA-256: `cf94aa472650b1be71268bb4631a7d4592d245715c2af548f007479a1a28f156`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42307634-b-42307634-r2`: physical page(s) 14; positive; significant; pathway_or_state; contrast_groups; development.
+    - Source sentence: The prevalence of tumors with at least one TLS_GC was significantly increased in ablated tumors (47%) compared with controls (24%; Fig. 5H).
+    - PDF SHA-256: `cf94aa472650b1be71268bb4631a7d4592d245715c2af548f007479a1a28f156`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42340371
+
+- Identity: The Genomic Landscape of MYC-, MYCL-, and MYCN-Amplified Solid Tumors (2026); DOI 10.1158/1078-0432.CCR-25-4102.
+- Supplied PDF: publisher_hosted_manuscript; SHA-256 `c41da3b0549db08f1158f736711abe57a0636f961f3ac631874e69ed3c4fc691`; 40 physical pages.
+- Focused Results pages reread: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24.
+- Visual pages checked: 21, 23, 24, 36.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, transcriptomics, prognosis.
+- Central results:
+  - NSCLC中MYC焦点与广泛扩增表达有差异，KRAS共变异可削弱表达；部分生存名义关联多重校正后不显著。
+- Narrative sequence:
+  - 泛癌景观—扩增结构—表达—共变异—临床结局，逐层收窄证据。
+- Negative-result handling: 多重校正后P=0.14明确覆盖名义阳性。
+- Omics logic: 拷贝数、转录和临床层整合为关联图谱。
+- Efficacy/activity logic: 无治疗疗效。
+- Prognosis logic: 生存结果未通过多重校正。
+- Claim/source boundaries:
+  - 不可从泛癌共现/表达关联推断治疗敏感性。
+- Selected source-linked sentence records:
+  - `ccr-logic-42340371-ccr25-26-a-065`: physical page(s) 21; positive; significant; differential_feature; state_primary_finding; development.
+    - Source sentence: Only non-small cell lung cancer (NSCLC) showed a significant difference in expression of MYC between focal and broad amplifications (Wilcoxon BH-adjusted p-value = 0.018).
+    - PDF SHA-256: `c41da3b0549db08f1158f736711abe57a0636f961f3ac631874e69ed3c4fc691`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42340371-ccr25-26-a-066`: physical page(s) 23; mixed; mixed; biomarker_association; state_exception; contrast.
+    - Source sentence: Though focal amplifications of MYC led to greater expression in NSCLC (Wilcoxon p-value = 1.6x10-4), co-occurring alterations in KRAS correlated with low expression of MYC such that even in samples with focal amplifications, the expression was indistinguishable from samples without amplification (Wilcoxon p-value = 0.068, Figure 3C).
+    - PDF SHA-256: `c41da3b0549db08f1158f736711abe57a0636f961f3ac631874e69ed3c4fc691`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42340371-ccr25-26-a-067`: physical page(s) 24; negative; nonsignificant; survival_prognosis; qualify_uncertainty; qualification.
+    - Source sentence: Unfortunately, likely due to limited power, neither of these associations reaches significance after multiple testing corrections (BH-adjusted p-value = 0.14 for both) (Supplementary Table 7).
+    - PDF SHA-256: `c41da3b0549db08f1158f736711abe57a0636f961f3ac631874e69ed3c4fc691`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42360104
+
+- Identity: Early Detriment Analysis of First-Line Nivolumab plus Ipilimumab-Based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-0942.
+- Supplied PDF: not_classified_by_header; SHA-256 `a0e653e0849a115ee470172fc4eb0d55915218b13ca176ba178315ddd832d97d`; 14 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6, 7.
+- Visual pages checked: 4, 5, 6.
+- Result profile: positive, mixed, descriptive.
+- Domains: clinical_efficacy, prognosis, diagnostic_model.
+- Central results:
+  - 双免疫组早期快速进展/死亡比例较高；内部模型性能有限，不同方案随访PFS结果不一致。
+- Narrative sequence:
+  - 先定义早期不利结局，再建模候选因素，随后在不同试验/方案中作探索复核。
+- Negative-result handling: 整体突变变量预测贡献低被明确报告。
+- Omics logic: 突变/临床/实验室变量进入多模态模型。
+- Efficacy/activity logic: 方案间结果来自不同分析，不能形成未检验交互。
+- Prognosis logic: 长期生存亚组为事后。
+- Claim/source boundaries:
+  - 模型仅内部留出测试，AUC 0.64；不得用于患者选择。
+- Selected source-linked sentence records:
+  - `ccr-logic-42360104-ccr25-26-a-068`: physical page(s) 4; descriptive; not_applicable; descriptive_frequency; contrast_groups; opening.
+    - Source sentence: Rapid progression was observed in 40% of patients in the nivolumab plus ipilimumab arm versus 26% in the chemotherapy arm, and early death was observed in 13% versus 10%, respectively (Supplementary Table S4).
+    - PDF SHA-256: `a0e653e0849a115ee470172fc4eb0d55915218b13ca176ba178315ddd832d97d`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42360104-ccr25-26-a-069`: physical page(s) 4; positive; not_applicable; model_performance; quantify_effect; development.
+    - Source sentence: A proof-of-concept prediction model, trained on data from 80% of the patients in the data set, demonstrated reasonable predictive power for the 20% of patients in the held-out test set (receiver operating characteristic curve area under the curve = 0.64; precision–recall curve average precision = 0.67; Supplementary Fig. S4).
+    - PDF SHA-256: `a0e653e0849a115ee470172fc4eb0d55915218b13ca176ba178315ddd832d97d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42360104-ccr25-26-a-070`: physical page(s) 6; mixed; mixed; treatment_efficacy; contrast_groups; contrast.
+    - Source sentence: PFS was similar with nivolumab plus ipilimumab versus chemotherapy (HR, 0.93; 95% CI, 0.59–1.48) and improved with nivolumab plus ipilimumab with chemotherapy versus chemotherapy alone (HR, 0.55; 95% CI, 0.35–0.88) across the full study follow-ups.
+    - PDF SHA-256: `a0e653e0849a115ee470172fc4eb0d55915218b13ca176ba178315ddd832d97d`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42360806
+
+- Identity: Molecular and Clinical Determinants of Targeted Therapy Treatment in Biliary Tract Cancer (2026); DOI 10.1158/1078-0432.CCR-26-0428.
+- Supplied PDF: author_manuscript; SHA-256 `8d139e933b7b22a92351c111f9dcc954fb6ca6d74d4ec317237f330bfb8598bd`; 23 physical pages.
+- Focused Results pages reread: 6, 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - We observed a significant PFS benefit in patients who received matched-targeted therapy as second-line treatment (n = 99) compared to those who received 5-FU-based chemotherapy (n = 25) in the same line (median, 6.6 months [95% CI, 4.2–8.6 months] vs. 3.3 months [95% CI, 2.1–8.1 months], P =.005) (Fig. 2A, Fig. S3A).
+  - No significant difference in OS was seen in the matched therapy group (median follow-up, 13.8 months) compared to the unmatched therapy group (median follow-up, 9.0 months) (median OS, 17.0 months [95% CI: 12.0–27.0 months] vs. 11.0 months [95% CI, 8.5–14.0 months]
+  - HR 0.8, P = .16) (Fig. 2B).
+- Narrative sequence:
+  - 先报告二线匹配靶向治疗相对化疗的PFS差异，再报告匹配与未匹配治疗间OS未显著。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从回顾性、治疗选择与随访差异可能混杂；PFS关联不能自动升级为治疗因果。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 回顾性、治疗选择与随访差异可能混杂；PFS关联不能自动升级为治疗因果。
+  - 回顾性治疗选择；“benefit”为作者用语，不升级为随机因果。
+  - 随访不同且回顾性；未显著不等于OS等效。
+- Selected source-linked sentence records:
+  - `ccr-logic-42360806-b-42360806-r1`: physical page(s) 7; positive; significant; treatment_efficacy; contrast_groups; development.
+    - Source sentence: We observed a significant PFS benefit in patients who received matched-targeted therapy as second-line treatment (n = 99) compared to those who received 5-FU-based chemotherapy (n = 25) in the same line (median, 6.6 months [95% CI, 4.2–8.6 months] vs. 3.3 months [95% CI, 2.1–8.1 months], P =.005) (Fig. 2A, Fig. S3A).
+    - PDF SHA-256: `8d139e933b7b22a92351c111f9dcc954fb6ca6d74d4ec317237f330bfb8598bd`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42360806-b-42360806-r2`: physical page(s) 7; negative; nonsignificant; survival_prognosis; report_null_result; contrast.
+    - Source sentence: No significant difference in OS was seen in the matched therapy group (median follow-up, 13.8 months) compared to the unmatched therapy group (median follow-up, 9.0 months) (median OS, 17.0 months [95% CI: 12.0–27.0 months] vs. 11.0 months [95% CI, 8.5–14.0 months]; HR 0.8, P = .16) (Fig. 2B).
+    - PDF SHA-256: `8d139e933b7b22a92351c111f9dcc954fb6ca6d74d4ec317237f330bfb8598bd`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42377115
+
+- Identity: High-Sensitivity ctDNA Analysis Uncovers Relevant Signals Missed by NGS in Pancreatic Cancer (2026); DOI 10.1158/1078-0432.CCR-26-0609.
+- Supplied PDF: author_manuscript; SHA-256 `34e187d81a62572ec4a1d3ad17c3d343fa90bec867d5c3a72edac870bb22060f`; 19 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 5, 6.
+- Result profile: negative, mixed, descriptive.
+- Domains: genomics, liquid_biopsy, prognosis.
+- Central results:
+  - High-sensitivity ddPCR detected substantially more KRAS ctDNA than NGS at diagnosis, but ctDNA lost independent prognostic significance after adding CA19-9 and radiologic response.
+- Narrative sequence:
+  - Compare assay sensitivity, relate baseline and dynamic ctDNA to outcomes, then test incremental multivariable value.
+- Negative-result handling: The adjusted null is stated explicitly after stronger univariable signals.
+- Omics logic: ddPCR covers selected KRAS hotspots and higher analytic sensitivity does not equal complete genomic profiling.
+- Efficacy/activity logic: No treatment-selection interaction was tested.
+- Prognosis logic: ctDNA is prognostic only to the extent supported by the adjusted model.
+- Claim/source boundaries:
+  - Hotspot restriction, treatment-era variation and collinearity with response markers limit generalization.
+- Selected source-linked sentence records:
+  - `ccr-logic-42377115-c-069`: physical page(s) 5; descriptive; not_applicable; assay_concordance; contrast_modalities; opening.
+    - Source sentence: At diagnosis, KRAS ctDNA was detected in 17.2% (17/99) of patients by NGS and 64.9% (63/97) by ddPCR (Supplementary Figures S2–S3).
+    - PDF SHA-256: `34e187d81a62572ec4a1d3ad17c3d343fa90bec867d5c3a72edac870bb22060f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42377115-c-070`: physical page(s) 6; negative; nonsignificant; survival_prognosis; qualify_uncertainty; closure.
+    - Source sentence: However, when including dynamic response of CA 19-9 as well as investigator assessed radiologic response after NAC, independent prediction of ctDNA was no longer significant (Supplementary Figure S6a–b).
+    - PDF SHA-256: `34e187d81a62572ec4a1d3ad17c3d343fa90bec867d5c3a72edac870bb22060f`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42405849
+
+- Identity: Presenting features and outcomes to standard systemic therapies in patients with MTAP-deleted advanced non-small cell lung cancer (2026); DOI 10.1158/1078-0432.ccr-26-0188.
+- Supplied PDF: author_manuscript; SHA-256 `479a9cbb871a3396c14f060e01055ffa123791276a20ea26ffb5051535030e69`; 21 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8, 9.
+- Visual pages checked: 6, 7, 8, 19.
+- Result profile: positive, mixed.
+- Domains: genomics, prognosis.
+- Central results:
+  - MTAP-deleted NSCLC showed enriched EGFR alterations and shorter PFS on anti-PD-(L)1-based regimens, whereas OS differences were not significant.
+- Narrative sequence:
+  - Compare baseline and genomic features, analyze each standard regimen, adjust associations, then test purity-restricted sensitivity analyses.
+- Negative-result handling: Regimen-specific PFS signals are paired with null OS results and small-sample caveats.
+- Omics logic: Targeted tissue NGS defines MTAP and co-mutations; it does not measure MTAP protein in most cases.
+- Efficacy/activity logic: Retrospective regimen-specific associations are not randomized predictive interactions.
+- Prognosis logic: PFS and OS comparisons are prognostic within treatment groups.
+- Claim/source boundaries:
+  - Single-center retrospective design, sequential therapies and assay purity thresholds limit causal interpretation.
+- Selected source-linked sentence records:
+  - `ccr-logic-42405849-c-071`: physical page(s) 6; positive; significant; differential_feature; contrast_groups; development.
+    - Source sentence: Among these genes, patients with MTAPdel NSCLC had more frequent EGFR mutations (39.8% vs. 20.8%, p<0.001), including after Bonferroni correction for multiple hypotheses (q<0.030) (Figure 2D-E, Supplemental Table 1C, and Supplemental Figure 1C).
+    - PDF SHA-256: `479a9cbb871a3396c14f060e01055ffa123791276a20ea26ffb5051535030e69`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42405849-c-072`: physical page(s) 7; mixed; mixed; survival_prognosis; qualify_uncertainty; contrast.
+    - Source sentence: Here, the MTAPdel cohort had a significantly lower PFS than the MTAPwt cohort on platinum chemotherapy + anti-PD-(L)1 therapy (n=40 vs. 104) (mPFS 4.2 vs. 7.5 months, HR 2.0 [95% CI 1.4–3.3], p<0.001), but there was no significant difference in OS (mOS 14.9 vs. 19.1 months, HR 1.3 [95% CI 0.8–2.0], p=0.194), despite mOS being numerically lower in the MTAPdel cohort (Figures 3E-F).
+    - PDF SHA-256: `479a9cbb871a3396c14f060e01055ffa123791276a20ea26ffb5051535030e69`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42440354
+
+- Identity: Osimertinib Plus Gefitinib in Patients with EGFR-Mutated Advanced Non-Small Cell Lung Cancer and EGFR (C797X) Mutation Following First-Line Osimertinib: ORCHARD (2026); DOI 10.1158/1078-0432.ccr-26-0704.
+- Supplied PDF: not_classified_by_header; SHA-256 `118a92229dd085d634a41eeb6f660597dd3b353b6e6ff9e8660aaf216dda0112`; 10 physical pages.
+- Focused Results pages reread: 3, 4, 5.
+- Visual pages checked: 3, 5.
+- Result profile: positive, mixed, inconclusive.
+- Domains: clinical_efficacy.
+- Central results:
+  - Eight patients had a confirmed response (all PRs), for a confirmed ORR of 26% (80% CI, 16–39
+  - Table 2).
+  - Among patients with EGFR C797S clonality >20% without baseline T790M mutations, the confirmed ORR (32%
+  - 7/22 patients) was higher than in all other patients (11%
+  - 1/9 patients), and there was a greater reduction in target lesion size (Supplementary Fig. S3).
+  - These factors, as well as the small number of patients in each subset, are important caveats that affect the interpretation of the efficacy analysis in this subgroup.
+- Narrative sequence:
+  - 先给出单臂确认ORR，再描述克隆比例探索性亚组的方向差异，并用小样本等限制语收束。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从小型单臂ORCHARD队列；亚组未预设、无正式比较，且总体活性低于开发阈值。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 小型单臂ORCHARD队列；亚组未预设、无正式比较，且总体活性低于开发阈值。
+  - 小型单臂队列的确认缓解率。
+  - 探索性小亚组、无正式比较；不能写成预测性阈值。
+  - 作者明确限定亚组解释。
+- Selected source-linked sentence records:
+  - `ccr-logic-42440354-b-42440354-r1`: physical page(s) 3; positive; not_reported; treatment_activity; quantify_effect; development.
+    - Source sentence: Eight patients had a confirmed response (all PRs), for a confirmed ORR of 26% (80% CI, 16–39; Table 2).
+    - PDF SHA-256: `118a92229dd085d634a41eeb6f660597dd3b353b6e6ff9e8660aaf216dda0112`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42440354-b-42440354-r2`: physical page(s) 5; positive; not_reported; subgroup_signal; contrast_groups; development.
+    - Source sentence: Among patients with EGFR C797S clonality >20% without baseline T790M mutations, the confirmed ORR (32%; 7/22 patients) was higher than in all other patients (11%; 1/9 patients), and there was a greater reduction in target lesion size (Supplementary Fig. S3).
+    - PDF SHA-256: `118a92229dd085d634a41eeb6f660597dd3b353b6e6ff9e8660aaf216dda0112`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42440354-b-42440354-r3`: physical page(s) 5; inconclusive; not_applicable; subgroup_signal; limit_inference; closure.
+    - Source sentence: These factors, as well as the small number of patients in each subset, are important caveats that affect the interpretation of the efficacy analysis in this subgroup.
+    - PDF SHA-256: `118a92229dd085d634a41eeb6f660597dd3b353b6e6ff9e8660aaf216dda0112`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42440358
+
+- Identity: Application of a Translational Research Platform to Unveil Efficacy Signals and Mechanisms of Resistance of FGFR Inhibitors in Multiple FGFR-Altered Solid Tumors (2026); DOI 10.1158/1078-0432.CCR-26-0300.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `03a356ebcc6c02232e55367da294acb359b60203032072c0e4fba9dd639f187b`; 15 physical pages.
+- Focused Results pages reread: 6, 7, 8.
+- Visual pages checked: 7, 8.
+- Result profile: negative, mixed.
+- Domains: genomics, proteomics.
+- Central results:
+  - FGFR扩增水平与临床获益无显著相关，FISH扩增与质谱蛋白存在明显不一致；个别功能分析提出候选耐药共变异。
+- Narrative sequence:
+  - 从临床平台结局到多模态检测，再用患者来源模型探查机制。
+- Negative-result handling: 扩增–获益阴性是核心，而非被个案机制掩盖。
+- Omics logic: DNA、RNA、蛋白检测不可互换；阈值与取材均影响结果。
+- Efficacy/activity logic: 多癌种小样本，不能比较治疗疗效。
+- Prognosis logic: 无独立预后。
+- Claim/source boundaries:
+  - 功能测定逐个突变且患者来源样本有限；耐药只能称假设。
+- Selected source-linked sentence records:
+  - `ccr-logic-42440358-ccr25-26-a-071`: physical page(s) 8; negative; nonsignificant; null_biomarker; report_null_result; qualification.
+    - Source sentence: The clinical benefit and the FGFR-amp level (gene/CEN ratio ≥2.2 or CNA ≥6) showed no statistically significant correlation in the overall group of 25 FGFR-amp patients (P = 0.449; Fig. 2B).
+    - PDF SHA-256: `03a356ebcc6c02232e55367da294acb359b60203032072c0e4fba9dd639f187b`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42440358-ccr25-26-a-072`: physical page(s) 8; mixed; not_applicable; assay_concordance; contrast_modalities; development.
+    - Source sentence: FGFR1-4 protein levels were undetectable by MMSP in 11 samples (0 FGFR1-4 amol/μg), of which four (36%) had been previously considered FGFR1-amp by FISH (F0339, F0340, F0352, F0353).
+    - PDF SHA-256: `03a356ebcc6c02232e55367da294acb359b60203032072c0e4fba9dd639f187b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42440361
+
+- Identity: Divergent Tumor Immune Microenvironment and Response to Neoadjuvant Chemoimmunotherapy in Resectable Non-Small Cell Lung Cancer: A Single-Arm Phase II Trial (2026); DOI 10.1158/1078-0432.ccr-25-4222.
+- Supplied PDF: not_classified_by_header; SHA-256 `1fd990e640ed70962f9aa5d382afad178bb0bf94dfa9f85f64f43a2af1005285`; 13 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7.
+- Visual pages checked: 4, 5, 6, 7, 8.
+- Result profile: mixed, inconclusive, descriptive.
+- Domains: transcriptomics, spatial_omics, clinical_efficacy, prognosis.
+- Central results:
+  - 新辅助队列有MPR/pCR；治疗后空间转录组推断MPR肿瘤免疫构成不同，ME签名的验证队列EFS趋势未显著。
+- Narrative sequence:
+  - 临床反应—空间发现—外部转录验证—生存探索，阳性与不确定性分层。
+- Negative-result handling: 淋巴结无显著差异及验证队列P=0.094均保留。
+- Omics logic: SpatialDecon为推断比例，虽有染色验证但非直接计数。
+- Efficacy/activity logic: 病理反应分母需说明；无随机对照。
+- Prognosis logic: EFS为探索性预后信号，不是治疗预测。
+- Claim/source boundaries:
+  - 治疗后切除样本按结局分组，存在结局条件化和选择。
+- Selected source-linked sentence records:
+  - `ccr-logic-42440361-ccr25-26-a-073`: physical page(s) 4; descriptive; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: An MPR and a pCR occurred in 30 (37.5%) and 21 (26.3%) patients, respectively (Fig. 1B).
+    - PDF SHA-256: `1fd990e640ed70962f9aa5d382afad178bb0bf94dfa9f85f64f43a2af1005285`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42440361-ccr25-26-a-074`: physical page(s) 6; mixed; significant; differential_feature; contrast_groups; development.
+    - Source sentence: Using the SpatialDecon algorithm to estimate immune cell subset proportions, we found that MPR tumors contained significantly higher proportions of plasma cells (P = 3.36 × 10−5), CD8+ T cells (P = 3.39 × 10−3), and B cells (P = 0.036), along with a lower proportion of endothelial cells (P = 0.034) and natural killer (NK) cells (P = 0.036) compared with non-MPR tumors (Fig. 3A).
+    - PDF SHA-256: `1fd990e640ed70962f9aa5d382afad178bb0bf94dfa9f85f64f43a2af1005285`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42440361-ccr25-26-a-075`: physical page(s) 7; inconclusive; nonsignificant; survival_prognosis; qualify_uncertainty; qualification.
+    - Source sentence: In the validation cohort, among MPR patients, those with high ME signature scores showed a trend toward shorter EFS compared with those with low scores, although the difference did not reach statistical significance (P = 0.094; Fig. 4E).
+    - PDF SHA-256: `1fd990e640ed70962f9aa5d382afad178bb0bf94dfa9f85f64f43a2af1005285`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42440365
+
+- Identity: Role of ctDNA Tumor Fraction in Selecting Immunotherapy Based Regimens in Advanced Non-small Cell Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-25-3917.
+- Supplied PDF: not_classified_by_header; SHA-256 `695969257a3985ecf06f4ea45167e35594ccffd6db97fca76f37eb4edc9cfb07`; 11 physical pages.
+- Focused Results pages reread: 3, 4, 5, 6.
+- Visual pages checked: 4, 6.
+- Result profile: positive, negative, mixed.
+- Domains: integrated_omics, clinical_efficacy.
+- Central results:
+  - Across all three groups, the risks of rwPFS and rwOS were not significantly different for the patients treated with ICB versus ICB + chemo.
+  - In IPTW models, a strong treatment interaction was observed for both rwPFS [HR = 0.43 (0.27–0.68)
+  - Supplementary Fig. S4B] and rwOS [HR = 0.47 (0.26–0.84)
+  - Supplementary Fig. S4C], indicating that a cutoff of ctDNA TF ≥ 5% is predictive of which patients will have improved outcomes when treated with ICB + chemo.
+  - TP53 (q < 0.001) and RB1 (q = 0.002) were associated with increased TF adjusted for tMTV (TF/tMTV
+  - Fig. 4E).
+- Narrative sequence:
+  - 先报告未分层总体比较无显著差异，再以IPTW交互模型识别ctDNA高分数组合治疗关联，最后连接基因改变与TF。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效/活性语句严格服从回顾性临床基因组数据库、残余不平衡且外部验证较小；只有正式交互结果可称预测性信号。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 回顾性临床基因组数据库、残余不平衡且外部验证较小；只有正式交互结果可称预测性信号。
+  - 未按高TF交互分层的总体/组内比较；不证明两方案等效。
+  - 正式交互支持预测性信号，但回顾性IPTW与小验证集限制验证等级。
+  - 基因改变与校正TF的关联，不是治疗效应。
+- Selected source-linked sentence records:
+  - `ccr-logic-42440365-b-42440365-r1`: physical page(s) 4; negative; nonsignificant; treatment_efficacy; report_null_result; contrast.
+    - Source sentence: Across all three groups, the risks of rwPFS and rwOS were not significantly different for the patients treated with ICB versus ICB + chemo.
+    - PDF SHA-256: `695969257a3985ecf06f4ea45167e35594ccffd6db97fca76f37eb4edc9cfb07`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42440365-b-42440365-r2`: physical page(s) 4; positive; significant; biomarker_association; connect_to_outcome; development.
+    - Source sentence: In IPTW models, a strong treatment interaction was observed for both rwPFS [HR = 0.43 (0.27–0.68); Supplementary Fig. S4B] and rwOS [HR = 0.47 (0.26–0.84); Supplementary Fig. S4C], indicating that a cutoff of ctDNA TF ≥ 5% is predictive of which patients will have improved outcomes when treated with ICB + chemo.
+    - PDF SHA-256: `695969257a3985ecf06f4ea45167e35594ccffd6db97fca76f37eb4edc9cfb07`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42440365-b-42440365-r3`: physical page(s) 6; positive; significant; biomarker_association; integrate_evidence_layers; development.
+    - Source sentence: TP53 (q < 0.001) and RB1 (q = 0.002) were associated with increased TF adjusted for tMTV (TF/tMTV; Fig. 4E).
+    - PDF SHA-256: `695969257a3985ecf06f4ea45167e35594ccffd6db97fca76f37eb4edc9cfb07`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42446521
+
+- Identity: Clinical significance of EGFR amplification in patients with EGFR-mutated metastatic non-small cell lung cancer receiving first-line osimertinib (2026); DOI 10.1158/1078-0432.ccr-26-0924.
+- Supplied PDF: not_classified_by_header; SHA-256 `61d0a2e7c6cda3c9fa5a06eb144d83504a838a1df4733e9205c190a17e6eff84`; 39 physical pages.
+- Focused Results pages reread: 13, 14, 15, 16, 17, 18.
+- Visual pages checked: 15, 16, 18, 36, 39.
+- Result profile: negative, mixed.
+- Domains: clinical_efficacy, prognosis, preclinical_functional.
+- Central results:
+  - With a median follow-up of 47.1 months (95% CI 42.1-50.4), patients with EGFRAMP, compared to patients with EGFRNon-AMP, achieved similar ORR (88% vs 83%, p=0.23) (Figure 1A), but significantly shorter median PFS (11.6 vs 19.0 months, HR 1.77, 95% CI, 1.36-2.31, p<0.0001) (Figure 1B) and OS (34.0 vs 40.1 months, HR 1.40, 95% CI, 1.02-1.94, p=0.040) (Figure 1C).
+  - In contrast to patients with EGFR ex19del, among those carrying the EGFR L858R mutation no significant outcome differences were observed between patients with EGFRAMP (n=37) and EGFRNon-AMP ones (n=151), with similar ORR (86% vs 75%, p=0.14) (Figure 2D), median PFS (11.4 vs 14.3 months, HR 1.47, 95% CI, 0.98 -2.19, p=0.060) (Figure 2E) and median OS (33.2 vs 36.0 months, HR 1.19, 95% CI, 0.73-1.94, p=0.50) (Figure 2F).
+  - At resistance, patients with baseline EGFRAMP (n=28), compared to patients with baseline EGFRNon-AMP (n=85), more likely showed MET alterations (all amplifications or tyrosine kinase domain mutations) (29% vs 12%, p=0.04), while showing no significant differences in the rates of other acquired molecular alterations such as KRAS mutations, secondary EGFR mutations, BRAF, ALK, or RET fusions (4% vs 18%, p=0.11), or histologic transformation into squamous cell lung cancer or small cell lung cancer (7% vs 11%, p=0.69) (Figure 4A).
+- Narrative sequence:
+  - 总体队列先呈现相似ORR但更短PFS/OS，随后在L858R亚组报告全部终点未显著，并描述耐药谱差异。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated、genomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 所有患者接受同一一线药物；结果支持该治疗背景下预后关联，不证明治疗选择预测。
+  - 同一治疗背景下ORR阴性、PFS/OS阳性关联；不是治疗选择预测。
+  - 突变亚组内未显著，不代表亚组间存在正式差异。
+  - 耐药时点谱系比较同时含阳性和阴性结果。
+- Selected source-linked sentence records:
+  - `ccr-logic-42446521-b-42446521-r1`: physical page(s) 15; mixed; mixed; survival_prognosis; contrast_groups; development.
+    - Source sentence: With a median follow-up of 47.1 months (95% CI 42.1-50.4), patients with EGFRAMP, compared to patients with EGFRNon-AMP, achieved similar ORR (88% vs 83%, p=0.23) (Figure 1A), but significantly shorter median PFS (11.6 vs 19.0 months, HR 1.77, 95% CI, 1.36-2.31, p<0.0001) (Figure 1B) and OS (34.0 vs 40.1 months, HR 1.40, 95% CI, 1.02-1.94, p=0.040) (Figure 1C).
+    - PDF SHA-256: `61d0a2e7c6cda3c9fa5a06eb144d83504a838a1df4733e9205c190a17e6eff84`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42446521-b-42446521-r2`: physical page(s) 16; negative; nonsignificant; subgroup_signal; report_null_result; contrast.
+    - Source sentence: In contrast to patients with EGFR ex19del, among those carrying the EGFR L858R mutation no significant outcome differences were observed between patients with EGFRAMP (n=37) and EGFRNon-AMP ones (n=151), with similar ORR (86% vs 75%, p=0.14) (Figure 2D), median PFS (11.4 vs 14.3 months, HR 1.47, 95% CI, 0.98 -2.19, p=0.060) (Figure 2E) and median OS (33.2 vs 36.0 months, HR 1.19, 95% CI, 0.73-1.94, p=0.50) (Figure 2F).
+    - PDF SHA-256: `61d0a2e7c6cda3c9fa5a06eb144d83504a838a1df4733e9205c190a17e6eff84`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42446521-b-42446521-r3`: physical page(s) 18; mixed; mixed; resistance_mechanism; contrast_groups; development.
+    - Source sentence: At resistance, patients with baseline EGFRAMP (n=28), compared to patients with baseline EGFRNon-AMP (n=85), more likely showed MET alterations (all amplifications or tyrosine kinase domain mutations) (29% vs 12%, p=0.04), while showing no significant differences in the rates of other acquired molecular alterations such as KRAS mutations, secondary EGFR mutations, BRAF, ALK, or RET fusions (4% vs 18%, p=0.11), or histologic transformation into squamous cell lung cancer or small cell lung cancer (7% vs 11%, p=0.69) (Figure 4A).
+    - PDF SHA-256: `61d0a2e7c6cda3c9fa5a06eb144d83504a838a1df4733e9205c190a17e6eff84`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42456046
+
+- Identity: Intratumoral Immune Heterogeneity Drives Divergent Outcomes to PD-(L)1 Blockade in Lung Cancer (2026); DOI 10.1158/1078-0432.ccr-26-1466.
+- Supplied PDF: not_classified_by_header; SHA-256 `c795f9d233acd688cca4a87407fe7a0a2c8e863c69b8c9833d696982ced28855`; 44 physical pages.
+- Focused Results pages reread: 17, 18, 19, 20, 21, 22, 23, 24.
+- Visual pages checked: 18, 20, 22.
+- Result profile: positive, mixed, inconclusive.
+- Domains: transcriptomics, spatial_omics, prognosis, diagnostic_model.
+- Central results:
+  - An RNA-based ITIH classifier stratified ICI-treated survival across cohorts, but a PD-L1-high subset contrast remained numerical and underpowered.
+- Narrative sequence:
+  - Define multiregion ITIH, train a single-sample classifier, validate with pathology, then connect classes to survival and established biomarkers.
+- Negative-result handling: Moderate class performance and nonsignificant PD-L1-stratified contrasts are retained alongside positive survival results.
+- Omics logic: Bulk RNA inference predicts whole-tumor heterogeneity; it is not direct multiregion measurement in clinical cohorts.
+- Efficacy/activity logic: Only one randomized atezolizumab–docetaxel cohort can address treatment interaction; pooled ICI survival is not automatically predictive.
+- Prognosis logic: Most cross-cohort survival contrasts are prognostic associations in treated populations.
+- Claim/source boundaries:
+  - Retrospective cohorts, missing PD-L1, sampling depth and lack of external multiregion validation constrain clinical claims.
+- Selected source-linked sentence records:
+  - `ccr-logic-42456046-c-073`: physical page(s) 20; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: In cohort A (n=291, SU2C/GR/IRE), patients with Hom-IE tumors had significantly longer overall survival (OS) compared to patients whose tumors had other ITIH-related classes (Hom-IE vs. Het-IE, Het-D and Hom-D: median OS 34,6 months vs. 16,6, 13,7 and 12,1 months, respectively; log-rank p=0.026, 0.006 and <0.001, respectively; HR 0.57, 95% CI 0.34-0.94, HR 0.52, 95% CI 0.32-0.84; and 0.48, 95% CI 0.32-0.73, respectively) (Fig.4a).
+    - PDF SHA-256: `c795f9d233acd688cca4a87407fe7a0a2c8e863c69b8c9833d696982ced28855`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42456046-c-074`: physical page(s) 22; inconclusive; nonsignificant; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: Likewise, we observed that the Hom-IE/PD-L1-high subset had numerically longer survival than the non-Hom-IE/PD-L1-high counterpart (median OS 22.2 vs. 14.7 months, log-rank p=0.24) (Fig. 5b), even though the small sample size limited statistical power.
+    - PDF SHA-256: `c795f9d233acd688cca4a87407fe7a0a2c8e863c69b8c9833d696982ced28855`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42456051
+
+- Identity: Spatial Configuration of Pancreatic Cancer Is Associated with Disease Recurrence after Neoadjuvant Therapy and Curative-Intent Resection (2026); DOI 10.1158/1078-0432.CCR-25-4968.
+- Supplied PDF: author_manuscript; SHA-256 `8235c24a7db63d17a781043347e29dc0f4c34680d728b41a9ebb53bfce214088`; 34 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9, 10, 11.
+- Visual pages checked: 7, 9, 10, 20, 24, 28.
+- Result profile: positive, negative, mixed.
+- Domains: spatial_omics, prognosis.
+- Central results:
+  - Interestingly, quantifying the area occupied by cancer within the residual tumor was not associated with DFS (HR=1.12
+  - 95% CI: 0.97–1.31
+  - p=0.13) (Fig. 1D).
+  - High-risk classification was associated with a 1.71-fold increased risk of recurrence (HR=1.71, 95% CI: 1.17–2.63, p=0.003).
+  - Multivariate Cox regression analysis confirmed that these spatial features are independent risk factors for DFS, with high-risk classification associated with a 2.19-fold higher risk of recurrence (HR=2.19, 95% CI: 1.21–3.10, p=0.002) (Table 3).
+- Narrative sequence:
+  - 先否定残余肿瘤面积与DFS的简单关联，再建立空间高风险分类并用多变量模型量化复发风险。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于spatial证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 单中心回顾性内部建模，缺少外部验证；模型性能/关联不可写成临床可用。
+  - 简单面积指标阴性，不代表所有空间特征无预后价值。
+  - 内部推导风险分类的关联。
+  - 多变量内部模型，无外部验证；“independent”限于纳入协变量。
+- Selected source-linked sentence records:
+  - `ccr-logic-42456051-b-42456051-r1`: physical page(s) 7; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: Interestingly, quantifying the area occupied by cancer within the residual tumor was not associated with DFS (HR=1.12; 95% CI: 0.97–1.31; p=0.13) (Fig. 1D).
+    - PDF SHA-256: `8235c24a7db63d17a781043347e29dc0f4c34680d728b41a9ebb53bfce214088`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42456051-b-42456051-r2`: physical page(s) 9; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: High-risk classification was associated with a 1.71-fold increased risk of recurrence (HR=1.71, 95% CI: 1.17–2.63, p=0.003).
+    - PDF SHA-256: `8235c24a7db63d17a781043347e29dc0f4c34680d728b41a9ebb53bfce214088`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42456051-b-42456051-r3`: physical page(s) 10; positive; significant; survival_prognosis; connect_to_outcome; closure.
+    - Source sentence: Multivariate Cox regression analysis confirmed that these spatial features are independent risk factors for DFS, with high-risk classification associated with a 2.19-fold higher risk of recurrence (HR=2.19, 95% CI: 1.21–3.10, p=0.002) (Table 3).
+    - PDF SHA-256: `8235c24a7db63d17a781043347e29dc0f4c34680d728b41a9ebb53bfce214088`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42478960
+
+- Identity: Targeting CD24 Activates Macrophages to Reduce Tumor Burden in Preclinical Models of Solid Tumors (2026); DOI 10.1158/1078-0432.ccr-26-0481.
+- Supplied PDF: not_classified_by_header; SHA-256 `380fbc732a8591d3510bc26b13a328f9162103e685d6c95cb35cd38253595f3e`; 22 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17.
+- Visual pages checked: 10, 13, 14, 16, 17.
+- Result profile: positive, negative, mixed.
+- Domains: single_cell, proteomics, preclinical_functional.
+- Central results:
+  - CD24转录未检出但抗体细胞表面结合较高；巨噬细胞耗竭消除小鼠活性，且皮下模型出现不反应例外。
+- Narrative sequence:
+  - 跨模态靶点验证—吞噬功能—多模型疗效—免疫介导机制—模型情境例外。
+- Negative-result handling: 皮下SK-OV-3阴性模型被显式保留。
+- Omics logic: scRNA、流式、蛋白结合和功能证据相互补充但不等同。
+- Efficacy/activity logic: 全部为前临床抗肿瘤活性。
+- Prognosis logic: 无临床预后。
+- Claim/source boundaries:
+  - 模型环境决定效应；不得外推患者疗效或唯一机制。
+- Selected source-linked sentence records:
+  - `ccr-logic-42478960-ccr25-26-a-076`: physical page(s) 10; mixed; not_applicable; cross_layer_concordance; contrast_modalities; contrast.
+    - Source sentence: Although CD24 mRNA expression was not detected in neutrophils, we observed high PHST001 on-cell binding via flow cytometry (Fig. 3A).
+    - PDF SHA-256: `380fbc732a8591d3510bc26b13a328f9162103e685d6c95cb35cd38253595f3e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42478960-ccr25-26-a-077`: physical page(s) 14; positive; not_reported; functional_perturbation; integrate_evidence_layers; closure.
+    - Source sentence: PHST001 activity was abrogated in clodronate-treated mice when compared with isotype control under the same condition (Supplementary Fig. S9K), supporting macrophages as key mediators of PHST001 antitumor activity.
+    - PDF SHA-256: `380fbc732a8591d3510bc26b13a328f9162103e685d6c95cb35cd38253595f3e`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42478960-ccr25-26-a-078`: physical page(s) 16; negative; not_reported; functional_perturbation; state_exception; contrast.
+    - Source sentence: However, SK-OV-3 tumors grown in a subcutaneous environment did not respond to PHST001 monotherapy (Supplementary Fig. S11A).
+    - PDF SHA-256: `380fbc732a8591d3510bc26b13a328f9162103e685d6c95cb35cd38253595f3e`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42484497
+
+- Identity: Network-Integrated Platform for Clinical Trial Navigation from the New South Wales Early Phase Clinical Trials Alliance (2026); DOI 10.1158/1078-0432.ccr-26-0733.
+- Supplied PDF: publisher_typeset_pdf; SHA-256 `0088d54ea99cd4b33a3f3aaf48a2a70a13a7bd64f702d5f944bf7aaab7d621f2`; 10 physical pages.
+- Focused Results pages reread: 4, 5.
+- Visual pages checked: 4, 5.
+- Result profile: positive, descriptive.
+- Domains: liquid_biopsy, clinical_efficacy.
+- Central results:
+  - Network-level navigation achieved high trial recommendation and enrollment despite low use of genomically matched therapy.
+- Narrative sequence:
+  - Describe the implementation cohort and genomic yield, then connect multidisciplinary recommendations to enrollment and on-trial activity.
+- Negative-result handling: No formal hypothesis testing was performed; proportions are treated as feasibility estimates rather than significance claims.
+- Omics logic: ctDNA actionability is one input to a broader network process and is not synonymous with trial matching.
+- Efficacy/activity logic: Single-arm implementation outcomes do not prove comparative effectiveness or survival benefit.
+- Prognosis logic: Prognosis was not assessed.
+- Claim/source boundaries:
+  - Preselected trial-fit patients, no control arm and system-specific infrastructure limit transportability.
+- Selected source-linked sentence records:
+  - `ccr-logic-42484497-c-075`: physical page(s) 5; positive; not_applicable; descriptive_frequency; quantify_effect; development.
+    - Source sentence: Even in the absence of actionable alterations, therapeutic recommendations were made in 89 of 101 (88%) cases (Supplementary Table S1), with 77 of 101 (76%) participants recommended clinical trials and 14 of 101 (14%) of these recommendations including a standard-of-care therapeutic option.
+    - PDF SHA-256: `0088d54ea99cd4b33a3f3aaf48a2a70a13a7bd64f702d5f944bf7aaab7d621f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42484497-c-076`: physical page(s) 5; positive; not_applicable; descriptive_frequency; state_primary_finding; closure.
+    - Source sentence: The primary endpoint of 3-month clinical trial enrollment rate was 37 of 101 (37%, 95% CI, 0.27–0.47).
+    - PDF SHA-256: `0088d54ea99cd4b33a3f3aaf48a2a70a13a7bd64f702d5f944bf7aaab7d621f2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42485106
+
+- Identity: Utilizing machine learning to identify multimodal signatures for patients who would benefit from the addition of tremelimumab to durvalumab and chemotherapy (TRIDENT) (2026); DOI 10.1158/1078-0432.ccr-25-3729.
+- Supplied PDF: not_classified_by_header; SHA-256 `4844b3589ded1523689287e2216b87d50240e0ff44a9581c55c6e6972dfdffee`; 13 physical pages.
+- Focused Results pages reread: 6, 7, 8, 9.
+- Visual pages checked: 7, 8.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, diagnostic_model, other.
+- Central results:
+  - Adding radiomics to the clinical and genomic data did not improve the predictive performance (model 13
+  - Table 1).
+  - In patients with nonsquamous histology, the model trained on clinical and genomic data had a relative risk reduction on OS of 44% (HR, 0.56
+  - 95% CI, 0.33–0.97
+  - P = 0.04
+  - model 19, analysis set 6) in the 50% of patients with the highest predicted benefit from the addition of tremelimumab to first-line durvalumab and chemotherapy.
+  - In patients with squamous histology, the model trained on clinical and genomic data was not able to identify a patient subpopulation representing 50% of the squamous patient population that had a relative risk reduction (model 16, Table 1).
+- Narrative sequence:
+  - 先报告增加影像组学未改善模型，再分别报告非鳞癌中可识别获益亚群与鳞癌中未能识别同等规模亚群。
+- Negative-result handling: 明确保留2条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 随机试验数据的事后机器学习、仅嵌套交叉验证且无外部验证；属假设生成。
+  - 模型内部比较，原句未给显著性检验。
+  - 事后模型定义亚群、嵌套交叉验证但无外部验证。
+  - 未识别亚群是模型结果，非正式无疗效检验。
+- Selected source-linked sentence records:
+  - `ccr-logic-42485106-b-42485106-r1`: physical page(s) 7; negative; not_reported; model_performance; contrast_modalities; contrast.
+    - Source sentence: Adding radiomics to the clinical and genomic data did not improve the predictive performance (model 13; Table 1).
+    - PDF SHA-256: `4844b3589ded1523689287e2216b87d50240e0ff44a9581c55c6e6972dfdffee`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42485106-b-42485106-r2`: physical page(s) 8; positive; significant; subgroup_signal; connect_to_outcome; development.
+    - Source sentence: In patients with nonsquamous histology, the model trained on clinical and genomic data had a relative risk reduction on OS of 44% (HR, 0.56; 95% CI, 0.33–0.97; P = 0.04; model 19, analysis set 6) in the 50% of patients with the highest predicted benefit from the addition of tremelimumab to first-line durvalumab and chemotherapy.
+    - PDF SHA-256: `4844b3589ded1523689287e2216b87d50240e0ff44a9581c55c6e6972dfdffee`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42485106-b-42485106-r3`: physical page(s) 8; negative; not_reported; model_performance; state_exception; qualification.
+    - Source sentence: In patients with squamous histology, the model trained on clinical and genomic data was not able to identify a patient subpopulation representing 50% of the squamous patient population that had a relative risk reduction (model 16, Table 1).
+    - PDF SHA-256: `4844b3589ded1523689287e2216b87d50240e0ff44a9581c55c6e6972dfdffee`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+
+## PMID 42489696
+
+- Identity: Landmark ctDNA molecular response represents an early predictor of immunotherapy outcomes in lung cancer: A clinical validity study (2026); DOI 10.1158/1078-0432.ccr-26-0656.
+- Supplied PDF: not_classified_by_header; SHA-256 `e5a3272d4c1482b8e4b7eddc4b63bed91c50aeace6093be1f55f9141b5aba5a5`; 19 physical pages.
+- Focused Results pages reread: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+- Visual pages checked: 4, 6, 9, 14, 15.
+- Result profile: positive, negative, mixed.
+- Domains: liquid_biopsy, prognosis.
+- Central results:
+  - 配对白细胞过滤恢复TP53/SMARCA4的预后关联；高maxMAF与较差PFS/OS相关，而连续bTMB无关联。
+- Narrative sequence:
+  - 先解决CH来源误分类，再描绘基线/纵向ctDNA，最后连接临床结局。
+- Negative-result handling: bTMB全队列和单药子集阴性完整呈现。
+- Omics logic: 肿瘤/白细胞来源分辨是组学逻辑核心。
+- Efficacy/activity logic: 未证明ctDNA指导治疗。
+- Prognosis logic: maxMAF和分子反应为观察性预后关联，非替代终点。
+- Claim/source boundaries:
+  - 内部阈值、单中心/观察性队列，不得称治疗预测。
+- Selected source-linked sentence records:
+  - `ccr-logic-42489696-ccr25-26-a-079`: physical page(s) 4; mixed; significant; assay_concordance; contrast_modalities; development.
+    - Source sentence: Assessment of the prognostic value of baseline TP53 and SMARCA4 mutations with and without CH variant filtering revealed an association between TP53 and SMARCA4 tumor-derived mutations and poorer clinical outcomes, which was obliterated upon inclusion of CH mutations affecting these genes (Fig. 2C–F).
+    - PDF SHA-256: `e5a3272d4c1482b8e4b7eddc4b63bed91c50aeace6093be1f55f9141b5aba5a5`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42489696-ccr25-26-a-080`: physical page(s) 9; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Patients with a high baseline maxMAF (defined as ≥ the median baseline maxMAF of 2.59%) had shorter PFS (4.41 vs. 11.2 months, log-rank P = 0.011) and OS (8.22 vs. 33.01 months, log-rank P = 0.0035) compared with patients with a low baseline maxMAF (Fig. 3B and C).
+    - PDF SHA-256: `e5a3272d4c1482b8e4b7eddc4b63bed91c50aeace6093be1f55f9141b5aba5a5`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42489696-ccr25-26-a-081`: physical page(s) 9; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: In contrast, we did not find analogous associations between baseline bTMB (coded as a continuous variable) and outcomes [‘Materials and Methods’; Fig. 3D; Supplementary Table S10; all patients: hazard ratio (HR) = 1.01, 95% confidence interval (CI), 0.97–1.06; P = 0.62 for PFS and HR = 1.02; 95% CI, 0.97–1.07; P = 0.52 for OS; IO monotherapy subset: HR = 1; 95% CI, 0.94–1.07; P = 0.97 for PFS and HR = 0.99; 95% CI, 0.92–1.07; P = 0.84 for OS].
+    - PDF SHA-256: `e5a3272d4c1482b8e4b7eddc4b63bed91c50aeace6093be1f55f9141b5aba5a5`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42507540
+
+- Identity: Efficacy and Safety of Necitumumab and Pembrolizumab Combination Therapy in Advanced Non-Small-Cell Lung Cancer with at Least 50 Percent PD-L1 Expression: A Nonrandomized Phase II Trial (2026); DOI 10.1158/1078-0432.ccr-25-2751.
+- Supplied PDF: not_classified_by_header; SHA-256 `f226fc922c5738b9149940f91542ee0465fa98f42c8c48d0e045b90927fe751c`; 38 physical pages.
+- Focused Results pages reread: 14, 15, 16, 17.
+- Visual pages checked: 15, 16.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, safety.
+- Central results:
+  - The single-arm combination exceeded its prespecified ORR threshold but caused substantial toxicity including grade 3 ILD.
+- Narrative sequence:
+  - Establish the analysis population, state primary response and survival, then detail discontinuations, ILD and subgroup uncertainty.
+- Negative-result handling: Wide subgroup intervals and immature OS are explicitly qualified; activity is not equated with superiority.
+- Omics logic: No translational omics results were available.
+- Efficacy/activity logic: The significant one-sample ORR supports activity against a historical threshold, not superiority over pembrolizumab.
+- Prognosis logic: OS was immature and not reached.
+- Claim/source boundaries:
+  - Nonrandomized design, investigator assessment, selected centers and safety burden require phase III confirmation.
+- Selected source-linked sentence records:
+  - `ccr-logic-42507540-c-077`: physical page(s) 15; positive; significant; treatment_activity; state_primary_finding; opening.
+    - Source sentence: The ORR was 76.0% (95% CI: 61.9–86.9, P < 0.0001), whereas the disease control rate was 86.0% (95% CI: 73.3–94.2) (Supplementary Table S5).
+    - PDF SHA-256: `f226fc922c5738b9149940f91542ee0465fa98f42c8c48d0e045b90927fe751c`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42507540-c-078`: physical page(s) 16; negative; not_applicable; safety_tolerability; quantify_effect; development.
+    - Source sentence: Grade 3 treatment-related ILD occurred in five patients (10%), with no grade 4 or 5 ILD events having been observed.
+    - PDF SHA-256: `f226fc922c5738b9149940f91542ee0465fa98f42c8c48d0e045b90927fe751c`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42507545
+
+- Identity: The genomic landscape and treatment outcomes associated with CDKN2A/MTAP loss in patients with non-small cell lung cancer (2026); DOI 10.1158/1078-0432.ccr-26-0771.
+- Supplied PDF: not_classified_by_header; SHA-256 `54b667455f7662b67a11643f6e741a7cdab3dac36965a549f956c578e89ddf7b`; 14 physical pages.
+- Focused Results pages reread: 5, 6, 7, 8.
+- Visual pages checked: 5, 7, 9.
+- Result profile: negative, mixed, descriptive.
+- Domains: integrated_omics, prognosis, other.
+- Central results:
+  - CMdel was also associated with lower PD-L1 (Supplementary Fig. S2A), lower tumor mutational burden (TMB
+  - Supplementary Fig. S2B and S2C), lower estimates of multiple immune subsets (Supplementary Fig. S2D), decreased expression of Hallmark immune gene signatures (e.g., IFNα and IFNγ), and increased expression of proliferation gene sets (e.g., G2M and E2F targets
+  - Supplementary Fig. S2E).
+  - Using TTNT (“Materials and Methods”) as a surrogate for PFS (Fig. 3A–D), we observed no difference in TTNT between CMdel and CMwt in patients treated with ICI monotherapy or TKI (Fig. 3A and D) but decreased TTNT in patients with CMdel treated with chemotherapy, both with and without ICI (Fig. 3B and C).
+  - BOR rates did not differ significantly between CMdel and CMwt across treatment strategies (Fig. 3E, G, I, and K).
+- Narrative sequence:
+  - 先整合基因组、PD-L1、TMB和免疫签名描述CMdel表型，再按治疗类别报告TTNT的阴阳混合结果及BOR阴性。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于integrated证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 回顾性真实世界研究；TTNT为PFS替代，免疫细胞为去卷积估计，且未提供治疗交互检验。
+  - bulk/算法推断的免疫表型与关联，不是直接细胞测量或因果。
+  - TTNT为替代终点；跨治疗类别模式不是正式交互。
+  - 阴性BOR关联不能写成疗效等效。
+- Selected source-linked sentence records:
+  - `ccr-logic-42507545-b-42507545-r1`: physical page(s) 5; descriptive; not_reported; omics_landscape; integrate_evidence_layers; development.
+    - Source sentence: CMdel was also associated with lower PD-L1 (Supplementary Fig. S2A), lower tumor mutational burden (TMB; Supplementary Fig. S2B and S2C), lower estimates of multiple immune subsets (Supplementary Fig. S2D), decreased expression of Hallmark immune gene signatures (e.g., IFNα and IFNγ), and increased expression of proliferation gene sets (e.g., G2M and E2F targets; Supplementary Fig. S2E).
+    - PDF SHA-256: `54b667455f7662b67a11643f6e741a7cdab3dac36965a549f956c578e89ddf7b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42507545-b-42507545-r2`: physical page(s) 5; mixed; mixed; survival_prognosis; contrast_groups; development.
+    - Source sentence: Using TTNT (“Materials and Methods”) as a surrogate for PFS (Fig. 3A–D), we observed no difference in TTNT between CMdel and CMwt in patients treated with ICI monotherapy or TKI (Fig. 3A and D) but decreased TTNT in patients with CMdel treated with chemotherapy, both with and without ICI (Fig. 3B and C).
+    - PDF SHA-256: `54b667455f7662b67a11643f6e741a7cdab3dac36965a549f956c578e89ddf7b`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42507545-b-42507545-r3`: physical page(s) 5; negative; nonsignificant; null_biomarker; report_null_result; contrast.
+    - Source sentence: BOR rates did not differ significantly between CMdel and CMwt across treatment strategies (Fig. 3E, G, I, and K).
+    - PDF SHA-256: `54b667455f7662b67a11643f6e741a7cdab3dac36965a549f956c578e89ddf7b`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42574065
+
+- Identity: Rilvegostomig for Metastatic Non-Small-Cell Lung Cancer: A First-In-Human Phase I/II Clinical Study (2026); DOI 10.1158/1078-0432.ccr-26-0333.
+- Supplied PDF: not_classified_by_header; SHA-256 `f5305a5ac76a1d38251640a2a26ce5d9f5ea4d45f069f0534f8b2df6d2f0f1f3`; 48 physical pages.
+- Focused Results pages reread: 14, 15, 16, 17, 18.
+- Visual pages checked: 16, 18, 46, 47, 48.
+- Result profile: positive, descriptive.
+- Domains: clinical_efficacy, safety, pk_pd.
+- Central results:
+  - Overall, across all dose levels, 90.4% of patients had treatment-emergent AEs (TEAEs) of any grade, and 54.2% had TRAEs, including 8.4% with grade 3 TRAEs
+  - there were no grade 4 or 5 TRAEs.
+  - Doses of rilvegostomig ≥210 mg Q3W achieved sustained ≥90% PD-1 and TIGIT receptor occupancy.
+  - Five patients (6.0%) in this heavily pre-treated, CPI-resistant population had confirmed partial responses (PRs).
+- Narrative sequence:
+  - 按安全性、外周受体占有率和抗肿瘤活性依次推进，所有结果均以早期单臂剂量探索口径呈现。
+- Negative-result handling: 所选代表句无正式阴性结果；未把缺少检验的信息补写成不显著。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从首次人体Phase I/II、无对照且多个剂量队列；只能报告安全性、靶点结合和初步活性。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 首次人体Phase I/II、无对照且多个剂量队列；只能报告安全性、靶点结合和初步活性。
+  - 首次人体、多剂量合并安全性描述。
+  - 外周受体占有率不等同于肿瘤内占有或临床疗效。
+  - 单臂早期研究中的初步活性。
+- Selected source-linked sentence records:
+  - `ccr-logic-42574065-b-42574065-r1`: physical page(s) 16; descriptive; not_reported; safety_tolerability; quantify_effect; development.
+    - Source sentence: Overall, across all dose levels, 90.4% of patients had treatment-emergent AEs (TEAEs) of any grade, and 54.2% had TRAEs, including 8.4% with grade 3 TRAEs; there were no grade 4 or 5 TRAEs.
+    - PDF SHA-256: `f5305a5ac76a1d38251640a2a26ce5d9f5ea4d45f069f0534f8b2df6d2f0f1f3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42574065-b-42574065-r2`: physical page(s) 18; positive; not_reported; pk_pd_exposure; state_primary_finding; development.
+    - Source sentence: Doses of rilvegostomig ≥210 mg Q3W achieved sustained ≥90% PD-1 and TIGIT receptor occupancy.
+    - PDF SHA-256: `f5305a5ac76a1d38251640a2a26ce5d9f5ea4d45f069f0534f8b2df6d2f0f1f3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42574065-b-42574065-r3`: physical page(s) 18; positive; not_reported; treatment_activity; quantify_effect; closure.
+    - Source sentence: Five patients (6.0%) in this heavily pre-treated, CPI-resistant population had confirmed partial responses (PRs).
+    - PDF SHA-256: `f5305a5ac76a1d38251640a2a26ce5d9f5ea4d45f069f0534f8b2df6d2f0f1f3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42578969
+
+- Identity: ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L (2026); DOI 10.1158/1078-0432.ccr-24-0951.
+- Supplied PDF: not_classified_by_header; SHA-256 `dd9b429c0e7427258acefcafd9ab5dae4197d28961492de50f1b2c02927baff8`; 35 physical pages.
+- Focused Results pages reread: 12, 13, 14, 15.
+- Visual pages checked: 13, 14, 15.
+- Result profile: negative, descriptive.
+- Domains: genomics, clinical_efficacy, preclinical_functional.
+- Central results:
+  - Ulixertinib produced no objective responses in centrally confirmed BRAF non-V600/fusion tumors
+  - co-occurring PI3K-pathway alterations were observed but not proven causal.
+- Narrative sequence:
+  - Define molecular eligibility, report treatment exposure and the negative primary activity result, then describe survival, toxicity and co-alterations.
+- Negative-result handling: The zero-response primary result is stated directly; rare fusion cases are acknowledged as insufficient.
+- Omics logic: Co-occurring alterations are descriptive and cannot by themselves explain resistance.
+- Efficacy/activity logic: The basket trial failed its activity threshold; no efficacy claim is supported.
+- Prognosis logic: Short survival reflects the treated refractory cohort and is not a biomarker prognosis analysis.
+- Claim/source boundaries:
+  - Heavy pretreatment, histologic diversity, few fusion cases and absent pharmacodynamic biopsies constrain mechanism.
+- Selected source-linked sentence records:
+  - `ccr-logic-42578969-c-079`: physical page(s) 13; negative; not_reported; negative_primary_endpoint; state_primary_finding; opening.
+    - Source sentence: No patients achieved CR or PR, resulting in ORR of 0% (90% CI; 0%-11%).
+    - PDF SHA-256: `dd9b429c0e7427258acefcafd9ab5dae4197d28961492de50f1b2c02927baff8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42578969-c-080`: physical page(s) 14; descriptive; not_applicable; omics_landscape; quantify_effect; closure.
+    - Source sentence: In this dataset, in addition to the BRAF alterations, co-occurring alterations in the PI3K pathway that include the PTEN/AKT/ mTOR pathway were seen (Figure 2).
+    - PDF SHA-256: `dd9b429c0e7427258acefcafd9ab5dae4197d28961492de50f1b2c02927baff8`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42599160
+
+- Identity: The pan-tumor landscape, allelic status, and genomic complexity of SMARCA4 alterations (2026); DOI 10.1158/1078-0432.ccr-26-1069.
+- Supplied PDF: not_classified_by_header; SHA-256 `ef4a6b6b372e325393cce618fa36c119cf0df5956b9a418eec04d759de089c5f`; 26 physical pages.
+- Focused Results pages reread: 11, 12, 13, 14, 15, 16, 17.
+- Visual pages checked: 14, 15, 17, 21.
+- Result profile: positive, mixed, inconclusive.
+- Domains: genomics, prognosis.
+- Central results:
+  - 控制19p共缺失后SMARCA4双等位失活仍与KEAP1/STK11共现；单等位组PFS较好但受KEAP1混杂，少数病例提示功能类别可能重要。
+- Narrative sequence:
+  - 泛癌景观—等位状态—治疗队列结局—早期靶向病例—机制模型。
+- Negative-result handling: 作者对PFS观察主动提示共突变混杂。
+- Omics logic: 肿瘤-正常配对测序支持等位分类。
+- Efficacy/activity logic: 早期BRM降解剂病例仅属临床活动信号。
+- Prognosis logic: PFS比较是小队列预后关联。
+- Claim/source boundaries:
+  - 不得把3例早期病例或等位状态写成普遍治疗敏感性。
+- Selected source-linked sentence records:
+  - `ccr-logic-42599160-ccr25-26-a-082`: physical page(s) 14; positive; significant; biomarker_association; quantify_effect; development.
+    - Source sentence: After excluding 271 samples harboring concomitant homozygous deletion of all three genes and retesting co-occurrence, biallelic SMARCA4 inactivation remained significantly enriched for loss-of-function alterations in KEAP1 (OR 18.5, adjusted p < 0.001) and STK11 (OR 6.1, adjusted p < 0.001).
+    - PDF SHA-256: `ef4a6b6b372e325393cce618fa36c119cf0df5956b9a418eec04d759de089c5f`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42599160-ccr25-26-a-083`: physical page(s) 15; positive; significant; survival_prognosis; connect_to_outcome; development.
+    - Source sentence: Monoallelic SMARCA4 alterations were associated with improved outcome (median PFS 9.5 months (95%CI: 1.3 months – Not Estimable)) compared to biallelic alterations (median PFS 1.9 months (95%CI: 1.4-2.6 months)) (p < 0.05) (Supplementary Fig. 1).
+    - PDF SHA-256: `ef4a6b6b372e325393cce618fa36c119cf0df5956b9a418eec04d759de089c5f`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42599160-ccr25-26-a-084`: physical page(s) 15; inconclusive; not_applicable; other; limit_inference; qualification.
+    - Source sentence: However, due to the co-occurrence of KEAP1 alterations in our cohort and the findings from a recent study where NSCLC with SMARCA4 and KEAP1 mutations had worse outcomes to chemoimmunotherapy, this observation should be interpreted with caution (20).
+    - PDF SHA-256: `ef4a6b6b372e325393cce618fa36c119cf0df5956b9a418eec04d759de089c5f`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42658187
+
+- Identity: A Phase 2 Basket Trial of Ado-Trastuzumab Emtansine for Patients with HER2 Amplified Cancers: A Non-Randomized Clinical Trial (2026); DOI 10.1158/1078-0432.ccr-26-1566.
+- Supplied PDF: not_classified_by_header; SHA-256 `f3724ccdfced8d9cf761a9fb2ecda5f76f40203e360e482dbf5c57ea063c3ba3`; 34 physical pages.
+- Focused Results pages reread: 11, 12, 13, 14.
+- Visual pages checked: 12, 14, 30.
+- Result profile: positive, mixed, inconclusive.
+- Domains: genomics, clinical_efficacy, preclinical_functional.
+- Central results:
+  - T-DM1篮式队列活性随组织学而异；非应答者基因差异多重校正后不显著，8例配对样本中提出候选耐药改变。
+- Narrative sequence:
+  - 先分队列量化活性，再考察HER2水平和基因组，最后用配对进展样本提出机制。
+- Negative-result handling: Q=1.00的非应答差异不被升级。
+- Omics logic: 基线和配对测序用于探索反应/耐药。
+- Efficacy/activity logic: 单臂篮式活性，不能跨队列作优效比较。
+- Prognosis logic: 无独立预后。
+- Claim/source boundaries:
+  - 原文‘responders copy number higher’与括号12 vs 27方向疑似不一致；配对样本亦受中间治疗影响。
+- Selected source-linked sentence records:
+  - `ccr-logic-42658187-ccr25-26-a-085`: physical page(s) 12; mixed; not_applicable; treatment_activity; quantify_effect; opening.
+    - Source sentence: The confirmed ORRs by cohort were: lung 4/23 (17% [95% CI, 7–37%]); colorectal 0/7 (0% [95% CI, 0–35%]); endometrial 5/23 (22% [95% CI, 10–42%]); salivary 11/19 (58% [95% CI, 36–77%]).
+    - PDF SHA-256: `f3724ccdfced8d9cf761a9fb2ecda5f76f40203e360e482dbf5c57ea063c3ba3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42658187-ccr25-26-a-086`: physical page(s) 14; inconclusive; nonsignificant; differential_feature; qualify_uncertainty; qualification.
+    - Source sentence: Non-responders had more frequent alterations in EGFR, ERBB3, NF1, RAS, PTEN, BRCA1, and CDKN2A, although the differences were not statistically significant (Q=1.00 for all) (Figure 4A).
+    - PDF SHA-256: `f3724ccdfced8d9cf761a9fb2ecda5f76f40203e360e482dbf5c57ea063c3ba3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42658187-ccr25-26-a-087`: physical page(s) 14; positive; not_applicable; resistance_mechanism; justify_follow_up; closure.
+    - Source sentence: Putative mechanisms of resistance were identified in four (50%) of these patients: loss of HER2 amplification in a patient with lung cancer, acquired BRAF amplification in a patient with endometrial cancer, acquired PTEN deletion in a patient with SDC, and acquired CDKN2A deletion in a patient with lung cancer (Figure 4B).
+    - PDF SHA-256: `f3724ccdfced8d9cf761a9fb2ecda5f76f40203e360e482dbf5c57ea063c3ba3`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42714840
+
+- Identity: Osimertinib After Definitive Chemoradiotherapy in Unresectable Stage III EGFR-Mutated NSCLC: Subsequent Treatments and PPO From the Phase III LAURA Study (2026); DOI 10.1158/1078-0432.ccr-25-4523.
+- Supplied PDF: not_classified_by_header; SHA-256 `02e6cd4830125b06e0c538a5c9f2a456cb0e5a69af4325c1019808a38517f78d`; 34 physical pages.
+- Focused Results pages reread: 15, 16, 17, 18.
+- Visual pages checked: 15, 16, 18, 32, 33, 34.
+- Result profile: positive, mixed, inconclusive.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - Median TFST was 43.8 months (95% CI, 38.9–not calculable [NC]) in the osimertinib arm versus 9.5 months (95% CI, 6.6–11.5) in the placebo arm (HR, 0.13
+  - 95% CI, 0.08–0.21
+  - nominal P < 0.001
+  - Fig. 2A).
+  - A 38% reduction in the risk of second progression or death in favor of osimertinib was observed (HR, 0.62
+  - 95% CI, 0.35–1.08
+  - nominal P = 0.088
+  - Fig. 2B).
+  - The HR for OS favored osimertinib (0.67
+  - 95% CI, 0.40–1.14
+  - P = 0.140
+  - Fig. 3).
+- Narrative sequence:
+  - 从TFST的强阳性结果，推进到PFS2的非显著方向和数据成熟度仅31%的OS结果。
+- Negative-result handling: 明确保留2条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学不是本文所选核心结果；未额外制造组学结论。
+- Efficacy/activity logic: 疗效/活性语句严格服从随机研究的后续终点；P值为名义值，OS不成熟且安慰剂组高度交叉，结论需降级。；保留分析集、终点层级、是否有对照及统计状态。
+- Prognosis logic: 时间结局仅按原设计表述为预后/结局关联；若无正式交互，不升级为治疗预测。
+- Claim/source boundaries:
+  - 随机研究的后续终点；P值为名义值，OS不成熟且安慰剂组高度交叉，结论需降级。
+  - 随机比较但为后续终点，P值为名义值。
+  - 方向性PFS2结果未达显著且数据成熟度低。
+  - OS成熟度31%且安慰剂组交叉治疗高；不能宣称OS获益。
+- Selected source-linked sentence records:
+  - `ccr-logic-42714840-b-42714840-r1`: physical page(s) 15; positive; significant; treatment_efficacy; quantify_effect; development.
+    - Source sentence: Median TFST was 43.8 months (95% CI, 38.9–not calculable [NC]) in the osimertinib arm versus 9.5 months (95% CI, 6.6–11.5) in the placebo arm (HR, 0.13; 95% CI, 0.08–0.21; nominal P < 0.001; Fig. 2A).
+    - PDF SHA-256: `02e6cd4830125b06e0c538a5c9f2a456cb0e5a69af4325c1019808a38517f78d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42714840-b-42714840-r2`: physical page(s) 15, 16; inconclusive; nonsignificant; treatment_efficacy; qualify_uncertainty; qualification.
+    - Source sentence: A 38% reduction in the risk of second progression or death in favor of osimertinib was observed (HR, 0.62; 95% CI, 0.35–1.08; nominal P = 0.088; Fig. 2B).
+    - PDF SHA-256: `02e6cd4830125b06e0c538a5c9f2a456cb0e5a69af4325c1019808a38517f78d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42714840-b-42714840-r3`: physical page(s) 18; inconclusive; nonsignificant; treatment_efficacy; qualify_uncertainty; closure.
+    - Source sentence: The HR for OS favored osimertinib (0.67; 95% CI, 0.40–1.14; P = 0.140; Fig. 3).
+    - PDF SHA-256: `02e6cd4830125b06e0c538a5c9f2a456cb0e5a69af4325c1019808a38517f78d`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42714874
+
+- Identity: Ceralasertib plus durvalumab in Ras mutant and Ras wild type advanced non-small cell lung cancer: Two cohorts of the phase II platform National Lung Matrix Trial (2026); DOI 10.1158/1078-0432.ccr-26-1365.
+- Supplied PDF: not_classified_by_header; SHA-256 `a639345437ffb86cf289777c1fb625b222681df410474ff87a82a0ecd7e12da3`; 38 physical pages.
+- Focused Results pages reread: 15, 16, 17, 18, 19.
+- Visual pages checked: 15, 18, 19, 33, 34, 35.
+- Result profile: positive, mixed, inconclusive.
+- Domains: integrated_omics, clinical_efficacy, preclinical_functional.
+- Central results:
+  - Importantly, the activation of KRAS G12V results in a significant increase in the proportion of cells with micronuclei induced by ceralasertib alone up to the 1 μM dose, demonstrating that the impact of ceralasertib and KRAS activation on micronuclei formation is at least additive.
+  - Although all outcome measures numerically favour the KRAS mutant over the wild type patients, the credible intervals for PFS, OS, DCB rate and OR rate for both KRAS mutant and wild type cohorts overlap (Figure 5C).
+  - A very limited number of genes are differentially expressed between KRAS mutation-alone and KRAS wild type LUAD, with only a single gene significantly up-regulated in KRAS mutant-alone cancers - RORC.
+- Narrative sequence:
+  - 将细胞模型的机制阳性结果、两平行单臂队列的区间重叠临床结果、以及TCGA单突变转录组的稀少差异分层呈现。
+- Negative-result handling: 明确保留1条阴性或不确定结果的原始推断状态；未显著、未报告检验和不可判定分别编码，未将其合并为“无效”。
+- Omics logic: 组学叙述限定于transcriptomic证据层，并按测量/推断边界表述；不把计算丰度、共现或跨层相关写成直接细胞测量或因果。
+- Efficacy/activity logic: 疗效不是本文所选核心结果；未从生物标志物或模型结果推导临床获益。
+- Prognosis logic: 未将非生存结果改写为预后结论。
+- Claim/source boundaries:
+  - 临床队列小且非随机；TCGA为原发未治疗样本，不能直接解释晚期经ICI人群；前临床机制不得上推临床疗效。
+  - 细胞模型的加和效应，不是临床协同。
+  - 两个平行单臂小队列；区间重叠不等于正式等效检验。
+  - TCGA原发未治疗肿瘤与晚期试验人群不同；多数阴性与单基因阳性并存。
+- Selected source-linked sentence records:
+  - `ccr-logic-42714874-b-42714874-r1`: physical page(s) 15; positive; significant; functional_perturbation; state_primary_finding; development.
+    - Source sentence: Importantly, the activation of KRAS G12V results in a significant increase in the proportion of cells with micronuclei induced by ceralasertib alone up to the 1 μM dose, demonstrating that the impact of ceralasertib and KRAS activation on micronuclei formation is at least additive.
+    - PDF SHA-256: `a639345437ffb86cf289777c1fb625b222681df410474ff87a82a0ecd7e12da3`.
+    - Verification: visual exact transcription recorded; text extraction match = `punctuation_insensitive`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a punctuation_insensitive match.
+  - `ccr-logic-42714874-b-42714874-r2`: physical page(s) 18; inconclusive; not_applicable; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: Although all outcome measures numerically favour the KRAS mutant over the wild type patients, the credible intervals for PFS, OS, DCB rate and OR rate for both KRAS mutant and wild type cohorts overlap (Figure 5C).
+    - PDF SHA-256: `a639345437ffb86cf289777c1fb625b222681df410474ff87a82a0ecd7e12da3`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42714874-b-42714874-r3`: physical page(s) 19; mixed; mixed; differential_feature; state_exception; closure.
+    - Source sentence: A very limited number of genes are differentially expressed between KRAS mutation-alone and KRAS wild type LUAD, with only a single gene significantly up-regulated in KRAS mutant-alone cancers - RORC.
+    - PDF SHA-256: `a639345437ffb86cf289777c1fb625b222681df410474ff87a82a0ecd7e12da3`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42714875
+
+- Identity: Associations of Baseline Neutrophil-to-Lymphocyte Ratio with Efficacy and Toxicity of the B7H3 ADC YL201, Linked to Interleukin-6: Analysis of the Phase 1/1b Trial (2026); DOI 10.1158/1078-0432.ccr-26-1896.
+- Supplied PDF: not_classified_by_header; SHA-256 `6dc414e1c08ef98dab5ea15dc7fea2739e8e85c0fcd054d82b417504bb603551`; 33 physical pages.
+- Focused Results pages reread: 8, 9, 10, 11, 12, 13.
+- Visual pages checked: 10, 11, 12, 13, 27.
+- Result profile: positive, mixed, inconclusive.
+- Domains: proteomics, clinical_efficacy, safety.
+- Central results:
+  - 高基线NLR与不应答、较短PFS及部分严重毒性相关；纵向IL-6按反应呈方向性变化但未显著。
+- Narrative sequence:
+  - 从常规炎症指标到疗效/生存/毒性，再用血浆蛋白组提出生物学解释。
+- Negative-result handling: IL-6小样本未达显著被明确限定。
+- Omics logic: 蛋白组为54例基线、IL-6纵向仅18例。
+- Efficacy/activity logic: 单臂队列中的关联不等于治疗特异预测。
+- Prognosis logic: NLR主要为预后/风险关联。
+- Claim/source boundaries:
+  - 阈值内部产生、多重探索，不能作为已验证决策工具。
+- Selected source-linked sentence records:
+  - `ccr-logic-42714875-ccr25-26-a-088`: physical page(s) 10; positive; significant; biomarker_association; quantify_effect; development.
+    - Source sentence: In the multivariate analysis, a high baseline NLR remained independently associated with an increased likelihood of non-response (OR = 2.932; 95% CI, 1.358-6.807; P=0.008) (Supplementary Table S5).
+    - PDF SHA-256: `6dc414e1c08ef98dab5ea15dc7fea2739e8e85c0fcd054d82b417504bb603551`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42714875-ccr25-26-a-089`: physical page(s) 12; positive; significant; biomarker_association; connect_to_outcome; development.
+    - Source sentence: In addition, a high baseline NLR was independently associated with an increased risk of overall grade ≥3 TRAEs (OR=1.146; 95% CI, 1.049-1.267; P=0.005), grade ≥3 leukopenia (OR=1.153; 95% CI, 1.055-1.286; P=0.004), and grade ≥3 thrombocytopenia (OR=1.276; 95% CI, 1.104-1.498; P=0.002).
+    - PDF SHA-256: `6dc414e1c08ef98dab5ea15dc7fea2739e8e85c0fcd054d82b417504bb603551`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+  - `ccr-logic-42714875-ccr25-26-a-090`: physical page(s) 13; inconclusive; nonsignificant; pathway_or_state; qualify_uncertainty; qualification.
+    - Source sentence: Although there was no significant difference due to the limited sample size, we observed an increase in IL-6 levels in patients evaluated as PD, a stable change in patients evaluated as SD, and a decrease in patients evaluated as PR (Figure 2F-H).
+    - PDF SHA-256: `6dc414e1c08ef98dab5ea15dc7fea2739e8e85c0fcd054d82b417504bb603551`.
+    - Verification: visual exact transcription recorded; text extraction match = `none`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction did not yield a contiguous mechanical match.
+
+## PMID 42752799
+
+- Identity: Evaluation of MET Detection Methods and Cutoffs in EGFR-Mutated Non-small Cell Lung Cancer Following Disease Progression on Osimertinib in the Phase II SAVANNAH Study (2026); DOI 10.1158/1078-0432.ccr-26-0604.
+- Supplied PDF: not_classified_by_header; SHA-256 `37ce809687b69f9b10c30a0a4324186ff938b8e6bcd37c3935a5453ce45ef9d2`; 39 physical pages.
+- Focused Results pages reread: 14, 15, 16, 17.
+- Visual pages checked: 15, 16, 17, 36, 39.
+- Result profile: positive, negative, mixed.
+- Domains: clinical_efficacy, prognosis.
+- Central results:
+  - 同一单臂队列中更高MET IHC/FISH阈值富集较好ORR/PFS；低阈值组活性较低，小型独立时间切分子集结果一致。
+- Narrative sequence:
+  - 先在早期截止优化阈值，再在后期截止报告成熟结局和小型测试子集。
+- Negative-result handling: 低组仅称数值较低；初次分析PFS不成熟。
+- Omics logic: IHC与FISH联合分层，但阈值由本队列优化。
+- Efficacy/activity logic: 支持生物标志物富集下的单臂活性，不支持治疗交互。
+- Prognosis logic: PFS为组内关联。
+- Claim/source boundaries:
+  - 测试子集仅16/34例且无随机对照；不能称确证伴随诊断阈值。
+- Selected source-linked sentence records:
+  - `ccr-logic-42752799-ccr25-26-a-091`: physical page(s) 15; mixed; not_reported; subgroup_signal; qualify_uncertainty; qualification.
+    - Source sentence: The odds ratio for ORR and HR for PFS favored patients identified using the higher IHC or FISH cutoffs, either individually or combined, versus those in the lower group (Supplementary Table S1), although PFS was not mature in this analysis.
+    - PDF SHA-256: `37ce809687b69f9b10c30a0a4324186ff938b8e6bcd37c3935a5453ce45ef9d2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42752799-ccr25-26-a-092`: physical page(s) 16; negative; not_reported; subgroup_signal; quantify_effect; contrast.
+    - Source sentence: Outcomes were numerically lower among patients without MET IHC 3+/≥90% and/or FISH10+ status (n = 77); ORR was 9% (95% CI 4–18), median DoR was 6.9 months (95% CI 4.1–16.9), and median PFS was 2.8 months (95% CI 2.6–4.3; Table 3 and Fig. 2A).
+    - PDF SHA-256: `37ce809687b69f9b10c30a0a4324186ff938b8e6bcd37c3935a5453ce45ef9d2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42752799-ccr25-26-a-093`: physical page(s) 17; positive; not_reported; subgroup_signal; qualify_uncertainty; closure.
+    - Source sentence: Efficacy outcomes were consistent in each subset (Supplementary Table S3).
+    - PDF SHA-256: `37ce809687b69f9b10c30a0a4324186ff938b8e6bcd37c3935a5453ce45ef9d2`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42765908
+
+- Identity: Safety and Efficacy of Ceralasertib plus Olaparib for Advanced/Metastatic Triple-Negative Breast Cancer in Three Molecular Strata: The Phase II VIOLETTE Study (2026); DOI 10.1158/1078-0432.CCR-26-1066.
+- Supplied PDF: publisher_hosted_manuscript; SHA-256 `41965ece8440bcb10876c5861d7d19bf94cd003f1d200107a414ac9bd8d0619e`; 40 physical pages.
+- Focused Results pages reread: 12, 13, 14, 15, 16, 17, 18.
+- Visual pages checked: 14, 15, 17.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, clinical_efficacy, prognosis.
+- Central results:
+  - Ceralasertib plus olaparib did not significantly improve the primary PFS endpoint in any molecular stratum, although ORR improved in non-HRR-mutant tumors.
+- Narrative sequence:
+  - Report early arm closure and futility, analyze PFS by molecular stratum, then contrast secondary ORR, safety and exploratory biomarkers.
+- Negative-result handling: The positive non-HRRm ORR signal is explicitly subordinated to the negative PFS endpoint.
+- Omics logic: Archival mutation strata and exploratory amplifications are genomic subgrouping variables, not validated predictive biomarkers.
+- Efficacy/activity logic: Randomization supports comparison, but the study stopped early and the positive result is a secondary endpoint.
+- Prognosis logic: Primary PFS was negative; OS was immature and not reported.
+- Claim/source boundaries:
+  - Early termination, low enrollment in one stratum, suboptimal dosing and multiplicity limit subgroup inference.
+- Selected source-linked sentence records:
+  - `ccr-logic-42765908-c-081`: physical page(s) 14; negative; nonsignificant; negative_primary_endpoint; report_null_result; development.
+    - Source sentence: For ceralasertib + olaparib versus olaparib, the HR for risk of death or disease progression was 1.02 (90% CI, 0.63–1.66; P = 0.9403) for the BRCA1/2m stratum, 0.54 (90% CI, 0.28–1.03; P = 0.1274) for the non-BRCA1/2m HRRm stratum, and 0.76 (90% CI, 0.50–1.14; P = 0.2959) for the non-HRRm stratum.
+    - PDF SHA-256: `41965ece8440bcb10876c5861d7d19bf94cd003f1d200107a414ac9bd8d0619e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+  - `ccr-logic-42765908-c-082`: physical page(s) 15; positive; significant; subgroup_signal; state_exception; contrast.
+    - Source sentence: However, in the non-HRRm stratum there was a statistically significant difference in ORR between ceralasertib + olaparib (8/52; 15.4%) and olaparib (2/51; 3.9%), with an odds ratio of 4.45 (90% CI 1.30–21.20; P = 0.0425).
+    - PDF SHA-256: `41965ece8440bcb10876c5861d7d19bf94cd003f1d200107a414ac9bd8d0619e`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.

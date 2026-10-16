@@ -22,6 +22,8 @@ class JtoSeptember29TwoPapers(unittest.TestCase):
         cls.entries, cls.manifest = load_index(ROOT)
         cls.identifiers = {'42674257', '42749050'}
         cls.library = {row['pmid']: row for row in records('library-index.csv')}
+        mapping = json.loads((REFERENCES / 'stk11-writing-reference-map.json').read_text(encoding='utf-8'))
+        cls.highlights = {row['pmid'] for row in mapping['records']}
 
     def test_unique_journal_identity_and_queue_consistency(self):
         bibliography = records('jto-corpus-bibliography.csv')
@@ -38,7 +40,8 @@ class JtoSeptember29TwoPapers(unittest.TestCase):
             self.assertEqual(source['journal'], 'Journal of Thoracic Oncology')
             self.assertEqual(source['year'], '2026')
             self.assertEqual(source['reading_stage'], queued[0]['reading_stage'])
-            self.assertEqual(source['stk11_highlight'], 'no')
+            expected = 'yes' if identifier in self.highlights else 'no'
+            self.assertEqual(source['stk11_highlight'], expected)
 
     def test_complete_main_reading_does_not_promote_acceptance(self):
         quality = {row['pmid']: row for row in records('jto-reading-quality-register.csv')}
@@ -49,7 +52,11 @@ class JtoSeptember29TwoPapers(unittest.TestCase):
             for field in ('coverage_check', 'evidence_check', 'results_check', 'language_check', 'traceability_check', 'transfer_check'):
                 self.assertEqual(record[field], 'pending')
             self.assertEqual(search(self.entries, pmid=identifier, reviewed=True)['matched_count'], 0)
-            self.assertEqual(search(self.entries, pmid=identifier, highlight=True)['matched_count'], 0)
+            highlighted = search(self.entries, pmid=identifier, highlight=True)['matched_count']
+            if identifier in self.highlights:
+                self.assertGreater(highlighted, 0)
+            else:
+                self.assertEqual(highlighted, 0)
         self.assertEqual(quality['42674257']['supplement_status'], 'not_supplied')
         self.assertEqual(quality['42749050']['supplement_status'], 'partially_reviewed')
 

@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记368篇；当前纳入350篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读350篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 13篇。
+正式期刊登记368篇；当前纳入350篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读350篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 64篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -123,14 +123,14 @@
 |---|---|---|---|---|---|
 | 36709038 | Associations of tissue tumor mutational burden and mutational status with clinical outcomes in KEYNOTE-042: pembrolizumab versus chemotherapy for advanced PD-L1-positive NSCLC. | 10.1016/j.annonc.2023.01.011 | KEYNOTE042基因突变TMB与疗效 | 已完成 | no |
 | 36526124 | Clonal KEAP1 mutations with loss of heterozygosity share reduced immunotherapy efficacy and low immune cell infiltration in lung adenocarcinoma. | 10.1016/j.annonc.2022.12.002 | KEAP1克隆性LOH与免疫结局 | 已完成 | no |
-| 37100205 | Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial | 10.1016/j.annonc.2023.04.005 | prospective/retrospective resected NSCLC cohorts with supervised digital pathology and molecular association | 已完成 | no |
+| 37100205 | Machine learning-based immune phenotypes correlate with STK11/KEAP1 co-mutations and prognosis in resectable NSCLC: a sub-study of the TNM-I trial | 10.1016/j.annonc.2023.04.005 | prospective/retrospective resected NSCLC cohorts with supervised digital pathology and molecular association | 已完成 | yes |
 | 37121400 | Molecular markers of metastatic disease in KRAS-mutant lung adenocarcinoma. | 10.1016/j.annonc.2023.04.514 | 转移性KRAS肺腺癌临床基因组 | 已完成 | no |
 
 #### 2025（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 39637943 | Lung adenocarcinomas with mucinous histology: clinical, genomic, and immune microenvironment characterization and outcomes to immunotherapy-based treatments and KRASG12C inhibitors | 10.1016/j.annonc.2024.11.014 | article-specific STK11 evidence | 已完成 | no |
+| 39637943 | Lung adenocarcinomas with mucinous histology: clinical, genomic, and immune microenvironment characterization and outcomes to immunotherapy-based treatments and KRASG12C inhibitors | 10.1016/j.annonc.2024.11.014 | article-specific STK11 evidence | 已完成 | yes |
 
 ### Cancer Cell
 
@@ -138,7 +138,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 36150391 | MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer | 10.1016/j.ccell.2022.08.015 | article-specific STK11 evidence | 已完成 | no |
+| 36150391 | MPS1 inhibition primes immunogenicity of KRAS-LKB1 mutant lung cancer | 10.1016/j.ccell.2022.08.015 | article-specific STK11 evidence | 已完成 | yes |
 
 #### 2024（1篇）
 
@@ -150,8 +150,8 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 40749670 | Integrative analysis of lung adenocarcinoma across diverse ethnicities and exposures | 10.1016/j.ccell.2025.07.011 | article-specific STK11 evidence | 已完成 | no |
-| 40645185 | KEAP1 and STK11/LKB1 alterations enhance vulnerability to ATR inhibition in KRAS mutant non-small cell lung cancer | 10.1016/j.ccell.2025.06.011 | article-specific STK11 evidence | 已完成 | no |
+| 40749670 | Integrative analysis of lung adenocarcinoma across diverse ethnicities and exposures | 10.1016/j.ccell.2025.07.011 | article-specific STK11 evidence | 已完成 | yes |
+| 40645185 | KEAP1 and STK11/LKB1 alterations enhance vulnerability to ATR inhibition in KRAS mutant non-small cell lung cancer | 10.1016/j.ccell.2025.06.011 | article-specific STK11 evidence | 已完成 | yes |
 
 ### Cancer Discovery
 
@@ -171,7 +171,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 30297358 | Suppression of STING Associated with LKB1 Loss in KRAS-Driven Lung Cancer | 10.1158/2159-8290.CD-18-0689 | preclinical_mechanistic | 已完成 | no |
+| 30297358 | Suppression of STING Associated with LKB1 Loss in KRAS-Driven Lung Cancer | 10.1158/2159-8290.CD-18-0689 | preclinical_mechanistic | 已完成 | yes |
 
 #### 2021（1篇）
 
@@ -183,13 +183,13 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 37068173 | Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC | 10.1158/2159-8290.CD-22-1420 | pooled multicenter retrospective KRAS G12C inhibitor cohort | 已完成 | no |
+| 37068173 | Comutations and KRASG12C Inhibitor Efficacy in Advanced NSCLC | 10.1158/2159-8290.CD-22-1420 | pooled multicenter retrospective KRAS G12C inhibitor cohort | 已完成 | yes |
 
 #### 2026（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 42008781 | LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer | 10.1158/2159-8290.CD-25-0470 | LIF-SOX17肿瘤可塑性与免疫抑制性髓系生态位 | 已完成 | no |
+| 42008781 | LIF-Induced Tumor Plasticity Establishes an Immunosuppressive Myeloid Niche in LKB1-Mutant Lung Cancer | 10.1158/2159-8290.CD-25-0470 | LIF-SOX17肿瘤可塑性与免疫抑制性髓系生态位 | 已完成 | yes |
 
 ### Cancer Research
 
@@ -197,39 +197,39 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 26833127 | STK11/LKB1 deficiency promotes neutrophil recruitment and proinflammatory cytokine production to suppress T cell activity in the lung tumor microenvironment | 10.1158/0008-5472.CAN-15-1439 | article-specific STK11 evidence | 已完成 | no |
+| 26833127 | STK11/LKB1 deficiency promotes neutrophil recruitment and proinflammatory cytokine production to suppress T cell activity in the lung tumor microenvironment | 10.1158/0008-5472.CAN-15-1439 | article-specific STK11 evidence | 已完成 | yes |
 
 #### 2019（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 31040157 | LKB1 and KEAP1/NRF2 Pathways Cooperatively Promote Metabolic Reprogramming with Enhanced Glutamine Dependence in KRAS-Mutant Lung Adenocarcinoma | 10.1158/0008-5472.CAN-18-3527 | article-specific STK11 evidence | 已完成 | no |
+| 31040157 | LKB1 and KEAP1/NRF2 Pathways Cooperatively Promote Metabolic Reprogramming with Enhanced Glutamine Dependence in KRAS-Mutant Lung Adenocarcinoma | 10.1158/0008-5472.CAN-18-3527 | article-specific STK11 evidence | 已完成 | yes |
 
 #### 2021（2篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 33853830 | Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer | 10.1158/0008-5472.CAN-20-3564 | LKB1缺失、粒细胞样MDSC与联合检查点阻断抵抗 | 已完成 | no |
-| 34045189 | STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma | 10.1158/0008-5472.CAN-20-3199 | LKB1功能缺失相关DNA低甲基化与SAM-e耗竭 | 已完成 | no |
+| 33853830 | Inhibition of Granulocytic Myeloid-Derived Suppressor Cells Overcomes Resistance to Immune Checkpoint Inhibition in LKB1-deficient Non-Small Cell Lung Cancer | 10.1158/0008-5472.CAN-20-3564 | LKB1缺失、粒细胞样MDSC与联合检查点阻断抵抗 | 已完成 | yes |
+| 34045189 | STK11/LKB1 Loss of Function Is Associated with Global DNA Hypomethylation and S-Adenosyl-Methionine Depletion in Human Lung Adenocarcinoma | 10.1158/0008-5472.CAN-20-3199 | LKB1功能缺失相关DNA低甲基化与SAM-e耗竭 | 已完成 | yes |
 
 #### 2023（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 36512628 | PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer | 10.1158/0008-5472.CAN-22-1740 | LKB1缺失-PARP1-STAT1 PARylation与PARP抑制联合免疫治疗 | 已完成 | no |
+| 36512628 | PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant Lung Cancer | 10.1158/0008-5472.CAN-22-1740 | LKB1缺失-PARP1-STAT1 PARylation与PARP抑制联合免疫治疗 | 已完成 | yes |
 
 #### 2024（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 39207369 | Live-Cell Invasive Phenotyping Uncovers ALK2 as a Therapeutic Target in LKB1-Mutant Lung Cancer | 10.1158/0008-5472.CAN-23-2631 | article-specific STK11 evidence | 已完成 | no |
+| 39207369 | Live-Cell Invasive Phenotyping Uncovers ALK2 as a Therapeutic Target in LKB1-Mutant Lung Cancer | 10.1158/0008-5472.CAN-23-2631 | article-specific STK11 evidence | 已完成 | yes |
 
 #### 2025（2篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 40198901 | SCD1 Inhibition Blocks the AKT-NRF2-SLC7A11 Pathway to Induce Lipid Metabolism Remodeling and Ferroptosis Priming in Lung Adenocarcinoma | 10.1158/0008-5472.CAN-24-2745 | article-specific STK11 evidence | 已完成 | no |
-| 40882030 | TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy | 10.1158/0008-5472.CAN-25-0998 | CoREST抑制与STK11缺失肿瘤免疫增敏 | 已完成 | no |
+| 40198901 | SCD1 Inhibition Blocks the AKT-NRF2-SLC7A11 Pathway to Induce Lipid Metabolism Remodeling and Ferroptosis Priming in Lung Adenocarcinoma | 10.1158/0008-5472.CAN-24-2745 | article-specific STK11 evidence | 已完成 | yes |
+| 40882030 | TNG260 Is a Small-Molecule CoREST Inhibitor That Sensitizes STK11-Mutant Tumors to Anti-PD-1 Immunotherapy | 10.1158/0008-5472.CAN-25-0998 | CoREST抑制与STK11缺失肿瘤免疫增敏 | 已完成 | yes |
 
 ### Cell
 
@@ -237,7 +237,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 32649874 | Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma | 10.1016/j.cell.2020.06.013 | article-specific STK11 evidence | 已完成 | no |
+| 32649874 | Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma | 10.1016/j.cell.2020.06.013 | article-specific STK11 evidence | 已完成 | yes |
 
 ### Cell Reports
 
@@ -245,7 +245,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 33264619 | Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer | 10.1016/j.celrep.2020.108444 | STK11-KEAP1共同失活、铁死亡保护与SCD1依赖 | 已完成 | no |
+| 33264619 | Concurrent Mutations in STK11 and KEAP1 Promote Ferroptosis Protection and SCD1 Dependence in Lung Cancer | 10.1016/j.celrep.2020.108444 | STK11-KEAP1共同失活、铁死亡保护与SCD1依赖 | 已完成 | yes |
 
 ### Cell Research
 
@@ -280,7 +280,7 @@
 | 33622705 | Implication of Cancer-Associated Fibroblast Subtypes on Cancer Pathogenesis, Prognosis, and Immunotherapy Resistance | 10.1158/1078-0432.CCR-20-4226 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34261696 | Integrative Profiling of T790M-Negative EGFR-Mutated NSCLC Reveals Pervasive Lineage Transition and Therapeutic Opportunities | 10.1158/1078-0432.ccr-20-4607 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33593884 | KRASG12C Mutation Is Associated with Increased Risk of Recurrence in Surgically Resected Lung Adenocarcinoma | 10.1158/1078-0432.CCR-20-4772 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
-| 33077574 | NRF2 Activation Promotes Aggressive Lung Cancer and Associates with Poor Clinical Outcomes | 10.1158/1078-0432.ccr-20-1985 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 33077574 | NRF2 Activation Promotes Aggressive Lung Cancer and Associates with Poor Clinical Outcomes | 10.1158/1078-0432.ccr-20-1985 | Translational Cancer Mechanisms and Therapy | 已完成 | yes |
 | 34551906 | Outcome and Immune Correlates of a Phase II Trial of High-Dose Interleukin-2 and Stereotactic Ablative Radiotherapy for Metastatic Renal Cell Carcinoma | 10.1158/1078-0432.ccr-21-2083 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 34426443 | Phase I Study of 2- or 3-Week Dosing of Telisotuzumab Vedotin, an Antibody-Drug Conjugate Targeting c-Met, Monotherapy in Patients with Advanced Non-Small Cell Lung Carcinoma | 10.1158/1078-0432.ccr-21-0765 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 34376534 | Pretreatment Tissue TCR Repertoire Evenness Is Associated with Complete Pathologic Response in Patients with NSCLC Receiving Neoadjuvant Chemoimmunotherapy | 10.1158/1078-0432.ccr-21-1200 | Precision Medicine and Imaging | 已完成 | no |
@@ -289,7 +289,7 @@
 | 34016641 | Sex-Based Dimorphism of Anticancer Immune Response and Molecular Mechanisms of Immune Evasion | 10.1158/1078-0432.CCR-21-0136 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 34518312 | Spatial Mapping and Immunomodulatory Role of the OX40/OX40L Pathway in Human Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-0987 | Precision Medicine and Imaging | 已完成 | no |
 | 33685866 | Spectrum of Mechanisms of Resistance to Crizotinib and Lorlatinib in ROS1 Fusion-Positive Lung Cancer | 10.1158/1078-0432.CCR-21-0032 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
-| 33323404 | STK11/LKB1 Mutations in NSCLC Are Associated with KEAP1/NRF2-Dependent Radiotherapy Resistance Targetable by Glutaminase Inhibition | 10.1158/1078-0432.CCR-20-2859 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 33323404 | STK11/LKB1 Mutations in NSCLC Are Associated with KEAP1/NRF2-Dependent Radiotherapy Resistance Targetable by Glutaminase Inhibition | 10.1158/1078-0432.CCR-20-2859 | Translational Cancer Mechanisms and Therapy | 已完成 | yes |
 | 33023953 | Transcriptional Subtypes Resolve Tumor Heterogeneity and Identify Vulnerabilities to MEK Inhibition in Lung Adenocarcinoma | 10.1158/1078-0432.CCR-20-1835 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33558425 | Treatment Outcomes and Clinical Characteristics of Patients with KRAS-G12C Mutant Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-20-4023 | Precision Medicine and Imaging | 已完成 | no |
 | 34407972 | Upregulation of C/EBPα Inhibits Suppressive Activity of Myeloid Cells and Potentiates Antitumor Response in Mice and Patients with Cancer | 10.1158/1078-0432.ccr-21-0986 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
@@ -398,7 +398,7 @@
 | 38723277 | Biomarker Identification and Risk Prediction Model Development for Differentiated Thyroid Carcinoma Lung Metastasis Based on Primary Lesion Proteomics | 10.1158/1078-0432.ccr-23-3806 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38995268 | Circulating Tumor DNA Dynamics Reveal KRAS G12C Mutation Heterogeneity and Response to Treatment with the KRAS G12C Inhibitor Divarasib in Solid Tumors | 10.1158/1078-0432.ccr-24-0255 | Precision Medicine and Imaging | 已完成 | no |
 | 38060240 | Circulating Tumor DNA Enables Sensitive Detection of Actionable Gene Fusions and Rearrangements Across Cancer Types | 10.1158/1078-0432.ccr-23-2693 | Precision Medicine and Imaging | 已完成 | no |
-| 38300729 | Combining Genomic Biomarkers to Guide Immunotherapy in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-23-4027 | Precision Medicine and Imaging | 已完成 | no |
+| 38300729 | Combining Genomic Biomarkers to Guide Immunotherapy in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-23-4027 | Precision Medicine and Imaging | 已完成 | yes |
 | 38912901 | Detecting Small Cell Transformation in Patients with Advanced EGFR Mutant Lung Adenocarcinoma through Epigenomic cfDNA Profiling | 10.1158/1078-0432.ccr-24-0466 | Precision Medicine and Imaging | 已完成 | no |
 | 38277241 | Development of a [89Zr]Zr-labeled Human Antibody using a Novel Phage-displayed Human scFv Library | 10.1158/1078-0432.ccr-23-3647 | Precision Medicine and Imaging | 已完成 | no |
 | 39400264 | DICER1-Related Tumor Predisposition: Identification of At-risk Individuals and Recommended Surveillance Strategies | 10.1158/1078-0432.ccr-24-1532 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
@@ -421,7 +421,7 @@
 | 39352721 | Safety, Efficacy, and Biomarker Analysis of Crizotinib in MET-Mutated Non-Small Cell Lung Cancer-Results from the Drug Rediscovery Protocol | 10.1158/1078-0432.ccr-24-1925 | Clinical Trials: Targeted Therapy | 已完成 | no |
 | 38630755 | Spatially Preserved Multi-Region Transcriptomic Subtyping and Biomarkers of Chemoimmunotherapy Outcome in Extensive-Stage Small Cell Lung Cancer | 10.1158/1078-0432.CCR-24-0104 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 39017606 | Targeting AKR1B10 by Drug Repurposing with Epalrestat Overcomes Chemoresistance in Non-Small Cell Lung Cancer Patient-Derived Tumor Organoids | 10.1158/1078-0432.ccr-23-3980 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
-| 38980931 | Transcriptional Phenocopies of Deleterious KEAP1 Mutations Correlate with Survival Outcomes in Lung Cancer Treated with Immunotherapy | 10.1158/1078-0432.CCR-24-0626 | Precision Medicine and Imaging | 已完成 | no |
+| 38980931 | Transcriptional Phenocopies of Deleterious KEAP1 Mutations Correlate with Survival Outcomes in Lung Cancer Treated with Immunotherapy | 10.1158/1078-0432.CCR-24-0626 | Precision Medicine and Imaging | 已完成 | yes |
 | 39150541 | Transcriptomic Heterogeneity of EGFR-Mutant Non–Small Cell Lung Cancer Evolution Toward Small-Cell Lung Cancer | 10.1158/1078-0432.CCR-24-0160 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 38048058 | TROP2 Is Associated with Primary Resistance to Immune Checkpoint Inhibition in Patients with Advanced Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-23-2566 | Research Briefs: Precision Medicine and Therapeutics | 已完成 | no |
 | 38109210 | Tumor-Specific Activity of Precision Medicines in the NCI-MATCH Trial | 10.1158/1078-0432.ccr-23-0983 | Precision Medicine and Imaging | 已完成 | no |
@@ -442,14 +442,14 @@
 | 40388547 | Concordance between Tumor Tissue and Plasma DNA Genotyping in the NCI-MATCH Trial (EAY131) | 10.1158/1078-0432.ccr-24-3531 | Precision Medicine and Imaging | 已完成 | no |
 | 40261185 | ctDNA Clearance as an Early Indicator of Improved Clinical Outcomes in Advanced NSCLC Treated with TKI: Findings from an Aggregate Analysis of Eight Clinical Trials | 10.1158/1078-0432.ccr-24-3612 | Precision Medicine and Imaging | 已完成 | no |
 | 41026583 | D3-GPC2-Directed CAR T Cells Are Safe and Efficacious in Preclinical Models of Neuroblastoma and Small Cell Lung Cancer | 10.1158/1078-0432.ccr-25-0089 | Translational Mechanisms and Therapy | 已完成 | no |
-| 39545922 | Divergent Clinical and Immunologic Outcomes Based on STK11 Co-mutation Status in Resectable KRAS-Mutant Lung Cancers Following Neoadjuvant Immune Checkpoint Blockade | 10.1158/1078-0432.ccr-24-2983 | Precision Medicine and Imaging | 已完成 | no |
+| 39545922 | Divergent Clinical and Immunologic Outcomes Based on STK11 Co-mutation Status in Resectable KRAS-Mutant Lung Cancers Following Neoadjuvant Immune Checkpoint Blockade | 10.1158/1078-0432.ccr-24-2983 | Precision Medicine and Imaging | 已完成 | yes |
 | 40788282 | Early ctDNA Dynamics Inform First-Line Therapy in Patients with Extensive-Stage Small Cell Lung Cancer | 10.1158/1078-0432.ccr-25-2011 | Research Briefs: Precision Medicine and Therapeutics | 已完成 | no |
 | 40932352 | Effects of CVA21, an Oncolytic Virus, in Combination with Pembrolizumab on Immunogenicity and the Tumor Microenvironment in Advanced NSCLC: A Phase I/II Trial | 10.1158/1078-0432.ccr-25-1449 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 40465842 | Elevated ctDNA Tumor Fraction Is Associated with Improved Mutation Detection but Worse Overall Survival in Advanced Non-Small Cell Lung Cancer: A Lung-MAP Study | 10.1158/1078-0432.ccr-24-3658 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 40247431 | Factors Associated with Disease Progression after Discontinuation of Immune Checkpoint Inhibitors for Immune-Related Toxicity in Patients with Advanced Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-24-2990 | Precision Medicine and Imaging | 已完成 | no |
 | 40864503 | First-Line MET Tyrosine Kinase Inhibitors versus Immunotherapy ± Chemotherapy for Patients with MET Exon 14 Skipping Mutant Metastatic NSCLC | 10.1158/1078-0432.ccr-25-1735 | Translational Mechanisms and Therapy | 已完成 | no |
 | 39853318 | Follow-up Analysis Enhances Understanding of Molecular Residual Disease in Localized Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-24-2909 | Precision Medicine and Imaging | 已完成 | no |
-| 39804166 | Impact of Co-mutations and Transcriptional Signatures in Non-Small Cell Lung Cancer Patients Treated with Adagrasib in the KRYSTAL-1 Trial | 10.1158/1078-0432.ccr-24-2310 | Precision Medicine and Imaging | 已完成 | no |
+| 39804166 | Impact of Co-mutations and Transcriptional Signatures in Non-Small Cell Lung Cancer Patients Treated with Adagrasib in the KRYSTAL-1 Trial | 10.1158/1078-0432.ccr-24-2310 | Precision Medicine and Imaging | 已完成 | yes |
 | 39836411 | In Situ RAS:RAF Binding Correlates with Response to KRASG12C Inhibitors in KRASG12C-Mutant Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-24-3714 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 40260627 | Izalontamab (SI-B001), a Novel EGFRxHER3 Bispecific Antibody in Patients with Locally Advanced or Metastatic Epithelial Tumor: Results from First-in-Human Phase I/Ib Study | 10.1158/1078-0432.ccr-25-0206 | Clinical Trials: Molecularly Targeted Therapy | 已完成 | no |
 | 40310449 | Liquid and Tissue Biopsies for Identifying MET Exon 14 Skipping NSCLC: Analyses from the Phase II VISION Study of Tepotinib | 10.1158/1078-0432.ccr-24-4097 | Precision Medicine and Imaging | 已完成 | no |
@@ -519,7 +519,7 @@
 | 41837748 | Improving Anti-CTLA-4 Therapies through Peptide Masking and Fragment Crystallizable Non-fucosylation: Preclinical Characterization of Three Novel Antibodies | 10.1158/1078-0432.ccr-25-1230 | Translational Mechanisms and Therapy | 已完成 | no |
 | 42148884 | Incidence of B-cell Malignancies in Patients with Lung Cancer Receiving PD-1 Blockade Therapy | 10.1158/1078-0432.ccr-25-3406 | Translational Mechanisms and Therapy | 已完成 | no |
 | 42207176 | Intrathecal Allogeneic B7-H3-Targeted CAR Gamma Delta T Cells for Leptomeningeal Metastasis from Solid Tumors: Safety Efficacy and Immunologic Dynamics in a Phase I Trial | 10.1158/1078-0432.ccr-26-0738 | Clinical Trials: Cellular and Gene Therapy | 已完成 | no |
-| 42456046 | Intratumoral Immune Heterogeneity Drives Divergent Outcomes to PD-(L)1 Blockade in Lung Cancer | 10.1158/1078-0432.ccr-26-1466 | Novel Biomarkers and Precision Medicine | 已完成 | no |
+| 42456046 | Intratumoral Immune Heterogeneity Drives Divergent Outcomes to PD-(L)1 Blockade in Lung Cancer | 10.1158/1078-0432.ccr-26-1466 | Novel Biomarkers and Precision Medicine | 已完成 | yes |
 | 41817317 | Ionizing Radiation Enhances Prognostically Significant Cellular Immunity Programs in the Brain Metastasis Microenvironment | 10.1158/1078-0432.ccr-25-3525 | Translational Mechanisms and Therapy | 已完成 | no |
 | 41920765 | Irreversible Electroporation Enhances Solid Tumor Infiltration and Selective Cancer Cell Lysis by CAR T Cells | 10.1158/1078-0432.ccr-25-4159 | Translational Mechanisms and Therapy | 已完成 | no |
 | 41649868 | JIN-A02, a Mutant-Selective Fourth-Generation EGFR Inhibitor, Overcomes C797S-Mediated Resistance and Demonstrates Intracranial Activity in NSCLC | 10.1158/1078-0432.ccr-25-3720 | Translational Mechanisms and Therapy | 已完成 | no |
@@ -552,13 +552,13 @@
 | 41511400 | TAPISTRY: A Phase II Study of Atezolizumab in Patients with Tumor Mutational Burden–High Tumors | 10.1158/1078-0432.CCR-25-3336 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 42478960 | Targeting CD24 Activates Macrophages to Reduce Tumor Burden in Preclinical Models of Solid Tumors | 10.1158/1078-0432.ccr-26-0481 | New Drugs on the Horizon | 已完成 | no |
 | 41894181 | The Efficacy and Safety of Tislelizumab plus Anlotinib as First-Line Treatment in Advanced Pulmonary Sarcomatoid Carcinoma: A Single-Arm Phase II Trial | 10.1158/1078-0432.ccr-25-4770 | Clinical Trials: Immunotherapy | 已完成 | no |
-| 42507545 | The genomic landscape and treatment outcomes associated with CDKN2A/MTAP loss in patients with non-small cell lung cancer | 10.1158/1078-0432.ccr-26-0771 | Translational Mechanisms and Therapy | 已完成 | no |
+| 42507545 | The genomic landscape and treatment outcomes associated with CDKN2A/MTAP loss in patients with non-small cell lung cancer | 10.1158/1078-0432.ccr-26-0771 | Translational Mechanisms and Therapy | 已完成 | yes |
 | 42340371 | The Genomic Landscape of MYC-, MYCL-, and MYCN-Amplified Solid Tumors | 10.1158/1078-0432.CCR-25-4102 | Novel Biomarkers and Precision Medicine | 已完成 | no |
 | 40833744 | The Impact of Concordance between Liquid and Tissue Biopsy for Actionable Mutations: Insights from the ROME Trial | 10.1158/1078-0432.ccr-25-0430 | Clinical Trials: Molecularly Targeted Therapy | 已完成 | no |
 | 41870274 | The Pan-Tumor Landscape of Gene Amplifications and Copy Number Amplification Ratio for Established and Emerging Clinical Targets | 10.1158/1078-0432.ccr-25-4018 | Novel Biomarkers and Precision Medicine | 已完成 | yes |
 | 42599160 | The pan-tumor landscape, allelic status, and genomic complexity of SMARCA4 alterations | 10.1158/1078-0432.ccr-26-1069 | Research Briefs: Precision Medicine and Therapeutics | 已完成 | no |
 | 42048384 | The SOS1 Inhibitor BI 1701963 as Monotherapy or in Combination with Trametinib in Patients with KRAS Mutation-Positive Solid Tumors | 10.1158/1078-0432.ccr-25-3725 | Clinical Trials: Molecularly Targeted Therapy | 已完成 | no |
-| 42485106 | Utilizing machine learning to identify multimodal signatures for patients who would benefit from the addition of tremelimumab to durvalumab and chemotherapy (TRIDENT) | 10.1158/1078-0432.ccr-25-3729 | Novel Biomarkers and Precision Medicine | 已完成 | no |
+| 42485106 | Utilizing machine learning to identify multimodal signatures for patients who would benefit from the addition of tremelimumab to durvalumab and chemotherapy (TRIDENT) | 10.1158/1078-0432.ccr-25-3729 | Novel Biomarkers and Precision Medicine | 已完成 | yes |
 | 42007996 | ZW191 an FRalpha-Targeted Topoisomerase 1 Inhibitor ADC with a Differentiated Antitumor Efficacy and Tolerability Profile | 10.1158/1078-0432.ccr-25-4691 | New Drugs on the Horizon | 已完成 | no |
 
 ### ESMO Open
@@ -567,7 +567,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 32312757 | STK11 and KEAP1 mutations as prognostic biomarkers in an observational real-world lung adenocarcinoma cohort | 10.1136/esmoopen-2020-000706 | article-specific STK11 evidence | 已完成 | no |
+| 32312757 | STK11 and KEAP1 mutations as prognostic biomarkers in an observational real-world lung adenocarcinoma cohort | 10.1136/esmoopen-2020-000706 | article-specific STK11 evidence | 已完成 | yes |
 
 ### JCO Precision Oncology
 
@@ -575,7 +575,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 38330261 | Influence of TP53 Comutation on the Tumor Immune Microenvironment and Clinical Outcomes With Immune Checkpoint Inhibitors in STK11-Mutant Non-Small-Cell Lung Cancer | 10.1200/PO.23.00371 | article-specific STK11 evidence | 已完成 | no |
+| 38330261 | Influence of TP53 Comutation on the Tumor Immune Microenvironment and Clinical Outcomes With Immune Checkpoint Inhibitors in STK11-Mutant Non-Small-Cell Lung Cancer | 10.1200/PO.23.00371 | article-specific STK11 evidence | 已完成 | yes |
 
 ### JTO Clinical and Research Reports
 
@@ -583,7 +583,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 36793385 | Associations of Tissue Tumor Mutational Burden and Mutational Status With Clinical Outcomes With Pembrolizumab Plus Chemotherapy Versus Chemotherapy for Metastatic NSCLC | 10.1016/j.jtocrr.2022.100431 | article-specific STK11 evidence | 已完成 | no |
+| 36793385 | Associations of Tissue Tumor Mutational Burden and Mutational Status With Clinical Outcomes With Pembrolizumab Plus Chemotherapy Versus Chemotherapy for Metastatic NSCLC | 10.1016/j.jtocrr.2022.100431 | article-specific STK11 evidence | 已完成 | yes |
 
 ### Journal for ImmunoTherapy of Cancer
 
@@ -597,14 +597,14 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 39694700 | LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer | 10.1136/jitc-2024-009444 | LKB1-AMPK-Skp2调节PD-L1稳定性及抗PD-L1负向联合结果 | 已完成 | no |
+| 39694700 | LKB1 dictates sensitivity to immunotherapy through Skp2-mediated ubiquitination of PD-L1 protein in non-small cell lung cancer | 10.1136/jitc-2024-009444 | LKB1-AMPK-Skp2调节PD-L1稳定性及抗PD-L1负向联合结果 | 已完成 | yes |
 
 #### 2025（2篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 41423267 | Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer | 10.1136/jitc-2025-012205 | 吸烟背景、STK11共突变及免疫治疗结局 | 已完成 | no |
-| 41135949 | Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer | 10.1136/jitc-2025-012710 | LKB1-AMPK-FOXA1-AGR2分泌调控与树突状细胞功能障碍 | 已完成 | no |
+| 41423267 | Multi-omics analysis reveals differential benefits of immunotherapy±chemotherapy based on detailed smoking history in advanced non-small cell lung cancer | 10.1136/jitc-2025-012205 | 吸烟背景、STK11共突变及免疫治疗结局 | 已完成 | yes |
+| 41135949 | Tumor-secreted AGR2 induces dendritic cell dysfunction and impairs immunotherapy efficacy in LKB1-deficient cancer | 10.1136/jitc-2025-012710 | LKB1-AMPK-FOXA1-AGR2分泌调控与树突状细胞功能障碍 | 已完成 | yes |
 
 ### Journal of Clinical Oncology
 
@@ -612,7 +612,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 37098232 | Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100 | 10.1200/JCO.22.02524 | single-arm phase I/II extended follow-up with exploratory biomarker subgroups | 已完成 | no |
+| 37098232 | Long-Term Outcomes and Molecular Correlates of Sotorasib Efficacy in Patients With Pretreated KRAS G12C-Mutated Non-Small-Cell Lung Cancer: 2-Year Analysis of CodeBreaK 100 | 10.1200/JCO.22.02524 | single-arm phase I/II extended follow-up with exploratory biomarker subgroups | 已完成 | yes |
 
 #### 2024（1篇）
 
@@ -626,13 +626,13 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 34450259 | KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy. | 10.1016/j.jtho.2021.08.010 | KEAP1与TP53共突变进化免疫分型 | 已完成 | no |
+| 34450259 | KEAP1 and TP53 Frame Genomic, Evolutionary, and Immunologic Subtypes of Lung Adenocarcinoma With Different Sensitivity to Immunotherapy. | 10.1016/j.jtho.2021.08.010 | KEAP1与TP53共突变进化免疫分型 | 已完成 | yes |
 
 #### 2022（1篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 34740862 | Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status | 10.1016/j.jtho.2021.10.013 | KRAS-stratified STK11/KEAP1 clinical associations | 已完成 | no |
+| 34740862 | Diminished Efficacy of Programmed Death-(Ligand)1 Inhibition in STK11- and KEAP1-Mutant Lung Adenocarcinoma Is Affected by KRAS Mutation Status | 10.1016/j.jtho.2021.10.013 | KRAS-stratified STK11/KEAP1 clinical associations | 已完成 | yes |
 
 #### 2023（9篇）
 
@@ -640,12 +640,12 @@
 |---|---|---|---|---|---|
 | 36948245 | Classification of Tumor Immune Microenvironment According to Programmed Death-Ligand 1 Expression and Immune Infiltration Predicts Response to Immunotherapy Plus Chemotherapy in Advanced Patients With NSCLC. | 10.1016/j.jtho.2023.03.012 | ORIENT11肿瘤免疫微环境RNA分型 | 已完成 | no |
 | 37543207 | Clinicogenomic Features and Targetable Mutations in NSCLCs Harboring BRAF Non-V600E Mutations: A Multi-Institutional Genomic Screening Study (LC-SCRUM-Asia). | 10.1016/j.jtho.2023.07.024 | BRAF functional classes and outcomes | 已完成 | no |
-| 36775193 | Clinicopathologic and Genomic Factors Impacting Efficacy of First-Line Chemoimmunotherapy in Advanced NSCLC. | 10.1016/j.jtho.2023.01.091 | clinical genomics and immunotherapy outcomes | 已完成 | no |
+| 36775193 | Clinicopathologic and Genomic Factors Impacting Efficacy of First-Line Chemoimmunotherapy in Advanced NSCLC. | 10.1016/j.jtho.2023.01.091 | clinical genomics and immunotherapy outcomes | 已完成 | yes |
 | 37182602 | Combination Therapy With MDM2 and MEK Inhibitors Is Effective in Patient-Derived Models of Lung Adenocarcinoma With Concurrent Oncogenic Drivers and MDM2 Amplification. | 10.1016/j.jtho.2023.05.007 | MDM2 amplification and combination vulnerability | 已完成 | no |
-| 36958689 | Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC. | 10.1016/j.jtho.2023.03.014 | STK11-linked metabolic mechanism | 已完成 | no |
-| 36494075 | Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers. | 10.1016/j.jtho.2022.11.022 | clinical genomics and resistance | 已完成 | no |
+| 36958689 | Histone Deacetylase 6 Inhibition Exploits Selective Metabolic Vulnerabilities in LKB1 Mutant, KRAS Driven NSCLC. | 10.1016/j.jtho.2023.03.014 | STK11-linked metabolic mechanism | 已完成 | yes |
+| 36494075 | Molecular Biomarkers of Disease Outcomes and Mechanisms of Acquired Resistance to First-Line Osimertinib in Advanced EGFR-Mutant Lung Cancers. | 10.1016/j.jtho.2022.11.022 | clinical genomics and resistance | 已完成 | yes |
 | 36535627 | Single-Cell Analysis Reveals Transcriptomic Features of Drug-Tolerant Persisters and Stromal Adaptation in a Patient-Derived EGFR-Mutated Lung Adenocarcinoma Xenograft Model. | 10.1016/j.jtho.2022.12.003 | EGFR抑制剂耐受细胞及CAF单细胞 | 已完成 | no |
-| 37495171 | STK11/LKB1-Deficient Phenotype Rather Than Mutation Diminishes Immunotherapy Efficacy and Represents STING/Type I Interferon/CD8+ T-Cell Dysfunction in NSCLC. | 10.1016/j.jtho.2023.07.020 | STK11功能表型与免疫治疗分层 | 已完成 | no |
+| 37495171 | STK11/LKB1-Deficient Phenotype Rather Than Mutation Diminishes Immunotherapy Efficacy and Represents STING/Type I Interferon/CD8+ T-Cell Dysfunction in NSCLC. | 10.1016/j.jtho.2023.07.020 | STK11功能表型与免疫治疗分层 | 已完成 | yes |
 | 36240971 | Targeting NFE2L2/KEAP1 Mutations in Advanced NSCLC With the TORC1/2 Inhibitor TAK-228. | 10.1016/j.jtho.2022.09.225 | genotype-directed clinical trial | 已完成 | no |
 
 #### 2024（8篇）
@@ -653,7 +653,7 @@
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
 | 37981218 | Allelic Context of EGFR C797X-Mutant Lung Cancer Defines Four Subtypes With Heterogeneous Genomic Landscape and Distinct Clinical Outcomes. | 10.1016/j.jtho.2023.11.016 | EGFR_C797X等位背景四分型 | 已完成 | no |
-| 37806385 | Co-Occurring Alterations in Multiple Tumor Suppressor Genes Are Associated With Worse Outcomes in Patients With EGFR-Mutant Lung Cancer. | 10.1016/j.jtho.2023.10.001 | TP53 plus tumor-suppressor co-alterations | 已完成 | no |
+| 37806385 | Co-Occurring Alterations in Multiple Tumor Suppressor Genes Are Associated With Worse Outcomes in Patients With EGFR-Mutant Lung Cancer. | 10.1016/j.jtho.2023.10.001 | TP53 plus tumor-suppressor co-alterations | 已完成 | yes |
 | 37572870 | Impact of Concurrent Genomic Alterations on Clinical Outcomes in Patients With ALK-Rearranged NSCLC. | 10.1016/j.jtho.2023.08.007 | CDKN2A/B co-deletion and ALK treatment outcomes | 已完成 | no |
 | 39111731 | Lung-MAP Next-Generation Sequencing Analysis of Advanced Squamous Cell Lung Cancers (SWOG S1400). | 10.1016/j.jtho.2024.07.024 | squamous lung cancer genomic landscape | 已完成 | no |
 | 37838086 | Microsatellite Instability and Mismatch Repair Deficiency Define a Distinct Subset of Lung Cancers Characterized by Smoking Exposure, High Tumor Mutational Burden, and Recurrent Somatic MLH1 Inactivation. | 10.1016/j.jtho.2023.10.004 | MSI/MMR and immune outcomes | 已完成 | no |
@@ -677,14 +677,14 @@
 | 41260457 | Clinical Significance of MTAP Deletions and Their Overlap With Concurrent Oncogenic Driver Alterations Including EGFR in NSCLC. | 10.1016/j.jtho.2025.11.010 | MTAP co-deletion and targeted-therapy outcomes | 已完成 | no |
 | 42674257 | DNA and RNA EGFR Variant Allele Fractions and Clinical Outcomes in Lung Adenocarcinoma. | 10.1016/j.jtho.2026.104176 | EGFR DNA/RNA等位基因表达与复发风险 | 已完成 | no |
 | 41932614 | ERBB2-Activating Mutations and Co-Occurring Genomic Alterations Contribute to Disease Heterogeneity in Patients With ERBB2-Mutant Lung Cancer | 10.1016/j.jtho.2026.103708 | genomic and clinicogenomic landscape | 已完成 | yes |
-| 42749050 | Final Biomarker and Efficacy Analyses of Lorlatinib in Patients With ALK-Positive Advanced Non-Small Cell Lung Cancer in a Phase 2 Study. | 10.1016/j.jtho.2026.104202 | ALK靶向治疗生物标志物及纵向ctDNA耐药分析 | 已完成 | no |
+| 42749050 | Final Biomarker and Efficacy Analyses of Lorlatinib in Patients With ALK-Positive Advanced Non-Small Cell Lung Cancer in a Phase 2 Study. | 10.1016/j.jtho.2026.104202 | ALK靶向治疗生物标志物及纵向ctDNA耐药分析 | 已完成 | yes |
 | 42749049 | Genomic and transcriptomic features of relapsed small cell lung cancer. | 10.1016/j.jtho.2026.104201 | 复发SCLC基因组转录组与剪接 | 已完成 | no |
 | 42409117 | Genomic Landscape and Clinical Impact of MTAP Loss in Driver-Positive NSCLC: Insights From a Large-Scale Real-World Chinese Cohort | 10.1016/j.jtho.2026.104077 | genomic landscape and targeted-therapy outcome analysis | 已完成 | yes |
 | 41619904 | Impact of KRAS Mutations and Co-Alterations on Outcomes in Stage III Nonsquamous NSCLC Treated With Chemoradiation and Immunotherapy | 10.1016/j.jtho.2026.103565 | clinical outcome and co-alteration analysis | 已完成 | yes |
 | 42749051 | Integrated multi-omic profiling enables recurrence risk stratification beyond pathological stage in resected EGFR-mutant lung adenocarcinoma. | 10.1016/j.jtho.2026.104204 | integrated genomics/transcriptomics and recurrence risk | 已完成 | no |
 | 41903702 | Molecular Profiling Across 80,000 Patients With Lung Cancer. | 10.1016/j.jtho.2026.103695 | lung cancer genomic landscape | 已完成 | no |
-| 41161592 | Neoadjuvant Immunochemotherapy in Resectable NSCLC With SMARCA4 Alterations. | 10.1016/j.jtho.2025.10.013 | SMARCA4 neoadjuvant immunochemotherapy outcomes | 已完成 | no |
-| 41690367 | TTF-1 Expression in Lung Adenocarcinoma: Clinicopathologic, Genomic, and Immunophenotypic Correlates and Outcomes to Immunotherapy-Based Treatments and KRASG12C Inhibitors. | 10.1016/j.jtho.2026.103610 | TTF1临床基因组免疫表型及疗效 | 已完成 | no |
+| 41161592 | Neoadjuvant Immunochemotherapy in Resectable NSCLC With SMARCA4 Alterations. | 10.1016/j.jtho.2025.10.013 | SMARCA4 neoadjuvant immunochemotherapy outcomes | 已完成 | yes |
+| 41690367 | TTF-1 Expression in Lung Adenocarcinoma: Clinicopathologic, Genomic, and Immunophenotypic Correlates and Outcomes to Immunotherapy-Based Treatments and KRASG12C Inhibitors. | 10.1016/j.jtho.2026.103610 | TTF1临床基因组免疫表型及疗效 | 已完成 | yes |
 
 ### Nature
 
@@ -692,7 +692,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 28538732 | CPS1 maintains pyrimidine pools and DNA synthesis in KRAS/LKB1-mutant lung cancer cells | 10.1038/nature22359 | preclinical_mechanistic | 已完成 | no |
+| 28538732 | CPS1 maintains pyrimidine pools and DNA synthesis in KRAS/LKB1-mutant lung cancer cells | 10.1038/nature22359 | preclinical_mechanistic | 已完成 | yes |
 
 #### 2024（1篇）
 
@@ -712,7 +712,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 34870237 | Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms | 10.1038/s43018-021-00259-9 | NSCLC蛋白基因组分型、STK11相关FGL1/CPS1表型及分类器验证 | 已完成 | no |
+| 34870237 | Proteogenomics of non-small cell lung cancer reveals molecular subtypes associated with specific therapeutic targets and immune evasion mechanisms | 10.1038/s43018-021-00259-9 | NSCLC蛋白基因组分型、STK11相关FGL1/CPS1表型及分类器验证 | 已完成 | yes |
 
 ### Nature Cell Biology
 
@@ -720,7 +720,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 34341533 | LKB1 inactivation modulates chromatin accessibility to drive metastatic progression | 10.1038/s41556-021-00728-4 | LKB1/SIK相关阶段依赖染色质状态与SOX17转移表型 | 已完成 | no |
+| 34341533 | LKB1 inactivation modulates chromatin accessibility to drive metastatic progression | 10.1038/s41556-021-00728-4 | LKB1/SIK相关阶段依赖染色质状态与SOX17转移表型 | 已完成 | yes |
 
 ### Nature Communications
 
@@ -728,14 +728,14 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 38997257 | Glucose-6-phosphate dehydrogenase maintains redox homeostasis and biosynthesis in LKB1-deficient KRAS-driven lung cancer | 10.1038/s41467-024-50157-8 | preclinical_mechanistic | 已完成 | no |
+| 38997257 | Glucose-6-phosphate dehydrogenase maintains redox homeostasis and biosynthesis in LKB1-deficient KRAS-driven lung cancer | 10.1038/s41467-024-50157-8 | preclinical_mechanistic | 已完成 | yes |
 
 #### 2025（2篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 40830141 | Integrated molecular and clinical characterization of pulmonary large cell neuroendocrine carcinoma | 10.1038/s41467-025-63091-0 | article-specific STK11 evidence | 已完成 | no |
-| 40057483 | Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer | 10.1038/s41467-025-57297-5 | LKB1缺失相关IAP-JAK1-STING免疫依赖性脆弱性 | 已完成 | no |
+| 40830141 | Integrated molecular and clinical characterization of pulmonary large cell neuroendocrine carcinoma | 10.1038/s41467-025-63091-0 | article-specific STK11 evidence | 已完成 | yes |
+| 40057483 | Uncovering the rewired IAP-JAK regulatory axis as an immune-dependent vulnerability of LKB1-mutant lung cancer | 10.1038/s41467-025-57297-5 | LKB1缺失相关IAP-JAK1-STING免疫依赖性脆弱性 | 已完成 | yes |
 
 ### Nature Genetics
 
@@ -759,7 +759,7 @@
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
-| 38877143 | Concurrent loss of LKB1 and KEAP1 enhances SHMT-mediated antioxidant defence in KRAS-mutant lung cancer | 10.1038/s42255-024-01066-z | article-specific STK11 evidence | 已完成 | no |
+| 38877143 | Concurrent loss of LKB1 and KEAP1 enhances SHMT-mediated antioxidant defence in KRAS-mutant lung cancer | 10.1038/s42255-024-01066-z | article-specific STK11 evidence | 已完成 | yes |
 
 ### Signal Transduction and Targeted Therapy
 

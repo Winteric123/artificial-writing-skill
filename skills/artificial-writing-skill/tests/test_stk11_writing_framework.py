@@ -22,22 +22,30 @@ class Stk11WritingFramework(unittest.TestCase):
 
     def test_unique_membership_and_source_identity(self):
         identifiers = [record['pmid'] for record in self.records]
+        self.assertEqual(self.mapping['schema_version'], 2)
+        self.assertEqual(self.mapping['collection_id'], 'stk11_highlight')
+        self.assertEqual(self.mapping['membership_rule'], 'all_records')
+        self.assertEqual(len(identifiers), 64)
         self.assertEqual(len(identifiers), len(set(identifiers)))
         for identifier in identifiers:
             with self.subTest(pmid=identifier):
                 self.assertIn(identifier, self.library)
                 self.assertEqual(self.library[identifier]['eligibility'], 'included')
+                self.assertEqual(self.library[identifier]['stk11_highlight'], 'yes')
                 self.assertTrue(self.library[identifier]['title'])
                 self.assertTrue(self.library[identifier]['journal'])
                 self.assertTrue(self.library[identifier]['doi'])
 
-    def test_core_priority_is_not_promoted_by_topic_support(self):
+    def test_legacy_tiers_preserve_origin_without_partitioning_membership(self):
         priority = (self.references / self.mapping['core_authority']).read_text(encoding='utf-8-sig')
         highlighted = set(re.findall(r'^\| 1 \| [^|]+ \| \d{4} \| (\d{8}) \|', priority, re.M))
         mapped_core = {record['pmid'] for record in self.records if record['tier'] == 'core_highlight'}
         support = {record['pmid'] for record in self.records if record['tier'] == 'topic_support'}
         self.assertEqual(mapped_core, highlighted)
         self.assertFalse(highlighted & support)
+        self.assertEqual((len(mapped_core), len(support)), (13, 51))
+        self.assertEqual(self.mapping['legacy_tier_counts'], {'core_highlight': 13, 'topic_support': 51})
+        self.assertEqual(mapped_core | support, {record['pmid'] for record in self.records})
         self.assertEqual(support, {'36775193', '36494075', '37806385', '39804166', '39545922', '42507545'} | {'37495171', '38300729', '38980931', '42456046', '42485106', '33077574', '33323404', '36958689', '41690367', '34450259', '41161592', '42749050'} | self.NEW_LOCAL_READS | self.SUPPLEMENT_READS)
 
     def test_cross_gene_set_preserves_copy_context_additions(self):

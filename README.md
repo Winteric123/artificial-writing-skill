@@ -10,7 +10,7 @@ The resource supports Chinese–English translation, manuscript drafting and rev
 
 The corpus-backed communication profiles focus on *Clinical Cancer Research* and lung cancer within documented source coverage. Selected articles from other journals, including the *Journal of Thoracic Oncology*, contribute study-specific evidence and language resources; they do not establish journal-wide writing profiles. Task, journal, disease, manuscript section, audience, and evidence domain are selected independently. See the [profile registry](skills/artificial-writing-skill/references/profile-registry.md) for supported combinations and fallback rules.
 
-An optional **STK11/LKB1 module** organizes core references and separately designated supporting studies. It distinguishes direct molecular evidence from contextual analyses and methodological analogues, and separates sequence variation, copy-number alterations, functional state, immune mechanisms, metabolism, and clinical outcomes.
+An optional **STK11/LKB1 module** organizes one active 64-article highlight collection while retaining historical origin labels. It distinguishes direct molecular evidence from contextual analyses and methodological analogues, and separates sequence variation, copy-number alterations, functional state, immune mechanisms, metabolism, and clinical outcomes. A source-linked sentence route covers the 15 CCR articles in that collection without treating their language patterns as evidence for a user's result.
 
 ## Evidence and language workflow
 
@@ -31,6 +31,9 @@ For newly supplied PDFs, the [intake safeguards](skills/artificial-writing-skill
 | [Language manifest](skills/artificial-writing-skill/references/language-index-manifest.json) · [Retrieval guide](skills/artificial-writing-skill/references/retrieval-and-maintenance.md) | Section-specific language resources, filters, and source-context interpretation |
 | [STK11/LKB1 analysis guide](skills/artificial-writing-skill/references/stk11-analysis-framework.md) · [Study logic map](skills/artificial-writing-skill/references/stk11-study-logic-map.md) | Question-specific selection of molecular, clinical, and mechanistic evidence |
 | [STK11 assay and treatment guide](skills/artificial-writing-skill/references/stk11-assay-treatment-guide.md) | Article retrieval by assay, data origin, treatment, research method, and relation to STK11 |
+| [STK11 sentence-rewriting guide](skills/artificial-writing-skill/references/stk11-sentence-rewriting.md) · [Sentence catalog](skills/artificial-writing-skill/references/stk11-ccr-sentence-templates.json) | Source-linked whole-sentence patterns for the 15-paper CCR/STK11 subset, including body Methods, omics Results, and functional experiments |
+| [CCR 2025–2026 Results-logic guide](skills/artificial-writing-skill/references/ccr-2025-2026-results-logic-writing.md) · [Results-logic catalog](skills/artificial-writing-skill/references/ccr-2025-2026-results-logic.json) | Positive, negative, mixed, inconclusive, and descriptive reporting across the 123 currently included issue-year articles |
+| [Nonsignificant and uncertain results](skills/artificial-writing-skill/references/nonsignificant-results-language.md) | Evidence-calibrated wording when significance is absent, unclear, or separate from biological coherence |
 | [Co-alteration classification](skills/artificial-writing-skill/references/coalteration-topics.md) | Structured retrieval distinguishing sequence co-mutation, copy-number alterations, fusions, and other genomic contexts |
 | [Reading acceptance criteria](skills/artificial-writing-skill/references/deep-reading-acceptance.md) · [Writing evaluation](skills/artificial-writing-skill/references/writing-evaluation.md) | Distinct requirements for source review, software checks, and writing-case assessment |
 | [Skill entrypoint](skills/artificial-writing-skill/SKILL.md) | Task routing, evidence rules, and operational safeguards |
@@ -86,6 +89,27 @@ python scripts/search_stk11_references.py --relation direct_mutation --method co
 
 Assay and origin must match the same assay record; original and reanalyzed data are not interchangeable. Missing tags indicate incomplete curation, not absence of an assay. Directory membership does not establish completed reading or direct STK11 evidence.
 
+### Source-linked STK11 sentence patterns
+
+Retrieve a complete source sentence, its paper and page provenance, result or Methods type, use boundary, and synthetic rewrite template together:
+
+```powershell
+python scripts/search_stk11_sentence_templates.py --result-type cross_omics_concordance --source-section results --limit 3 --json
+```
+
+The 106-record resource covers 15 CCR/STK11 papers and includes body Methods and Results patterns. A source sentence documents a literature wording pattern; only the synthetic template may be adapted, and every slot must be filled with evidence from the user's own study.
+
+### CCR 2025–2026 Results logic
+
+Search sentence-level patterns or paper-level narrative sequences independently:
+
+```powershell
+python scripts/search_ccr_results_logic.py --domain integrated_omics --result-polarity mixed --section results --limit 3 --json
+python scripts/search_ccr_results_logic.py --paper-logic --domain clinical_efficacy --polarity negative --limit 3 --json
+```
+
+This bounded catalog covers 123 currently included issue-year articles and 267 visually verified body-Results sentences. Result polarity and inferential status are separate axes; clinical activity is distinct from comparative efficacy, prognosis from treatment prediction, and preclinical activity from patient benefit. Visual page verification and mechanical text matching are reported separately. The catalog does not upgrade article-review status, imply unsupplied supplement coverage, or change STK11 membership.
+
 ### Structured co-alteration retrieval
 
 For section-specific language from articles with curated genomic classifications, use structured filters rather than relying only on keyword matches:
@@ -114,4 +138,4 @@ Software checks assess register consistency, dependency hashes, retrieval behavi
 
 This is an independent, unofficial project, unaffiliated with and not endorsed by the American Association for Cancer Research or *Clinical Cancer Research*.
 
-Source PDFs, complete full-text extracts, and private research data are not distributed in this repository. Underlying articles retain their respective copyright and licensing terms. No open-source license has been selected for the repository.
+Source PDFs, complete full-text extracts, and private research data are not distributed in this repository. Source-linked catalogs contain attributed sentence-level excerpts for provenance and linguistic analysis; the underlying wording and articles retain their respective copyright and licensing terms and are not relicensed here. No open-source license has been selected for the repository.

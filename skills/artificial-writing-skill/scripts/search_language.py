@@ -21,8 +21,10 @@ def load_index(skill):
     payload = read_json(index_path)
     if payload['schema_version'] != 2:
         raise ValueError('Unsupported language payload schema; rebuild before retrieval')
+    editorial_cards = list(payload['usage_cards'].values())
     for entry in payload['entries']:
         entry['_vocabulary'] = payload['vocabulary']
+        entry['_usage_card_catalog'] = editorial_cards
         entry['source_articles'] = [payload['articles'][identifier] for identifier in entry['source_article_ids'].split(';')]
         entry['usage_cards'] = [payload['usage_cards'][identifier] for identifier in entry['usage_card_ids']]
         entry['source_alerts'] = [payload['article_alerts'][identifier] for identifier in entry['source_alert_ids']]
@@ -49,6 +51,36 @@ def source_matches(article, vocabulary, *, year, pmid, highlight, disease, inclu
         if value and not exact_tag_match(value, scope.get(field, []), vocabulary.get(group, {})):
             return False
     return topic_matches(article.get('co_alteration_topics', {}), co_mutation=co_mutation, co_alteration=co_alteration, co_gene=co_gene, co_use=co_use, co_type=co_type)
+
+
+def editorial_card_matches(entries, query='', section=''):
+    if not entries or not query:
+        return []
+    vocabulary = entries[0].get('_vocabulary', {})
+    clauses = query_clauses(query, vocabulary.get('concepts', []))
+    requested_section = normalize_section(section)
+    matches = []
+    for card in entries[0].get('_usage_card_catalog', []):
+        sections = [normalize_section(value) for value in card.get('sections', [])]
+        if requested_section and not any(requested_section == value or (requested_section == 'abstract' and value.startswith('abstract-')) for value in sections):
+            continue
+        # Search only the card's positive routing fields. Confusable, unsafe,
+        # and boundary text deliberately name concepts that the card rejects;
+        # indexing those fields would route an opposite or prohibited meaning.
+        searchable = json.dumps(
+            [
+                card.get('id', ''),
+                card.get('match_terms', []),
+                card.get('zh', ''),
+                card.get('sections', []),
+                card.get('use_when', ''),
+                card.get('safe_example', ''),
+            ],
+            ensure_ascii=False,
+        ).casefold()
+        if query_matches(searchable, clauses):
+            matches.append(card)
+    return sorted(matches, key=lambda card: card['id'])
 
 
 def search(entries, *, query='', journal='', year='', section='', function='', domain='', article_domain='', disease='', include_subtypes=False, tissue='', model='', source_role='', unit='', evidence_tier='', pmid='', entry_id='', highlight=False, single_paper=False, reviewed=False, include_held=False, pdf_located=False, context_reviewed=False, co_mutation='', co_alteration='', co_gene='', co_use='', co_type='', limit=10):
@@ -99,11 +131,17 @@ def search(entries, *, query='', journal='', year='', section='', function='', d
         visible = {key: value for key, value in entry.items() if not key.startswith('_')}
         result.append((score, {**visible, 'matching_source_pmids': [article['pmid'] for article in matching_sources]}))
     result.sort(key=lambda pair: (-pair[0], pair[1]['stable_id']))
-    return {'matched_count': len(result), 'entries': [entry for _, entry in result[:limit]]}
+    editorial_cards = editorial_card_matches(entries, query=query, section=section)
+    return {
+        'matched_count': len(result),
+        'entries': [entry for _, entry in result[:limit]],
+        'editorial_card_count': len(editorial_cards),
+        'editorial_cards': editorial_cards,
+    }
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Retrieve source-linked language; held expressions are excluded unless auditing.')
+    parser = argparse.ArgumentParser(description='Retrieve source-linked language plus separately labelled editorial cards; held expressions are excluded unless auditing.')
     parser.add_argument('--skill-path', type=Path, default=Path(__file__).resolve().parents[1])
     for option in ('query', 'journal', 'year', 'section', 'function', 'domain', 'article-domain', 'disease', 'tissue', 'model', 'source-role', 'unit', 'evidence-tier', 'pmid', 'entry-id', 'co-gene'):
         parser.add_argument('--' + option, default='')
@@ -124,7 +162,7 @@ def main():
     migrations = read_json(reference_path(arguments.skill_path, 'language-id-migrations.json'))['migrations']
     result['retired_entry'] = next((migration for migration in migrations if migration['retired_id'] == arguments.entry_id), None)
     result.update(index_version=manifest['index_version'], purpose=arguments.purpose,
-                  boundary='Synthetic language, not quotations or verified study findings. Review source_alerts and usage constraints; source acceptance is reported separately.')
+                  boundary='Entries are source-linked language; editorial_cards are general writing guidance and are not corpus hits, quotations, or study findings. Review source_alerts and usage constraints; source acceptance is reported separately.')
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

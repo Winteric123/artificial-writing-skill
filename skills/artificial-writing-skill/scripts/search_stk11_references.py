@@ -7,14 +7,27 @@ from library_common import file_hash, journal_registry, read_csv, read_json, ref
 from validate_reading_quality import validate
 
 
-def load_records(skill, include_candidates=False):
+def load_records(skill, include_candidates=False, include_membership=False):
     validate(skill)
     references = skill / 'references'
     payload = read_json(references / 'stk11-assay-treatment-tags.json')
     if payload.get('schema_version') != 1:
         raise ValueError('Unsupported STK11 tag schema')
     versions = {row['pmid']: row for row in read_csv(references / 'source-version-register.csv')}
-    membership = {row['pmid']: row for row in read_json(references / 'stk11-writing-reference-map.json')['records']}
+    mapping = read_json(references / 'stk11-writing-reference-map.json')
+    if mapping.get('schema_version') != 2 or mapping.get('collection_id') != 'stk11_highlight':
+        raise ValueError('Unsupported STK11 highlight membership schema')
+    if mapping.get('membership_rule') != 'all_records' or not mapping.get('membership_semantics') or not mapping.get('tier_semantics'):
+        raise ValueError('Incomplete STK11 highlight membership semantics')
+    membership = {row['pmid']: row for row in mapping.get('records', [])}
+    if not membership or len(membership) != len(mapping.get('records', [])):
+        raise ValueError('Empty or duplicate STK11 highlight membership')
+    allowed_tiers = set(mapping.get('legacy_tier_counts', {}))
+    if allowed_tiers != {'core_highlight', 'topic_support'} or any(row.get('tier') not in allowed_tiers for row in membership.values()):
+        raise ValueError('Invalid historical STK11 highlight tier')
+    actual_counts = {tier: sum(row['tier'] == tier for row in membership.values()) for tier in allowed_tiers}
+    if actual_counts != mapping['legacy_tier_counts']:
+        raise ValueError('Historical STK11 highlight tier counts changed')
     articles, states = {}, {}
     for journal in journal_registry(skill).values():
         for row in read_csv(references / journal['bibliography']):
@@ -32,6 +45,7 @@ def load_records(skill, include_candidates=False):
             if pmid in records:
                 raise ValueError('Duplicate candidate PMID')
             records[pmid] = dict(candidate, stable_id='STK11-PMID-' + pmid, primary_classification=candidate['module'], stk11_relation='not_fine_curated', methods=[], treatment_types=[], drugs=[], assays=[], alteration_types=[], gene_contexts=[], classification_level='historical_screening_only', evidence='stk11-reference-candidates.json', boundary=candidate['caution'] + '; specific assays/treatments not fine-curated in this tag set')
+    if include_candidates or include_membership:
         for pmid, member in membership.items():
             if pmid not in records:
                 article = articles[pmid]
@@ -57,14 +71,16 @@ def load_records(skill, include_candidates=False):
     for pmid, row in records.items():
         state = states.get(pmid, {})
         member = membership.get(pmid, {})
-        row.update(reading_stage=state.get('reading_stage', 'not_registered_as_read'), main_read_completed_on=state.get('main_read_completed_on', ''), review_status=state.get('review_status', 'not_registered'), supplement_status=state.get('supplement_status', 'not_registered'), eligibility=state.get('eligibility', 'candidate_not_registered'), core_highlight=member.get('tier') == 'core_highlight', project_tier=member.get('tier', 'supplementary_reference' if pmid in detailed_ids else 'screening_candidate'), pdf_registered=pmid in versions, pubmed_url=f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/', doi_url='https://doi.org/' + row['doi'])
+        row.update(reading_stage=state.get('reading_stage', 'not_registered_as_read'), main_read_completed_on=state.get('main_read_completed_on', ''), review_status=state.get('review_status', 'not_registered'), supplement_status=state.get('supplement_status', 'not_registered'), eligibility=state.get('eligibility', 'candidate_not_registered'), highlight=bool(member), core_highlight=member.get('tier') == 'core_highlight', highlight_origin_tier=member.get('tier', 'not_member'), project_tier=member.get('tier', 'supplementary_reference' if pmid in detailed_ids else 'screening_candidate'), pdf_registered=pmid in versions, pubmed_url=f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/', doi_url='https://doi.org/' + row['doi'])
     return sorted(records.values(), key=lambda row: (row['journal'], row['year'], row['pmid']))
 
 
-def matches(row, *, assays=(), origin='', treatments=(), methods=(), relation='', pmid='', core_only=False):
+def matches(row, *, assays=(), origin='', treatments=(), methods=(), relation='', pmid='', highlight_only=False, core_only=False):
     if pmid and row['pmid'] != pmid:
         return False
-    if core_only and not row['core_highlight']:
+    if highlight_only and not row.get('highlight', False):
+        return False
+    if core_only and not row.get('core_highlight', False):
         return False
     if relation and row['stk11_relation'] != relation:
         return False
@@ -77,10 +93,10 @@ def matches(row, *, assays=(), origin='', treatments=(), methods=(), relation=''
 
 
 def markdown(rows):
-    lines = ['# STK11写作参考：分层分类目录', '', '主文精读、独立验收、核心highlight与候选资格分别显示。组学细标签按已提供主文逐篇更新（范围见分类指南）；其他条目缺标签是待补，不是缺少该技术。依据见逐篇笔记与stk11-assay-treatment-guide.md。', '', '| 稳定编号 / PMID | 年份·期刊·题名 | 内容及STK11关系 | 技术（来源/样本） | 治疗 / 药物 | 研究方式 | 状态 / 核心highlight |', '|---|---|---|---|---|---|---|']
+    lines = ['# STK11写作参考：统一 highlight 与证据分层', '', '统一highlight成员、历史来源tier、主文精读和独立验收分别显示。组学细标签按已提供主文逐篇更新（范围见分类指南）；缺标签表示待补，不代表未开展该技术。依据见逐篇笔记与stk11-assay-treatment-guide.md。', '', '| 稳定编号 / PMID | 年份·期刊·题名 | 内容及STK11关系 | 技术（来源/样本） | 治疗 / 药物 | 研究方式 | 状态 / 统一highlight / 历史来源 |', '|---|---|---|---|---|---|---|']
     for row in rows:
         assay_text = '; '.join(f'{item["assay"]} ({item["origin"]}/{item["sample_context"]})' for item in row['assays']) or '待精细标注；不代表未开展'
-        values = [f'[{row["stable_id"]}]({row["pubmed_url"]})', f'{row["year"]} · {row["journal"]} · {row["title"]} [DOI]({row["doi_url"]})', row['primary_classification'] + ' / ' + row['stk11_relation'], assay_text, '; '.join(row['treatment_types'] + row['drugs']) or '待标注', '; '.join(row['methods']) or '见历史筛选', row['reading_stage'] + '; review=' + row['review_status'] + '; core=' + str(row['core_highlight'])]
+        values = [f'[{row["stable_id"]}]({row["pubmed_url"]})', f'{row["year"]} · {row["journal"]} · {row["title"]} [DOI]({row["doi_url"]})', row['primary_classification'] + ' / ' + row['stk11_relation'], assay_text, '; '.join(row['treatment_types'] + row['drugs']) or '待标注', '; '.join(row['methods']) or '见历史筛选', row['reading_stage'] + '; review=' + row['review_status'] + '; highlight=' + str(row['highlight']) + '; origin=' + row['highlight_origin_tier']]
         lines.append('| ' + ' | '.join(value.replace('|', '/').replace('\n', ' ') for value in values) + ' |')
     return '\n'.join(lines) + '\n'
 
@@ -95,13 +111,15 @@ def main():
     parser.add_argument('--method', action='append', default=[])
     parser.add_argument('--relation', default='')
     parser.add_argument('--pmid', default='')
-    parser.add_argument('--core-only', action='store_true')
+    membership_filter = parser.add_mutually_exclusive_group()
+    membership_filter.add_argument('--highlight-only', action='store_true', help='Return the unified STK11 highlight collection.')
+    membership_filter.add_argument('--core-only', action='store_true', help='Compatibility filter for the historical original 13-record core subset.')
     output = parser.add_mutually_exclusive_group()
     output.add_argument('--json', action='store_true')
     output.add_argument('--markdown', action='store_true')
     args = parser.parse_args()
     try:
-        records = load_records(args.skill_path, args.all_candidates)
+        records = load_records(args.skill_path, args.all_candidates, args.highlight_only or args.core_only)
         for values, field in ((args.treatment, 'treatment_types'), (args.method, 'methods')):
             allowed = {item for row in records for item in row[field]}
             if set(values) - allowed:
@@ -113,10 +131,10 @@ def main():
             raise ValueError('Unknown origin filter')
         if args.relation and args.relation not in {row['stk11_relation'] for row in records}:
             raise ValueError('Unknown relation filter')
-        rows = [row for row in records if matches(row, assays=args.assay, origin=args.origin, treatments=args.treatment, methods=args.method, relation=args.relation, pmid=args.pmid, core_only=args.core_only)]
+        rows = [row for row in records if matches(row, assays=args.assay, origin=args.origin, treatments=args.treatment, methods=args.method, relation=args.relation, pmid=args.pmid, highlight_only=args.highlight_only, core_only=args.core_only)]
     except (ValueError, KeyError, OSError) as error:
         parser.exit(1, f'Classification retrieval failed: {error}\n')
-    print(json.dumps(dict(count=len(rows), records=rows), ensure_ascii=False, indent=2) if args.json else markdown(rows))
+    print(json.dumps(dict(count=len(rows), records=rows, boundary='Highlight is project membership only; inspect stk11_relation, reading_stage, review_status, and assay provenance before reuse. core_highlight is the historical original-13 compatibility flag.'), ensure_ascii=False, indent=2) if args.json else markdown(rows))
 
 
 if __name__ == '__main__':

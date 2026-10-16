@@ -13,12 +13,21 @@ class AssayTagTests(unittest.TestCase):
         cls.rows = load_records(SKILL, True)
         cls.by_id = {row['pmid']: row for row in cls.rows}
 
-    def test_main_read_is_not_review_or_highlight(self):
+    def test_main_read_is_not_review_or_unified_highlight(self):
         row = self.by_id['42432246']
         self.assertEqual(row['reading_stage'], 'main_text_deep_read_complete')
         self.assertEqual(row['review_status'], 'not_reviewed')
+        self.assertFalse(row['highlight'])
         self.assertFalse(row['core_highlight'])
+        self.assertEqual(sum(row['highlight'] for row in self.rows), 64)
         self.assertEqual(sum(row['core_highlight'] for row in self.rows), 13)
+
+    def test_unified_and_legacy_filters_are_distinct(self):
+        self.assertEqual(sum(matches(row, highlight_only=True) for row in self.rows), 64)
+        self.assertEqual(sum(matches(row, core_only=True) for row in self.rows), 13)
+        support = self.by_id['36775193']
+        self.assertTrue(support['highlight'])
+        self.assertFalse(support['core_highlight'])
 
     def test_same_assay_origin_must_match(self):
         row = dict(pmid='fixture', core_highlight=False, stk11_relation='fixture', assays=[dict(assay='single_cell_rna', origin='reanalysis'), dict(assay='targeted_protein', origin='original')], treatment_types=[], methods=[])

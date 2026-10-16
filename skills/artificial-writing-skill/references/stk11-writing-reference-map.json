@@ -1,7 +1,15 @@
 {
-  "schema_version": 1,
-  "updated": "2026-10-05",
-  "scope": "STK11 writing-framework selection; membership is not reading acceptance or a merged journal corpus",
+  "schema_version": 2,
+  "updated": "2026-10-15",
+  "scope": "Unified STK11 highlight writing collection; membership is not reading acceptance, evidence strength, or a merged journal corpus",
+  "collection_id": "stk11_highlight",
+  "membership_rule": "all_records",
+  "membership_semantics": "Every record is an active member of the unified STK11 highlight collection. Membership does not imply direct STK11 evidence, completed source recheck, independent review, or transferable clinical effect.",
+  "tier_semantics": "Historical admission provenance only: core_highlight identifies the original 13-record seed and topic_support identifies the 51 records added later. Tier does not change current highlight membership or retrieval eligibility.",
+  "legacy_tier_counts": {
+    "core_highlight": 13,
+    "topic_support": 51
+  },
   "core_authority": "stk11-priority-references.md",
   "identity_and_reading_authority": "library-index.csv",
   "guide": "stk11-analysis-framework.md",

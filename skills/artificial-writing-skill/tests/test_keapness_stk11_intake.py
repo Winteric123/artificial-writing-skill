@@ -32,7 +32,7 @@ class KeapnessStk11Intake(unittest.TestCase):
             self.assertEqual(indexed['main_read_completed_on'], '2026-09-24')
             self.assertEqual(indexed['review_status'], 'not_reviewed')
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
-            self.assertEqual(indexed['stk11_highlight'], 'no')
+            self.assertEqual(indexed['stk11_highlight'], 'yes')
             self.assertEqual(indexed['supplied_pdf_version'], article['pdf_version'])
             self.assertEqual(len(article['sha256']), 64)
 
@@ -63,6 +63,7 @@ class KeapnessStk11Intake(unittest.TestCase):
         self.assertEqual(candidate['local_registration'], 'registered')
         self.assertEqual(candidate['local_reading_stage'], 'main_text_deep_read_complete')
         self.assertEqual(candidate['local_review_status'], 'not_reviewed')
+        # The directory field is a 2026-09-19 snapshot, not live membership.
         self.assertEqual(candidate['stk11_highlight'], 'no')
         self.assertEqual(candidate['snapshot_date'], '2026-09-19')
         self.assertEqual(candidate['checked_on'], '2026-09-24')

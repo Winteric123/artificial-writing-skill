@@ -767,6 +767,51 @@
         "co-localization",
         "co-localisation"
       ]
+    },
+    {
+      "id": "nonsignificance",
+      "terms": [
+        "未达到统计学显著性",
+        "无统计学显著性",
+        "差异无统计学意义",
+        "不显著",
+        "nonsignificant",
+        "non-significant",
+        "not statistically significant",
+        "did not reach statistical significance"
+      ]
+    },
+    {
+      "id": "statistical-significance-undetermined",
+      "terms": [
+        "统计学意义不明",
+        "统计学意义无法判断",
+        "未报告统计检验",
+        "statistical significance could not be determined",
+        "statistical significance was not reported"
+      ]
+    },
+    {
+      "id": "informative-inconclusive-result",
+      "terms": [
+        "未显著但有信息价值",
+        "虽未显著但仍有意义",
+        "统计学尚无定论",
+        "nonsignificant but informative",
+        "statistically inconclusive",
+        "range of plausible effects",
+        "compatible with clinically important effects"
+      ]
+    },
+    {
+      "id": "imprecision",
+      "terms": [
+        "估计不精确",
+        "置信区间较宽",
+        "imprecise",
+        "imprecision",
+        "wide confidence interval"
+      ]
     }
   ]
 }

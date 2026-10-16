@@ -1,5 +1,11 @@
 # CCR language deep-reading ledger
 
+## 2026-10-15 STK11 full-text sentence relearning
+
+The 15 CCR articles in the unified STK11 collection were reread for body Methods, molecular/experimental Results, and paragraph organization: PMID 32709715, 33077574, 33323404, 37097610, 37733794, 38300729, 38980931, 39545922, 39804166, 41417462, 41870274, 42268349, 42456046, 42485106 and 42507545. [The per-paper full-text audit](stk11-ccr-fulltext-sentence-audit.md) documents narrative and visual coverage, implemented analyses, negative results, source conflicts, and transfer boundaries. Selected original sentences and synthetic rewrite templates are linked through [the common sentence catalog](stk11-ccr-sentence-templates.json) and [the omics Methods/Results writing route](stk11-ccr-omics-methods-writing.md).
+
+This is a dated language-relearning record. The original completion dates, quality-register review states, source versions and supplement boundaries are preserved. Main figure/table and selected-page inspection is documented per article; it is not an independent reanalysis of original data or a new six-gate acceptance verdict. Unprovided supplements remain outside the reviewed scope.
+
 2026-09-28 review overlay: [13-highlight source rechecks](source-rechecks/2026-09-28-summary.md). Historical main-reading dates are unchanged. Only the dated review records and quality registers establish the bounded same-agent review status; old status sentences below are historical snapshots.
 
 ## Authoritative definition
@@ -371,3 +377,11 @@ Use the [batch manifest](ccr-2025-genomics-2026-09-20-manifest.csv) for journal,
 ## 2026-09-23 supplied and remaining2025 batch
 
 EVOKE-02 (PMID41961582), previously listed as missing, was supplied and read in its line-numbered publisher-manuscript version on2026-09-23. The newly supplied tifcemalimab paper (PMID40378060) is a2025 article, not2026. The ten-paper historical2025 pending queue is resolved as nine original-study reads plus one background-review read (PMID40911432); the latter is excluded from eligible original-source counts. Osteosarcoma/prostate lung metastases remain explicitly cross-tumor methodology sources, not primary lung cancer evidence. No new STK11 highlights were designated.
+
+## Focused 2025-2026 Results-logic rereading on 2026-10-16
+
+This pass covered all 123 records selected by the current installed membership rule `journal_id=ccr`, issue year 2025 or 2026, and `eligibility=included`: 48 articles from 2025 and 75 from 2026. The two 2025 narrative/commentary records outside that rule were not used as writing-pattern sources.
+
+For every included supplied main PDF, the body Results narrative was reread together with the Abstract/Discussion endpoint hierarchy and sufficient Methods context to identify the analysis unit, comparison, inferential status and evidence layer. The registered main PDFs total 2,390 physical pages; the paper-level audit records 598 Results pages reread and 313 selected source or central result/figure/table pages visually checked. The resulting [source-linked catalog](ccr-2025-2026-results-logic.json) contains 267 complete body-result sentence records, with 2-3 records per paper. Use [the writing guide](ccr-2025-2026-results-logic-writing.md) to select patterns by result polarity, inferential status, omics/efficacy/prognosis domain and rhetorical position; use [the audit](ccr-2025-2026-results-logic-audit.md) for PDF version, SHA-256, physical-page spans, visual verification, mechanical text-match status and paper-level narrative logic.
+
+This was a focused Results-language and logic rereading, not a new six-gate acceptance review. It does not change historical `main_read` dates, article review status, quality-register decisions, STK11 membership or the 15-paper STK11 CCR subset. Separate or unprovided supplements remain outside this pass. Mechanical PDF text matching is retained as an audit aid and is not substituted for the recorded visual page checks.

@@ -17,6 +17,8 @@ class Reading2024IntakeBoundaries(unittest.TestCase):
         self.manifest = records('ccr-2024-and-intake-2026-09-23-reading-manifest.csv')
         self.quality = {row['pmid']: row for row in records('ccr-reading-quality-register.csv')}
         self.catalog = records('ccr-section-language-catalog.csv')
+        mapping = json.loads((REFERENCES / 'stk11-writing-reference-map.json').read_text(encoding='utf-8'))
+        self.highlights = {row['pmid'] for row in mapping['records']}
 
     def test_batch_scope_and_all_applicable_sections(self):
         self.assertEqual(len(self.manifest), 37)
@@ -54,6 +56,7 @@ class Reading2024IntakeBoundaries(unittest.TestCase):
         self.assertTrue(all(row['reading_status'] == 'metadata_and_abstract_screened_not_fulltext_read' for row in history))
         acquired = {row['pmid'] for row in current if row['acquired_this_batch'] == 'yes' and row['status_as_of'] == '2026-09-23'}
         self.assertEqual(acquired, {'40833744', '41403154', '42148883', '42484497'})
+        # This dated overlay preserves its 2026-09-23 classification snapshot.
         self.assertTrue(all(row['stk11_highlight'] == 'no' for row in current))
         for candidate in current:
             if candidate['current_indexed'] == 'yes':
@@ -69,7 +72,8 @@ class Reading2024IntakeBoundaries(unittest.TestCase):
         for article in self.manifest:
             self.assertEqual(library[article['pmid']]['disease_scope'], article['disease_scope'])
             self.assertEqual(library[article['pmid']]['source_role'], article['source_role'])
-            self.assertEqual(library[article['pmid']]['stk11_highlight'], 'no')
+            expected = 'yes' if article['pmid'] in self.highlights else 'no'
+            self.assertEqual(library[article['pmid']]['stk11_highlight'], expected)
             if article['reading_stage'] == 'main_text_deep_read_complete':
                 self.assertTrue(any(article['pmid'] in alert['article_ids'] for alert in alerts))
         self.assertEqual(library['38875108']['source_role'], 'regulatory-analysis')

@@ -115,7 +115,7 @@ class SupplementalIntakeTests(unittest.TestCase):
                 self.assertEqual(self.library[pmid]['reading_stage'],
                                  'main_text_deep_read_complete')
                 self.assertEqual(self.library[pmid]['review_status'], 'passed')
-                self.assertEqual(self.library[pmid]['stk11_highlight'], 'no')
+                self.assertEqual(self.library[pmid]['stk11_highlight'], 'yes')
                 quality = self.quality[pmid]
                 self.assertEqual(quality['review_status'], 'passed')
                 for gate in GATES:
@@ -127,7 +127,7 @@ class SupplementalIntakeTests(unittest.TestCase):
                 self.assertEqual(overlay['review_records'][pmid], review_record)
                 self.assertTrue((REFS / review_record).is_file())
                 self.assertGreater(search(self.entries, pmid=pmid, reviewed=True)['matched_count'], 0)
-                self.assertEqual(search(self.entries, pmid=pmid, highlight=True)['matched_count'], 0)
+                self.assertGreater(search(self.entries, pmid=pmid, highlight=True)['matched_count'], 0)
 
     def test_supplement_and_pdf_version_boundaries(self):
         for pmid, record in self.intake.items():

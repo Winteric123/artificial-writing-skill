@@ -36,6 +36,8 @@ Use linked `language-usage-cards.json` for section, meaning, near-miss, safe/uns
 
 For a paragraph, lock names and units, connect consecutive observations with their actual relationship (contrast, extension, corroboration), then remove repeated boilerplate. Prefer direct verbs such as `quantified`, `identified`, `increased`, `decreased`, `was associated with` when supported. Use `therefore`, `demonstrated`, `mediated` or `validated` only when the logical and evidentiary link is actually present. Do not hedge a directly measured observation merely because its broader interpretation is uncertain.
 
+When statistical significance is absent or unclear, do not append an unqualified `but the result was still meaningful`. In Results, report the estimate, interval, test status, and endpoint hierarchy. In Discussion, state the exact source of any remaining information—such as a prespecified threshold still contained in the CI, a narrow CI that excludes an important effect, biological coherence, or value for future study—and then state what is not established. Use [the nonsignificant-results guide](nonsignificant-results-language.md) for the decision matrix and full bilingual sentence frames.
+
 ## Provenance and coverage
 
 Usage cards and this guide are editorial resources, not corpus studies. A card's `basis` explains its rule source, not a verbatim sentence origin. Check retrieval annotation status and source alerts before transfer. Source article labels are multi-label context: a tonsil single-cell dataset in a paper with NSCLC bulk RNA does not become an NSCLC single-cell cohort. Backfill original-PDF quotation locators only by reopening the relevant version; until then keep exact-wording verification false.

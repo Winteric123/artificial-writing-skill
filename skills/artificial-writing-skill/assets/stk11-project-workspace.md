@@ -19,7 +19,7 @@ Record design, sites, cohort periods, inclusion/exclusion, actual STK11 variant 
 
 ## Question and method contract
 
-Select applicable modules from the installed skill's `references/stk11-analysis-framework.md` and `references/stk11-study-logic-map.md`; do not copy source-study methods into this project's completed Methods. Preserve journal/source identity and distinguish core highlights from topic support.
+Select applicable modules from the installed skill's `references/stk11-analysis-framework.md` and `references/stk11-study-logic-map.md`; do not copy source-study methods into this project's completed Methods. Preserve journal/source identity, evidence relation and the legacy 13/51 origin label without treating that label as an evidence grade.
 
 | Question ID | Primary/secondary/exploratory | Descriptive/co-occurrence/outcome/incremental value/treatment interaction/mechanism | Exposure and partner definitions | Analysis unit/timepoint/coverage | Comparison and estimand/scale | Proposed versus actually executed method | Assumptions/missing evidence | Reference PMID + direct/contextual/structural role |
 |---|---|---|---|---|---|---|---|---|
@@ -40,7 +40,7 @@ For omics, separate discovery, tuning, test and external cohorts; record platfor
 
 ## Figure-to-paragraph map
 
-| Figure/table | Result IDs | Measured finding | Results paragraph objective | Discussion interpretation | Highlight analogue + PMID | Unavailable module omitted |
+| Figure/table | Result IDs | Measured finding | Results paragraph objective | Discussion interpretation | Highlight analogue + PMID + evidence relation | Unavailable module omitted |
 |---|---|---|---|---|---|---|
 
 ## Terminology locks

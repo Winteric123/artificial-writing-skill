@@ -26,6 +26,8 @@ class JtoSeptember28Intake(unittest.TestCase):
         cls.library = {row['pmid']: row for row in records('library-index.csv')}
         cls.catalog = records('jto-section-language-catalog.csv')
         cls.queue = records('jto-maintenance-queue.csv')
+        mapping = json.loads((REFERENCES / 'stk11-writing-reference-map.json').read_text(encoding='utf-8'))
+        cls.highlights = {row['pmid'] for row in mapping['records']}
 
     def test_batch_identity_completion_and_journal_boundaries(self):
         self.assertEqual({row['pmid'] for row in self.manifest}, PMIDS)
@@ -41,7 +43,8 @@ class JtoSeptember28Intake(unittest.TestCase):
             self.assertEqual(article['reading_stage'], 'main_text_deep_read_complete')
             self.assertEqual(article['main_read_completed_on'], '2026-09-28')
             self.assertEqual(article['review_status'], 'not_reviewed')
-            self.assertEqual(article['stk11_highlight'], 'no')
+            expected = 'yes' if source['pmid'] in self.highlights else 'no'
+            self.assertEqual(article['stk11_highlight'], expected)
             self.assertEqual(article['official_category_status'], 'not_recorded_for_this_journal')
 
     def test_version_and_supplement_scope(self):
@@ -98,7 +101,9 @@ class JtoSeptember28Intake(unittest.TestCase):
             if row['pmid'] in self.library:
                 self.assertEqual(row['reading_stage'], self.library[row['pmid']]['reading_stage'])
                 self.assertEqual(row['review_status'], self.library[row['pmid']]['review_status'])
-                self.assertEqual(row['stk11_highlight'], self.library[row['pmid']]['stk11_highlight'])
+                # The queue keeps its dated selection snapshot; live unified membership
+                # is asserted against library-index in the batch test above.
+                self.assertIn(row['stk11_highlight'], {'yes', 'no'})
 
 
 if __name__ == '__main__':
