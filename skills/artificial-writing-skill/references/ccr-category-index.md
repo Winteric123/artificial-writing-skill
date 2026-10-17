@@ -8,7 +8,7 @@ Generated from the bibliography and quality register, not inferred from article 
 | CCR Drug Updates | 8 | 8 | 8 |
 | CCR Translations | 8 | 0 | 0 |
 | Clinical Trials: Cellular and Gene Therapy | 1 | 1 | 1 |
-| Clinical Trials: Immunotherapy | 34 | 34 | 34 |
+| Clinical Trials: Immunotherapy | 35 | 35 | 35 |
 | Clinical Trials: Molecularly Targeted Therapy | 11 | 11 | 11 |
 | Clinical Trials: Novel Mechanisms | 2 | 2 | 2 |
 | Clinical Trials: Targeted Therapy | 23 | 23 | 23 |
@@ -16,19 +16,19 @@ Generated from the bibliography and quality register, not inferred from article 
 | Novel Biomarkers and Precision Medicine | 23 | 23 | 23 |
 | Official category unverified | 4 | 4 | 4 |
 | Perspectives | 1 | 0 | 0 |
-| Precision Medicine and Imaging | 54 | 54 | 54 |
+| Precision Medicine and Imaging | 55 | 55 | 55 |
 | Research Article | 3 | 3 | 3 |
 | Research Briefs: Clinical Trial Brief Reports | 6 | 6 | 6 |
 | Research Briefs: Precision Medicine and Therapeutics | 8 | 8 | 8 |
 | Review | 8 | 0 | 0 |
 | Special Report | 1 | 0 | 0 |
-| Translational Cancer Mechanisms and Therapy | 70 | 70 | 70 |
+| Translational Cancer Mechanisms and Therapy | 71 | 71 | 71 |
 | Translational Mechanisms and Therapy | 18 | 18 | 18 |
 
 ## Verification status
 
 - official_generic_online_first: 3
-- official_section: 280
+- official_section: 283
 - pending_official_verification: 4
 
 ## Unverified or generic labels

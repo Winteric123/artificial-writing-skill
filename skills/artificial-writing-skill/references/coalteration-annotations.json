@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "curated_on": "2026-10-07",
+  "curated_on": "2026-10-18",
   "scope": "All current formal registry records; eligible article-level topic annotations. Preprints separate; candidate queues not promoted.",
   "boundary": "Topic-screening labels, not new full reads, acceptance, quotations, exhaustive gene pairs, or proof that a negative-screened source contains no co-alteration. Gene contexts include comparisons and negative associations, not only positive co-occurrence. All filters are article-level, not expression-level validation.",
   "articles": {
@@ -13360,6 +13360,222 @@
           7
         ],
         "scope": "Specified physical contexts reopened by the assigned first reader for this topic curation; full supplied-PDF reading recorded separately. Not independent acceptance or external supplement coverage."
+      }
+    },
+    "31548347": {
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "eligibility": "included",
+      "curated_on": "2026-10-18",
+      "method": "actual-supplied-fulltext-and-main-visual-reading",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "engineered_combination"
+      ],
+      "gene_contexts": [
+        [
+          "KEAP1",
+          "NFE2L2",
+          "CUL3"
+        ],
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KEAP1",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "prognosis",
+        "treatment_outcomes",
+        "resistance",
+        "preclinical_mechanism"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2020-31548347-language.md",
+          "source_sha256": "802b9d6af06be44cc24dfe5b4a9c3aac21894875fcbc323675a2c579e56f8d65",
+          "first_line": 1,
+          "last_line": 145
+        }
+      ],
+      "boundary": "Pathway-mutant union is not a triple-mutant group; clinical matched association and murine deletion causality are separate. TTF is not PFS; source Table2 HR/CI/P inconsistencies must not be reused as verified adjusted estimates.",
+      "pdf": {
+        "sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "physical_pages": 19,
+        "checked_context_pages": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "scope": "Full supplied main text plus main visuals; supplementary scope separately recorded."
+      }
+    },
+    "32102950": {
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "eligibility": "included",
+      "curated_on": "2026-10-18",
+      "method": "actual-supplied-fulltext-and-main-visual-reading",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1",
+          "PTEN",
+          "ERBB2"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes",
+        "prognosis",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2020-32102950-language.md",
+          "source_sha256": "5b525ce62ea4f88cfacbbb0ed75a84d5a24032279e2dd8a1c6cf49ff0e65dd87",
+          "first_line": 1,
+          "last_line": 145
+        }
+      ],
+      "boundary": "Four-gene negative-predictor union is not a four-gene co-mutant genotype or independently validated gene-specific treatment predictor. Endpoint-optimized pTMB cutoff is cohort/assay specific; OS P=.061 and mutation-only comparisons remain nonsignificant.",
+      "pdf": {
+        "sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "physical_pages": 15,
+        "checked_context_pages": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "scope": "Full supplied main text plus main visuals; supplementary scope separately recorded."
+      }
+    },
+    "33323401": {
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "eligibility": "included",
+      "curated_on": "2026-10-18",
+      "method": "actual-supplied-fulltext-and-main-visual-reading",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "KEAP1"
+        ]
+      ],
+      "analysis_uses": [
+        "treatment_outcomes",
+        "immune_context",
+        "genomic_landscape"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2021-33323401-language.md",
+          "source_sha256": "69cff1dfbeb4ffbd46e5476f24e807a03985cb7444bd061f64fc61d1380195db",
+          "first_line": 1,
+          "last_line": 163
+        }
+      ],
+      "boundary": "STK11/KEAP1-mutant means either-gene union, not confirmed double mutation. Single-arm small subgroup and a 12-month OS landmark signal do not establish overall OS benefit, a randomized treatment interaction or reversal of STK11-mediated resistance.",
+      "pdf": {
+        "sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "physical_pages": 10,
+        "checked_context_pages": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "scope": "Full supplied main text plus main visuals; supplementary scope separately recorded."
+      }
+    },
+    "35504291": {
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "eligibility": "included",
+      "curated_on": "2026-10-18",
+      "method": "actual-supplied-fulltext-and-main-visual-reading",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "engineered_combination",
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "KRAS",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "KEAP1"
+        ],
+        [
+          "KRAS",
+          "KEAP1",
+          "STK11"
+        ],
+        [
+          "KRAS",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "preclinical_mechanism",
+        "immune_context",
+        "resistance",
+        "model_genotype"
+      ],
+      "evidence": [
+        {
+          "source": "cell-metabolism-2022-35504291-language.md",
+          "source_sha256": "2984b964606bd925b93f83317d02d842c1db60e28051e80852f363ce7fbc667a",
+          "first_line": 1,
+          "last_line": 110
+        }
+      ],
+      "boundary": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated.",
+      "pdf": {
+        "sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+        "physical_pages": 35,
+        "checked_context_pages": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          16,
+          17,
+          20,
+          21,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34
+        ],
+        "scope": "Full supplied main text plus main visuals; supplementary scope separately recorded."
       }
     }
   },

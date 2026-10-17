@@ -36,4 +36,6 @@ The [co-alteration scope notes](ccr-2026-10-07-coalteration-scope.md) distinguis
 
 The supplied folder also contained `mmc3.pdf`, identified as Cell Metabolism PMID35504291, previously explicitly deferred by the user. It is not a CCR source and is not counted, registered as read, learned or deleted by this six-paper intake. Identification/extraction does not establish full reading. The non-PDF source-directory note is retained. Exact source-to-archive paths, source deletion/recovery records and runtime evaluation evidence stay in the private local batch workspace, not this portable skill or GitHub.
 
+2026-10-18 follow-up: PMID35504291 was subsequently read and registered under Cell Metabolism in a [separate supplied-paper intake](supplement-ccr-2026-10-18-intake.md). Its current status is `main_text_deep_read_complete / not_reviewed / partially_reviewed`; external Data S1 remains outside coverage. The six-paper October 7 membership, reading/review history and original deferral record are unchanged.
+
 Current totals must be taken from [library-index.md](library-index.md), not from this dated batch. This intake does not resolve the separate staged STK11 full-PDF audit.

@@ -2,6 +2,16 @@
 
 Selected, dated changes to the repository and its distributed skill. This log is not an exhaustive commit history, a versioned release declaration, or a live reading-status register. Current coverage and acceptance states are maintained in the [literature index](skills/artificial-writing-skill/references/library-index.md) and linked journal registers.
 
+## 2026-10-18
+
+### Supplied-paper reading and sentence patterns
+
+- Added three *Clinical Cancer Research* articles from 2020–2021 and one *Cell Metabolism* article from 2022, with version-specific reading records for all 79 supplied PDF pages. The [intake guide](skills/artificial-writing-skill/references/supplement-ccr-2026-10-18-intake.md) links each article's evidence reconstruction and section language.
+- Added [34 source-linked body sentences](skills/artificial-writing-skill/references/supplement-ccr-2026-10-18-sentence-patterns.json), each with article identity, PDF version/hash, physical pages, content type, use scenario, synthetic rewrite template, and evidence boundary. Mechanical extraction checks record 29 normalized literal matches, four punctuation-insensitive matches, and one cross-page fragment match separately from visual verification.
+- Added 245 section-specific expressions covering Methods, molecular and clinical Results, and Discussion. Source alerts preserve endpoint discordance, exploratory cutoff/composite analyses, inconsistent reported estimates, assay limitations, and unmeasured combination-survival outcomes.
+- Recorded the later completion of the previously deferred PMID35504291 while preserving its historical intake record. The 64-article STK11 collection and the existing 15-paper and 123-paper sentence resources retain their membership.
+- Rebuilt inventory, language, and PDF-provenance indexes. The complete 258-test skill suite passed locally. The four new reading records remain separate from independent six-gate acceptance; external supplements retain their documented availability and reading limits.
+
 ## 2026-10-16
 
 ### Source-linked sentence writing

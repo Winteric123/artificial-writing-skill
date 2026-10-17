@@ -4,6 +4,8 @@
 
 **2026-10-05状态覆盖：**上述末句仅描述2026-10-02首次入库时点。随后16篇均完成有界原始来源复核，其中六篇先修正笔记再复核；当前正式状态与方法见[复核汇总](source-rechecks/2026-10-05-stk11-supplement-summary.md)及各期刊quality register。外部补充材料范围未因此扩大，PMID35504291仍保持跳过。
 
+**2026-10-18后续阅读覆盖：**PMID35504291已在[另一次供稿学习](supplement-ccr-2026-10-18-intake.md)中完成35页主文、STAR Methods和内嵌S1–S6阅读，按真实期刊Cell Metabolism登记，见[新笔记](cell-metabolism-2022-35504291-language.md)。当前为`main_text_deep_read_complete / not_reviewed / partially_reviewed`；外部Data S1未供应。上述及下表的跳过/保留原件均是10月2日的历史记录，不再表示全库未读。原16篇批次及其复核成员不变，64篇highlight名单不扩张；本次阅读不等于独立六门验收通过。
+
 按实际期刊/年份归档；表格保留主文、内嵌材料、外部补充材料的区别。文献题名链接PubMed，笔记链接技能文件。
 
 | PMID / 题名 | 年份 · 期刊 | STK11相关原因 / 分类 | 供稿版本·页数 | 阅读与补充范围 | 笔记 |

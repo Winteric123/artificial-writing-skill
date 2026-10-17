@@ -2897,6 +2897,38 @@
       ],
       "restriction": "Normal airway overgrowth and malignant identity must be resolved before treating a culture as a tumor model. Initial57/65 culture establishment is not10/65 long-term success; contamination7/12 is not7/65. Nine models contribute23 sequenced samples. Figure5D BGJ398+BKM120 combination index is above1 atED50 but below1 atED75, not uniformly synergistic. Figure4 single-star annotation means P>.05, and p11 short-term MEK wording conflicts with p8/Figure4 long-term experiments. These preclinical findings do not establish prospective patient predictive utility or direct STK11 evidence.",
       "source_reference": "ccr-2020-31694835-reading.md"
+    },
+    {
+      "id": "intake-20261018-31548347",
+      "article_ids": [
+        "31548347"
+      ],
+      "restriction": "Pathway-mutant union is not a triple-mutant group; clinical matched association and murine deletion causality are separate. TTF is not PFS; source Table2 HR/CI/P inconsistencies must not be reused as verified adjusted estimates. Read the article-specific source alerts before numerical reuse.",
+      "source_reference": "ccr-2020-31548347-language.md"
+    },
+    {
+      "id": "intake-20261018-32102950",
+      "article_ids": [
+        "32102950"
+      ],
+      "restriction": "Four-gene negative-predictor union is not a four-gene co-mutant genotype or independently validated gene-specific treatment predictor. Endpoint-optimized pTMB cutoff is cohort/assay specific; OS P=.061 and mutation-only comparisons remain nonsignificant. Read the article-specific source alerts before numerical reuse.",
+      "source_reference": "ccr-2020-32102950-language.md"
+    },
+    {
+      "id": "intake-20261018-33323401",
+      "article_ids": [
+        "33323401"
+      ],
+      "restriction": "STK11/KEAP1-mutant means either-gene union, not confirmed double mutation. Single-arm small subgroup and a 12-month OS landmark signal do not establish overall OS benefit, a randomized treatment interaction or reversal of STK11-mediated resistance. Read the article-specific source alerts before numerical reuse.",
+      "source_reference": "ccr-2021-33323401-language.md"
+    },
+    {
+      "id": "intake-20261018-35504291",
+      "article_ids": [
+        "35504291"
+      ],
+      "restriction": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated. Read the article-specific source alerts before numerical reuse.",
+      "source_reference": "cell-metabolism-2022-35504291-language.md"
     }
   ],
   "entry_rules": [

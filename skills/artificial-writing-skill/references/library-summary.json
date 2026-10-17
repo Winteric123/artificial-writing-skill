@@ -5,11 +5,11 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 368,
-  "included": 350,
+  "registered": 372,
+  "included": 354,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 350,
+  "main_text_complete": 354,
   "eligible_incomplete": 0,
   "source_recheck_passed": 30,
   "stk11_highlights": 64,
@@ -50,23 +50,23 @@
       "excluded": 0
     },
     "2020": {
-      "registered": 6,
-      "included": 6,
-      "complete": 6,
+      "registered": 8,
+      "included": 8,
+      "complete": 8,
       "incomplete": 0,
       "excluded": 0
     },
     "2021": {
-      "registered": 30,
-      "included": 30,
-      "complete": 30,
+      "registered": 31,
+      "included": 31,
+      "complete": 31,
       "incomplete": 0,
       "excluded": 0
     },
     "2022": {
-      "registered": 55,
-      "included": 48,
-      "complete": 48,
+      "registered": 56,
+      "included": 49,
+      "complete": 49,
       "incomplete": 0,
       "excluded": 7
     },
@@ -236,6 +236,15 @@
         "excluded": 0
       }
     },
+    "Cell Metabolism": {
+      "2022": {
+        "registered": 1,
+        "included": 1,
+        "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      }
+    },
     "Cell Reports": {
       "2020": {
         "registered": 1,
@@ -256,16 +265,16 @@
     },
     "Clinical Cancer Research": {
       "2020": {
-        "registered": 3,
-        "included": 3,
-        "complete": 3,
+        "registered": 5,
+        "included": 5,
+        "complete": 5,
         "incomplete": 0,
         "excluded": 0
       },
       "2021": {
-        "registered": 24,
-        "included": 24,
-        "complete": 24,
+        "registered": 25,
+        "included": 25,
+        "complete": 25,
         "incomplete": 0,
         "excluded": 0
       },
@@ -511,14 +520,14 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 350,
+    "included": 354,
     "co_mutation": {
-      "analyzed": 127,
+      "analyzed": 131,
       "not_identified": 190,
       "context_only": 33
     },
     "co_alteration": {
-      "analyzed": 158,
+      "analyzed": 162,
       "not_identified": 162,
       "context_only": 30
     },

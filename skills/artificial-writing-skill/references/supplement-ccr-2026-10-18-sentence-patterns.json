@@ -1,0 +1,912 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-18",
+  "scope": "Four actual user-supplied versions read in full, with source-linked body sentences and synthetic rewrite templates. Three CCR studies and one Cell Metabolism study; original STK11 highlight membership and its 15-paper sentence resource remain separate.",
+  "verification": "Source sentences visually checked by each reader. Mechanical normalized literal matching recorded separately; nonmatches do not silently become literal matches. Synthetic templates accept user facts only.",
+  "papers": [
+    {
+      "pmid": "31548347",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "version": "author_manuscript",
+      "sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+      "physical_pages": 19,
+      "asset": "ccr-2020-31548347-language.md",
+      "boundary": "Pathway-mutant union is not a triple-mutant group; clinical matched association and murine deletion causality are separate. TTF is not PFS; source Table2 HR/CI/P inconsistencies must not be reused as verified adjusted estimates."
+    },
+    {
+      "pmid": "32102950",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "version": "author_manuscript",
+      "sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+      "physical_pages": 15,
+      "asset": "ccr-2020-32102950-language.md",
+      "boundary": "Four-gene negative-predictor union is not a four-gene co-mutant genotype or independently validated gene-specific treatment predictor. Endpoint-optimized pTMB cutoff is cohort/assay specific; OS P=.061 and mutation-only comparisons remain nonsignificant."
+    },
+    {
+      "pmid": "33323401",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "version": "publisher_typeset_pdf",
+      "sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+      "physical_pages": 10,
+      "asset": "ccr-2021-33323401-language.md",
+      "boundary": "STK11/KEAP1-mutant means either-gene union, not confirmed double mutation. Single-arm small subgroup and a 12-month OS landmark signal do not establish overall OS benefit, a randomized treatment interaction or reversal of STK11-mediated resistance."
+    },
+    {
+      "pmid": "35504291",
+      "title": "Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer",
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "journal": "Cell Metabolism",
+      "year": "2022",
+      "version": "publisher_typeset_main_with_embedded_supplement",
+      "sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+      "physical_pages": 35,
+      "asset": "cell-metabolism-2022-35504291-language.md",
+      "boundary": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated."
+    }
+  ],
+  "records": [
+    {
+      "id": "ccr-31548347-method-endpoint",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          4
+        ],
+        "section": "methods",
+        "source_sentence": "Time to treatment failure (TTF) on first line treatment was calculated by subtracting the date of front-line therapy initiation from the date of treatment discontinuation due to clinical progression, toxicity, patient preference or death and reported in months.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "endpoint_definition",
+      "use_scenario": "Define a treatment-duration endpoint with qualifying discontinuation events.",
+      "rewrite_template": "[Endpoint] was measured from [treatment initiation] to [qualifying discontinuation events] and reported in [units].",
+      "evidence_boundary": "Requires actual endpoint definition. TTF includes non-progression events and cannot be relabeled PFS."
+    },
+    {
+      "id": "ccr-31548347-method-matching",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          4
+        ],
+        "section": "methods",
+        "source_sentence": "Patients were matched to the KEAP1/NFE2L2/CUL3 cohort on the basis of gender, age at diagnosis (+/− 10 years), platinum chemotherapy regimen, smoking history (former, current, never), and race/ethnicity.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "cohort_matching",
+      "use_scenario": "Describe the actual matching factors in a retrospective clinical cohort.",
+      "rewrite_template": "[Comparator patients] were matched to [index cohort] on [documented demographic, treatment and disease factors].",
+      "evidence_boundary": "Matching does not establish random allocation, eliminate residual confounding, or prove all covariates balanced."
+    },
+    {
+      "id": "ccr-31548347-model-resistance",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "Similarly, K/P-LSCC tumorspheres also displayed resistance to all drugs tested as compared with the P-LSCC cells (Fig. 1C–D).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "functional_drug_response",
+      "use_scenario": "Extend an in vitro drug-response phenotype from one model lineage to another.",
+      "rewrite_template": "A similar [drug-response phenotype] was observed in [second model] under [tested treatment conditions].",
+      "evidence_boundary": "Restricted to tested agents/models and sphere assay; no invented exact P value, in vivo effect or patient benefit."
+    },
+    {
+      "id": "ccr-31548347-omics-adjusted-negative",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "MET (8% vs 0%, unadjusted p=0.01) and NRAS (6% vs 0%, unadjusted p=0.03) mutations were slightly more common in the control group and APC mutations were more common in the KEAP1/NFE2L2/CUL3 cohort (8% vs 0%, unadjusted p=0.01), although these differences were not significant upon multi-hypothesis testing correction.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "genomic_frequency_multiplicity",
+      "use_scenario": "Report nominal genomic differences while preserving the corrected negative result.",
+      "rewrite_template": "[Features] differed nominally between [groups], although these differences did not remain statistically significant after [multiple-testing correction].",
+      "evidence_boundary": "Do not claim confirmed enrichment. The correction method is not identified in main text; actual user method must be supplied."
+    },
+    {
+      "id": "ccr-31548347-clinical-ttf",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "Median TTF on first line chemotherapy for the KEAP1/NFE2L2/CUL3-mutant cohort was 2.8 months compared to 8.3 months in the control group (p<0.0001) (Fig. 4A).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "clinical_time_to_event_association",
+      "use_scenario": "Report treatment-duration medians by a molecular group.",
+      "rewrite_template": "Median [endpoint] after [line/regimen] was [value and units] in [molecular group], compared with [value] in [comparator] ([reported test result]).",
+      "evidence_boundary": "Observational association; TTF is not objective response or PFS, and no treatment interaction is reported."
+    },
+    {
+      "id": "ccr-31548347-clinical-os",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "Median overall survival (OS) was 11.2 months in the KEAP1/NFE2L2/CUL3-mutant group and 36.8 months in the control group (p=0.006) (Fig. 4B).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "overall_survival_association",
+      "use_scenario": "Present an adverse survival association alongside a treatment-duration result.",
+      "rewrite_template": "Median overall survival was [value] in [group] and [value] in [comparator] ([reported test result]).",
+      "evidence_boundary": "OS association does not establish chemotherapy-specific predictive utility or a causal effect of the mutation in patients."
+    },
+    {
+      "id": "ccr-31548347-sensitivity-analysis",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "In addition, as patients with Epidermal Growth Factor Receptor (EGFR) mutations on average have superior outcomes compared to EGFR wildtype patients, we additionally performed a subset analysis in which EGFR-mutant patients were removed from both cohorts (5 from the KEAP1/NFE2L2/CUL3 mutant cohort and 8 from the KEAP1/NFE2L2/CUL3 wildtype cohort).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "sensitivity_analysis_rationale",
+      "use_scenario": "Explain why a known outcome-associated subgroup was removed in a sensitivity analysis.",
+      "rewrite_template": "Because [specified subgroup] may differ in [outcome determinant], we repeated the analysis after excluding [documented participants] from each comparison group.",
+      "evidence_boundary": "A post hoc subset of the same cohort is not an independent validation cohort; do not assume the subgroup rationale is transferable without evidence."
+    },
+    {
+      "id": "ccr-31548347-power-limit",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          7
+        ],
+        "section": "discussion",
+        "source_sentence": "Due to the small number of NSCLC patients with KRAS mutations in our cohort, we were not powered to detect differences in outcomes within the KRAS mutant cohort.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "underpowered_subgroup",
+      "use_scenario": "Explain unresolved subgroup effects without converting limited power into a negative biological conclusion.",
+      "rewrite_template": "The limited number of [subgroup participants] precluded a sufficiently powered evaluation of [specified comparison].",
+      "evidence_boundary": "Do not state no subgroup effect, equivalence, or similarity across strata; no formal interaction test is established."
+    },
+    {
+      "id": "ccr-31548347-design-limit",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "discussion",
+        "source_sentence": "Limitations of our study include its retrospective nature and the single-institution origin of the patients.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "retrospective_generalizability_limit",
+      "use_scenario": "Introduce design and recruitment limitations.",
+      "rewrite_template": "Interpretation is limited by [retrospective design] and recruitment from [single setting].",
+      "evidence_boundary": "Use only for the user's actual design; follow with the concrete selection/confounding implication when relevant."
+    },
+    {
+      "id": "ccr-31548347-rare-alteration-limit",
+      "pmid": "31548347",
+      "doi": "10.1158/1078-0432.CCR-19-1237",
+      "title": "Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "discussion",
+        "source_sentence": "Additionally, due to their low frequency of occurrence, we had insufficient power to test if NFE2L2 or CUL3 mutations are individually associated with outcome.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-31548347-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "rare_alteration_uncertainty",
+      "use_scenario": "Limit interpretation of individual genes within a pooled pathway result.",
+      "rewrite_template": "The rarity of [individual alterations] limited evaluation of their separate associations with [endpoint].",
+      "evidence_boundary": "The pooled pathway association cannot be attributed independently to every component gene."
+    },
+    {
+      "id": "ccr-32102950-methods-shedding-correction",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          3
+        ],
+        "section": "methods",
+        "source_sentence": "Raw mutation count was corrected for sample-specific tumor shedding and molecule coverage, with the corrected count reported as pTMB (units mut/Mb)[22].",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "assay_normalization_reporting",
+      "use_scenario": "Describe an actually implemented sample-dependent correction and the units of the derived genomic measure.",
+      "rewrite_template": "The raw [measurement] was corrected for [documented sample-specific factors], and the corrected value was expressed as [derived quantity and units].",
+      "evidence_boundary": "Transfer only correction factors actually implemented and documented in the user's assay; source algorithm details are not established merely by this sentence."
+    },
+    {
+      "id": "ccr-32102950-methods-cutoff-selection",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          4
+        ],
+        "section": "methods",
+        "source_sentence": "The cutoff of 16 mut/Mb was selected for the additional analyses on this basis and also based on the existing literature[14, 15].",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "outcome_informed_cutoff",
+      "use_scenario": "Disclose an internally selected cutoff that was informed both by the current endpoint and prior literature.",
+      "rewrite_template": "The [cutoff] was chosen using [outcome-based criterion] in the current dataset and was also informed by [prior evidence].",
+      "evidence_boundary": "Do not call the threshold prespecified or externally validated. Outcome-informed selection may produce optimistic association estimates."
+    },
+    {
+      "id": "ccr-32102950-results-evaluable-population",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "Of all enrolled patients, 45 patients had RECIST evaluable disease at week 9.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "endpoint_specific_evaluability",
+      "use_scenario": "Introduce the endpoint/time-specific analysis population before reporting a response association.",
+      "rewrite_template": "Of [enrolled population], [evaluable number] were evaluable for [assessment] at [time point].",
+      "evidence_boundary": "Enrolled66,pTMB-evaluable52 andweek9evaluable45 are distinct sets; do not use one denominator for another endpoint."
+    },
+    {
+      "id": "ccr-32102950-results-high-biomarker-nonbenefit",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "In our cohort, six pTMB-high patients did not achieve DCB (Figure 1B).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "biomarker_discordant_clinical_response",
+      "use_scenario": "Motivate an exploratory molecular analysis from exceptions to an overall biomarker-outcome association.",
+      "rewrite_template": "Within the cohort, [number] patients with [biomarker condition] did not achieve [defined benefit], prompting exploration of [additional measured features].",
+      "evidence_boundary": "Nonbenefit in biomarker-high patients demonstrates imperfect stratification, not a causal explanation or proof that additional mutations determine resistance."
+    },
+    {
+      "id": "ccr-32102950-results-negative-fga",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "FGA was not significantly associated with response (P=0.198).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "nonsignificant_genomic_response_association",
+      "use_scenario": "Report an evaluated genomic feature without a statistically significant response association.",
+      "rewrite_template": "[Measured genomic feature] was not significantly associated with [defined endpoint] ([reported estimate and uncertainty, if available]; P=[value]).",
+      "evidence_boundary": "A nonsignificant result does not prove absence of an effect. The source main text suppliesP but not an effect estimate/CI for thisFGA comparison; do not invent one."
+    },
+    {
+      "id": "ccr-32102950-results-negative-to-exploratory-composite",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "While the nine putative negative predictor mutations detected for our patient cohort (Supplemental Table 1) were not significantly associated with PFS (P=0.110), we next explored the effects on PFS of a combination of these negative predictor mutations and pTMB.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "nonsignificant_feature_exploratory_composite_transition",
+      "use_scenario": "Connect a nonsignificant feature-level analysis to an explicitly exploratory composite analysis without erasing the negative result.",
+      "rewrite_template": "Although [feature set] was not significantly associated with [endpoint] ([estimate,uncertainty and P value]), we explored whether combining it with [second measured feature] refined outcome stratification.",
+      "evidence_boundary": "Nine denotes mutation events, not necessarily ninepatients. Composite association is exploratory, requires multiplicity/overfitting caution, and does not demonstrate independent-gene predictive or causal effects."
+    },
+    {
+      "id": "ccr-32102950-results-and-or-composite",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "The median PFS for patients with pTMB ≥16 and no negative predictor mutations was 18.0 versus 4.7 months for patients with pTMB <16 or with any negative predictor mutations.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "exploratory_composite_survival_grouping",
+      "use_scenario": "State a favorable AND-defined composite and its OR-defined comparator precisely.",
+      "rewrite_template": "Median [endpoint] was [estimate] in patients with [conditionA] and no [conditionB], compared with [estimate] in patients with either [alternativeA] or [conditionB] ([effect estimate,confidence interval and P value]).",
+      "evidence_boundary": "Keep Boolean grouping and denominators explicit. Stronger numericalHR compared with another grouping is not a statistical demonstration of improved predictive performance."
+    },
+    {
+      "id": "ccr-32102950-discussion-exploratory-small-numbers",
+      "pmid": "32102950",
+      "doi": "10.1158/1078-0432.CCR-19-3663",
+      "title": "Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "source": {
+        "pdf_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "discussion",
+        "source_sentence": "These are small numbers and the analysis should be considered purely exploratory.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2020-32102950-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "exploratory_evidence_limitation",
+      "use_scenario": "Qualify a molecular subgroup or composite signal arising from few observations.",
+      "rewrite_template": "Because [analysis] involved a small number of [patients or events], the finding should be interpreted as exploratory and requires [appropriate validation].",
+      "evidence_boundary": "Use the actual unit ofsmallness. Statistical significance does not remove exploratory status or establish a treatment-selection rule."
+    },
+    {
+      "id": "ccr-33323401-method-panel",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          3
+        ],
+        "section": "methods",
+        "source_sentence": "The next-generation sequencing (NGS) was performed using the BGI Oseq pan-cancer panel (covers 636 genes and 1.95 Mb) on the MGISEQ-2000 platform using peripheral blood samples (i.e., liquid biopsy), and pretreatment tumor biopsy or archival tissue samples.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "implemented_targeted_genomic_assay",
+      "use_scenario": "Describe an actually implemented targeted DNA assay with panel coverage, platform and specimen sources.",
+      "rewrite_template": "Targeted sequencing was performed using [panel, gene count and genomic coverage] on [platform] in [sample sources and collection timing].",
+      "evidence_boundary": "Use only the user's implemented assay. Do not copy source panel parameters, call targeted DNA profiling whole-exome or multi-omics, or imply paired specimen concordance."
+    },
+    {
+      "id": "ccr-33323401-method-tmb",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          3
+        ],
+        "section": "methods",
+        "source_sentence": "The TMB was determined by analyzing somatic mutations, including the coding base substitution and indels per megabase and was categorized as high or low with the median as cutoff (25).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "genomic_measure_and_cutoff",
+      "use_scenario": "Define a genomic burden measure and a data-dependent dichotomization rule.",
+      "rewrite_template": "[Genomic measure] was calculated as [included event classes] per [unit] and grouped using [reported cutoff rule].",
+      "evidence_boundary": "Retain the actual event classes, denominator and cutoff provenance. A cohort median is not a universally validated clinical cutoff."
+    },
+    {
+      "id": "ccr-33323401-result-overall-survival",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          4
+        ],
+        "section": "results",
+        "source_sentence": "Overall, the median PFS was 5.7 months (95% CI, 4.5–8.8; Fig. 2C), median OS was 15.5 months (95% CI, 10.9–24.5), and the 12-month survival rate was 57.0% (95% CI, 46.9–65.8; Fig. 2D).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "single_arm_survival_description",
+      "use_scenario": "Report median time-to-event outcomes and a fixed-time survival estimate with uncertainty.",
+      "rewrite_template": "In [analysis set], median [endpoint A] was [estimate and CI], median [endpoint B] was [estimate and CI], and estimated survival at [time] was [estimate and CI].",
+      "evidence_boundary": "Descriptive survival under one regimen is not comparative survival benefit or prognosis independent of treatment. Use the appropriate endpoint-specific set and timing."
+    },
+    {
+      "id": "ccr-33323401-result-pdl1-nonsignificant",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          4
+        ],
+        "section": "results",
+        "source_sentence": "There was no significant difference in ORR between patients with PD-L1–positive (n = 25) and PD-L1–negative tumors (n = 66; 36.0% vs. 22.7%, P = 0.20; Supplementary Table S3; Fig. 3A).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "nonsignificant_response_comparison",
+      "use_scenario": "Present an observed numerical response difference and the absence of statistical significance in a molecular subset.",
+      "rewrite_template": "The ORR was [A] in [group A, n] and [B] in [group B, n], with no statistically significant between-group difference ([P value]).",
+      "evidence_boundary": "Nonsignificance does not show equivalence, biomarker independence or absence of association. This is a single-arm exploratory comparison, without treatment interaction."
+    },
+    {
+      "id": "ccr-33323401-result-tmb-null",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          4
+        ],
+        "section": "results",
+        "source_sentence": "Similarly, no significant difference was observed in PFS or OS (Fig. 3D and G).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "nonsignificant_time_to_event_association",
+      "use_scenario": "Link concordantly nonsignificant endpoint comparisons while preserving exact endpoints and molecular population.",
+      "rewrite_template": "No statistically significant difference in [endpoint A] or [endpoint B] was detected between [groups] in the [n]-patient [assay] subset.",
+      "evidence_boundary": "An absent statistical signal in a small subset does not demonstrate biological irrelevance. Name endpoints and uncertainty rather than converting the finding to a validated negative biomarker."
+    },
+    {
+      "id": "ccr-33323401-result-genotype-orr-dcr",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          4,
+          5
+        ],
+        "section": "results",
+        "source_sentence": "Compared with double wild-type STK11/KEAP1 participants, the ORR was 42.9% versus 28.1% (P = 0.33; Fig. 3A); DCR was 92.9% versus 65.6% (P = 0.053; Fig. 3B); median PFS was 9.4 versus 5.3 months (P = 0.64) and median OS was 17.9 months versus NR (P = 0.69; Fig. 3E and H).",
+        "source_fragments": [
+          "Compared with double wild-type STK11/",
+          "KEAP1 participants, the ORR was 42.9% versus 28.1% (P = 0.33; Fig. 3A); DCR was 92.9% versus 65.6% (P = 0.053; Fig. 3B); median PFS was 9.4 versus 5.3 months (P = 0.64) and median OS was 17.9 months versus NR (P = 0.69; Fig. 3E and H)."
+        ],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "cross_page_fragments_normalized_literal"
+      },
+      "content_type": "exploratory_molecular_subgroup_mixed_endpoints",
+      "use_scenario": "Report molecular subgroup results across response and survival without turning numerical direction into validated benefit.",
+      "rewrite_template": "In [altered group] versus [reference group], [response endpoint] was [A] versus [B] ([P value]), while [time-to-event endpoint] was [A] versus [B] ([effect estimate, CI and P value]).",
+      "evidence_boundary": "The combined altered group means mutation in either gene, not double-mutant tumors. All comparisons in this sentence are nonsignificant at .05. Median OS direction cannot be summarized as improved:17.9 versus an unestimated median. No treatment comparator or predictive interaction."
+    },
+    {
+      "id": "ccr-33323401-result-landmark",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "In addition, difference was observed in the 12-month survival rate (85.1% vs. 53.1%, P = 0.010).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "nominal_fixed_time_survival_signal",
+      "use_scenario": "Describe a specified-time estimate that differs while retaining the separate overall time-to-event result.",
+      "rewrite_template": "Estimated survival at [time] was [A] in [group A] and [B] in [group B] ([test result]); the overall [endpoint] comparison remained [reported result].",
+      "evidence_boundary": "The landmark test and log-rank test address different questions. Do not use this nominal exploratory P value to claim overall OS improvement, resistance reversal, treatment prediction or correction for multiplicity."
+    },
+    {
+      "id": "ccr-33323401-result-blood-extension",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "We observed a similar trend toward a better ORR (37.5% vs. 27.5%, P = 0.68), DCR (87.5% vs. 65.0%, P = 0.41), PFS (8.3 vs. 5.4 months, P = 0.18), and OS (19.3 vs. 10.7 months, P = 0.49) for patients with STK11 and/or KEAP1 mutation (Supplementary Fig. S5).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "within_study_subset_numerical_consistency",
+      "use_scenario": "Report same-direction numerical observations in an additional sample-source subset with all tests nonsignificant.",
+      "rewrite_template": "The additional [sample-source] subset showed the same numerical direction for [outcomes], although none of the reported between-group comparisons was statistically significant ([reported estimates and tests]).",
+      "evidence_boundary": "Prefer numerical direction to an unqualified trend. Additional patients in the same trial do not create external validation. Supplement FigureS5 not supplied: values confirmed in body prose, not the absent graphic; no CIs invented."
+    },
+    {
+      "id": "ccr-33323401-discussion-small-subset",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          7
+        ],
+        "section": "discussion",
+        "source_sentence": "We also noted a trend of improved efficacy for PD-L1–positive tumor versus PD-L1–negative tumor (ORR: 36.0% vs. 22.7%), though statistical analysis was limited by the relative sample size.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "punctuation_insensitive"
+      },
+      "content_type": "numerical_signal_with_precision_limit",
+      "use_scenario": "Explain why a numerical observation may motivate further study while explicitly limiting its inference.",
+      "rewrite_template": "Although [outcome] was numerically higher in [group A], the small [analysis set] limits precision, and the finding warrants testing in [specified future design].",
+      "evidence_boundary": "Do not use post hoc low-power reasoning to declare a true effect. Do not reuse the source's improved efficacy wording as a statistically established result; P=.20 in Results."
+    },
+    {
+      "id": "ccr-33323401-discussion-mechanism",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          7
+        ],
+        "section": "discussion",
+        "source_sentence": "The better efficacy observed might be due to the addition of apatinib because both STK11 and KEAP1 are involved in angiogenesis (34, 35).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "mechanistic_hypothesis_from_clinical_association",
+      "use_scenario": "Introduce an explicitly hypothetical biological explanation without claiming that the present clinical study tested it.",
+      "rewrite_template": "The [observed pattern] may be compatible with [biological hypothesis], but direct testing is required to determine whether [proposed mechanism] accounts for it.",
+      "evidence_boundary": "The single-arm trial cannot isolate apatinib's contribution or demonstrate reversal of STK11/KEAP1 resistance. Prior angiogenesis/redox literature is not a new mechanistic experiment in this source."
+    },
+    {
+      "id": "ccr-33323401-discussion-single-arm",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          7
+        ],
+        "section": "discussion",
+        "source_sentence": "We have to point out that this study was an open-label single-arm trial with no ICI monotherapy or chemotherapy control arm. Therefore, we cannot definitively claim that the combination of apatinib and camrelizumab is superior to either single-agent therapy.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "punctuation_insensitive"
+      },
+      "content_type": "design_based_comparative_claim_limit",
+      "use_scenario": "Constrain comparative claims after promising activity in a cohort without a concurrent treatment comparator.",
+      "rewrite_template": "Because this [design] study lacked a concurrent [comparator], it cannot establish whether [regimen] improves outcomes over [alternative].",
+      "evidence_boundary": "Single-arm activity and cross-trial contrasts do not establish superiority or identify the contribution of a combination component. This limitation also constrains biomarker prediction."
+    },
+    {
+      "id": "ccr-33323401-result-safety",
+      "pmid": "33323401",
+      "doi": "10.1158/1078-0432.CCR-20-3136",
+      "title": "Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy",
+      "journal": "Clinical Cancer Research",
+      "year": "2021",
+      "source": {
+        "pdf_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+        "supplied_pdf_version": "publisher_typeset_pdf",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "A total of 104 (99.0%) patients experienced at least one treatment-related AE (trAE), and 73 (69.5%) patients experienced at least one trAE of grade 3 or higher (Table 3; Supplementary Table S4).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "ccr-2021-33323401-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "treatment_related_toxicity_description",
+      "use_scenario": "Quantify any-grade and severe treatment-related events in the same safety population.",
+      "rewrite_template": "In the [n]-patient safety set, [n, percent] experienced at least one treatment-related event and [n, percent] experienced an event of grade [range].",
+      "evidence_boundary": "Do not replace substantial severe toxicity with no unexpected safety signals. Preserve treatment-related deaths and discontinuation elsewhere in the same safety summary; Table3 includes grade3-5."
+    },
+    {
+      "id": "intake-35504291-r1",
+      "pmid": "35504291",
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "title": "Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer",
+      "journal": "Cell Metabolism",
+      "year": "2022",
+      "source": {
+        "pdf_sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+        "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
+        "physical_pages": [
+          7
+        ],
+        "section": "results",
+        "source_sentence": "As expected with this short treatment schedule, there was no change in overall tumor burden, measured by lung weight (Figure S4A).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "cell-metabolism-2022-35504291-language.md",
+        "text_extraction_match": "punctuation_insensitive"
+      },
+      "content_type": "short_term_bulk_null",
+      "use_scenario": "短程干预的总体负荷未变，但另有细胞功能读数时。",
+      "rewrite_template": "No change in [bulk endpoint] was detected over [treatment interval], although [orthogonal assay] identified [specific biological effect].",
+      "evidence_boundary": "Nonsignificance is not equivalence; the orthogonal effect must come from the user's actual experiment, and combination survival was not measured."
+    },
+    {
+      "id": "intake-35504291-r2",
+      "pmid": "35504291",
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "title": "Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer",
+      "journal": "Cell Metabolism",
+      "year": "2022",
+      "source": {
+        "pdf_sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+        "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
+        "physical_pages": [
+          11
+        ],
+        "section": "results",
+        "source_sentence": "Notably, minor gains in IFNg production afforded by CB-839 monotherapy were abolished in combination with anti-PD1.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "cell-metabolism-2022-35504291-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "combination_reverses_monotherapy_signal",
+      "use_scenario": "单药的轻度功能变化在联合条件下不再保留。",
+      "rewrite_template": "The increase in [readout] observed with [monotherapy] was not retained when [second intervention] was added.",
+      "evidence_boundary": "Requires the actual combination comparison; this does not establish clinical antagonism or a survival effect."
+    },
+    {
+      "id": "intake-35504291-m1",
+      "pmid": "35504291",
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "title": "Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer",
+      "journal": "Cell Metabolism",
+      "year": "2022",
+      "source": {
+        "pdf_sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+        "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
+        "physical_pages": [
+          20
+        ],
+        "section": "methods",
+        "source_sentence": "Correlations between repeated measurements (multiple tumour samples) from the same mouse were estimated using the duplicateCorrelation method (Smyth et al., 2005).",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "cell-metabolism-2022-35504291-language.md",
+        "text_extraction_match": "punctuation_insensitive"
+      },
+      "content_type": "repeated_sample_modeling",
+      "use_scenario": "每个动物或受试者有多个组学样本，且分析实际处理了重复测量相关性。",
+      "rewrite_template": "Correlations between repeated samples from the same [experimental unit] were estimated using [implemented method].",
+      "evidence_boundary": "Do not transfer the software/method unless actually used; samples and animals retain different denominators."
+    },
+    {
+      "id": "intake-35504291-d1",
+      "pmid": "35504291",
+      "doi": "10.1016/j.cmet.2022.04.003",
+      "title": "Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer",
+      "journal": "Cell Metabolism",
+      "year": "2022",
+      "source": {
+        "pdf_sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+        "supplied_pdf_version": "publisher_typeset_main_with_embedded_supplement",
+        "physical_pages": [
+          12
+        ],
+        "section": "discussion",
+        "source_sentence": "Although the combination therapy inhibited highly activated CD8 T cells and blunted their cytotoxic capabilities, the impact on overall survival was not evaluated.",
+        "source_fragments": [],
+        "visual_verified": true,
+        "verification_record": "cell-metabolism-2022-35504291-language.md",
+        "text_extraction_match": "normalized_literal"
+      },
+      "content_type": "functional_result_with_unmeasured_endpoint",
+      "use_scenario": "已有功能层面发现，但没有测量生存或临床获益终点。",
+      "rewrite_template": "Although [intervention] altered [measured function], its effect on [unmeasured endpoint] was not evaluated.",
+      "evidence_boundary": "An unmeasured endpoint cannot be called negative; pharmacodynamic activity is not clinical efficacy."
+    }
+  ]
+}

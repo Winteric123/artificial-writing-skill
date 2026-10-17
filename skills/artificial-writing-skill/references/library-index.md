@@ -2,7 +2,7 @@
 
 本目录由各期刊 bibliography、权威阅读 ledger 和质量 register 联表生成；不是再次精读或全期刊查全报告。年份沿用正式出版卷期年，在线年/版本见原始书目及批次manifest。
 
-正式期刊登记368篇；当前纳入350篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读350篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 64篇。
+正式期刊登记372篇；当前纳入354篇；排除记录18篇（含评论及单列背景综述）。已完成正文精读354篇，合格但尚未完成精读0篇。来源复核验收通过30篇；STK11 highlight 64篇。
 
 “已精读”指登记的正文及相应主图表范围，不等于补充材料全读、验收通过或独立审查。旧登记状态保留，不因本次目录重建自动升级。
 
@@ -19,9 +19,9 @@
 | 2017 | 1 | 1 | 1 | 0 | 0 |
 | 2018 | 1 | 1 | 1 | 0 | 0 |
 | 2019 | 2 | 2 | 2 | 0 | 0 |
-| 2020 | 6 | 6 | 6 | 0 | 0 |
-| 2021 | 30 | 30 | 30 | 0 | 0 |
-| 2022 | 55 | 48 | 48 | 0 | 7 |
+| 2020 | 8 | 8 | 8 | 0 | 0 |
+| 2021 | 31 | 31 | 31 | 0 | 0 |
+| 2022 | 56 | 49 | 49 | 0 | 7 |
 | 2023 | 61 | 56 | 56 | 0 | 5 |
 | 2024 | 57 | 53 | 53 | 0 | 4 |
 | 2025 | 64 | 62 | 62 | 0 | 2 |
@@ -36,9 +36,10 @@
 | Cancer Discovery | 6 | 6 | 6 |
 | Cancer Research | 8 | 8 | 8 |
 | Cell | 1 | 1 | 1 |
+| Cell Metabolism | 1 | 1 | 1 |
 | Cell Reports | 1 | 1 | 1 |
 | Cell Research | 1 | 1 | 1 |
-| Clinical Cancer Research | 287 | 269 | 269 |
+| Clinical Cancer Research | 290 | 272 | 272 |
 | ESMO Open | 1 | 1 | 1 |
 | JCO Precision Oncology | 1 | 1 | 1 |
 | JTO Clinical and Research Reports | 1 | 1 | 1 |
@@ -76,10 +77,11 @@
 | Cancer Research | 2024 | 1 | 1 | 1 | 0 | 0 |
 | Cancer Research | 2025 | 2 | 2 | 2 | 0 | 0 |
 | Cell | 2020 | 1 | 1 | 1 | 0 | 0 |
+| Cell Metabolism | 2022 | 1 | 1 | 1 | 0 | 0 |
 | Cell Reports | 2020 | 1 | 1 | 1 | 0 | 0 |
 | Cell Research | 2025 | 1 | 1 | 1 | 0 | 0 |
-| Clinical Cancer Research | 2020 | 3 | 3 | 3 | 0 | 0 |
-| Clinical Cancer Research | 2021 | 24 | 24 | 24 | 0 | 0 |
+| Clinical Cancer Research | 2020 | 5 | 5 | 5 | 0 | 0 |
+| Clinical Cancer Research | 2021 | 25 | 25 | 25 | 0 | 0 |
 | Clinical Cancer Research | 2022 | 52 | 45 | 45 | 0 | 7 |
 | Clinical Cancer Research | 2023 | 44 | 39 | 39 | 0 | 5 |
 | Clinical Cancer Research | 2024 | 39 | 35 | 35 | 0 | 4 |
@@ -239,6 +241,14 @@
 |---|---|---|---|---|---|
 | 32649874 | Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma | 10.1016/j.cell.2020.06.013 | article-specific STK11 evidence | 已完成 | yes |
 
+### Cell Metabolism
+
+#### 2022（1篇）
+
+| PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
+|---|---|---|---|---|---|
+| 35504291 | Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer | 10.1016/j.cmet.2022.04.003 | STK11/KEAP1 context, glutamine metabolism and immune-compartment combination effects | 已完成 | no |
+
 ### Cell Reports
 
 #### 2020（1篇）
@@ -257,15 +267,17 @@
 
 ### Clinical Cancer Research
 
-#### 2020（3篇）
+#### 2020（5篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
+| 32102950 | Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-19-3663 | Precision Medicine and Imaging | 已完成 | no |
 | 32241817 | Identification of Deleterious NOTCH Mutation as Novel Predictor to Efficacious Immunotherapy in NSCLC | 10.1158/1078-0432.CCR-19-3976 | Precision Medicine and Imaging | 已完成 | no |
 | 31694835 | Organoid Cultures as Preclinical Models of Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-19-1376 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
+| 31548347 | Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer | 10.1158/1078-0432.CCR-19-1237 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 32709715 | The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer | 10.1158/1078-0432.ccr-20-1825 | Translational Cancer Mechanisms and Therapy | 已完成 | yes |
 
-#### 2021（24篇）
+#### 2021（25篇）
 
 | PMID | 完整题名 | DOI | 栏目或已记录内容分类 | 正文精读 | STK11 highlight |
 |---|---|---|---|---|---|
@@ -274,6 +286,7 @@
 | 34074656 | CDKN2A Alterations and Response to Immunotherapy in Solid Tumors | 10.1158/1078-0432.CCR-21-0575 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33947695 | Comprehensive Molecular and Clinicopathologic Analysis of 200 Pulmonary Invasive Mucinous Adenocarcinomas Identifies Distinct Characteristics of Molecular Subtypes | 10.1158/1078-0432.CCR-21-0423 | Translational Cancer Mechanisms and Therapy | 已完成 | no |
 | 33323402 | Cross-Site Concordance Evaluation of Tumor DNA and RNA Sequencing Platforms for the CIMAC-CIDC Network | 10.1158/1078-0432.ccr-20-3251 | Precision Medicine and Imaging | 已完成 | no |
+| 33323401 | Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy | 10.1158/1078-0432.CCR-20-3136 | Clinical Trials: Immunotherapy | 已完成 | no |
 | 33020056 | Genome and Transcriptome Biomarkers of Response to Immune Checkpoint Inhibitors in Advanced Solid Tumors | 10.1158/1078-0432.CCR-20-1163 | Precision Medicine and Imaging | 已完成 | no |
 | 34446541 | Genomic Landscape and Tumor Mutational Burden Determination of Circulating Tumor DNA in Over 5,000 Chinese Patients with Lung Cancer | 10.1158/1078-0432.CCR-21-1537 | Precision Medicine and Imaging | 已完成 | no |
 | 34244291 | Immunotherapy-Mediated Thyroid Dysfunction: Genetic Risk and Impact on Outcomes with PD-1 Blockade in Non-Small Cell Lung Cancer | 10.1158/1078-0432.ccr-21-0921 | Translational Cancer Mechanisms and Therapy | 已完成 | no |

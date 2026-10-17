@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated": "2026-10-05",
-  "scope": "Historical detailed records plus 15 newly completed supplied-paper reads on 2026-10-02; version-specific MPS1 addendum. PMID35504291 skipped by user, not promoted. Article facets are not exhaustive or independent acceptance.",
+  "scope": "Historical detailed records plus 15 newly completed supplied-paper reads on 2026-10-02; version-specific MPS1 addendum. PMID35504291 was skipped in that intake and remains absent from this detailed-tag snapshot; its subsequent 2026-10-18 reading is separately registered in the Cell Metabolism quality register and ledger. Article facets are not exhaustive or independent acceptance.",
   "records": [
     {
       "stable_id": "STK11-PMID-38177135",

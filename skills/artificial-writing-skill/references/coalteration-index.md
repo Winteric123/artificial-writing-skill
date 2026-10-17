@@ -4,7 +4,7 @@
 
 标签依据及用法：[coalteration-topics.md](coalteration-topics.md)。权威逐篇记录：[coalteration-annotations.json](coalteration-annotations.json)。机器表：[library-index.csv](library-index.csv)。
 
-纳入正式论文 350 篇；序列共突变实际分析/描述 127 篇；广义共改变实际分析/描述 158 篇。前者是后者子集，不能相加。
+纳入正式论文 354 篇；序列共突变实际分析/描述 131 篇；广义共改变实际分析/描述 162 篇。前者是后者子集，不能相加。
 
 “实际分析/描述”包括描述性oncoplot/少数病例，并非全是共突变主题主文或阳性机制结果。“本轮未识别”不是全文绝无相关内容。列示基因上下文非穷尽，包含互斥检验和模型，不表示每一组合均正共现。
 
@@ -57,6 +57,12 @@
 |---|---|---|---|---|---|---|
 | 2020 | [32649874 — Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma](https://pubmed.ncbi.nlm.nih.gov/32649874/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11 | genomic_landscape;assay_or_method | yes |
 
+## Cell Metabolism
+
+| 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
+|---|---|---|---|---|---|---|
+| 2022 | [35504291 — Glutaminase inhibition impairs CD8 T cell activation in STK11-/Lkb1-deficient lung cancer](https://pubmed.ncbi.nlm.nih.gov/35504291/) | 实际分析/描述 | 实际分析/描述 | KRAS+STK11;KRAS+KEAP1;KRAS+KEAP1+STK11;KRAS+TP53 | preclinical_mechanism;immune_context;resistance;model_genotype | no |
+
 ## Cell Reports
 
 | 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
@@ -73,14 +79,17 @@
 
 | 年份 | PMID / 题名 | 序列共突变 | 广义共改变 | 基因上下文（非穷尽） | 用途 | STK11重点 |
 |---|---|---|---|---|---|---|
+| 2020 | [32102950 — Baseline Plasma Tumor Mutation Burden Predicts Response to Pembrolizumab-based Therapy in Patients with Metastatic Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/32102950/) | 实际分析/描述 | 实际分析/描述 | STK11+KEAP1+PTEN+ERBB2 | treatment_outcomes;prognosis;assay_or_method | no |
 | 2020 | [32241817 — Identification of Deleterious NOTCH Mutation as Novel Predictor to Efficacious Immunotherapy in NSCLC](https://pubmed.ncbi.nlm.nih.gov/32241817/) | 实际分析/描述 | 实际分析/描述 | TP53+KRAS | genomic_landscape;treatment_outcomes | no |
 | 2020 | [31694835 — Organoid Cultures as Preclinical Models of Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/31694835/) | 本轮未识别 | 实际分析/描述 | KRAS;KRAS+CDKN2A | genomic_landscape;assay_or_method;model_genotype;preclinical_mechanism | no |
+| 2020 | [31548347 — Role of KEAP1/NFE2L2 Mutations in the Chemotherapeutic Response of Patients with Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/31548347/) | 实际分析/描述 | 实际分析/描述 | KEAP1+NFE2L2+CUL3;KRAS+STK11;KEAP1+TP53 | prognosis;treatment_outcomes;resistance;preclinical_mechanism | no |
 | 2020 | [32709715 — The Genomic Landscape of SMARCA4 Alterations and Associations with Outcomes in Patients with Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/32709715/) | 实际分析/描述 | 实际分析/描述 | SMARCA4+TP53;SMARCA4+KEAP1;SMARCA4+STK11;SMARCA4+KRAS | genomic_landscape;prognosis;treatment_outcomes | yes |
 | 2021 | [33272981 — A Performance Comparison of Commonly Used Assays to Detect RET Fusions](https://pubmed.ncbi.nlm.nih.gov/33272981/) | 本轮未识别 | 实际分析/描述 | EGFR+RET;RET | genomic_landscape;resistance;assay_or_method | no |
 | 2021 | [34140403 — A Phase I Study of APX005M and Cabiralizumab with or without Nivolumab in Patients with Melanoma, Kidney Cancer, or Non-Small Cell Lung Cancer Resistant to Anti-PD-1/PD-L1](https://pubmed.ncbi.nlm.nih.gov/34140403/) | 本轮未识别 | 本轮未识别 | — | — | no |
 | 2021 | [34074656 — CDKN2A Alterations and Response to Immunotherapy in Solid Tumors](https://pubmed.ncbi.nlm.nih.gov/34074656/) | 本轮未识别 | 实际分析/描述 | CDKN2A | genomic_landscape | no |
 | 2021 | [33947695 — Comprehensive Molecular and Clinicopathologic Analysis of 200 Pulmonary Invasive Mucinous Adenocarcinomas Identifies Distinct Characteristics of Molecular Subtypes](https://pubmed.ncbi.nlm.nih.gov/33947695/) | 实际分析/描述 | 实际分析/描述 | ERBB3;KRAS+STK11 | genomic_landscape;prognosis | no |
 | 2021 | [33323402 — Cross-Site Concordance Evaluation of Tumor DNA and RNA Sequencing Platforms for the CIMAC-CIDC Network](https://pubmed.ncbi.nlm.nih.gov/33323402/) | 实际分析/描述 | 实际分析/描述 | TP53+KRAS | assay_or_method;genomic_landscape | no |
+| 2021 | [33323401 — Efficacy and Biomarker Analysis of Camrelizumab in Combination with Apatinib in Patients with Advanced Nonsquamous NSCLC Previously Treated with Chemotherapy](https://pubmed.ncbi.nlm.nih.gov/33323401/) | 实际分析/描述 | 实际分析/描述 | STK11+KEAP1 | treatment_outcomes;immune_context;genomic_landscape | no |
 | 2021 | [33020056 — Genome and Transcriptome Biomarkers of Response to Immune Checkpoint Inhibitors in Advanced Solid Tumors](https://pubmed.ncbi.nlm.nih.gov/33020056/) | 实际分析/描述 | 实际分析/描述 | JAK1+HLA-A | genomic_landscape;immune_context;resistance;treatment_outcomes | no |
 | 2021 | [34446541 — Genomic Landscape and Tumor Mutational Burden Determination of Circulating Tumor DNA in Over 5,000 Chinese Patients with Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/34446541/) | 实际分析/描述 | 实际分析/描述 | EGFR+TP53 | genomic_landscape;assay_or_method;treatment_outcomes | no |
 | 2021 | [34244291 — Immunotherapy-Mediated Thyroid Dysfunction: Genetic Risk and Impact on Outcomes with PD-1 Blockade in Non-Small Cell Lung Cancer](https://pubmed.ncbi.nlm.nih.gov/34244291/) | 本轮未识别 | 本轮未识别 | — | — | no |

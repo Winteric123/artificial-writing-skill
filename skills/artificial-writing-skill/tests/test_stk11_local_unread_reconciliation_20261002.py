@@ -97,6 +97,11 @@ class LocalUnreadReconciliation(unittest.TestCase):
         self.assertEqual((len(strict), len(appendix)), (80, 4))
         later = json.loads((REFS / 'supplement-ccr-2026-10-02-intake.json').read_text(encoding='utf-8'))
         new = {row['pmid'] for row in later['records'] if row['new_to_library']}
+        # A historical deferment can be completed by an explicitly recorded later intake.
+        resolved = {row['pmid'] for row in later['skipped']
+                    if row.get('later_resolution', {}).get('status') == 'main_text_deep_read_complete'}
+        self.assertEqual(resolved, {'35504291'})
+        new |= resolved
         self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in strict), 48 + len(new & {r['pmid'] for r in strict}))
         self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in appendix), 2 + len(new & {r['pmid'] for r in appendix}))
 

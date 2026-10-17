@@ -94,9 +94,17 @@ class SupplementalIntakeTests(unittest.TestCase):
         self.assertEqual((skipped['pmid'], skipped['file']), ('35504291', 'mmc3.pdf'))
         self.assertEqual(skipped['status'], 'skipped_by_user_incomplete')
         self.assertIs(skipped['source_preserved'], True)
-        self.assertNotIn('35504291', self.library)
-        self.assertNotIn('35504291', self.locators['sources'])
-        self.assertEqual(search(self.entries, pmid='35504291', include_held=True)['matched_count'], 0)
+        # The October 2 skip is a snapshot, not a permanent exclusion. A separate
+        # October 18 intake completes this source without changing the old batch.
+        self.assertNotIn('35504291', self.intake)
+        resolution = skipped['later_resolution']
+        self.assertEqual((resolution['resolved_on'], resolution['status']),
+                         ('2026-10-18', 'main_text_deep_read_complete'))
+        live = self.library['35504291']
+        self.assertEqual((live['journal'], live['main_read_completed_on'], live['review_status'], live['stk11_highlight']),
+                         ('Cell Metabolism', '2026-10-18', 'not_reviewed', 'no'))
+        self.assertEqual(self.locators['sources']['35504291']['physical_pages'], 35)
+        self.assertGreater(search(self.entries, pmid='35504291', include_held=True)['matched_count'], 0)
 
     def test_intake_reading_and_later_live_acceptance_are_separate(self):
         overlay = self.manifest['review_overlay']

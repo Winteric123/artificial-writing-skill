@@ -1,14 +1,15 @@
 {
   "schema_version": 2,
-  "index_version": "c07bb6f189142a3d27ebfbe2069bf01f1c68462e44e668e6208e588eecf0fe79",
-  "entry_count": 10389,
+  "index_version": "182d91d6fb26469dbad5da7a77670f30469de3456e6683da0fcf1e268415da4f",
+  "entry_count": 10634,
   "journals": {
     "annals-of-oncology": 89,
     "cancer-cell": 70,
     "cancer-discovery": 124,
     "cancer-research": 112,
-    "ccr": 8298,
+    "ccr": 8507,
     "cell": 12,
+    "cell-metabolism": 36,
     "cell-reports": 12,
     "cell-research": 22,
     "esmo-open": 10,
@@ -27,7 +28,7 @@
     "sttt": 18
   },
   "retrieval_states": {
-    "usable": 10380,
+    "usable": 10625,
     "quarantined": 9
   },
   "usage_card_count": 79,
@@ -79,14 +80,17 @@
     "cancer-research-deep-reading-ledger.md": "319ed83fc20dfb3c2688f1ff0ea27d0c55b6a3b6a13c0adc0c8a8538f0de16cf",
     "cancer-research-reading-quality-register.csv": "529b0aa0f1686c6ed19364afe0b319608e14b8147347fea57e8658a53c37e670",
     "cancer-research-section-language-catalog.csv": "dcbb39b2ffafeddf85166bfa4f72b51060aba87789872d322ed2dddde80b98fe",
+    "ccr-2020-31548347-language.md": "802b9d6af06be44cc24dfe5b4a9c3aac21894875fcbc323675a2c579e56f8d65",
     "ccr-2020-31694835-language.md": "e56226b034a2bee2ec902f8ccaba7e7dce26bd9794635a574bf6cd199c8c321e",
     "ccr-2020-31694835-reading.md": "77733aa72099a28909970ba8c141a237b953013afcdd6ec7022b82fa2c7517aa",
+    "ccr-2020-32102950-language.md": "5b525ce62ea4f88cfacbbb0ed75a84d5a24032279e2dd8a1c6cf49ff0e65dd87",
     "ccr-2020-32241817-language.md": "0582d843bfa4bb8c0a59afb75418f6a16afa7913de97abdd0836e975eac10780",
     "ccr-2020-32241817-reading.md": "f1c9941dd895874497f50edd54713909c472e03f0f28d768b20182490e1a3228",
     "ccr-2021-33020056-language.md": "cc70a3a2c9d61600cef25ee0f8e2d6e76c8c215e71c8c332049023acbf56e305",
     "ccr-2021-33023953-language.md": "45f6170bf760ca42e567c51324ddf28c09a45f661dd4b66aaa9207d8d64ae8b9",
     "ccr-2021-33272981-language.md": "27a47af48d146e4ed127822aae778923ba21dd09a81978690f8bac0ebbadb149",
     "ccr-2021-33272981-reading.md": "96aefa9c0c9cbf5d408cf7b5c9b883d5b2cdca115357c1753072d2075213173d",
+    "ccr-2021-33323401-language.md": "69cff1dfbeb4ffbd46e5476f24e807a03985cb7444bd061f64fc61d1380195db",
     "ccr-2021-33323402-evidence.md": "351d54486ac82cd88463467da0c059b59e7591b221a498b73c6bfd4e82cdaf95",
     "ccr-2021-33323402-language.md": "63acf9a1414a7bd1f522e76f8fe8dc5ab8a7476532200fb2ee8e7b797d8e5154",
     "ccr-2021-33323404-language.md": "0fc37e208a6f2ebf5ebf4ed89c1b4bba85d8bd1c901df7ed8ed5e0b231b1007e",
@@ -338,15 +342,20 @@
     "ccr-2026-42765908-language.md": "4f53336b74dd25a789087f73ae279a78fb78d44ea2c767935d0ff27e3436c7f2",
     "ccr-2026-immunotherapy-fulltext-language.md": "ca0b8e9cade05728d25790db406627e0511f24712a819c9427e4631d062c285b",
     "ccr-2026-translational-mechanisms-fulltext-language.md": "762679a5046c89ae8d6fed23d7fa309352e13192b012260c4d7501db15e6dba3",
-    "ccr-corpus-bibliography.csv": "5c67702b9dfaf629cafc26deb62f03e0d2c5e2d7f6c1152885ae7d71d58afb06",
-    "ccr-deep-reading-ledger.md": "fa6f50c2db0c961f6d46e15cb5cf623946b07dec9b0cdba7eda137d2b25a748f",
+    "ccr-corpus-bibliography.csv": "7141e3bd0c95491b97212a847d4c1dcc3914312cccc3c44a1cdbb1a2595505f2",
+    "ccr-deep-reading-ledger.md": "4ef28a56872b276803d66ddcd3507b56a8e76083827acd6cc9cbc160cc2d1f92",
     "ccr-phrase-patterns.md": "bb11bbe3521f482921d904da2262bf2ce0252171ba74ec826de86b7a79b9766d",
-    "ccr-reading-quality-register.csv": "f284e75bec5a865a26d093e17850a747c0d330525be7eb6e75b229fa5b1a4dc1",
-    "ccr-section-language-catalog.csv": "a54f411860a14f74c504775b4f997ed409be8a82407e8d9dee8e18b926d41303",
+    "ccr-reading-quality-register.csv": "df43f90b9066a4f4ca6da3d5969a6ab34efe1276db1b850d47a0b9f7ec265c9c",
+    "ccr-section-language-catalog.csv": "a9cd53e288f5cac17723d0be384c3b9cbec52a7f12f0d9c6ef4e2a9a81c38012",
     "cell-2020-32649874-language.md": "bde33ed289d47545cc9ea98b089b09f920d93e83745a2caacd730c52ec4ad24e",
     "cell-2020-32649874-reading.md": "3f410e61e5b0a499ecba41cbd587b6a2934c148afc955084134db8b524084ba9",
     "cell-corpus-bibliography.csv": "291c683de9ef457fcd7e721710bd4bb58fe9a2ed9f54a9e4e9e2e634f0d64656",
     "cell-deep-reading-ledger.md": "364c22bde6d454e14d30d7e3762e156d43d4def8f2ab81bbd55499308b89ff74",
+    "cell-metabolism-2022-35504291-language.md": "2984b964606bd925b93f83317d02d842c1db60e28051e80852f363ce7fbc667a",
+    "cell-metabolism-corpus-bibliography.csv": "0e7b9d0b4d1dc9f704375d963ee7eb022a7282a85b3644364390a2b8319eb764",
+    "cell-metabolism-deep-reading-ledger.md": "10d75016a535687e5e48ce354af716de74761e8ff83d908ddba2a22897c1384d",
+    "cell-metabolism-reading-quality-register.csv": "63d2b609c95a43fa94607f56606ef383edb9611dd45383d2590cf3461996c829",
+    "cell-metabolism-section-language-catalog.csv": "57112786de2914bcc8eeb422b1b60bd3576bfed65036f1f1161e4f6fc90f4a79",
     "cell-reading-quality-register.csv": "99fbf0210b2c04af27ad795104a3f6652311ca21283cab8cb4a5ab24442df56a",
     "cell-reports-2020-33264619-reading.md": "35421b72fb626d5a8cda571923acd2779830bfc49fb4461af5d3a12492e4495c",
     "cell-reports-corpus-bibliography.csv": "3199f815e323c5c719ca4447c5718ba7992b157b21d2d31a56097083e789fec8",
@@ -359,7 +368,7 @@
     "cell-research-reading-quality-register.csv": "6c77896a71b3f96dab687cb6f44fa303c632a6a17b3f275a43bc4b60fac68df6",
     "cell-research-section-language-catalog.csv": "fae8720a5dca68867cb1a2d63e97c832ecacff8f2067c31055a78b14825c26f8",
     "cell-section-language-catalog.csv": "ed5d0f26f72935e2034447d5e658a3ddb53828cbaa9364d9fd611e6f077c82ef",
-    "coalteration-annotations.json": "0bd009580d46ba9749cc62e87daef24ab0113e43f198e2b124f5cf75f7ad051a",
+    "coalteration-annotations.json": "f792eeaf7d8bdbfd522a8070aafbc765c8770fbcb3bf9f7b4019184692103cd9",
     "coalteration-recheck-2026-09-28.md": "8a5851906f201cac878f914ca5dfe13f1668faf96661ed386213dc47e83feec1",
     "coalteration-topics.md": "de1a79748b44e851ddea5d8cd11305aaf63de5ccdf07034c772dde02cf6cf415",
     "core-evidence-language.md": "b3d62a3ca58a724ce8f11bb85983281d0b85df7329dc7ee4f18a3b4de4a6437c",
@@ -390,7 +399,7 @@
     "jitc-deep-reading-ledger.md": "b9880cc7e89728d1123b3cf5d1767fd7588736ebfd6b7368ab53c33ad7adc3e7",
     "jitc-reading-quality-register.csv": "0bc074dc5ffa86eeade8a4d11e72c58f730e4ff9f1b3559c66a428f6a7c53694",
     "jitc-section-language-catalog.csv": "ffeb94822fc35d9ebc13cafbe8349b998e30cb8c52d0df69ba3e3dfcdcde291b",
-    "journal-registry.json": "caca2153d0012e5f40f6d6a67548ea7c56eebdca82a1cc8e8a2dad3a2ec19bbb",
+    "journal-registry.json": "09748b5302cb22fee8ccc68e2991370d2887f8456e1f08b5ffb9665e74af312d",
     "jto-2021-34450259-language.md": "c6882c0fa489a7eedb47c0abf7fadad331cf730fe9b5aeb20440fba46421f3db",
     "jto-2022-34740862-language.md": "88e1062f339fde27d3f7d70590928f397bd7ac6eefcff1cab9d20a3f9bf6594a",
     "jto-2022-34740862-reading.md": "14a3e946abcaa05868696aad48370749a786e46a9e94c7c7d4370c5dccad904e",
@@ -434,11 +443,11 @@
     "jto-deep-reading-ledger.md": "3c29616a7ecb48eb494b7e12f92cebf9dedf9ac97faf9d63d04463c44bb47eff",
     "jto-reading-quality-register.csv": "e0e0c06cdfcf7a524f9648c981310b29177ae0a9b21c0a1b82f874c0efec7010",
     "jto-section-language-catalog.csv": "3e694efbdbc2e50385e37ac8be06e1becc40dd28b41444faf2be9bd627efcbbc",
-    "language-controls.json": "80cf3c4aecf2bc9438bbf0323546698f5fba0938eb2e07389bd1b19328c9a492",
+    "language-controls.json": "f8d90f16595f795ed96aec30f1d103e7631add9105052c419698e4ee6a518397",
     "language-id-migrations.json": "a586aee575150687d86cfc5a45a094f9c84e9d4b15df43d57a498b7b62b23da5",
     "language-usage-cards-rechecks.json": "18e096ff01a5dd2ebbb4ebc81b2b8ab6a47b59e6a72dd1ff3246e4f7da673683",
     "language-usage-cards.json": "5a9526aedfbe647d925169d83702b66c93143f47529a1992fef97c890df4c20b",
-    "library-index.csv": "eab576b7ada8f411a38447a4956c38763234351b2c6ca20c874890db0180efa4",
+    "library-index.csv": "8cb4862bfcafbb4c1dbbacbfbb93e017eb95831a9945b4d4fdcabbdf82010075",
     "medrxiv-2025-pro-trajectories-language.md": "9d0facb97a66382936811c03f22c068c26b3809a570591ef577cd2d883cda5a1",
     "nature-2017-28538732-language.md": "73fa60f8ace47cbf3d46a885be58e18d73a45c253cc6d71d743c4c7db2679389",
     "nature-2017-28538732-reading.md": "3063f7ab8c9e4800c8ae7841be76f1351d6290cacb30ae4e6ec6e5bba9051196",
@@ -485,11 +494,11 @@
     "nature-stk11-priority-bibliography.csv": "ba8fc92bc5c4abf06411fe443b540c46f825cef63cde6de70966f85bd86527d1",
     "nonsignificant-results-language.md": "e30fd3d814d366fc6d07782fcaf87cd8d686149bea0eb77c1af02cb8d5b7241d",
     "preprint-source-register.csv": "124f11a4c4ae93bdddaad530cff45879bc9de124968c9cabd90cc6056d1ba20e",
-    "profile-registry.md": "ca84ade67bc7ec52c49df2815d3280c8b66bb061c84e0d4f32e8f985ab2efa28",
+    "profile-registry.md": "5fb9b22207b30b56574b674ed3c93a7a2fd4cebc8ee8a46da7a5966ab11e71b4",
     "retrieval-annotations.json": "871923f66768865d2cedd1a91f4955912ea466d9b2cf8b1f065df28a7b0fef34",
     "retrieval-vocabulary.json": "76aff19c97597fe75658c1b6c01940509eac448673df1a0737552a86a39b53e2",
     "source-context-rechecks.json": "450d417ca90a8042d3a0a053249562435778fb06304a52e1f2371f968bf948d6",
-    "source-pdf-locators.json": "c328e4a366ab14c585cf960498deee408afbe9a12bbd90ada6779f8665680836",
+    "source-pdf-locators.json": "e2f8b433a123d08dd695bf48212918f9fdc5ddff4f8bb3427e04ba433aa269c7",
     "source-rechecks/2026-09-28-26069186.md": "88a07c8135e97f2c514c15f37f62e2cfb388077ed0554e8a211286b95206a879",
     "source-rechecks/2026-09-28-29773717.md": "c36826a6ef31349e3c558b4823e8a29dfe2ea8b87f5fcd7041ca380cc8168cb0",
     "source-rechecks/2026-09-28-32709715.md": "51760e1627a552963251fdde81d36f017ddf06c871abb4d60d140d75788a23d3",
@@ -504,9 +513,9 @@
     "source-rechecks/2026-09-28-42268349.md": "3c0239cd8c9f738f613c537bf67b79832695dca3fa18b2ca02f52b6116b79a83",
     "source-rechecks/2026-09-28-42409117.md": "b7901dd2d5c3bbfb674131e070c17be76f84d5ebf1a1599cc9c16df0c9989419",
     "source-rechecks/2026-10-02-34740862.md": "411d99676ee3151bbbfdbe6137406e2b8ccd61a59659c4fddd968ac2147f2c1e",
-    "source-scope-backfill.json": "5f68fb211ff69648ad85ade794b61de2ab61d8c18c1803a8c3e25021112579b7",
-    "source-version-register.csv": "071b8778fc8aac75321bd4e7386e1c40394f206d00846cac6e9b51641869e85d",
-    "stk11-priority-references.md": "783f122c5fbf29a9d7bf0f70f0ed13d63817c39dedff8b1ac53e51a02ff057a1",
+    "source-scope-backfill.json": "464fa7044e5febb9ba17a9d58026036441d66e161c92c54ed6adbf10dcefb425",
+    "source-version-register.csv": "fa5b8cf9e8f6b983fc64eddbb45e4366beb951838eed6978bb9fe246d0fa2b59",
+    "stk11-priority-references.md": "04a7b17bd3521a4239939bcdbb8daa002403c59c1492f5dbcd4e08f90e24bb5f",
     "stk11-writing-reference-map.json": "9f54d75f0e97f890a63163f16a8d101245cb697594afa08737fea61be12dead0",
     "sttt-2024-38177135-language.md": "9fbbc44aec8ae9d2f800a23927ad05c0e38e73c771e13902c7d927d5a9a8dad7",
     "sttt-corpus-bibliography.csv": "4c3e9a4808b5b1826d81da5c67622783872e401c4632ebfaba1aab87b807444e",
@@ -517,34 +526,34 @@
   },
   "context_rechecked_entries": 149,
   "source_scope_status": {
-    "curated-source-scope": 350
+    "curated-source-scope": 354
   },
   "source_facet_coverage": {
     "disease_ids": {
-      "identified-not-exhaustive": 350
+      "identified-not-exhaustive": 354
     },
     "tissue_ids": {
-      "identified-not-exhaustive": 297,
+      "identified-not-exhaustive": 301,
       "not-curated-not-absent": 53
     },
     "model_ids": {
-      "identified-not-exhaustive": 350
+      "identified-not-exhaustive": 354
     },
     "use_roles": {
-      "identified-not-exhaustive": 350
+      "identified-not-exhaustive": 354
     }
   },
   "pdf_locator_states": {
-    "no-literal-match-needs-context-review": 3998,
-    "synthetic-not-a-verbatim-quotation": 5169,
-    "pdf-text-located": 1222
+    "no-literal-match-needs-context-review": 4081,
+    "synthetic-not-a-verbatim-quotation": 5315,
+    "pdf-text-located": 1238
   },
-  "source_pdf_count": 350,
-  "entries_with_recorded_page_hints": 5889,
+  "source_pdf_count": 354,
+  "entries_with_recorded_page_hints": 6132,
   "expression_annotation_status": {
-    "lexical-topic-candidate": 10238,
+    "lexical-topic-candidate": 10483,
     "curated-expression-topic": 151
   },
   "scope": "Cross-journal retrieval view only; source corpora, counts and reading statuses remain separate.",
-  "index_file_sha256": "564761e722243efef6a5e931fff091a936fd915b425821932a04865e5b1a171f"
+  "index_file_sha256": "260fad32042573141a44d6a7c65f4a259978f95b9df2374567275a210aa0d2ac"
 }

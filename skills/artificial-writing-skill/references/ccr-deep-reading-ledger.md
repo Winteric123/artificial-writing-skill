@@ -341,6 +341,10 @@ Join this ledger to [ccr-corpus-bibliography.csv](ccr-corpus-bibliography.csv) b
 | 32241817 | 2026-10-07 | Precision Medicine and Imaging | genomics;bulk-transcriptomics;NOTCH;STK11-context;immunotherapy;clinical-correlative;interaction-analysis;statistics; [ccr-2020-32241817-reading.md](ccr-2020-32241817-reading.md); [ccr-2020-32241817-language.md](ccr-2020-32241817-language.md); all 13 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
 | 31694835 | 2026-10-07 | Translational Cancer Mechanisms and Therapy | organoid;genomics;copy-number;bulk-transcriptomics;PDX;preclinical-models;targeted-therapy;basic-experiments;statistics; [ccr-2020-31694835-reading.md](ccr-2020-31694835-reading.md); [ccr-2020-31694835-language.md](ccr-2020-31694835-language.md); all 14 physical pages read and visually checked; external supplements not supplied; initial reading, not acceptance-reviewed |
 
+| 31548347 | 2026-10-18 | Translational Cancer Mechanisms and Therapy | [ccr-2020-31548347-language.md](ccr-2020-31548347-language.md); 19-page author manuscript and all main figures/tables read; external supplements not supplied; numerical source alerts retained |
+| 32102950 | 2026-10-18 | Precision Medicine and Imaging | [ccr-2020-32102950-language.md](ccr-2020-32102950-language.md); 15-page author manuscript and all main figures/tables read; external supplements not supplied |
+| 33323401 | 2026-10-18 | Clinical Trials: Immunotherapy | [ccr-2021-33323401-language.md](ccr-2021-33323401-language.md); all 10 supplied pages and main figures/tables read; external supplements not supplied |
+
 ## Pending or incomplete deep reads
 
 There are **0 eligible registered CCR articles whose main-text deep reading is not complete** as of2026-10-07. This applies only to registered sources, not all CCR publications. Exact membership is the included rows in the quality register minus the completed PMID set above. Do not infer unread versus partially read from PDF presence.
@@ -385,3 +389,10 @@ This pass covered all 123 records selected by the current installed membership r
 For every included supplied main PDF, the body Results narrative was reread together with the Abstract/Discussion endpoint hierarchy and sufficient Methods context to identify the analysis unit, comparison, inferential status and evidence layer. The registered main PDFs total 2,390 physical pages; the paper-level audit records 598 Results pages reread and 313 selected source or central result/figure/table pages visually checked. The resulting [source-linked catalog](ccr-2025-2026-results-logic.json) contains 267 complete body-result sentence records, with 2-3 records per paper. Use [the writing guide](ccr-2025-2026-results-logic-writing.md) to select patterns by result polarity, inferential status, omics/efficacy/prognosis domain and rhetorical position; use [the audit](ccr-2025-2026-results-logic-audit.md) for PDF version, SHA-256, physical-page spans, visual verification, mechanical text-match status and paper-level narrative logic.
 
 This was a focused Results-language and logic rereading, not a new six-gate acceptance review. It does not change historical `main_read` dates, article review status, quality-register decisions, STK11 membership or the 15-paper STK11 CCR subset. Separate or unprovided supplements remain outside this pass. Mechanical PDF text matching is retained as an audit aid and is not substituted for the recorded visual page checks.
+
+
+## 2026-10-18 supplied desktop intake
+
+Three newly completed CCR main articles, with historical 2020 issue-year exceptions explicitly supplied by the user. Supplied author manuscripts retain that version; no new acceptance or highlight is inferred. [Batch learning and source-linked sentence route](supplement-ccr-2026-10-18-intake.md).
+
+The three dated completion rows are in the authoritative Completed deep reads table above. Their full titles and actual versions are recorded in [the intake manifest](ccr-2026-10-18-reading-manifest.csv).

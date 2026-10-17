@@ -414,7 +414,18 @@
       "file": "mmc3.pdf",
       "status": "skipped_by_user_incomplete",
       "source_preserved": true,
-      "reason": "User explicitly skipped the interrupted subtask; no completion, catalog or cleanup promotion."
+      "reason": "User explicitly skipped the interrupted subtask; no completion, catalog or cleanup promotion.",
+      "later_resolution": {
+        "resolved_on": "2026-10-18",
+        "status": "main_text_deep_read_complete",
+        "journal": "Cell Metabolism",
+        "reading_evidence": "cell-metabolism-2022-35504291-language.md",
+        "intake_guide": "supplement-ccr-2026-10-18-intake.md",
+        "sentence_catalog": "supplement-ccr-2026-10-18-sentence-patterns.json",
+        "review_status": "not_reviewed",
+        "supplement_status": "partially_reviewed",
+        "boundary": "Historical skip and source_preserved refer to the October 2 snapshot. The later user-supplied 35-page main/STAR Methods/embedded S1-S6 PDF was read on October 18 and its exact version archived. No independent six-gate acceptance or external Data S1 review is implied. It remains outside the October 2 intake membership and STK11 highlight selection."
+      }
     }
   ]
 }

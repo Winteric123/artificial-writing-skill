@@ -6998,6 +6998,130 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "Article-level context, not a pairing of every assay with every specimen/model. Secondary reanalysis is not new sampling. No disease-wide style or acceptance promotion."
+    },
+    "31548347": {
+      "disease_ids": [
+        "nsclc",
+        "lung-adenocarcinoma",
+        "lung-squamous"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "mouse-cell-line",
+        "gemm"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "ccr-2020-31548347-language.md",
+      "source_reference_line": 1,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-18; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "fdca3a695ed113292efa6bfb4a1c907388f6bf99af4b58207a0429d8fbfc8786",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Pathway-mutant union is not a triple-mutant group; clinical matched association and murine deletion causality are separate. TTF is not PFS; source Table2 HR/CI/P inconsistencies must not be reused as verified adjusted estimates."
+    },
+    "32102950": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "clinical-trial"
+      ],
+      "source_reference": "ccr-2020-32102950-language.md",
+      "source_reference_line": 1,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-18; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Four-gene negative-predictor union is not a four-gene co-mutant genotype or independently validated gene-specific treatment predictor. Endpoint-optimized pTMB cutoff is cohort/assay specific; OS P=.061 and mutation-only comparisons remain nonsignificant."
+    },
+    "33323401": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "ccr-2021-33323401-language.md",
+      "source_reference_line": 1,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-18; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "4213d99a43342b117c98dc2e82b79d6726197b186ffd1a6e4a03659b27c176cd",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "STK11/KEAP1-mutant means either-gene union, not confirmed double mutation. Single-arm small subgroup and a 12-month OS landmark signal do not establish overall OS benefit, a randomized treatment interaction or reversal of STK11-mediated resistance."
+    },
+    "35504291": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung",
+        "plasma",
+        "blood",
+        "spleen"
+      ],
+      "model_ids": [
+        "mouse",
+        "gemm",
+        "human-cell-line",
+        "ex-vivo",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "cross-tumor-methods"
+      ],
+      "source_reference": "cell-metabolism-2022-35504291-language.md",
+      "source_reference_line": 1,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-18; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "9ee358e7d3b13c3806cc3d48761da5e1de5e583c07d54391a1aef18a00eb05c2",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated."
     }
   }
 }

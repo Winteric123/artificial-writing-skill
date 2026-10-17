@@ -154,6 +154,13 @@
       "ledger": "nature-cell-biology-deep-reading-ledger.md",
       "quality": "nature-cell-biology-reading-quality-register.csv",
       "language_catalog": "nature-cell-biology-section-language-catalog.csv"
+    },
+    "cell-metabolism": {
+      "name": "Cell Metabolism",
+      "bibliography": "cell-metabolism-corpus-bibliography.csv",
+      "ledger": "cell-metabolism-deep-reading-ledger.md",
+      "quality": "cell-metabolism-reading-quality-register.csv",
+      "language_catalog": "cell-metabolism-section-language-catalog.csv"
     }
   }
 }
