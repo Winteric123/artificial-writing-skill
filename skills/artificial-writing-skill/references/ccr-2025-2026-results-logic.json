@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "scope": "Source-linked body-Results sentence patterns and paper-level narrative logic from all currently included Clinical Cancer Research issue-year 2025-2026 articles in the installed library; excluded narrative/commentary records are omitted.",
   "project_scope": {
     "membership_source": "library-index.csv",
@@ -133,7 +133,8 @@
       "42714874",
       "42714875",
       "42752799",
-      "42765908"
+      "42765908",
+      "42848316"
     ],
     "coverage_unit": "per-paper-results-logic-with-source-sentences",
     "paper_coverage_complete": true,
@@ -6328,6 +6329,67 @@
       "record_ids": [
         "ccr-logic-42765908-c-081",
         "ccr-logic-42765908-c-082"
+      ]
+    },
+    {
+      "pmid": "42848316",
+      "doi": "10.1158/1078-0432.CCR-26-2630",
+      "year": "2026",
+      "title": "Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+      "supplied_pdf_version": "publisher_hosted_manuscript_pdf",
+      "physical_pages": 30,
+      "results_pages_read": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visual_pages_checked": [
+        11,
+        12,
+        14,
+        15,
+        25,
+        26,
+        27,
+        29,
+        30
+      ],
+      "result_profile": [
+        "positive",
+        "negative",
+        "mixed"
+      ],
+      "domains": [
+        "genomics",
+        "clinical_efficacy",
+        "liquid_biopsy",
+        "preclinical_functional"
+      ],
+      "central_results": [
+        "Distinct secondary RET substitutions produced inhibitor-specific resistance profiles across two fusion contexts; the variants did not measurably increase baseline growth, and one patient switch was clinically concordant with the preclinical sensitivity pattern."
+      ],
+      "narrative_sequence": [
+        "Nominate variants by unbiased screening, validate drug-specific sensitivity and mechanism in engineered models, test next-generation inhibitors, then close with bounded clinical concordance."
+      ],
+      "negative_result_handling": "The absence of a detectable growth-rate difference separates acquired drug resistance from baseline proliferative advantage; it does not negate the validated shift in inhibitor sensitivity or prove the absence of every fitness effect.",
+      "omics_logic": "Mutation screening and validation in KIF5B-RET and CCDC6-RET contexts define drug- and fusion-context-specific resistance; they do not estimate mutation prevalence in patients.",
+      "efficacy_logic": "A prolonged response after one inhibitor switch supports clinical concordance only; a single patient cannot establish comparative efficacy or a preferred treatment sequence.",
+      "prognosis_logic": "The study does not support an independent prognostic claim.",
+      "claim_boundaries": [
+        "AlphaFold 3 conformations are structural hypotheses rather than direct binding measurements.",
+        "The clinical inhibitor-switch evidence is limited to one patient and cannot establish a sequencing standard.",
+        "Separate supplements were not supplied for this intake."
+      ],
+      "record_ids": [
+        "ccr-logic-42848316-ret-001",
+        "ccr-logic-42848316-ret-002",
+        "ccr-logic-42848316-ret-003"
       ]
     }
   ],
@@ -28327,6 +28389,246 @@
       "claim_ceiling": "exploratory_hypothesis",
       "evidence_boundary": "This secondary ORR signal does not override the negative PFS primary endpoint and has a wide interval.",
       "logic_note_zh": "该句位于结果叙述的contrast位置，承担state_exception功能。"
+    },
+    {
+      "id": "ccr-logic-42848316-ret-001",
+      "pmid": "42848316",
+      "doi": "10.1158/1078-0432.CCR-26-2630",
+      "title": "Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "source": {
+        "pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+        "supplied_pdf_version": "publisher_hosted_manuscript_pdf",
+        "physical_page": 11,
+        "physical_pages": [
+          11
+        ],
+        "section": "results",
+        "subheading": "LentiMutate identified secondary resistant mutations to selective RET inhibitors",
+        "source_sentence": "Collectively, our data shows that distinct secondary mutations emerge with resistance to selpercatinib and pralsetinib.",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42848316",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. The source's original subject-verb agreement was preserved verbatim."
+      },
+      "domains": [
+        "genomics",
+        "preclinical_functional"
+      ],
+      "result_polarity": "positive",
+      "inferential_status": "not_reported",
+      "result_type": "resistance_mechanism",
+      "evidence_layer": "preclinical",
+      "rhetorical_function": "state_primary_finding",
+      "logic_position": "opening",
+      "target_sections": [
+        "abstract-results",
+        "results",
+        "discussion"
+      ],
+      "use_when_zh": "用于概括功能筛选与后续验证共同支持的药物特异性耐药谱。",
+      "do_not_use_when_zh": "不可把细胞模型中的候选突变谱改写为患者中的突变患病率、临床发生率或既定测序策略。",
+      "rewrite_template": "[screening_and_validation] identified [drug_specific_resistance_pattern], supporting [bounded_mechanistic_interpretation].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "screening_and_validation",
+          "description": "User-supplied screening and orthogonal validation evidence",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "drug_specific_resistance_pattern",
+          "description": "User-supplied inhibitor- and context-specific resistance pattern",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "bounded_mechanistic_interpretation",
+          "description": "User-supplied mechanistic interpretation bounded to the tested models",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "distinct secondary mutations",
+        "selpercatinib",
+        "pralsetinib"
+      ],
+      "claim_ceiling": "preclinical_mechanism_only",
+      "evidence_boundary": "The screen and engineered-model validation establish drug-specific resistance phenotypes in the tested systems, not patient-level mutation frequency or a preferred clinical sequence.",
+      "logic_note_zh": "先用总括句收束筛选结果，再由逐突变药敏、结构假说和有限临床观察分层展开；机制结论停留在前临床证据层。"
+    },
+    {
+      "id": "ccr-logic-42848316-ret-002",
+      "pmid": "42848316",
+      "doi": "10.1158/1078-0432.CCR-26-2630",
+      "title": "Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "source": {
+        "pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+        "supplied_pdf_version": "publisher_hosted_manuscript_pdf",
+        "physical_page": 11,
+        "physical_pages": [
+          11
+        ],
+        "section": "results",
+        "subheading": "Secondary resistant mutations displayed drug-specific sensitivity to selective RET inhibitors",
+        "source_sentence": "However, we did not observe significant differences in growth rates of cells expressing the original fusions and those harboring secondary mutations, suggesting that these mutations do not provide proliferative advantage (Supplemental Figure 2A-B).",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42848316",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. No numerical test statistic was reported in the main text."
+      },
+      "domains": [
+        "preclinical_functional"
+      ],
+      "result_polarity": "negative",
+      "inferential_status": "nonsignificant",
+      "result_type": "functional_perturbation",
+      "evidence_layer": "preclinical",
+      "rhetorical_function": "report_null_result",
+      "logic_position": "qualification",
+      "target_sections": [
+        "results",
+        "discussion"
+      ],
+      "use_when_zh": "用于说明某一阴性功能结果如何缩小机制解释范围，同时保留另一已验证表型的意义。",
+      "do_not_use_when_zh": "不可把未观察到生长率差异写成正式等效，也不可扩展为突变对所有适应度维度均无影响。",
+      "rewrite_template": "Although [variants] did not produce a detectable difference in [baseline_growth_measure], they altered [drug_sensitivity_measure], separating [resistance_phenotype] from [intrinsic_fitness].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "variants",
+          "description": "User-supplied variants or molecular alterations",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "baseline_growth_measure",
+          "description": "User-supplied baseline growth or fitness measure",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "drug_sensitivity_measure",
+          "description": "User-supplied drug-sensitivity readout supported by the study",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "resistance_phenotype",
+          "description": "User-supplied bounded resistance phenotype",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "intrinsic_fitness",
+          "description": "User-supplied baseline fitness construct that was not detectably altered",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "growth rates",
+        "secondary mutations",
+        "proliferative advantage"
+      ],
+      "claim_ceiling": "preclinical_mechanism_only",
+      "evidence_boundary": "A nonsignificant growth comparison is not an equivalence test; it narrows the interpretation to the measured baseline-growth assay while the separately validated drug-sensitivity phenotype remains informative.",
+      "logic_note_zh": "这是“阴性结果仍有解释价值”的典型逻辑：阴性生长结果用于排除简单的增殖优势解释，而不是否定药物特异性耐药表型。"
+    },
+    {
+      "id": "ccr-logic-42848316-ret-003",
+      "pmid": "42848316",
+      "doi": "10.1158/1078-0432.CCR-26-2630",
+      "title": "Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "source": {
+        "pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+        "supplied_pdf_version": "publisher_hosted_manuscript_pdf",
+        "physical_page": 15,
+        "physical_pages": [
+          15
+        ],
+        "section": "results",
+        "subheading": "Response to subsequent therapies in patients with acquired RET G810X solvent-front mutations following progression on selpercatinib in patients with RET fusion-positive NSCLC",
+        "source_sentence": "During pralsetinib treatment, he had a radiological partial response and the RET G810N allele frequency decreased by approximately 50% (Blue line in Figure 6B).",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42848316",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. The observation concerns one retrospectively described patient."
+      },
+      "domains": [
+        "clinical_efficacy",
+        "liquid_biopsy"
+      ],
+      "result_polarity": "positive",
+      "inferential_status": "not_reported",
+      "result_type": "treatment_activity",
+      "evidence_layer": "clinical",
+      "rhetorical_function": "integrate_evidence_layers",
+      "logic_position": "closure",
+      "target_sections": [
+        "results",
+        "discussion"
+      ],
+      "use_when_zh": "用于并列呈现单个患者的影像学缓解与循环肿瘤DNA变化，并明确其仅为临床一致性观察。",
+      "do_not_use_when_zh": "不可由单病例推出总体疗效、比较优势、标准治疗顺序或可靠的分子反应替代终点。",
+      "rewrite_template": "In one patient, [treatment_switch] was followed by [radiographic_response] alongside [molecular_change], providing clinical concordance with [preclinical_pattern] but not establishing [population_level_claim].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "treatment_switch",
+          "description": "User-supplied treatment switch or exposure",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "radiographic_response",
+          "description": "User-supplied radiographic outcome",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "molecular_change",
+          "description": "User-supplied molecular or liquid-biopsy change",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "preclinical_pattern",
+          "description": "User-supplied preclinical sensitivity pattern that the case is concordant with",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "population_level_claim",
+          "description": "User-supplied population-level efficacy or sequencing claim that remains unsupported",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "radiological partial response",
+        "RET G810N allele frequency",
+        "approximately 50%"
+      ],
+      "claim_ceiling": "clinical_activity_only",
+      "evidence_boundary": "This is a single-patient, retrospective clinical observation. It supports concordance with the preclinical profile but cannot establish comparative efficacy, causal molecular response or an inhibitor-sequencing standard.",
+      "logic_note_zh": "结尾把影像学与cfDNA变化并列，以“临床一致性”而非“确证疗效”连接前临床发现，并立即压低到单病例证据上限。"
     }
   ]
 }

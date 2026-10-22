@@ -28,11 +28,17 @@ class October7CCRIntake(unittest.TestCase):
             self.assertEqual(library[pmid]['title'], article['title'])
             self.assertEqual(library[pmid]['main_read_completed_on'], '2026-10-07')
             self.assertEqual(library[pmid]['reading_stage'], 'main_text_deep_read_complete')
-            self.assertEqual(library[pmid]['review_status'], 'not_reviewed')
+            self.assertEqual(article['review_status'], 'not_reviewed')
+            self.assertEqual(library[pmid]['review_status'], quality[pmid]['review_status'])
+            self.assertIn(quality[pmid]['review_status'], {'passed', 'needs_correction'})
             self.assertEqual(library[pmid]['supplement_status'], 'not_supplied')
             self.assertEqual(library[pmid]['stk11_highlight'], 'no')
-            for gate in ('coverage', 'evidence', 'results', 'language', 'traceability', 'transfer'):
-                self.assertEqual(quality[pmid][gate + '_check'], 'pending')
+            gates = [quality[pmid][gate + '_check'] for gate in ('coverage', 'evidence', 'results', 'language', 'traceability', 'transfer')]
+            if quality[pmid]['review_status'] == 'passed':
+                self.assertEqual(gates, ['pass'] * 6)
+            else:
+                self.assertIn('fail', gates)
+            self.assertTrue((REF / quality[pmid]['review_record']).is_file())
         self.assertNotIn('35504291', PMIDS)
 
     def test_historical_scope_is_not_legacy_quantitative_learning(self):

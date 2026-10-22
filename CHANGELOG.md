@@ -2,6 +2,21 @@
 
 Selected, dated changes to the repository and its distributed skill. This log is not an exhaustive commit history, a versioned release declaration, or a live reading-status register. Current coverage and acceptance states are maintained in the [literature index](skills/artificial-writing-skill/references/library-index.md) and linked journal registers.
 
+## 2026-10-22
+
+### CCR source review and whole-sentence retrieval
+
+- Reconciled CCR six-gate review outcomes, source-specific corrections and language alerts, keeping main-text reading, scientific acceptance and reusable-sentence coverage distinct. The [generic rewrite contract](skills/artificial-writing-skill/references/source-sentence-rewriting.md) now connects the six-gate, CCR/STK11 and dated supplied-paper catalogs.
+- Added the [2026-10-19 CCR/JTO intake](skills/artificial-writing-skill/references/supplement-ccr-jto-2026-10-19-intake.md), preserving registered versions, physical-page provenance and the separate DOI-only source boundary.
+- Added a generated six-gate sentence catalog with 356 complete records from 154 papers, reconciling all 275 included CCR records. Nine articles lack a selected summary and 112 have no complete reusable sample; these are sentence-coverage limits, not unread-article counts.
+
+### Live reuse controls and writing behavior
+
+- Unified live review status, article alerts and applicable expression rules across all three source-sentence retrieval routes. Audit access remains explicit; `--accepted-only` requires current `passed`/`usable_with_boundary` status. Both dedicated renderers recheck the authorities and refuse held or unregistered records; missing authority files fail closed.
+- Kept paper-narrative controls separate from linked sentence controls, without exposing held source wording through linked-record metadata. Language-index-only stable IDs are disclosed as unmapped rather than guessed across namespaces.
+- Clarified actionable requests for missing effect estimates, compatible confidence intervals or inferential tests, while preserving supplied valid tests and clean-only translation scope.
+- Verified the complete 291-test skill suite locally, including 12 new live-control regressions, plus three targeted first-response writing cases. The earlier 45-case baseline and its one uncertain verdict remain unchanged; this is not a new full-corpus reading or a general writing-quality claim. Private test outputs and source PDFs remain outside the repository.
+
 ## 2026-10-18
 
 ### Supplied-paper reading and sentence patterns

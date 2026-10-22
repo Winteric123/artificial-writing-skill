@@ -37,10 +37,13 @@ class LocalStk11Intake(unittest.TestCase):
                     '36958689':'2026-09-28','41690367':'2026-09-29',
                     '34450259':'2026-09-29','41161592':'2026-09-28','42749050':'2026-09-29'}
         library = {r['pmid']:r for r in rows('library-index.csv')}
+        quality = {}
+        for name in ('ccr-reading-quality-register.csv', 'jto-reading-quality-register.csv'):
+            quality.update({r['pmid']: r for r in rows(name)})
         for pmid, completed in expected.items():
             with self.subTest(pmid=pmid):
                 self.assertEqual(library[pmid]['main_read_completed_on'], completed)
-                self.assertEqual(library[pmid]['review_status'], 'not_reviewed')
+                self.assertEqual(library[pmid]['review_status'], quality[pmid]['review_status'])
 
     def test_language_units_have_single_paper_source_lines(self):
         jto = [r for r in rows('jto-section-language-catalog.csv') if r['source_article_ids'] == '37495171']

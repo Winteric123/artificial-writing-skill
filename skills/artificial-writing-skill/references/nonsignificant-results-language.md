@@ -6,7 +6,7 @@ All sentence frames below are synthetic. Replace every bracketed slot with suppl
 
 For PDF-traceable examples from the 15-paper CCR/STK11 subset, use [the dedicated sentence-rewriting guide](stk11-sentence-rewriting.md) and filter `search_stk11_sentence_templates.py` by `null_or_inconclusive`, `exploratory_subgroup_signal`, `nonsignificant`, `undetermined`, or `mixed`. The source sentence documents a literature wording pattern; only the synthetic template may be adapted, and only with facts from the user's result.
 
-For broader 2025-2026 CCR Results logic, use [the 123-paper guide](ccr-2025-2026-results-logic-writing.md) and filter `search_ccr_results_logic.py` independently by `--result-polarity negative|mixed|inconclusive|descriptive` and `--inferential-status nonsignificant|mixed|not_reported`. Do not equate these axes: an unfavorable result can be statistically significant, and a favorable observed direction can have unreported inferential status.
+For broader 2025-2026 CCR Results logic, use [the 124-paper guide](ccr-2025-2026-results-logic-writing.md) and filter `search_ccr_results_logic.py` independently by `--result-polarity negative|mixed|inconclusive|descriptive` and `--inferential-status nonsignificant|mixed|not_reported`. Do not equate these axes: an unfavorable result can be statistically significant, and a favorable observed direction can have unreported inferential status.
 
 ## First decide what kind of result this is
 
@@ -20,6 +20,8 @@ Before choosing a sentence, identify:
 6. whether the proposed value is clinical, biological, methodological, or only hypothesis-generating.
 
 Do not call a result nonsignificant when neither a compatible inferential test nor an interval for the same estimand, model, and analysis is available. A missing exact P value does not erase the information in a compatible CI, and a missing CI does not erase a supplied valid test result; state exactly what is known and what is missing. Do not call a study underpowered from `P > .05` alone; use that term only when the design, power calculation, sample-size rationale, or supplied context supports it.
+
+When drafting or interpreting incomplete statistical results, name the specific information needed to resolve the uncertainty, rather than ending at “cannot be determined.” If neither a compatible interval nor a test is available, request a between-group effect estimate with a compatible confidence interval and/or an appropriate inferential test. If a valid test or compatible interval is already supplied, retain that information and request only the missing magnitude or precision. Put the request in a brief query or, when appropriate, the Discussion; do not add it to a clean-only translation.
 
 ## Decision matrix
 
@@ -71,6 +73,8 @@ Use `numerically higher/lower` only when the direction is worth reporting and th
 - `The supplied data show the direction of the difference but do not permit an inference about its magnitude or statistical uncertainty.`
 - `[Outcome] differed between [groups] (P = [value]); however, the effect estimate and confidence interval were not reported, so the magnitude and precision of the difference cannot be assessed.`
 - `The 95% CI for [effect] [included/excluded] the null ([lower]–[upper]); the exact P value was not reported.`
+
+A bounded Discussion sentence or separate query can make the next step explicit: `A between-group effect estimate with a compatible confidence interval and/or an appropriate inferential test is needed to assess the magnitude, uncertainty, and statistical significance of this observation.` Use only the missing components appropriate to the supplied evidence.
 
 Do not silently convert missing statistical information into a nonsignificant result.
 

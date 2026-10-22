@@ -4,20 +4,20 @@
 
 - Journal: Clinical Cancer Research; issue years 2025 and 2026.
 - Current installed membership rule: journal=CCR, issue year in 2025/2026, eligibility=included.
-- Included papers: 123 (2025: 48; 2026: 75). Excluded 2025 commentary/review records: 2.
-- Registered supplied main-PDF extent: 2390 physical pages.
-- Focused body-Results pages recorded as reread: 598; selected source/central-result pages visually checked: 313.
-- Source-linked full-sentence records: 267; the actual per-paper range is 2-3 records (the validator permits 2-4).
+- Included papers: 124 (2025: 48; 2026: 76). Excluded 2025 commentary/review records: 2.
+- Registered supplied main-PDF extent: 2420 physical pages.
+- Focused body-Results pages recorded as reread: 604; selected source/central-result pages visually checked: 322.
+- Source-linked full-sentence records: 270; the actual per-paper range is 2-3 records (the validator permits 2-4).
 - Each PDF path was kept only in the private task manifest. The shared resource retains the registered version, SHA-256, physical page and article identity.
 - Rereading covered the complete body Results narrative, the Abstract/Discussion hierarchy for central findings, and sufficient Methods context to identify analysis units, comparisons and inference. It was not a new six-gate acceptance review and did not change historical main-read dates or review status.
 - Separate or unprovided supplements remain outside this focused rereading unless an existing article record independently states otherwise.
 
 ## Aggregate record profile
 
-- Result polarity: {'descriptive': 22, 'inconclusive': 30, 'mixed': 45, 'negative': 62, 'positive': 108}
-- Inferential status: {'mixed': 27, 'nonsignificant': 62, 'not_applicable': 54, 'not_reported': 57, 'significant': 67}
-- Result types: {'assay_concordance': 11, 'biomarker_association': 19, 'cross_layer_concordance': 3, 'descriptive_frequency': 7, 'diagnostic_performance': 5, 'differential_feature': 14, 'functional_perturbation': 27, 'model_performance': 8, 'negative_primary_endpoint': 4, 'null_biomarker': 26, 'omics_landscape': 2, 'other': 4, 'pathway_or_state': 15, 'pk_pd_exposure': 5, 'resistance_mechanism': 6, 'safety_tolerability': 7, 'subgroup_signal': 26, 'survival_prognosis': 37, 'treatment_activity': 33, 'treatment_efficacy': 8}
-- Domains (multi-label): {'clinical_efficacy': 87, 'diagnostic_model': 15, 'genomics': 40, 'imaging': 5, 'integrated_omics': 23, 'liquid_biopsy': 26, 'metabolomics': 4, 'other': 4, 'pk_pd': 9, 'preclinical_functional': 39, 'prognosis': 70, 'proteomics': 18, 'safety': 11, 'single_cell': 3, 'spatial_omics': 4, 'transcriptomics': 10}
+- Result polarity: {'descriptive': 22, 'inconclusive': 30, 'mixed': 45, 'negative': 63, 'positive': 110}
+- Inferential status: {'mixed': 27, 'nonsignificant': 63, 'not_applicable': 54, 'not_reported': 59, 'significant': 67}
+- Result types: {'assay_concordance': 11, 'biomarker_association': 19, 'cross_layer_concordance': 3, 'descriptive_frequency': 7, 'diagnostic_performance': 5, 'differential_feature': 14, 'functional_perturbation': 28, 'model_performance': 8, 'negative_primary_endpoint': 4, 'null_biomarker': 26, 'omics_landscape': 2, 'other': 4, 'pathway_or_state': 15, 'pk_pd_exposure': 5, 'resistance_mechanism': 7, 'safety_tolerability': 7, 'subgroup_signal': 26, 'survival_prognosis': 37, 'treatment_activity': 34, 'treatment_efficacy': 8}
+- Domains (multi-label): {'clinical_efficacy': 88, 'diagnostic_model': 15, 'genomics': 41, 'imaging': 5, 'integrated_omics': 23, 'liquid_biopsy': 27, 'metabolomics': 4, 'other': 4, 'pk_pd': 9, 'preclinical_functional': 41, 'prognosis': 70, 'proteomics': 18, 'safety': 11, 'single_cell': 3, 'spatial_omics': 4, 'transcriptomics': 10}
 
 The counts describe selected writing-pattern sentences, not the prevalence of scientific findings in the journal. A paper can contain more than one polarity and domain.
 
@@ -4046,3 +4046,40 @@ The counts describe selected writing-pattern sentences, not the prevalence of sc
     - PDF SHA-256: `41965ece8440bcb10876c5861d7d19bf94cd003f1d200107a414ac9bd8d0619e`.
     - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
     - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match.
+
+## PMID 42848316
+
+- Identity: Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC (2026); DOI 10.1158/1078-0432.CCR-26-2630.
+- Supplied PDF: publisher_hosted_manuscript_pdf; SHA-256 `9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359`; 30 physical pages.
+- Focused Results pages reread: 10, 11, 12, 13, 14, 15.
+- Visual pages checked: 11, 12, 14, 15, 25, 26, 27, 29, 30.
+- Result profile: positive, negative, mixed.
+- Domains: genomics, clinical_efficacy, liquid_biopsy, preclinical_functional.
+- Central results:
+  - Distinct secondary RET substitutions produced inhibitor-specific resistance profiles across two fusion contexts; the variants did not measurably increase baseline growth, and one patient switch was clinically concordant with the preclinical sensitivity pattern.
+- Narrative sequence:
+  - Nominate variants by unbiased screening, validate drug-specific sensitivity and mechanism in engineered models, test next-generation inhibitors, then close with bounded clinical concordance.
+- Negative-result handling: The absence of a detectable growth-rate difference separates acquired drug resistance from baseline proliferative advantage; it does not negate the validated shift in inhibitor sensitivity or prove the absence of every fitness effect.
+- Omics logic: Mutation screening and validation in KIF5B-RET and CCDC6-RET contexts define drug- and fusion-context-specific resistance; they do not estimate mutation prevalence in patients.
+- Efficacy/activity logic: A prolonged response after one inhibitor switch supports clinical concordance only; a single patient cannot establish comparative efficacy or a preferred treatment sequence.
+- Prognosis logic: The study does not support an independent prognostic claim.
+- Claim/source boundaries:
+  - AlphaFold 3 conformations are structural hypotheses rather than direct binding measurements.
+  - The clinical inhibitor-switch evidence is limited to one patient and cannot establish a sequencing standard.
+  - Separate supplements were not supplied for this intake.
+- Selected source-linked sentence records:
+  - `ccr-logic-42848316-ret-001`: physical page(s) 11; positive; not_reported; resistance_mechanism; state_primary_finding; opening.
+    - Source sentence: Collectively, our data shows that distinct secondary mutations emerge with resistance to selpercatinib and pralsetinib.
+    - PDF SHA-256: `9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. The source's original subject-verb agreement was preserved verbatim.
+  - `ccr-logic-42848316-ret-002`: physical page(s) 11; negative; nonsignificant; functional_perturbation; report_null_result; qualification.
+    - Source sentence: However, we did not observe significant differences in growth rates of cells expressing the original fusions and those harboring secondary mutations, suggesting that these mutations do not provide proliferative advantage (Supplemental Figure 2A-B).
+    - PDF SHA-256: `9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. No numerical test statistic was reported in the main text.
+  - `ccr-logic-42848316-ret-003`: physical page(s) 15; positive; not_reported; treatment_activity; integrate_evidence_layers; closure.
+    - Source sentence: During pralsetinib treatment, he had a radiological partial response and the RET G810N allele frequency decreased by approximately 50% (Blue line in Figure 6B).
+    - PDF SHA-256: `9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. The observation concerns one retrospectively described patient.

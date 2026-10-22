@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-19",
+  "scope": "Thirty source-linked sentence patterns from ten fully read user-supplied CCR/JTO PDFs. Nine use verified PMIDs; the RET-MAP article remains DOI-locked and uses source_id without an invented PMID.",
+  "verification": "All wording was checked against the local extraction and the rendered physical page. Whitespace, line-break hyphenation and extraction glyphs may be normalized; scientific values and claim direction are unchanged. Templates accept user facts only.",
+  "papers": [
+    {
+      "pmid": "38578683",
+      "title": "Co-occurring EGFR p.E709X Mutation Mediates Primary Resistance to the Third-Generation EGFR-TKIs in EGFR p.G719X-Mutant Patients with Advanced NSCLC",
+      "doi": "10.1158/1078-0432.CCR-23-3302",
+      "journal": "Clinical Cancer Research",
+      "year": "2024",
+      "version": "publisher_typeset_pdf",
+      "sha256": "7a339160ef52117411e95dee515c25a4ba49dda32c2cd77de033490e7d78a40e",
+      "physical_pages": 11,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Retrospective regimen-specific association with model concordance; afatinib null comparisons do not establish equivalence and one body-text P-value conflicts with the abstract and Figure 2C."
+    },
+    {
+      "pmid": "42848316",
+      "title": "Drug-specific resistance mechanisms to RET inhibitors in RET fusion-positive NSCLC",
+      "doi": "10.1158/1078-0432.CCR-26-2630",
+      "journal": "Clinical Cancer Research",
+      "year": "2026",
+      "version": "publisher_hosted_manuscript_pdf",
+      "sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+      "physical_pages": 30,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Drug- and fusion-context-specific preclinical resistance; AlphaFold 3 is hypothesis-generating and a response in one patient does not establish a sequencing standard."
+    },
+    {
+      "pmid": "31548343",
+      "title": "Co-occurring Alterations in the RAS-MAPK Pathway Limit Response to MET Inhibitor Treatment in MET Exon 14 Skipping Mutation-Positive Lung Cancer",
+      "doi": "10.1158/1078-0432.CCR-19-1667",
+      "journal": "Clinical Cancer Research",
+      "year": "2020",
+      "version": "author_manuscript",
+      "sha256": "77cbc42e11cdc50ed1a050355ecc138830cd163894605c6e08381018ec6c3559",
+      "physical_pages": 23,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "The baseline pathway contrast is nominally significant but fails multiplicity correction; cfDNA dynamics and model rescue are not radiographic patient efficacy."
+    },
+    {
+      "source_id": "DOI:10.1158/1078-0432.CCR-26-2942",
+      "title": "Second- and third-line outcomes after selective RET inhibitor failure in RET fusion-positive metastatic lung cancer: A real-world analysis from the RET-MAP registry",
+      "doi": "10.1158/1078-0432.CCR-26-2942",
+      "journal": "Clinical Cancer Research",
+      "year": "2026",
+      "version": "publisher_hosted_manuscript_pdf",
+      "sha256": "832a294af0f8a0560af111909338cad507af76bba9d99daaf50af71ed370bd90",
+      "physical_pages": 19,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "DOI-locked pending an authoritative PMID; retrospective small-cohort regimen comparisons do not establish added immunotherapy benefit, equivalence, or zero efficacy."
+    },
+    {
+      "pmid": "33992811",
+      "title": "The Impact of Durvalumab on Local-Regional Control in Stage III NSCLCs Treated With Chemoradiation and on KEAP1-NFE2L2-Mutant Tumors",
+      "doi": "10.1016/j.jtho.2021.04.019",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2021",
+      "version": "author_manuscript",
+      "sha256": "de5459e0834771f84367cd59d7c1ad5320bd67cb1026ca5ff783a685f27b85fc",
+      "physical_pages": 17,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Retrospective noncontemporaneous cohorts; the absence of an association under durvalumab is not proof of mitigation without a treatment-by-genotype interaction."
+    },
+    {
+      "pmid": "31634668",
+      "title": "LKB1 Deficiency Renders NSCLC Cells Sensitive to ERK Inhibitors",
+      "doi": "10.1016/j.jtho.2019.10.009",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2020",
+      "version": "publisher_typeset_pdf",
+      "sha256": "cf7f06640270fee531fe9d7695f2d267abe4e9db678f00b276b148ec688a83ea",
+      "physical_pages": 11,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Entirely preclinical conditional vulnerability; PI3K-AKT activation can abolish monotherapy sensitivity and no patient efficacy is established."
+    },
+    {
+      "pmid": "33887464",
+      "title": "LKB1 Down-Modulation by miR-17 Identifies Patients With NSCLC Having Worse Prognosis Eligible for Energy-Stress-Based Treatments",
+      "doi": "10.1016/j.jtho.2021.04.005",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2021",
+      "version": "publisher_typeset_pdf",
+      "sha256": "734cd8cb99c086c49e57d08d63e972b7f2554e42576a259ba3d16fb3ef313935",
+      "physical_pages": 14,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "The PDX volume endpoint was negative despite biomarker changes; the clinical association is prognostic and context-restricted, not treatment-predictive."
+    },
+    {
+      "pmid": "34601169",
+      "title": "Comprehensive Analysis of TP53 and KEAP1 Mutations and Their Impact on Survival in Localized- and Advanced-Stage NSCLC",
+      "doi": "10.1016/j.jtho.2021.08.764",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2022",
+      "version": "publisher_typeset_pdf",
+      "sha256": "e5e5b5a387029acb7e612304fcb6ff0439e04fd6eeed643e023ab3eeb05af446",
+      "physical_pages": 13,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Prognostic only, with stage- and mutation-class-dependent associations and separate gene-model denominators; no treatment prediction is supported."
+    },
+    {
+      "pmid": "35490853",
+      "title": "Discovery of Biomarkers of Resistance to Immune Checkpoint Blockade in NSCLC Using High-Plex Digital Spatial Profiling",
+      "doi": "10.1016/j.jtho.2022.04.009",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2022",
+      "version": "author_manuscript",
+      "sha256": "a09377d054ce1d0474c9ea72ebcf7aea5c4474f5d5ae4a7f0051ffff268b1533",
+      "physical_pages": 17,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Compartment-specific treatment-associated evidence; no randomized comparator or treatment-by-marker interaction supports a predictive claim."
+    },
+    {
+      "pmid": "37473958",
+      "title": "KEAP1/NFE2L2 Pathway Signature Outperforms KEAP1/NFE2L2 Mutation Status and Reveals Alternative Pathway-Activating Mutations in NSCLC",
+      "doi": "10.1016/j.jtho.2023.07.016",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2023",
+      "version": "publisher_typeset_pdf",
+      "sha256": "99cc48491f0be389d3dcf44432bc0d17625f3573d07c95dbb49e50cbc873732e",
+      "physical_pages": 18,
+      "asset": "supplement-ccr-jto-2026-10-19-intake.md",
+      "boundary": "Held-out within-center evaluation, not external validation; nominal pooled survival does not establish independent prognostic superiority, and bulk immune estimates are not cell counts."
+    }
+  ],
+  "records": [
+    {
+      "id": "intake-38578683-omics-context",
+      "pmid": "38578683",
+      "source": {"pdf_sha256": "7a339160ef52117411e95dee515c25a4ba49dda32c2cd77de033490e7d78a40e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [4], "section": "results", "source_sentence": "Patients harboring the concomitant EGFR p.E709X mutation displayed a similar tumor mutation burden (TMB) compared with those without EGFR p.E709X mutation (P = 0.16).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "genomic_context_negative", "use_scenario": "Report an unchanged omics feature beside a recurrent compound genotype.", "rewrite_template": "[Alteration A] recurrently co-occurred with [alteration B], whereas [omics feature] was not detectably different between groups (P=[ ]).", "evidence_boundary": "A nonsignificant contrast is not proof that the distributions are identical; preserve assay, group and uncertainty."
+    },
+    {
+      "id": "intake-38578683-regimen-positive",
+      "pmid": "38578683",
+      "source": {"pdf_sha256": "7a339160ef52117411e95dee515c25a4ba49dda32c2cd77de033490e7d78a40e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [5], "section": "results", "source_sentence": "Co-occurring EGFR p.E709X mutations exerted a detrimental effect on outcomes in patients treated with the third-generation EGFR-TKIs (G719X/E709X vs. G719X, ORR: 0.00% vs. 47.62%, P < 0.001; mPFS: 7.18 vs. 14.2 months, P = 0.042).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "regimen_specific_clinical_association", "use_scenario": "Link response-rate and time-to-event findings within one molecular-treatment stratum.", "rewrite_template": "Within the [treatment] cohort, [alteration] was associated with a lower [response endpoint] and shorter [time-to-event endpoint], a pattern concordant with [orthogonal evidence].", "evidence_boundary": "Retrospective subgroup association; no randomized head-to-head comparison or formal treatment-by-genotype interaction."
+    },
+    {
+      "id": "intake-38578683-afatinib-null",
+      "pmid": "38578683",
+      "source": {"pdf_sha256": "7a339160ef52117411e95dee515c25a4ba49dda32c2cd77de033490e7d78a40e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [1], "section": "abstract_results", "source_sentence": "Conversely, no significant difference was found in the treatment efficacy of afatinib between EGFR p.G719X/E709X and EGFR p.G719X patients.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "small_subgroup_nonsignificant_efficacy", "use_scenario": "Describe an imprecise null efficacy comparison without claiming equivalence.", "rewrite_template": "Neither [endpoint 1] nor [endpoint 2] differed detectably under [regimen]; however, the small subgroup and uncertainty preclude an equivalence claim.", "evidence_boundary": "Use abstract/Figure 2C P=0.99, not the conflicting body glyph P<0.99; nonsignificance is not equivalence."
+    },
+    {
+      "id": "intake-42848316-context-dependent-oncogenicity",
+      "pmid": "42848316",
+      "source": {"pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [12], "section": "results", "source_sentence": "Neither WT RET nor A883V-mutant RET supported Ba/F3 cell proliferation in the absence of IL-3, nor did they elevate phosphorylated RET levels, indicating that the A883V mutation alone does not have oncogenic activity.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "functional_context_negative", "use_scenario": "Separate drug resistance in a fusion context from autonomous oncogenic activity.", "rewrite_template": "Although [variant] altered drug sensitivity in [fusion/model context], it did not support [growth assay] or increase [signaling readout] when tested alone.", "evidence_boundary": "Restricted to the tested model and assay; absence of IL-3-independent growth does not prove no biological effect in every context."
+    },
+    {
+      "id": "intake-42848316-structural-hypothesis",
+      "pmid": "42848316",
+      "source": {"pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [16], "section": "discussion", "source_sentence": "However, these AF3 predictions are hypothesis-generating, and any causal relationship between fusion-partner-imposed kinase-domain geometry and drug resistance should be interpreted with caution.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_linebreak_normalized"},
+      "content_type": "structural_model_qualification", "use_scenario": "Present a computational structural explanation after functional observations.", "rewrite_template": "The predicted [conformation/interface] offers a structural hypothesis for [context-dependent phenotype], but direct experimental validation is required.", "evidence_boundary": "A predicted conformation is not direct structural observation or causal validation."
+    },
+    {
+      "id": "intake-42848316-single-patient-concordance",
+      "pmid": "42848316",
+      "source": {"pdf_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [15], "section": "results", "source_sentence": "The patient remained on pralsetinib for 22 months until progression of bone metastasis was observed.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "normalized_literal"},
+      "content_type": "single_patient_clinical_concordance", "use_scenario": "Use an individual durable response as concordance with a preclinical resistance profile.", "rewrite_template": "A durable response in one patient was clinically concordant with the preclinical profile but cannot establish comparative efficacy or a preferred sequence.", "evidence_boundary": "One patient cannot define population efficacy, resistance frequency, or treatment sequencing."
+    },
+    {
+      "id": "intake-31548343-nominal-fdr-negative",
+      "pmid": "31548343",
+      "source": {"pdf_sha256": "77cbc42e11cdc50ed1a050355ecc138830cd163894605c6e08381018ec6c3559", "supplied_pdf_version": "author_manuscript", "physical_pages": [7], "section": "results", "source_sentence": "There remained a trend towards more common detection of RAS-MAPK pathway alterations before treatment in METex14-mutated NSCLC (37.7% vs 19.0%, p-value 0.0297, q-value = 0.297 with correction for multiple hypothesis testing by Benjamini-Hochberg for FDR < 20%).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "nominal_genomic_enrichment_fdr_negative", "use_scenario": "Report a nominal omics contrast that does not survive multiplicity correction.", "rewrite_template": "[Alterations] were nominally more frequent in [group A], but the contrast did not withstand multiplicity correction (q=[ ]), supporting a hypothesis rather than confirmed enrichment.", "evidence_boundary": "The q value controls the claim; do not call this statistically significant enrichment."
+    },
+    {
+      "id": "intake-31548343-longitudinal-cfdna",
+      "pmid": "31548343",
+      "source": {"pdf_sha256": "77cbc42e11cdc50ed1a050355ecc138830cd163894605c6e08381018ec6c3559", "supplied_pdf_version": "author_manuscript", "physical_pages": [7], "section": "results", "source_sentence": "Both MET second-site mutations and RAS pathway alterations are newly detectable following MET TKI treatment.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "normalized_literal"},
+      "content_type": "paired_cfdna_new_detection", "use_scenario": "Describe alterations becoming detectable in paired post-treatment liquid biopsies.", "rewrite_template": "In paired samples, [alteration class] became newly detectable after treatment, consistent with treatment-associated selection but not establishing clonal origin.", "evidence_boundary": "cfDNA cannot determine when or in which anatomical site the clone arose."
+    },
+    {
+      "id": "intake-31548343-functional-rescue",
+      "pmid": "31548343",
+      "source": {"pdf_sha256": "77cbc42e11cdc50ed1a050355ecc138830cd163894605c6e08381018ec6c3559", "supplied_pdf_version": "author_manuscript", "physical_pages": [9], "section": "results", "source_sentence": "Co-treatment with crizotinib and the MEK inhibitor trametinib in order to block both MET signaling and downstream MAPK pathway signaling restored sensitivity to treatment.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "pathway_bypass_rescue", "use_scenario": "Write a mechanistic rescue after engineered resistance.", "rewrite_template": "[Perturbation] increased resistance to [drug], whereas cotargeting [bypass pathway] restored sensitivity in the tested model.", "evidence_boundary": "Model rescue supports mechanism in that system; it is not a demonstrated clinical combination benefit."
+    },
+    {
+      "id": "intake-retmap-regimen-null",
+      "source_id": "DOI:10.1158/1078-0432.CCR-26-2942",
+      "source": {"pdf_sha256": "832a294af0f8a0560af111909338cad507af76bba9d99daaf50af71ed370bd90", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [8], "section": "abstract_results", "source_sentence": "Outcomes were similar with chemotherapy alone versus chemo-immunotherapy for rwPFS (5.9 vs 6.8 months; HR 1.05, p=0.903) and OS (18.5 vs 13.7 months; HR 0.83, p=0.674).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_linebreak_normalized"},
+      "content_type": "observational_regimen_nonsignificant", "use_scenario": "Report no clear added effect in a small nonrandomized regimen comparison.", "rewrite_template": "Outcomes were numerically similar between [regimens] (HR [ ], 95% CI [ ]; P=[ ]); the data provide no clear evidence of an added effect but do not establish equivalence.", "evidence_boundary": "Wide intervals and retrospective selection prevent added-benefit and equivalence claims."
+    },
+    {
+      "id": "intake-retmap-long-tail",
+      "source_id": "DOI:10.1158/1078-0432.CCR-26-2942",
+      "source": {"pdf_sha256": "832a294af0f8a0560af111909338cad507af76bba9d99daaf50af71ed370bd90", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [8], "section": "abstract_results", "source_sentence": "Three patients had rwPFS beyond 24 months with chemo-immunotherapy, all after short first-line SRI exposure.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_linebreak_normalized"},
+      "content_type": "small_long_tail_observation", "use_scenario": "Acknowledge rare prolonged control despite an inconclusive cohort comparison.", "rewrite_template": "Despite the absence of a cohort-level signal, [n] patients experienced control beyond [duration], highlighting a long tail that warrants biomarker investigation.", "evidence_boundary": "The outcome cannot be attributed to immunotherapy because chemotherapy was concurrent and the subgroup was selected."
+    },
+    {
+      "id": "intake-retmap-zero-responses-small-n",
+      "source_id": "DOI:10.1158/1078-0432.CCR-26-2942",
+      "source": {"pdf_sha256": "832a294af0f8a0560af111909338cad507af76bba9d99daaf50af71ed370bd90", "supplied_pdf_version": "publisher_hosted_manuscript_pdf", "physical_pages": [8], "section": "abstract_results", "source_sentence": "Among 32 patients receiving third-line therapy, taxane with or without antiangiogenic therapy was most common, with no responses and median rwPFS of 1.5 months (95% CI 0.8-NR).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "zero_observed_responses_small_cohort", "use_scenario": "Describe poor observed activity without asserting zero efficacy.", "rewrite_template": "No responses were observed among [n] evaluable patients, and median [endpoint] was [ ]; these data indicate poor observed activity in a small cohort rather than proof of zero efficacy.", "evidence_boundary": "Retain the evaluable denominator; an observed zero is not a population-level zero effect."
+    },
+    {
+      "id": "intake-33992811-treatment-cohort",
+      "pmid": "33992811",
+      "source": {"pdf_sha256": "de5459e0834771f84367cd59d7c1ad5320bd67cb1026ca5ff783a685f27b85fc", "supplied_pdf_version": "author_manuscript", "physical_pages": [5], "section": "results", "source_sentence": "The 12-month PFS rate was 59% in the cCRT and durvalumab group compared to 42% in the cCRT alone group (p = 0.019).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "noncontemporaneous_treatment_cohort_outcome", "use_scenario": "Report an outcome difference between retrospective treatment-era cohorts.", "rewrite_template": "At [landmark], [endpoint] was [value] with [regimen B] and [value] with [regimen A] ([reported test]).", "evidence_boundary": "Noncontemporaneous retrospective comparison; do not write randomized treatment efficacy."
+    },
+    {
+      "id": "intake-33992811-genotype-null-under-treatment",
+      "pmid": "33992811",
+      "source": {"pdf_sha256": "de5459e0834771f84367cd59d7c1ad5320bd67cb1026ca5ff783a685f27b85fc", "supplied_pdf_version": "author_manuscript", "physical_pages": [6], "section": "results", "source_sentence": "On univariate analysis, KEAP1/NFE2L2 tumor mutational status did not associate with local-regional control outcomes (p = 0.545).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "genotype_association_not_detected", "use_scenario": "Contrast a genotype association across treatment contexts without claiming reversal.", "rewrite_template": "Whereas [genotype] was associated with poorer [outcome] under [regimen A], this association was not detected under [regimen B]; a treatment-by-genotype interaction was not tested.", "evidence_boundary": "Absence of a within-cohort association is not evidence that treatment neutralized the genotype effect."
+    },
+    {
+      "id": "intake-33992811-composite-null",
+      "pmid": "33992811",
+      "source": {"pdf_sha256": "de5459e0834771f84367cd59d7c1ad5320bd67cb1026ca5ff783a685f27b85fc", "supplied_pdf_version": "author_manuscript", "physical_pages": [6], "section": "results", "source_sentence": "The presence of a coexisting KEAP1, STK11, PBRM1 and SMARCA4 mutations, nor a KRAS mutation associated with local-regional outcomes (p = 0.75 and p = 0.73, respectively).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "pooled_coalteration_null", "use_scenario": "Report a null composite-gene covariate while preventing gene-specific overinterpretation.", "rewrite_template": "Neither [biomarker] nor the composite co-alteration variable was associated with [outcome], although the uncertainty does not exclude a clinically relevant effect.", "evidence_boundary": "A pooled KEAP1/STK11/PBRM1/SMARCA4 variable cannot support an STK11-specific conclusion."
+    },
+    {
+      "id": "intake-31634668-isogenic-sensitivity",
+      "pmid": "31634668",
+      "source": {"pdf_sha256": "cf7f06640270fee531fe9d7695f2d267abe4e9db678f00b276b148ec688a83ea", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [3], "section": "results", "source_sentence": "SCH772984 treatment gave a marked, statistically significant response in LKB1-deficient cells compared to the parental cell line.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "isogenic_conditional_drug_sensitivity", "use_scenario": "State a genotype-dependent drug response in engineered models.", "rewrite_template": "Genetic ablation of [gene] sensitized isogenic models to [drug], whereas [restoration/control] reduced that response.", "evidence_boundary": "Preclinical model result; do not infer patient response or a clinical biomarker cutoff."
+    },
+    {
+      "id": "intake-31634668-bypass-null-response",
+      "pmid": "31634668",
+      "source": {"pdf_sha256": "cf7f06640270fee531fe9d7695f2d267abe4e9db678f00b276b148ec688a83ea", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [7], "section": "results", "source_sentence": "As predicted, SCH772984 resulted in an equal lack of response in clones and in the parental cell line.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "bypass_pathway_abrogates_vulnerability", "use_scenario": "Explain loss of an otherwise genotype-linked response under pathway activation.", "rewrite_template": "Under constitutive [bypass pathway] activation, the genotype-linked response to [drug] was not observed in either engineered or parental cells.", "evidence_boundary": "A context-dependent null result does not invalidate sensitivity in other molecular backgrounds."
+    },
+    {
+      "id": "intake-31634668-cotargeting-rescue",
+      "pmid": "31634668",
+      "source": {"pdf_sha256": "cf7f06640270fee531fe9d7695f2d267abe4e9db678f00b276b148ec688a83ea", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [7], "section": "results", "source_sentence": "Co-treatment with the PI3K p110alpha-specific inhibitor PIK-75 restored the sensitivity of LKB1-deficient cells to the ERK inhibitor whereas no effect was observed for the parental line.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "selective_cotargeting_rescue", "use_scenario": "Describe restoration of response by pathway cotargeting.", "rewrite_template": "Cotargeting [bypass pathway] restored sensitivity to [primary inhibitor] selectively in [genotype] models.", "evidence_boundary": "Model-level rescue does not establish clinical combination efficacy or safety."
+    },
+    {
+      "id": "intake-33887464-volume-negative-biology-positive",
+      "pmid": "33887464",
+      "source": {"pdf_sha256": "734cd8cb99c086c49e57d08d63e972b7f2554e42576a259ba3d16fb3ef313935", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [5], "section": "results", "source_sentence": "Metformin treatment induced no significant decrease in tumor volume in both models. Nevertheless, metformin treatment resulted in a significant decrease in MIB-1 staining and pS6/S6 expression ratio only in the LKB1WT/miR17L PDX.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "negative_tumor_endpoint_with_biomarker_change", "use_scenario": "Preserve a negative efficacy endpoint while reporting orthogonal biological activity.", "rewrite_template": "Although [treatment] did not significantly reduce tumor volume, biomarker-dependent [apoptosis/signaling] changes indicated biological activity without demonstrated antitumor efficacy.", "evidence_boundary": "Biomarker modulation cannot replace the negative tumor-volume endpoint."
+    },
+    {
+      "id": "intake-33887464-overall-null-subgroup-positive",
+      "pmid": "33887464",
+      "source": {"pdf_sha256": "734cd8cb99c086c49e57d08d63e972b7f2554e42576a259ba3d16fb3ef313935", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [7], "section": "results", "source_sentence": "The prognostic role of miR-17 expression level on OS was not observed in the whole series (p = 0.1). Of note, considering only LKB1WT patients, miR-17H significantly discriminated patients with worse OS (p = 0.004).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "overall_null_context_subgroup_association", "use_scenario": "Report a subgroup-restricted prognostic association after an overall null result.", "rewrite_template": "[Marker] was not associated with [endpoint] overall; however, a context-restricted association emerged in [molecular subgroup].", "evidence_boundary": "Preserve subgroup status and avoid implying a treatment interaction or universal effect."
+    },
+    {
+      "id": "intake-33887464-borderline-adjusted-prognosis",
+      "pmid": "33887464",
+      "source": {"pdf_sha256": "734cd8cb99c086c49e57d08d63e972b7f2554e42576a259ba3d16fb3ef313935", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [10], "section": "results", "source_sentence": "The multivariable analysis, adjusted for stage and histotype, revealed that miR-17H expression still retains the negative predictive value within LKB1WT patients and not in the whole series (HR: 3.1, p = 0.049 and HR: 1.9, p = 0.128, respectively).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "borderline_adjusted_prognostic_association", "use_scenario": "Report an imprecise adjusted subgroup estimate cautiously.", "rewrite_template": "After adjustment for [covariates], the association persisted in [subgroup] but not in the overall cohort; the borderline estimate warrants cautious interpretation.", "evidence_boundary": "Despite the source's word predictive, no treatment interaction was evaluated; use prognostic terminology."
+    },
+    {
+      "id": "intake-34601169-separate-gene-models",
+      "pmid": "34601169",
+      "source": {"pdf_sha256": "e5e5b5a387029acb7e612304fcb6ff0439e04fd6eeed643e023ab3eeb05af446", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [3], "section": "methods", "source_sentence": "Only a subset of patients received KEAP1 analysis (3022 of 6297 cases). Therefore, to compensate for different group sizes, separate multivariable analyses for TP53 and for KEAP1 were performed.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_linebreak_normalized"},
+      "content_type": "gene_specific_missingness_models", "use_scenario": "Explain separate genomic survival models when testing denominators differ.", "rewrite_template": "Because [gene/assay] results were available for only [n/N], separate multivariable models were fitted for [gene A] and [gene B].", "evidence_boundary": "Keep the gene-specific denominators explicit; separate models do not make populations identical."
+    },
+    {
+      "id": "intake-34601169-stage_dependent_prognosis",
+      "pmid": "34601169",
+      "source": {"pdf_sha256": "e5e5b5a387029acb7e612304fcb6ff0439e04fd6eeed643e023ab3eeb05af446", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [1, 6], "section": "abstract_results_and_figure", "source_fragments": ["In 4779 patients with advanced-stage tumors, TP53 mutations did not predict outcome in univariable analysis.", "HR TP53 truncating 1.10 (0.95-1.26, p=0.202).", "KEAP1 mutations remained a negative prognostic factor."], "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "stage_and_mutation_class_specific_prognosis", "use_scenario": "Contrast mutation-class prognosis across localized and advanced disease.", "rewrite_template": "In [stage A], [mutation class] retained an adverse association after adjustment, whereas the same association was not observed in [stage B].", "evidence_boundary": "Prognostic, not treatment-predictive; preserve stage, mutation class, model and testing denominator."
+    },
+    {
+      "id": "intake-34601169-exploratory_coalteration",
+      "pmid": "34601169",
+      "source": {"pdf_sha256": "e5e5b5a387029acb7e612304fcb6ff0439e04fd6eeed643e023ab3eeb05af446", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [1], "section": "abstract_results", "source_sentence": "Those with KEAP1-mutant tumors with co-occurring TP53 missense mutations had longer overall survival than those with KEAP1-mutant tumors with wild-type or truncating TP53 mutations.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_linebreak_normalized"},
+      "content_type": "exploratory_coalteration_prognosis", "use_scenario": "Describe longer observed survival in a genomic co-alteration subgroup.", "rewrite_template": "Within [driver]-mutant disease, the [co-alteration] subgroup had longer observed survival; without treatment-level data, this remains hypothesis-generating.", "evidence_boundary": "Do not call the co-alteration protective or treatment modifying."
+    },
+    {
+      "id": "intake-35490853-spatial-discovery-validation",
+      "pmid": "35490853",
+      "source": {"pdf_sha256": "a09377d054ce1d0474c9ea72ebcf7aea5c4474f5d5ae4a7f0051ffff268b1533", "supplied_pdf_version": "author_manuscript", "physical_pages": [2], "section": "abstract_results", "source_sentence": "Of 71 candidate protein biomarkers, CD66b in the CD45+CD68 molecular compartment (immune stroma) predicted significantly shorter OS (HR 1.31, p=0.016) and was chosen for validation.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "compartment_specific_spatial_protein_association", "use_scenario": "State the measured spatial compartment and orthogonal validation sequence.", "rewrite_template": "Using compartment-specific spatial profiling, [marker] in [compartment] was associated with [outcome] and was advanced to orthogonal validation.", "evidence_boundary": "Use association rather than prediction unless a treatment interaction establishes predictive utility."
+    },
+    {
+      "id": "intake-35490853-os_positive_pfs_negative",
+      "pmid": "35490853",
+      "source": {"pdf_sha256": "a09377d054ce1d0474c9ea72ebcf7aea5c4474f5d5ae4a7f0051ffff268b1533", "supplied_pdf_version": "author_manuscript", "physical_pages": [6], "section": "results", "source_sentence": "The difference in PFS, although favoring CD66b low cases, was not statistically significant.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "normalized_literal"},
+      "content_type": "mixed_endpoint_biomarker_result", "use_scenario": "Report a reproducible OS association alongside a nonsignificant PFS result.", "rewrite_template": "Although [PFS endpoint] was directionally unfavorable, it was imprecise and nonsignificant; the more reproducible [OS endpoint] warrants cautious interpretation.", "evidence_boundary": "Do not merge OS and PFS into a uniformly positive resistance claim."
+    },
+    {
+      "id": "intake-35490853-indicative-not-predictive",
+      "pmid": "35490853",
+      "source": {"pdf_sha256": "a09377d054ce1d0474c9ea72ebcf7aea5c4474f5d5ae4a7f0051ffff268b1533", "supplied_pdf_version": "author_manuscript", "physical_pages": [2], "section": "abstract_discussion", "source_sentence": "Using the DSP technique, we have discovered that CD66b expression is indicative of resistance to ICI therapy in NSCLC.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_normalized"},
+      "content_type": "treatment_associated_not_predictive", "use_scenario": "Translate an indicative biomarker claim into interaction-aware language.", "rewrite_template": "The treated-versus-nontreated pattern is compatible with treatment-context relevance, but the absence of an interaction analysis precludes a predictive claim.", "evidence_boundary": "Non-ICI cohort nonsignificance does not prove absence of general prognosis; no randomization or formal interaction was reported."
+    },
+    {
+      "id": "intake-37473958-heldout-performance",
+      "pmid": "37473958",
+      "source": {"pdf_sha256": "99cc48491f0be389d3dcf44432bc0d17625f3573d07c95dbb49e50cbc873732e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [5], "section": "results", "source_sentence": "The final prediction of KEAP1/NFE2L2 mutations in the validation data set (n = 108) resulted in an AUC of 0.895 (CI: 0.8-0.979) and an accuracy of 0.87 (0.792-0.927).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "heldout_within_center_classifier_performance", "use_scenario": "Report signature discrimination in a held-out subset.", "rewrite_template": "The signature discriminated [label/state] in a held-out cohort, with AUC [ ] and accuracy [ ], but was not evaluated against an independent functional gold standard.", "evidence_boundary": "The split came from one center; call this held-out internal evaluation, not external validation."
+    },
+    {
+      "id": "intake-37473958-pooled_nominal_histology_negative",
+      "pmid": "37473958",
+      "source": {"pdf_sha256": "99cc48491f0be389d3dcf44432bc0d17625f3573d07c95dbb49e50cbc873732e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [5], "section": "results", "source_sentence": "Neither in LUAD (p = 0.062) nor in LUSC (p = 0.419) could the K1N2 score significantly identify patient subgroups with poor outcome; when analyzing patients regardless of histology, only the signature achieved significant results (p = 0.047).", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "pooled_nominal_survival_histology_negative", "use_scenario": "Qualify pooled nominal survival separation with negative within-histology analyses.", "rewrite_template": "The score achieved nominal pooled survival separation, whereas within-[histology] comparisons were nonsignificant; independent prognostic superiority was not established.", "evidence_boundary": "No multivariable incremental-performance comparison or external prognostic validation was reported."
+    },
+    {
+      "id": "intake-37473958-bulk_immune_inference",
+      "pmid": "37473958",
+      "source": {"pdf_sha256": "99cc48491f0be389d3dcf44432bc0d17625f3573d07c95dbb49e50cbc873732e", "supplied_pdf_version": "publisher_typeset_pdf", "physical_pages": [11], "section": "results", "source_sentence": "We calculated the StromalScore and the ImmuneScore using the ESTIMATE method as a general estimation of increased tumor stroma and immune cell infiltration.", "visual_verified": true, "verification_record": "source-rechecks/2026-10-19-supplement-ccr-jto.md", "text_extraction_match": "whitespace_and_pdf_glyph_normalized"},
+      "content_type": "bulk_expression_immune_inference", "use_scenario": "Describe immune-state estimates derived from bulk expression.", "rewrite_template": "Higher [signature] values were associated with lower expression-derived immune estimates, consistent with an immune-depleted transcriptional state rather than direct measurement of immune-cell abundance.", "evidence_boundary": "ESTIMATE/xCell outputs are bulk-expression inferences, not measured cell counts, spatial localization, or treatment response."
+    }
+  ]
+}

@@ -7122,6 +7122,276 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated."
+    },
+    "38578683": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "pleural-fluid"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "mouse-cell-line",
+        "organoid",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism",
+        "structural-analogue"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 35,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "7a339160ef52117411e95dee515c25a4ba49dda32c2cd77de033490e7d78a40e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Clinical cohorts, Ba/F3 assays, structural modeling and one patient-derived organoid are distinct evidence layers. Their agreement does not create a randomized regimen comparison or a treatment-by-genotype interaction."
+    },
+    "42848316": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "computational",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative",
+        "structural-analogue"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 56,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "LentiMutate and engineered fusion models define preclinical resistance phenotypes; structural predictions remain hypotheses, and plasma/case-series observations do not establish population-level efficacy or a sequencing standard."
+    },
+    "31548343": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "mouse-cell-line"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 76,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "77cbc42e11cdc50ed1a050355ecc138830cd163894605c6e08381018ec6c3559",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Cohort-level cfDNA profiling, paired pre/post-treatment samples and engineered resistance assays are separate analysis units. Circulating variants do not identify tissue origin or prove clonal timing."
+    },
+    "33992811": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 116,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "de5459e0834771f84367cd59d7c1ad5320bd67cb1026ca5ff783a685f27b85fc",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "The noncontemporaneous treatment cohorts and tumor-genomic strata support retrospective associations only. Absence of a treatment-by-genotype interaction precludes a predictive claim."
+    },
+    "31634668": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "mouse-cell-line",
+        "mouse",
+        "gemm",
+        "cdx"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 136,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "cf7f06640270fee531fe9d7695f2d267abe4e9db678f00b276b148ec688a83ea",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "The source is entirely preclinical. Isogenic cells, xenografts and genetically engineered mice support a conditional mechanism but do not establish patient efficacy or clinical safety."
+    },
+    "33887464": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung"
+      ],
+      "model_ids": [
+        "human-cell-line",
+        "pdx",
+        "mouse",
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 157,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "734cd8cb99c086c49e57d08d63e972b7f2554e42576a259ba3d16fb3ef313935",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Cellular target validation, PDX pharmacodynamics, retrospective cohorts and TCGA analyses are distinct layers. Biomarker changes without tumor-volume reduction are not efficacy, and prognostic associations are not treatment-predictive."
+    },
+    "34601169": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 177,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "e5e5b5a387029acb7e612304fcb6ff0439e04fd6eeed643e023ab3eeb05af446",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Localized and advanced cohorts use different denominators and models. Mutation-class survival associations are prognostic and do not establish treatment modification."
+    },
+    "35490853": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-clinical"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 198,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "a09377d054ce1d0474c9ea72ebcf7aea5c4474f5d5ae4a7f0051ffff268b1533",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "GeoMx compartments, QIF validation and treated versus non-treated cohorts remain separate. Protein-marker associations without randomization or interaction analysis do not establish predictive benefit."
+    },
+    "37473958": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "lung-squamous",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-tissue",
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "supplement-ccr-jto-2026-10-19-intake.md",
+      "source_reference_line": 218,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-19; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "99cc48491f0be389d3dcf44432bc0d17625f3573d07c95dbb49e50cbc873732e",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "TCGA and single-center NanoString cohorts are distinct. Held-out within-center evaluation is not external validation, and bulk-expression immune estimates are not direct cell counts."
     }
   }
 }

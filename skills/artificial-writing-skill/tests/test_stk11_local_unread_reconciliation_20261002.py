@@ -102,6 +102,15 @@ class LocalUnreadReconciliation(unittest.TestCase):
                     if row.get('later_resolution', {}).get('status') == 'main_text_deep_read_complete'}
         self.assertEqual(resolved, {'35504291'})
         new |= resolved
+        subsequent = {
+            row['pmid'] for row in rows('supplement-ccr-jto-2026-10-19-reading-manifest.csv')
+            if row['pmid']
+            and row['reading_stage'] == 'main_text_deep_read_complete'
+            and row['formal_library_status'] == 'included'
+        }
+        strict_ids = {row['pmid'] for row in strict}
+        self.assertEqual(subsequent & strict_ids, {'33887464'})
+        new |= subsequent
         self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in strict), 48 + len(new & {r['pmid'] for r in strict}))
         self.assertEqual(sum(self.library.get(row['pmid'], {}).get('reading_stage') == 'main_text_deep_read_complete' for row in appendix), 2 + len(new & {r['pmid'] for r in appendix}))
 

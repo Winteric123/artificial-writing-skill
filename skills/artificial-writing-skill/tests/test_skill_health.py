@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from check_skill_health import (
     check,
     check_ccr_results_logic,
+    check_ccr_source_sentences,
     check_inventory,
     check_links,
     check_project_membership,
@@ -31,11 +32,14 @@ class SkillHealth(unittest.TestCase):
         self.assertEqual((result['project']['legacy_core'], result['project']['legacy_support']), (13, 51))
         self.assertEqual(result['sentence_templates']['papers'], 15)
         self.assertTrue(result['sentence_templates']['fulltext_coverage'])
-        self.assertEqual(result['ccr_results_logic']['papers'], 123)
+        self.assertEqual(result['ccr_results_logic']['papers'], 124)
         self.assertEqual(
             (result['ccr_results_logic']['year_2025'], result['ccr_results_logic']['year_2026']),
-            (48, 75),
+            (48, 76),
         )
+        self.assertEqual(result['ccr_source_sentences']['reconciled_articles'], 275)
+        self.assertEqual(result['ccr_source_sentences']['records'], 356)
+        self.assertEqual(result['ccr_source_sentences']['errors'], [])
 
     def test_sentence_source_identity_corruption_is_reported_by_health(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -62,6 +66,22 @@ class SkillHealth(unittest.TestCase):
             path.write_text(json.dumps(catalog), encoding='utf-8')
             errors = check_ccr_results_logic(root)['errors']
             self.assertTrue(any('PDF hash disagrees' in error for error in errors))
+
+    def test_ccr_source_sentence_dependency_corruption_is_reported_by_health(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary).resolve()
+            shutil.copytree(ROOT / 'references', root / 'references')
+            (root / 'scripts').mkdir()
+            shutil.copy2(
+                ROOT / 'scripts/build_ccr_recheck_sentence_catalog.py',
+                root / 'scripts/build_ccr_recheck_sentence_catalog.py',
+            )
+            path = root / 'references/ccr-six-gate-source-sentence-templates.json'
+            catalog = json.loads(path.read_text(encoding='utf-8'))
+            catalog['dependencies']['register']['sha256'] = '0' * 64
+            path.write_text(json.dumps(catalog), encoding='utf-8')
+            errors = check_ccr_source_sentences(root)['errors']
+            self.assertIn('Stale CCR source-sentence dependency: register', errors)
 
     def test_missing_and_escaping_links_are_detected(self):
         with tempfile.TemporaryDirectory() as temporary:

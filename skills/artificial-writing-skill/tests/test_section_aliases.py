@@ -27,11 +27,11 @@ class SectionAliases(unittest.TestCase):
             'figure': ['Figure legends', 'figure-legend', 'figure-legends', '图注'],
         }
         for canonical, aliases in groups.items():
-            expected = search(self.entries, section=canonical, limit=100)
+            expected = search(self.entries, section=canonical, include_held=True, limit=100)
             self.assertGreater(expected['matched_count'], 0)
             for alias in aliases:
                 with self.subTest(section=canonical, alias=alias):
-                    actual = search(self.entries, section=alias, limit=100)
+                    actual = search(self.entries, section=alias, include_held=True, limit=100)
                     self.assertEqual(actual['matched_count'], expected['matched_count'])
                     self.assertEqual([entry['stable_id'] for entry in actual['entries']], [entry['stable_id'] for entry in expected['entries']])
 

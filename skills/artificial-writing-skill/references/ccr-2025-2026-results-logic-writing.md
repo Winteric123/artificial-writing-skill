@@ -1,6 +1,6 @@
 # CCR 2025-2026 Results logic: omics, efficacy, and prognosis
 
-Use this route when a user needs a whole Results sentence or paragraph patterned on the currently included 2025-2026 *Clinical Cancer Research* original articles. The linked [catalog](ccr-2025-2026-results-logic.json) covers 123 included issue-year records (48 from 2025 and 75 from 2026) and 267 complete body-Results source sentences; the two excluded 2025 narrative/commentary records are not language-learning sources. [The audit](ccr-2025-2026-results-logic-audit.md) records the actual supplied PDF version, 598 focused Results pages, 313 visually checked source or central-result pages, physical-page spans, text-extraction match status, and per-paper result logic. Visual transcription and mechanical text matching are reported separately. This is a source-grounded writing resource, not independent validation of every scientific claim or supplement.
+Use this route when a user needs a whole Results sentence or paragraph patterned on the currently included 2025-2026 *Clinical Cancer Research* original articles. The linked [catalog](ccr-2025-2026-results-logic.json) covers 124 included issue-year records (48 from 2025 and 76 from 2026) and 270 complete body-Results source sentences; the two excluded 2025 narrative/commentary records are not language-learning sources. [The audit](ccr-2025-2026-results-logic-audit.md) records the actual supplied PDF version, 604 focused Results pages, 322 visually checked source or central-result pages, physical-page spans, text-extraction match status, and per-paper result logic. Visual transcription and mechanical text matching are reported separately. This is a source-grounded writing resource, not independent validation of every scientific claim or supplement.
 
 ## Decide three things before choosing a sentence
 
@@ -110,11 +110,14 @@ Search body Results sentences and paper-level paragraph logic separately:
 ```powershell
 python scripts/search_ccr_results_logic.py --domain integrated_omics --result-polarity mixed --section results --json
 python scripts/search_ccr_results_logic.py --domain clinical_efficacy --result-type negative_primary_endpoint --json
+python scripts/search_ccr_results_logic.py --domain prognosis --accepted-only --json
 python scripts/search_ccr_results_logic.py --domain prognosis --inferential-status nonsignificant --json
 python scripts/search_ccr_results_logic.py --paper-logic --domain integrated_omics --query "survival" --json
 ```
 
 Every sentence hit returns the paper, actual body-Results source sentence and physical page or contiguous page span, result type, polarity, inferential status, rhetorical function, logic position, use boundary, visual-verification record, text-extraction match status, and a synthetic en-US template. Inspect these together. A mechanical nonmatch remains explicit rather than being silently upgraded; it does not negate the recorded visual transcription. The source sentence is provenance for a writing pattern, not evidence for the user's new result.
+
+Sentence, paper-logic and rendering outputs also resolve the current CCR review status and language alerts at query time through the shared sentence-control layer. Default search is an audit view and may include restricted records with explicit states. Use `--accepted-only` for writing selection: an article must be currently `passed` and the selected record must remain `usable_with_boundary` after applicable expression rules. A source transcription can remain correct while its article requires correction; retain both facts. Paper-level output reports linked sentence controls separately, without treating a restriction on one sentence as a restriction on every sentence in the article. Stable-ID-only rules from the general language index remain explicitly unmapped across ID namespaces.
 
 To render one template, supply every slot explicitly:
 
@@ -126,6 +129,8 @@ python scripts/search_ccr_results_logic.py --template-id <ID> --render --json `
 ```
 
 Use the actual slot names returned by the selected record. Never fill a missing value from the source paper. Source genes, drugs, cohorts, estimates, cutoffs, endpoints, and interpretations are protected from silent transfer.
+
+Rendering rechecks current controls and rejects correction-held, unreviewed, unregistered, quarantined or source-check records. Search without `--render` to inspect their provenance and restrictions; audit visibility does not authorize generation from a held record.
 
 ## Final check
 

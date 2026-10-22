@@ -128,6 +128,10 @@ foreach ($article in $sectionIndexedReadings) {
         all_pmids = @($article.pmid)
     }
 }
+$assets["supplement-ccr-jto-2026-10-19-intake.md"] = [ordered]@{
+    source_set = "ccr-jto-2026-10-19-intake"
+    all_pmids = @("31548343", "38578683", "42848316")
+}
 
 $rules = @{}
 
@@ -330,6 +334,23 @@ Add-Rule $centralAsset "Abstract" "Methods frames" "abstract-methods" "" "design
 Add-Rule $centralAsset "Abstract" "Results frames" "abstract-results" "" "estimate-comparison-finding" "mixed-biomedical" "sentence-frame" "mixed" $all39 "cross-corpus-synthetic-frame"
 Add-Rule $centralAsset "Abstract" "Conclusion frames" "abstract-conclusion" "" "bounded-synthesis-validation" "mixed-biomedical" "sentence-frame" "mixed" $all39 "cross-corpus-synthetic-frame"
 Add-Rule $centralAsset "Abstract" "Abstract architecture" "abstract-background" "abstract-objective;abstract-methods;abstract-results;abstract-conclusion" "abstract-architecture" "mixed-biomedical" "paragraph-architecture" "mixed" $all39 "cross-corpus-synthetic-architecture"
+
+$intake20261019Asset = "supplement-ccr-jto-2026-10-19-intake.md"
+$intake20261019Container = "CCR section-language catalog frames"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 31548343 - Methods design" "methods" "results;discussion" "methods-design" "cfDNA;targeted-genomics;longitudinal-resistance;functional-experiments;MET;RAS-MAPK" "retrospective-observational-plus-preclinical" @("31548343") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 31548343 - Omics mechanism" "results" "methods;discussion" "omics-mechanism" "cfDNA;targeted-genomics;co-alteration;longitudinal-resistance;MET;RAS-MAPK" "retrospective-observational-plus-preclinical" @("31548343") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 31548343 - Clinical efficacy" "results" "discussion" "clinical-efficacy" "targeted-therapy;MET;RAS-MAPK;clinical-outcome;functional-experiments;statistics" "retrospective-observational-plus-preclinical" @("31548343") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 31548343 - Uncertainty boundary" "results" "discussion" "uncertainty-boundary" "genomics;statistics;multiple-testing" "retrospective-observational" @("31548343") "sentence-frame" "synthetic-model"
+
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 38578683 - Methods design" "methods" "results;discussion" "methods-design" "targeted-genomics;clinical-efficacy;structural-modeling;functional-experiments;organoid" "retrospective-observational-plus-preclinical" @("38578683") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 38578683 - Omics mechanism" "results" "discussion" "omics-mechanism" "targeted-genomics;EGFR;co-alteration;targeted-therapy;resistance" "retrospective-observational-plus-preclinical" @("38578683") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 38578683 - Clinical efficacy" "results" "discussion" "clinical-efficacy" "EGFR;targeted-therapy;clinical-outcome;statistics" "retrospective-observational" @("38578683") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 38578683 - Uncertainty boundary" "results" "discussion" "uncertainty-boundary" "clinical-efficacy;statistics;targeted-therapy" "retrospective-observational" @("38578683") "sentence-frame" "synthetic-model"
+
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 42848316 - Methods design" "methods" "results;discussion" "methods-design" "RET;functional-screen;structural-modeling;targeted-therapy;resistance" "preclinical-mechanistic" @("42848316") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 42848316 - Omics mechanism" "results" "discussion" "omics-mechanism" "RET;functional-screen;cell-model;structural-modeling;targeted-therapy;resistance" "preclinical-mechanistic" @("42848316") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 42848316 - Clinical efficacy" "results" "discussion" "clinical-efficacy" "RET;targeted-therapy;real-world-clinical;resistance" "preclinical-mechanistic-with-small-clinical-series" @("42848316") "sentence-frame" "synthetic-model"
+Add-FrameRule $intake20261019Asset $intake20261019Container "PMID 42848316 - Uncertainty boundary" "discussion" "results" "uncertainty-boundary" "RET;structural-modeling;targeted-therapy;clinical-efficacy;statistics" "preclinical-mechanistic-with-small-clinical-series" @("42848316") "sentence-frame" "synthetic-model"
 
 $supplementAsset = "ccr-2026-09-12-supplement-language.md"
 $supplementDomains = [ordered]@{

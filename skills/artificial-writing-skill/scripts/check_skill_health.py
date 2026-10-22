@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -10,6 +11,7 @@ sys.dont_write_bytecode = True
 from library_common import journal_registry, read_csv, read_json
 from search_language import load_index
 from search_ccr_results_logic import load_catalog as load_ccr_results_logic_catalog
+from search_source_sentence_templates import load_catalog as load_ccr_source_sentence_catalog
 from search_stk11_sentence_templates import load_catalog
 from validate_reading_quality import validate
 
@@ -133,6 +135,65 @@ def check_ccr_results_logic(skill):
     )
 
 
+def check_ccr_source_sentences(skill):
+    references = skill / 'references'
+    path = references / 'ccr-six-gate-source-sentence-templates.json'
+    errors = []
+    try:
+        records = load_ccr_source_sentence_catalog(path)
+        payload = read_json(path)
+    except (ValueError, KeyError, OSError) as error:
+        return dict(errors=[str(error)])
+    reconciliation = payload.get('reconciliation', {})
+    articles = reconciliation.get('articles', [])
+    included = {
+        row['pmid']: row
+        for row in read_csv(references / 'ccr-reading-quality-register.csv')
+        if row['eligibility'] == 'included'
+    }
+    article_map = {article.get('pmid'): article for article in articles if isinstance(article, dict)}
+    if len(article_map) != len(articles):
+        errors.append('CCR source-sentence reconciliation has duplicate or invalid article rows')
+    if set(article_map) != set(included):
+        errors.append('CCR source-sentence reconciliation differs from included register membership')
+    for pmid in set(article_map) & set(included):
+        article = article_map[pmid]
+        live = included[pmid]
+        if article.get('review_status') != live['review_status']:
+            errors.append(f'{pmid}: stale source-sentence review_status')
+        if article.get('review_record') != live['review_record']:
+            errors.append(f'{pmid}: stale source-sentence review_record')
+        if not article.get('article_alerts'):
+            errors.append(f'{pmid}: source-sentence reconciliation has no article alert')
+    states = ('represented', 'missing_summary', 'verdict_mismatch', 'no_language_samples', 'all_samples_skipped')
+    state_total = sum(int(reconciliation.get(f'{state}_count', 0)) for state in states)
+    if reconciliation.get('included_total') != len(included) or state_total != len(included):
+        errors.append('CCR source-sentence reconciliation does not partition the included corpus')
+    dependencies = payload.get('dependencies', {})
+    for key, expected_path in (
+        ('register', references / 'ccr-reading-quality-register.csv'),
+        ('language_controls', references / 'language-controls.json'),
+        ('builder_script', skill / 'scripts/build_ccr_recheck_sentence_catalog.py'),
+    ):
+        dependency = dependencies.get(key, {})
+        if not expected_path.is_file():
+            errors.append(f'Missing CCR source-sentence dependency: {expected_path.name}')
+            continue
+        actual = hashlib.sha256(expected_path.read_bytes()).hexdigest()
+        if dependency.get('sha256') != actual:
+            errors.append(f'Stale CCR source-sentence dependency: {key}')
+    return dict(
+        records=len(records),
+        papers=len({record['paper']['pmid'] for record in records}),
+        reconciled_articles=len(article_map),
+        represented=reconciliation.get('represented_count', 0),
+        missing_summary=reconciliation.get('missing_summary_count', 0),
+        all_samples_skipped=reconciliation.get('all_samples_skipped_count', 0),
+        selected_summary_dependencies=len(dependencies.get('selected_summaries', [])),
+        errors=errors,
+    )
+
+
 def check(skill):
     skill = skill.resolve()
     reading = validate(skill)
@@ -142,9 +203,10 @@ def check(skill):
     project = check_project_membership(skill)
     sentences = check_sentence_templates(skill)
     ccr_results_logic = check_ccr_results_logic(skill)
+    ccr_source_sentences = check_ccr_source_sentences(skill)
     failures = (links['broken'] or inventory['errors'] or project['errors']
-                or sentences['errors'] or ccr_results_logic['errors'])
-    return dict(status='failed' if failures else 'mechanical_checks_passed', scientific_acceptance_certified=False, behavioral_evaluation_performed=False, reading_validation=reading['validation'], inventory=inventory, project=project, sentence_templates=sentences, ccr_results_logic=ccr_results_logic, links=links, language_entries=len(entries), index_version=manifest['index_version'], boundary='Read-only structural/integrity checks. No PDF rereading, scientific acceptance, language-generation evaluation or Wisp live verification is performed.')
+                or sentences['errors'] or ccr_results_logic['errors'] or ccr_source_sentences['errors'])
+    return dict(status='failed' if failures else 'mechanical_checks_passed', scientific_acceptance_certified=False, behavioral_evaluation_performed=False, reading_validation=reading['validation'], inventory=inventory, project=project, sentence_templates=sentences, ccr_results_logic=ccr_results_logic, ccr_source_sentences=ccr_source_sentences, links=links, language_entries=len(entries), index_version=manifest['index_version'], boundary='Read-only structural/integrity checks. No PDF rereading, scientific acceptance, language-generation evaluation or Wisp live verification is performed.')
 
 
 def main():

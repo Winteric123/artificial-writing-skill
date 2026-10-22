@@ -2929,6 +2929,854 @@
       ],
       "restriction": "Engineered genotype comparisons and external human expression associations are separate. Flow V-beta repertoire and tSNE are not TCR-seq or scRNA-seq. Combination impairs immune function under the tested schedule; combination OS was not evaluated. Read the article-specific source alerts before numerical reuse.",
       "source_reference": "cell-metabolism-2022-35504291-language.md"
+    },
+    {
+      "id": "ccr-six-gate-42189883-needs-correction",
+      "article_ids": [
+        "42189883"
+      ],
+      "restriction": "Central PFS reuse is blocked: the main PDF leaves cCRT-versus-durvalumab time origin unresolved, does not document a valid HR-estimation model, and does not provide cutoff provenance. Log-rank/Wilcoxon discordance, a correlation-sign conflict and a CCR7/CD45RA phenotype-label conflict must remain explicit. Peripheral immune changes are exploratory treatment-context associations, not causal sequencing or validated prediction of durvalumab benefit.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-40499141-needs-correction",
+      "article_ids": [
+        "40499141"
+      ],
+      "restriction": "Withhold the conflicted PDX tumor identity, 15-versus18-mg/kg high dose, DB-1419 immunogenic-cell-death claim and unsupported prognostic coexpression statement. Activity and toxicology are preclinical and model-specific; they do not establish human efficacy, human safety, checkpoint-resistance reversal or tumor-agnostic benefit.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42007996-needs-correction",
+      "article_ids": [
+        "42007996"
+      ],
+      "restriction": "Preserve the OV-90 n=7-versusn=6 source conflict and the carboplatin dose omissions caused by body-weight loss. In-vivo combinations support additive/co-operative activity, not formal synergy. Small n=3 PDX arms, research IHC and a heterogeneous cross-product dose plot do not establish a selection threshold, pan-tumor efficacy, clinical safety or superior tolerability.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42578969-needs-correction",
+      "article_ids": [
+        "42578969"
+      ],
+      "restriction": "The primary result is ORR0% in26 centrally confirmed analyzable patients; do not generalize this to zero activity in every fusion, histology or lung-cancer subgroup. Six-month-PFS upper90% CI conflicts between abstract17.7% and Results16.3%. No treatment-related grade5 event is not the same as no grade5 event:10 all-cause grade5 events occurred on treatment. Two of three PFS-over-six-month cases were nonanalyzable, and descriptive co-alterations do not prove resistance.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41065506-needs-correction",
+      "article_ids": [
+        "41065506"
+      ],
+      "restriction": "Use LRP1B alteration rather than functional loss: the definition includes VUS. Preserve n=1569-versus1570 and imputation/analysis-denominator inconsistencies, subclass nulls and model-specific OR/HR estimates. No reported treatment-by-biomarker interaction validates prediction; within-arm significance patterns, unsupplied TMB-low/STK11/KEAP subgroup claims and obsolete-regimen data cannot support chemotherapy omission or current chemo-immunotherapy selection.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41026583-needs-correction",
+      "article_ids": [
+        "41026583"
+      ],
+      "restriction": "Mouse PFS lacks a defined event and reported survival-comparison method, and multiple testing is not controlled. Negative primary-cell assays omit relevant neural/testicular cells; two control mice were lost without necropsy, denominators changed and xGvHD occurred across arms. Selected xenograft activity supports preclinical proof of concept only, not human safety, clinical efficacy, a selection threshold or SCLC-wide applicability.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-b.md"
+    },
+    {
+      "id": "ccr-six-gate-31548343-passed-traceability",
+      "article_ids": [
+        "31548343"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 31548343 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-19-supplement-ccr-jto.md"
+    },
+    {
+      "id": "ccr-six-gate-33077574-passed-traceability",
+      "article_ids": [
+        "33077574"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 33077574 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave16-c1-root.md"
+    },
+    {
+      "id": "ccr-six-gate-38578683-passed-traceability",
+      "article_ids": [
+        "38578683"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 38578683 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-19-supplement-ccr-jto.md"
+    },
+    {
+      "id": "ccr-six-gate-39466024-passed-traceability",
+      "article_ids": [
+        "39466024"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39466024 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39470668-passed-traceability",
+      "article_ids": [
+        "39470668"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39470668 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-a.md"
+    },
+    {
+      "id": "ccr-six-gate-39495173-passed-traceability",
+      "article_ids": [
+        "39495173"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39495173 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-a.md"
+    },
+    {
+      "id": "ccr-six-gate-39545922-passed-traceability",
+      "article_ids": [
+        "39545922"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39545922 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39561276-passed-traceability",
+      "article_ids": [
+        "39561276"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39561276 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-a.md"
+    },
+    {
+      "id": "ccr-six-gate-39576208-passed-traceability",
+      "article_ids": [
+        "39576208"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39576208 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-39670974-passed-traceability",
+      "article_ids": [
+        "39670974"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39670974 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39786430-passed-traceability",
+      "article_ids": [
+        "39786430"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39786430 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39821070-passed-traceability",
+      "article_ids": [
+        "39821070"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39821070 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-a.md"
+    },
+    {
+      "id": "ccr-six-gate-39836372-passed-traceability",
+      "article_ids": [
+        "39836372"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 39836372 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40208070-passed-traceability",
+      "article_ids": [
+        "40208070"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40208070 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40247431-passed-traceability",
+      "article_ids": [
+        "40247431"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40247431 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave08-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40299768-passed-traceability",
+      "article_ids": [
+        "40299768"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40299768 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave07-b.md"
+    },
+    {
+      "id": "ccr-six-gate-40343815-passed-traceability",
+      "article_ids": [
+        "40343815"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40343815 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-40552922-passed-traceability",
+      "article_ids": [
+        "40552922"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40552922 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40553459-passed-traceability",
+      "article_ids": [
+        "40553459"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40553459 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-40788282-passed-traceability",
+      "article_ids": [
+        "40788282"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40788282 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-40828417-passed-traceability",
+      "article_ids": [
+        "40828417"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40828417 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave07-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40864503-passed-traceability",
+      "article_ids": [
+        "40864503"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40864503 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-40928991-passed-traceability",
+      "article_ids": [
+        "40928991"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40928991 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-a.md"
+    },
+    {
+      "id": "ccr-six-gate-40932352-passed-traceability",
+      "article_ids": [
+        "40932352"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 40932352 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41252574-passed-traceability",
+      "article_ids": [
+        "41252574"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41252574 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41378983-passed-traceability",
+      "article_ids": [
+        "41378983"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41378983 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41400436-passed-traceability",
+      "article_ids": [
+        "41400436"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41400436 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41537692-passed-traceability",
+      "article_ids": [
+        "41537692"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41537692 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41537704-passed-traceability",
+      "article_ids": [
+        "41537704"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41537704 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41543339-passed-traceability",
+      "article_ids": [
+        "41543339"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41543339 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41556942-passed-traceability",
+      "article_ids": [
+        "41556942"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41556942 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41587109-passed-traceability",
+      "article_ids": [
+        "41587109"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41587109 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41591979-passed-traceability",
+      "article_ids": [
+        "41591979"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41591979 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41649868-passed-traceability",
+      "article_ids": [
+        "41649868"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41649868 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41671081-passed-traceability",
+      "article_ids": [
+        "41671081"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41671081 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41701940-passed-traceability",
+      "article_ids": [
+        "41701940"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41701940 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41779007-passed-traceability",
+      "article_ids": [
+        "41779007"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41779007 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41784525-passed-traceability",
+      "article_ids": [
+        "41784525"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41784525 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41790029-passed-traceability",
+      "article_ids": [
+        "41790029"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41790029 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41801128-passed-traceability",
+      "article_ids": [
+        "41801128"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41801128 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41805895-passed-traceability",
+      "article_ids": [
+        "41805895"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41805895 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41817317-passed-traceability",
+      "article_ids": [
+        "41817317"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41817317 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41837748-passed-traceability",
+      "article_ids": [
+        "41837748"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41837748 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-c.md"
+    },
+    {
+      "id": "ccr-six-gate-41849236-passed-traceability",
+      "article_ids": [
+        "41849236"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41849236 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave01-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41894181-passed-traceability",
+      "article_ids": [
+        "41894181"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41894181 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-41920765-passed-traceability",
+      "article_ids": [
+        "41920765"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41920765 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41945490-passed-traceability",
+      "article_ids": [
+        "41945490"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41945490 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41945491-passed-traceability",
+      "article_ids": [
+        "41945491"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41945491 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-41945500-passed-traceability",
+      "article_ids": [
+        "41945500"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 41945500 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42001480-passed-traceability",
+      "article_ids": [
+        "42001480"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42001480 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42008740-passed-traceability",
+      "article_ids": [
+        "42008740"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42008740 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42013305-passed-traceability",
+      "article_ids": [
+        "42013305"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42013305 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42048384-passed-traceability",
+      "article_ids": [
+        "42048384"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42048384 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42059900-passed-traceability",
+      "article_ids": [
+        "42059900"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42059900 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42113010-passed-traceability",
+      "article_ids": [
+        "42113010"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42113010 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42126592-passed-traceability",
+      "article_ids": [
+        "42126592"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42126592 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-d-root.md"
+    },
+    {
+      "id": "ccr-six-gate-42148884-passed-traceability",
+      "article_ids": [
+        "42148884"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42148884 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42149140-passed-traceability",
+      "article_ids": [
+        "42149140"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42149140 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42207168-passed-traceability",
+      "article_ids": [
+        "42207168"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42207168 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42207176-passed-traceability",
+      "article_ids": [
+        "42207176"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42207176 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42307634-passed-traceability",
+      "article_ids": [
+        "42307634"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42307634 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42360104-passed-traceability",
+      "article_ids": [
+        "42360104"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42360104 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42405849-passed-traceability",
+      "article_ids": [
+        "42405849"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42405849 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42440354-passed-traceability",
+      "article_ids": [
+        "42440354"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42440354 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42440361-passed-traceability",
+      "article_ids": [
+        "42440361"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42440361 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42440365-passed-traceability",
+      "article_ids": [
+        "42440365"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42440365 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42446521-passed-traceability",
+      "article_ids": [
+        "42446521"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42446521 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42478960-passed-traceability",
+      "article_ids": [
+        "42478960"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42478960 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42489696-passed-traceability",
+      "article_ids": [
+        "42489696"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42489696 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42507540-passed-traceability",
+      "article_ids": [
+        "42507540"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42507540 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42507545-passed-traceability",
+      "article_ids": [
+        "42507545"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42507545 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave02-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42574065-passed-traceability",
+      "article_ids": [
+        "42574065"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42574065 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-c.md"
+    },
+    {
+      "id": "ccr-six-gate-42599160-passed-traceability",
+      "article_ids": [
+        "42599160"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42599160 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42658187-passed-traceability",
+      "article_ids": [
+        "42658187"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42658187 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave06-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42714840-passed-traceability",
+      "article_ids": [
+        "42714840"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42714840 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42714874-passed-traceability",
+      "article_ids": [
+        "42714874"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42714874 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-a.md"
+    },
+    {
+      "id": "ccr-six-gate-42714875-passed-traceability",
+      "article_ids": [
+        "42714875"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42714875 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave05-b.md"
+    },
+    {
+      "id": "ccr-six-gate-42752799-passed-traceability",
+      "article_ids": [
+        "42752799"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42752799 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave04-c-root.md"
+    },
+    {
+      "id": "ccr-six-gate-42848316-passed-traceability",
+      "article_ids": [
+        "42848316"
+      ],
+      "restriction": "Current six-gate recheck is passed for bounded language reuse. Any reuse from PMID 42848316 remains subject to the source distinctions, evidence boundary, and claim ceiling documented in the cited review record; this traceability alert does not assert an additional unresolved conflict or validate claims beyond that record.",
+      "source_reference": "source-rechecks/2026-10-19-supplement-ccr-jto.md"
+    },
+    {
+      "id": "ccr-six-gate-31548347-current-needs-correction",
+      "article_ids": [
+        "31548347"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 31548347 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave16-root.md"
+    },
+    {
+      "id": "ccr-six-gate-34446541-current-needs-correction",
+      "article_ids": [
+        "34446541"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results, traceability, and transfer gates failed. Do not treat affected result wording or exact estimates from PMID 34446541 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Do not transfer the affected claim beyond the reviewed context while the documented transfer issue remains unresolved. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave15-c.md"
+    },
+    {
+      "id": "ccr-six-gate-34551906-current-needs-correction",
+      "article_ids": [
+        "34551906"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results, traceability, and transfer gates failed. Do not treat affected result wording or exact estimates from PMID 34551906 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Do not transfer the affected claim beyond the reviewed context while the documented transfer issue remains unresolved. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave15-c.md"
+    },
+    {
+      "id": "ccr-six-gate-34686497-current-needs-correction",
+      "article_ids": [
+        "34686497"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results, traceability, and transfer gates failed. Do not treat affected result wording or exact estimates from PMID 34686497 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Do not transfer the affected claim beyond the reviewed context while the documented transfer issue remains unresolved. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave15-c.md"
+    },
+    {
+      "id": "ccr-six-gate-34702773-current-needs-correction",
+      "article_ids": [
+        "34702773"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results, traceability, and transfer gates failed. Do not treat affected result wording or exact estimates from PMID 34702773 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Do not transfer the affected claim beyond the reviewed context while the documented transfer issue remains unresolved. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave15-c.md"
+    },
+    {
+      "id": "ccr-six-gate-35838647-current-needs-correction",
+      "article_ids": [
+        "35838647"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 35838647 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave14-root.md"
+    },
+    {
+      "id": "ccr-six-gate-36602782-current-needs-correction",
+      "article_ids": [
+        "36602782"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 36602782 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave12-b.md"
+    },
+    {
+      "id": "ccr-six-gate-36729110-current-needs-correction",
+      "article_ids": [
+        "36729110"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 36729110 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave12-b.md"
+    },
+    {
+      "id": "ccr-six-gate-36806911-current-needs-correction",
+      "article_ids": [
+        "36806911"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 36806911 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave12-b.md"
+    },
+    {
+      "id": "ccr-six-gate-36913537-current-needs-correction",
+      "article_ids": [
+        "36913537"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 36913537 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave12-b.md"
+    },
+    {
+      "id": "ccr-six-gate-37382635-current-needs-correction",
+      "article_ids": [
+        "37382635"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the evidence, results, and traceability gates failed. Do not treat affected result wording or exact estimates from PMID 37382635 as acceptance-passed. Evidence-level reuse also requires resolution of the evidence-gate issue documented in the cited review. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave11-c.md"
+    },
+    {
+      "id": "ccr-six-gate-38088895-current-needs-correction",
+      "article_ids": [
+        "38088895"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results and traceability gates failed. Do not treat affected result wording or exact estimates from PMID 38088895 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave10-c.md"
+    },
+    {
+      "id": "ccr-six-gate-38127300-current-needs-correction",
+      "article_ids": [
+        "38127300"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results and traceability gates failed. Do not treat affected result wording or exact estimates from PMID 38127300 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave10-c.md"
+    },
+    {
+      "id": "ccr-six-gate-38277235-current-needs-correction",
+      "article_ids": [
+        "38277235"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results and traceability gates failed. Do not treat affected result wording or exact estimates from PMID 38277235 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-22-ccr-wave10-b.md"
+    },
+    {
+      "id": "ccr-six-gate-38723277-current-needs-correction",
+      "article_ids": [
+        "38723277"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results and traceability gates failed. Do not treat affected result wording or exact estimates from PMID 38723277 as acceptance-passed. Exact source/locator reuse additionally requires resolution of the traceability issue documented there. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave09-c.md"
+    },
+    {
+      "id": "ccr-six-gate-39352721-current-needs-correction",
+      "article_ids": [
+        "39352721"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 39352721 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave08-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39400264-current-needs-correction",
+      "article_ids": [
+        "39400264"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 39400264 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave08-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39540841-current-needs-correction",
+      "article_ids": [
+        "39540841"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 39540841 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave08-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39620930-current-needs-correction",
+      "article_ids": [
+        "39620930"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 39620930 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave08-b.md"
+    },
+    {
+      "id": "ccr-six-gate-39932457-current-needs-correction",
+      "article_ids": [
+        "39932457"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 39932457 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "ccr-six-gate-40260627-current-needs-correction",
+      "article_ids": [
+        "40260627"
+      ],
+      "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 40260627 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
+      "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
     }
   ],
   "entry_rules": [

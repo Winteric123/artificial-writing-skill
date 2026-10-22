@@ -47,7 +47,11 @@ class Reading2024IntakeBoundaries(unittest.TestCase):
             self.assertEqual(article['supplement_status'], 'not_supplied')
             self.assertEqual(len(article['sha256']), 64)
             self.assertTrue((REFERENCES / article['source_asset']).is_file())
-            self.assertEqual(self.quality[article['pmid']]['review_status'], 'not_reviewed')
+            live_status = self.quality[article['pmid']]['review_status']
+            if article['reading_stage'] == 'main_text_deep_read_complete':
+                self.assertIn(live_status, {'passed', 'needs_correction'})
+            else:
+                self.assertEqual(live_status, 'not_reviewed')
 
     def test_current_candidate_overlay_preserves_history(self):
         history = records('ccr-omics-supplement-candidates-2026-09-23.csv')

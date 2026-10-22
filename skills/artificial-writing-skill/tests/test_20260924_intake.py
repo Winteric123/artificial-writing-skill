@@ -16,6 +16,7 @@ class September24Intake(unittest.TestCase):
     def setUp(self):
         self.manifest = records('ccr-2026-09-24-reading-manifest.csv')
         self.library = {row['pmid']: row for row in records('library-index.csv')}
+        self.quality = {row['pmid']: row for row in records('ccr-reading-quality-register.csv')}
         self.bibliography = {row['pmid']: row for row in records('ccr-corpus-bibliography.csv')}
         self.catalog = records('ccr-section-language-catalog.csv')
 
@@ -31,7 +32,9 @@ class September24Intake(unittest.TestCase):
             self.assertEqual(indexed['reading_stage'], 'main_text_deep_read_complete')
             self.assertEqual(indexed['main_read_completed_on'], '2026-09-24')
             self.assertEqual(indexed['supplied_pdf_version'], article['pdf_version'])
-            self.assertEqual(indexed['review_status'], 'not_reviewed')
+            self.assertEqual(article['review_status'], 'not_reviewed')
+            self.assertEqual(indexed['review_status'], self.quality[article['pmid']]['review_status'])
+            self.assertIn(indexed['review_status'], {'passed', 'needs_correction'})
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
             self.assertEqual(indexed['stk11_highlight'], 'no')
             self.assertEqual(len(article['sha256']), 64)

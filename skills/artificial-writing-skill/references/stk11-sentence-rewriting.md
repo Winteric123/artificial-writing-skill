@@ -31,11 +31,14 @@ python scripts/search_stk11_sentence_templates.py --source-section methods --sec
 python scripts/search_stk11_sentence_templates.py --source-section results --content-type cross_omics_concordance --json
 python scripts/search_stk11_sentence_templates.py --significance nonsignificant --query "subgroup exploratory"
 python scripts/search_stk11_sentence_templates.py --template-id <stable-template-id> --json
+python scripts/search_stk11_sentence_templates.py --source-section methods --accepted-only --json
 ```
 
 Filters are combined with AND logic on the same record. Supported filters are PMID, stable template ID, content/result type, significance status, target section, source section, legacy-origin tier, evidence layer, and query. `--content-type` and `--result-type` address the same retained catalog field. Methods descriptions use `not_applicable` significance. Query words or quoted phrases are also AND-matched. `--legacy-origin all` is the default and includes both historical origins without erasing their labels; `--tier` remains a compatibility alias for the same filter. Zero matches are legitimate; unknown controlled values fail closed.
 
 `--section` filters the template's `target_sections`. `--source-section` filters `source.section`, where the original sentence appeared. For example, `--source-section methods --section methods` retrieves actual body Methods sources for a Methods rewrite.
+
+Search results also carry the current CCR article review status, article alerts and applicable expression restrictions through the shared sentence-control layer. Default search is an audit view. Add `--accepted-only` when selecting language for writing; it requires current `passed` status and effective `usable_with_boundary` state. A legacy highlight or a verified source transcription does not bypass these live controls. General-language-index rules keyed only by stable IDs remain explicitly unmapped rather than being guessed onto sentence IDs.
 
 ## Evidence-first rewrite workflow
 
@@ -70,6 +73,8 @@ python scripts/search_stk11_sentence_templates.py `
 ```
 
 The renderer rejects missing or extra slots. Every slot is declared `required=true` and `evidence_source=user_supplied`; the catalog has no source-derived defaults. The renderer returns the selected article only as language-pattern provenance.
+
+Rendering also rechecks live controls and requires `passed` plus `usable_with_boundary`. It rejects held or unregistered records; use ordinary search to inspect their status and alerts. A status change after retrieval is not permission to render a stale record.
 
 ## Non-transfer rules
 

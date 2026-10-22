@@ -18,12 +18,15 @@ class Completion2023Tests(unittest.TestCase):
         self.assertEqual(len(manifest), 34)
         self.assertEqual(len({row['pmid'] for row in manifest}), 34)
         library = {row['pmid']: row for row in read_rows('library-index.csv') if row['journal'] == 'Clinical Cancer Research'}
+        quality = {row['pmid']: row for row in read_rows('ccr-reading-quality-register.csv')}
         for article in manifest:
             indexed = library[article['pmid']]
             self.assertEqual(indexed['year'], '2023')
             self.assertEqual(indexed['reading_stage'], 'main_text_deep_read_complete')
             self.assertEqual(indexed['main_read_completed_on'], '2026-09-26')
-            self.assertEqual(indexed['review_status'], 'not_reviewed')
+            self.assertEqual(article['review_status'], 'not_reviewed')
+            self.assertEqual(indexed['review_status'], quality[article['pmid']]['review_status'])
+            self.assertIn(indexed['review_status'], {'passed', 'needs_correction'})
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
             self.assertEqual(len(article['sha256']), 64)
             self.assertTrue((REFERENCES / article['source_asset']).exists())

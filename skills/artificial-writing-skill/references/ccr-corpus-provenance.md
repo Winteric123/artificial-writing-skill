@@ -61,7 +61,7 @@ This is recorded main-text reading completion, not an independently verified acc
 
 - Completed: **171 eligible CCR articles**. Check [library-index.md](library-index.md) for generated journal/year totals and [the quality register](ccr-reading-quality-register.csv) for acceptance status.
 - Eligible pending or incomplete: **88 CCR articles**. The 13 excluded commentary/background records are not part of the reading queue.
-- Indexed 2026 CCR main texts complete: **75/75**. This is complete coverage of the current local bibliography, not proof of exhaustive journal-wide acquisition through today.
+- Indexed 2026 CCR main texts complete: **76/76**. This is complete coverage of the current local bibliography, not proof of exhaustive journal-wide acquisition through today.
 - Source-recheck acceptance passed: **0**. Initial main-text completion is not acceptance certification.
 - Do not infer completion from bibliography inclusion, processing status, source coverage, section extraction, or phrase-bank inclusion.
 

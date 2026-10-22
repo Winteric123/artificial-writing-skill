@@ -80,7 +80,8 @@ class PdfProvenance(unittest.TestCase):
     def test_no_lung_primary_from_metastasis_or_infection(self):
         for pmid in ['37992307', '38723277', '39841860']:
             self.assertEqual(search(self.entries, pmid=pmid, disease='lung-cancer', include_subtypes=True)['matched_count'], 0)
-        self.assertGreater(search(self.entries, pmid='38723277', disease='thyroid-cancer')['matched_count'], 0)
+        self.assertEqual(search(self.entries, pmid='38723277', disease='thyroid-cancer')['matched_count'], 0)
+        self.assertGreater(search(self.entries, pmid='38723277', disease='thyroid-cancer', include_held=True)['matched_count'], 0)
         self.assertEqual(search(self.entries, pmid='38180245', disease='SCLC')['matched_count'], 0)
         self.assertGreater(search(self.entries, pmid='38180245', disease='smarca4-deficient-thoracic')['matched_count'], 0)
 

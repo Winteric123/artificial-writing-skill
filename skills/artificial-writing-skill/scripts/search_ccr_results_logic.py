@@ -6,8 +6,14 @@ import shlex
 import sys
 from pathlib import Path
 
-
 sys.dont_write_bytecode = True
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from sentence_live_controls import (
+    CatalogError, apply_live_controls, control_markdown, control_metadata,
+    is_accepted, require_renderable,
+)
 
 
 CATALOG_NAME = 'ccr-2025-2026-results-logic.json'
@@ -96,10 +102,6 @@ def _configure_cli_streams():
 SLOT_NAME = re.compile(r'^[a-z][a-z0-9_]*$')
 PLACEHOLDER = re.compile(r'\[([a-z][a-z0-9_]*)\]')
 MARKDOWN_ANCHOR = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._:-]*$')
-
-
-class CatalogError(ValueError):
-    pass
 
 
 def _require_string(value, label):
@@ -552,7 +554,8 @@ def _paper_searchable(paper):
 
 def search(records, *, pmid='', template_id='', year='', domain='', polarity='',
            inferential_status='', result_type='', evidence_layer='',
-           rhetorical_function='', logic_position='', section='', query='', limit=10):
+           rhetorical_function='', logic_position='', section='', query='', limit=10,
+           accepted_only=False, skill_path=None):
     if type(limit) is not int or not 1 <= limit <= 500:
         raise CatalogError('limit must be between 1 and 500')
     if pmid and not PMID.fullmatch(pmid):
@@ -574,7 +577,9 @@ def search(records, *, pmid='', template_id='', year='', domain='', polarity='',
             raise CatalogError(f'unknown {label}: {value}')
     terms = _query_terms(query)
     matches = []
-    for record in records:
+    for record in apply_live_controls(records, skill_path):
+        if accepted_only and not is_accepted(record):
+            continue
         if pmid and record['pmid'] != pmid:
             continue
         if template_id and record['id'] != template_id:
@@ -613,7 +618,8 @@ def search(records, *, pmid='', template_id='', year='', domain='', polarity='',
     }
 
 
-def search_papers(papers, *, pmid='', year='', domain='', polarity='', query='', limit=10):
+def search_papers(papers, *, pmid='', year='', domain='', polarity='', query='', limit=10,
+                  accepted_only=False, skill_path=None, sentence_records=None):
     if type(limit) is not int or not 1 <= limit <= 500:
         raise CatalogError('limit must be between 1 and 500')
     if pmid and not PMID.fullmatch(pmid):
@@ -626,7 +632,25 @@ def search_papers(papers, *, pmid='', year='', domain='', polarity='', query='',
             raise CatalogError(f'unknown {label}: {value}')
     terms = _query_terms(query)
     matches = []
-    for paper in papers:
+    controlled_records = apply_live_controls(sentence_records or [], skill_path)
+    for paper in apply_live_controls(papers, skill_path, text_builder=_paper_searchable):
+        # A sentence-specific rule applies to this narrative only when the
+        # narrative itself matches; linked records keep their individual states.
+        paper['control_compatibility'] = {
+            **paper['control_compatibility'],
+            'article_regex_rules': 'evaluated_against_paper_narrative_text_only',
+        }
+        paper['linked_record_controls'] = [
+            {'id': item['id'], 'pmid': item['pmid'], **control_metadata(item)}
+            for item in controlled_records
+            if item['id'] in paper['record_ids'] and item['pmid'] == paper['pmid']
+        ]
+        paper['linked_record_controls_status'] = (
+            'evaluated_individually_without_source_wording'
+            if sentence_records is not None else 'sentence_records_not_supplied'
+        )
+        if accepted_only and not is_accepted(paper):
+            continue
         if pmid and paper['pmid'] != pmid:
             continue
         if year and paper['year'] != year:
@@ -655,7 +679,7 @@ def parse_slot_arguments(arguments):
     return values
 
 
-def render_template(record, values):
+def render_template(record, values, *, skill_path=None):
     expected = {slot['name'] for slot in record['slots']}
     supplied = set(values)
     if expected != supplied:
@@ -669,6 +693,8 @@ def render_template(record, values):
     for token in record['source_specific_tokens']:
         if token.casefold() in rendered.casefold() and token.casefold() not in supplied_text:
             raise CatalogError(f'source-specific token appeared without explicit user input: {token!r}')
+    current = apply_live_controls([record], skill_path)[0]
+    require_renderable(current)
     return rendered
 
 
@@ -680,6 +706,7 @@ def _markdown(result):
         lines.extend([
             f'## {record["id"]}', '',
             f'- Article: PMID {record["pmid"]}; {record["title"]}',
+            *control_markdown(record),
             f'- Source: body Results, physical PDF page(s) '
             f'{", ".join(map(str, source["physical_pages"]))}; '
             f'{source["subheading"]}',
@@ -719,6 +746,8 @@ def main(argv=None):
     parser.add_argument('--query', default='')
     parser.add_argument('--limit', type=int, default=10)
     parser.add_argument('--json', action='store_true')
+    parser.add_argument('--accepted-only', action='store_true',
+                        help='Return only live passed/usable records; default retrieval is an audit view.')
     parser.add_argument('--render', action='store_true')
     parser.add_argument('--slot', action='append', default=[], metavar='NAME=VALUE')
     arguments = parser.parse_args(argv)
@@ -746,6 +775,8 @@ def main(argv=None):
                 catalog['papers'], pmid=arguments.pmid, year=arguments.year,
                 domain=arguments.domain, polarity=arguments.polarity,
                 query=arguments.query, limit=arguments.limit,
+                accepted_only=arguments.accepted_only, skill_path=arguments.skill_path,
+                sentence_records=catalog['records'],
             )
             print(json.dumps(result, ensure_ascii=False, indent=2))
             return
@@ -757,15 +788,19 @@ def main(argv=None):
             rhetorical_function=arguments.rhetorical_function,
             logic_position=arguments.logic_position, section=arguments.section,
             query=arguments.query, limit=arguments.limit,
+            accepted_only=arguments.accepted_only and not arguments.render,
+            skill_path=arguments.skill_path,
         )
         if arguments.render:
             if not arguments.template_id or result['matched_count'] != 1:
                 raise CatalogError('--render requires one exact --template-id match')
             record = result['records'][0]
-            rendered = render_template(record, parse_slot_arguments(arguments.slot))
+            rendered = render_template(record, parse_slot_arguments(arguments.slot),
+                                       skill_path=arguments.skill_path)
             output = {
                 'template_id': record['id'],
                 'rendered_text': rendered,
+                **control_metadata(record),
                 'language_pattern_provenance': {
                     'pmid': record['pmid'], 'doi': record['doi'],
                     'physical_page': record['source']['physical_page'],
@@ -777,7 +812,8 @@ def main(argv=None):
                 ),
             }
             print(json.dumps(output, ensure_ascii=False, indent=2) if arguments.json
-                  else rendered + '\n\n' + output['boundary'])
+                  else rendered + '\n\n' + '\n'.join(control_markdown(record))
+                  + '\n\n' + output['boundary'])
         else:
             if arguments.slot:
                 raise CatalogError('--slot requires --render')

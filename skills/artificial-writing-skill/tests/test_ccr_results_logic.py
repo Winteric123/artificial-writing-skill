@@ -156,6 +156,14 @@ def write_csv(path, rows):
 def write_installed_fixture(skill, value):
     references = skill / 'references'
     references.mkdir(parents=True, exist_ok=True)
+    write_csv(references / 'ccr-reading-quality-register.csv', [
+        {'pmid': paper['pmid'], 'eligibility': 'included', 'review_status': 'passed'}
+        for paper in value['papers']
+    ])
+    (references / 'language-controls.json').write_text(
+        json.dumps({'schema_version': 1, 'article_alerts': [], 'entry_rules': []}),
+        encoding='utf-8',
+    )
     (references / 'ccr-2025-2026-results-logic.json').write_text(
         json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8'
     )
@@ -383,6 +391,12 @@ class RetrievalBehavior(unittest.TestCase):
 
 
 class SafeRendering(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory(prefix='ccr-render-authority-')
+        self.addCleanup(temporary.cleanup)
+        self.skill = Path(temporary.name) / 'skill'
+        write_installed_fixture(self.skill, payload())
+
     def test_renderer_uses_only_explicit_slots(self):
         item = record()
         rendered = render_template(item, {
@@ -390,14 +404,14 @@ class SafeRendering(unittest.TestCase):
             'marker': 'user marker X',
             'outcome': 'overall survival',
             'effect_estimate': 'adjusted HR and confidence interval',
-        })
+        }, skill_path=self.skill)
         self.assertIn('user marker X', rendered)
         self.assertNotIn('Marker 99990001', rendered)
 
     def test_missing_or_extra_slots_are_rejected(self):
         item = record()
         with self.assertRaisesRegex(CatalogError, 'slot mismatch'):
-            render_template(item, {'population': 'cohort'})
+            render_template(item, {'population': 'cohort'}, skill_path=self.skill)
 
     def test_one_explicit_slot_can_be_reused_in_a_template(self):
         item = record()
@@ -416,7 +430,8 @@ class SafeRendering(unittest.TestCase):
                 'evidence_source': 'user_supplied',
             },
         ]
-        rendered = render_template(item, {'marker': 'marker Y', 'outcome': 'overall survival'})
+        rendered = render_template(item, {'marker': 'marker Y', 'outcome': 'overall survival'},
+                                   skill_path=self.skill)
         self.assertEqual(rendered.count('marker Y'), 2)
 
 
@@ -508,9 +523,9 @@ class InstalledChecks(unittest.TestCase):
             self.skipTest('main agent has not integrated the completed rereading yet')
         value = load_catalog(SKILL)
         expected = set(value['project_scope']['expected_pmids'])
-        self.assertEqual(len(expected), 123)
+        self.assertEqual(len(expected), 124)
         self.assertEqual(sum(paper['year'] == '2025' for paper in value['papers']), 48)
-        self.assertEqual(sum(paper['year'] == '2026' for paper in value['papers']), 75)
+        self.assertEqual(sum(paper['year'] == '2026' for paper in value['papers']), 76)
         self.assertEqual({paper['pmid'] for paper in value['papers']}, expected)
         self.assertTrue(all(2 <= len(paper['record_ids']) <= 4 for paper in value['papers']))
         self.assertTrue(all(
@@ -528,9 +543,9 @@ class InstalledChecks(unittest.TestCase):
             value['papers'], domain='integrated_omics', query='survival', limit=500
         )
         self.assertGreater(focused['matched_count'], 0)
-        self.assertLess(focused['matched_count'], 123)
+        self.assertLess(focused['matched_count'], 124)
         broad = search_papers(value['papers'], query='omics prognosis', limit=500)
-        self.assertLess(broad['matched_count'], 123)
+        self.assertLess(broad['matched_count'], 124)
 
     def test_real_cli_retrieval_and_render_smoke(self):
         path = SKILL / 'references' / 'ccr-2025-2026-results-logic.json'

@@ -5,13 +5,13 @@
     "topic_filter": null,
     "preprints_included": false
   },
-  "registered": 372,
-  "included": 354,
+  "registered": 381,
+  "included": 363,
   "excluded": 18,
   "excluded_legacy": 8,
-  "main_text_complete": 354,
+  "main_text_complete": 363,
   "eligible_incomplete": 0,
-  "source_recheck_passed": 30,
+  "source_recheck_passed": 278,
   "stk11_highlights": 64,
   "years": {
     "2015": {
@@ -50,37 +50,37 @@
       "excluded": 0
     },
     "2020": {
-      "registered": 8,
-      "included": 8,
-      "complete": 8,
+      "registered": 10,
+      "included": 10,
+      "complete": 10,
       "incomplete": 0,
       "excluded": 0
     },
     "2021": {
-      "registered": 31,
-      "included": 31,
-      "complete": 31,
+      "registered": 33,
+      "included": 33,
+      "complete": 33,
       "incomplete": 0,
       "excluded": 0
     },
     "2022": {
-      "registered": 56,
-      "included": 49,
-      "complete": 49,
+      "registered": 58,
+      "included": 51,
+      "complete": 51,
       "incomplete": 0,
       "excluded": 7
     },
     "2023": {
-      "registered": 61,
-      "included": 56,
-      "complete": 56,
+      "registered": 62,
+      "included": 57,
+      "complete": 57,
       "incomplete": 0,
       "excluded": 5
     },
     "2024": {
-      "registered": 57,
-      "included": 53,
-      "complete": 53,
+      "registered": 58,
+      "included": 54,
+      "complete": 54,
       "incomplete": 0,
       "excluded": 4
     },
@@ -92,9 +92,9 @@
       "excluded": 2
     },
     "2026": {
-      "registered": 89,
-      "included": 89,
-      "complete": 89,
+      "registered": 90,
+      "included": 90,
+      "complete": 90,
       "incomplete": 0,
       "excluded": 0
     }
@@ -265,9 +265,9 @@
     },
     "Clinical Cancer Research": {
       "2020": {
-        "registered": 5,
-        "included": 5,
-        "complete": 5,
+        "registered": 6,
+        "included": 6,
+        "complete": 6,
         "incomplete": 0,
         "excluded": 0
       },
@@ -293,9 +293,9 @@
         "excluded": 5
       },
       "2024": {
-        "registered": 39,
-        "included": 35,
-        "complete": 35,
+        "registered": 40,
+        "included": 36,
+        "complete": 36,
         "incomplete": 0,
         "excluded": 4
       },
@@ -307,9 +307,9 @@
         "excluded": 2
       },
       "2026": {
-        "registered": 75,
-        "included": 75,
-        "complete": 75,
+        "registered": 76,
+        "included": 76,
+        "complete": 76,
         "incomplete": 0,
         "excluded": 0
       }
@@ -381,24 +381,31 @@
       }
     },
     "Journal of Thoracic Oncology": {
-      "2021": {
+      "2020": {
         "registered": 1,
         "included": 1,
         "complete": 1,
+        "incomplete": 0,
+        "excluded": 0
+      },
+      "2021": {
+        "registered": 3,
+        "included": 3,
+        "complete": 3,
         "incomplete": 0,
         "excluded": 0
       },
       "2022": {
-        "registered": 1,
-        "included": 1,
-        "complete": 1,
+        "registered": 3,
+        "included": 3,
+        "complete": 3,
         "incomplete": 0,
         "excluded": 0
       },
       "2023": {
-        "registered": 9,
-        "included": 9,
-        "complete": 9,
+        "registered": 10,
+        "included": 10,
+        "complete": 10,
         "incomplete": 0,
         "excluded": 0
       },
@@ -520,16 +527,16 @@
   },
   "co_alteration_topics": {
     "scope": "included formal articles only; current registry; not all journal publications",
-    "included": 354,
+    "included": 363,
     "co_mutation": {
-      "analyzed": 131,
+      "analyzed": 140,
       "not_identified": 190,
       "context_only": 33
     },
     "co_alteration": {
-      "analyzed": 162,
-      "not_identified": 162,
-      "context_only": 30
+      "analyzed": 173,
+      "not_identified": 161,
+      "context_only": 29
     },
     "coverage_complete": true
   }

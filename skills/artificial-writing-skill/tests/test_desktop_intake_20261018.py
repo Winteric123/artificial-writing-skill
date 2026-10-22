@@ -39,14 +39,24 @@ class DesktopOctober18Intake(unittest.TestCase):
                 self.assertEqual(article['supplied_pdf_version'], version)
                 self.assertEqual(article['reading_stage'], 'main_text_deep_read_complete')
                 self.assertEqual(article['main_read_completed_on'], '2026-10-18')
-                self.assertEqual(article['review_status'], 'not_reviewed')
                 self.assertEqual(article['stk11_highlight'], 'no')
                 self.assertEqual(versions[pmid]['sha256'], locators[pmid]['sha256'])
                 self.assertEqual(locators[pmid]['physical_pages'], pages)
                 self.assertEqual(versions[pmid]['supplied_pdf_version'], version)
                 quality = (cmet_quality if pmid == '35504291' else ccr_quality)[pmid]
-                for gate in ('coverage', 'evidence', 'results', 'language', 'traceability', 'transfer'):
-                    self.assertEqual(quality[gate + '_check'], 'pending')
+                self.assertEqual(article['review_status'], quality['review_status'])
+                gates = [quality[gate + '_check'] for gate in ('coverage', 'evidence', 'results', 'language', 'traceability', 'transfer')]
+                if quality['review_status'] == 'passed':
+                    self.assertEqual(gates, ['pass'] * 6)
+                elif quality['review_status'] == 'needs_correction':
+                    self.assertIn('fail', gates)
+                else:
+                    self.assertEqual(quality['review_status'], 'not_reviewed')
+                    self.assertEqual(gates, ['pending'] * 6)
+                if quality['review_record']:
+                    self.assertTrue((REF / quality['review_record']).is_file())
+                else:
+                    self.assertEqual(quality['review_status'], 'not_reviewed')
                 self.assertEqual(article['supplement_status'], 'partially_reviewed' if pmid == '35504291' else 'not_supplied')
 
     def test_sentence_provenance_and_synthetic_transfer(self):

@@ -23,7 +23,7 @@ python scripts/search_language.py --pmid 33323401 --section results --limit 8
 python scripts/search_language.py --journal cell-metabolism --section methods --limit 8
 ```
 
-Use the sentence catalog when an actual original sentence and its location are required. The original 15-paper CCR/STK11 sentence resource and the 123-paper issue-year2025-2026 Results-logic resource retain their own membership. These four new sources are additional article-level reading resources; highlight selection is separate.
+Use the sentence catalog when an actual original sentence and its location are required. The original 15-paper CCR/STK11 sentence resource and the currently 124-paper issue-year 2025-2026 Results-logic resource retain their own membership. These four new sources are additional article-level reading resources; highlight selection is separate.
 
 ## Applying the result logic
 

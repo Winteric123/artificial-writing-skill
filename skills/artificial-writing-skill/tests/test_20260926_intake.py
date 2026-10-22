@@ -33,6 +33,7 @@ class September26Intake(unittest.TestCase):
     def setUp(self):
         self.manifest = records('ccr-2026-09-26-reading-manifest.csv')
         self.library = {row['pmid']: row for row in records('library-index.csv')}
+        self.quality = {row['pmid']: row for row in records('ccr-reading-quality-register.csv')}
         self.bibliography = {row['pmid']: row for row in records('ccr-corpus-bibliography.csv')}
         self.catalog = records('ccr-section-language-catalog.csv')
         mapping = json.loads((REFERENCES / 'stk11-writing-reference-map.json').read_text(encoding='utf-8'))
@@ -47,7 +48,9 @@ class September26Intake(unittest.TestCase):
             self.assertEqual(indexed['title'], article['title'])
             self.assertEqual(indexed['journal'], 'Clinical Cancer Research')
             self.assertEqual(indexed['reading_stage'], 'main_text_deep_read_complete')
-            self.assertEqual(indexed['review_status'], 'not_reviewed')
+            self.assertEqual(article['review_status'], 'not_reviewed')
+            self.assertEqual(indexed['review_status'], self.quality[article['pmid']]['review_status'])
+            self.assertIn(indexed['review_status'], {'passed', 'needs_correction'})
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
             expected = 'yes' if article['pmid'] in self.highlights else 'no'
             self.assertEqual(indexed['stk11_highlight'], expected)

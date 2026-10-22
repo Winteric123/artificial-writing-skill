@@ -163,6 +163,17 @@ def write_installed_fixture(skill, catalog_payload, authority_payload=None):
     )
 
     authoritative_records = authority_payload['records']
+    with (references / 'ccr-reading-quality-register.csv').open(
+        'w', encoding='utf-8', newline=''
+    ) as stream:
+        writer = csv.DictWriter(stream, fieldnames=['pmid', 'eligibility', 'review_status'])
+        writer.writeheader()
+        for pmid in sorted({record['pmid'] for record in authoritative_records}):
+            writer.writerow({'pmid': pmid, 'eligibility': 'included', 'review_status': 'passed'})
+    (references / 'language-controls.json').write_text(
+        json.dumps({'schema_version': 1, 'article_alerts': [], 'entry_rules': []}),
+        encoding='utf-8',
+    )
     library_fields = ['pmid', 'doi', 'title', 'journal', 'year']
     with (references / 'library-index.csv').open('w', encoding='utf-8', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=library_fields)
@@ -390,6 +401,10 @@ class RetrievalBehavior(unittest.TestCase):
 
 class SafeRendering(unittest.TestCase):
     def setUp(self):
+        temporary = tempfile.TemporaryDirectory(prefix='stk11-render-authority-')
+        self.addCleanup(temporary.cleanup)
+        self.skill = Path(temporary.name) / 'skill'
+        write_installed_fixture(self.skill, payload())
         self.record = record_one()
         self.values = {
             'population': 'the prespecified analysis population',
@@ -399,7 +414,7 @@ class SafeRendering(unittest.TestCase):
         }
 
     def test_renderer_uses_only_explicit_values(self):
-        rendered = render_template(self.record, self.values)
+        rendered = render_template(self.record, self.values, skill_path=self.skill)
         self.assertEqual(
             rendered,
             'In the prespecified analysis population, marker X was associated '
@@ -412,14 +427,14 @@ class SafeRendering(unittest.TestCase):
         missing = copy.deepcopy(self.values)
         missing.pop('statistic')
         with self.assertRaisesRegex(CatalogError, 'missing'):
-            render_template(self.record, missing)
+            render_template(self.record, missing, skill_path=self.skill)
         extra = {**self.values, 'source_default': 'forbidden'}
         with self.assertRaisesRegex(CatalogError, 'extra'):
-            render_template(self.record, extra)
+            render_template(self.record, extra, skill_path=self.skill)
 
     def test_source_token_is_allowed_only_when_explicitly_supplied(self):
         values = {**self.values, 'index_marker': 'Synthetic marker A'}
-        rendered = render_template(self.record, values)
+        rendered = render_template(self.record, values, skill_path=self.skill)
         self.assertIn('Synthetic marker A', rendered)
 
 

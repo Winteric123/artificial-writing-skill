@@ -6,8 +6,14 @@ import shlex
 import sys
 from pathlib import Path
 
-
 sys.dont_write_bytecode = True
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from sentence_live_controls import (
+    CatalogError, apply_live_controls, control_markdown, control_metadata,
+    is_accepted, require_renderable,
+)
 
 
 CATALOG_NAME = 'stk11-ccr-sentence-templates.json'
@@ -98,10 +104,6 @@ SHA256 = re.compile(r'^[0-9a-f]{64}$')
 SLOT_NAME = re.compile(r'^[a-z][a-z0-9_]*$')
 PLACEHOLDER = re.compile(r'\[([a-z][a-z0-9_]*)\]')
 MARKDOWN_ANCHOR = re.compile(r'^[A-Za-z0-9][A-Za-z0-9._:-]*$')
-
-
-class CatalogError(ValueError):
-    pass
 
 
 def _require_string(value, label):
@@ -564,7 +566,7 @@ def _searchable_text(record):
 
 def search(records, *, pmid='', template_id='', result_type='', significance='',
            section='', legacy_origin='all', evidence_layer='', query='', limit=10,
-           source_section=''):
+           source_section='', accepted_only=False, skill_path=None):
     if not isinstance(limit, int) or not 1 <= limit <= 100:
         raise CatalogError('limit must be between 1 and 100')
     if pmid and not PMID.fullmatch(pmid):
@@ -586,7 +588,9 @@ def search(records, *, pmid='', template_id='', result_type='', significance='',
 
     terms = _query_terms(query)
     matches = []
-    for record in records:
+    for record in apply_live_controls(records, skill_path):
+        if accepted_only and not is_accepted(record):
+            continue
         if pmid and record['pmid'] != pmid:
             continue
         if template_id and record['id'] != template_id:
@@ -635,7 +639,7 @@ def parse_slot_arguments(arguments):
     return values
 
 
-def render_template(record, slot_values):
+def render_template(record, slot_values, *, skill_path=None):
     if not isinstance(slot_values, dict):
         raise CatalogError('slot_values must be an object')
     expected = {slot['name'] for slot in record['slots']}
@@ -660,6 +664,8 @@ def render_template(record, slot_values):
             raise CatalogError(
                 f'source-specific token appeared without explicit user input: {token!r}'
             )
+    current = apply_live_controls([record], skill_path)[0]
+    require_renderable(current)
     return rendered
 
 
@@ -674,6 +680,7 @@ def _markdown(result):
         lines.extend([
             f'## {record["id"]}', '',
             f'- Article: PMID {record["pmid"]}; {record["title"]}',
+            *control_markdown(record),
             f'- Legacy origin tier: {record["legacy_origin_tier"]}',
             f'- Source: {source["section"]}, physical PDF page {source["physical_page"]}; '
             f'{source["verification_level"]}',
@@ -713,6 +720,8 @@ def main(argv=None):
     parser.add_argument('--query', default='')
     parser.add_argument('--limit', type=int, default=10)
     parser.add_argument('--json', action='store_true')
+    parser.add_argument('--accepted-only', action='store_true',
+                        help='Return only live passed/usable records; default retrieval is an audit view.')
     parser.add_argument('--render', action='store_true')
     parser.add_argument('--slot', action='append', default=[], metavar='NAME=VALUE')
     args = parser.parse_args(argv)
@@ -725,6 +734,8 @@ def main(argv=None):
             section=args.section, legacy_origin=args.legacy_origin, evidence_layer=args.evidence_layer,
             query=args.query, limit=args.limit,
             source_section=args.source_section,
+            accepted_only=args.accepted_only and not args.render,
+            skill_path=args.skill_path,
         )
         if args.render:
             if not args.template_id:
@@ -732,10 +743,12 @@ def main(argv=None):
             if result['matched_count'] != 1:
                 raise CatalogError('--render requires exactly one matching template')
             record = result['records'][0]
-            rendered = render_template(record, parse_slot_arguments(args.slot))
+            rendered = render_template(record, parse_slot_arguments(args.slot),
+                                       skill_path=args.skill_path)
             output = {
                 'template_id': record['id'],
                 'rendered_text': rendered,
+                **control_metadata(record),
                 'language_pattern_provenance': {
                     'pmid': record['pmid'],
                     'doi': record['doi'],
@@ -748,7 +761,8 @@ def main(argv=None):
                 ),
             }
             print(json.dumps(output, ensure_ascii=False, indent=2) if args.json
-                  else rendered + '\n\n' + output['boundary'])
+                  else rendered + '\n\n' + '\n'.join(control_markdown(record))
+                  + '\n\n' + output['boundary'])
         else:
             if args.slot:
                 raise CatalogError('--slot requires --render')

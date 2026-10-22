@@ -16,6 +16,7 @@ class KeapnessStk11Intake(unittest.TestCase):
     def setUp(self):
         self.manifest = rows('ccr-keapness-stk11-2026-09-24-reading-manifest.csv')
         self.library = {row['pmid']: row for row in rows('library-index.csv')}
+        self.quality = {row['pmid']: row for row in rows('ccr-reading-quality-register.csv')}
         self.bibliography = {row['pmid']: row for row in rows('ccr-corpus-bibliography.csv')}
 
     def test_identity_versions_and_completion_scope(self):
@@ -30,7 +31,9 @@ class KeapnessStk11Intake(unittest.TestCase):
             self.assertEqual(indexed['journal'], 'Clinical Cancer Research')
             self.assertEqual(indexed['reading_stage'], 'main_text_deep_read_complete')
             self.assertEqual(indexed['main_read_completed_on'], '2026-09-24')
-            self.assertEqual(indexed['review_status'], 'not_reviewed')
+            self.assertEqual(article['review_status'], 'not_reviewed')
+            self.assertEqual(indexed['review_status'], self.quality[article['pmid']]['review_status'])
+            self.assertIn(indexed['review_status'], {'passed', 'needs_correction'})
             self.assertEqual(indexed['supplement_status'], 'not_supplied')
             self.assertEqual(indexed['stk11_highlight'], 'yes')
             self.assertEqual(indexed['supplied_pdf_version'], article['pdf_version'])
