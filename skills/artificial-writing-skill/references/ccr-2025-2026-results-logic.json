@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-28",
   "scope": "Source-linked body-Results sentence patterns and paper-level narrative logic from all currently included Clinical Cancer Research issue-year 2025-2026 articles in the installed library; excluded narrative/commentary records are omitted.",
   "project_scope": {
     "membership_source": "library-index.csv",
@@ -134,7 +134,8 @@
       "42714875",
       "42752799",
       "42765908",
-      "42848316"
+      "42848316",
+      "42905748"
     ],
     "coverage_unit": "per-paper-results-logic-with-source-sentences",
     "paper_coverage_complete": true,
@@ -6390,6 +6391,82 @@
         "ccr-logic-42848316-ret-001",
         "ccr-logic-42848316-ret-002",
         "ccr-logic-42848316-ret-003"
+      ]
+    },
+    {
+      "pmid": "42905748",
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+      "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+      "physical_pages": 40,
+      "results_pages_read": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "visual_pages_checked": [
+        2,
+        3,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "result_profile": [
+        "positive",
+        "mixed",
+        "inconclusive"
+      ],
+      "domains": [
+        "genomics",
+        "liquid_biopsy",
+        "clinical_efficacy",
+        "prognosis",
+        "integrated_omics",
+        "imaging"
+      ],
+      "central_results": [
+        "Arm A exceeded the prespecified historical OS benchmark, but the noncomparative design and lack of a mandated ctDNA action algorithm did not establish benefit or harm from serial monitoring.",
+        "Plasma complemented tissue genotyping, and early ctDNA clearance was associated with response and survival; integrated molecular-volume discrimination did not significantly improve over molecular response alone."
+      ],
+      "narrative_sequence": [
+        "Define the noncomparative historical-benchmark framework, report the primary estimate and contemporaneous descriptive arm separately, then move from operational genomic yield to exploratory biomarker-outcome associations, model-increment tests and explicit strategy-benefit restraint."
+      ],
+      "negative_result_handling": "Nonsignificant model-increment and bTMB findings are reported without equivalence language. Failure to demonstrate strategy benefit does not erase positive assay-yield or biomarker-association layers, and those positive layers do not rescue the strategy conclusion.",
+      "omics_logic": "Targeted tissue/plasma genomics, ctDNA kinetics and volumetric imaging are separate layers. Plasma yield supports workflow complementation; longitudinal associations and acquired alterations remain exploratory.",
+      "efficacy_logic": "The one-sample historical criterion was met, but Arm B was descriptive and no ctDNA action algorithm was mandated; no between-arm benefit or harm is established.",
+      "prognosis_logic": "Early ctDNA clearance was associated with response and survival, but available-case landmark analyses were univariable and independent prognostic value was not established.",
+      "claim_boundaries": [
+        "Randomization does not convert the explicitly noncomparative design into a formal arm-to-arm efficacy test.",
+        "Log-rank P values in the text/Figure 3 and Cox P values paired with HRs in Table 3 are test-specific and cannot be interchanged.",
+        "Conditional lead time does not quantify full-cohort detection performance or benefit from earlier action.",
+        "The separate supplementary figures and tables were not supplied."
+      ],
+      "record_ids": [
+        "ccr-logic-42905748-cope-001",
+        "ccr-logic-42905748-cope-002",
+        "ccr-logic-42905748-cope-003",
+        "ccr-logic-42905748-cope-004"
       ]
     }
   ],
@@ -28629,6 +28706,362 @@
       "claim_ceiling": "clinical_activity_only",
       "evidence_boundary": "This is a single-patient, retrospective clinical observation. It supports concordance with the preclinical profile but cannot establish comparative efficacy, causal molecular response or an inhibitor-sequencing standard.",
       "logic_note_zh": "结尾把影像学与cfDNA变化并列，以“临床一致性”而非“确证疗效”连接前临床发现，并立即压低到单病例证据上限。"
+    },
+    {
+      "pmid": "42905748",
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "id": "ccr-logic-42905748-cope-001",
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_page": 17,
+        "physical_pages": [
+          17
+        ],
+        "section": "results",
+        "subheading": "Primary outcome: overall survival",
+        "source_sentence": "The lower bound of the 95% CI exceeded the prespecified 40% historical benchmark, while the CI included the 50% target (Figure 2A).",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42905748",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The body-Results sentence was visually checked on physical page 17 and matched to the extracted text. The historical criterion and target value answer different questions."
+      },
+      "domains": [
+        "clinical_efficacy",
+        "prognosis"
+      ],
+      "result_polarity": "mixed",
+      "inferential_status": "mixed",
+      "result_type": "other",
+      "evidence_layer": "clinical",
+      "rhetorical_function": "state_primary_finding",
+      "logic_position": "opening",
+      "target_sections": [
+        "results",
+        "abstract-results",
+        "discussion"
+      ],
+      "use_when_zh": "用于历史基准判据达到、但另一个目标值仍落在置信区间内的主要结果。",
+      "do_not_use_when_zh": "不可据此推出干预获益、组间优效、非劣效、等效或符合当代治疗标准。",
+      "rewrite_template": "The [confidence_interval_result] exceeded [historical_criterion], while remaining compatible with [target_value]; because [design_limitation], this finding does not establish [strategy_level_claim].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "confidence_interval_result",
+          "description": "User-supplied confidence-interval relation",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "historical_criterion",
+          "description": "User-supplied historical benchmark",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "target_value",
+          "description": "User-supplied separate target value",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "design_limitation",
+          "description": "User-supplied design limitation",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "strategy_level_claim",
+          "description": "User-supplied claim that remains unsupported",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "40% historical benchmark",
+        "50% target",
+        "Figure 2A"
+      ],
+      "claim_ceiling": "descriptive_only",
+      "evidence_boundary": "A one-sample historical-benchmark result does not demonstrate benefit from the monitoring strategy or authorize an unplanned between-arm comparison.",
+      "logic_note_zh": "先准确报告历史判据，再在同一句或紧随其后说明目标值与设计边界，避免把‘达到历史阈值’写成‘策略获益已证实’。"
+    },
+    {
+      "pmid": "42905748",
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "id": "ccr-logic-42905748-cope-002",
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_page": 17,
+        "physical_pages": [
+          17
+        ],
+        "section": "results",
+        "subheading": "Baseline genomic characterization",
+        "source_sentence": "The plasma assay was reportable in all 112 tested patients and yielded contributory genomic information in 32 of 35 patients with noncontributory or unavailable tissue testing, increasing overall baseline genotyping success from 69% with tissue alone to 97% with tissue plus plasma.",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42905748",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The body-Results sentence was visually checked on physical page 17 and matched to the extracted text; Table 2 on physical page 34 was also checked."
+      },
+      "domains": [
+        "genomics",
+        "liquid_biopsy"
+      ],
+      "result_polarity": "positive",
+      "inferential_status": "not_reported",
+      "result_type": "descriptive_frequency",
+      "evidence_layer": "genomic",
+      "rhetorical_function": "quantify_effect",
+      "logic_position": "development",
+      "target_sections": [
+        "results",
+        "abstract-results"
+      ],
+      "use_when_zh": "用于以明确分母描述液体活检对组织检测不足的补充产出。",
+      "do_not_use_when_zh": "不可把可报告性和分型成功率改写成诊断敏感度、临床效用或生存获益。",
+      "rewrite_template": "[assay] was reportable in [tested_set] and supplied contributory information for [reference_test_limited_subset], increasing [workflow_yield] from [single_modality_value] to [combined_modality_value].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "assay",
+          "description": "User-supplied assay",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "tested_set",
+          "description": "User-supplied tested denominator",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "reference_test_limited_subset",
+          "description": "User-supplied subset and denominator",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "workflow_yield",
+          "description": "User-supplied workflow metric",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "single_modality_value",
+          "description": "User-supplied single-modality value",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "combined_modality_value",
+          "description": "User-supplied combined-modality value",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "112 tested patients",
+        "32 of 35",
+        "69%",
+        "97%"
+      ],
+      "claim_ceiling": "descriptive_only",
+      "evidence_boundary": "The result supports complementary genomic yield only. It does not establish diagnostic sensitivity, treatment-matching benefit or improved outcomes.",
+      "logic_note_zh": "把阳性组学结果定位为工作流产出：先给可报告性和受益分母，再给组合检测带来的增量，最后限制到检测层。"
+    },
+    {
+      "pmid": "42905748",
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "id": "ccr-logic-42905748-cope-003",
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_page": 19,
+        "physical_pages": [
+          19
+        ],
+        "section": "results",
+        "subheading": "Early on-treatment ctDNA dynamics and clinical outcomes",
+        "source_sentence": "Median OS was not reached versus 17.1 months (95% CI 10.7-NR; P=0.004; Figure 3A), and median PFS was 22.9 months (95% CI 10.4-NR) versus 5.4 months (95% CI 3.9-9.2; P<0.001; Figure 3B), respectively.",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42905748",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The body-Results sentence was visually checked on physical page 19 and against Figure 3 on page 40. These P values are log-rank results; Table 3 Cox-model P values must not be substituted."
+      },
+      "domains": [
+        "liquid_biopsy",
+        "clinical_efficacy",
+        "prognosis"
+      ],
+      "result_polarity": "positive",
+      "inferential_status": "significant",
+      "result_type": "survival_prognosis",
+      "evidence_layer": "clinical",
+      "rhetorical_function": "quantify_effect",
+      "logic_position": "development",
+      "target_sections": [
+        "results",
+        "abstract-results",
+        "discussion"
+      ],
+      "use_when_zh": "用于报告早期生物标志物分组与PFS/OS的探索性显著关联，并保留检验类型。",
+      "do_not_use_when_zh": "无多变量确认或治疗交互时，不可写成独立预后、治疗预测、因果或监测获益。",
+      "rewrite_template": "Compared with [reference_group], [biomarker_response_group] had [time_to_event_outcomes] ([estimates_and_test_specific_p_values]); the association remains exploratory because [analysis_limitations].",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "reference_group",
+          "description": "User-supplied comparator group",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "biomarker_response_group",
+          "description": "User-supplied biomarker group",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "time_to_event_outcomes",
+          "description": "User-supplied outcome direction",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "estimates_and_test_specific_p_values",
+          "description": "User-supplied estimates and matched tests",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "analysis_limitations",
+          "description": "User-supplied design and analysis limitations",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "17.1 months",
+        "22.9 months",
+        "5.4 months",
+        "Figure 3A",
+        "Figure 3B"
+      ],
+      "claim_ceiling": "prognostic_association_only",
+      "evidence_boundary": "Available-case, variable-timing, one-month-landmark and univariable analyses support an exploratory association only; independent prognosis and treatment prediction were not established.",
+      "logic_note_zh": "阳性关联先量化疗效/生存差异，随后立即加上landmark、缺失和无多变量模型的边界；正文log-rank P值不可与表3 Cox P值混填。"
+    },
+    {
+      "pmid": "42905748",
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "journal_id": "ccr",
+      "year": "2026",
+      "id": "ccr-logic-42905748-cope-004",
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_page": 20,
+        "physical_pages": [
+          20
+        ],
+        "section": "results",
+        "subheading": "Integration of molecular and volumetric response",
+        "source_sentence": "The composite endpoint showed numerically higher prognostic discrimination than molecular response alone for PFS (c-index 0.74, 95% CI 0.54-0.85 v 0.70, 95% CI 0.35-0.86; P=0.768) and similar discrimination for OS (0.77, 95% CI 0.47-0.88 v 0.77, 95% CI 0.35-0.87; P=0.958); neither difference was statistically significant.",
+        "verification_level": "visually_verified_exact",
+        "quotation_verified": true,
+        "visual_verified": true,
+        "verification_record": "ccr-2025-2026-results-logic-audit.md#pmid-42905748",
+        "text_extraction_match": "normalized_literal",
+        "verification_note": "The body-Results sentence was visually checked on physical page 20 and matched to the extracted text. The nonsignificant differences do not show equivalence."
+      },
+      "domains": [
+        "integrated_omics",
+        "imaging",
+        "prognosis"
+      ],
+      "result_polarity": "inconclusive",
+      "inferential_status": "nonsignificant",
+      "result_type": "model_performance",
+      "evidence_layer": "integrated",
+      "rhetorical_function": "report_null_result",
+      "logic_position": "qualification",
+      "target_sections": [
+        "results",
+        "discussion"
+      ],
+      "use_when_zh": "用于新增组学或影像层数值上改善部分指标，但增量模型比较未显著的结果。",
+      "do_not_use_when_zh": "不可称模型得到改进、具有增量临床价值、已验证或与参考模型等效。",
+      "rewrite_template": "[composite_model] showed numerically [direction] discrimination relative to [reference_model] for [endpoint_one] and [second_endpoint_pattern] for [endpoint_two]; neither difference was statistically significant.",
+      "template_language": "en-US",
+      "slots": [
+        {
+          "name": "composite_model",
+          "description": "User-supplied composite model",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "direction",
+          "description": "User-supplied numerical direction",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "reference_model",
+          "description": "User-supplied reference model",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "endpoint_one",
+          "description": "User-supplied first endpoint",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "second_endpoint_pattern",
+          "description": "User-supplied second-endpoint pattern",
+          "required": true,
+          "evidence_source": "user_supplied"
+        },
+        {
+          "name": "endpoint_two",
+          "description": "User-supplied second endpoint",
+          "required": true,
+          "evidence_source": "user_supplied"
+        }
+      ],
+      "source_specific_tokens": [
+        "c-index 0.74",
+        "0.70",
+        "P=0.768",
+        "P=0.958"
+      ],
+      "claim_ceiling": "model_performance_only",
+      "evidence_boundary": "The small exploratory subset and nonsignificant comparisons do not establish incremental performance, clinical utility, external validation or equivalence.",
+      "logic_note_zh": "先保留数值方向，再给终点特异的比较，最后用‘neither difference’统一降级；不把数值更高写成模型优越。"
     }
   ]
 }

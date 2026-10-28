@@ -2,6 +2,24 @@
 
 Selected, dated changes to the repository and its distributed skill. This log is not an exhaustive commit history, a versioned release declaration, or a live reading-status register. Current coverage and acceptance states are maintained in the [literature index](skills/artificial-writing-skill/references/library-index.md) and linked journal registers.
 
+## 2026-10-28
+
+### COPE full-text learning, Results logic and bounded sentence rewriting
+
+- Added the 40-page *Clinical Cancer Research* COPE trial (PMID 42905748; *Clinical Trial Brief Report*) after complete main-text, table, figure and caption reading plus an independent six-gate source recheck. The supplied main PDF passed; Supplementary Tables 1–11 and Figures 1–8 were not supplied.
+- Added eight PDF-bound whole-sentence patterns and four Results-logic records for noncomparative randomization, a met historical benchmark with unestablished strategy benefit, plasma–tissue genotyping yield, exploratory ctDNA prognosis and nonsignificant incremental model performance. The dated intake catalog is promoted into the six-gate master and is not loaded twice by the default retriever.
+- Updated the CCR registry to 294 records (276 included; 249 source-recheck passed), the 2025–2026 Results-logic resource to 125 papers/274 records, and the six-gate sentence resource to 276 reconciled articles/155 represented papers/364 records. COPE does not enter the STK11 highlight set.
+- Rebuilt the 369-PDF locator, library, language and provenance indexes. The complete 305-test suite and three focused writing-behavior cases passed locally; these checks do not certify absent supplements or generalize beyond the tested prompts.
+
+## 2026-10-25
+
+### JTO full-text learning and sentence retrieval
+
+- Added five user-supplied *Journal of Thoracic Oncology* articles from 2020-2026 after checking all 111 supplied main-PDF pages and all main figures, tables and captions. The intake folder name did not override journal identity; all five entered JTO rather than CCR assets, and external supplements remain `not_supplied`.
+- Added 25 PDF-bound whole-sentence patterns and 20 synthetic section-language frames covering non-paired cross-platform evidence, adjustment-sensitive results, weak correlations, mixed endpoints, borderline spatial findings, exploratory targeted panels, prognosis and Methods. Source conflicts and evidence ceilings are attached through live controls.
+- Registered bounded six-gate passes for PMIDs 37247843 and 40850615. PMIDs 32068166, 33096269 and 40056978 remain `needs_correction` because of unresolved denominator, source-text or supplement-dependent checks. Main-text completion and review passage remain separate.
+- Generalized source-sentence live status from a CCR-only authority to every quality register declared in `journal-registry.json`; `in_progress` is audit-only, missing declared authorities and cross-register duplicate PMIDs fail closed, and `--accepted-only` remains restricted to `passed`/`usable_with_boundary` records.
+
 ## 2026-10-22
 
 ### CCR source review and whole-sentence retrieval

@@ -103,7 +103,7 @@ class CurrentCorpusRegression(unittest.TestCase):
                         ))
 
     def test_current_accepted_partitions_exclude_corrections(self):
-        for paper_mode, expected_count in ((False, 250), (True, 114)):
+        for paper_mode, expected_count in ((False, 254), (True, 115)):
             with self.subTest(paper_mode=paper_mode):
                 arguments = ['--accepted-only', '--limit', '500']
                 if paper_mode:
@@ -124,6 +124,15 @@ class LiveAuthorityCLIRegression(unittest.TestCase):
         cls.skill = Path(cls.temporary.name) / 'skill'
         cls.references = cls.skill / 'references'
         cls.references.mkdir(parents=True)
+        write_json(cls.references / 'journal-registry.json', {
+            'schema_version': 1,
+            'journals': {
+                'ccr': {
+                    'name': 'Clinical Cancer Research',
+                    'quality': 'ccr-reading-quality-register.csv',
+                },
+            },
+        })
         cls.ccr = read_json(REFERENCES / CCR_CATALOG)
         cls.stk = read_json(REFERENCES / STK_CATALOG)
         with (REFERENCES / 'ccr-reading-quality-register.csv').open(
@@ -359,7 +368,10 @@ class LiveAuthorityCLIRegression(unittest.TestCase):
                 module.render_template(record, values, skill_path=self.skill)
 
     def test_missing_live_authority_blocks_accepted_search_and_render(self):
-        for filename in ('ccr-reading-quality-register.csv', 'language-controls.json'):
+        for filename in (
+            'journal-registry.json', 'ccr-reading-quality-register.csv',
+            'language-controls.json',
+        ):
             authority = self.references / filename
             hidden = authority.with_name(filename + '.temporarily-hidden')
             authority.rename(hidden)
@@ -385,6 +397,17 @@ class LiveAuthorityCLIRegression(unittest.TestCase):
                         self.assertEqual(result.stdout, '')
             finally:
                 hidden.rename(authority)
+
+    def test_malformed_registry_top_level_fails_with_catalog_error(self):
+        registry = self.references / 'journal-registry.json'
+        original = registry.read_text(encoding='utf-8')
+        module = importlib.import_module('sentence_live_controls')
+        try:
+            registry.write_text('[]', encoding='utf-8')
+            with self.assertRaisesRegex(module.CatalogError, 'unsupported or empty'):
+                module.load_quality_statuses(self.references)
+        finally:
+            registry.write_text(original, encoding='utf-8')
 
     def test_same_stk_sentence_has_identical_rule_scope_in_search_and_render(self):
         record = self.stk_records[0]

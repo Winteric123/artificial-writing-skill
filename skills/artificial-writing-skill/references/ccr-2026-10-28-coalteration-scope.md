@@ -1,0 +1,6 @@
+# COPE co-alteration scope (PMID 42905748)
+
+- The baseline and progression plasma assays surveyed sequence, copy-number and fusion events, but the article did not perform a dedicated sequence co-mutation analysis. `co_mutation_status=not_identified` is therefore more accurate than promoting descriptive variant lists to a co-mutation study.
+- Longitudinal acquired alterations were described in 22 paired baseline/progression cases after initial clinical benefit; 14 had at least one new variant and 10 were classified as tumor-associated after four potentially clonal-hematopoiesis-compatible TP53-only cases were excluded. This supports `co_alteration_status=analyzed` for descriptive longitudinal evolution.
+- Secondary EGFR alterations and MET amplification were reported after targeted therapy; JAK/STAT, KEAP1/STK11 and PI3K-pathway alterations were reported after chemo-immunotherapy. The small heterogeneous subset, absent paired leukocyte sequencing and absent variant-origin prediction preclude causal resistance, clonality, phase or treatment-predictive claims.
+- STK11 and KEAP1 are contextual progression findings only. They do not make this article an STK11 highlight and do not establish STK11/KEAP1-mediated immunotherapy resistance.

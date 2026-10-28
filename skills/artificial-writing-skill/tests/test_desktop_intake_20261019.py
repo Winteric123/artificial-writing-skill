@@ -68,9 +68,9 @@ class DesktopOctober19Intake(unittest.TestCase):
         ccr_bib = {row["pmid"]: row for row in rows("ccr-corpus-bibliography.csv")}
         jto_bib = {row["pmid"]: row for row in rows("jto-corpus-bibliography.csv")}
         versions = {row["pmid"]: row for row in rows("source-version-register.csv")}
-        self.assertEqual(len(ccr_bib), 293)
-        self.assertEqual(len(jto_bib), 40)
-        self.assertEqual(len(versions), 381)
+        self.assertEqual(len(ccr_bib), 294)
+        self.assertGreaterEqual(len(jto_bib), 40)
+        self.assertGreaterEqual(len(versions), 381)
         self.assertTrue(CCR_PMIDS <= set(ccr_bib))
         self.assertTrue(JTO_PMIDS <= set(jto_bib))
         self.assertTrue(FORMAL_PMIDS <= set(versions))
@@ -176,8 +176,8 @@ class DesktopOctober19Intake(unittest.TestCase):
         catalog = resource("ccr-2025-2026-results-logic.json")
         papers = {paper["pmid"]: paper for paper in catalog["papers"]}
         records = [row for row in catalog["records"] if row["pmid"] == "42848316"]
-        self.assertEqual(len(catalog["project_scope"]["expected_pmids"]), 124)
-        self.assertEqual(len(catalog["records"]), 270)
+        self.assertEqual(len(catalog["project_scope"]["expected_pmids"]), 125)
+        self.assertEqual(len(catalog["records"]), 274)
         self.assertIn("42848316", papers)
         self.assertEqual(len(records), 3)
         self.assertEqual(

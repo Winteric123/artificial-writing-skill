@@ -6,7 +6,7 @@ All sentence frames below are synthetic. Replace every bracketed slot with suppl
 
 For PDF-traceable examples from the 15-paper CCR/STK11 subset, use [the dedicated sentence-rewriting guide](stk11-sentence-rewriting.md) and filter `search_stk11_sentence_templates.py` by `null_or_inconclusive`, `exploratory_subgroup_signal`, `nonsignificant`, `undetermined`, or `mixed`. The source sentence documents a literature wording pattern; only the synthetic template may be adapted, and only with facts from the user's result.
 
-For broader 2025-2026 CCR Results logic, use [the 124-paper guide](ccr-2025-2026-results-logic-writing.md) and filter `search_ccr_results_logic.py` independently by `--result-polarity negative|mixed|inconclusive|descriptive` and `--inferential-status nonsignificant|mixed|not_reported`. Do not equate these axes: an unfavorable result can be statistically significant, and a favorable observed direction can have unreported inferential status.
+For broader 2025-2026 CCR Results logic, use [the 125-paper guide](ccr-2025-2026-results-logic-writing.md) and filter `search_ccr_results_logic.py` independently by `--result-polarity negative|mixed|inconclusive|descriptive` and `--inferential-status nonsignificant|mixed|not_reported`. Do not equate these axes: an unfavorable result can be statistically significant, and a favorable observed direction can have unreported inferential status.
 
 ## First decide what kind of result this is
 

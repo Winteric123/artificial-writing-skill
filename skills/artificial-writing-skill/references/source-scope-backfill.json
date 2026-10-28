@@ -7392,6 +7392,194 @@
         "use_roles": "identified-not-exhaustive"
       },
       "boundary": "TCGA and single-center NanoString cohorts are distinct. Held-out within-center evaluation is not external validation, and bulk-expression immune estimates are not direct cell counts."
+    },
+    "32068166": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "lung-squamous",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "human-cell-line",
+        "mouse",
+        "gemm"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "preclinical-mechanism"
+      ],
+      "source_reference": "jto-supplement-2026-10-25-intake.md",
+      "source_reference_line": 27,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-25; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Institutional and TCGA cohorts, targeted RPPA and preclinical models are distinct layers; assay-specific denominators must be retained and STING expression is not a validated treatment-predictive biomarker."
+    },
+    "33096269": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-supplement-2026-10-25-intake.md",
+      "source_reference_line": 58,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-25; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Flow, mIF, expression, TCR and WES analyses use partly overlapping subsets; adjusted results govern inference and no ICI efficacy prediction was tested."
+    },
+    "37247843": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative",
+        "computational-methods"
+      ],
+      "source_reference": "jto-supplement-2026-10-25-intake.md",
+      "source_reference_line": 89,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-25; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Targeted-genomic ICI, mIF and TCGA transcriptomic cohorts are distinct. Treatment-context association, internal cross-validation and subgroup P values do not establish predictive utility, external validation or interaction."
+    },
+    "40056978": {
+      "disease_ids": [
+        "lung-cancer",
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "plasma",
+        "blood",
+        "spleen"
+      ],
+      "model_ids": [
+        "mouse",
+        "mouse-cell-line",
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "preclinical-mechanism",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-supplement-2026-10-25-intake.md",
+      "source_reference_line": 121,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-25; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Principal single-cell and functional evidence is from pooled mouse tumors; targeted assays are not unbiased omics and the nine-patient human panel is exploratory."
+    },
+    "40850615": {
+      "disease_ids": [
+        "lung-adenocarcinoma",
+        "lung-squamous",
+        "nsclc",
+        "mixed-solid-tumors"
+      ],
+      "tissue_ids": [
+        "tumor",
+        "lung",
+        "blood"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "human-tissue",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-correlative"
+      ],
+      "source_reference": "jto-supplement-2026-10-25-intake.md",
+      "source_reference_line": 157,
+      "curation_method": "Actual full supplied PDF and main visuals read 2026-10-25; identified article-level facets, not exhaustive specimen mapping",
+      "source_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "TCGA expression, methylation, survival and GTEx normal-tissue evidence are not uniformly patient paired. Race-stratified significance without interaction is not race specificity, and the result is prognostic rather than predictive."
+    },
+    "42905748": {
+      "disease_ids": [
+        "nsclc"
+      ],
+      "tissue_ids": [
+        "plasma",
+        "tumor"
+      ],
+      "model_ids": [
+        "human-clinical",
+        "computational"
+      ],
+      "use_roles": [
+        "lung-primary",
+        "clinical-trial",
+        "clinical-correlative"
+      ],
+      "source_reference": "supplement-ccr-2026-10-28-intake.md",
+      "source_reference_line": 7,
+      "curation_method": "Complete supplied main PDF and all main tables/figures/captions read and independently source-rechecked 2026-10-28; article-level facets are identified, not exhaustive specimen mappings",
+      "source_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+      "facet_status": {
+        "disease_ids": "identified-not-exhaustive",
+        "tissue_ids": "identified-not-exhaustive",
+        "model_ids": "identified-not-exhaustive",
+        "use_roles": "identified-not-exhaustive"
+      },
+      "boundary": "Targeted tissue/plasma genomic profiling, longitudinal ctDNA kinetics and volumetric imaging are distinct evidence layers. The article is not paired multi-omics, and exploratory biomarker associations do not establish independent prognosis, treatment prediction or strategy benefit."
     }
   }
 }

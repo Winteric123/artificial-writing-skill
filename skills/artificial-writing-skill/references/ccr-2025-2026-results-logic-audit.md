@@ -4,20 +4,20 @@
 
 - Journal: Clinical Cancer Research; issue years 2025 and 2026.
 - Current installed membership rule: journal=CCR, issue year in 2025/2026, eligibility=included.
-- Included papers: 124 (2025: 48; 2026: 76). Excluded 2025 commentary/review records: 2.
-- Registered supplied main-PDF extent: 2420 physical pages.
-- Focused body-Results pages recorded as reread: 604; selected source/central-result pages visually checked: 322.
-- Source-linked full-sentence records: 270; the actual per-paper range is 2-3 records (the validator permits 2-4).
+- Included papers: 125 (2025: 48; 2026: 77). Excluded 2025 commentary/review records: 2.
+- Registered supplied main-PDF extent: 2460 physical pages.
+- Focused body-Results pages recorded as reread: 611; selected source/central-result pages visually checked: 340.
+- Source-linked full-sentence records: 274; the actual per-paper range is 2-4 records.
 - Each PDF path was kept only in the private task manifest. The shared resource retains the registered version, SHA-256, physical page and article identity.
 - Rereading covered the complete body Results narrative, the Abstract/Discussion hierarchy for central findings, and sufficient Methods context to identify analysis units, comparisons and inference. It was not a new six-gate acceptance review and did not change historical main-read dates or review status.
 - Separate or unprovided supplements remain outside this focused rereading unless an existing article record independently states otherwise.
 
 ## Aggregate record profile
 
-- Result polarity: {'descriptive': 22, 'inconclusive': 30, 'mixed': 45, 'negative': 63, 'positive': 110}
-- Inferential status: {'mixed': 27, 'nonsignificant': 63, 'not_applicable': 54, 'not_reported': 59, 'significant': 67}
-- Result types: {'assay_concordance': 11, 'biomarker_association': 19, 'cross_layer_concordance': 3, 'descriptive_frequency': 7, 'diagnostic_performance': 5, 'differential_feature': 14, 'functional_perturbation': 28, 'model_performance': 8, 'negative_primary_endpoint': 4, 'null_biomarker': 26, 'omics_landscape': 2, 'other': 4, 'pathway_or_state': 15, 'pk_pd_exposure': 5, 'resistance_mechanism': 7, 'safety_tolerability': 7, 'subgroup_signal': 26, 'survival_prognosis': 37, 'treatment_activity': 34, 'treatment_efficacy': 8}
-- Domains (multi-label): {'clinical_efficacy': 88, 'diagnostic_model': 15, 'genomics': 41, 'imaging': 5, 'integrated_omics': 23, 'liquid_biopsy': 27, 'metabolomics': 4, 'other': 4, 'pk_pd': 9, 'preclinical_functional': 41, 'prognosis': 70, 'proteomics': 18, 'safety': 11, 'single_cell': 3, 'spatial_omics': 4, 'transcriptomics': 10}
+- Result polarity: {'descriptive': 22, 'inconclusive': 31, 'mixed': 46, 'negative': 63, 'positive': 112}
+- Inferential status: {'mixed': 28, 'nonsignificant': 64, 'not_applicable': 54, 'not_reported': 60, 'significant': 68}
+- Result types: {'assay_concordance': 11, 'biomarker_association': 19, 'cross_layer_concordance': 3, 'descriptive_frequency': 8, 'diagnostic_performance': 5, 'differential_feature': 14, 'functional_perturbation': 28, 'model_performance': 9, 'negative_primary_endpoint': 4, 'null_biomarker': 26, 'omics_landscape': 2, 'other': 5, 'pathway_or_state': 15, 'pk_pd_exposure': 5, 'resistance_mechanism': 7, 'safety_tolerability': 7, 'subgroup_signal': 26, 'survival_prognosis': 38, 'treatment_activity': 34, 'treatment_efficacy': 8}
+- Domains (multi-label): {'clinical_efficacy': 90, 'diagnostic_model': 15, 'genomics': 42, 'imaging': 6, 'integrated_omics': 24, 'liquid_biopsy': 29, 'metabolomics': 4, 'other': 4, 'pk_pd': 9, 'preclinical_functional': 41, 'prognosis': 73, 'proteomics': 18, 'safety': 11, 'single_cell': 3, 'spatial_omics': 4, 'transcriptomics': 10}
 
 The counts describe selected writing-pattern sentences, not the prevalence of scientific findings in the journal. A paper can contain more than one polarity and domain.
 
@@ -4083,3 +4083,47 @@ The counts describe selected writing-pattern sentences, not the prevalence of sc
     - PDF SHA-256: `9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359`.
     - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
     - Verification note: The source sentence was visually transcribed and page-checked; the stored text extraction also produced a normalized_literal match. The observation concerns one retrospectively described patient.
+
+## PMID 42905748
+
+- Identity: Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial (2026); DOI 10.1158/1078-0432.CCR-26-2812.
+- Supplied PDF: publisher_hosted_online_first_manuscript_pdf; SHA-256 `f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1`; 40 physical pages.
+- Focused Results pages reread: 16, 17, 18, 19, 20, 21, 22.
+- Visual pages checked: 2, 3, 14, 15, 17, 18, 19, 20, 21, 22, 33, 34, 35, 36, 37, 38, 39, 40.
+- Result profile: positive, mixed, inconclusive.
+- Domains: genomics, liquid_biopsy, clinical_efficacy, prognosis, integrated_omics, imaging.
+- Central results:
+  - Arm A exceeded the prespecified historical OS benchmark, but the noncomparative design and lack of a mandated ctDNA action algorithm did not establish benefit or harm from serial monitoring.
+  - Plasma complemented tissue genotyping, and early ctDNA clearance was associated with response and survival; integrated molecular-volume discrimination did not significantly improve over molecular response alone.
+- Narrative sequence:
+  - Define the noncomparative historical-benchmark framework, report the primary estimate and contemporaneous descriptive arm separately, then move from operational genomic yield to exploratory biomarker-outcome associations, model-increment tests and explicit strategy-benefit restraint.
+- Negative-result handling: Nonsignificant model-increment and bTMB findings are reported without equivalence language. Failure to demonstrate strategy benefit does not erase positive assay-yield or biomarker-association layers, and those positive layers do not rescue the strategy conclusion.
+- Omics logic: Targeted tissue/plasma genomics, ctDNA kinetics and volumetric imaging are separate layers. Plasma yield supports workflow complementation; longitudinal associations and acquired alterations remain exploratory.
+- Efficacy/activity logic: The one-sample historical criterion was met, but Arm B was descriptive and no ctDNA action algorithm was mandated; no between-arm benefit or harm is established.
+- Prognosis logic: Early ctDNA clearance was associated with response and survival, but available-case landmark analyses were univariable and independent prognostic value was not established.
+- Claim/source boundaries:
+  - Randomization does not convert the explicitly noncomparative design into a formal arm-to-arm efficacy test.
+  - Log-rank P values in the text/Figure 3 and Cox P values paired with HRs in Table 3 are test-specific and cannot be interchanged.
+  - Conditional lead time does not quantify full-cohort detection performance or benefit from earlier action.
+  - The separate supplementary figures and tables were not supplied.
+- Selected source-linked sentence records:
+  - `ccr-logic-42905748-cope-001`: physical page(s) 17; mixed; mixed; other; state_primary_finding; opening.
+    - Source sentence: The lower bound of the 95% CI exceeded the prespecified 40% historical benchmark, while the CI included the 50% target (Figure 2A).
+    - PDF SHA-256: `f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The historical criterion and target value answer different questions; the sentence was visually checked on physical page 17.
+  - `ccr-logic-42905748-cope-002`: physical page(s) 17; positive; not_reported; descriptive_frequency; quantify_effect; development.
+    - Source sentence: The plasma assay was reportable in all 112 tested patients and yielded contributory genomic information in 32 of 35 patients with noncontributory or unavailable tissue testing, increasing overall baseline genotyping success from 69% with tissue alone to 97% with tissue plus plasma.
+    - PDF SHA-256: `f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The sentence and Table 2 were visually checked; the result concerns workflow/genotyping yield rather than clinical efficacy.
+  - `ccr-logic-42905748-cope-003`: physical page(s) 19; positive; significant; survival_prognosis; quantify_effect; development.
+    - Source sentence: Median OS was not reached versus 17.1 months (95% CI 10.7-NR; P=0.004; Figure 3A), and median PFS was 22.9 months (95% CI 10.4-NR) versus 5.4 months (95% CI 3.9-9.2; P<0.001; Figure 3B), respectively.
+    - PDF SHA-256: `f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The text/Figure values are log-rank results. Table 3 Cox P values paired with HRs are different tests and were not substituted.
+  - `ccr-logic-42905748-cope-004`: physical page(s) 20; inconclusive; nonsignificant; model_performance; report_null_result; qualification.
+    - Source sentence: The composite endpoint showed numerically higher prognostic discrimination than molecular response alone for PFS (c-index 0.74, 95% CI 0.54-0.85 v 0.70, 95% CI 0.35-0.86; P=0.768) and similar discrimination for OS (0.77, 95% CI 0.47-0.88 v 0.77, 95% CI 0.35-0.87; P=0.958); neither difference was statistically significant.
+    - PDF SHA-256: `f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1`.
+    - Verification: visual exact transcription recorded; text extraction match = `normalized_literal`.
+    - Verification note: The nonsignificant differences do not establish incremental performance or equivalence.

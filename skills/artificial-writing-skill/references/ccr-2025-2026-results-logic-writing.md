@@ -1,6 +1,6 @@
 # CCR 2025-2026 Results logic: omics, efficacy, and prognosis
 
-Use this route when a user needs a whole Results sentence or paragraph patterned on the currently included 2025-2026 *Clinical Cancer Research* original articles. The linked [catalog](ccr-2025-2026-results-logic.json) covers 124 included issue-year records (48 from 2025 and 76 from 2026) and 270 complete body-Results source sentences; the two excluded 2025 narrative/commentary records are not language-learning sources. [The audit](ccr-2025-2026-results-logic-audit.md) records the actual supplied PDF version, 604 focused Results pages, 322 visually checked source or central-result pages, physical-page spans, text-extraction match status, and per-paper result logic. Visual transcription and mechanical text matching are reported separately. This is a source-grounded writing resource, not independent validation of every scientific claim or supplement.
+Use this route when a user needs a whole Results sentence or paragraph patterned on the currently included 2025-2026 *Clinical Cancer Research* original articles. The linked [catalog](ccr-2025-2026-results-logic.json) covers 125 included issue-year records (48 from 2025 and 77 from 2026) and 274 complete body-Results source sentences; the two excluded 2025 narrative/commentary records are not language-learning sources. [The audit](ccr-2025-2026-results-logic-audit.md) records the actual supplied PDF version, 611 focused Results pages, 340 visually checked source or central-result pages, physical-page spans, text-extraction match status, and per-paper result logic. Visual transcription and mechanical text matching are reported separately. This is a source-grounded writing resource, not independent validation of every scientific claim or supplement.
 
 ## Decide three things before choosing a sentence
 
@@ -49,6 +49,18 @@ Open with the prespecified analysis set and endpoint, not the biomarker story:
 - If the primary endpoint is positive, secondary endpoints and subgroups still retain their own hierarchy and multiplicity status.
 - An exploratory subgroup remains `exploratory_hypothesis` unless a valid interaction analysis and its prespecified hierarchy support a stronger conclusion.
 - A pharmacodynamic change supports target engagement or biological activity only when the assay and timing support that statement.
+
+### Historical benchmark met, strategy benefit unestablished
+
+Do not force a noncomparative historical-control study into a simple positive/negative binary. Separate four statements:
+
+`observed estimate and interval -> relation to historical benchmark -> relation to any separate target value -> design-level strategy conclusion`
+
+If the interval clears a prespecified historical criterion, report that result accurately. Then state whether the interval still includes the target value and whether the design actually tests the intervention strategy. A randomized contextual arm does not become a formal comparator when no arm-to-arm hypothesis test was prespecified. Positive assay yield or biomarker-outcome associations remain valid at their own evidence layer, but cannot establish that monitoring or acting on the marker improves outcomes.
+
+Useful architecture:
+
+> The [estimate/interval] exceeded the prespecified [historical criterion], while remaining compatible with [target value]. Because [formal comparative test] was not planned and [biomarker-guided action] was not mandated, the result does not establish benefit or harm from [strategy]. Separately, [assay or molecular result] showed [bounded operational/association finding] in [analysis set].
 
 ### Prognosis
 

@@ -73,6 +73,13 @@
       "supplied_pdf_version": "publisher_typeset_pdf",
       "identity_check": "registered-sha256-match"
     },
+    "32068166": {
+      "filename": "PMID32068166_DellaCorte_2020_author_manuscript.pdf",
+      "sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+      "physical_pages": 24,
+      "supplied_pdf_version": "author_manuscript",
+      "identity_check": "registered-sha256-match"
+    },
     "32102950": {
       "filename": "Aggarwal_Baseline_Plasma_TMB_Pembrolizumab_NSCLC_PMID32102950_AuthorManuscript.pdf",
       "sha256": "995748fef60f2be677f31e65f16d4b7f60476761460dc0e4b49cd55bef67c82c",
@@ -127,6 +134,13 @@
       "sha256": "758747dacfc448ee96e212d42e64fbf07f8e0f125df525821154c53f81e7cf91",
       "physical_pages": 13,
       "supplied_pdf_version": "not_classified_by_header",
+      "identity_check": "registered-sha256-match"
+    },
+    "33096269": {
+      "filename": "PMID33096269_Gaudreau_2021_author_manuscript.pdf",
+      "sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+      "physical_pages": 20,
+      "supplied_pdf_version": "author_manuscript",
       "identity_check": "registered-sha256-match"
     },
     "33264619": {
@@ -1011,6 +1025,13 @@
       "supplied_pdf_version": "publisher_typeset_pdf",
       "identity_check": "registered-sha256-match"
     },
+    "37247843": {
+      "filename": "PMID37247843_Alessi_2023_author_manuscript.pdf",
+      "sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+      "physical_pages": 23,
+      "supplied_pdf_version": "author_manuscript",
+      "identity_check": "registered-sha256-match"
+    },
     "37249619": {
       "filename": "Lim_BBT-176,_a_Novel_Fourth-Generation_Tyrosine_Kinase_Inhibitor_for_Osimertinib-Resistant_EGFR_Mutatio_PMID37249619.pdf",
       "sha256": "9c171ed568bfa0395c5df6f21d12f4ea448cf9d90f471125458bc24dd32624c2",
@@ -1662,6 +1683,13 @@
       "supplied_pdf_version": "author_manuscript",
       "identity_check": "registered-sha256-match"
     },
+    "40056978": {
+      "filename": "PMID40056978_Chen_2025_corrected_proof.pdf",
+      "sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+      "physical_pages": 25,
+      "supplied_pdf_version": "corrected_proof",
+      "identity_check": "registered-sha256-match"
+    },
     "40057483": {
       "filename": "Shu_Uncovering-the-rewired-IAP-JAK-regulatory-axis-as-an-immune-dependent-vulnerabilit_PMID40057483_VOR.pdf",
       "sha256": "4c33ed25ae6651567bc2885063b71ff2dcbf854738bf48a00681ad1177b874c6",
@@ -1842,6 +1870,13 @@
       "sha256": "9cfaa4454cacbfe52b1986cf386a2da557d87b28840b51a533d6c5c4e957d272",
       "physical_pages": 11,
       "supplied_pdf_version": "publisher_typeset_pdf",
+      "identity_check": "registered-sha256-match"
+    },
+    "40850615": {
+      "filename": "PMID40850615_Hulbert_2026_author_manuscript.pdf",
+      "sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+      "physical_pages": 19,
+      "supplied_pdf_version": "author_manuscript",
       "identity_check": "registered-sha256-match"
     },
     "40853904": {
@@ -2542,6 +2577,13 @@
       "sha256": "9f16d5b59b7d8e1c4a194ffc8136dba37e41f7caa47e04ec69bb6be072b80359",
       "physical_pages": 30,
       "supplied_pdf_version": "publisher_hosted_manuscript_pdf",
+      "identity_check": "registered-sha256-match"
+    },
+    "42905748": {
+      "filename": "Tambaoan_COPE_Serial_ctDNA_NSCLC_PMID42905748_publisher_onlinefirst_manuscript.pdf",
+      "sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+      "physical_pages": 40,
+      "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
       "identity_check": "registered-sha256-match"
     }
   },
@@ -172869,6 +172911,66 @@
       "quotation_verified": false,
       "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
     },
+    "ccr-lang-5a4bda00c761774ad8d3": {
+      "expression": "No formal hypothesis test between [groups] was planned; outcomes in [contextual group] were summarized descriptively.",
+      "source_article_ids": "42905748",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "42905748"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "ccr-lang-dc999ab10af6a222a55b": {
+      "expression": "The lower bound of the [confidence interval] exceeded the prespecified [historical benchmark], while the interval included the [target value].",
+      "source_article_ids": "42905748",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "42905748"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "ccr-lang-d98e7e7a92d95ddb6e16": {
+      "expression": "[Assay] was reportable in [n/N] and yielded contributory information in [x/y] patients with [reference-test limitation], increasing [workflow metric] from [a] with [single modality] to [b] with [combined modalities].",
+      "source_article_ids": "42905748",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "42905748"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "ccr-lang-ae2454a0d4a4d57d0f09": {
+      "expression": "[Composite model] showed numerically [higher/lower] discrimination than [reference model] for [endpoint 1] and similar discrimination for [endpoint 2]; neither difference was statistically significant.",
+      "source_article_ids": "42905748",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "42905748"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "ccr-lang-9b4eb2834b5678c2306a": {
+      "expression": "Because the trial was not powered for [between-group comparison] and no predefined [biomarker-guided action algorithm] was mandated, these results do not establish benefit or harm from [monitoring strategy].",
+      "source_article_ids": "42905748",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "42905748"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
     "jto-lang-9f2d2ea8a354a7869f5a": {
       "expression": "structural-domain heterogeneity",
       "source_article_ids": "41932614",
@@ -200591,6 +200693,246 @@
       "quotation_verified": false,
       "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
     },
+    "jto-lang-ccd3b60e4e792a6beeba": {
+      "expression": "We integrated [cohort-specific molecular layers] at article level but did not treat incomplete assay overlap as paired multi-omics.",
+      "source_article_ids": "32068166",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "32068166"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-d4f330d1eceae8bd4357": {
+      "expression": "Although most [genotype-defined] tumors showed a [low/intermediate] immune state, a subset retained higher [pathway], checkpoint and immune-infiltration signals.",
+      "source_article_ids": "32068166",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "32068166"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-1545c62cba5fa6355e1a": {
+      "expression": "The comparison was directionally consistent with [pattern], but did not reach statistical significance and therefore remained inconclusive.",
+      "source_article_ids": "32068166",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "32068166"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-1b8f3b4eb5304a670717": {
+      "expression": "The observed molecular-immune association supports biological stratification but does not validate treatment benefit in the absence of patient outcome data.",
+      "source_article_ids": "32068166",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "32068166"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-0ee343a609234d5e4209": {
+      "expression": "The platforms provided complementary evidence across partly overlapping assay subsets rather than one completely paired multi-omics cohort.",
+      "source_article_ids": "33096269",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "33096269"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-2cfd0b6443774a7953f3": {
+      "expression": "After adjustment for [covariates], the association with [immune feature] remained detectable.",
+      "source_article_ids": "33096269",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "33096269"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-c938d63a9987680f07d0": {
+      "expression": "The unadjusted difference in [feature] did not persist after multivariable adjustment, whereas [covariate] remained associated with the feature.",
+      "source_article_ids": "33096269",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "33096269"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-1314ac23a7e455166961": {
+      "expression": "Gene-set enrichment supported [cell/program] activity at the transcriptomic level but did not directly measure cell abundance or function.",
+      "source_article_ids": "33096269",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "33096269"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-47c4c6665df201eded21": {
+      "expression": "To harmonize [derived metric] across platforms, values were transformed and standardized within platform before pooled analysis.",
+      "source_article_ids": "37247843",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "37247843"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-9ab2fa0d527c15055912": {
+      "expression": "Although the correlations were statistically detectable, their magnitudes were weak, indicating limited shared variation.",
+      "source_article_ids": "37247843",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "37247843"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-f6c39a04dde229fc8d7a": {
+      "expression": "Within [subgroup], [endpoint 1] differed significantly, whereas [endpoint 2] and [endpoint 3] showed only numerical differences.",
+      "source_article_ids": "37247843",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "37247843"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-e596159277785fafa23d": {
+      "expression": "The marker was associated with outcome during [treatment], but predictive utility was not established without a formal treatment interaction and external validation.",
+      "source_article_ids": "37247843",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "37247843"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-426c7d58ac4b2897936a": {
+      "expression": "To characterize temporal remodeling, [omics assays] were combined with [orthogonal assays] at prespecified time points after treatment.",
+      "source_article_ids": "40056978",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40056978"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-627b89d29c8337b94b85": {
+      "expression": "After quality control and filtering, [n] cells were retained from [model or cohort].",
+      "source_article_ids": "40056978",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40056978"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-c651256e38b1105319e9": {
+      "expression": "[Condition] produced a directional change in [measure], but the comparison reached only borderline significance and supports a tentative interpretation.",
+      "source_article_ids": "40056978",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40056978"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-e9e40802abd813c3e256": {
+      "expression": "In an exploratory targeted-panel analysis of [n] samples, features meeting the screening threshold were treated as candidates for validation.",
+      "source_article_ids": "40056978",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40056978"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-e95e9bf7439d397f151b": {
+      "expression": "Features meeting both the prespecified FDR threshold and the absolute effect-size threshold were considered differentially expressed.",
+      "source_article_ids": "40850615",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40850615"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-b1c480834a67428e2771": {
+      "expression": "After adjustment, [marker] was associated with mortality, although the wide confidence interval indicated substantial imprecision.",
+      "source_article_ids": "40850615",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40850615"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-0740bb0cf2a6417eff4f": {
+      "expression": "The association observed in [group A] was not detected in [group B]; without a formal interaction, the contrast remained descriptive.",
+      "source_article_ids": "40850615",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40850615"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
+    "jto-lang-feecb9f848a1f7618dea": {
+      "expression": "Because the data source captured only [available variables], residual confounding by [unmeasured social, exposure or treatment factors] could not be addressed.",
+      "source_article_ids": "40850615",
+      "state": "synthetic-not-a-verbatim-quotation",
+      "literal_matches": [],
+      "recorded_page_hints": [],
+      "unmatched_source_pmids": [
+        "40850615"
+      ],
+      "quotation_verified": false,
+      "boundary": "Literal matches use one-based physical PDF pages, not printed journal pages. They are mechanically located wording, not semantic verification or quotation authorization. Reading-note page numbering is unverified and is not a PDF anchor. Synthetic frames have no required verbatim counterpart."
+    },
     "cancer-discovery-lang-ee1890d3adca6d138959": {
       "expression": "molecular heterogeneity 分子异质性; integrative profiling 整合分子谱分析; subtype-associated vulnerability 亚型相关脆弱性",
       "source_article_ids": "26069186",
@@ -217685,7 +218027,7 @@
   "states": {
     "no-literal-match-needs-context-review": 4081,
     "pdf-text-located": 1238,
-    "synthetic-not-a-verbatim-quotation": 5351
+    "synthetic-not-a-verbatim-quotation": 5376
   },
   "source_asset_hashes": {
     "annals-of-oncology-2023-36526124-language.md": "8bc93cf01d8917a58b107992e73fc2be80fea16b095b83ecfd4f3e77fa617951",
@@ -217928,6 +218270,7 @@
     "jto-2026-42749050-language.md": "18fd2202fffa4fff61fc144c63b43a06c75464acb1b1df6ebccac091890f6716",
     "jto-2026-42749051-language.md": "f340f8ad631d34e96cdc1c7ca2782778fc93ee1863860b44370d55a47573b194",
     "jto-crr-2023-36793385-language.md": "90e0a7025bde5dfd680dd051718e1514e488bd0043132fb322061306100f4476",
+    "jto-supplement-2026-10-25-intake.md": "adc4a43202a543d462b6f1b7345ec5465a105f15e494fb2129cef5ac54add31d",
     "nature-2017-28538732-language.md": "73fa60f8ace47cbf3d46a885be58e18d73a45c253cc6d71d743c4c7db2679389",
     "nature-2026-09-19-stk11-language.md": "221786dd293ae06408f0ec80cf3c5fa7269c4fe88c10ed0875adf1de49fc4bd0",
     "nature-2026-42587156-language.md": "a4e2a059168e185dfad5276a4ac96fdaddcc9552dccbf7cc279dfc305c155bc2",
@@ -217940,6 +218283,7 @@
     "nature-medicine-2024-38351187-language.md": "f7a75657682fd9ada115f8f98219117cf5ddc6e9f03c24843f13228445afd805",
     "nature-metabolism-2024-38877143-language.md": "04bc97797853e250a04d477b1ed8b453767a85d3d758f5a4d339983577080516",
     "sttt-2024-38177135-language.md": "9fbbc44aec8ae9d2f800a23927ad05c0e38e73c771e13902c7d927d5a9a8dad7",
+    "supplement-ccr-2026-10-28-intake.md": "bc4242d46e82398a28066dd1cee28afb67c8954931224c993e137fc199e817ac",
     "supplement-ccr-jto-2026-10-19-intake.md": "32a4cd155349c609b64f0d153dce03524174186d06d8348fe5a7bd98b4d0c93d"
   }
 }

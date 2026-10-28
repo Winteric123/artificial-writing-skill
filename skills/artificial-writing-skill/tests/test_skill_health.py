@@ -32,13 +32,13 @@ class SkillHealth(unittest.TestCase):
         self.assertEqual((result['project']['legacy_core'], result['project']['legacy_support']), (13, 51))
         self.assertEqual(result['sentence_templates']['papers'], 15)
         self.assertTrue(result['sentence_templates']['fulltext_coverage'])
-        self.assertEqual(result['ccr_results_logic']['papers'], 124)
+        self.assertEqual(result['ccr_results_logic']['papers'], 125)
         self.assertEqual(
             (result['ccr_results_logic']['year_2025'], result['ccr_results_logic']['year_2026']),
-            (48, 76),
+            (48, 77),
         )
-        self.assertEqual(result['ccr_source_sentences']['reconciled_articles'], 275)
-        self.assertEqual(result['ccr_source_sentences']['records'], 356)
+        self.assertEqual(result['ccr_source_sentences']['reconciled_articles'], 276)
+        self.assertEqual(result['ccr_source_sentences']['records'], 364)
         self.assertEqual(result['ccr_source_sentences']['errors'], [])
 
     def test_sentence_source_identity_corruption_is_reported_by_health(self):

@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-25",
+  "scope": "Twenty-five source-linked sentence patterns from five fully read and independently rechecked user-supplied Journal of Thoracic Oncology PDFs (five records per article).",
+  "verification": "Each selected sentence was checked against the local full-text extraction and the independent full-page/figure/table review. Whitespace, line-break hyphenation, typographic dashes, symbols, and PDF extraction glyphs may be normalized; scientific values and claim direction are unchanged. All five articles require boundary-aware use; three are held at needs_correction, while two passed with article-specific alerts. Templates preserve the applicable uncertainty and accept user facts only.",
+  "papers": [
+    {
+      "pmid": "32068166",
+      "title": "STING Pathway Expression Identifies NSCLC With an Immune-Responsive Phenotype",
+      "doi": "10.1016/j.jtho.2020.01.009",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2020",
+      "version": "author_manuscript",
+      "sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+      "physical_pages": 24,
+      "asset": "jto-supplement-2026-10-25-intake.md",
+      "boundary": "Cross-cohort and preclinical triangulation, not a same-patient paired multi-omics study or a validated treatment-predictive analysis. Several cohort denominators conflict across text, figures, and tables; selected records avoid those denominators. The combination experiment was not shown to outperform anti-PD-L1 monotherapy, and the supplied PDF lacks external supplementary files."
+    },
+    {
+      "pmid": "33096269",
+      "title": "Neoadjuvant Chemotherapy Increases Cytotoxic T Cell, Tissue Resident Memory T Cell, and B Cell Infiltration in Resectable NSCLC",
+      "doi": "10.1016/j.jtho.2020.09.027",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2021",
+      "version": "author_manuscript",
+      "sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+      "physical_pages": 20,
+      "asset": "jto-supplement-2026-10-25-intake.md",
+      "boundary": "Retrospective cross-sectional comparison of partly overlapping assay subsets rather than paired longitudinal multi-omics. Baseline clinical differences required adjustment, nominal immune comparisons were numerous, WES and TCR denominators conflict across sections, and the supplied PDF lacks the external supplementary methods, tables, and figures."
+    },
+    {
+      "pmid": "37247843",
+      "title": "Impact of Aneuploidy and Chromosome 9p Loss on Tumor Immune Microenvironment and Immune Checkpoint Inhibitor Efficacy in NSCLC",
+      "doi": "10.1016/j.jtho.2023.05.019",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2023",
+      "version": "author_manuscript",
+      "sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+      "physical_pages": 23,
+      "asset": "jto-supplement-2026-10-25-intake.md",
+      "boundary": "Retrospective two-center treatment-context association across sequencing platforms. A small nonrandomized never-ICI comparator and the absence of a formal treatment-by-biomarker interaction do not establish predictive utility; no validated clinical cutoff is available, and binary response models are mislabeled as hazard-ratio analyses elsewhere in the article."
+    },
+    {
+      "pmid": "40056978",
+      "title": "Selective Depletion of CCR8+Treg Cells Enhances the Antitumor Immunity of Cytotoxic T Cells in Lung Cancer by Dendritic Cells",
+      "doi": "10.1016/j.jtho.2025.02.029",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2025",
+      "version": "corrected_proof",
+      "sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+      "physical_pages": 25,
+      "asset": "jto-supplement-2026-10-25-intake.md",
+      "boundary": "Corrected proof dominated by preclinical mouse studies; single-cell assays pooled three tumors per treatment in selected models. The human Olink/flow analysis included nine patients, used an exploratory p<0.1 screen without multiplicity correction, and cannot establish a predictive biomarker. External supplementary files were not supplied."
+    },
+    {
+      "pmid": "40850615",
+      "title": "CEACAM7 Expression and DNA Methylation: Prognostic Biomarkers for Lung Adenocarcinoma in African Americans",
+      "doi": "10.1016/j.jtho.2025.08.015",
+      "journal": "Journal of Thoracic Oncology",
+      "year": "2026",
+      "version": "author_manuscript",
+      "sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+      "physical_pages": 19,
+      "asset": "jto-supplement-2026-10-25-intake.md",
+      "boundary": "Retrospective TCGA discovery analysis with a small African American LUAD subgroup, wide adjusted confidence intervals, no independent external validation, and limited control of social and environmental confounding. Several abstract, table, panel-label, and survival-summary statements conflict with the main results or figures; selected records avoid those disputed claims."
+    }
+  ],
+  "records": [
+    {
+      "id": "jto-intake-32068166-stk11-immune-heterogeneity",
+      "pmid": "32068166",
+      "source": {
+        "pdf_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5
+        ],
+        "section": "results",
+        "source_sentence": "While the majority of STK11/LKB1 mutant tumors were in the STING-low/-intermediate group (n=55) and had low expression of immune-related genes, there is a subset in the STING-high group (n=18) with higher levels of targetable immune genes, like CD274, HAVCR2, PDCD1LG2, T-cell infiltration markers, and chemokines (Figure 2C).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_hyphenation_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 5; results"
+      },
+      "content_type": "molecular_subgroup_immune_heterogeneity",
+      "use_scenario": "Describe an immune-inflamed subset within a genotype usually summarized as immune-cold.",
+      "rewrite_template": "Although most [genotype-defined] tumors showed a [low/intermediate] immune state, a subset ([n/N]) exhibited higher [pathway], checkpoint, and immune-infiltration signals.",
+      "evidence_boundary": "The expression-defined subset demonstrates heterogeneity, not clinical response to immunotherapy; retain the cohort, clustering definition, and denominator."
+    },
+    {
+      "id": "jto-intake-32068166-comutation-enrichment",
+      "pmid": "32068166",
+      "source": {
+        "pdf_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "Interestingly, when we compared the mutation profiles of the STING-high STK11/LKB1 mutant group with the other two groups, including low or intermediate expression of these genes (immune ‘cold’ groups), we found that the STING-high group is enriched for TP53 mutations (56% versus 16%, p=0.002) (Figure 2D).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_quotes_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 6; results"
+      },
+      "content_type": "comutation_enrichment_within_genotype",
+      "use_scenario": "Connect a co-mutation pattern with a contrasting pathway or immune-expression state.",
+      "rewrite_template": "Within [index-genotype] tumors, [co-mutation] was enriched in the [high-pathway/inflamed] subgroup compared with the [low/intermediate] subgroups ([x]% vs [y]%; P=[ ]).",
+      "evidence_boundary": "This is subgroup enrichment, not evidence that the co-mutation causes the immune state or modifies treatment benefit."
+    },
+    {
+      "id": "jto-intake-32068166-cisplatin-genotype-dependent",
+      "pmid": "32068166",
+      "source": {
+        "pdf_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          7
+        ],
+        "section": "results",
+        "source_sentence": "These results demonstrate that while cisplatin treatment leads to increased PD-L1 expression across various NSCLC in vitro models, the presence of STING activation is genotype-dependent in LUAD.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 7; results"
+      },
+      "content_type": "shared_treatment_effect_with_genotype_specific_pathway_response",
+      "use_scenario": "Separate a treatment-associated change seen across models from a pathway response restricted by genotype.",
+      "rewrite_template": "Whereas [treatment] increased [shared marker] across several models, induction of [pathway/readout] varied by genotype.",
+      "evidence_boundary": "Preclinical expression changes do not establish patient benefit, and genotype dependence should be restricted to the tested models and assays."
+    },
+    {
+      "id": "jto-intake-32068166-combination-protein-null",
+      "pmid": "32068166",
+      "source": {
+        "pdf_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "results",
+        "source_sentence": "In contrast, we did not detect an increase of these proteins in tumors treated with anti-PD-L1 alone or cisplatin/anti-PD-L1 combination at either time point.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 8; results"
+      },
+      "content_type": "timepoint_specific_protein_change_not_detected",
+      "use_scenario": "Report an unobserved molecular change in active treatment arms without erasing technical limitations.",
+      "rewrite_template": "No increase in [protein/readout] was detected with [arm A] or [arm B] at the assessed time points; however, [sampling/necrosis/assay limitation] constrains interpretation.",
+      "evidence_boundary": "The combination samples were limited by necrotic tissue, and a nondetected increase is not proof of pathway inactivity."
+    },
+    {
+      "id": "jto-intake-32068166-longitudinal-validation-need",
+      "pmid": "32068166",
+      "source": {
+        "pdf_sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          11
+        ],
+        "section": "discussion",
+        "source_sentence": "Further studies should address this gap in knowledge, exploring changes in STING pathway and immune cell infiltration at multiple time points during treatment.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "normalized_literal",
+        "source_locator": "physical p. 11; discussion"
+      },
+      "content_type": "longitudinal_multiomic_validation_need",
+      "use_scenario": "Close a discussion of heterogeneous static or endpoint measurements by specifying the missing longitudinal evidence.",
+      "rewrite_template": "Longitudinal sampling across treatment is needed to resolve how [pathway] and [immune/cellular feature] co-evolve over time.",
+      "evidence_boundary": "This is a future-study requirement, not evidence that the proposed temporal relationship already exists."
+    },
+    {
+      "id": "jto-intake-33096269-covariate-retention",
+      "pmid": "33096269",
+      "source": {
+        "pdf_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          7
+        ],
+        "section": "results",
+        "source_sentence": "From all significant parameters identified using multivariate analyses, clinical stage, age, histology and smoking history were retained for all further multivariate analyses based on biological and surgical timepoint relevance.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_normalized",
+        "source_locator": "physical p. 7; results"
+      },
+      "content_type": "confounder_selection_for_adjusted_models",
+      "use_scenario": "Explain why the same clinical covariates were carried across multiple adjusted assay analyses.",
+      "rewrite_template": "Given baseline imbalance, subsequent models adjusted for [covariates], selected on the basis of [clinical/biological] relevance and the prespecified modeling strategy.",
+      "evidence_boundary": "Data-driven covariate retention does not eliminate residual confounding; do not describe the groups as exchangeable after adjustment."
+    },
+    {
+      "id": "jto-intake-33096269-adjusted-only-cell-signal",
+      "pmid": "33096269",
+      "source": {
+        "pdf_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "results",
+        "source_sentence": "Multiplex IF imaging (NCT=10; US=72) confirmed that, when compared with US patients, NCT patients had increased CD3+ cells by univariate (p=0.089; Supplementary Table 10) and multivariate (p=0.026; Supplementary Table 10 and Figure 2a and 2c) analyses.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 8; results"
+      },
+      "content_type": "adjusted_significant_unadjusted_nonsignificant",
+      "use_scenario": "Report an imaging-derived cell signal that becomes statistically detectable only after covariate adjustment.",
+      "rewrite_template": "The [cell/readout] difference was not statistically significant before adjustment (P=[ ]) but was detected after adjustment for [covariates] (P=[ ]).",
+      "evidence_boundary": "State both models and their denominators; adjusted significance in a small nonrandomized subgroup does not prove a treatment-induced change."
+    },
+    {
+      "id": "jto-intake-33096269-gsea-cell-programs",
+      "pmid": "33096269",
+      "source": {
+        "pdf_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "results",
+        "source_sentence": "After adjustment for age, histology, smoking status and clinical staging, we found that within the top 20 upregulated immune pathways in the NCT group, 6 were related to CD8+ T cells, 9 were related to CD4+ T cells, and 2 were related to B cells.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_normalized",
+        "source_locator": "physical p. 8; results"
+      },
+      "content_type": "adjusted_gene_set_immune_program_enrichment",
+      "use_scenario": "Use transcriptomic pathway enrichment as orthogonal support for immune-cell findings.",
+      "rewrite_template": "Adjusted gene-set analysis showed enrichment of programs annotated to [cell/process classes], providing transcriptomic support for—but not direct measurement of—[phenotype].",
+      "evidence_boundary": "GSEA reflects coordinated expression and pathway annotation, not measured cell counts, lineage frequency, or demonstrated cellular function."
+    },
+    {
+      "id": "jto-intake-33096269-tcr-richness-null",
+      "pmid": "33096269",
+      "source": {
+        "pdf_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          9
+        ],
+        "section": "results",
+        "source_sentence": "Richness, a measure of diversity, was not significantly different by univariate (p=0.58) and multivariate analyses (p=0.44; Supplementary Figure 10b).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_normalized",
+        "source_locator": "physical p. 9; results"
+      },
+      "content_type": "tcr_diversity_null_in_both_models",
+      "use_scenario": "Preserve a null repertoire-diversity result beside positive immune-infiltration findings.",
+      "rewrite_template": "Despite higher [immune-cell infiltration/readout], TCR richness did not differ detectably in either unadjusted or adjusted analyses (P=[ ] and P=[ ], respectively).",
+      "evidence_boundary": "Nonsignificance does not establish equivalent repertoires, and the TCR assay subset was not identical to the other profiling subsets."
+    },
+    {
+      "id": "jto-intake-33096269-tmb-adjustment-reversal",
+      "pmid": "33096269",
+      "source": {
+        "pdf_sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          9
+        ],
+        "section": "results",
+        "source_sentence": "However, this difference did not remain significant following multivariate analyses (p=0.342; Supplementary Figure 11), and smoking history was the only significant variable within the multivariate model (p=0.003).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_normalized",
+        "source_locator": "physical p. 9; results"
+      },
+      "content_type": "unadjusted_positive_adjusted_null_with_confounder",
+      "use_scenario": "Describe loss of a nominal omics difference after adjustment and identify the remaining covariate signal.",
+      "rewrite_template": "The unadjusted difference in [omics feature] did not persist after multivariable adjustment (P=[ ]), whereas [covariate] remained associated with the feature (P=[ ]).",
+      "evidence_boundary": "The adjusted result governs the treatment-group interpretation; do not retain the unadjusted association as evidence of treatment effect."
+    },
+    {
+      "id": "jto-intake-37247843-arm-alteration-definition",
+      "pmid": "37247843",
+      "source": {
+        "pdf_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5
+        ],
+        "section": "methods",
+        "source_sentence": "An arm was considered altered if at least 70% of its territory was either gained or deleted.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "normalized_literal",
+        "source_locator": "physical p. 5; methods"
+      },
+      "content_type": "copy_number_feature_operational_definition",
+      "use_scenario": "Define a chromosome-arm event before constructing an aneuploidy burden metric.",
+      "rewrite_template": "A chromosome arm was classified as altered when at least [threshold]% of its territory showed [gain or loss].",
+      "evidence_boundary": "Retain the threshold and calling pipeline; this operational definition is not interchangeable with focal copy-number alteration or whole-genome aneuploidy measures."
+    },
+    {
+      "id": "jto-intake-37247843-cross-platform-normalization",
+      "pmid": "37247843",
+      "source": {
+        "pdf_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5
+        ],
+        "section": "methods",
+        "source_sentence": "The FAA distributions were normalized within different platforms by applying a natural logarithmic transformation followed by standardization to Z scores, as previously described for TMB harmonization across different platforms.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 5; methods"
+      },
+      "content_type": "cross_platform_omics_harmonization",
+      "use_scenario": "Describe transformation and within-platform standardization of a derived genomic burden score.",
+      "rewrite_template": "To harmonize [derived metric] across assay platforms, values were [transformation] and then standardized within platform as Z scores.",
+      "evidence_boundary": "Platform standardization improves comparability of distributions but does not remove all assay, panel-coverage, or cohort effects."
+    },
+    {
+      "id": "jto-intake-37247843-weak-omics-correlations",
+      "pmid": "37247843",
+      "source": {
+        "pdf_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "When taken as continuous variables, there was a weak negative correlation between FAA and PD-L1 (Pearson R: −0.16, p<0.0001, Supplementary Fig. 5) and a very weak positive correlation between FAA and TMB (Pearson R: 0.07, p=0.0005; Fig. 1D).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_symbols_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 6; results"
+      },
+      "content_type": "statistically_significant_but_weak_omics_correlations",
+      "use_scenario": "Report statistically significant cross-omics correlations while preserving their small effect sizes.",
+      "rewrite_template": "[Metric] correlated weakly with [feature A] (r=[ ]) and only very weakly with [feature B] (r=[ ]), despite small P values.",
+      "evidence_boundary": "The correlation coefficients, not P values alone, determine effect magnitude; no causal or substitutive biomarker relationship is supported."
+    },
+    {
+      "id": "jto-intake-37247843-pdl1-stratum-mixed-endpoints",
+      "pmid": "37247843",
+      "source": {
+        "pdf_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          8
+        ],
+        "section": "results",
+        "source_sentence": "The deleterious effect of high FAA on immunotherapy outcomes was most pronounced in the PD-L1 TPS 1% to 49% subset, with a numerically lower ORR (19.4% versus 9.8%, p=0.22), a significantly shorter PFS (4.3 versus 2.6 mo; HR=0.58, 95% CI: 0.37–0.92, p=0.02), and a numerically shorter mOS (16.3 versus 14.3 mo; HR=0.70, 95% CI: 0.43–1.14, p=0.15) compared with NSCLCs with an FAA low and a PD-L1 TPS 1% to 49% (Supplementary Fig. 14A–I).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_symbols_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 8; results"
+      },
+      "content_type": "subgroup_mixed_efficacy_endpoints_without_interaction",
+      "use_scenario": "Report a significant time-to-event association alongside nonsignificant response and survival differences within a biomarker stratum.",
+      "rewrite_template": "Within the [biomarker] stratum, [high vs low feature] was associated with shorter [endpoint], whereas differences in [ORR] and [OS] were numerical and nonsignificant.",
+      "evidence_boundary": "Do not reuse ‘most pronounced’: no formal between-stratum interaction supports comparative effect modification, and treatment-context association is not a validated predictive claim."
+    },
+    {
+      "id": "jto-intake-37247843-prospective-cutoff-validation",
+      "pmid": "37247843",
+      "source": {
+        "pdf_sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          13
+        ],
+        "section": "discussion",
+        "source_sentence": "In addition, as aneuploidy is not an established biomarker for immunotherapy patient selection in lung cancer, further data from prospective and multicenter clinical trials are needed to validate the association with ICIs and identify an optimal cutoff to discriminate cases with the greatest likelihood of responding to PD-(L)1 inhibition.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_hyphenation_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 13; discussion"
+      },
+      "content_type": "candidate_biomarker_validation_requirement",
+      "use_scenario": "State what evidence is still required before a continuous omics score can guide patient selection.",
+      "rewrite_template": "Because [marker] is not established for treatment selection, prospective multicenter validation and prespecification of a clinically useful cutoff are required.",
+      "evidence_boundary": "A retrospective association and data-derived grouping do not validate a clinical cutoff or establish treatment-predictive utility."
+    },
+    {
+      "id": "jto-intake-40056978-longitudinal-multimodal-design",
+      "pmid": "40056978",
+      "source": {
+        "pdf_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "supplied_pdf_version": "corrected_proof",
+        "physical_pages": [
+          1
+        ],
+        "section": "abstract_methods",
+        "source_sentence": "To track the dynamic changes in tumor microenvironment, we performed the single-cell RNA sequencing, the single-cell T-cell receptor sequencing analysis, the flow cytometry, the multi-color immunofluorescence, and the Luminex assay on tumors after three, seven, 14, and 21 days of different treatment regimens.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "visual_transcription_whitespace_and_hyphenation_normalized",
+        "source_locator": "physical p. 1; abstract_methods"
+      },
+      "content_type": "longitudinal_multimodal_tumor_profiling_design",
+      "use_scenario": "Summarize complementary cellular, receptor, spatial, and soluble-factor assays across treatment time points.",
+      "rewrite_template": "To characterize temporal remodeling of the [microenvironment], tumors collected at [time points] underwent [single-cell assay], [repertoire assay], [flow/spatial assay], and [soluble-factor assay].",
+      "evidence_boundary": "List which models and samples contributed to each assay; multiple modalities do not imply that every tumor or patient was profiled across all layers and time points."
+    },
+    {
+      "id": "jto-intake-40056978-single-cell-qc-yield",
+      "pmid": "40056978",
+      "source": {
+        "pdf_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "supplied_pdf_version": "corrected_proof",
+        "physical_pages": [
+          10
+        ],
+        "section": "results",
+        "source_sentence": "After quality control and cell filtering, a total of 164,559 and 73,523 high-quality cells were obtained from LLC and KL tumors, respectively.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "visual_transcription_and_whitespace_normalized",
+        "source_locator": "physical p. 10; results"
+      },
+      "content_type": "single_cell_post_qc_yield",
+      "use_scenario": "Report retained single-cell yield separately for two tumor models after filtering.",
+      "rewrite_template": "After quality control and filtering, [n1] and [n2] cells were retained from [model/cohort 1] and [model/cohort 2], respectively.",
+      "evidence_boundary": "Cell count is not biological replication; these cells came from pooled tumors, and the number of source tumors per treatment must remain explicit elsewhere."
+    },
+    {
+      "id": "jto-intake-40056978-cytokine-null-mechanistic-qualification",
+      "pmid": "40056978",
+      "source": {
+        "pdf_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "supplied_pdf_version": "corrected_proof",
+        "physical_pages": [
+          14
+        ],
+        "section": "results",
+        "source_sentence": "Nevertheless, we analyzed the ELISA data and found that the inhibition of DCs by CCR8+Treg cells occurred without significant alteration in IL-10 and TGF-β concentrations (p>0.05; Supplementary Fig. 6A and B), suggesting the immunosuppressive effects of CCR8+Treg cells on CCL5+DCs is mainly ligand-receptor contact-dependent instead of cytokine-mediated.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "visual_transcription_symbols_and_whitespace_normalized",
+        "source_locator": "physical p. 14; results"
+      },
+      "content_type": "negative_soluble_factor_result_with_mechanistic_downshift",
+      "use_scenario": "Use unchanged candidate cytokines to narrow, but not prove, a proposed suppressive mechanism.",
+      "rewrite_template": "Because [phenotype] occurred without detectable changes in [candidate soluble factors], these factors may not fully account for the effect, leaving [contact-dependent mechanism] as a hypothesis for direct testing.",
+      "evidence_boundary": "Nonsignificant ELISA results do not establish contact dependence or exclude other soluble mediators; do not reuse the source's ‘mainly’ causal wording."
+    },
+    {
+      "id": "jto-intake-40056978-borderline-spatial-proximity",
+      "pmid": "40056978",
+      "source": {
+        "pdf_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "supplied_pdf_version": "corrected_proof",
+        "physical_pages": [
+          16
+        ],
+        "section": "results",
+        "source_sentence": "When compared with the control group, CCR8+Treg cell depletion combined with PD1 blockade led to relatively closer distance between CD8+T cells and IL-12+ DCs with borderline statistical significance, which might indicate the activation of CD8+T cells with IL-12+ DCs.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "visual_transcription_and_whitespace_normalized",
+        "source_locator": "physical p. 16; results"
+      },
+      "content_type": "borderline_spatial_proximity_signal",
+      "use_scenario": "Describe a directionally closer cell-cell spatial relationship without declaring functional activation.",
+      "rewrite_template": "The combination arm showed a directionally shorter distance between [cell A] and [cell B], but the borderline result supports only a tentative spatial association, not demonstrated cellular activation.",
+      "evidence_boundary": "Spatial proximity is not functional interaction; retain the borderline significance and avoid converting ‘might indicate’ into a mechanistic conclusion."
+    },
+    {
+      "id": "jto-intake-40056978-exploratory-olink-small-n",
+      "pmid": "40056978",
+      "source": {
+        "pdf_sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "supplied_pdf_version": "corrected_proof",
+        "physical_pages": [
+          19
+        ],
+        "section": "results",
+        "source_sentence": "According to the Olink proteomics assay on pre-treatment plasma (n=9), seven potential cytokines and chemokines with a p value of less than 0.1 were different between patients with a radiologically PR or stable disease (n=5) and patients with radiologically PD (n=4).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "visual_transcription_hyphenation_and_whitespace_normalized",
+        "source_locator": "physical p. 19; results"
+      },
+      "content_type": "small_n_exploratory_plasma_proteomic_screen",
+      "use_scenario": "Report hypothesis-generating plasma-protein differences from a very small response-stratified cohort.",
+      "rewrite_template": "In an exploratory pretreatment plasma analysis ([n] patients), [number] proteins met the prespecified screening threshold (P<[ ]) between [outcome groups] and were treated as candidates for validation.",
+      "evidence_boundary": "P<0.1 without multiplicity correction in n=9 is a screening signal only; combining PR and stable disease does not validate efficacy prediction or response classification."
+    },
+    {
+      "id": "jto-intake-40850615-de-threshold",
+      "pmid": "40850615",
+      "source": {
+        "pdf_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          3,
+          4
+        ],
+        "section": "methods",
+        "source_sentence": "Genes with a false discovery rate–corrected p value less than 10−5 and an absolute log2FC more than 3 were considered significant.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "linebreak_symbols_and_pdf_glyph_normalized",
+        "source_locator": "physical pp. 3-4; methods"
+      },
+      "content_type": "differential_expression_dual_threshold",
+      "use_scenario": "State both multiplicity-controlled significance and effect-size thresholds for differential expression.",
+      "rewrite_template": "Differentially expressed genes were defined by an FDR-corrected P value below [threshold] and an absolute log2 fold change above [threshold].",
+      "evidence_boundary": "Report both thresholds and the contrasted populations; a thresholded discovery set is not an externally validated biomarker panel."
+    },
+    {
+      "id": "jto-intake-40850615-cpg-expression-screen",
+      "pmid": "40850615",
+      "source": {
+        "pdf_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          4
+        ],
+        "section": "methods",
+        "source_sentence": "Spearman’s rank correlation analysis was used to identify CpG sites on chr19 correlated with the mRNA expression of CEACAM7 (r<−0.35, p value≤0.01).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_symbols_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 4; methods"
+      },
+      "content_type": "methylation_expression_candidate_screen",
+      "use_scenario": "Describe directional correlation screening that links locus-specific methylation with gene expression.",
+      "rewrite_template": "Candidate CpG sites were selected when methylation correlated inversely with [gene] expression beyond the prespecified correlation (r<[ ]) and P-value (P≤[ ]) thresholds.",
+      "evidence_boundary": "Correlation screening does not establish methylation-mediated regulation or independent prognostic value, and multiplicity handling for this step must be stated."
+    },
+    {
+      "id": "jto-intake-40850615-adjusted-wide-ci-prognosis",
+      "pmid": "40850615",
+      "source": {
+        "pdf_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          5,
+          6
+        ],
+        "section": "results",
+        "source_sentence": "Multivariate Cox proportional hazard model, adjusted for age, sex, prior malignancy, and stage, revealed that among AA with LUAD, high mRNA expression of CEACAM7 was significantly associated with an increased mortality risk, with HR of 38.86 (95% CI: 3.94–383.68, p=0.002) (Fig. 3C).",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "linebreak_symbols_and_pdf_glyph_normalized",
+        "source_locator": "physical pp. 5-6; results"
+      },
+      "content_type": "adjusted_prognostic_association_with_extreme_imprecision",
+      "use_scenario": "Report a statistically significant adjusted survival association while foregrounding an extremely wide confidence interval.",
+      "rewrite_template": "After adjustment for [covariates], high [marker] was associated with increased mortality in [subgroup] (HR [ ], 95% CI [ ]–[ ]; P=[ ]), although the wide interval indicates substantial imprecision.",
+      "evidence_boundary": "Prognostic association only; the adjusted model/Table 1 use 50 cases versus a 52-case cohort without a complete missing-data explanation. Retain the analysis-specific sample size; the small subgroup, extreme interval width, and lack of external validation preclude a stable effect-size or clinical-cutoff claim."
+    },
+    {
+      "id": "jto-intake-40850615-race-stratum-null",
+      "pmid": "40850615",
+      "source": {
+        "pdf_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          6
+        ],
+        "section": "results",
+        "source_sentence": "In Whites with LUAD, there were no significant differences in overall survival from the log-rank test (p value=0.49) when comparing high and low CEACAM7 mRNA expression.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 6; results"
+      },
+      "content_type": "population_stratum_survival_null",
+      "use_scenario": "Contrast a subgroup-specific prognostic association with a nondetected association in another reported population stratum.",
+      "rewrite_template": "The marker-associated survival difference observed in [group A] was not detected in [group B] (log-rank P=[ ]); this contrast remains descriptive without a formal interaction analysis.",
+      "evidence_boundary": "A significant result in one stratum and a nonsignificant result in another do not establish between-stratum heterogeneity; do not biologicalize self-reported race or infer no effect."
+    },
+    {
+      "id": "jto-intake-40850615-unmeasured-social-confounding",
+      "pmid": "40850615",
+      "source": {
+        "pdf_sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "supplied_pdf_version": "author_manuscript",
+        "physical_pages": [
+          9
+        ],
+        "section": "limitations",
+        "source_sentence": "Because the TCGA data set was clinically limited to variables such as age, sex, race, pack*year smoked, years smoked, prior malignancy, histology, and AJCC cancer stage, no adjustment could be made to control for potential confounders such as socioeconomic status.",
+        "visual_verified": true,
+        "verification_record": "source-rechecks/2026-10-25-jto-supplement.md",
+        "text_extraction_match": "whitespace_and_pdf_glyph_normalized",
+        "source_locator": "physical p. 9; limitations"
+      },
+      "content_type": "unmeasured_social_environmental_confounding",
+      "use_scenario": "Explain why an adjusted molecular-survival association may still reflect unmeasured structural or environmental factors.",
+      "rewrite_template": "Adjustment was limited to [available clinical variables]; unmeasured factors such as [social/environmental variables] could therefore contribute residual confounding.",
+      "evidence_boundary": "Do not interpret race-stratified molecular associations as intrinsic biological differences when relevant social, exposure, access, ancestry, and treatment variables were unavailable."
+    }
+  ]
+}

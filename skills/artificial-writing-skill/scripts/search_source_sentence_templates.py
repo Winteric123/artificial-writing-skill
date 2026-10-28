@@ -19,6 +19,7 @@ DEFAULT_CATALOGS = (
     "stk11-ccr-sentence-templates.json",
     "supplement-ccr-2026-10-18-sentence-patterns.json",
     "supplement-ccr-jto-2026-10-19-sentence-patterns.json",
+    "jto-supplement-2026-10-25-sentence-patterns.json",
 )
 
 
@@ -230,11 +231,14 @@ def main():
     parser.add_argument("--content-type")
     parser.add_argument("--scenario")
     parser.add_argument("--keyword")
-    parser.add_argument("--review-status", choices=("passed", "needs_correction", "not_reviewed"))
+    parser.add_argument(
+        "--review-status",
+        choices=("passed", "needs_correction", "not_reviewed", "in_progress"),
+    )
     parser.add_argument(
         "--accepted-only",
         action="store_true",
-        help="Return only live CCR-passed records with no applicable quarantine/source-check rule.",
+        help="Return only live registered-journal passed records with no applicable quarantine/source-check rule.",
     )
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--json", action="store_true", dest="as_json")

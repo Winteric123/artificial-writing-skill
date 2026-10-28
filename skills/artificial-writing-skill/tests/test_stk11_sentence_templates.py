@@ -158,6 +158,18 @@ def write_installed_fixture(skill, catalog_payload, authority_payload=None):
     authority_payload = authority_payload or catalog_payload
     references = skill / 'references'
     references.mkdir(parents=True, exist_ok=True)
+    (references / 'journal-registry.json').write_text(
+        json.dumps({
+            'schema_version': 1,
+            'journals': {
+                'ccr': {
+                    'name': 'Clinical Cancer Research',
+                    'quality': 'ccr-reading-quality-register.csv',
+                },
+            },
+        }),
+        encoding='utf-8',
+    )
     (references / 'stk11-ccr-sentence-templates.json').write_text(
         json.dumps(catalog_payload, ensure_ascii=False, indent=2), encoding='utf-8'
     )

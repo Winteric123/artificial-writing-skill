@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "curated_on": "2026-10-19",
+  "curated_on": "2026-10-28",
   "scope": "All current formal registry records; eligible article-level topic annotations. Preprints separate; candidate queues not promoted.",
   "boundary": "Topic-screening labels, not new full reads, acceptance, quotations, exhaustive gene pairs, or proof that a negative-screened source contains no co-alteration. Gene contexts include comparisons and negative associations, not only positive co-occurrence. All filters are article-level, not expression-level validation.",
   "articles": {
@@ -14104,6 +14104,260 @@
           12
         ],
         "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "32068166": {
+      "doi": "10.1016/j.jtho.2020.01.009",
+      "eligibility": "included",
+      "curated_on": "2026-10-25",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "analyzed",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation"
+      ],
+      "gene_contexts": [
+        [
+          "STK11",
+          "TP53"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "immune_context"
+      ],
+      "evidence": [
+        {
+          "source": "jto-supplement-2026-10-25-coalteration-scope.md",
+          "source_sha256": "f4b0159a1afabf9bfde8854a9dc3bd45a9f1d50086455d85d2bb80ab52c29e69",
+          "first_line": 3,
+          "last_line": 5
+        }
+      ],
+      "boundary": "TP53 enrichment was analyzed within STK11-mutant expression strata; this is subgroup association rather than a general co-occurrence rate, causal immune mechanism or treatment-predictive interaction.",
+      "pdf": {
+        "sha256": "9b9f54e353accac94f93a2a194a22d15a3fb8fd94ab6bc75f91a112bb5ef956f",
+        "physical_pages": 24,
+        "checked_context_pages": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "33096269": {
+      "doi": "10.1016/j.jtho.2020.09.027",
+      "eligibility": "included",
+      "curated_on": "2026-10-25",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "not_identified",
+      "alteration_types": [],
+      "gene_contexts": [],
+      "analysis_uses": [],
+      "evidence": [
+        {
+          "source": "jto-supplement-2026-10-25-coalteration-scope.md",
+          "source_sha256": "f4b0159a1afabf9bfde8854a9dc3bd45a9f1d50086455d85d2bb80ab52c29e69",
+          "first_line": 7,
+          "last_line": 9
+        }
+      ],
+      "boundary": "WES supplied TMB and genomic context, not a principal pairwise co-mutation or co-alteration analysis. Assay availability must not be promoted into an analyzed topic.",
+      "pdf": {
+        "sha256": "fadea5c8cdb06950f6558baca576a871b67996ae6cfe6a7b59d08234fb224bc6",
+        "physical_pages": 20,
+        "checked_context_pages": [
+          7,
+          8,
+          9
+        ],
+        "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "37247843": {
+      "doi": "10.1016/j.jtho.2023.05.019",
+      "eligibility": "included",
+      "curated_on": "2026-10-25",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "copy_number_loss",
+        "copy_number_gain",
+        "mixed_or_unspecified"
+      ],
+      "gene_contexts": [],
+      "analysis_uses": [
+        "genomic_landscape",
+        "treatment_outcomes",
+        "immune_context",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "jto-supplement-2026-10-25-coalteration-scope.md",
+          "source_sha256": "f4b0159a1afabf9bfde8854a9dc3bd45a9f1d50086455d85d2bb80ab52c29e69",
+          "first_line": 11,
+          "last_line": 13
+        }
+      ],
+      "boundary": "Arm-level 9p loss and 1q gain were analyzed with FAA. The evidence is treatment-context association without randomized comparison or formal treatment interaction; independent immune cohorts are not patient paired.",
+      "pdf": {
+        "sha256": "0f39d09184c05db03aea23d920f2a0bf5bd94b3c973d8eb400f1f885d08cbff5",
+        "physical_pages": 23,
+        "checked_context_pages": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "40056978": {
+      "doi": "10.1016/j.jtho.2025.02.029",
+      "eligibility": "included",
+      "curated_on": "2026-10-25",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "not_identified",
+      "alteration_types": [],
+      "gene_contexts": [],
+      "analysis_uses": [],
+      "evidence": [
+        {
+          "source": "jto-supplement-2026-10-25-coalteration-scope.md",
+          "source_sha256": "f4b0159a1afabf9bfde8854a9dc3bd45a9f1d50086455d85d2bb80ab52c29e69",
+          "first_line": 15,
+          "last_line": 17
+        }
+      ],
+      "boundary": "scRNA/scTCR, targeted protein panels and cell-cell interaction analyses are immune-mechanism evidence, not genomic co-mutation or co-alteration analysis.",
+      "pdf": {
+        "sha256": "b683b381659b29b4bf8039165c8826982c26f586cf782c74233c91fb85ab8471",
+        "physical_pages": 25,
+        "checked_context_pages": [
+          1,
+          7,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          19,
+          20
+        ],
+        "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "40850615": {
+      "doi": "10.1016/j.jtho.2025.08.015",
+      "eligibility": "included",
+      "curated_on": "2026-10-25",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "not_identified",
+      "alteration_types": [],
+      "gene_contexts": [],
+      "analysis_uses": [],
+      "evidence": [
+        {
+          "source": "jto-supplement-2026-10-25-coalteration-scope.md",
+          "source_sha256": "f4b0159a1afabf9bfde8854a9dc3bd45a9f1d50086455d85d2bb80ab52c29e69",
+          "first_line": 19,
+          "last_line": 21
+        }
+      ],
+      "boundary": "Expression-methylation correlation is cross-omics association, not genomic co-alteration. The small public-data result is prognostic and lacks an external validation cohort.",
+      "pdf": {
+        "sha256": "fe387a43d63d502d2fc524ce6026f611caefff3558d3e35b2945c8bb98c49011",
+        "physical_pages": 19,
+        "checked_context_pages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "scope": "Complete supplied main text and main visuals reviewed; co-alteration classification bounded to main PDF; separate supplements not supplied."
+      }
+    },
+    "42905748": {
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "eligibility": "included",
+      "curated_on": "2026-10-28",
+      "method": "independent-agent-main-source-topic-recheck",
+      "co_mutation_status": "not_identified",
+      "co_alteration_status": "analyzed",
+      "alteration_types": [
+        "sequence_mutation",
+        "copy_number_gain",
+        "fusion_rearrangement",
+        "origin_unresolved",
+        "between_sample_identity"
+      ],
+      "gene_contexts": [
+        [
+          "EGFR"
+        ],
+        [
+          "MET"
+        ],
+        [
+          "KEAP1"
+        ],
+        [
+          "STK11"
+        ]
+      ],
+      "analysis_uses": [
+        "genomic_landscape",
+        "resistance",
+        "treatment_outcomes",
+        "variant_origin",
+        "assay_or_method"
+      ],
+      "evidence": [
+        {
+          "source": "ccr-2026-10-28-coalteration-scope.md",
+          "source_sha256": "377e2e656d1297ff1999592a46ca0795edb30656dfad55dd5e2b612b5a70f476",
+          "first_line": 1,
+          "last_line": 6
+        }
+      ],
+      "boundary": "The article describes longitudinal acquired alterations but does not perform a dedicated sequence co-mutation analysis. STK11/KEAP1 are contextual progression findings in a small heterogeneous subset without paired leukocyte sequencing; they do not establish clonality, a causal resistance mechanism or prediction.",
+      "pdf": {
+        "sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "physical_pages": 40,
+        "checked_context_pages": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          33,
+          34,
+          35,
+          36,
+          38,
+          39,
+          40
+        ],
+        "scope": "Complete supplied main text and all main visuals reviewed; co-alteration classification is bounded to the main PDF; separate supplements not supplied."
       }
     }
   },

@@ -7,6 +7,7 @@ Generated from the bibliography and quality register, not inferred from article 
 | Artificial Intelligence and Computational Oncology | 2 | 2 | 2 |
 | CCR Drug Updates | 8 | 8 | 8 |
 | CCR Translations | 8 | 0 | 0 |
+| Clinical Trial Brief Report | 1 | 1 | 1 |
 | Clinical Trials: Cellular and Gene Therapy | 1 | 1 | 1 |
 | Clinical Trials: Immunotherapy | 35 | 35 | 35 |
 | Clinical Trials: Molecularly Targeted Therapy | 11 | 11 | 11 |
@@ -28,7 +29,7 @@ Generated from the bibliography and quality register, not inferred from article 
 ## Verification status
 
 - official_generic_online_first: 3
-- official_section: 286
+- official_section: 287
 - pending_official_verification: 4
 
 ## Unverified or generic labels

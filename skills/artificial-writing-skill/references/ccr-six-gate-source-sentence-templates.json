@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-10-28",
   "scope": "Source-linked whole-sentence writing patterns captured during the CCR full-corpus six-gate source recheck. Records require source wording, a parsed physical-page locator and a synthetic rewrite template; records from needs_correction articles remain bounded-only and do not license quarantined numerical claims.",
   "dependencies": {
     "register": {
       "path": "references/ccr-reading-quality-register.csv",
-      "sha256": "824b475d0b8ebceddb450211bd12453e55c6edff3dbedfcfd51193367911377c"
+      "sha256": "dd94b49b8153b55e598e6844a24c2719c3ff73b5a665324199e0e42efd475556"
     },
     "language_controls": {
       "path": "references/language-controls.json",
-      "sha256": "c8e448d15bc04e7354681c5fe0e1a64f71907d4f390e3711c9b06e06c4856f30"
+      "sha256": "3948dce01630bef633421a41e3319fb47c1c50ad9be33f2b21bcdef7b2c0865c"
     },
     "builder_script": {
       "path": "scripts/build_ccr_recheck_sentence_catalog.py",
@@ -207,17 +207,21 @@
       {
         "path": "wave16-root-summary.json",
         "sha256": "5138d99fdba5a55341f044cef083d0fdb67d3a1436b24ea0110acbd8f2a681a1"
+      },
+      {
+        "path": "wave17-cope-summary.json",
+        "sha256": "5352526544b28a66ddd1837d4533126be3a5431a9684376c79c4a04962fc4adf"
       }
     ]
   },
   "reconciliation": {
-    "included_total": 275,
+    "included_total": 276,
     "included_status_counts": {
-      "passed": 248,
+      "passed": 249,
       "needs_correction": 27,
       "not_reviewed": 0
     },
-    "represented_count": 154,
+    "represented_count": 155,
     "represented_pmids": [
       "31694835",
       "32102950",
@@ -372,7 +376,8 @@
       "42658187",
       "42714875",
       "42752799",
-      "42765908"
+      "42765908",
+      "42905748"
     ],
     "missing_summary_count": 9,
     "missing_summary_pmids": [
@@ -4765,6 +4770,21 @@
         "reconciliation_state": "missing_summary",
         "selected_summary": null,
         "record_count": 0
+      },
+      {
+        "pmid": "42905748",
+        "review_status": "passed",
+        "review_record": "source-rechecks/2026-10-28-42905748.md",
+        "article_alerts": [
+          {
+            "id": "CCR-20261028-42905748-design-and-inference-boundary",
+            "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+            "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+          }
+        ],
+        "reconciliation_state": "represented",
+        "selected_summary": "wave17-cope-summary.json",
+        "record_count": 8
       }
     ]
   },
@@ -4781,6 +4801,23 @@
     }
   },
   "papers": [
+    {
+      "pmid": "42905748",
+      "title": "Serial circulating tumour DNA monitoring in first-line advanced NSCLC (COPE): a randomized, two-arm non-comparative phase II trial",
+      "journal": "Clinical Cancer Research",
+      "year": 2026,
+      "doi": "10.1158/1078-0432.CCR-26-2812",
+      "review_status": "passed",
+      "reviewed_on": "2026-10-28",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ]
+    },
     {
       "pmid": "42765908",
       "title": "Safety and Efficacy of Ceralasertib plus Olaparib for Advanced/Metastatic Triple-Negative Breast Cancer in Three Molecular Strata: The Phase II VIOLETTE Study",
@@ -7476,6 +7513,270 @@
     }
   ],
   "records": [
+    {
+      "id": "ccr-recheck-42905748-a196d22bcf84b1dc",
+      "pmid": "42905748",
+      "content_type": "methods noncomparative randomized design",
+      "use_scenario": "Explain that a randomized contextual arm was not a formal efficacy comparator.",
+      "rewrite_template": "No formal hypothesis test between [groups] was planned; outcomes in [contextual group] were summarized descriptively.",
+      "evidence_boundary": "Do not infer significance, benefit, harm or equivalence from the untested numerical difference.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "14"
+        ],
+        "section": "methods",
+        "source_sentence": "No formal hypothesis test between arms was planned; Arm B outcomes were summarized descriptively.",
+        "source_locator": "Methods - Statistical Analysis, physical p14",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-c12be0666fc7b272",
+      "pmid": "42905748",
+      "content_type": "methods time-dependent biomarker landmark",
+      "use_scenario": "Explain landmark use and the remaining immortal-time-bias boundary.",
+      "rewrite_template": "[Biomarker-response] analyses used a [time]-landmark because classification required [postbaseline evidence], thereby reducing but not eliminating immortal-time bias.",
+      "evidence_boundary": "The landmark does not remove missingness, selection bias or variable sampling windows.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "15"
+        ],
+        "section": "methods",
+        "source_sentence": "Molecular-response analyses used a 1-month landmark because classification required an early on-treatment sample, thereby reducing but not eliminating immortal-time bias.",
+        "source_locator": "Methods - Statistical Analysis, physical p15",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-6f24472b4e5c0cd0",
+      "pmid": "42905748",
+      "content_type": "methods prognostic-model limitation",
+      "use_scenario": "State why independent prognosis was not established.",
+      "rewrite_template": "A multivariable model was not fitted because of [sample-size/event-count constraint]; independent prognostic value was therefore not established.",
+      "evidence_boundary": "Do not describe the marker as independently prognostic; not established is not evidence of no value.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "15"
+        ],
+        "section": "methods",
+        "source_sentence": "A multivariable model was not fitted because of the limited size and event count of the response groups; independent prognostic value was therefore not established.",
+        "source_locator": "Methods - Statistical Analysis, physical p15",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-7e153b9a9d5b6400",
+      "pmid": "42905748",
+      "content_type": "historical-benchmark primary result",
+      "use_scenario": "Separate clearance of a historical criterion from compatibility with a target value.",
+      "rewrite_template": "The lower bound of the [confidence interval] exceeded the prespecified [historical benchmark], while the interval included the [target value].",
+      "evidence_boundary": "This does not establish intervention benefit or a between-group effect.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "17"
+        ],
+        "section": "results",
+        "source_sentence": "The lower bound of the 95% CI exceeded the prespecified 40% historical benchmark, while the CI included the 50% target (Figure 2A).",
+        "source_locator": "Results - Primary outcome, physical p17",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-a02ec574e400c7e3",
+      "pmid": "42905748",
+      "content_type": "positive omics operational yield",
+      "use_scenario": "Describe how a liquid-biopsy assay complements noncontributory tissue testing.",
+      "rewrite_template": "[Assay] was reportable in [n/N] and yielded contributory information in [x/y] patients with [reference-test limitation], increasing [workflow metric] from [a] with [single modality] to [b] with [combined modalities].",
+      "evidence_boundary": "Operational yield is not diagnostic sensitivity, treatment benefit or survival benefit.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "17"
+        ],
+        "section": "results",
+        "source_sentence": "The plasma assay was reportable in all 112 tested patients and yielded contributory genomic information in 32 of 35 patients with noncontributory or unavailable tissue testing, increasing overall baseline genotyping success from 69% with tissue alone to 97% with tissue plus plasma.",
+        "source_locator": "Results - Baseline genomic characterization, physical p17",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-9a6038b36ceefe71",
+      "pmid": "42905748",
+      "content_type": "positive biomarker-outcome association with prognostic boundary",
+      "use_scenario": "Summarize positive response and survival associations while retaining the adjustment limit.",
+      "rewrite_template": "[Early biomarker change] was associated with [higher/lower response] and [longer/shorter time-to-event outcomes], although independent prognostic value was not established.",
+      "evidence_boundary": "Use association language; do not infer causation, interaction, treatment prediction or benefit from monitoring.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "3"
+        ],
+        "section": "translational relevance",
+        "source_sentence": "Early on-treatment ctDNA clearance was associated with higher response rates and longer progression-free and overall survival, although independent prognostic value was not established.",
+        "source_locator": "Translational Relevance, physical p3",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-88781b1a87016c4b",
+      "pmid": "42905748",
+      "content_type": "nonsignificant incremental model performance",
+      "use_scenario": "Report numerical model-performance differences without claiming improvement.",
+      "rewrite_template": "[Composite model] showed numerically [higher/lower] discrimination than [reference model] for [endpoint 1] and similar discrimination for [endpoint 2]; neither difference was statistically significant.",
+      "evidence_boundary": "Do not claim incremental prediction, clinical value, validation or equivalence.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "20"
+        ],
+        "section": "results",
+        "source_sentence": "The composite endpoint showed numerically higher prognostic discrimination than molecular response alone for PFS (c-index 0.74, 95% CI 0.54-0.85 v 0.70, 95% CI 0.35-0.86; P=0.768) and similar discrimination for OS (0.77, 95% CI 0.47-0.88 v 0.77, 95% CI 0.35-0.87; P=0.958); neither difference was statistically significant.",
+        "source_locator": "Results - Integration of molecular and volumetric response, physical p20",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
+    {
+      "id": "ccr-recheck-42905748-920c23c38a03f49e",
+      "pmid": "42905748",
+      "content_type": "clinical strategy benefit unestablished",
+      "use_scenario": "Constrain conclusions when the trial did not test an arm comparison or mandate biomarker-guided action.",
+      "rewrite_template": "Because the trial was not powered for [between-group comparison] and no predefined [biomarker-guided action algorithm] was mandated, these results do not establish benefit or harm from [monitoring strategy].",
+      "evidence_boundary": "This is an untested or unestablished strategy effect, not a nonsignificant comparison or evidence of ineffectiveness.",
+      "reuse_state": "usable_with_boundary",
+      "review_record": "source-rechecks/2026-10-28-42905748.md",
+      "article_alerts": [
+        {
+          "id": "CCR-20261028-42905748-design-and-inference-boundary",
+          "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+          "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
+        }
+      ],
+      "source": {
+        "pdf_sha256": "f3a85e5fccd1066529e267bd1d79d4232f6bbc460bc754d80335fd5a86fc96d1",
+        "supplied_pdf_version": "publisher_hosted_online_first_manuscript_pdf",
+        "physical_pages": [
+          "22"
+        ],
+        "section": "discussion",
+        "source_sentence": "Because the trial was not powered for a between-arm comparison and no predefined ctDNA action algorithm was mandated, these results do not establish benefit or harm from serial ctDNA monitoring.",
+        "source_locator": "Discussion, physical p22",
+        "verification": {
+          "level": "registered_original_page_and_extraction_checked",
+          "visual_status": "visually_checked",
+          "extraction_status": "normalized_literal"
+        },
+        "verification_record": "source-rechecks/2026-10-28-42905748.md"
+      }
+    },
     {
       "id": "ccr-recheck-42765908-994e9dbe4f1e9a73",
       "pmid": "42765908",

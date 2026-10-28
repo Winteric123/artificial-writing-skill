@@ -1,7 +1,8 @@
-"""Live CCR review and language controls shared by sentence retrieval routes.
+"""Live registered-journal review and language controls for sentence retrieval.
 
 Catalog contents remain historical provenance. Runtime reuse decisions always
-come from the current quality register and applicable language-control rules.
+come from the current journal-registry quality files and applicable
+language-control rules.
 """
 
 import csv
@@ -10,7 +11,9 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-ALLOWED_REVIEW_STATUSES = {"passed", "needs_correction", "not_reviewed", "not_recorded"}
+ALLOWED_REVIEW_STATUSES = {
+    "passed", "needs_correction", "not_reviewed", "in_progress", "not_recorded",
+}
 ALLOWED_REUSE_STATES = {
     "usable_with_boundary",
     "bounded_only",
@@ -33,24 +36,43 @@ def clean(value):
 
 
 def load_quality_statuses(references):
-    path = references / "ccr-reading-quality-register.csv"
-    if not path.is_file():
-        raise CatalogError(f"live review authority is missing: {path}")
+    registry_path = references / "journal-registry.json"
+    if not registry_path.is_file():
+        raise CatalogError(f"live review authority is missing: {registry_path}")
+    try:
+        registry = json.loads(registry_path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise CatalogError(f"cannot read live review authority {registry_path.name}: {exc}") from exc
+    journals = registry.get("journals") if isinstance(registry, dict) else None
+    if (not isinstance(registry, dict) or registry.get("schema_version") != 1
+            or not isinstance(journals, dict) or not journals):
+        raise CatalogError(f"unsupported or empty live review authority: {registry_path}")
     statuses = {}
-    with path.open(encoding="utf-8-sig", newline="") as stream:
-        for line_number, row in enumerate(csv.DictReader(stream), start=2):
-            pmid = clean(row.get("pmid"))
-            status = clean(row.get("review_status"))
-            eligibility = clean(row.get("eligibility"))
-            if not PMID_RE.fullmatch(pmid):
-                raise CatalogError(f"invalid PMID in {path.name}:{line_number}")
-            if pmid in statuses:
-                raise CatalogError(f"duplicate PMID in {path.name}: {pmid}")
-            if status not in ALLOWED_REVIEW_STATUSES - {"not_recorded"}:
-                raise CatalogError(f"invalid review_status in {path.name}: {pmid}")
-            if eligibility and eligibility not in {"included", "excluded"}:
-                raise CatalogError(f"invalid eligibility in {path.name}: {pmid}")
-            statuses[pmid] = "not_recorded" if eligibility == "excluded" else status
+    sources = {}
+    for journal_id, configuration in journals.items():
+        if not isinstance(configuration, dict) or not clean(configuration.get("quality")):
+            raise CatalogError(f"quality register not declared for journal: {journal_id}")
+        path = references / clean(configuration["quality"])
+        if not path.is_file():
+            raise CatalogError(f"live review authority is missing: {path}")
+        with path.open(encoding="utf-8-sig", newline="") as stream:
+            for line_number, row in enumerate(csv.DictReader(stream), start=2):
+                pmid = clean(row.get("pmid"))
+                status = clean(row.get("review_status"))
+                eligibility = clean(row.get("eligibility"))
+                if not PMID_RE.fullmatch(pmid):
+                    raise CatalogError(f"invalid PMID in {path.name}:{line_number}")
+                if pmid in statuses:
+                    raise CatalogError(
+                        f"duplicate PMID across live quality registers: {pmid} "
+                        f"({sources[pmid]} and {path.name})"
+                    )
+                if status not in ALLOWED_REVIEW_STATUSES - {"not_recorded"}:
+                    raise CatalogError(f"invalid review_status in {path.name}: {pmid}")
+                if eligibility and eligibility not in {"included", "excluded"}:
+                    raise CatalogError(f"invalid eligibility in {path.name}: {pmid}")
+                statuses[pmid] = "not_recorded" if eligibility == "excluded" else status
+                sources[pmid] = path.name
     return statuses
 
 
@@ -201,13 +223,14 @@ def enrich_records(records, statuses, controls, *, text_builder=None):
     for original in records:
         record = dict(original)
         pmid = clean(record.get("paper", record).get("pmid"))
-        # Only the live CCR register is authoritative. Unregistered/non-CCR records
-        # remain audit-only even if a serialized catalog carries a permissive state.
+        # The registered journal quality files are authoritative. Unregistered
+        # records remain audit-only even if a catalog snapshot is permissive.
         review_status = statuses.get(pmid, "not_recorded")
         article_state = {
             "passed": "usable_with_boundary",
             "needs_correction": "bounded_only",
             "not_reviewed": "audit_only",
+            "in_progress": "audit_only",
             "not_recorded": "audit_only",
         }[review_status]
         matched_rules = []

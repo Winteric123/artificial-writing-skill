@@ -33,6 +33,23 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def write_minimal_registry(references):
+    (references / "journal-registry.json").write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "journals": {
+                    "ccr": {
+                        "name": "Clinical Cancer Research",
+                        "quality": "ccr-reading-quality-register.csv",
+                    }
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+
+
 def valid_record(record_id="record-1", pmid="1001", sentence="A source sentence."):
     return {
         "id": record_id,
@@ -156,7 +173,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
             rows = list(csv.DictReader(stream))
         controls = load_language_controls(REFERENCES)
         included = [row for row in rows if row["eligibility"] == "included"]
-        self.assertEqual(len(included), 275)
+        self.assertEqual(len(included), 276)
         self.assertEqual(
             {row["pmid"] for row in included} - set(controls["article_alerts"]),
             set(),
@@ -253,6 +270,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
     def test_authoritative_status_and_controls_determine_effective_state(self):
         with tempfile.TemporaryDirectory() as temporary:
             references = Path(temporary)
+            write_minimal_registry(references)
             with (references / "ccr-reading-quality-register.csv").open(
                 "w", encoding="utf-8", newline=""
             ) as stream:
@@ -266,6 +284,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
                         {"pmid": "1002", "eligibility": "included", "review_status": "passed"},
                         {"pmid": "1003", "eligibility": "included", "review_status": "needs_correction"},
                         {"pmid": "1004", "eligibility": "included", "review_status": "not_reviewed"},
+                        {"pmid": "1005", "eligibility": "included", "review_status": "in_progress"},
                         {"pmid": "1006", "eligibility": "excluded", "review_status": "passed"},
                     ]
                 )
@@ -307,6 +326,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
                     valid_record("record-1002", "1002", "danger token"),
                     valid_record("record-1003", "1003", "ordinary signal"),
                     valid_record("record-1004", "1004", "ordinary signal"),
+                    valid_record("record-1005", "1005", "ordinary signal"),
                     valid_record("record-1006", "1006", "ordinary signal"),
                     valid_record("record-9999", "9999", "ordinary signal"),
                 ]
@@ -320,7 +340,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
                     "doi": f"10.0000/{pmid}",
                     "review_status": "passed",
                 }
-                for pmid in ("1001", "1002", "1003", "1004", "1006", "9999")
+                for pmid in ("1001", "1002", "1003", "1004", "1005", "1006", "9999")
             ]
             catalog_path = references / "fixture.json"
             catalog_path.write_text(json.dumps(catalog), encoding="utf-8")
@@ -338,6 +358,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
                     "1002": "quarantined",
                     "1003": "bounded_only",
                     "1004": "audit_only",
+                    "1005": "audit_only",
                     "1006": "audit_only",
                     "9999": "audit_only",
                 },
@@ -365,6 +386,7 @@ class CcrSourceSentenceCatalog(unittest.TestCase):
             campaign = root / "campaign"
             references.mkdir(parents=True)
             campaign.mkdir()
+            write_minimal_registry(references)
             register_path = references / "ccr-reading-quality-register.csv"
             fields = ["pmid", "eligibility", "review_status", "review_record", "reviewed_on"]
             with register_path.open("w", encoding="utf-8", newline="") as stream:

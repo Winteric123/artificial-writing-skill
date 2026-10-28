@@ -3777,6 +3777,54 @@
       ],
       "restriction": "Current six-gate review remains needs_correction because the results gate failed. Do not treat affected result wording or exact estimates from PMID 40260627 as acceptance-passed. Keep any audit reuse source-explicit and within the cited review's restrictions until correction; this alert supplements, and does not replace, older source-specific alerts.",
       "source_reference": "source-rechecks/2026-10-20-ccr-wave03-c.md"
+    },
+    {
+      "id": "JTO-20261025-32068166-source-conflicts",
+      "article_ids": [
+        "32068166"
+      ],
+      "restriction": "Assay-specific PROSPECT and TCGA denominators, the abstract total, and one combination-superiority caption conflict within the main PDF. Use layer-specific denominators; do not claim patient ICI prediction.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md#pmid-32068166--sting-pathway-expression-identifies-nsclc-with-an-immune-responsive-phenotype"
+    },
+    {
+      "id": "JTO-20261025-33096269-source-conflicts",
+      "article_ids": [
+        "33096269"
+      ],
+      "restriction": "WES and TCR denominators conflict across sections, one adjusted P value differs by rounding or display, and key covariate details are in unavailable supplements. Prefer adjusted inference and retain assay-specific subsets.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md#pmid-33096269--neoadjuvant-chemotherapy-and-immune-cell-infiltration-in-resectable-nsclc"
+    },
+    {
+      "id": "JTO-20261025-37247843-interpretation-boundary",
+      "article_ids": [
+        "37247843"
+      ],
+      "restriction": "Binary ORR/DCB estimates have an HR/OR label conflict, the cross-platform normalization text conflicts between natural-logarithmic and normal-transformation wording, and 9p/1q analysis counts of 606/675 are not fully reconciled with the 765-patient ICI cohort. FAA/9p findings are retrospective treatment-context associations without formal treatment interaction; mIF and TCGA cohorts are independent.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md#pmid-37247843--aneuploidy-chromosome-9p-loss-and-ici-outcomes"
+    },
+    {
+      "id": "JTO-20261025-40056978-translation-boundary",
+      "article_ids": [
+        "40056978"
+      ],
+      "restriction": "Mouse pooled single-cell evidence and targeted assays are not paired human multi-omics. CCL5-CCL1 is directionally positive but nonsignificant; measured safety and n=9 Olink data do not establish systemic safety, clinical efficacy or prediction.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md#pmid-40056978--selective-ccr8-positive-treg-depletion-and-dendritic-cell-mediated-antitumor-immunity"
+    },
+    {
+      "id": "JTO-20261025-40850615-source-conflicts",
+      "article_ids": [
+        "40850615"
+      ],
+      "restriction": "The main PDF conflicts on unique-gene wording, one age IQR, stage significance, Figure 4 survival groups and Figure 5 panel letters; the adjusted model/Table 1 use 50 cases versus a 52-case cohort without a complete missing-data explanation. Use probe names, verified groups and analysis-specific denominators; evidence is small-cohort prognostic association without race interaction.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md#pmid-40850615--ceacam7-expression-dna-methylation-and-luad-prognosis"
+    },
+    {
+      "id": "CCR-20261028-42905748-design-and-inference-boundary",
+      "article_ids": [
+        "42905748"
+      ],
+      "restriction": "The Arm A historical-benchmark criterion was met, but no formal arm-to-arm comparison or mandated ctDNA action algorithm supports a strategy-benefit claim. Keep text/Figure log-rank P values separate from Table 3 Cox P values; molecular associations are exploratory and supplements were not supplied.",
+      "source_reference": "supplement-ccr-2026-10-28-intake.md#source-alerts"
     }
   ],
   "entry_rules": [
@@ -3900,6 +3948,66 @@
       "state": "quarantined",
       "reason": "Source recheck found unsupported assay/endpoint/comparison or conflated cohorts. Use the linked correction and a bounded usage-card replacement, not this old expression.",
       "source_reference": "source-rechecks/2026-09-28-39864548.md"
+    },
+    {
+      "id": "JTO-20261025-32068166-disputed-denominators",
+      "article_ids": [
+        "32068166"
+      ],
+      "expression_regex": "(?:total n\\s*=\\s*1320|better than either single agent|PROSPECT.{0,80}(?:n\\s*=\\s*120|n\\s*=\\s*152))",
+      "state": "needs_source_check",
+      "reason": "The article contains unreconciled totals or pairwise-testing wording.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
+    },
+    {
+      "id": "JTO-20261025-33096269-disputed-assay-counts",
+      "article_ids": [
+        "33096269"
+      ],
+      "expression_regex": "(?:(?:whole.exome|WES|TCR).{0,100}(?:18|40|15|16).{0,40}(?:61|63|73))",
+      "state": "needs_source_check",
+      "reason": "WES or TCR sample counts conflict across article sections.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
+    },
+    {
+      "id": "JTO-20261025-37247843-binary-hr-label",
+      "article_ids": [
+        "37247843"
+      ],
+      "expression_regex": "(?:(?:HR|hazard ratio)\\s+(?:for|of)\\s+(?:ORR|DCB)|(?:ORR|DCB)\\s+(?:HR|hazard ratio))",
+      "state": "quarantined",
+      "reason": "Do not reuse the source's HR/OR label conflict for binary outcomes.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
+    },
+    {
+      "id": "JTO-20261025-37247843-transformation-wording",
+      "article_ids": [
+        "37247843"
+      ],
+      "expression_regex": "natural logarithmic transformation",
+      "state": "needs_source_check",
+      "reason": "The main PDF conflicts between natural-logarithmic and normal-transformation wording; do not reuse the disputed formulation until resolved.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
+    },
+    {
+      "id": "JTO-20261025-40056978-overstated-translation",
+      "article_ids": [
+        "40056978"
+      ],
+      "expression_regex": "(?:without systemic toxicity|clinical efficacy and potential biomarker|CCL5.{0,80}CCL1.{0,80}(?:significant|correlat))",
+      "state": "quarantined",
+      "reason": "The matched wording exceeds measured safety, human efficacy or correlation support.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
+    },
+    {
+      "id": "JTO-20261025-40850615-disputed-source-wording",
+      "article_ids": [
+        "40850615"
+      ],
+      "expression_regex": "(?:only gene (?:overexpressed|upregulated)|specific to (?:AA|African Americans)|59\\.5.{0,20}51\\.5.{0,20}38|stage IV.{0,80}stages? I.{0,20}III|22\\.24.{0,60}37\\.29)",
+      "state": "quarantined",
+      "reason": "The matched wording is contradicted by a figure, table or another part of the supplied main PDF.",
+      "source_reference": "jto-supplement-2026-10-25-intake.md"
     }
   ]
 }

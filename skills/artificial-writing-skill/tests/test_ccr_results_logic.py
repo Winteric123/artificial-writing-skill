@@ -156,6 +156,18 @@ def write_csv(path, rows):
 def write_installed_fixture(skill, value):
     references = skill / 'references'
     references.mkdir(parents=True, exist_ok=True)
+    (references / 'journal-registry.json').write_text(
+        json.dumps({
+            'schema_version': 1,
+            'journals': {
+                'ccr': {
+                    'name': 'Clinical Cancer Research',
+                    'quality': 'ccr-reading-quality-register.csv',
+                },
+            },
+        }),
+        encoding='utf-8',
+    )
     write_csv(references / 'ccr-reading-quality-register.csv', [
         {'pmid': paper['pmid'], 'eligibility': 'included', 'review_status': 'passed'}
         for paper in value['papers']
@@ -523,9 +535,9 @@ class InstalledChecks(unittest.TestCase):
             self.skipTest('main agent has not integrated the completed rereading yet')
         value = load_catalog(SKILL)
         expected = set(value['project_scope']['expected_pmids'])
-        self.assertEqual(len(expected), 124)
+        self.assertEqual(len(expected), 125)
         self.assertEqual(sum(paper['year'] == '2025' for paper in value['papers']), 48)
-        self.assertEqual(sum(paper['year'] == '2026' for paper in value['papers']), 76)
+        self.assertEqual(sum(paper['year'] == '2026' for paper in value['papers']), 77)
         self.assertEqual({paper['pmid'] for paper in value['papers']}, expected)
         self.assertTrue(all(2 <= len(paper['record_ids']) <= 4 for paper in value['papers']))
         self.assertTrue(all(
@@ -543,9 +555,9 @@ class InstalledChecks(unittest.TestCase):
             value['papers'], domain='integrated_omics', query='survival', limit=500
         )
         self.assertGreater(focused['matched_count'], 0)
-        self.assertLess(focused['matched_count'], 124)
+        self.assertLess(focused['matched_count'], 125)
         broad = search_papers(value['papers'], query='omics prognosis', limit=500)
-        self.assertLess(broad['matched_count'], 124)
+        self.assertLess(broad['matched_count'], 125)
 
     def test_real_cli_retrieval_and_render_smoke(self):
         path = SKILL / 'references' / 'ccr-2025-2026-results-logic.json'
